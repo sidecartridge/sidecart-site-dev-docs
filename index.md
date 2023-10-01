@@ -1,9 +1,9 @@
 ---
 layout: home
-title: SidecarT Developers Documentation Site
+title: Home
 ---
 
-# SidecarT Documentation
+# SidecarT Documentation 
 Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
 ## Table of Contents
