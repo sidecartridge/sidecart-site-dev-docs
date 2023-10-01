@@ -1,5 +1,7 @@
 title: SidecarT Docs
 description: The SidecarT Developers Documentation site
+domain: docs.sidecart.xyz
+
 theme: just-the-docs
 
 url: https://docs.sidecart.xyz
