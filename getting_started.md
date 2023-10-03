@@ -28,34 +28,5 @@ That being said, assembling the board independently can be a rewarding and enric
 ## Initial Setup and Configuration
 The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecart.xyz/quickstart).
 
-### Step 1: Acquire a SidecarT Board
-Acquire a SidecarT board by either purchasing it from the store or by building one yourself. Ensure you have a Raspberry Pi Pico with the necessary 40-pin connectors or a Raspberry Pi Pico WH and a USB A to micro USB data cable.
-
-### Step 2: Install Latest Firmware
-Connect your Raspberry Pi Pico to your computer and install the latest firmware available [here](<Insert Link to Firmware>).
-
-### Step 3: (Optional) Prepare microSD Card
-Format your microSD card to FAT16. The microSD card is optional but recommended for extended storage.
-
-### Step 4: (Optional) Copy ROM Images
-Copy the ROM images to the `/roms` folder on the microSD card or obtain ROM images from a collection.
-
-### Step 5: Connect SidecarT
-Connect the SidecarT to the Atari computer, ensuring the Raspberry Pi Pico faces upwards before turning on your computer.
-
-### Step 6: Switch on the Computer
-On powering the computer, it starts in CONFIGURATOR mode, where you can set up the specific functions of the SidecarT.
-
-### Step 7: Select ROM and Configure Wi-Fi (if applicable)
-Select the ROM to emulate from the microSD card or configure Wi-Fi to fetch ROM images directly from an HTTP server.
-
-### Step 8: Boot the ROM
-Reset or power cycle your computer to load the image as a genuine cartridge ROM.
-
-### Bonus: Load a Different ROM
-Use the SELECT button on the SidecarT board to reconfigure or load a different ROM.
-
 It does not matter if you are an experience developer or a novice enthusiast; the above steps are mandatory to get started with the SidecarT board. Please don't skip any of the steps, as it may lead to unexpected results.
 
-## Basic Troubleshooting
-[In this section, you may want to provide solutions to common problems that developers might encounter when they are getting started with the SidecarT board, as well as guidance on where to seek additional help or resources.]

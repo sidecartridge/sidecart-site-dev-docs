@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+nav_order: 0
 ---
 
 # SidecarT Documentation 
@@ -16,7 +17,6 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
    - Prerequisites
    - Board Assembly
    - Initial Setup and Configuration
-   - Basic Troubleshooting
 - [Architecture and Design](/architecture_and_design)
    - Board Components
    - System Architecture
