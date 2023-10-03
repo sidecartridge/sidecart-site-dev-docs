@@ -33,4 +33,44 @@ Whether you are reminiscing about the golden days of computing or exploring the 
 
 ## Contribution Guidelines
 
-**<TBD>**
+theBelow are some quick guidelines to ensure smooth contributions to our project.
+
+### 📜 Licensing
+
+- **Software**: Contributed code must adhere to the [GNU General Public License v3.0](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/LICENSE).
+- **Hardware**: The design and schematics of the hardware are licensed under the [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+### 🐞 Reporting Bugs
+
+- Check for existing reports to avoid duplicates in the [Issues](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues) section. Please tag as `bug`.
+- Provide clear details and steps to reproduce.
+
+### 💡 Feature Requests
+
+- Describe the feature and its advantages in the [Issues](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues) section. Please tag as `enhancement`.
+- Suggest possible solutions or alternatives.
+
+### 💻 Code Contributions
+
+- Ensure adherence to GPL and current coding standards.
+- Submit through a pull request and describe the changes.
+
+### 🛠 Hardware Contributions
+
+- Submit designs and assembly instructions via pull request.
+- Ensure all designs are non-commercial and safe to replicate.
+
+### 📚 Documentation
+
+- Focus on clarity and accuracy.
+- Follow existing documentation styles.
+
+### 👀 Review Process
+
+- Contributions will be reviewed and feedback will be provided.
+- Once approved, your contributions will be merged.
+
+### 🙌 Thank You!
+
+Thank you for your interest in contributing to SidecarT! Your contributions are valuable to SidecarT. Let's build something great together!
+
