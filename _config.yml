@@ -95,7 +95,6 @@ callouts:
     color: red
 
 plugins:
-  - jekyll-github-metadata
   - jekyll-include-cache
 
 kramdown:
