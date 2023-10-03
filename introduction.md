@@ -33,7 +33,7 @@ Whether you are reminiscing about the golden days of computing or exploring the 
 
 ## Contribution Guidelines
 
-theBelow are some quick guidelines to ensure smooth contributions to our project.
+Below are some quick guidelines to ensure smooth contributions to our project.
 
 ### 📜 Licensing
 
