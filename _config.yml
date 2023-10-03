@@ -5,6 +5,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://docs.sidecart.xyz
 repository: diegoparrilla/sidecart-site-dev-docs
 theme: just-the-docs
+logo: "https://sidecart.xyz/assets/images/SIDECART_LOGO_BW_LIGHTMODE_512x512.png"
+favicon_ico: "https://sidecart.xyz/assets/images/favicon-96x96.png"
+
 
 permalink: pretty
 
@@ -41,8 +44,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "https://github.com/just-the-docs/just-the-docs"
+  "SidecarT website":
+    - "https://sidecart.xyz"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
