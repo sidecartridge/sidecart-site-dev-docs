@@ -30,6 +30,13 @@ Assembling the board independently can be a rewarding and enriching learning exp
 ## Initial Setup and Configuration
 The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecart.xyz/quickstart).
 
+<div class="plyr__video-embed" id="player">
+    <iframe
+        src="https://www.youtube.com/embed/d1EatFnmPGs?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</div>
+
+
 {: .important }
 It does not matter if you are an experience developer or a novice enthusiast; the above steps are mandatory to get started with the SidecarT board. Please don't skip any of the steps, as it may lead to unexpected results.
 
