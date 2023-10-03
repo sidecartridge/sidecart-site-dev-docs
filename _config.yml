@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://docs.sidecart.xyz
 repository: diegoparrilla/sidecart-site-dev-docs
 theme: just-the-docs
-favicon_ico: "https://sidecart.xyz/assets/images/favicon-96x96.png"
+favicon_ico: "/assets/images/favicon.ico"
 
 
 permalink: pretty
