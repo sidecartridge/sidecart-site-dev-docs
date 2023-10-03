@@ -14,28 +14,28 @@ Additionally, developers need the following hardware:
 - An Atari ST computer series: ST, STE, or Mega
 
 {:refdef: style="text-align: center;"}
-[![Atari 520ST](https://sidecart.xyz/assets/images/quickstart/atari520st.jpeg)]
+![Atari 520ST](https://sidecart.xyz/assets/images/quickstart/atari520st.jpeg)
 {: refdef}
 
 
 - A SidecarT board
 
 {:refdef: style="text-align: center;"}
-[![SidecarT without Raspberry Pi Pico](https://sidecart.xyz/assets/images/quickstart/board-single.png)]
+![SidecarT without Raspberry Pi Pico](https://sidecart.xyz/assets/images/quickstart/board-single.png)
 {: refdef}
 
 
 - A [Raspberry Pi Pico WH board](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-wh) to connect it to the SidecarT board. The `W` stands for **Wireless** and the `H` stands for **Header**. The `H` version comes with the header pins already soldered to the board and a JST debugger connector needed to connect the Raspberry Pi Debug Board.
 
 {:refdef: style="text-align: center;"}
-[![Raspberry Pi Pico WH](https://sidecart.xyz/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)]
+![Raspberry Pi Pico WH](https://sidecart.xyz/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
 {: refdef}
 
 
 - A [Raspberry Pi Debug board](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) or an equivalent debug board to connect it to the SidecarT board
 
 {:refdef: style="text-align: center;"}
-[![Raspberry Pi Pico WH](/assets/images/debug-probe.jpg)]
+![Raspberry Pi Pico WH](/assets/images/debug-probe.jpg)
 {: refdef}
 
 - A Windows PC, Linux or a Mac with a USB port to connect to the Raspberry Pi Debug board and the Raspberry Pi Pico W board to program it
