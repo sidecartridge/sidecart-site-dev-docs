@@ -17,13 +17,13 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         <td style="border: none;">
             <h3><a href="/introduction">Introduction</a></h3>
             <p>
-            Learn blah, blah, blah...
+            An overview of the SidecarT project, explaining the project's purpose, objectives, and the intended audience.
             </p>
         </td>
         <td style="border: none;">
             <h3><a href="/getting_started">Getting started</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Guidance on the initial steps including prerequisites, board assembly instructions, setup and configuration.
             </p>
         </td>
         <td style="border: none;">
