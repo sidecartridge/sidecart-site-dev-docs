@@ -102,7 +102,7 @@ Hence, we have to focus on !ROM3 and !ROM4. So this is the algorithm we have to 
 ![Ideal Read Access to Atari ST cartridge](/assets/wavedrom/ideal-read-operation.png)
 {: refdef}
 
-This diagram represents the ideal behaviour of a read data access in the Atari ST cartridge. The red columns represents the address bus access and the blue columns represents the data bus access. 
+This diagram represents the ideal behaviour of a read data access in the Atari ST cartridge. The red columns represents the address bus access and the blue columns represents the data bus access. An Atari ST program requests to the &FA0001, &FA0003, &FA0007 addresses to return from the memory a word value (in this example it returns the value of the address). Since the example is simply an example of the ideal usage, the address data stays in the address bus even when the data bus is populated with the result, until the !ROM4 is deactivated again. As we will see, this is not the case in the SidecarT implementation.
 
 So the !ROM4 (it could be !ROM3 as well) are actually playing the role of a system clock signal: when any of them are active, the peripheral in the cartridge expansion port must read the address bus and write to the data bus before the !ROM4 signals are deactivated again.
 
