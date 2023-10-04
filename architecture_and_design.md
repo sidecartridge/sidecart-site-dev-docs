@@ -43,10 +43,29 @@ In the **Full ROM Emulation Mode**, the RP2040 maximizes its hardware, employing
 
 Transitioning to **Hybrid Emulation Mode**, the RP2040 extends beyond utilizing PIO and DMA. It reads incoming information from the Atari ST computer, interpreting it to materialize the desired functionality. **This code segment will demand modifications from developers to implement specific functionalities.** Refer to [Programming SidecarT](/programming_sidecart) for guidance on execution. An exemplification of this would be the implementation of the [Configurator](https://github.com/diegoparrilla/atarist-sidecart-firmware) application (or 'The Firmware'), a tool for configuring the SidecarT board. Implementational code for this functionality on the RP2040's end is housed within the [`romloader.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/ronmloader.c) file.
 
+## Design Considerations
+
+Even though the RP2040 is a state-of-the-art microcontroller with truly astonishing capabilities, it's crucial to acknowledge its certain limitations when understanding the SidecarT design:
+
+### RAM Memory
+The RP2040 comes with 264KB of RAM memory. Out of this, 128KB must be reserved exclusively as the memory shared with the Atari ST. The remaining RAM memory is what we can use to implement desired functionalities. This memory reduction is a significant handicap that must always be considered. The RP2040 has intriguing capabilities like addressing FLASH memory as if it were RAM, but it’s vital to remember that the FLASH memory is only 2MB and we can't write to it whenever we want, writes to FLASH memory should be restricted to very specific moments. You can learn more about the memory map of the RP2040 in the [RP2040 Datasheet](https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf).
+
+### FLASH Memory
+The Raspberry Pi Pico W integrates a 2MByte Winbond W25Q16JVUXIQ QSPI FLASH memory chip. This memory contains the RP2040 firmware and can be utilized to store programs that we wish to run on the RP2040. It’s important to note that FLASH memory has a limited number of write cycles (a minimum of 100.000 specified), so we must restrict writes to it to very specific times. FLASH memory is slow access compared to RAM, therefore, read and write operations cannot be on the critical path of ROM memory emulation. You can learn more about the FLASH memory in the [Raspberry Pi Pico W Datasheet](https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf).
+
+### RP2040 Internal Bus Contention
+One of the major challenges to face when developing new peripherals for the Atari ST that utilize the RP2040’s I/O capabilities is that the memory access bus and the GPIO access bus are shared, so bus contention is nearly inevitable in situations where many GPIOs must be read or written. Since we’re using PIOs and DMA, which are intensive in their use of this bus just to simulate ROM memory, effectively managing this internal bus contention in the RP2040 will be our greatest hurdle. Unfortunately, there is scarcely any information available on this matter.
+
+### Available GPIOs in RP2040 and Pico W
+The Atari ST operates on a 16/32 architecture. This means we need 15 GPIOs for the data bus, 16 GPIOs for the address bus, six signals needed to orchestrate cartridge access (!LDS, !UDS, !ROM3, !ROM4, !READ, !WRITE), two GPIO for UART (TX, RX), and four GPIO for the SPI of the microSD card. That sums up to 43 GPIOs, while the Raspberry Pi Pico W only has 26 usable for our purposes. Therefore, we must omit unnecessary signals and multiplex others. 
+
+### Voltage Levels: CMOS vs TTL
+The Atari ST operates with 5-volt TTL voltage levels while the RP2040 operates with 3.3-volt CMOS voltage levels. This implies we must be cautious with the signals sent from the Atari ST to the RP2040 and vice versa. It is critical to keep in mind that the RP2040 cannot tolerate 5-volt levels, so we must utilize voltage level-shifting circuits to prevent damage to the RP2040.
+
+
 ## Board Components
    
 ## System Architecture
 
 ## Design Principles
    
-## Design Considerations
