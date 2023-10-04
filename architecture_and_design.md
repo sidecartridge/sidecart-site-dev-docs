@@ -7,7 +7,7 @@ nav_order: 3
 # Architecture and Design
 This section explores the underlying architecture and design principles of the SidecarT board. Understanding the architecture and design is crucial for developers to effectively interact with the board and develop robust and efficient applications.
 
-## The 40000ft View
+## The 40000ft View
 
 The SidecarT board is a hardware solution that provides an environment for the execution of applications in a RP2040 Microcontroller -manufactured by the Raspberry foundation- that can share a range of its RAM memory with the host computer, an Atari ST computer series.
 
@@ -15,7 +15,7 @@ The SidecarT board is a hardware solution that provides an environment for the e
 
 For the Atari ST, the SidecarT board simplistically emerges as a ROM memory expansion. The incorporation of the RP2040 microcontroller into the Atari ST's cartridge port enables it to share a spectrum of its RAM memory with the Atari ST computer, which perceptively reads the shared RAM memory as if it were a ROM memory expansion. The swift processing capabilities of the RP2040 mask its true nature, providing the Atari ST with a seamless memory interaction without realizing it's interacting with a microcontroller sharing its RAM memory instead of a conventional ROM memory. This nuance fosters a crucial benefit: the Atari ST doesn’t require any software driver to interact with the SidecarT board, blissfully unaware of its existence and perceives it purely as a ROM memory expansion.
 
-There are two basic **functional modes**.
+There are two basic **functional modes**:
 
 #### Full ROM Emulation Mode
 
