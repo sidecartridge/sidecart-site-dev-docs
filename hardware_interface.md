@@ -39,11 +39,11 @@ The Atari ST incorporated a 16-bit data bus, correlating with **data lines** D0-
 
 In addition to the address and data lines, several **control lines** were crucial for selecting the ROM and determining which parts of the data lines to read. These encompassed the ROM select lines ROM3 and ROM4, as well as UDS and LDS, which were integral for upper and lower byte selection.
 
-## The Raspberry Pi Pico W GPIOs
+## Exploring the GPIOs of the Raspberry Pi Pico W 
 
-The Raspberry Pi Pico and Pico W comes with 40 pins that can be used to connect electronic components. Of those 40 pins, 26 are programmable GPIOs that anybody can use to connect peripherals like LEDs, motors, and sensors, or even establish a communication with other microcontroller boards. 
+The Raspberry Pi Pico and Pico W, endowed with a versatile array of 40 pins, facilitate connections to various electronic components. Among these, 26 programmable GPIOs stand out, offering a gateway for enthusiasts and developers to interface with peripherals such as LEDs, motors, and sensors, or to foster communication with other microcontroller boards.
 
-The Raspberry Pi Pico supports the following peripheral interfaces on its GPIOs:
+The Raspberry Pi Pico extends support for the subsequent peripheral interfaces on its GPIOs:
 
 - 2x UART
 - 2x I2C
@@ -51,14 +51,14 @@ The Raspberry Pi Pico supports the following peripheral interfaces on its GPIOs:
 - 16x PWM channels
 - 4x ADC pins
 
-Of the remaining 14 pins, te Raspberry Pi Pico has several power pins: 3V3 (OUT), VSYS, and VBUS marked as red on the pinout diagrams. The Raspberry Pi Pico also has several ground pins marked as black on the pinout diagrams. The remaining pins are internal GPIOs and ground connections.
-
+Of the remaining 14 pins, the Raspberry Pi Pico possesses numerous power pins, including 3V3 (OUT), VSYS, and VBUS, which are demarcated as red on the pinout diagrams. Moreover, several ground pins are presented, marked in black on the pinout diagrams, while the remaining pins are designated for internal GPIOs and ground connections.
 
 {:refdef: style="text-align: center;"}
-![Raspberry Pi Pico W Pinout)](/assets/images/Raspberry-Pi-Pico-W-Pinout.webp)
+![Raspberry Pi Pico W Pinout](/assets/images/Raspberry-Pi-Pico-W-Pinout.webp)
 {: refdef}
 
-The GPIOs are assigned to the following functions:
+In our configuration, the GPIOs are attributed to the following functions:
+
 - GP0-1: UART0 TX/RX - output
 - GP2-4: SPI0 CLK/MOSI/MISO - output
 - GP5: SELECT button - input
@@ -68,7 +68,8 @@ The GPIOs are assigned to the following functions:
 - GP27: !READ - output
 - GP28: !WRITE - output
 
-As a rule of thumb it is not a good idea to change the direction of the GPIOs. The GP6 to GP21 changing direction every 250ms to read the address bus and write the data bus was the best solution to solve the mismatch of the size of the buses between the RP2040 and the Atari ST cartridge port as we will see in the next section.
+As a prudent guideline, altering the direction of the GPIOs is typically discouraged unless executed with impeccable timing. The modulated directional change of GP6 to GP21 every 250ms—implemented to read the address bus and write the data bus—emerges as an optimal solution, adeptly navigating the discrepancy in bus sizes between the RP2040 and the Atari ST cartridge port, as will be explored in the ensuing section.
+
 
 ## Building a Pure time multiplexing on a multiplexed bus with the RP2040
 
