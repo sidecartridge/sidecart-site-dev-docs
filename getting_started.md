@@ -8,8 +8,43 @@ nav_order: 2
 This section provides guidance on the initial steps to start working with the SidecarT board, including prerequisites, board assembly instructions, setup, configuration, and basic troubleshooting. By following the procedures outlined in this section, developers can ensure a smooth start to their journey with the SidecarT board.
 
 ## Prerequisites
-To begin with the SidecarT board, developers are required to have a minimum experience with C. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. 
 
+### Skills
+To begin with the SidecarT board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. 
+
+## Prerequisites
+
+### Skills
+To contribute effectively to the SidecarT project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
+
+- **C Programming**: Essential for software development and firmware writing. Ensure you have a grasp on data structures, memory management, and algorithm development within C.
+
+- **68000 Assembler**: Crucial for understanding and working with low-level part of the firmware for Atari ST.
+
+- **Microcontroller Development**: Familiarity with microcontrollers, especially with Raspberry Pi Pico's microcontroller RP2040, is vital. You should understand how to write, test, and debug firmware, manage I/O operations, and deal with real-time constraints.
+
+- **Atari ST Knowledge**: A robust understanding of Atari ST hardware and software, its system call and memory management will significantly boost your contribution efforts.
+
+- **Version Control/Git**: Ability to effectively use git, manage branches, resolve merge conflicts, and understand the workflow to keep the codebase stable and collaborative.
+
+- **Testing and Debugging**: Practical know-how on debugging, writing test cases, and validating hardware/software integration ensures a robust build.
+
+- **Visual Studio Code Expertise**: Familiarity with using Visual Studio Code, configuring workspaces, managing extensions, and utilizing its debugging capabilities will facilitate a smoother development experience.
+
+- **GCC**: Understanding how to utilize GCC for compiling C and C++ code, managing dependencies, and debugging is vital for software development in this project.
+
+- **VASM**: Knowledge of using the VASM assembler, its syntax, and how to compile assembly code, particularly for the 68000, will enable efficient low-level development.
+
+- **Makefile**: Know-how on writing and managing Makefiles to automate build processes, manage dependencies, and optimize the development workflow.
+
+- **Integration with GDB**: Skills in using GDB for debugging software, setting breakpoints, inspecting variables, and analyzing program flow, especially in conjunction with Visual Studio Code, are essential for troubleshooting and ensuring software stability.
+
+And if you want to contribute to the harware, skills in reading schematics, understanding electronic components, and practical skills like soldering will facilitate working with the hardware aspects of SidecarT.
+    
+{: .note }
+Even if you’re not an expert in all these areas, your contribution is still valuable. Engage, learn, and grow with the SidecarT community!
+
+### Hardware
 Additionally, developers need the following hardware:
 - An Atari ST computer series: ST, STE, or Mega
 
