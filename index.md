@@ -29,7 +29,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         <td style="border: none;">
             <h3><a href="/architecture_and_design">Architecture and Design</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Explore the underlying architecture and design principles of the SidecarT board.
             </p>
         </td>
     </tr>
