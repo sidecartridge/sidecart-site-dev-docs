@@ -62,9 +62,11 @@ The Atari ST operates on a 16/32 architecture. This means we need 15 GPIOs for t
 ### Voltage Levels: CMOS vs TTL
 The Atari ST operates with 5-volt TTL voltage levels while the RP2040 operates with 3.3-volt CMOS voltage levels. This implies we must be cautious with the signals sent from the Atari ST to the RP2040 and vice versa. It is critical to keep in mind that the RP2040 cannot tolerate 5-volt levels, so we must utilize voltage level-shifting circuits to prevent damage to the RP2040.
 
-
 ## Board Components
-   
+{:refdef: style="text-align: center;"}
+![SidecarT v0.0.1 Schematic](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/schematics/v0.0.1/Schematic_Atari%20ST%20sidecart%20prototype%20shared%20bus_2023-09-15.png)
+{: refdef}
+
 ## System Architecture
 
 ## Design Principles
