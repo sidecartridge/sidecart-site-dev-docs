@@ -67,7 +67,7 @@ The Atari ST operates with 5-volt TTL voltage levels while the RP2040 operates w
 ![SidecarT v0.0.1 Schematic](/assets/images/Schematic_Atari_ST_sidecart_prototype_shared_bus_2023-09-15.png)
 {: refdef}
 
-In this schematic, we can identify the different hardware subsystems of the board in each section. The following details the components of each:
+Within this schematic, the diverse hardware subsystems of the board are identified and sectioned accordingly. Below are detailed descriptions of each component:
 
 ### 5V to 3V3 Address Bus Level Shifters
 
@@ -85,38 +85,36 @@ The 3.3 to 5 volts and CMOS to TTL subsystem converts all RP2040 output signals 
 
 ### Reset Button
 
-Surprisingly, the Raspberry Pi Pico W does not have a reset button, so one has been added to the SidecarT board. Fixed!
+Remarkably, the Raspberry Pi Pico W lacks a reset button, an omission rectified on the SidecarT board.
 
 ### UART Output for Debugging
 
-GP0 and GP1 are connected to the RP2040's UART output, useful for debugging purposes and outputting to the Raspberry Pi Pico W's serial console debug traces.
+For debugging purposes and directing output to the Raspberry Pi Pico W's serial console debug traces, GP0 and GP1 are connected to the RP2040's UART output.
 
 ### Raspberry Pi Pico Connections
 
-More details are available in the [Hardware Interface](/hardware_interface) section.
+Additional details are available in the [Hardware Interface](/hardware_interface) section.
 
 ### Second Power Supply Connection
 
-The SidecarT board can be powered from two different sources: the Atari ST cartridge port and the Raspberry Pi Pico W USB port, which provides 5V and the Raspberry Pi Pico W USB port provides either 5V or 3.3V, depending on the USB port used. The diode DMG2305UX-7 ensures that power is drawn from the Atari ST cartridge port when connected, and from the Raspberry Pi Pico W USB port when it is connected, without both power sources being connected simultaneously.
+The SidecarT board permits power sourcing from two distinct points: the Atari ST cartridge port and the Raspberry Pi Pico W USB port, offering voltage levels of 5V and optionally 3.3V (dependent on the USB port used). The diode DMG2305UX-7 ensures that power is sourced from the Atari ST cartridge port when available and defaults to the Raspberry Pi Pico W USB port otherwise, preventing simultaneous connection of both power sources.
 
 ### SELECT Button
 
-The SidecarT board's SELECT button is connected to the GP5 GPIO of the RP2040. This button is utilized to select the SidecarT board's operation mode. A pull-down resistor is connected to this GPIO to keep the switch off when the SidecarT board is powered on. Additionally, a 1N4148W-7-F diode is connected to this GPIO to protect the RP2040 for safety reasons, even though it is not strictly necessary.
+Connected to the GP5 GPIO of the RP2040, the SidecarT board's SELECT button facilitates the selection of operational modes. To ensure the switch remains off upon powering on the SidecarT board, a pull-down resistor is linked to this GPIO. Additionally, a 1N4148W-7-F diode, while not imperative, is connected to this GPIO to safeguard the RP2040.
 
 ### Micro SD Card Holder
 
-The micro SD card holder, a TF-115 model, is connected to the RP2040's SPI0 interface. The SPI0 interface connects to the GP4 to GP6 GPIOs of the RP2040. The micro SD card holder connects to the RP2040 with the following connections:
+The TF-115 model micro SD card holder is interfaced with the RP2040's SPI0, with connections as follows:
 - CLK: GP4
 - MOSI: GP5
 - MISO: GP6
 
-There is no CS connection because the RP2040 has run out of GPIOs. The CS signal should connect to CD/DAT3, but it's connected to GND since there are no more slave devices on the SPI0 bus. 
+Absence of a CS connection is due to the RP2040's GPIO limitation. While the CS signal would typically connect to CD/DAT3, it is connected to GND as no additional slave devices are present on the SPI0 bus. 
 
-Pull-ups and capacitors are connected as specified in the [Hardware design with RP2040](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) datasheet.
+Pull-ups and capacitors are connected as detailed in the [Hardware design with RP2040](https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf) datasheet.
 
 ### Atari ST Cartridge Connections
 
-More details can be found in the [Hardware Interface](/hardware_interface) section.
-
-
+Refer to the [Hardware Interface](/hardware_interface) section for further details.
 
