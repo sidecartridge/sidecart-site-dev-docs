@@ -85,7 +85,7 @@ so the CPU clock cycle is 500ns. This is the lapse of time a ROM cartridge has t
 The signals governing the access to the address and data bus of the cartridge are !ROM3 and !ROM4 (they are inverted signals) and specifically when !ROM4 or !ROM3 signals are low. During
 this time, the cartridge can have access to the Motorola 68000 address bus and the write data bus. It is guaranteed that there will not be any contention conflict with the Atari ST memory bus.
 
-{ .note}
+{: .note }
 The !LDS and !UDS signals are used to select the upper or lower byte of the data bus. The !LDS signal is active when the lower
 and the !UDS signal is active when the upper byte of the data bus is selected. !LDS and !UDS are directly connected to the 
 Motorola 68000 signals, so it's not worth to use them to control the RP2040, unless you want to use them jointly with the
