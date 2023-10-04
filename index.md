@@ -54,21 +54,21 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
    - Community and Contribution
 
 
-<table>
+<table style="border-collapse: collapse; border: 0;">
     <tr>
-        <td>
+        <td style="border: none;">
             <h3><a href="/introduction">Introduction</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
         </td>
-        <td>
+        <td style="border: none;">
             <h3><a href="/getting_started">Getting started</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
         </td>
-        <td>
+        <td style="border: none;">
             <h3><a href="/architecture_and_design">Architecture and Design</a></h3>
             <p>
             Learn blah, blah, blah...
@@ -76,19 +76,19 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         </td>
     </tr>
     <tr>
-        <td>
+        <td style="border: none;">
             <h3><a href="/hardware_interface">Hardware interface</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
         </td>
-        <td>
+        <td style="border: none;">
             <h3><a href="/software_development">Software Development</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
         </td>
-        <td>
+        <td style="border: none;">
             <h3><a href="/programming_sidecart">Programming SidecarT</a></h3>
             <p>
             Learn blah, blah, blah...
@@ -96,19 +96,19 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         </td>
     </tr>
     <tr>
-        <td>
+        <td style="border: none;">
             <h3><a href="/use_cases">Use cases</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
         </td>
-        <td>
+        <td style="border: none;">
             <h3><a href="/troubleshooting">Troubleshooting</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
         </td>
-        <td>
+        <td style="border: none;">
             <h3><a href="/faq">FAQ</a></h3>
             <p>
             Learn blah, blah, blah...
