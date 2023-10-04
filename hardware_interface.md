@@ -102,7 +102,9 @@ Hence, we have to focus on !ROM3 and !ROM4. So this is the algorithm we have to 
 ![Ideal Read Access to Atari ST cartridge](/assets/wavedrom/ideal-read-operation.png)
 {: refdef}
 
-So the !ROM3 and !ROM4 are actually playing the role of a system clock signal: when any of them are active, the peripheral in the cartridge expansion port must read the address bus and write to the data bus before the !ROM3 or !ROM4 signals are deactivated again.
+This diagram represents the ideal behaviour of a read data access in the Atari ST cartridge. The red columns represents the address bus access and the blue columns represents the data bus access. 
+
+So the !ROM4 (it could be !ROM3 as well) are actually playing the role of a system clock signal: when any of them are active, the peripheral in the cartridge expansion port must read the address bus and write to the data bus before the !ROM4 signals are deactivated again.
 
 So the big question here is: How long does it take to stabilize the address bus signals and read them? And how long does it take to write the data bus signals and wait for them to stabilize?
 
