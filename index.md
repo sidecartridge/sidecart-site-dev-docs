@@ -37,7 +37,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         <td style="border: none;">
             <h3><a href="/hardware_interface">Hardware interface</a></h3>
             <p>
-            Learn blah, blah, blah...
+            How the board and the code in the RP2040 handle the mismatch of the buses size between the RP2040 and the Atari ST cartridge.
             </p>
         </td>
         <td style="border: none;">
