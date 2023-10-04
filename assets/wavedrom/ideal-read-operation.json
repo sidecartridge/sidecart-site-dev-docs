@@ -1,0 +1,32 @@
+{head:{
+   text:'Ideal Cartridge Read Operation',
+   tick:0,
+   every:1,
+ },
+ signal: [
+  ["Clocks",
+   {name: 'cpuclk', wave: 'p...............'},
+  {name: 'sysclk', wave: 'Pl..Pl..Pl..Pl..'},
+   ],
+  {},
+   ["Control",
+  {name: '!ROM4', wave: 'h0.1.0.1.0.1.0.1'},
+    ],
+  {},
+    ["Addr bus",
+  {name: 'A0', wave: '01.0.1.0.1.0.1.0'},
+  {name: 'A1', wave: '0....1.0.....1.0'},
+  {name: 'A2', wave: '0............1.0'},
+  {},
+  {name: 'A15', wave: '0............1.0'},
+     ],
+  {},
+  {},
+     ["Data bus",
+  {name: 'D0', wave: '0.1.0.1.0.1.0.1.'},
+  {name: 'D1', wave: '0.....1.0.....1.'},
+  {name: 'D2', wave: '0.............1.'},
+  {},
+  {name: 'D15', wave: '0.............1.'}
+      ]
+]}

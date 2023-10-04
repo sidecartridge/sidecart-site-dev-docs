@@ -94,18 +94,13 @@ Motorola 68000 signals, so it's not worth to use them to control the RP2040, unl
 Hence, we have to focus on !ROM3 and !ROM4. So this is the algorithm we have to implement to emulate a ROM device:
 
 0. Wait until the !ROM4 or !ROM3 signals are low (ACTIVE). We have to assume that this change of state won't take longer than 125 nanoseconds (1 Atari ST clock cycle).
-1. Read the address bus and wait until the address information is stable. This should not take more than 1 Atari ST clock cycles (125ns) and the remaining time not consumed in step 0.
-2. Send the information to the data bus and wait until the data is stable. This should take 1 Atari ST clock cycles (125ns) plus the remaining time not consumed in step 0 and 1.
+1. Read the address bus and wait until the address information is stable. This should not take more than 1 Atari ST clock cycles (125ns) and the remaining time not consumed in step 1.
+2. Send the information to the data bus and wait until the data is stable. This should take 1 Atari ST clock cycles (125ns) plus the remaining time not consumed in step 1 and 2.
 3. Wait until the !ROM4 or !ROM3 signals are high (INACTIVE) again and repeat the process (125ns) or the reamining time until the next 500ns clock cycle starts.
 
-ns    0                                                      SCycle 1 (500ns)                                              SCycle 2 (500ns)
-------|-------------------------------------------------------------|--------------------------------------------------------------|
-
-ns    0        80       160       240       320       400       480       560       640       720       800       880       960
-------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|----
-!ROMx: ------------------------______________________________________------------------------______________________________________
-!UDS:  ----------------------_______________________________________------------------------_______________________________________
-!LDS:  ----------------------_______________________________________------------------------_______________________________________
+{:refdef: style="text-align: center;"}
+![Ideal Read Access to Atari ST cartridge](/assets/wavedrom/ideal-read-operation.png)
+{: refdef}
 
 So the !ROM3 and !ROM4 are actually playing the role of a system clock signal: when any of them are active, the peripheral in the cartridge expansion port must read the address bus and write to the data bus before the !ROM3 or !ROM4 signals are deactivated again.
 
