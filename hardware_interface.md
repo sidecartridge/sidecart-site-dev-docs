@@ -63,20 +63,109 @@ Of the remaining 14 pins, the Raspberry Pi Pico possesses numerous power pins, i
 
 In our configuration, the GPIOs are attributed to the following functions:
 
-**- GP0-1: UART0 TX/RX - output
+- GP0-1: UART0 TX/RX - output
 - GP2-4: SPI0 CLK/MOSI/MISO - output
 - GP5: SELECT button - input
 - GP6-21: !UDS=A0, A1-A15 - input / D0-D15 - output
 - GP22: !ROM3 - input
 - GP26: !ROM4 - input
 - GP27: !READ - output
-- GP28: !WRITE - output**
+- GP28: !WRITE - output
 
 There are three pins that are very important for developers but not for users not willing to develop their own software. These pins are the SWD pins, which are used to program the RP2040. The SWD pins are not used by the SidecarT software, but they are used by the Raspberry Pi Pico SDK to program the RP2040. Please see the section on [Software Development](/software_development) for more information.
 
 As a prudent guideline, altering the direction of the GPIOs is typically discouraged unless executed with impeccable timing. The modulated directional change of GP6 to GP21 every 250ms—implemented to read the address bus and write the data bus—emerges as an optimal solution, adeptly navigating the discrepancy in bus sizes between the RP2040 and the Atari ST cartridge port, as will be explored in the ensuing section.
 
 ## Building a Pure time multiplexing on a multiplexed bus with the RP2040
+
+
+The Atari ST runs at 8MHz, so each clock cycle is 125ns. But the system clock cycle is 4 times the CPU clock cycle, 
+so the CPU clock cycle is 500ns. This is the lapse of time a ROM cartridge has to read the address bus and write the data bus. 
+
+The signals governing the access to the address and data bus of the cartridge are !ROM3 and !ROM4 (they are inverted signals) and specifically when !ROM4 or !ROM3 signals are low. During
+this time, the cartridge can have access to the Motorola 68000 address bus and the write data bus. It is guaranteed that there will not be any contention conflict with the Atari ST memory bus.
+
+{ .note}
+The !LDS and !UDS signals are used to select the upper or lower byte of the data bus. The !LDS signal is active when the lower
+and the !UDS signal is active when the upper byte of the data bus is selected. !LDS and !UDS are directly connected to the 
+Motorola 68000 signals, so it's not worth to use them to control the RP2040, unless you want to use them jointly with the
+!ROM3 and !ROM4 signals. So from the bubs synchronization perspective, let's forget about the !LDS and !UDS signals from now on.
+
+Hence, we have to focus on !ROM3 and !ROM4. So this is the algorithm we have to implement to emulate a ROM device:
+
+0. Wait until the !ROM4 or !ROM3 signals are low (ACTIVE). We have to assume that this change of state won't take longer than 125 nanoseconds (1 Atari ST clock cycle).
+1. Read the address bus and wait until the address information is stable. This should not take more than 1 Atari ST clock cycles (125ns) and the remaining time not consumed in step 0.
+2. Send the information to the data bus and wait until the data is stable. This should take 1 Atari ST clock cycles (125ns) plus the remaining time not consumed in step 0 and 1.
+3. Wait until the !ROM4 or !ROM3 signals are high (INACTIVE) again and repeat the process (125ns) or the reamining time until the next 500ns clock cycle starts.
+
+ns    0                                                      SCycle 1 (500ns)                                              SCycle 2 (500ns)
+------|-------------------------------------------------------------|--------------------------------------------------------------|
+
+ns    0        80       160       240       320       400       480       560       640       720       800       880       960
+------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|----
+!ROMx: ------------------------______________________________________------------------------______________________________________
+!UDS:  ----------------------_______________________________________------------------------_______________________________________
+!LDS:  ----------------------_______________________________________------------------------_______________________________________
+
+So the !ROM3 and !ROM4 are actually playing the role of a system clock signal: when any of them are active, the peripheral in the cartridge expansion port must read the address bus and write to the data bus before the !ROM3 or !ROM4 signals are deactivated again.
+
+So the big question here is: How long does it take to stabilize the address bus signals and read them? And how long does it take to write the data bus signals and wait for them to stabilize?
+
+## A1 to A15 address bus without ROMx signals
+
+The address bus is read when the !ROM4 or !ROM3 signals are low. The address bus is 16 bits wide, so it will take 2 clock cycles
+
+This is an example of a long word access to the address &FAF0F0. To retrieve these long word the 68000 will perform two consecutive
+word accesses to the address &FAF0F0 and &FAF0F2. The first word access will retrieve the lower word and the second word access will
+retrieve the upper word. 
+
+As we can see in the logic analyzer output, the address is stable 56ns (8ns x 7 characters) before the !ROM4 signal is low. Considering
+that the address bus signals also have to cross the level shifter, the address bus signals will be stable way before the !ROM4 signal
+is low. So it's safe to read the address bus as soon as any !ROMx signas are low.
+
+This diagram shows the address bus signals crossing the 75LVS245 level shifter with the !OE signal in low state. When the !OE signal
+is low the level shifter is enabled and the signals are allowed to cross from one side to the other. So all the address bus signals
+will propagate from the Atari ST side to the RP2040 side.
+
+ns    0                                                      SCycle 1 (500ns)                                              SCycle 2 (500ns)
+------|-------------------------------------------------------------|--------------------------------------------------------------|
+
+ns    0        80       160       240       320       400       480       560       640       720       800       880       960
+------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|----
+!ROMx: _______________________________________------------------------______________________________________-----------------------
+!UDS:  ______________________________________-----------------------_______________________________________-----------------------_
+!LDS:  ______________________________________-----------------------_______________________________________-----------------------_
+A1:    ______________________________________________________---------------------------------------------------------------_______
+A2:    _____________________________________________________________________________________________________________________-______
+A3:    ____________________________________________________________________________________________________________________--------
+A4:    ---------------------------------------------------------------------------------------------------------------------_______
+A5:    ----------------------------------------------------------------------------------------------------------------------------
+A6:    ---------------------------------------------------------------------------------------------------------------------_______
+A7:    ---------------------------------------------------------------------------------------------------------------------_______
+A8:    _____________________________________________________________________________________________________________________-------
+A9:    _____________________________________________________________________________________________________________________-------
+A10:   _____________________________________________________________________________________________________________________-______
+A11:   _____________________________________________________________________________________________________________________-------
+A12:   ----------------------------------------------------------------------------------------------------------------------------
+A13:   ---------------------------------------------------------------------------------------------------------------------_______
+A14:   ----------------------------------------------------------------------------------------------------------------------------
+A15:   ----------------------------------------------------------------------------------------------------------------------------
+
+## A1 to A15 address bus with ROMx signals control
+
+To avoid unnecessary reads to the address bus, we can use the !ROM4 and !ROM3 signals to control when the address bus is read. The
+ access to bus is allowed when the !ROM4 or !ROM3 signals are low. The !OE signal of the level shifter is controlled by the !ROM4
+ and !ROM3 signals, so the address bus signals will be propagated to the RP2040 side only when the !ROM4 or !ROM3 signals are low.
+
+Striclty speaking, the level shifter !OE signal could be connected always to GND and the address bus signals will be propagated 
+always to the RP2040 side. In the RP2040 side we can use the !ROM4 and !ROM3 signals to control when the address bus is read.
+ 
+
+
+
+
+
+
 
 ## How to orchestrate the access to the Atari ST cartridge address and data buses
 
