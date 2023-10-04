@@ -41,15 +41,19 @@ In addition to the address and data lines, several **control lines** were crucia
 
 ## Exploring the GPIOs of the Raspberry Pi Pico W 
 
-The Raspberry Pi Pico and Pico W, endowed with a versatile array of 40 pins, facilitate connections to various electronic components. Among these, 26 programmable GPIOs stand out, offering a gateway for enthusiasts and developers to interface with peripherals such as LEDs, motors, and sensors, or to foster communication with other microcontroller boards.
+The Raspberry Pi Pico and Pico W, endowed with a versatile array of 40 pins, facilitate connections to various electronic components. Among these, 26 programmable General Purpose Input/Output (GPIO) stand out, offering a gateway for enthusiasts and developers to interface with peripherals, or to foster communication with other microcontroller/microprocessor boards.
 
-The Raspberry Pi Pico extends support for the subsequent peripheral interfaces on its GPIOs:
+The Raspberry Pi Pico extends support for the subsequent peripheral interfaces on its pinout:
 
 - 2x UART
 - 2x I2C
 - 2x SPI
 - 16x PWM channels
 - 4x ADC pins
+
+The RP2040 GPIOs can play different roles depending on the configuration given. For SidecarT, we will use as pure GPIOs pins. The RP2040 GPIOs can be configured as inputs or outputs, and the direction can be changed dynamically. The RP2040 GPIOs can also be configured to have a pull-up or pull-down resistor, and the resistor can be enabled or disabled dynamically.
+
+{:refdef: style="text-align: center;"}
 
 Of the remaining 14 pins, the Raspberry Pi Pico possesses numerous power pins, including 3V3 (OUT), VSYS, and VBUS, which are demarcated as red on the pinout diagrams. Moreover, several ground pins are presented, marked in black on the pinout diagrams, while the remaining pins are designated for internal GPIOs and ground connections.
 
@@ -59,17 +63,16 @@ Of the remaining 14 pins, the Raspberry Pi Pico possesses numerous power pins, i
 
 In our configuration, the GPIOs are attributed to the following functions:
 
-- GP0-1: UART0 TX/RX - output
+**- GP0-1: UART0 TX/RX - output
 - GP2-4: SPI0 CLK/MOSI/MISO - output
 - GP5: SELECT button - input
 - GP6-21: !UDS, A1-A15, A16=!ROM4 - input / D0-D15 - output
 - GP22: !ROM3 - input
 - GP26: !ROM4 - input
 - GP27: !READ - output
-- GP28: !WRITE - output
+- GP28: !WRITE - output**
 
 As a prudent guideline, altering the direction of the GPIOs is typically discouraged unless executed with impeccable timing. The modulated directional change of GP6 to GP21 every 250ms—implemented to read the address bus and write the data bus—emerges as an optimal solution, adeptly navigating the discrepancy in bus sizes between the RP2040 and the Atari ST cartridge port, as will be explored in the ensuing section.
-
 
 ## Building a Pure time multiplexing on a multiplexed bus with the RP2040
 
