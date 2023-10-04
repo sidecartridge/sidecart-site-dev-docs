@@ -57,11 +57,10 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
 <table>
     <tr>
         <td>
-- [Introduction](/introduction)
-   - Project Overview
-   - Objective and Purpose
-   - Target Audience
-   - Contribution Guidelines
+            <h3><a href="/introduction">Introduction</h3></h3>
+            <p>
+            Learn blah, blah, blah...
+            </p>
         </td>
         <td>
 - [Getting Started](/getting_started)
