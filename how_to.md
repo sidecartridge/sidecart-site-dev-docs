@@ -20,10 +20,18 @@ There are many ways to set up a HTTP server and there are plenty of tutorials on
 {: .note }
 The SidecarT bord does not support HTTPS at the moment. Make sure to disable HTTPS and use HTTP only.
 
+{: .note }
+The SidecarT board also only supports access through port 80 and without proxy. Make sure to configure your server accordingly.
+
+{: .note }
+
+
 
 - [Apache](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04)
 - [Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
 - [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+
+
 
 ### Create the `roms.json` file
 
