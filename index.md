@@ -55,7 +55,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
     </tr>
     <tr>
         <td style="border: none;">
-            <h3><a href="/use_cases">Use cases</a></h3>
+            <h3><a href="/how_to">How to</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
