@@ -15,7 +15,7 @@ I am more than willing to issue refunds to users who encounter compatibility iss
 
 ## Incompatibility issues and severity
 
-| Severity | Device Name | Computer Tested | Issue | Description | Fix |
-|----------|-------------|-----------------|-------|-------------|-----|
+| Severity | Device | Computer | Issue | Description | Fix |
+|----------|--------|----------|-------|-------------|-----|
 | CRITICAL | CosmoseX | MegaSTE | Corrupt storage in CosmoseX | Combining SidecarT with CosmoseX corrupts the content of the storage devices connected. | Not yet |
 | LOW | Very low quality microSD cards | All | microSD cards not detected | Some very low cost Aliexpress microSD cards (less than €1) can't be detected. Please don't use ultra low cost microSD cards. I bought a good bunch of them from AliExpress and all worked except one. But please don't play the roulette with yout data | Won't fix |
