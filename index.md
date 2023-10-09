@@ -57,11 +57,11 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         <td style="border: none;">
             <h3><a href="/how_to">How to</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Different small tutorials to customize the SidecarT to your needs
             </p>
         </td>
         <td style="border: none;">
-            <h3><a href="/troubleshooting">Troubleshooting</a></h3>
+            <h3><a href="/compatibility_issues">Compatibility</a></h3>
             <p>
             Learn blah, blah, blah...
             </p>
