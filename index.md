@@ -63,7 +63,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         <td style="border: none;">
             <h3><a href="/compatibility_issues">Compatibility</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Please read this section if you have issues with your SidecarT
             </p>
         </td>
         <td style="border: none;">
