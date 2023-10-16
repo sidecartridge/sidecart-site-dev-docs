@@ -113,3 +113,7 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+# Versions of SidecarT
+FIRMWARE_VERSION: v0.0.10
+TEST_FIRMWARE_VERSION: v0.0.3

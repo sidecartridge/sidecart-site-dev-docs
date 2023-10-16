@@ -8,6 +8,8 @@ nav_order: 0
 ![SidecarT](/assets/images/SIDECART_TEXT_BW_1920x416.png)
 
 # SidecarT Documentation 
+{{ site.FIRMWARE_VERSION }}
+{: .label .label-purple }
 Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
 ## Table of Contents
@@ -43,13 +45,13 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         <td style="border: none;">
             <h3><a href="/software_development">Software Development</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Setting up the development environment, compiling the code, debugging, testing and building the firmware.
             </p>
         </td>
         <td style="border: none;">
             <h3><a href="/programming_sidecart">Programming SidecarT</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Learn about the ROM emulation, the asynchronous and synchronous programs, develop the firmware and drivers.
             </p>
         </td>
     </tr>
