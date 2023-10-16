@@ -142,6 +142,12 @@ So the new wave diagram of the access to the Atari ST cartridge address and data
 ![Time Multiplexed Read Operation on a Multiplexed Bus](/assets/wavedrom/real-read-operation.png)
 {: refdef}
 
+But this is also an ideal scenario. Things are more complicated and the time needed to stabilize the signals in the buses is not negligible. So we will have to take into account the time needed to stabilize the signals in the buses. And we will have to take into account the time needed to change the direction of the GPIOs. But here comes the RP2040 and its Programmable IO (PIO) to the rescue.
+
+### Programmable IO (PIO) to the rescue
+
+The RP2040 introduces a novel feature known as Programmable Input/Output (PIO) blocks to the world of microcontrollers. These PIOs are highly versatile, providing a new layer of adaptability and control in interfacing with external devices and managing I/O pins. It provides an interface that allows developers to execute custom programs to manipulate digital I/O pins directly. It allows to create custom interfaces and data protocols, even allowing for the emulation of certain peripheral interfaces. As a low level interface is capable of execute code at a very high and predictable speed. It executes instructions independently of the ARM cores and operates typically on a basis of one instruction per clock cycle, even reading or writing to the GPIOs.
+
 
 
 ## A1 to A15 address bus without ROMx signals

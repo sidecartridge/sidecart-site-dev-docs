@@ -55,11 +55,25 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
     </tr>
     <tr>
         <td style="border: none;">
+            <h3><a href="/configuration">How to</a></h3>
+            <p>
+            How to configure the SidecarT board
+            </p>
+        </td>
+        <td style="border: none;">
+            <h3><a href="/parameters">Compatibility</a></h3>
+            <p>
+            Description of all the parameters available in the SidecarT
+            </p>
+        </td>
+        <td style="border: none;">
             <h3><a href="/how_to">How to</a></h3>
             <p>
             Different small tutorials to customize the SidecarT to your needs
             </p>
         </td>
+    </tr>
+    <tr>
         <td style="border: none;">
             <h3><a href="/compatibility_issues">Compatibility</a></h3>
             <p>
@@ -67,9 +81,15 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
             </p>
         </td>
         <td style="border: none;">
+            <h3><a href="/troubleshooting">Troubleshooting</a></h3>
+            <p>
+            Check this section if you have issues with your SidecarT
+            </p>
+        </td>
+        <td style="border: none;">
             <h3><a href="/faq">FAQ</a></h3>
             <p>
-            Learn blah, blah, blah...
+            Frequently Asked Questions
             </p>
         </td>
     </tr>
