@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Troubleshooting and Support
-nav_order: 8
+title: Troubleshooting
 ---
 
 # Troubleshooting
