@@ -55,13 +55,13 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
     </tr>
     <tr>
         <td style="border: none;">
-            <h3><a href="/configuration">How to</a></h3>
+            <h3><a href="/configuration">Configuration</a></h3>
             <p>
             How to configure the SidecarT board
             </p>
         </td>
         <td style="border: none;">
-            <h3><a href="/parameters">Compatibility</a></h3>
+            <h3><a href="/parameters">Parameters</a></h3>
             <p>
             Description of all the parameters available in the SidecarT
             </p>
