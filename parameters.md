@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Paremeters
+title: Parameters
 nav_order: 8
 ---
 
