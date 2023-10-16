@@ -2,6 +2,7 @@
 layout: default
 title: Programming SidecarT
 nav_order: 6
+has_toc: true
 ---
 
 # Programming SidecarT

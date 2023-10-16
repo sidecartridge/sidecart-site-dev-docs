@@ -2,6 +2,7 @@
 layout: default
 title: Configuration
 nav_order: 7
+has_toc: true
 ---
 
 # Configure the SidecarT board

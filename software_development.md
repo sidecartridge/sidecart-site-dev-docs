@@ -2,6 +2,7 @@
 layout: default
 title: Software Development
 nav_order: 5
+has_toc: true
 ---
 
 # Software Development

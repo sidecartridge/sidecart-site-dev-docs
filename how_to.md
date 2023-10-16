@@ -2,6 +2,7 @@
 layout: default
 title: How to
 nav_order: 9
+has_toc: true
 ---
 
 # How to

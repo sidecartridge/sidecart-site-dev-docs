@@ -2,6 +2,7 @@
 layout: default
 title: Architecture and Design
 nav_order: 3
+has_toc: true
 ---
 
 # Architecture and Design

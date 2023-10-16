@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Troubleshooting
+has_toc: true
 ---
 
 # Troubleshooting

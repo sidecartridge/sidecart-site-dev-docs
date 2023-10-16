@@ -2,6 +2,7 @@
 layout: default
 title: Hardware Interface
 nav_order: 4
+has_toc: true
 ---
 
 # Hardware Interface
