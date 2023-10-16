@@ -14,7 +14,7 @@ ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST 
 
 The SidecarT board can be configured to use a folder in the microSD card to host the ROM files. This section explains how to configure the SidecarT board to use a folder in the microSD card. 
 
-1. **Preparation**: Ensure you have a microSD card formatted to FAT32. For instructions, visit [How to format the microSD card](/how_to#format-the-microsd-card).
+1. **Preparation**: Ensure you have a microSD card formatted to FAT16. For instructions, visit [How to format the microSD card](/how_to#format-the-microsd-card).
    
 2. **Folder Creation**: On the root directory of the microSD card, create a folder named `roms`. This will serve as the storage for the ROM files. By default, the SidecarT board will scan this directory for ROMs.
 
@@ -70,9 +70,9 @@ The Floppies Emulation represents a significant enhancement to the SidecarT boar
 
 ### Hosting Floppy Images on microSD
 
-To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT32-formatted microSD card.
+To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16-formatted microSD card.
 
-1. **MicroSD Preparation**: The first requirement is a FAT32-formatted microSD card. Instructions can be found in the [How to format the microSD card](/how_to#format-the-microsd-card) guide.
+1. **MicroSD Preparation**: The first requirement is a FAT16-formatted microSD card. Instructions can be found in the [How to format the microSD card](/how_to#format-the-microsd-card) guide.
 
 {: .note}
 If you've already set up ROM Emulation, your microSD is likely formatted appropriately, and you can bypass this step.
@@ -102,3 +102,26 @@ If a `.rw` duplicate already exists, the board will prioritize it over the origi
 {: .warning }
 It's important to note that the SidecarT board won't validate the integrity of `.rw` files. If such a file is corrupted, the Atari ST won't be able to interface with it, either for reading or writing.
 {: .warning}
+
+## Configuring the Configurator Application
+
+The Configurator application serves as the central interface for the SidecarT board's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
+
+### Boot Mode Adjustments
+
+Upon the initial power-up of the SidecarT board, or when the `SELECT` button is held for over 1 second, the Configurator is invoked. This application resides in the `Cartridge` drive, which is visible upon starting the Atari ST.
+
+The behavior when pressing `SELECT` for over 1 second is configurable. The SidecarT board can either:
+
+1. Swiftly transition to the `Configurator` mode, or
+2. Delay this transition until the Atari ST's next full power cycle (not just a reset).
+
+This behavior is determined by the `SAFE_CONFIG_REBOOT` parameter.
+
+Immediately transitioning can be jarring for ongoing Atari ST applications. Especially for applications or drivers overseeing other storage devices, this abrupt switch can lead to compatibility concerns. As a preventive measure, the SidecarT board can be set to defer this transition until the subsequent power cycle.
+
+By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will hold off until the next power cycle before transitioning to `Configurator` mode. Altering this behavior involves tweaking the `SAFE_CONFIG_REBOOT` parameter. Further insights can be found in the [Configuration Parameters](/parameters) section.
+
+{: .note}
+There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes sense. For instance, developers frequently adjusting the SidecarT configuration might find repeatedly waiting for a power cycle tedious. However, exercise this option judiciously.
+{: .note}

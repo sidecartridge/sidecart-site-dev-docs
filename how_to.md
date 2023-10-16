@@ -7,6 +7,52 @@ nav_order: 9
 # How to
 This section showcases a variety of different configurations and parametric setups for the SidecarT board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the SidecarT board. If you are new to the SidecarT project, please refer to the [Getting Started](/getting_started) section first.
 
+## Format the microSD card
+
+To use the SidecarT effectively, your microSD card needs to be formatted in FAT16. Here's how you can format it in FAT16 on various platforms:
+
+### Windows:
+
+1. Insert your microSD card into your computer using an SD card reader.
+2. Press `Windows + E` to open the File Explorer.
+3. Right-click on your microSD card from the list of devices and choose `Format`.
+4. In the Format window, from the `File system` dropdown, choose `FAT (Default)` (Note: FAT16 might be referred to as just FAT in some versions of Windows).
+5. Click `Start` to format the card.
+6. Once completed, safely eject the card from your computer.
+
+### macOS:
+
+1. Insert your microSD card into your computer.
+2. Open `Disk Utility` (you can use Spotlight with `Command + Space` and then type "Disk Utility").
+3. Select your microSD card from the list on the left and then click `Erase`.
+4. For the format, choose `MS-DOS (FAT)` which is the macOS term for FAT16.
+5. Click `Erase` to format the card.
+6. Once the process is complete, safely eject the card from your Mac.
+
+### Linux:
+
+**Using the Terminal:**
+
+1. Insert your microSD card into your computer.
+2. Open a terminal.
+3. Type `sudo fdisk -l` to list all the storage devices. Identify your microSD card's name (usually `/dev/sdb` or `/dev/mmcblk0` or similar).
+4. Type `sudo umount /dev/sdX*` replacing `X` with your microSD card letter.
+5. Type `sudo mkfs.vfat -F 16 /dev/sdX` again replacing `X` with your microSD card letter to format it to FAT16.
+6. Once the process completes, you can safely eject the microSD card.
+
+**Using GParted (GUI):**
+
+1. Insert your microSD card into your computer.
+2. Open GParted. If you don't have it installed, you can install it using `sudo apt install gparted` on Debian/Ubuntu based distributions.
+3. Select your microSD card from the top right dropdown.
+4. Right-click on the microSD card partition and select `Format to` -> `fat16`.
+5. Click on the green checkmark to apply the changes.
+6. Once the process completes, close GParted and safely eject your microSD card.
+
+{: .note }
+Always ensure you've selected the correct device to format, especially when working with disk utilities, to avoid data loss.
+{: .note }
+
 ## Set up your own HTTP server for your ROMs
 
 ### Introduction
