@@ -2,10 +2,19 @@
 layout: default
 title: Configuration
 nav_order: 7
-has_toc: true
 ---
 
 # Configure the SidecarT board
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ## ROM Emulation Configuration
 

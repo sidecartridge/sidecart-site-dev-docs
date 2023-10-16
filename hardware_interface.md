@@ -2,11 +2,21 @@
 layout: default
 title: Hardware Interface
 nav_order: 4
-has_toc: true
 ---
 
 # Hardware Interface
+{: .no_toc }
+
 This section delves into the hardware interface of the SidecarT board, specifically the way the board and the code in the RP2040 handle the mismatch of the size of the buses between the RP2040 and the Atari ST cartridge port.
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ## The Atari ST Cartridge Port
 

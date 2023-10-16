@@ -2,11 +2,21 @@
 layout: default
 title: Software Development
 nav_order: 5
-has_toc: true
 ---
 
 # Software Development
+{: .no_toc }
+
 This section is dedicated to providing developers with a comprehensive guide to software development for the SidecarT board. It covers setting up the development environment, understanding the software architecture, utilizing the API, and exploring example projects. Grasping these elements is crucial for developing robust, efficient, and innovative applications on the SidecarT platform.
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ## Set up the development environment
 

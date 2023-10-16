@@ -2,14 +2,25 @@
 layout: default
 title: Architecture and Design
 nav_order: 3
-has_toc: true
 ---
 
 # Architecture and Design
+{: .no_toc }
+
 This section explores the underlying architecture and design principles of the SidecarT board. Understanding the architecture and design is crucial for developers to effectively interact with the board and develop robust and efficient applications.
 
 {: .important }
 The SidecarT board is a hardware solution that provides an environment for the execution of applications in a RP2040 Microcontroller -manufactured by the Raspberry foundation- that can share a range of its RAM memory with the host computer, an Atari ST computer series.
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 
 ## The SidecarT board from the Atari ST perspective
 
