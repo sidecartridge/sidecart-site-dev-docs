@@ -39,7 +39,7 @@ The SidecarT board can be configured to use a web server to host the ROM files. 
 
 2. **HTTPS Limitation**:
 {: .warning}
-**Attention**: The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
+The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
 {: .warning}
 
 3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
@@ -56,14 +56,14 @@ Pressing the `D` key switches the `DELAY_ROM_EMULATION` parameter between `false
 
 2. **Usage**: When ROM delay is active, ROM emulation isn't immediate post-power-up. Activation occurs after holding down the `SELECT` button for over a second.
 
-{: .warning }
-**Important**: Given the `SELECT` button's dual function, you cannot access the `Configurator` mode using it directly. After enabling the ROM, press `SELECT` again to access the `Configurator` mode.
-{: .warning}
+{: .important }
+Given the `SELECT` button's dual function, you cannot access the `Configurator` mode using it directly. After enabling the ROM, press `SELECT` again to access the `Configurator` mode.
+{: .important}
 
 ## Floppies Emulation configuration (PREVIEW)
 
 {: .warning }
-**Preview Notice**: The Floppies Emulation feature is currently in preview. It remains under active development. If you opt to use it in read-write mode, ensure backups are made of your floppy images.
+The Floppies Emulation feature is currently in preview. It remains under active development. If you opt to use it in read-write mode, ensure backups are made of your floppy images.
 {: .warning}
 
 The Floppies Emulation represents a significant enhancement to the SidecarT board. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
@@ -87,9 +87,9 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
    - Power up the board; it should recognize the microSD card automatically.
    - Enter `Configurator` mode by pressing the `SELECT` button. Navigate to either `Emulate Floppy image` menu option (read-only or read-write) and select the desired floppy image. Upon reboot, the Atari ST will interface with this image as if it were an actual floppy disk.
 
-{: .hint }
+{: .note }
 If `floppies` isn't your desired directory name, it can be changed. Adjust the `FLOPPIES_FOLDER` parameter. Details are available in the [Configuration Parameters](/parameters) section.
-{: .hint}
+{: .note}
 
 ### Read-Write Emulation for Floppy Images
 
