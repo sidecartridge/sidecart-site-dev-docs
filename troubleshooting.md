@@ -33,7 +33,7 @@ The cartridge drive uses the letter `c` in lowercase. If you can't see the `Driv
    - You should also rename `Icon label` to `Cartridge` or `Cartridge Drive` to make it easier to identify.
    - Finally, click on `Install`. The `Drive c:` unit should now be visible. Open it and click twice on the application `SIDECART.TOS` to run it.
 
-### I get an error message connecting to the WiFi network
 
+### I get an error message connecting to the WiFi network
 This is a known and random issue with the WiFi module. As a workaround, while you are in the `Configurator` mode and running the `SIDECART.TOS` application, you can try to reset the SidecarT board by pressing the `RESET` button on the board surface. This will reboot the SidecarT, restarting the WiFi module and allowing you to connect to the WiFi network. If this doesn't work, you can try to power off the Atari ST, wait for a few seconds, and power it on again.
 
