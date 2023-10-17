@@ -83,7 +83,7 @@ So the ROM emulation code *assumes* that the ROM code and/or data is already loc
 
 ### Memory mapping
 
-The memory mapping of the SidecarT board is defined in the file [`memmap_romemul.id``](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/memmap_romemul.ld) and it performs significant changes to the standard memory mapping of a RP2040 application. The memory mapping of the SidecarT board is:
+The memory mapping of the SidecarT board is defined in the file [`memmap_romemul.id`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/memmap_romemul.ld) and it performs significant changes to the standard memory mapping of a RP2040 application. The memory mapping of the SidecarT board is:
 - FLASH: Reduced from the 2MBytes found in the Raspberry Pi Pico W boards to 1916Kbytes.
 - RAM: Reduced from the 264KBytes found in the Raspberry Pi Pico W boards to 128Kbytes.
 - SCRATCH_X: No changes.
@@ -98,7 +98,7 @@ If a developer wants to develop software only using 64Kbytes of shared RAM (or R
 It's not easy to debug the PIO section of the code, but it's possible to interrupt the DMA channels with IRQs and read the data from the FIFO queues. The code to do so is in the file [`romemul.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.c`#L27C1-L52C2). To enable these functions, they must be passed as argument in the `init_romemul` function. Example:
 
 ```c
-  init_romemul(NULL, dma_irq_handler_lookup_callback, false);
+  init_romemul(NULL, dma_irq_handler_lookup_callback, true);
 ```
 
 We will gain access to the read address obtained from the bus, but also to the data read from the shared RAM memory before pushing it to the FIFO to the PIOs.

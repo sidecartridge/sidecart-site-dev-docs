@@ -19,3 +19,17 @@ This section is dedicated to assisting developers in resolving issues encountere
 
 ## Common Issues and Resolutions
 
+### I can't see the cartridge drive in Configurator mode
+
+The cartridge drive uses the letter `c` in lowercase. If you can't see the `Drive c:` unit, please be sure you are in `Configurator` mode:
+
+1. Press the `SELECT` button to enter the `Configurator` mode for more than 1 second.
+2. Power cycle your computer.
+3. After boot, you should see the `Drive c:` unit. If you don't see it, do as follows:
+   - Click on any other unit (e.g. `FLOPPY DISK` or `HARD DISK`).
+   - Open the `Options` menu at the top of the screen.
+   - Click on `Install Disk Drive...`.
+   - Change `Drive identifier` to `c` **in lower casee**.
+   - You should also rename `Icon label` to `Cartridge` or `Cartridge Drive` to make it easier to identify.
+   - Finally, click on `Install`. The `Drive c:` unit should now be visible. Open it and click twice on the application `SIDECART.TOS` to run it.
+
