@@ -18,6 +18,8 @@ This section provides developers with in-depth guidance on programming the Sidec
 {:toc}
 </details>
 
+
+
 ## Introduction
 
 Before starting with the programming of the SidecarT board, it is important to understand the two basic ROM emulation modes available and describe in detail in the section [Architecture and Design](/architecture_and_design/#the-sidecart-board-from-the-atari-st-perspective). To summarize the two modes:
@@ -34,32 +36,32 @@ The full ROM emulation mode is the simplest mode to understand and to use. It is
 
 ### The main read and write loop
 
-- The GPIO pins of the RP2040 are configured as inputs and outputs to emulate the address and data buses of the ROM circuit. To do so, the RP2040 uses the PIO state machines to read and write data the signals of the address and data buses at very deterministic and precise time. You can read the PIO code in the file `[romemul.pio](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.pio#L62C1-L95C1)` to understand how the PIO state machines are configured. 
+- The GPIO pins of the RP2040 are configured as inputs and outputs to emulate the address and data buses of the ROM circuit. To do so, the RP2040 uses the PIO state machines to read and write data the signals of the address and data buses at very deterministic and precise time. You can read the PIO code in the file [`romemul.pio`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.pio`#L62C1-L95C1)` to understand how the PIO state machines are configured. 
 
 {: .warning }
 This is a critical section of the ROM emulation code, and any change can have a dramatic impact. If you want to change the ROM emulation code, you should be very familiar with the PIO state machines and the PIO assembler language.
 
-- The DMAs (Direct Memory Access) of the RP2040 are used to read and write data from the shared RAM memory. Once the RP2040 has read the data from the GPIO inputs, it will use a FIFO queue to store the binary representation of the ROM address in a registry of a DMA instance to access the equivalent address in the shared RAM memory. The code to configure the DMA read address is in the file `[romemul.c](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.c#L156C1-L170C15)`.
+- The DMAs (Direct Memory Access) of the RP2040 are used to read and write data from the shared RAM memory. Once the RP2040 has read the data from the GPIO inputs, it will use a FIFO queue to store the binary representation of the ROM address in a registry of a DMA instance to access the equivalent address in the shared RAM memory. The code to configure the DMA read address is in the file [`romemul.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.c`#L156C1-L170C15)`.
 
-- Once we have the DMA read address configured, we can start the DMA read operation. The DMA will read the data from the shared RAM memory and store it in another FIFO queue connected to the PIO state machine. The code to start the DMA read operation is in the file `[romemul.c](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.c#L138C1-L154C16)`.
+- Once we have the DMA read address configured, we can start the DMA read operation. The DMA will read the data from the shared RAM memory and store it in another FIFO queue connected to the PIO state machine. The code to start the DMA read operation is in the file [`romemul.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.c`#L138C1-L154C16)`.
 
-- The PIO state machine will read the data from the FIFO queue, will change the direction of the GPIO inputs to outputs, and write it to the now GPIO outputs. The code to read the data from the FIFO queue and write it to the GPIO outputs is in the file `[romemul.pio](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.pio#L96C1-L123C6)`. The PIO code will maintain in the data bus the information until the !ROMx signals changes from `ACTIVE` to `INACTIVE`.
+- The PIO state machine will read the data from the FIFO queue, will change the direction of the GPIO inputs to outputs, and write it to the now GPIO outputs. The code to read the data from the FIFO queue and write it to the GPIO outputs is in the file [`romemul.pio`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.pio`#L96C1-L123C6)`. The PIO code will maintain in the data bus the information until the !ROMx signals changes from `ACTIVE` to `INACTIVE`.
 
 ### Monitoring the changes in the !ROMx signals
 
-The code must monitor constantly when the !ROMx signals change from `INACTIVE` to `ACTIVE` and vice versa. The code to monitor the changes in the !ROMx signals is in the file `[romemul.pio](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.pio#L42C1-L60C1)` and it uses the PIO state machines to detect the changes in the !ROMx signals. When the !ROMx signals change from `INACTIVE` to `ACTIVE`, the code will raise an interrupt to inform to the main loop in `romemul_read` that the Atari ST is trying to read data from the ROM memory expansion.
+The code must monitor constantly when the !ROMx signals change from `INACTIVE` to `ACTIVE` and vice versa. The code to monitor the changes in the !ROMx signals is in the file [`romemul.pio`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.pio`#L42C1-L60C1)` and it uses the PIO state machines to detect the changes in the !ROMx signals. When the !ROMx signals change from `INACTIVE` to `ACTIVE`, the code will raise an interrupt to inform to the main loop in `romemul_read` that the Atari ST is trying to read data from the ROM memory expansion.
 
 It's guaranteed that no access to ROM3 or ROM4 will ever happen concurrently. So the main loop only needs to read the address and write the data to the bus mantaining the signals in the bus enough time for the Atari ST to read the data.
 
 ### Orchestrating the access to the read and write bus
 
-It's critical to guarantee that never at any single time the RP2040 tries to access the address and data bus at the same time. To do so, we have a little state machine of four states (READ_WRITE, NOT_READ_WRITE, READ_NOT_WRITE, NOT_READ_NOT_WRITE) to enable the access to the bus or keeping it in high impedance (see the section [Hardware interface](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.pio#L42C1-L60C1)).
+It's critical to guarantee that never at any single time the RP2040 tries to access the address and data bus at the same time. To do so, we have a little state machine of four states (READ_WRITE, NOT_READ_WRITE, READ_NOT_WRITE, NOT_READ_NOT_WRITE) to enable the access to the bus or keeping it in high impedance (see the section [Hardware interface](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.pio`#L42C1-L60C1)).
 
 The PIO code uses this state machine as a side-set to enable the access to the bus. It's the references to the state machine at the right side of the assembly instructions.
 
 ### Initializing the ROM emulation
 
-In the `[main.c](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/main.c)` is where the full Emulation initializes. The code is:
+In the [`main.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/`main.c`)` is where the full Emulation initializes. The code is:
 
 ```c
     // Canonical way to initialize the ROM emulator:
@@ -77,13 +79,13 @@ The function `init_romemul` will copy the FLASH ROMs to RAM, and it will start t
 
 The `init_romemul` assumes that there is information in the FLASH that must copy to the RAM range of the shared memory with the ROM of the Atari ST. The information in the FLASH is the ROM code and/or data we want our Atari ST to read from the ROM in the cartridge port expansion.
 
-The base address of the FLASH is `XIP_BASE + FLASH_ROM_LOAD_OFFSET`. `XIP_BASE` is the base address of the FLASH, and `FLASH_ROM_LOAD_OFFSET` is the offset where the ROM code and/or data is located in the FLASH. You can read these constants in the file `[constants.c](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/constants.c)`. The destination address in the RAM is defined by the constant `ROM_IN_RAM_ADDRESS`.
+The base address of the FLASH is `XIP_BASE + FLASH_ROM_LOAD_OFFSET`. `XIP_BASE` is the base address of the FLASH, and `FLASH_ROM_LOAD_OFFSET` is the offset where the ROM code and/or data is located in the FLASH. You can read these constants in the file [`constants.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/`constants.c`)`. The destination address in the RAM is defined by the constant `ROM_IN_RAM_ADDRESS`.
 
 So the ROM emulation code *assumes* that the ROM code and/or data is already located in the FLASH at the address `XIP_BASE + FLASH_ROM_LOAD_OFFSET` before its initialization and it will copy it to the RAM at the address `ROM_IN_RAM_ADDRESS`. Who is responsible for copying the ROM code and/or data to the FLASH? The answer is the `Configurator` program. 
 
 ### Memory mapping
 
-The memory mapping of the SidecarT board is defined in the file `[memmap_romemul.id](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/memmap_romemul.ld) and it performs significant changes to the standard memory mapping of a RP2040 application. The memory mapping of the SidecarT board is:
+The memory mapping of the SidecarT board is defined in the file [`memmap_romemul.id``](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/main/romemul/memmap_romemul.ld) and it performs significant changes to the standard memory mapping of a RP2040 application. The memory mapping of the SidecarT board is:
 - FLASH: Reduced from the 2MBytes found in the Raspberry Pi Pico W boards to 1916Kbytes.
 - RAM: Reduced from the 264KBytes found in the Raspberry Pi Pico W boards to 128Kbytes.
 - SCRATCH_X: No changes.
@@ -95,7 +97,7 @@ If a developer wants to develop software only using 64Kbytes of shared RAM (or R
 
 ### Debugging
 
-It's not easy to debug the PIO section of the code, but it's possible to interrupt the DMA channels with IRQs and read the data from the FIFO queues. The code to do so is in the file `[romemul.c](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.c#L27C1-L52C2)`. To enable these functions, they must be passed as argument in the `init_romemul` function. Example:
+It's not easy to debug the PIO section of the code, but it's possible to interrupt the DMA channels with IRQs and read the data from the FIFO queues. The code to do so is in the file [`romemul.c`](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.c`#L27C1-L52C2)`. To enable these functions, they must be passed as argument in the `init_romemul` function. Example:
 
 ```c
   init_romemul(NULL, dma_irq_handler_lookup_callback, false);
