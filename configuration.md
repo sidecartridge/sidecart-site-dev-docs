@@ -117,7 +117,7 @@ It's important to note that the SidecarT board won't validate the integrity of `
 
 The SidecarT board can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This is an out of the box feature that doesn't require any additional configuration besides the one explained above for the Floppies Emulation. 
 
-The SidecarT board will read the database and display the list of floppy images available in the `5. Download from the Floppy Images database` menu option of the `Configurator` application. Simply navigate through the list and select the application you want to download. The SidecarT board will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
+The SidecarT board will read the database and display the list of floppy images available in the `Download from the Floppy Images database` menu option of the `Configurator` application. Simply navigate through the list and select the application you want to download. The SidecarT board will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
 
 If you want to host your own database of floppy images, please continue reading. 
 
