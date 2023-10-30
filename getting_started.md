@@ -7,7 +7,7 @@ nav_order: 2
 # Getting Started
 {: .no_toc }
 
-This section provides guidance on the initial steps to start working with the SidecarT board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers can also ensure a smooth start to their journey with the SidecarT board by following the procedures outlined in this and coming sections.
+This section provides guidance on the initial steps to start working with the SidecarT board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the SidecarT board by following the procedures outlined in this and coming sections.
 
 <details open markdown="block">
   <summary>
@@ -18,10 +18,10 @@ This section provides guidance on the initial steps to start working with the Si
 {:toc}
 </details>
 
-## Prerequisites for Power Users
+## Prerequisites for All Users
 
 ### Skills
-To begin with the SidecarT board, **power users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari ST computer series, its hardware, and software.
+To begin with the SidecarT board, **all users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari ST computer series, its hardware, and software.
 
 ### Hardware
 Users will need the following hardware:
@@ -48,7 +48,7 @@ Users will need the following hardware:
 
 - (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs.sidecart.xyz/how_to/#format-the-microsd-card).
 
-## Initial Setup and Configuration
+### Initial Setup and Configuration
 The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecart.xyz/quickstart).
 
 <figure class="video_container">
@@ -61,7 +61,7 @@ The Initial Setup and Configuration is a multi-step process aimed at preparing t
 It does not matter if you are an experience developer or a novice enthusiast; the above steps are mandatory to get started with the SidecarT board. Please don't skip any of the steps, as it may lead to unexpected results.
 
 
-## Prerequisites for Developers
+## Prerequisites for Developers and Makers
 
 ### Skills
 To begin with the SidecarT board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. To contribute effectively to the SidecarT project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
@@ -127,7 +127,7 @@ Additionally, developers need the following hardware:
 {: .note }
 These prerequisites are considered as a minimum baseline. Being well-versed with the aforementioned technologies and having the required hardware will ensure a seamless initial experience with the SidecarT board.
 
-## Board Assembly
+### Board Assembly
 Anyone with the requisite skills can opt to build their own SidecarT board. The schematics needed to assemble the board can be found in the [Github repository](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/tree/main/schematics). It provides detailed blueprints to guide users through the assembly process.
 
 However, it is worth noting that acquiring the board through our [online shop](<Insert Shop URL here>) is likely to be both cheaper and more convenient, given the complexities involved in assembling the board.
