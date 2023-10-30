@@ -7,7 +7,7 @@ nav_order: 2
 # Getting Started
 {: .no_toc }
 
-This section provides guidance on the initial steps to start working with the SidecarT board, including prerequisites, board assembly instructions, setup and configuration. By following the procedures outlined in this section, developers can ensure a smooth start to their journey with the SidecarT board.
+This section provides guidance on the initial steps to start working with the SidecarT board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers can also ensure a smooth start to their journey with the SidecarT board by following the procedures outlined in this and coming sections.
 
 <details open markdown="block">
   <summary>
@@ -18,15 +18,50 @@ This section provides guidance on the initial steps to start working with the Si
 {:toc}
 </details>
 
-## Prerequisites
+## Prerequisites for Power Users
 
 ### Skills
-To begin with the SidecarT board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. 
+To begin with the SidecarT board, **power users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari ST computer series, its hardware, and software.
 
-## Prerequisites
+### Hardware
+Users will need the following hardware:
+
+- An Atari ST computer series: ST, STE, or MegaST or MegaSTE
+
+{:refdef: style="text-align: center;"}
+![Atari 520ST](https://sidecart.xyz/assets/images/quickstart/atari520st.jpeg)
+{: refdef}
+
+
+- A SidecarT board
+
+{:refdef: style="text-align: center;"}
+![SidecarT without Raspberry Pi Pico](https://sidecart.xyz/assets/images/quickstart/board-single.png)
+{: refdef}
+
+
+- A [Raspberry Pi Pico WH (Reference SC0919)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh), which already comes with the necessary 40-pin connectors to attach to the SidecarT's motherboard, or a [Raspberry Pi Pico W (Reference SC0918)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh) and procure two 20-pin connectors, then solder them to the board yourself. Here's a [link to a manufacturer](https://www.lcsc.com/product-detail/span-style-background-color-ff0-Pin-span-Headers_BOOMELE-Boom-Precision-Elec-C50981_C50981.html) for reference.
+
+{:refdef: style="text-align: center;"}
+![Raspberry Pi Pico WH](https://sidecart.xyz/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
+{: refdef}
+
+- (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs.sidecart.xyz/how_to/#format-the-microsd-card).
+
+## Initial Setup and Configuration
+The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecart.xyz/quickstart).
+
+<figure class="video_container">
+    <iframe
+        src="https://www.youtube.com/embed/d1EatFnmPGs?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
+
+## Prerequisites for Developers
 
 ### Skills
-To contribute effectively to the SidecarT project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
+To begin with the SidecarT board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. To contribute effectively to the SidecarT project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
 
 - **C Programming**: Essential for software development and firmware writing. Ensure you have a grasp on data structures, memory management, and algorithm development within C.
 
