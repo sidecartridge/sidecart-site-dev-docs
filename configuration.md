@@ -24,7 +24,7 @@ ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST 
 
 The SidecarT board can be configured to use a folder in the microSD card to host the ROM files. This section explains how to configure the SidecarT board to use a folder in the microSD card. 
 
-1. **Preparation**: Ensure you have a microSD card formatted to FAT16. For instructions, visit [How to format the microSD card](/how_to#format-the-microsd-card).
+1. **Preparation**: Ensure you have a microSD card formatted to FAT16 or exFAT. For instructions, visit [How to format the microSD card](/how_to#format-the-microsd-card).
    
 2. **Folder Creation**: On the root directory of the microSD card, create a folder named `roms`. This will serve as the storage for the ROM files. By default, the SidecarT board will scan this directory for ROMs.
 
@@ -80,9 +80,9 @@ The Floppies Emulation represents a significant enhancement to the SidecarT boar
 
 ### Hosting Floppy Images on microSD
 
-To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16-formatted microSD card.
+To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16 or exFAT formatted microSD card.
 
-1. **MicroSD Preparation**: The first requirement is a FAT16-formatted microSD card. Instructions can be found in the [How to format the microSD card](/how_to#format-the-microsd-card) guide.
+1. **MicroSD Preparation**: The first requirement is a FAT16 or exFAT formatted microSD card. Instructions can be found in the [How to format the microSD card](/how_to#format-the-microsd-card) guide.
 
 {: .note}
 If you've already set up ROM Emulation, your microSD is likely formatted appropriately, and you can bypass this step.
