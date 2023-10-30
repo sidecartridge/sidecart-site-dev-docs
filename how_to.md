@@ -186,3 +186,12 @@ The file must be a CSV file with the following fields:
 - `tags`: An array of tags describing the program.
 - `url`: The URL of the floppy image file. If the url does not start with `http://`, it will be considered a relative URI.
 
+For example a excerpt of the file `a.csv`:
+
+```csv
+"A 320";"0";"";"";"";"AUTOMATION/A_093.ST"
+"A Mind forever voyaging";"0";"";"";"";"AUTOMATION/A_188.ST"
+"A PROTEC DEMO";"0";"";"";"";"MEDWAY/med_068.st"
+...
+"Anco strip poker1.8 Tos only";"0";"";"";"";"AUTOMATION/A_176.ST"
+```
