@@ -20,14 +20,14 @@ This section showcases a variety of different configurations and parametric setu
 
 ## Format the microSD card
 
-To use the SidecarT effectively, your microSD card needs to be formatted in FAT16. Here's how you can format it in FAT16 on various platforms:
+To use the SidecarT effectively, your microSD card needs to be formatted in FAT16 or exFAT. Here's how you can format it in FAT16 or exFAT on various platforms:
 
 ### Windows:
 
 1. Insert your microSD card into your computer using an SD card reader.
 2. Press `Windows + E` to open the File Explorer.
 3. Right-click on your microSD card from the list of devices and choose `Format`.
-4. In the Format window, from the `File system` dropdown, choose `FAT (Default)` (Note: FAT16 might be referred to as just FAT in some versions of Windows).
+4. In the Format window, from the `File system` dropdown, choose `FAT (Default)` (Note: FAT16 might be referred to as just FAT in some versions of Windows) or `exFAT`.
 5. Click `Start` to format the card.
 6. Once completed, safely eject the card from your computer.
 
@@ -36,7 +36,7 @@ To use the SidecarT effectively, your microSD card needs to be formatted in FAT1
 1. Insert your microSD card into your computer.
 2. Open `Disk Utility` (you can use Spotlight with `Command + Space` and then type "Disk Utility").
 3. Select your microSD card from the list on the left and then click `Erase`.
-4. For the format, choose `MS-DOS (FAT)` which is the macOS term for FAT16.
+4. For the format, choose `MS-DOS (FAT)` which is the macOS term for FAT16, or `ExFAT`.
 5. Click `Erase` to format the card.
 6. Once the process is complete, safely eject the card from your Mac.
 
@@ -48,7 +48,8 @@ To use the SidecarT effectively, your microSD card needs to be formatted in FAT1
 2. Open a terminal.
 3. Type `sudo fdisk -l` to list all the storage devices. Identify your microSD card's name (usually `/dev/sdb` or `/dev/mmcblk0` or similar).
 4. Type `sudo umount /dev/sdX*` replacing `X` with your microSD card letter.
-5. Type `sudo mkfs.vfat -F 16 /dev/sdX` again replacing `X` with your microSD card letter to format it to FAT16.
+5. If you want to format it to FAT16, type `sudo mkfs.vfat -F 16 /dev/sdX` again replacing `X` with your microSD card letter to format it to FAT16.
+6. If you want to format it to exFAT, type `sudo mkfs.exfat /dev/sdX` instead. Probably you will need to install some packages before, please check what your distribution needs.
 6. Once the process completes, you can safely eject the microSD card.
 
 **Using GParted (GUI):**
@@ -56,7 +57,7 @@ To use the SidecarT effectively, your microSD card needs to be formatted in FAT1
 1. Insert your microSD card into your computer.
 2. Open GParted. If you don't have it installed, you can install it using `sudo apt install gparted` on Debian/Ubuntu based distributions.
 3. Select your microSD card from the top right dropdown.
-4. Right-click on the microSD card partition and select `Format to` -> `fat16`.
+4. Right-click on the microSD card partition and select `Format to` -> `fat16` or `exFAT`. Note: probably you will need to install some packages before, please check what your distribution needs
 5. Click on the green checkmark to apply the changes.
 6. Once the process completes, close GParted and safely eject your microSD card.
 
