@@ -14,9 +14,14 @@ nav_order: 0
 {: .label .label-purple }
 Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
+## Latest firmware is v{{ site.FIRMWARE_VERSION }}
+
+* **[Latest release ({{ site.FIRMWARE_VERSION }})](https://sidecart.xyz/downloads)**
+* **[Changelog of the {{ site.FIRMWARE_VERSION }} release](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
+* [Older versions](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases)
+
 ## Quick links
 
-* [Firmware latest release ({{ site.FIRMWARE_VERSION }}) downloads](https://sidecart.xyz/downloads)
 * [RP2040 firmware source code](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico)
 * [Atari ST Configurator firmware source code](https://github.com/diegoparrilla/atarist-sidecart-firmware)
 * [Atari ST Floppy Emulator firmware source code](https://github.com/diegoparrilla/atarist-sidecart-floppy-emulator)
