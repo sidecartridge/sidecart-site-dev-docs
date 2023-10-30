@@ -113,6 +113,24 @@ If a `.rw` duplicate already exists, the board will prioritize it over the origi
 It's important to note that the SidecarT board won't validate the integrity of `.rw` files. If such a file is corrupted, the Atari ST won't be able to interface with it, either for reading or writing.
 {: .warning}
 
+## Atari ST database of floppy images
+
+The SidecarT board can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This section explains how to configure the SidecarT board to use a web server to host the floppy images database.
+
+### Set the URL of the database and images files
+
+The SidecarT board can be configured to use a web server to host both the database and images files. It's not necessary to have both in the same server. 
+
+1. **URL Configuration**: Point the SidecarT board to your web server's Atari ST database by setting the `FLOPPY_DB_URL` parameter. The board expects a folder named `db` and a file for each alphabet letter and number. Each of these files in Comma Separated Values (CSV) format contains the list of disk files urls. See [Set up your own HTTP server for your Atari ST database](/how_to#set-up-your-own-http-server-for-your-atari-st-database).
+
+2. **HTTPS Limitation**:
+{: .warning}
+The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
+{: .warning}
+
+3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
+
+
 ## Configuring the Configurator Application
 
 The Configurator application serves as the central interface for the SidecarT board's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
@@ -134,4 +152,21 @@ By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will 
 
 {: .note}
 There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes sense. For instance, developers frequently adjusting the SidecarT configuration might find repeatedly waiting for a power cycle tedious. However, exercise this option judiciously.
+{: .note}
+
+### Latest release verification
+
+The SidecarT board can be configured to check for the latest release of the firmware available. When the board is connected to the internet, it will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. This section explains how to configure the SidecarT board to check for the latest release.
+
+{: .note}
+You have to be connected to the internet to check for the latest release.
+{: .note}
+
+1. **URL Configuration**: The parameter `LATEST_RELEASE_URL` has to point to a file hosted on a web server. This file has to contain the latest release version number in the first line. The SidecarT board will check this file and compare the version number with the current version number. If the version number is different, the SidecarT board will display a blinking exclamation mark as explained above.
+
+2. **HTTPS Limitation**:
+{: .warning}
+The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
+{: .warning}
+
 {: .note}
