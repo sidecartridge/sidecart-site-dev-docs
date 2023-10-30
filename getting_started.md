@@ -46,6 +46,14 @@ Users will need the following hardware:
 ![Raspberry Pi Pico WH](https://sidecart.xyz/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
 {: refdef}
 
+
+- A USB A to micro USB *data* cable to install and update the SidecarT firmware on the Raspberry Pi Pico W. It's important to note the emphasis on a "data" cable - a simple charging cable won't suffice.
+
+{:refdef: style="text-align: center;"}
+![USB A to micro USB](https://sidecart.xyz/assets/images/quickstart/microusb.jpeg)
+{: refdef}
+
+
 - (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs.sidecart.xyz/how_to/#format-the-microsd-card).
 
 ### Initial Setup and Configuration
