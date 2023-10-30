@@ -169,3 +169,20 @@ The `ROMS_YAML_URL` is not the right name for this parameter. It will be renamed
 
 Once the parameter is changed, you can test the configuration by running the `Configurator` application. The application will display the list of ROMs available on the server. You can select a ROM and run it to test it.
 
+## Set up your own HTTP server for your Atari ST database
+
+### Introduction
+
+The SidecarT board is designed to access to a remote Atari ST database of floppy images with hundreds of images and thousands of applications. Thanks to this database, the SidecarT board can easily find and launch software in an easy way. The previous chapter explained how to configure a generic HTTP server, this chapter will explain how to configure the specific files for the Atari ST database.
+
+### The database files
+
+Inside a folder called `db` you will have to place the following files: a file with the alphabet letter or a number of the programs starting with it. For example, if you want to access to the programs starting with the letter `A`, you will have to place the file `a.csv` inside the `db` folder. The file `a.csv` will contain the list of programs starting with the letter `A`. The format of the file is as follows:
+
+The file must be a CSV file with the following fields:
+- `application_name`: The name of the program.
+- `status`: The status of the program. `0` means OK, any other value means KO.
+- `description`: A short description of the program.
+- `tags`: An array of tags describing the program.
+- `url`: The URL of the floppy image file. If the url does not start with `http://`, it will be considered a relative URI.
+
