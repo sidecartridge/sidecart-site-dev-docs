@@ -14,9 +14,9 @@ nav_order: 0
 {: .label .label-purple }
 Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
-## Latest firmware is v{{ site.FIRMWARE_VERSION }}
+## Latest firmware is {{ site.FIRMWARE_VERSION }}
 
-* **[Latest release ({{ site.FIRMWARE_VERSION }})](https://sidecart.xyz/downloads)**
+* **[Download release {{ site.FIRMWARE_VERSION }}](https://sidecart.xyz/downloads)**
 * **[Changelog of the {{ site.FIRMWARE_VERSION }} release](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
 * [Older versions](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases)
 
