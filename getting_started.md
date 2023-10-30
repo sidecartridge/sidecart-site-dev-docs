@@ -26,7 +26,7 @@ To begin with the SidecarT board, **all users are required to have a minimum exp
 ### Hardware
 Users will need the following hardware:
 
-- An Atari ST computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the SidecarT board can emulate a physical floppy drive, so an Atari ST without a (or a broken) floppy drive can still be used with the SidecarT board.
+- An Atari ST computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the SidecarT board can emulate a physical floppy drive, so an Atari ST without a (or a broken) floppy drive can still be used with the SidecarT board. The SidecarT board is also compatible with TOS versions ranging from 1.00 to 2.06, almost every single ST and STE series compute sold.
 
 {:refdef: style="text-align: center;"}
 ![Atari 520ST](https://sidecart.xyz/assets/images/quickstart/atari520st.jpeg)
