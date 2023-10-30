@@ -188,7 +188,7 @@ The file must be a CSV file with the following fields:
 
 For example a excerpt of the file `a.csv`:
 
-```csv
+```
 "A 320";"0";"";"";"";"AUTOMATION/A_093.ST"
 "A Mind forever voyaging";"0";"";"";"";"AUTOMATION/A_188.ST"
 "A PROTEC DEMO";"0";"";"";"";"MEDWAY/med_068.st"
