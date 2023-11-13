@@ -173,4 +173,28 @@ You have to be connected to the internet to check for the latest release.
 The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
 {: .warning}
 
+### The STABLE and BETA release distribution workflows
+
+The SidecarT board Latest release verification can be configured to check for new releases of type STABLE or BETA. With the growing user base of SidecarT, the need for extensive and stability-focused testing is becoming increasingly important. To address this, we propose introducing two distinct release workflows. This approach aims to balance the needs of our diverse user community, ranging from makers to those seeking more stable and reliable software.
+
+1. **BETA Release Workflow**: This caters to users who are interested in testing the latest features and providing valuable feedback. It allows us to incorporate user experiences into development, ensuring that the software meets a wide range of needs and use cases.
+
+2. **STABLE (or Latest) Release Workflow**: Aimed at users who prioritize stability and reliability. This workflow focuses on delivering a polished and thoroughly tested version of the software, thereby reducing support queries and enhancing user satisfaction.
+
+This is controlled through the `LATEST_RELEASE_URL` parameter in the configuration.
+
+If `LATEST_RELEASE_URL` points to http://atarist.sidecart.xyz/version.txt, users will be notified about the availability of a new STABLE (or latest) release.
+
+If `LATEST_RELEASE_URL` points to http://atarist.sidecart.xyz/beta.txt, users will be alerted when a new BETA release is available.
+
+In both cases, the SidecarT board will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
+
+To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecart.xyz/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
+
+{: .note}
+
+{: .note}
+
+
+
 {: .note}

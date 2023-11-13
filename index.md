@@ -14,10 +14,14 @@ nav_order: 0
 {: .label .label-purple }
 Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
-## 🚀 Latest Firmware: {{ site.FIRMWARE_VERSION }}
-* **💾 [Download Release {{ site.FIRMWARE_VERSION }}](https://sidecart.xyz/downloads)**
-* **📝 [Changelog for Release {{ site.FIRMWARE_VERSION }}](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
+## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
+* **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecart.xyz/downloads)**
+* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
 * 🕒 [Older Versions](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases)
+
+## 🚀 Latest BETA Firmware: {{ site.FIRMWARE_BETA_VERSION }}
+* **💾 [Download BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://sidecart.xyz/downloads)**
+* **📝 [Changelog for BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_BETA_VERSION }})**
 
 ## 🐞 Bugs, Issues, and Enhancements
 * [Reporting tool](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues)
