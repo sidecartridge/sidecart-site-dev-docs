@@ -179,13 +179,13 @@ The SidecarT board Latest release verification can be configured to check for ne
 
 1. **BETA Release Workflow**: This caters to users who are interested in testing the latest features and providing valuable feedback. It allows us to incorporate user experiences into development, ensuring that the software meets a wide range of needs and use cases.
 
-2. **STABLE (or Latest) Release Workflow**: Aimed at users who prioritize stability and reliability. This workflow focuses on delivering a polished and thoroughly tested version of the software, thereby reducing support queries and enhancing user satisfaction.
+2. **STABLE Release Workflow**: Aimed at users who prioritize stability and reliability. This workflow focuses on delivering a polished and thoroughly tested version of the software, thereby reducing support queries and enhancing user satisfaction.
 
 This is controlled through the `LATEST_RELEASE_URL` parameter in the configuration.
 
-If `LATEST_RELEASE_URL` points to `http://atarist.sidecart.xyz/version.txt``, users will be notified about the availability of a new STABLE (or latest) release.
+If `LATEST_RELEASE_URL` points to `http://atarist.sidecart.xyz/version.txt`, users will be notified about the availability of a new STABLE (or latest) release.
 
-If `LATEST_RELEASE_URL` points to `http://atarist.sidecart.xyz/beta.txt``, users will be alerted when a new BETA release is available.
+If `LATEST_RELEASE_URL` points to `http://atarist.sidecart.xyz/beta.txt`, users will be alerted when a new BETA release is available.
 
 In both cases, the SidecarT board will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
 
