@@ -18,6 +18,18 @@ This section showcases a variety of different configurations and parametric setu
 {:toc}
 </details>
 
+## Update the firmware
+
+To install the latest SidecarT firmware on the Raspberry Pi Pico W, connect your PC, Mac, or Linux to the Raspberry Pi Pico W using the USB cable. Now hold down the BOOTSEL button for a few seconds and then hold down the RESET button. Now release the RESET button and gently release the BOOTSEL button afterwards. A new drive named `RPI-RP2` should appear on your PC, Mac, or Linux. Open it.
+
+{:refdef: style="text-align: center;"}
+[![How enter in BOOTSEL mode](https://sidecart.xyz/assets/images/quickstart/bootsel-mode.gif)]
+{: refdef}
+
+In this directory, you will need to copy the latest STABLE or BETA Firmware versions, which you can directly get from the [download page](https://sidecart.xyz/downloads).
+
+Once you've copied the file corresponding to your Raspberry Pico W, disconnect the power cable. The new firmware has now been flashed.
+
 ## Format the microSD card
 
 To use the SidecarT effectively, your microSD card needs to be formatted in FAT16 or exFAT. Here's how you can format it in FAT16 or exFAT on various platforms:
