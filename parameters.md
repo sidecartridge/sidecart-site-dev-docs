@@ -11,7 +11,8 @@ Please modify the parameters with caution, as they can affect the behavior of th
 
 | Parameter  | Type      | Default | Description                               |
 |:-----------|:----------|:--------|:------------------------------------------|
-| BOOT_FEATURE {: .d-inline-block }
+| BOOT_FEATURE
+{: .d-inline-block }
 v0.0.1
 {: .label .label-purple }
 | STRING     | CONFIGURATOR | Firmware mode to start after SidecarT reboot   |
