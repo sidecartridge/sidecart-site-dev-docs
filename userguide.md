@@ -179,11 +179,31 @@ A special mention to read-write images with the extions `.rw`. All `.ST` files a
 
 The SidecarT board can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This is an out of the box feature that doesn't require any additional configuration besides the one explained above for the Floppies Emulation. 
 
-The SidecarT board will read the database and display the list of floppy images available in the `Download from the Floppy Images database` menu option of the `Configurator` application. Simply navigate through the list and select the application you want to download. The SidecarT board will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
+### How to download and emulate a floppy image from the database
 
-If you want to host your own database of floppy images, please continue reading. 
+This section explains how to select the floppy image to emulate from the database:
+
+1. Enter into the `Configurator` mode by pressing the `SELECT` button more than one second. Now, power cycle your computer and the `Configurator` boot menu will be displayed. Press LEFT SHIFT to enter into the `Configurator` application, or wait 5 seconds to boot the Atari ST normally, open the `Cartridge` drive and run the `SIDECART.TOS` file.
+
+2. From the main menu, select the option
+
+```
+5. Download from the Floppy Images database
+```
+
+3. In the menu, there is a bar with the alphabet and numbers. Selecting the letter or number will display the list of applications starting with that letter in the name. 
+
+4. The user can now select the application to download pressing `RETURN` or `ENTER`. Now, the SidecarT board will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
+
+5. After the download is finished, the Atari ST will load and prepare the floppy image to be used. The SidecarT board green led will blink an `F` in Morse code to indicate that the floppy image is ready to be used.
+
+4. Gently reset or power cycle the Atari ST to use the floppy image. The Atari ST will boot normally and will use the floppy image as if it was a physical floppy disk.
+
 
 ### Set the URL of the database and images files
+
+{: .warning }
+For avanced users only.
 
 The SidecarT board can be configured to use a web server to host both the database and images files. It's not necessary to have both in the same server. 
 
