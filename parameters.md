@@ -29,11 +29,11 @@ Please modify the parameters with caution, as they can affect the behavior of th
 
 <table style="width: 100%;">
   <tr>
-    <th style="min-width: 0rem;">Parameter</th>
-    <th style="min-width: 0rem;">Type</th>
+    <th style="min-width: min-content;">Parameter</th>
+    <th style="min-width: min-content;">Type</th>
     <th style="width: 100%;">Description</th>
-    <th style="min-width: 0rem;">Released</th>
-    <th style="min-width: 0rem;">Default</th>
+    <th style="min-width: min-content;">Released</th>
+    <th style="min-width: min-content;">Default</th>
   </tr>
   <tr>
     <td>BOOT_FEATURE</td>
@@ -142,5 +142,3 @@ Please modify the parameters with caution, as they can affect the behavior of th
   </tr>
 </table>
 
-  <!-- Add more rows similarly -->
-</table>
