@@ -11,7 +11,7 @@ Please modify the parameters with caution, as they can affect the behavior of th
 
 | Parameter  | Type      | Default | Description                               | Released |
 |:-----------|:----------|:--------|:------------------------------------------|:---------|
-| BOOT_FEATURE | STRING     | CONFIGURATOR | Firmware mode to start after SidecarT reboot   | v0.0.1 |
+| BOOT_FEATURE | STRING     | CONFIGURATOR | Firmware mode to start after SidecarT reboot   | <p class="label label-green">v0.0.1</p> |
 | DELAY_ROM_EMULATION | BOOLEAN     | false | Enable or disable Delay/Ripper mode   | v0.0.9 |
 | FLOPPIES_FOLDER | STRING     | /floppies | The folder where the SidecarT will find the Floppy images   | v0.0.10 |
 | FLOPPY_DB_URL | STRING | http://ataristdb.sidecart.xyz | The URL of the Atari ST floppy database | v0.0.11 |
