@@ -97,7 +97,7 @@ Pressing the `D` key switches the `DELAY_ROM_EMULATION` parameter between `false
 Given the `SELECT` button's dual function, you cannot access the `Configurator` mode using it directly. After enabling the ROM, press `SELECT` again to access the `Configurator` mode.
 {: .important}
 
-## Floppies Emulation (PREVIEW)
+## Floppies Emulation
 
 {: .warning }
 The Floppies Emulation feature is currently in preview. It remains under active development. If you opt to use it in read-write mode, ensure backups are made of your floppy images.
