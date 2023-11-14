@@ -14,8 +14,7 @@ Please modify the parameters with caution, as they can affect the behavior of th
 | BOOT_FEATURE
 {: .d-inline-block }
 v0.0.1
-{: .label .label-purple } 
-| STRING     | CONFIGURATOR | Firmware mode to start after SidecarT reboot   |
+{: .label .label-purple } | STRING     | CONFIGURATOR | Firmware mode to start after SidecarT reboot   |
 | DELAY_ROM_EMULATION | BOOLEAN     | false | Enable or disable Delay/Ripper mode   |
 | FLOPPIES_FOLDER | STRING     | /floppies | The folder where the SidecarT will find the Floppy images   |
 | FLOPPY_DB_URL | STRING | http://ataristdb.sidecart.xyz | The URL of the Atari ST floppy database |
