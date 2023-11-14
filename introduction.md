@@ -14,7 +14,7 @@ The first chapter provides an overview of the SidecarT project, explaining the p
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 

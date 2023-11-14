@@ -14,7 +14,7 @@ This section delves into the hardware interface of the SidecarT board, specifica
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 

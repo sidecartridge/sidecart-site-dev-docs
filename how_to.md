@@ -14,7 +14,7 @@ This section showcases a variety of different configurations and parametric setu
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 

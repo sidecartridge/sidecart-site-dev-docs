@@ -14,7 +14,7 @@ This section is dedicated to providing developers with a comprehensive guide to 
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 

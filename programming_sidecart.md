@@ -14,7 +14,7 @@ This section provides developers with in-depth guidance on programming the Sidec
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 

@@ -14,7 +14,7 @@ This section provides guidance on the initial steps to start working with the Si
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 

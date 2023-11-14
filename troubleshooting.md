@@ -13,7 +13,7 @@ This section is dedicated to assisting developers in resolving issues encountere
     Table of contents
   </summary>
   {: .text-delta }
-- TOC
+1. TOC
 {:toc}
 </details>
 
