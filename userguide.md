@@ -18,7 +18,34 @@ nav_order: 3
 
 ## ROM Emulation
 
-ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how to set up the ROM Emulation.
+ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how use and set up the ROM Emulation.
+
+### Select the ROM to emulate
+
+The SidecarT board can be configured to emulate a ROM file from a microSD card or an external web server. This section explains how to select the ROM to emulate in both cases. 
+
+1. Enter into the `Configurator` mode by pressing the `SELECT` button more than one second. Now, power cycle your computer and the `Configurator` boot menu will be displayed. Press LEFT SHIFT to enter into the `Configurator` application, or wait 5 seconds to boot the Atari ST normally, open the `Cartridge` drive and run the `SIDECART.TOS` file.
+
+2. From the main menu, there are two options to emulate ROMS:
+
+```
+1. Emulate ROM image from microSD card
+2. Emulate ROM image from Wi-Fi
+```
+
+For option 1, the SidecarT board needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/how_to#format_the_microsd_card) section. For option 2, the SidecarT board needs to be connected to a Wi-Fi network. The user can learn how to connect the SidecarT board to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/how_to#connect_to_a_wifi_network) section.
+
+{: .note }
+The emulation of ROMs from Wi-Fi does not need a microSD card to work. And the emulation of ROMs from microSD card does not need to be connected to a Wi-Fi network to work.
+{: .note }
+
+3. In the ROM selection menu, the user can select the ROM to emulate from the list of ROMs available. Simply press `RETURN` or `ENTER` to select the ROM to emulate, and the Atari ST will load and prepare the ROM to be used. The SidecarT board green led will blink an `E` in Morse code to indicate that the ROM is ready to be used.
+
+4. Gently reset or power cycle the Atari ST to use the ROM. The Atari ST will boot normally and will use the ROM as if it was a physical chip.
+
+### Disable ROM Emulation
+
+Simply press again the `SELECT` button more than one second to enter into the `Configurator` mode and power cycle your computer.
 
 ### Set the folder hosting the ROM files
 
