@@ -29,14 +29,14 @@ Please modify the parameters with caution, as they can affect the behavior of th
 
 <table style="width: 100%;">
   <tr>
-    <th style="min-width: min-content;">Parameter</th>
-    <th style="min-width: min-content;">Type</th>
+    <th>Parameter</th>
+    <th>Type</th>
     <th style="width: 100%;">Description</th>
-    <th style="min-width: min-content;">Released</th>
-    <th style="min-width: min-content;">Default</th>
+    <th>Released</th>
+    <th>Default</th>
   </tr>
   <tr>
-    <td>BOOT_FEATURE</td>
+    <td>BOOT_FEATURE<p class="label label-green">v0.0.1</p></td>
     <td>STRING</td>
     <td>Firmware mode to start after SidecarT reboot</td>
     <td>v0.0.1</td>
@@ -103,7 +103,7 @@ Please modify the parameters with caution, as they can affect the behavior of th
     <td>STRING</td>
     <td>The URL of the JSON file with the ROMs information</td>
     <td>v0.0.1</td>
-    <td>http:// roms.sidecart.xyz/ roms.json</td>
+    <td>http:// roms.sidecart.xyz/roms.json</td>
   </tr>
   <tr>
     <td>SAFE_CONFIG_REBOOT</td>
@@ -141,4 +141,3 @@ Please modify the parameters with caution, as they can affect the behavior of th
     <td></td>
   </tr>
 </table>
-
