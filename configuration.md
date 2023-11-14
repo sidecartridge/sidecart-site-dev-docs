@@ -135,6 +135,67 @@ The SidecarT board currently doesn't support HTTPS. Ensure that your server uses
 3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
 
 
+## Real Time Clock (RTC) configuration
+
+Starting from the version v0.0.11 of the firmware, the SidecarT board can be configured to be a Real Time Clock (RTC) for the Atari ST. This section explains how to configure the SidecarT board to be a RTC.
+
+### Enter into the RTC configuration menu
+
+The menu to configure the RTC is available in the `Configurator` application. To access it, press the `6` option in the main menu. The following menu will be displayed:
+
+```
+NTP Server: <<value in the RTC_NTP_SERVER_HOST and RTC_NTP_SERVER_PORT configuration parameter>>
+RTC Type: <<value in the RTC_TYPE configuration parameter>>
+RTC UTC Offset: <<value inthe RTC_UTC_OFFSET>>
+
+Options:
+[1] - Set SIDECART RTC with a custom firmware
+[2] - Set DALLAS 1216 RTC with cartridge emulation
+[U] - Change UTC offset
+[H] - Change NTP server host
+[P] - Change NTP server port
+
+[B] - Boot emulator
+
+Press an option key or [ESC] to exit:
+```
+
+### Set the NTP parameters
+
+The user can change the NTP server host and port by pressing the `H` and `P` keys respectively. The default values are `pool.ntp.org` for the host and `123` for the port, which are the most common values and should work for most users.
+
+### Set the UTC offset
+
+The user can change the UTC offset by pressing the `U` key. The default value is `0`, which means the UTC offset is null. The NTP time returned by any server does not know about timezones, so the SidecarT board needs to know the UTC offset to be able to convert the UTC time to the local time. The UTC offset is expressed in positive or negative hours.
+
+Also note that the Atari ST does not know about timezones either, so the RTC time will be the local time of the Atari ST.
+
+### Change the RTC type
+
+For the version v0.0.11, there are two RTC types available: `SIDECART` and `DALLAS`. The user can change the RTC type by pressing the `1` or `2` keys. The default value is `SIDECART`. Each type has different characteristics:
+
+- `SIDECART`: This is the default RTC type. To set the date and time it uses a small cartridge firmware at boot time that sets the date and time in the Atari ST computer. This firmware is executed at boot time as an executable cartridge and does not impact in the overall performance or memory usage of the system.
+
+- `DALLAS`: This RTC type emulates a DALLAS 1216 RTC integrated chip. To set the date and time the user must use a program that reads the values provided by the DALLAS 1216 emulator and sets the date and time in the Atari ST computer. There are several programs that can do this, but I strongly recommend the [tools created by Troed Sångberg](https://blog.troed.se/projects/dallas-rtc-sync-tos-y2k-fix/).
+
+
+{: .note}
+Both solutions workaround the Y2K problem, or any problem with dates this century. So far.
+{: .note}
+
+### Boot the emulator
+
+To Boot the emulator, press the `B` key. The SidecarT board will reboot and depending on the RTC type chosen the flow will differ:
+
+- `SIDECART`: The SidecarT board will boot the cartridge firmware that will set the date and time in the Atari ST computer. After that, the Atari ST will boot normally. The firmware will report how the process goes in the screen. This is important because the RP2040 must query the NTP server to get the time and set it in the Atari ST computer, and this can take several seconds. The Atari ST will not boot until the date and time are set, or fails. 
+
+- `DALLAS`: The Atari ST will boot normally. As explained above, the user must use a program that reads the values provided by the DALLAS 1216 emulator and sets the date and time in the Atari ST computer. Please keep in mind that DALLAS RTC emulation will only provide a valid date and time once the RP2040 obtains a valid date and time from the NTP server.
+
+{: .warning}
+The SidecarT will not return a valid date and time until it obtains a valid date and time from the NTP server. In the SIDECART RTC type, the Atari ST will not boot until the date and time are set, or fails. In the DALLAS RTC type, the Atari ST will boot normally, but the date and time will be invalid until the user sets them with a program.
+{: .warning}
+
+
 ## Configuring the Configurator Application
 
 The Configurator application serves as the central interface for the SidecarT board's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
