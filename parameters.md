@@ -27,3 +27,27 @@ Please modify the parameters with caution, as they can affect the behavior of th
 | WIFI_SSID            | STRING    | The SSID of the WiFi network to connect to             | v0.0.1   |                                      |
 | WIFI_AUTH            | INTEGER   | The authentication type of the WiFi network to connect to | v0.0.1   |                                      |
 
+<table style="width: 100%;">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th style="width: 100%;">Description</th>
+    <th>Released</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td>BOOT_FEATURE</td>
+    <td>STRING</td>
+    <td>Firmware mode to start after SidecarT reboot</td>
+    <td>v0.0.1</td>
+    <td>CONFIGURATOR</td>
+  </tr>
+  <tr>
+    <td>DELAY_ROM_EMULATION</td>
+    <td>BOOLEAN</td>
+    <td>Enable or disable Delay/Ripper mode</td>
+    <td>v0.0.9</td>
+    <td>false</td>
+  </tr>
+  <!-- Add more rows similarly -->
+</table>
