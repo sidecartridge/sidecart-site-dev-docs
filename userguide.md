@@ -130,6 +130,9 @@ If `floppies` isn't your desired directory name, it can be changed. Adjust the `
 
 ### Select a .ST or .MSA Floppy Image to Emulate
 
+{: .note }
+Starting from v0.0.11 the Floppy Emulation supports .MSA files.
+
 The steps to select the floppy image to emulate are the same for both read-only and read-write modes. This section explains how to select the floppy image to emulate:
 
 1. Enter into the `Configurator` mode by pressing the `SELECT` button more than one second. Now, power cycle your computer and the `Configurator` boot menu will be displayed. Press LEFT SHIFT to enter into the `Configurator` application, or wait 5 seconds to boot the Atari ST normally, open the `Cartridge` drive and run the `SIDECART.TOS` file.
