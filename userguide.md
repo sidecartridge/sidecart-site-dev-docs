@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Configuration
-nav_order: 7
+title: User Guide
+nav_order: 3
 ---
 
-# Configure the SidecarT board
+# User Guide
 {: .no_toc }
 
 <details open markdown="block">
@@ -16,7 +16,7 @@ nav_order: 7
 {:toc}
 </details>
 
-## ROM Emulation Configuration
+## ROM Emulation
 
 ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how to set up the ROM Emulation.
 
@@ -70,7 +70,7 @@ Pressing the `D` key switches the `DELAY_ROM_EMULATION` parameter between `false
 Given the `SELECT` button's dual function, you cannot access the `Configurator` mode using it directly. After enabling the ROM, press `SELECT` again to access the `Configurator` mode.
 {: .important}
 
-## Floppies Emulation configuration (PREVIEW)
+## Floppies Emulation (PREVIEW)
 
 {: .warning }
 The Floppies Emulation feature is currently in preview. It remains under active development. If you opt to use it in read-write mode, ensure backups are made of your floppy images.
@@ -135,7 +135,7 @@ The SidecarT board currently doesn't support HTTPS. Ensure that your server uses
 3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
 
 
-## Real Time Clock (RTC) configuration
+## Real Time Clock (RTC)
 
 Starting from the version v0.0.11 of the firmware, the SidecarT board can be configured to be a Real Time Clock (RTC) for the Atari ST. This section explains how to configure the SidecarT board to be a RTC.
 
@@ -196,7 +196,7 @@ The SidecarT will not return a valid date and time until it obtains a valid date
 {: .warning}
 
 
-## Configuring the Configurator Application
+## Configurator Application
 
 The Configurator application serves as the central interface for the SidecarT board's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
 
@@ -252,10 +252,3 @@ In both cases, the SidecarT board will check for the latest release and display 
 
 To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecart.xyz/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
 
-{: .note}
-
-{: .note}
-
-
-
-{: .note}
