@@ -105,7 +105,7 @@ The Floppies Emulation feature is currently in preview. It remains under active 
 
 The Floppies Emulation represents a significant enhancement to the SidecarT board. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
 
-### Hosting Floppy Images on microSD
+### Pre-requisite: Hosting Floppy Images on microSD
 
 To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16 or exFAT formatted microSD card.
 
@@ -117,7 +117,7 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
 
 2. **Directory Structure**: On the microSD's root, create a `floppies` directory. This is where the board will scan for floppy images.
 
-3. **Transferring Floppy Images**: Move your `.ST` formatted floppy images into the `floppies` directory. The board recognizes these files automatically.
+3. **Transferring Floppy Images**: Move your `.ST` and `.MSA` formatted floppy images into the `floppies` directory. The board recognizes these files automatically.
 
 4. **Initialization**:
    - Insert the microSD into the SidecarT board.
@@ -127,6 +127,23 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
 {: .note }
 If `floppies` isn't your desired directory name, it can be changed. Adjust the `FLOPPIES_FOLDER` parameter. Details are available in the [Configuration Parameters](/parameters) section.
 {: .note}
+
+### Select a .ST or .MSA Floppy Image to Emulate
+
+The steps to select the floppy image to emulate are the same for both read-only and read-write modes. This section explains how to select the floppy image to emulate:
+
+1. Enter into the `Configurator` mode by pressing the `SELECT` button more than one second. Now, power cycle your computer and the `Configurator` boot menu will be displayed. Press LEFT SHIFT to enter into the `Configurator` application, or wait 5 seconds to boot the Atari ST normally, open the `Cartridge` drive and run the `SIDECART.TOS` file.
+
+2. From the main menu, there are two options to emulate floppy images:
+
+```
+3. Emulate Floppy image from microSD in Read-Only mode 
+4. Emulate Floppy image from microSD in Read-Write mode
+```
+
+3. In the floppy image selection menu, the user can select the floppy image to emulate from the list of floppy images available. Simply press `RETURN` or `ENTER` to select the floppy image to emulate, and the Atari ST will load and prepare the floppy image to be used. The SidecarT board green led will blink an `F` in Morse code to indicate that the floppy image is ready to be used.
+
+4. Gently reset or power cycle the Atari ST to use the floppy image. The Atari ST will boot normally and will use the floppy image as if it was a physical floppy disk.
 
 ### Read-Write Emulation for Floppy Images
 
@@ -139,6 +156,24 @@ If a `.rw` duplicate already exists, the board will prioritize it over the origi
 {: .warning }
 It's important to note that the SidecarT board won't validate the integrity of `.rw` files. If such a file is corrupted, the Atari ST won't be able to interface with it, either for reading or writing.
 {: .warning}
+
+### Create an empty writable floppy image
+
+The SidecarT board can be configured to create an empty writable floppy image to create our own content or have a blank floppy image to copy files from the Atari ST.
+
+After selecting the option `Emulate Floppy image from microSD in Read-Write mode`, the first entry in the selection menu will be `< CREATE A BLANK FLOPPY IMAGE >`. Select this option and the SidecarT board will prompt for several parameters:
+
+- `Size [1]-SS/DD (360KB), [2]-DS/DD (720KB), [3]-HD (1.44MB)`: Select the size of the floppy image to create.
+- `Volume name (max 8 chars, dot, max 3 chars)`: The volume name of the floppy for the Atari ST computer. Can be empty.
+- `Image name (max 255 chars)`: The name of the floppy image file stored in the microSD card. Cannot be empty.
+
+Now the SidecarT will need a few seconds to create the empty floppy image. After that, the Atari ST will report to the user that the new image is ready to be used. The user can now select the new read/write image as any other in the floppy image folder.
+
+### Floppy image formats supported
+
+The default format supported by the SidecarT is the `.ST` format. Starting from version v0.0.11, SidecarT can also read the `.MSA` format, converting it to `.ST` format on the fly. Under the covers, everything is a `.ST` file.
+
+A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The SidecarT board will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
 
 ## Atari ST database of floppy images
 
