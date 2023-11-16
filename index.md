@@ -10,8 +10,10 @@ nav_order: 0
 # SidecarT Documentation 
 {: .d-inline-block }
 
-{{ site.FIRMWARE_VERSION }}
-{: .label .label-green }
+STABLE-{{ site.FIRMWARE_VERSION }}
+
+BETA-{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
