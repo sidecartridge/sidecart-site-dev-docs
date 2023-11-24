@@ -119,7 +119,7 @@ A special note about the `firmware.c` file. This file is an array generated with
 
 For releases, head over to the [Releases page](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases). The latest release is always recommended.
 
-For a quick tutorial about how to flash the firmware in the Raspberry Pi Pico, please read the [Quickstart](https://sidecart.xyz/quickstart).
+For a quick tutorial about how to flash the firmware in the Raspberry Pi Pico, please read the [Quickstart](https:///quickstart).
 
 ## Changelog
 
@@ -127,7 +127,7 @@ The full changelog is available in the [CHANGELOG.md](https://github.com/diegopa
 
 ## Resources 
 
-- [Sidecart ROM Emulator website](https://sidecart.xyz)
+- [Sidecart ROM Emulator website](https://)
 - [Sidecart Atari ST Firmware](https://github.com/diegoparrilla/atarist-sidecart-firmware).
 - [Sidecart Atari ST Test ROM](https://github.com/diegoparrilla/atarist-sidecart-test-rom).
 

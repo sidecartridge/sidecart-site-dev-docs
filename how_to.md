@@ -23,10 +23,10 @@ This section showcases a variety of different configurations and parametric setu
 To install the latest SidecarT firmware on the Raspberry Pi Pico W, connect your PC, Mac, or Linux to the Raspberry Pi Pico W using the USB cable. Now hold down the BOOTSEL button for a few seconds and then hold down the RESET button. Now release the RESET button and gently release the BOOTSEL button afterwards. A new drive named `RPI-RP2` should appear on your PC, Mac, or Linux. Open it.
 
 {:refdef: style="text-align: center;"}
-![How enter in BOOTSEL mode](https://sidecart.xyz/assets/images/quickstart/bootsel-mode.gif)
+![How enter in BOOTSEL mode](https:///assets/images/quickstart/bootsel-mode.gif)
 {: refdef}
 
-In this directory, you will need to copy the latest STABLE or BETA Firmware versions, which you can directly get from the [download page](https://sidecart.xyz/downloads).
+In this directory, you will need to copy the latest STABLE or BETA Firmware versions, which you can directly get from the [download page](https:///downloads).
 
 Once you've copied the file corresponding to your Raspberry Pico W, disconnect the power cable. The new firmware has now been flashed.
 
@@ -123,7 +123,7 @@ An example of a `roms.json` file is shown below:
 ```json
 [
     {
-        "url": "http://roms.sidecart.xyz/Missile%20Command.STC",
+        "url": "http://roms./Missile%20Command.STC",
         "name": "Missile Command",
         "description": "A classic arcade game where players defend cities from incoming missiles.",
         "tags": [
@@ -133,7 +133,7 @@ An example of a `roms.json` file is shown below:
         "size_kb": 128
     },
     {
-        "url": "http://roms.sidecart.xyz/Buggy%20Boy.img",
+        "url": "http://roms./Buggy%20Boy.img",
         "name": "Buggy Boy",
         "description": "An off-road racing game where players drive a buggy and avoid obstacles.",
         "tags": [
@@ -145,7 +145,7 @@ An example of a `roms.json` file is shown below:
     ...
     ,
     {
-        "url": "http://roms.sidecart.xyz/Joust%20and%20Moon%20Patrol.STC",
+        "url": "http://roms./Joust%20and%20Moon%20Patrol.STC",
         "name": "Joust and Moon Patrol",
         "description": "A combo of two arcade classics - Joust, a competitive bird-riding game, and Moon Patrol, a lunar vehicle shooter.",
         "tags": [
@@ -158,7 +158,7 @@ An example of a `roms.json` file is shown below:
 ]
 ```
 
-The full content of the sample `roms.json` file can be found [here](http://roms.sidecart.xyz/roms.json). You can use this file as a template to create your own `roms.json` file.
+The full content of the sample `roms.json` file can be found [here](http://roms./roms.json). You can use this file as a template to create your own `roms.json` file.
 
 ### Upload the ROM images to the server
 
@@ -172,7 +172,7 @@ Don't forget to update the `url` field in the `roms.json` file to point to the c
 
 ### Change the SidecarT board configuration
 
-The SidecarT board can be configured to use any HTTP server by changing the `ROMS_YAML_URL` parameter in the configuration parameters of the `Configursator`. The default value of this parameter is `http://roms.sidecart.xyz/roms.json`. You should change this value to point to your own `roms.json` file.
+The SidecarT board can be configured to use any HTTP server by changing the `ROMS_YAML_URL` parameter in the configuration parameters of the `Configursator`. The default value of this parameter is `http://roms./roms.json`. You should change this value to point to your own `roms.json` file.
 
 {: .note }
 The `ROMS_YAML_URL` is not the right name for this parameter. It will be renamed in the future to `ROMS_JSON_URL`.

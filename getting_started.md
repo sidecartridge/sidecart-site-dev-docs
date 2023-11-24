@@ -29,35 +29,35 @@ Users will need the following hardware:
 - An Atari ST computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the SidecarT board can emulate a physical floppy drive, so an Atari ST without a (or a broken) floppy drive can still be used with the SidecarT board. The SidecarT board is also compatible with TOS versions ranging from 1.00 to 2.06, almost every single ST and STE series compute sold.
 
 {:refdef: style="text-align: center;"}
-![Atari 520ST](https://sidecart.xyz/assets/images/quickstart/atari520st.jpeg)
+![Atari 520ST](https:///assets/images/quickstart/atari520st.jpeg)
 {: refdef}
 
 
 - A SidecarT board
 
 {:refdef: style="text-align: center;"}
-![SidecarT without Raspberry Pi Pico](https://sidecart.xyz/assets/images/quickstart/board-single.png)
+![SidecarT without Raspberry Pi Pico](https:///assets/images/quickstart/board-single.png)
 {: refdef}
 
 
 - A [Raspberry Pi Pico WH (Reference SC0919)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh), which already comes with the necessary 40-pin connectors to attach to the SidecarT's motherboard, or a [Raspberry Pi Pico W (Reference SC0918)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh) and procure two 20-pin connectors, then solder them to the board yourself. Here's a [link to a manufacturer](https://www.lcsc.com/product-detail/span-style-background-color-ff0-Pin-span-Headers_BOOMELE-Boom-Precision-Elec-C50981_C50981.html) for reference.
 
 {:refdef: style="text-align: center;"}
-![Raspberry Pi Pico WH](https://sidecart.xyz/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
+![Raspberry Pi Pico WH](https:///assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
 {: refdef}
 
 
 - A USB A to micro USB *data* cable to install and update the SidecarT firmware on the Raspberry Pi Pico W. It's important to note the emphasis on a "data" cable - a simple charging cable won't suffice.
 
 {:refdef: style="text-align: center;"}
-![USB A to micro USB](https://sidecart.xyz/assets/images/quickstart/microusb.jpeg)
+![USB A to micro USB](https:///assets/images/quickstart/microusb.jpeg)
 {: refdef}
 
 
-- (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs.sidecart.xyz/how_to/#format-the-microsd-card).
+- (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs./how_to/#format-the-microsd-card).
 
 ### Initial Setup and Configuration
-The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecart.xyz/quickstart).
+The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https:///quickstart).
 
 <figure class="video_container">
     <iframe
@@ -110,7 +110,7 @@ Additionally, developers need the following hardware:
 - A [Raspberry Pi Pico WH board](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-wh) to connect it to the SidecarT board. The `W` stands for **Wireless** and the `H` stands for **Header**. The `H` version comes with the header pins already soldered to the board and a JST debugger connector needed to connect the Raspberry Pi Debug Board.
 
 {:refdef: style="text-align: center;"}
-![Raspberry Pi Pico WH](https://sidecart.xyz/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
+![Raspberry Pi Pico WH](https:///assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
 {: refdef}
 
 

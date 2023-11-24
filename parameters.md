@@ -14,13 +14,13 @@ Please modify the parameters with caution, as they can affect the behavior of th
 | BOOT_FEATURE         | STRING    | Firmware mode to start after SidecarT reboot           | v0.0.1   | CONFIGURATOR                         |
 | DELAY_ROM_EMULATION  | BOOLEAN   | Enable or disable Delay/Ripper mode                    | v0.0.9   | false                                |
 | FLOPPIES_FOLDER      | STRING    | The folder where the SidecarT will find the Floppy images | v0.0.10  | /floppies                            |
-| FLOPPY_DB_URL        | STRING    | The URL of the Atari ST floppy database                | v0.0.11  | http:// ataristdb.sidecart.xyz        |
+| FLOPPY_DB_URL        | STRING    | The URL of the Atari ST floppy database                | v0.0.11  | http:// ataristdb.        |
 | FLOPPY_IMAGE_A       | STRING    | File with the floppy image to emulate in drive A       | v0.0.10  |                                      |
 | FLOPPY_IMAGE_B       | STRING    | File with the floppy image to emulate in drive B       |          |                                      |
 | HOSTNAME             | STRING    | The hostname of the SidecarT in the TCP/IP network     | v0.0.1   | sidecart                             |
-| LATEST_RELEASE_URL   | STRING    | The URL of the file with the latest SidecarT release version | v0.0.1   | http:// atarist.sidecart.xyz/ version.txt |
+| LATEST_RELEASE_URL   | STRING    | The URL of the file with the latest SidecarT release version | v0.0.1   | http:// atarist./ version.txt |
 | ROMS_FOLDER          | STRING    | The folder where the SidecarT will find the ROM images | v0.0.1   | /roms                                |
-| ROMS_YAML_URL        | STRING    | The URL of the JSON file with the ROMs information     | v0.0.1   | http:// roms.sidecart.xyz/ roms.json   |
+| ROMS_YAML_URL        | STRING    | The URL of the JSON file with the ROMs information     | v0.0.1   | http:// roms./ roms.json   |
 | RTC_NTP_SERVER_HOST  | STRING    | The NTP server host to synchronize the RTC             | v0.0.12  | pool.ntp.org                         |
 | RTC_NTP_SERVER_PORT  | INTEGER   | The NTP server port to synchronize the RTC             | v0.0.12  | 123                                  |
 | RTC_TYPE             | STRING    | The type of RTC to emulate: SIDECART, DALLAS           | v0.0.12  | SIDECART                             |

@@ -329,11 +329,11 @@ The SidecarT board Latest release verification can be configured to check for ne
 
 This is controlled through the `LATEST_RELEASE_URL` parameter in the configuration.
 
-If `LATEST_RELEASE_URL` points to `http://atarist.sidecart.xyz/version.txt`, users will be notified about the availability of a new STABLE (or latest) release.
+If `LATEST_RELEASE_URL` points to `http://atarist./version.txt`, users will be notified about the availability of a new STABLE (or latest) release.
 
-If `LATEST_RELEASE_URL` points to `http://atarist.sidecart.xyz/beta.txt`, users will be alerted when a new BETA release is available.
+If `LATEST_RELEASE_URL` points to `http://atarist./beta.txt`, users will be alerted when a new BETA release is available.
 
 In both cases, the SidecarT board will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
 
-To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecart.xyz/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
+To download the STABLE (latest) or BETA release, navigate to the [Download page](https:///downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
 
