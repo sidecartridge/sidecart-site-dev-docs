@@ -119,7 +119,7 @@ A special note about the `firmware.c` file. This file is an array generated with
 
 For releases, head over to the [Releases page](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases). The latest release is always recommended.
 
-For a quick tutorial about how to flash the firmware in the Raspberry Pi Pico, please read the [Quickstart](https:///quickstart).
+For a quick tutorial about how to flash the firmware in the Raspberry Pi Pico, please read the [Quickstart](https://sidecartridge.com/quickstart).
 
 ## Changelog
 

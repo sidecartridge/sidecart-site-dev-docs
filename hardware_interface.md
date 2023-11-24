@@ -27,7 +27,7 @@ The Atari ST, unveiled in the mid-1980s, boasted a cartridge port that, paradoxi
 The cartridge port of the Atari ST served as a direct extension of the system's bus, reflecting the era's prevailing hardware technology and design ideologies.
 
 {:refdef: style="text-align: center;"}
-![ST Cartridge Pinout](https:///assets/blog/images/stcartport.png)
+![ST Cartridge Pinout](https://sidecartridge.com/assets/blog/images/stcartport.png)
 {: refdef}
 
 The port adopted a **double-row 40-pin configuration**, engineered to gain direct access to the system's bus. This allowed external cartridges to interface seamlessly with the main system without the necessity for intricate adapters or converters.
@@ -43,7 +43,7 @@ The cartridge port was designed with a **limited number of 68000 control lines**
 Serving as an extension of its primary system bus, the Atari ST's cartridge port utilized 24 **address lines** (A0-A23), enabling it to address up to 16MB (2^24 bytes) of memory, which was limited to 4MB due to some address space being allocated to ROMs and peripherals. A mere 17 address lines (A0=`!UDS`, A1-A15, A16=`!ROM4`) were routed to the cartridge port, used to access the memory range from FA0000 to FBFFFF, thereby addressing a substantial 128 Kbytes of ROM memory effectively.
 
 {:refdef: style="text-align: center;"}
-![ST Memory Map (info-coach.fr)](https:///assets/blog/images/stmemorymap_french.jpeg)
+![ST Memory Map (info-coach.fr)](https://sidecartridge.com/assets/blog/images/stmemorymap_french.jpeg)
 {: refdef}
 
 The Atari ST incorporated a 16-bit data bus, correlating with **data lines** D0-D15. This allowed a 16-bit word to be transmitted in a single bus cycle. The UDS and LDS lines addressed either the upper or lower 8 bits of this 16-bit word, thus permitting byte-level access. The data lines were read-only.

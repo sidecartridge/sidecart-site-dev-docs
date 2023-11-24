@@ -335,5 +335,5 @@ If `LATEST_RELEASE_URL` points to `http://atarist./beta.txt`, users will be aler
 
 In both cases, the SidecarT board will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
 
-To download the STABLE (latest) or BETA release, navigate to the [Download page](https:///downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
+To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
 
