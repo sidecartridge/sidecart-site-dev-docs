@@ -196,6 +196,7 @@ The file must be a CSV file with the following fields:
 - `status`: The status of the program. `0` means OK, any other value means KO.
 - `description`: A short description of the program.
 - `tags`: An array of tags describing the program.
+- `PLACEHOLDER`: Reserved for future use.
 - `url`: The URL of the floppy image file. If the url does not start with `http://`, it will be considered a relative URI.
 
 For example a excerpt of the file `a.csv`:
