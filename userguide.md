@@ -280,6 +280,24 @@ To Boot the emulator, press the `B` key. The SidecarT board will reboot and depe
 The SidecarT will not return a valid date and time until it obtains a valid date and time from the NTP server. In the SIDECART RTC type, the Atari ST will not boot until the date and time are set, or fails. In the DALLAS RTC type, the Atari ST will boot normally, but the date and time will be invalid until the user sets them with a program.
 {: .warning}
 
+## Boot a ROM image from the microSD card in 'Rescue Mode'
+
+The SidecarT can be a very helpful device to troubleshoot damaged computers. A good use case is bypass the configurator and let the SidecarT to run a "default ROM" when plugged. This new feature is called "Rescue Mode", and it will boot a ROM image from the microSD card when the SidecarT is plugged in the Atari ST without interacting with the configurator.
+
+### How to enable the Rescue Mode
+To enable the Rescue Mode, the user must create a file named `.romrescue` in the root of the microSD card. The content of the file must be the name of the ROM image to boot as found in the `ROMS_FOLDER` (`roms` by default) configuration parameter. It's important to note that the user does not have to include the full path, just the name of the ROM image.
+
+For example, if the user wants to boot a diagnostic ROM image named `ST Test v4.4.img` located in the `roms` folder, the content of the `.romrescue` file must be `ST Test v4.4.img`.
+
+### First boot after enabling the Rescue Mode
+After saving the `.romrescue` file in the microSD card, insert the microSD card in the SidecarT and power on the Atari ST. Now, press the `SELECT` button more than one second to enter into the `Configurator` mode. Now the SidecarT will automatically read the `.romrescue` file and will save its content in the FLASH memory of the RP2040. 
+
+### Next boots
+After that, the SidecarT will reboot in `ROM_EMULATION` mode and the Atari ST will boot the ROM image specified. 
+
+### How to disable the Rescue Mode
+To disable the Rescue Mode, the user must delete the `.romrescue` file from the microSD card, or rename it. After that, if the user press the `SELECT` button for more than one second, the SidecarT will start in the `Configurator` mode as usual.
+
 
 ## Configurator Application
 

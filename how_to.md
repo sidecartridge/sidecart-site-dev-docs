@@ -208,3 +208,19 @@ For example a excerpt of the file `a.csv`:
 ...
 "Anco strip poker1.8 Tos only";"0";"";"";"";"AUTOMATION/A_176.ST"
 ```
+
+## Configure the WiFi password in a file in the microSD card
+
+### Introduction
+
+The SidecarT board can be configured to connect to a WiFi network by configuring the WiFi SSID and password in the `Configurator`. Sometimes entering the WiFi password using the `Configurator` can be cumbersome, especially if the password is long. This how-to will explain how to configure the WiFi password in a file in the microSD card so that the SidecarT board can automatically connect to the WiFi network.
+
+### Create the `.wifipass` file
+
+The `.wifipass` file is a text file that contains the WiFi password. The file must be located at the root of the microSD card. The SidecarT board will automatically read the file and connect to the WiFi network, overriding the WiFi password configured in the `Configurator`.
+
+To create the file, open a text editor in your PC/Mac/Linux computer and type the WiFi password. Save the file as `.wifipass` and insert the microSD card into the SidecarT board. The SidecarT board will automatically read the file and connect to the WiFi network after a reboot or power cycle of the SidecarT board.
+
+{: .note }
+The maximum length of the WiFi password is 63 characters.
+
