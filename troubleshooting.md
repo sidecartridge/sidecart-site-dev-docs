@@ -80,6 +80,8 @@ If the microSD card is not detected, please check the following:
 4. Do not power on the SidecarT until the microSD card is properly inserted. If the microSD card is not properly inserted, the SidecarT will not be able to detect it.
 5. In the CONFIGURATOR mode, information about the microSD card is displayed at the bottom of the screen with the space available and the number of files in the folders. If the information is not displayed, the SidecarT is not able to detect the microSD card.
 
+## Floppy emulation
+
 ### Some floppy disk images are not working. Games/applications are crashing
 
 There are mostly two reasons why some floppy disk images are not working:
