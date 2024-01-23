@@ -40,6 +40,16 @@ If the SidecarT board is not detected by the computer, please check the followin
 2. If the LED blinks upon booting, next connect the Pico W to the SidecarT headers and perform the same operation. The green LED should blink in this case too. If it doesn't, there might be a short circuit on the SidecarT board.
 3. Lastly, try connecting the SidecarT to the computer. It is highly recommended cleaning the SidecarT cartridge connector with isopropyl alcohol before doing this. If the LED does not blink in this case, there might be a short circuit on the SidecarT board. If the LED blinks, the SidecarT board is working fine and the issue is with the cartridge connector on the computer.
 
+### Cannot enter into the CONFIGURATOR mode
+
+If you cannot enter into the CONFIGURATOR mode, please check the following:
+
+1. Check that the SidecarT is properly connected to the computer cartridge connector and that the SidecarT is properly powered.
+2. Press the RESET button on the SidecarT board and keep it pressed.
+3. While keeping the RESET button pressed, press the SELECT button for more than 1 second.
+4. Release the RESET button.
+5. The SidecarT should now be in the CONFIGURATOR mode. The CONFIGURATOR mode is indicated by the green LED blinking a 'C' in Morse code.
+
 ### I can't see the cartridge drive in Configurator mode
 
 The cartridge drive uses the letter `c` in lowercase. If you can't see the `Drive c:` unit, please be sure you are in `Configurator` mode:
