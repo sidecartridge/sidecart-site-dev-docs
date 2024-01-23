@@ -58,3 +58,15 @@ The cartridge drive uses the letter `c` in lowercase. If you can't see the `Driv
 ### I get an error message connecting to the WiFi network
 
 This is a known and random issue with the WiFi module. After version v0.0.10 of the firmware, the SidecarT will try to connect to the WiFi network until it succeeds. If you get an error message, please try again. If the problem persists, press the `BUTTON` of the SidecarT.
+
+
+### microSD card not detected
+
+If the microSD card is not detected, please check the following:
+
+1. The microSD card is formated as Fat16 or exFAT. Please follow the instructions in the [Format de microSD card](https://docs.sidecartridge.com/how_to/#format-the-microsd-card) section.
+2. Check that the microSD card has the correct folders created. Please follow the instructions to [set the folder to host ROM files](https://docs.sidecartridge.com/userguide/#set-the-folder-hosting-the-rom-files) and [set the folder to host the floppy disk images](https://docs.sidecartridge.com/userguide/#pre-requisite-hosting-floppy-images-on-microsd).
+3. Check that the microSD card is properly inserted in the microSD card slot. The microSD card should be inserted with the label facing up. The microSD card should be inserted until it clicks. 
+4. Do not power on the SidecarT until the microSD card is properly inserted. If the microSD card is not properly inserted, the SidecarT will not be able to detect it.
+5. In the CONFIGURATOR mode, information about the microSD card is displayed at the bottom of the screen with the space available and the number of files in the folders. If the information is not displayed, the SidecarT is not able to detect the microSD card.
+
