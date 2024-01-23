@@ -80,3 +80,10 @@ If the microSD card is not detected, please check the following:
 4. Do not power on the SidecarT until the microSD card is properly inserted. If the microSD card is not properly inserted, the SidecarT will not be able to detect it.
 5. In the CONFIGURATOR mode, information about the microSD card is displayed at the bottom of the screen with the space available and the number of files in the folders. If the information is not displayed, the SidecarT is not able to detect the microSD card.
 
+### Some floppy disk images are not working. Games/applications are crashing
+
+There are mostly two reasons why some floppy disk images are not working:
+
+1. The floppy emulator "traps" the floppy disk access and redirects it to the microSD card. This is done by a combination of hardware and software. The hardware part is done by the SidecarT board and the software part is done by the firmware. The firmware is responsible for reading the floppy disk images from the microSD card and sending them to the Atari ST. Some applications -mostly games- are using a direct access to the floppy disk controller and bypass the operating system. In this case, the firmware is not able to redirect the floppy disk access to the microSD card. This is why some games/applications are not working. The only solution is to use another floppy disk image. As a workaround, I recommend to try a different version of the game/application from another collection or source.
+
+2. The TOS version of your computer is not compatible with the application/game. In this case, you need to use a different TOS version, or find a version of the application/game compatible with your TOS version.
