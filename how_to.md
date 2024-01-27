@@ -46,11 +46,10 @@ To use the SidecarT effectively, your microSD card needs to be formatted in FAT1
 ### macOS:
 
 1. Insert your microSD card into your computer.
-2. Open `Disk Utility` (you can use Spotlight with `Command + Space` and then type "Disk Utility").
-3. Select your microSD card from the list on the left and then click `Erase`.
-4. For the format, choose `MS-DOS (FAT)` which is the macOS term for FAT16, or `ExFAT`.
-5. Click `Erase` to format the card.
-6. Once the process is complete, safely eject the card from your Mac.
+2. Open `Terminal` (you can use Spotlight with `Command + Space` and then type "Terminal").
+3. Type 'diskutil list' to get a list of all dtives. Identify your SD Card. Example: disk8s1, where 8 is the Disk and s1 the Volume. It also shows you filesystem, name and size. Doublecheck and make sure to pick the right Disk!
+4. Type `diskutil eraseVolume "MS-DOS FAT16" <NAME> disk<X>s<Y>` NAME=Name for the disk. X=Disk, Y=Volume.
+5. Once the process completes, you can safely eject the microSD card.
 
 ### Linux:
 
