@@ -102,7 +102,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
             <p>Different enclosures for your board.</p>
         </td>
         <td style="border: none;">
-            <h3>📦 <a href="/revisions">Board revisions</a></h3>
+            <h3>🔄 <a href="/revisions">Board revisions</a></h3>
             <p>Tracing the path of the SidecarT boards.</p>
          </td>
         <td style="border: none;">
