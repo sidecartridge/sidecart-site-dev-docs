@@ -96,6 +96,16 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
             <p>Frequently Asked Questions.</p>
         </td>
     </tr>
+    <tr>
+        <td style="border: none;">
+            <h3>🤝 <a href="/cases">Enclosures</a></h3>
+            <p>Different enclosures for your board.</p>
+        </td>
+        <td style="border: none;">
+         </td>
+        <td style="border: none;">
+        </td>
+    </tr>
 </table>
 
 
