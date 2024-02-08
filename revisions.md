@@ -33,7 +33,7 @@ Owners of the SidecarT board before February 2024 have Revision 0, the original 
 ![SidecarT revision 1](https://sidecartridge.com/assets/blog/images/sidecart-rev1.png)
 {: refdef}
 
-The transition from Revision 0 to Revision 1 of the SidecarT board involved a shift to a four-layer PCB, reducing its size to about 70% of its predecessor and repositioning components, including the Pico W headers and the SELECT button. This redesign aimed at improving signal stability and physical robustness but introduced challenges such as compatibility issues with certain Atari ST models and fragile case mounting holes. Feedback from users highlighted the importance of backward compatibility with Revision 0 cases, pointing to the need for a balanced design approach in future revisions. **This revsion was never on sale, only a few prototypes were made.**
+The transition from Revision 0 to Revision 1 of the SidecarT board involved a shift to a four-layer PCB, reducing its size to about 70% of its predecessor and repositioning components, including the Pico W headers and the SELECT button. This redesign aimed at improving signal stability and physical robustness but introduced challenges such as compatibility issues with certain Atari ST models and fragile case mounting holes. Feedback from users highlighted the importance of backward compatibility with Revision 0 cases, pointing to the need for a balanced design approach in future revisions. **This revision was never on sale, only a few prototypes were made.**
 
 ## Revision 2: The Hybrid
 
@@ -49,4 +49,4 @@ Revision 2.1 introduces two minor updates to Revision 2.0: the power LED's resis
 
 ## Want to contribute?
 
-You can contribute to this list by submitting your own case design. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
+You can contribute to page. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
