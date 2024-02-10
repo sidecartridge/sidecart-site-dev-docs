@@ -106,6 +106,8 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
             <p>Tracing the path of the SidecarT boards.</p>
          </td>
         <td style="border: none;">
+            <h3>🔄 <a href="/publicfloppydb">Public Floppy DB</a></h3>
+            <p>Contribute to the Floppy Images Database with your own images</p>
         </td>
     </tr>
 </table>
