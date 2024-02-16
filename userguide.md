@@ -355,3 +355,211 @@ In both cases, the SidecarT board will check for the latest release and display 
 
 To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
 
+## Enhanced Network Configuration
+
+As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/parameters)** menu.
+
+### Viewing Network Status
+
+To get an overview of the current network configuration and status, navigate to the **W. Wi-Fi Configuration** menu. Here, you will find detailed information that is essential for identifying and addressing network issues:
+
+- **SSID:** The name of the Wi-Fi network (SSID), which can be set using the `WIFI_SSID` parameter.
+- **Auth Mode:** Specifies the authentication mode used by the Wi-Fi network, adjustable via the `WIFI_AUTH` parameter.
+- **Scan Interval:** Defines the duration, in seconds, between consecutive Wi-Fi network scans. This setting helps in refreshing the network list periodically, based on the `WIFI_SCAN_SECONDS` parameter.
+- **Country:** Sets the country code for the Wi-Fi network. Initially configured to a default value that accommodates a broad range of networks globally, it may need adjustment to match the ISO-3166-alpha-2 code of your specific country for optimal performance. This is modifiable through the `WIFI_COUNTRY` parameter.
+- **Status:** Provides real-time insights into the connection's current state.
+- **IP Address:** Displays the SidecarT board's IP address within the Wi-Fi network.
+- **Gateway:** Shows the gateway's IP address for the Wi-Fi network.
+- **Netmask:** Indicates the network's subnet mask.
+- **DNS Server:** Reveals the DNS server's IP address used by the Wi-Fi network.
+- **MAC Address:** Lists the MAC address of the SidecarT board within the network.
+- **Check Interval:** The frequency, in seconds, at which the SidecarT board reviews the network's status, controlled by the `NETWORK_STATUS_SEC` parameter.
+- **File Download Timeout:** The maximum wait time, in seconds, for downloading a file over the Wi-Fi network, set using the `DOWNLOAD_TIMEOUT_SEC` parameter.
+
+These configurable options empower users to fine-tune their network settings, facilitating improved connectivity and troubleshooting capabilities.
+
+### Adjusting the authentication mode
+
+#### Configuring Authentication Mode
+
+The SidecarT board employs a smart mechanism to determine the Wi-Fi network's authentication mode, enhancing the ease of connectivity. This section guides you through adjusting the authentication settings to ensure a successful network connection.
+
+#### Default Authentication Behavior
+
+Upon attempting to connect to a Wi-Fi network, the SidecarT board initially endeavors to intelligently ascertain the network's authentication mode under the following conditions:
+
+- If the `WIFI_PASSWORD` parameter is populated (i.e., the string length is greater than 0) or if a `.wifipass` file is present at the root of the microSD card, the board attempts to automatically identify the correct authentication mode for the specified SSID.
+
+- Conversely, if the `WIFI_PASSWORD` parameter is left blank and there is no `.wifipass` file found, the board defaults to using the `OPEN` authentication mode. This mode is denoted by the value `0` in the `WIFI_AUTH` parameter, indicating no encryption or password protection.
+
+#### Manual Configuration of Authentication Mode
+
+There may be instances where automatic detection does not yield the correct authentication mode, or you might prefer to specify a particular mode for your network connection. For such scenarios, you can manually set the `WIFI_AUTH` parameter to one of the predefined values to enforce a specific authentication protocol:
+
+- `0`: OPEN (no encryption)
+- `1`, `2`: WPA TKIP PSK (Temporal Key Integrity Protocol with Pre-Shared Key)
+- `3`, `4`, `5`: WPA2 AES PSK (Wi-Fi Protected Access II with Advanced Encryption Standard and Pre-Shared Key)
+- `6`, `7`, `8`: WPA/WPA2 MIXED PSK (Mixed mode supporting both WPA and WPA2 standards)
+
+#### Troubleshooting Connectivity Issues
+
+Should you encounter difficulties in establishing a connection or receiving a valid IP address from the DHCP server, it is recommended to experiment with the different `WIFI_AUTH` values. Switching between authentication modes can help identify a compatible setting that facilitates a successful connection to the network.
+
+By understanding and leveraging the `WIFI_AUTH` parameter, you can fine-tune the SidecarT board's network authentication to match the security requirements of your Wi-Fi network, ensuring a stable and secure connection.
+
+### Configuring the Country Code for Wi-Fi
+
+The SidecarT board facilitates precise control over Wi-Fi connectivity through the `WIFI_COUNTRY` parameter. This setting allows users to define the country code corresponding to their Wi-Fi network, optimizing performance by aligning with local network regulations and bands.
+
+#### Default Configuration
+
+By default, the `WIFI_COUNTRY` parameter is preset to `XX`, activating a *Worldwide* mode. This mode is designed to ensure broad compatibility across global networks. Nonetheless, for enhanced connectivity and to leverage region-specific network optimizations, adjusting this parameter to reflect your location's ISO-3166-alpha-2 code is advisable.
+
+#### How to Set Your Country Code
+
+To tailor the `WIFI_COUNTRY` parameter to your locale, reference the ISO-3166-alpha-2 code corresponding to your country. Below is a markdown-formatted list of countries with their respective codes:
+
+- Argentina: `AR`
+- Australia: `AU`
+- Austria: `AT`
+- Belgium: `BE`
+- Brazil: `BR`
+- Canada: `CA`
+- Chile: `CL`
+- China: `CN`
+- Colombia: `CO`
+- Czech Republic: `CZ`
+- Denmark: `DK`
+- Estonia: `EE`
+- Finland: `FI`
+- France: `FR`
+- Germany: `DE`
+- Greece: `GR`
+- Hong Kong: `HK`
+- Hungary: `HU`
+- Iceland: `IS`
+- India: `IN`
+- Israel: `IL`
+- Italy: `IT`
+- Japan: `JP`
+- Kenya: `KE`
+- Latvia: `LV`
+- Liechtenstein: `LI`
+- Lithuania: `LT`
+- Luxembourg: `LU`
+- Malaysia: `MY`
+- Malta: `MT`
+- Mexico: `MX`
+- Netherlands: `NL`
+- New Zealand: `NZ`
+- Nigeria: `NG`
+- Norway: `NO`
+- Peru: `PE`
+- Philippines: `PH`
+- Poland: `PL`
+- Portugal: `PT`
+- Singapore: `SG`
+- Slovakia: `SK`
+- Slovenia: `SI`
+- South Africa: `ZA`
+- South Korea: `KR`
+- Spain: `ES`
+- Sweden: `SE`
+- Switzerland: `CH`
+- Taiwan: `TW`
+- Thailand: `TH`
+- Turkey: `TR`
+- United Kingdom: `GB`
+- United States: `US`
+- Worldwide: `XX`
+
+Note: If your country is not listed, the `Worldwide` mode (`XX`) is recommended to ensure compatibility across various global networks.
+
+#### Troubleshooting and Performance Optimization
+
+Experimenting with different `WIFI_COUNTRY` settings may be necessary to resolve connectivity issues or optimize network performance. Although setting the `WIFI_COUNTRY` parameter to your country's ISO-3166-alpha-2 code is generally recommended, varying this setting could yield improvements in connection stability, speed, or latency. Adjusting the country code offers a strategic approach to fine-tuning Wi-Fi performance for your specific environment.
+
+### Troubleshooting Wi-Fi Network Detection
+
+Detecting Wi-Fi networks with the SidecarT board can sometimes be challenging due to various external factors such as environmental conditions, network congestion, and signal interference. If you're experiencing issues with finding your Wi-Fi network, adjusting the `WIFI_SCAN_SECONDS` parameter may improve the situation.
+
+#### Adjusting Scan Frequency
+
+The `WIFI_SCAN_SECONDS` parameter controls how often the SidecarT board scans for available Wi-Fi networks. Decreasing this value causes the board to search for networks more frequently, which might increase the chances of successfully detecting your Wi-Fi network.
+
+#### Considerations
+
+While lowering the `WIFI_SCAN_SECONDS` value can aid in detecting Wi-Fi networks more readily, it's important to be mindful of potential drawbacks:
+
+- **Resource Consumption:** More frequent scanning consumes additional computational resources. This heightened activity can impact the performance of the Configurator application, potentially leading to a less responsive user experience.
+
+#### Finding the Right Balance
+
+Finding the optimal setting for `WIFI_SCAN_SECONDS` involves balancing the need for effective network detection with maintaining good system performance. 
+
+### Diagnosing Network Detection and Connectivity Issues
+
+Ensuring seamless network detection and connection is critical for the optimal operation of the SidecarT board. This process involves establishing a Wi-Fi connection followed by acquiring an IP address from the DHCP server. Understanding and managing these steps can significantly enhance your network interaction experience.
+
+#### Initial Connection and IP Address Acquisition
+
+Once a Wi-Fi connection is successfully established, the SidecarT board seeks to obtain an IP address from the DHCP server. A failure to secure a valid IP address results in the absence of displayed network details, indicating an incomplete connection.
+
+#### Monitoring Network Status
+
+The frequency at which the SidecarT board checks the network status is determined by the `NETWORK_STATUS_SEC` parameter. This check occurs periodically:
+
+- **Without a Valid IP Address:** If the board hasn't received a valid IP from the DHCP server, it performs status checks every `NETWORK_STATUS_SEC` seconds to attempt to resolve this issue.
+- **With a Valid IP Address:** Once a valid IP is obtained, the board continues to monitor the network at the same interval, ensuring the connection remains active.
+
+Certain DHCP servers may exhibit delays in IP allocation. To counteract potential wait times, you might consider reducing the `NETWORK_STATUS_SEC` value, potentially to as low as 3 seconds, to prompt more frequent attempts at acquiring an IP address.
+
+#### Adjusting the `NETWORK_STATUS_SEC` Parameter
+
+Modifying the `NETWORK_STATUS_SEC` parameter to a lower figure can lead to increased CPU usage and additional network traffic, as the board will more aggressively seek to establish or maintain its network connection. It's advisable to approach adjustments to this parameter with caution. The default setting of 10 seconds is generally sufficient for obtaining a valid IP address in most scenarios without unduly taxing system resources.
+
+#### Finding the Optimal Balance
+
+Adjusting network settings on the SidecarT board, especially the `NETWORK_STATUS_SEC` parameter, requires a careful balance between ensuring quick network connectivity and maintaining overall system performance. Experimenting with different settings can help identify the most effective configuration for your specific network environment and usage requirements.
+
+### Managing MAC Address Restrictions
+
+The MAC address serves as a fixed, unique identifier for the SidecarT board's network interface, essential for communication within the physical network segment. It's important to note that the MAC address of the SidecarT board cannot be altered.
+
+#### Understanding MAC Address Filtering
+
+Many networks implement MAC address filtering as a security measure, controlling access by explicitly permitting or blocking devices based on their MAC addresses. This approach ensures only recognized devices can connect to the network.
+
+#### Integrating the SidecarT with MAC Address Filtering
+
+Should your network employ MAC address filtering, you must register the SidecarT board's MAC address with your router to grant it network access. You can find the MAC address listed within the `W. Wi-Fi Configuration` menu of the SidecarT board.
+
+#### Steps to Add the SidecarT MAC Address to Your Router
+
+1. Access the `W. Wi-Fi Configuration` menu on your SidecarT board to locate its MAC address.
+2. Log into your router's administration interface. This typically involves entering the router's IP address in a web browser and signing in with your credentials.
+3. Navigate to the MAC address filtering section. The exact location of this setting can vary depending on your router's brand and firmware.
+4. Enter the SidecarT board's MAC address into the list of allowed devices. You may need to select an option to "Add" or "Allow" a new device.
+5. Save your changes and, if necessary, restart the router for the new settings to take effect.
+
+By ensuring the SidecarT board's MAC address is recognized and permitted by your network's filtering rules, you'll facilitate a smooth connection process, allowing the board to communicate effectively with other devices on the network.
+
+### Adjusting the File Download Timeout Setting
+
+The `DOWNLOAD_TIMEOUT_SEC` parameter on the SidecarT board plays a critical role in defining the time limit for file downloads over the Wi-Fi network. This setting is crucial for efficiently managing the retrieval of ROM and floppy images, ensuring that these resources are accessed in a timely manner.
+
+#### Understanding the Default Timeout Duration
+
+Initially, the default timeout was set at 30 seconds. Based on user feedback concerning download times, this has been extended to 60 seconds. This adjustment aims to offer a more accommodating window for file downloads, catering to varying network speeds and file sizes.
+
+#### Evaluating and Customizing the Timeout
+
+Given that the files targeted for download typically do not exceed 1MB, the default 60-second timeout should suffice for the majority of use cases. Nonetheless, the primary bottleneck in the download process is not the file size but rather the latency involved in establishing a connection to the server, initiating the download, and processing each segment of the file. The RP2040 microcontroller, with its limited memory and computational capabilities, processes downloads more slowly compared to standard computers, making latency a more significant factor than bandwidth.
+
+#### When to Modify the `DOWNLOAD_TIMEOUT_SEC` Parameter
+
+- **Increasing the Timeout:** If you experience difficulties in completing downloads within the 60-second window, it may be necessary to extend the `DOWNLOAD_TIMEOUT_SEC` duration. This adjustment can accommodate slower server response times or any network latency issues, ensuring that downloads can complete successfully.
+  
+- **Decreasing the Timeout:** Conversely, if downloads are consistently finishing well before the 60-second mark, you might consider reducing the timeout setting. This can streamline the network interaction process, preventing unnecessary delays in cases where downloads are completed more swiftly.
+
+Adjusting the `DOWNLOAD_TIMEOUT_SEC` parameter allows you to tailor the download experience to your specific network conditions and the performance of the SidecarT board. Experimenting with different settings can help identify the optimal timeout duration for your setup, balancing efficiency with reliability in file retrieval operations.
