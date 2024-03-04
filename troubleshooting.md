@@ -40,6 +40,10 @@ If the SidecarT board is not detected by the computer, please check the followin
 2. If the LED blinks upon booting, next connect the Pico W to the SidecarT headers and perform the same operation. The green LED should blink in this case too. If it doesn't, there might be a short circuit on the SidecarT board.
 3. Lastly, try connecting the SidecarT to the computer. It is highly recommended cleaning the SidecarT cartridge connector with isopropyl alcohol before doing this. If the LED does not blink in this case, there might be a short circuit on the SidecarT board. If the LED blinks, the SidecarT board is working fine and the issue is with the cartridge connector on the computer.
 
+### CONFIGURATOR mode crashes with two bombs
+
+This is a known issue commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads) available.
+
 ### Cannot enter into the CONFIGURATOR mode
 
 If you cannot enter into the CONFIGURATOR mode, please check the following:
