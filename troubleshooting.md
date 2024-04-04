@@ -44,9 +44,9 @@ If the SidecarT board is not detected by the computer, please check the followin
 
 This is a [known issue](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues/55) commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads) available.
 
-### CONFIGURATOR takes very long to start and stops responding
+### CONFIGURATOR takes very long to start and stops responding or ask me to reboot the computer or show bombs on the screen
 
-If the CONFIGURATOR takes a long time to start and stops responding, it is likely that the microSD card folders contain a large number of files. The CONFIGURATOR reads all the files in the microSD card folders on start. To resolve this issue, you can also disable the file count in the microSD card folders by setting the `FILE_COUNT_ENABLED` parameter to `false`.
+If the CONFIGURATOR takes a long time to start and stops responding, ask for a reboot or show bombs on the screen, it is likely that the microSD card folders contain a large number of files. The CONFIGURATOR reads all the files in the microSD card folders on start. To resolve this issue, you can also disable the file count in the microSD card folders by setting the `FILE_COUNT_ENABLED` parameter to `false`.  To do this, remove the microSD card, power off/on the computer and press the `BUTTON` of the SidecarT to enter the CONFIGURATOR mode. After changing the `FILE_COUNT_ENABLED` parameter, power off the computer, insert the microSD card again and power on the computer.
 
 ### Cannot enter into the CONFIGURATOR mode
 
