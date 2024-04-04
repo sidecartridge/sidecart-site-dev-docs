@@ -185,6 +185,7 @@ Distinct from other methods, the SidecarT board uniquely facilitates hard disk e
 
 - **Advantages**:
   - Unlimited hard disk size, allowing the use of the full capacity of the microSD card.
+  - Not affected by the infamous Bad-DMA issue, as the SidecarT board doesn't rely on the Atari ST's DMA controller.
   - Compatibility across TOS versions 1.00 to 2.06.
   - Enables organizing files into folders on the microSD card, simulating multiple hard disks on a single card.
   - Facilitates easy file transfer between the microSD card and computers (PC/Mac/Linux).
