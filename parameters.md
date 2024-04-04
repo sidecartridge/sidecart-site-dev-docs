@@ -12,12 +12,22 @@ Please modify the parameters with caution, as they can affect the behavior of th
 | Parameter            | Type      | Description                                            | Released | Default                              |
 |:---------------------|:----------|:-------------------------------------------------------|:---------|:-------------------------------------|
 | BOOT_FEATURE         | STRING    | Firmware mode to start after SidecarT reboot           | v0.0.1   | CONFIGURATOR                         |
+| CONFIGURATION_DARK   | BOOLEAN   | Enable or disable the dark theme in the Configurator   | v0.0.16  | false                                |
 | DELAY_ROM_EMULATION  | BOOLEAN   | Enable or disable Delay/Ripper mode                    | v0.0.9   | false                                |
 | DOWNLOAD_TIMEOUT_SEC | INTEGER   | The timeout in seconds for the download operations     | v0.0.15  | 60                                   |
+| FILE_COUNT_ENABLED   | BOOLEAN   | Enable or disable the file count in the microSD card   | v0.0.16  | true                                 |
 | FLOPPIES_FOLDER      | STRING    | The folder where the SidecarT will find the Floppy images | v0.0.10  | /floppies                            |
+| FLOPPY_BOOT_ENABLED  | BOOLEAN   | Enable or disable the floppy startup from boot sector  | v0.0.16  | true                                 |
+| FLOPPY_BUFFER_TYPE   | INTEGER   | The type of floppy buffer to use: 0=_dskbuf, 1=heap    | v0.0.16  | 0                                    |
 | FLOPPY_DB_URL        | STRING    | The URL of the Atari ST floppy database                | v0.0.11  | http:// ataristdb.        |
 | FLOPPY_IMAGE_A       | STRING    | File with the floppy image to emulate in drive A       | v0.0.10  |                                      |
 | FLOPPY_IMAGE_B       | STRING    | File with the floppy image to emulate in drive B       |          |                                      |
+| FLOPPY_XBIOS_ENABLED | BOOLEAN   | Enable or disable the XBIOS floppy emulation           | v0.0.16  | true                                 |
+| GEMDRIVE_BUFF_TYPE   | INTEGER   | The type of GEMDRIVE drive buffer: 0=_dskbuf, 1=heap   | v0.0.16  | 0                                    |
+| GEMDRIVE_DRIVE       | STRING    | The drive letter to emulate as a GEMDRIVE drive        | v0.0.16  | C                                    |
+| GEMDRIVE_FOLDERS     | STRING    | The folders to mount as GEMDRIVE drives                | v0.0.16  | /hd                                  |
+| GEMDRVIVE_RTC        | BOOLEAN   | Enable or disable the RTC in the GEMDRIVE drives       | v0.0.16  | true                                 |
+| GEMDRIVE_TIMEOUT_SEC | INTEGER   | The timeout in seconds for the GEMDRIVE RTC operations | v0.0.16  | 45                                   |
 | HOSTNAME             | STRING    | The hostname of the SidecarT in the TCP/IP network     | v0.0.1   | sidecart                             |
 | LATEST_RELEASE_URL   | STRING    | The URL of the file with the latest SidecarT release version | v0.0.1   | http:// atarist./ version.txt |
 | MENU_REFRESH_SEC     | INTEGER   | The number of seconds to refresh the Configurator menu | v0.0.15  | 3                                    |

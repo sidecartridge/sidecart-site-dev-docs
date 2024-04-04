@@ -99,10 +99,6 @@ Given the `SELECT` button's dual function, you cannot access the `Configurator` 
 
 ## Floppies Emulation
 
-{: .warning }
-The Floppies Emulation feature is currently in preview. It remains under active development. If you opt to use it in read-write mode, ensure backups are made of your floppy images.
-{: .warning}
-
 The Floppies Emulation represents a significant enhancement to the SidecarT board. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
 
 ### Pre-requisite: Hosting Floppy Images on microSD
@@ -119,10 +115,19 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
 
 3. **Transferring Floppy Images**: Move your `.ST` and `.MSA` formatted floppy images into the `floppies` directory. The board recognizes these files automatically.
 
-4. **Initialization**:
+4. **Initialization and Configuration**:
    - Insert the microSD into the SidecarT board.
    - Power up the board; it should recognize the microSD card automatically.
-   - Enter `Configurator` mode by pressing the `SELECT` button. Navigate to either `Emulate Floppy image` menu option (read-only or read-write) and select the desired floppy image. Upon reboot, the Atari ST will interface with this image as if it were an actual floppy disk.
+   - Enter `Configurator` mode by pressing the `SELECT` button. Navigate to `Emulate Floppy` menu option.
+   - A menu will display the following options:
+     - Floppy [A]: Press `A` to select the floppy image to emulate in drive A from the list of available images in the folder.
+     - [E]xecute boot sector: Press `E` to enable or disable the execution of the boot sector of the floppy image. Sometimes the boot sector contains an antivirus or copy protection that can interfere with the emulation, so it's useful to disable it.
+     - [X]BIOS interception: Press `X` to enable or disable the interception of the XBIOS calls to the floppy drive. Some software uses the XBIOS calls to access the floppy drive, so it's useful to disable it specially in versions of TOS 1.00 and TOS 1.02.
+     - Temp [M]emory type: Press `M` to select the memory type to use for the temporary memory used by the floppy emulation.The default is `_dskbuf` that uses the buffer created by the operating system. The other option is `heap` and uses the heap memory. This is an advanced parameter and I don't recommend to change it unless you know what you are doing.
+5. **Rebooting**: There are three more options:
+   - [S] - Start emulation: Press `S` to start the emulation of the floppy image in drive A in read-only mode.
+   - [W] - Start emulation in read-write mode. Press `W` to start the emulation of the floppy image in drive A in read-write mode. This will create a copy of the floppy image with the `.rw` extension to avoid data loss, if it does not already exists.
+   - [F] - Format a floppy image: Press `F` to format a floppy image in the drive A. This will create a new floppy image in the `floppies` folder with the `.ST` extension. The user can select the size of the floppy image to create and the volume name of the floppy. See the instructions below.
 
 {: .note }
 If `floppies` isn't your desired directory name, it can be changed. Adjust the `FLOPPIES_FOLDER` parameter. Details are available in the [Configuration Parameters](/parameters) section.
@@ -133,20 +138,7 @@ If `floppies` isn't your desired directory name, it can be changed. Adjust the `
 {: .note }
 Starting from v0.0.11 the Floppy Emulation supports .MSA files.
 
-The steps to select the floppy image to emulate are the same for both read-only and read-write modes. This section explains how to select the floppy image to emulate:
-
-1. Enter into the `Configurator` mode by pressing the `SELECT` button more than one second. Now, power cycle your computer and the `Configurator` boot menu will be displayed. Press LEFT SHIFT to enter into the `Configurator` application, or wait 5 seconds to boot the Atari ST normally, open the `Cartridge` drive and run the `SIDECART.TOS` file.
-
-2. From the main menu, there are two options to emulate floppy images:
-
-```
-3. Emulate Floppy image from microSD in Read-Only mode 
-4. Emulate Floppy image from microSD in Read-Write mode
-```
-
-3. In the floppy image selection menu, the user can select the floppy image to emulate from the list of floppy images available. Simply press `RETURN` or `ENTER` to select the floppy image to emulate, and the Atari ST will load and prepare the floppy image to be used. The SidecarT board green led will blink an `F` in Morse code to indicate that the floppy image is ready to be used.
-
-4. Gently reset or power cycle the Atari ST to use the floppy image. The Atari ST will boot normally and will use the floppy image as if it was a physical floppy disk.
+The steps to select the floppy image to emulate are the same for both read-only and read-write modes. The SidecarT will convert the `.MSA` files to `.ST` files on the fly. 
 
 ### Read-Write Emulation for Floppy Images
 
@@ -164,19 +156,89 @@ It's important to note that the SidecarT board won't validate the integrity of `
 
 The SidecarT board can be configured to create an empty writable floppy image to create our own content or have a blank floppy image to copy files from the Atari ST.
 
-After selecting the option `Emulate Floppy image from microSD in Read-Write mode`, the first entry in the selection menu will be `< CREATE A BLANK FLOPPY IMAGE >`. Select this option and the SidecarT board will prompt for several parameters:
+After selecting the option `[F] - Format a floppy image` . Select this option and the SidecarT board will prompt for several parameters:
 
 - `Size [1]-SS/DD (360KB), [2]-DS/DD (720KB), [3]-HD (1.44MB)`: Select the size of the floppy image to create.
 - `Volume name (max 8 chars, dot, max 3 chars)`: The volume name of the floppy for the Atari ST computer. Can be empty.
 - `Image name (max 255 chars)`: The name of the floppy image file stored in the microSD card. Cannot be empty.
 
-Now the SidecarT will need a few seconds to create the empty floppy image. After that, the Atari ST will report to the user that the new image is ready to be used. The user can now select the new read/write image as any other in the floppy image folder.
+Now the SidecarT will need a few seconds to create the empty floppy image. After that, the Atari ST will report to the user that the new image is ready to be used. The user can choose to start the image in read-only or read-write mode.
 
+{: .note }
 ### Floppy image formats supported
 
 The default format supported by the SidecarT is the `.ST` format. Starting from version v0.0.11, SidecarT can also read the `.MSA` format, converting it to `.ST` format on the fly. Under the covers, everything is a `.ST` file.
 
 A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The SidecarT board will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
+
+## Hard Disk Emulation
+
+{: .warning }
+The Hard Disk Emulation feature is an experimental feature. It remains under active testing and development. If you opt to use it please backup your data regularly.
+{: .warning}
+
+### Introduction
+
+The SidecarT board introduces a hard disk emulation feature for the Atari ST, offering a significant storage solution without the necessity for an actual hard disk. This guide details the setup and utilization of the Hard Disk Emulation feature.
+
+Distinct from other methods, the SidecarT board uniquely facilitates hard disk emulation by integrating the Atari ST's file system with that of a microSD card, managed by the RP2040 microcontroller. This method presents several benefits and drawbacks:
+
+- **Advantages**:
+  - Unlimited hard disk size, allowing the use of the full capacity of the microSD card.
+  - Compatibility across TOS versions 1.00 to 2.06.
+  - Enables organizing files into folders on the microSD card, simulating multiple hard disks on a single card.
+  - Facilitates easy file transfer between the microSD card and computers (PC/Mac/Linux).
+  - Requires less or no memory compared to other emulation drivers.
+  
+- **Disadvantages**:
+  - Writing operations to the hard disk are slower than reading due to the slower protocol communication with the RP2040 during write operations.
+  - Not all software is compatible, particularly those making direct hardware calls to the hard disk, as the SidecarT emulates hard disk functions by intercepting GEMDOS calls.
+  - The emulation driver is less mature, potentially leading to bugs or issues during use.
+
+Despite these challenges, the benefits of Hard Disk Emulation often surpass the drawbacks, providing a reliable storage solution. Moreover, with ongoing development, the SidecarT board is poised for further enhancements, promising an even more robust and user-friendly experience in the future.
+
+### What is a GEMdrive
+
+The concept for the GEMdrive hard disk emulation originated with the GEMDOS component of the Hatari emulator, though it's worth noting that there exists a GemDrive for the ACSI2STM project, which serves a different purpose. Initially, the plan was to borrow the GEMDOS implementation from Hatari and adapt it for use with the SidecarT board. However, this strategy proved unfeasible due to the Hatari emulator's capability for extensive interaction with both the Atari ST's internals and the host computer—capabilities that the SidecarT board, as a peripheral, cannot match due to its need to adhere to the Atari ST's hardware constraints. The GEMDOS code from Hatari was ultimately deemed too intricate and too intertwined with the emulator itself for direct application in the SidecarT environment. Nevertheless, the exploration of Hatari's GEMDOS code was highly informative, leading to the development of a bespoke GEMdrive code specifically tailored for the SidecarT board.
+
+The original GEMDOS driver allowed for the mounting of a Windows/OSX/Linux filesystem as an Atari ST disk drive, a functionality mirrored by the GEMdrive through its use of the microSD card filesystem, FatFS. While some advanced users may view this solution as excessive, it represents the sole method by which to provide substantial storage capacity to the Atari ST. More significantly, it marks a crucial **initial step towards realizing a network filesystem for the Atari ST.**
+
+### Setting Up Hard Disk Emulation
+
+To activate the hard disk emulation feature on the SidecarT board, you must first ensure that the emulation files are properly placed within a designated directory on a FAT16 or exFAT formatted microSD card. While `hd` is the default directory name for these files, it can be customized to suit your preferences.
+
+1. **MicroSD Card Setup**: Skip this step if your microSD card is already set up with ROMs and/or floppy images. Otherwise, start by formatting the microSD card to FAT16 or exFAT. Detailed formatting instructions are available in the [microSD Card Formatting Guide](/how_to#format-the-microsd-card).
+
+2. **Creating the Directory**: In the root directory of the microSD card, create a folder named `hd`. This folder will be scanned by the board to locate your emulated hard disk files.
+
+3. **File Transfer**: Transfer files and folders from your PC/Mac/Linux computer to the `hd` folder on the microSD card. These will be recognized by the SidecarT board as part of the emulated hard disk. Additionally, you can manage file transfers between the emulated hard disk and other hard disk drivers.
+
+4. **Initialization and Setup**:
+   - Insert the prepared microSD card into the SidecarT board.
+   - Turn on the board. It will automatically detect the microSD card.
+   - Access the `Configurator` by pressing the `SELECT` button and navigate to the `Emulate Hard Disk` option.
+   - Within this menu, you will find several settings:
+     - [D]rive: Hit `D` to choose the drive letter for emulation, ranging from `C` to `Z`. Select a unique letter if using multiple hard disk drivers.
+     - Temp [M]emory Type: Press `M` to pick the type of temporary memory for emulation. The default `_dskbuf` utilizes the operating system's buffer, while `heap` opts for heap memory. This setting is advanced and should only be altered with caution.
+     - [R]TC Enabled: Toggle the Real Time Clock (RTC) by pressing `R`. Enabling RTC ensures accurate date and time for files and the Atari ST computer.
+     - [T]imeout (Seconds): Set the wait time for network and NTP server synchronization, with a default of 45 seconds.
+5. **Starting the Emulation**:
+   - Additional options include:
+     - [S] - Start Emulation: Press `S` to commence hard disk emulation using the chosen drive letter.
+
+> **Note:** If you prefer a directory name other than `hd`, you can modify the `GEMDRIVE_DRIVE` parameter in the configuration settings. For more information, refer to the [Configuration Parameters](/parameters) section.
+
+### Features not supported and known issues
+
+The SidecarT board's hard disk emulation feature does not support the following functionalities in verision v0.0.16:
+
+- **Volume Name**: It does not support volume names for the hard disk emulation. The Atari ST will not display the volume name of the hard disk.
+- **Pipes**: The current version does not support pipes. The Atari ST will not be able to use pipes with the hard disk emulation.
+
+Both features are planned for future releases.
+
+The lastest adapted games for hard disk by Peter Putnik and others does support the GEMdrive emulation. You can find them in the [Atari ST Adapted Games](https://atari.8bitchip.info/fromhd3.php) site. Most of the games with HAGA and HAGE support does work with the GEMdrive emulation with TOS ranging from 1.00 to 2.06 and 1MB of RAM. 
+
 
 ## Atari ST database of floppy images
 
@@ -198,9 +260,9 @@ This section explains how to select the floppy image to emulate from the databas
 
 4. The user can now select the application to download pressing `RETURN` or `ENTER`. Now, the SidecarT board will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
 
-5. After the download is finished, the Atari ST will load and prepare the floppy image to be used. The SidecarT board green led will blink an `F` in Morse code to indicate that the floppy image is ready to be used.
+5. After the download is finished, the Atari ST will redirect the user to the Floppy Emulation menu to select how to use the floppy image.
 
-4. Gently reset or power cycle the Atari ST to use the floppy image. The Atari ST will boot normally and will use the floppy image as if it was a physical floppy disk.
+4. From the menu the user can reset the computer. The Atari ST will boot normally and will use the floppy image as if it was a physical floppy disk.
 
 
 ### Set the URL of the database and images files
@@ -321,6 +383,16 @@ By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will 
 {: .note}
 There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes sense. For instance, developers frequently adjusting the SidecarT configuration might find repeatedly waiting for a power cycle tedious. However, exercise this option judiciously.
 {: .note}
+
+### Count the number files in the folders of the microSD card
+
+The SidecarT board can be configured to count the number of files in the folders of the microSD card. This feature is useful to know how many ROMs or floppy images and files in the hard disk folders are available. This feature is configured by default, but the user can disable it if the number of files is too big and the SidecarT board is slow to boot.
+
+To disable this feature, the user must set the `FILE_COUNT_ENABLED` parameter to `false`. The user can learn more about this parameter in the [Configuration Parameters](/parameters) section. To return to the default behavior, the user must set the `FILE_COUNT_ENABLED` parameter to `true`.
+
+### Dark mode
+
+The SidecarT board can be configured to use a dark mode in the Configurator application for medium resolution mode. This feature is useful for old CRT monitors that can have problems with the white background of the Configurator application. By default the dark mode is disabled, but the user can enable it by setting the `CONFIGURATOR_DARK` parameter to `true`. The user can learn more about this parameter in the [Configuration Parameters](/parameters) section. To return to the default behavior, the user must set the `CONFIGURATOR_DARK` parameter to `false`.
 
 ### Latest release verification
 

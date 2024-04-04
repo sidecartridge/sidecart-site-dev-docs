@@ -42,7 +42,11 @@ If the SidecarT board is not detected by the computer, please check the followin
 
 ### CONFIGURATOR mode crashes with two bombs
 
-This is a [known issue](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues/55) commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads) available. 
+This is a [known issue](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues/55) commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads) available.
+
+### CONFIGURATOR takes very long to start and stops responding
+
+If the CONFIGURATOR takes a long time to start and stops responding, it is likely that the microSD card folders contain a large number of files. The CONFIGURATOR reads all the files in the microSD card folders on start. To resolve this issue, you can also disable the file count in the microSD card folders by setting the `FILE_COUNT_ENABLED` parameter to `false`.
 
 ### Cannot enter into the CONFIGURATOR mode
 
@@ -93,3 +97,13 @@ There are mostly two reasons why some floppy disk images are not working:
 1. The floppy emulator "traps" the floppy disk access and redirects it to the microSD card. This is done by a combination of hardware and software. The hardware part is done by the SidecarT board and the software part is done by the firmware. The firmware is responsible for reading the floppy disk images from the microSD card and sending them to the Atari ST. Some applications -mostly games- are using a direct access to the floppy disk controller and bypass the operating system. In this case, the firmware is not able to redirect the floppy disk access to the microSD card. This is why some games/applications are not working. The only solution is to use another floppy disk image. As a workaround, I recommend to try a different version of the game/application from another collection or source.
 
 2. The TOS version of your computer is not compatible with the application/game. In this case, you need to use a different TOS version, or find a version of the application/game compatible with your TOS version.
+
+## Hard disk emulation
+
+### Hard Disk Drive Not Visible in GEM
+
+The hard disk drive is assigned to drive letter `C` (or another letter you've chosen), and it must be in uppercase. If the drive isn't appearing, try the following steps: First, click on any 'Floppy Disk' icon. Next, navigate to the 'Options' menu located at the top of the screen and select 'Install Disk Drive...'. Here, choose the letter `C` (or your specific drive letter), ensuring it's in uppercase. For easier identification, change the `Icon label` to `Hard Disk`. After these adjustments, click on `Install`. You should now see the `Drive C:` (or your specified drive) displayed.
+
+### The hard disk drive letter of the GEMdrive collides with the drive letter of other devices
+
+If the hard disk drive letter of the GEMdrive collides with the drive letter of other devices, you can change the drive letter of the GEMdrive in the configurator. To do this, [follow these steps](/userguide/#hard-disk-emulation). Sometimes the drive letter of other devices cannot be changed, so you must change the drive letter of the GEMdrive.
