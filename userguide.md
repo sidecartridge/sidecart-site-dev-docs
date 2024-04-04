@@ -235,7 +235,9 @@ The SidecarT board's hard disk emulation feature does not support the following 
 - **Volume Name**: It does not support volume names for the hard disk emulation. The Atari ST will not display the volume name of the hard disk.
 - **Pipes**: The current version does not support pipes. The Atari ST will not be able to use pipes with the hard disk emulation.
 
-Both features are planned for future releases.
+- **Support for MegaSTE in 16Mhz + Cache enabled**: This configuration is not supported in v0.0.16, but it will eventually be supported in v0.0.17.
+
+All the features are planned for future releases.
 
 The lastest adapted games for hard disk by Peter Putnik and others does support the GEMdrive emulation. You can find them in the [Atari ST Adapted Games](https://atari.8bitchip.info/fromhd3.php) site. Most of the games with HAGA and HAGE support does work with the GEMdrive emulation with TOS ranging from 1.00 to 2.06 and 1MB of RAM. 
 
