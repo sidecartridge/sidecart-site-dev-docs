@@ -241,6 +241,8 @@ The SidecarT board's hard disk emulation feature does not support the following 
 
 - **Support for MegaSTE in 16Mhz + Cache enabled**: This configuration is not supported in v0.0.16, but it will eventually be supported in v0.0.17.
 
+- **AUTO folder shuffle**: The GEMDRIVE can read from the AUTO folder, but the order of the files is lexical. This can be a problem for some software that needs to be executed in a specific order. This will be fixed in future versions.
+
 All the features are planned for future releases.
 
 The lastest adapted games for hard disk by Peter Putnik and others does support the GEMdrive emulation. You can find them in the [Atari ST Adapted Games](https://atari.8bitchip.info/fromhd3.php) site. Most of the games with HAGA and HAGE support does work with the GEMdrive emulation with TOS ranging from 1.00 to 2.06 and 1MB of RAM. 
