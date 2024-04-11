@@ -17,6 +17,10 @@ nav_order: 3
 </details>
 
 ## ROM Emulation
+{: .d-inline-block }
+
+{{ site.FIRMWARE_VERSION }}
+{: .label .label-purple }
 
 ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how use and set up the ROM Emulation.
 
@@ -98,6 +102,10 @@ Given the `SELECT` button's dual function, you cannot access the `Configurator` 
 {: .important}
 
 ## Floppies Emulation
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 The Floppies Emulation represents a significant enhancement to the SidecarT board. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
 
@@ -172,6 +180,10 @@ The default format supported by the SidecarT is the `.ST` format. Starting from 
 A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The SidecarT board will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
 
 ## Hard Disk Emulation
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 {: .warning }
 The Hard Disk Emulation feature is an experimental feature. It remains under active testing and development. If you opt to use it please backup your data regularly.
@@ -249,6 +261,10 @@ The lastest adapted games for hard disk by Peter Putnik and others does support 
 
 
 ## Atari ST database of floppy images
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 The SidecarT board can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This is an out of the box feature that doesn't require any additional configuration besides the one explained above for the Floppies Emulation. 
 
@@ -291,6 +307,10 @@ The SidecarT board currently doesn't support HTTPS. Ensure that your server uses
 
 
 ## Real Time Clock (RTC)
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 Starting from the version v0.0.11 of the firmware, the SidecarT board can be configured to be a Real Time Clock (RTC) for the Atari ST. This section explains how to configure the SidecarT board to be a RTC.
 
@@ -351,6 +371,10 @@ The SidecarT will not return a valid date and time until it obtains a valid date
 {: .warning}
 
 ## Boot a ROM image from the microSD card in 'Rescue Mode'
+{: .d-inline-block }
+
+{{ site.FIRMWARE_VERSION }}
+{: .label .label-purple }
 
 The SidecarT can be a very helpful device to troubleshoot damaged computers. A good use case is bypass the configurator and let the SidecarT to run a "default ROM" when plugged. This new feature is called "Rescue Mode", and it will boot a ROM image from the microSD card when the SidecarT is plugged in the Atari ST without interacting with the configurator.
 
@@ -370,6 +394,10 @@ To disable the Rescue Mode, the user must delete the `.romrescue` file from the 
 
 
 ## Configurator Application
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 The Configurator application serves as the central interface for the SidecarT board's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
 
@@ -436,6 +464,10 @@ In both cases, the SidecarT board will check for the latest release and display 
 To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
 
 ## Enhanced Network Configuration
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple }
 
 As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/parameters)** menu.
 
