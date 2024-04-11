@@ -20,7 +20,7 @@ nav_order: 3
 {: .d-inline-block }
 
 {{ site.FIRMWARE_VERSION }}
-{: .label .label-purple }
+{: .label .label-green }
 
 ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how use and set up the ROM Emulation.
 
@@ -374,7 +374,7 @@ The SidecarT will not return a valid date and time until it obtains a valid date
 {: .d-inline-block }
 
 {{ site.FIRMWARE_VERSION }}
-{: .label .label-purple }
+{: .label .label-green }
 
 The SidecarT can be a very helpful device to troubleshoot damaged computers. A good use case is bypass the configurator and let the SidecarT to run a "default ROM" when plugged. This new feature is called "Rescue Mode", and it will boot a ROM image from the microSD card when the SidecarT is plugged in the Atari ST without interacting with the configurator.
 
