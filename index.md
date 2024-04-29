@@ -20,22 +20,22 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
 
 ## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
 * **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
-* 🕒 [Older Versions](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases)
+* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
+* 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
 
 ## 🚀 Latest BETA Firmware: {{ site.FIRMWARE_BETA_VERSION }}
 * **💾 [Download BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_BETA_VERSION }})**
+* **📝 [Changelog for BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_BETA_VERSION }})**
 
 ## 🐞 Bugs, Issues, and Enhancements
-* [Reporting tool](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico/issues)
+* [Reporting tool](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues)
 
 ## Other Quick links
-* [RP2040 firmware source code](https://github.com/diegoparrilla/atarist-sidecart-raspberry-pico)
-* [Atari ST Configurator firmware source code](https://github.com/diegoparrilla/atarist-sidecart-firmware)
-* [Atari ST Floppy Emulator firmware source code](https://github.com/diegoparrilla/atarist-sidecart-floppy-emulator)
-* [SidecarT Test ROM](https://github.com/diegoparrilla/atarist-sidecart-test-rom)
-* [SidecarT documentation site (this site)](https://github.com/diegoparrilla/sidecart-site-dev-docs)
+* [RP2040 firmware source code](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico)
+* [Atari ST Configurator firmware source code](https://github.com/sidecartridge/atarist-sidecart-firmware)
+* [Atari ST Floppy Emulator firmware source code](https://github.com/sidecartridge/atarist-sidecart-floppy-emulator)
+* [SidecarT Test ROM](https://github.com/sidecartridge/atarist-sidecart-test-rom)
+* [SidecarT documentation site (this site)](https://github.com/sidecartridge/sidecart-site-dev-docs)
 
 ## Table of Contents
 
