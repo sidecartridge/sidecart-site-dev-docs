@@ -26,7 +26,7 @@ Before you begin the installation and setup of the SidecarTridge TOS emulator, e
 
 ## Required Components
 
-- **SidecarTridge TOS Emulator Kit**: This should include the SidecarTridge ROM Emulator Board, the SidecarTridge Atari ST Model Carrier Board, a USB-C cable (Optional), and the RESCUE cable (Optional).
+- **SidecarTridge TOS Emulator Kit**: This should include the SidecarTridge ROM Emulator Board, the SidecarTridge Atari ST Model Carrier Board, a 3 1/2 floppy disk with the SWITCHER.TOS application (optional), a USB-C cable (Optional), and the RESCUE cable (Optional).
 - **3 1/2 inch Floppy Disk**: With the SWITCHER.TOS program for managing TOS versions on the Atari ST. This program can also be downloaded from the SidecarTridge website.
 - **A USB-C cable (not included in the kit)**: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
 - **RESCUE cable (not included in the kit)**: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
@@ -36,13 +36,13 @@ Here is a markdown table with the information extracted and formatted as request
 
 Sure, here is the revised table with the model column removed and the required information:
 
-#### Supported Atari ST Motherboards and Carrier Boards
+### Supported Atari ST Motherboards and Carrier Boards
 
 {: .info}
 Carrier boards for non supported motherboards are in active development. Please check the SidecarTridge website for updates.
 {: .warning}
 
-##### Atari ST series
+#### Atari ST series
 
 | Motherboard Model Number | Number of ROMs | Carrier Board   |
 |--------------------------|----------------|-----------------|
@@ -70,7 +70,7 @@ Carrier boards for non supported motherboards are in active development. Please 
 | C103414-001 Rev. 1       |       2        | Supported       |
 | C103414-001 Rev. 1.1     |       2        | Supported       |
 
-##### Atari Mega ST series
+#### Atari Mega ST series
 
 | Motherboard Model Number | Number of ROMs | Carrier Board   |
 |--------------------------|----------------|-----------------|
@@ -79,14 +79,14 @@ Carrier boards for non supported motherboards are in active development. Please 
 | C100167-001 Rev. 5.0     |                | Not supported   |
 
 
-##### Atari STE series
+#### Atari STE series
 
 | Motherboard Model Number | Number of ROMs | Carrier Board   |
 |--------------------------|----------------|-----------------|
 | CA4003290                |       2        | Supported       |
 
 
-##### Atari Mega STE series
+#### Atari Mega STE series
 
 | Motherboard Model Number | Number of ROMs | Carrier Board   |
 |--------------------------|----------------|-----------------|
@@ -95,8 +95,6 @@ Carrier boards for non supported motherboards are in active development. Please 
 
 {: .warning}
 If you can't find your motherboard model number in the list, or have any doubts about compatibility, please contact us for further assistance.
-
-
 
 ## Tools and Equipment
 - **Phillips Head Screwdriver**: For opening the Atari ST case.

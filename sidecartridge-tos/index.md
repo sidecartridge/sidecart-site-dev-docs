@@ -48,7 +48,7 @@ The SidecarTridge TOS emulator streamlines the process of managing and updating 
             <p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-tos/getting_started">Getting started</a></h3>
+            <h3>🚀 <a href="/sidecartridge-tos/getting-started">Getting started</a></h3>
             <p>Guidance on the initial steps including prerequisites, installation instructions, setup and configuration.</p>
         </td>
         <td style="border: none;">
