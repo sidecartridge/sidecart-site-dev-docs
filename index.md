@@ -5,7 +5,7 @@ nav_order: 0
 ---
 
 
-![SidecarT](/assets/images/SIDECART_TEXT_BW_1920x416.png)
+![SidecarT](/assets/images/SIDECARTRIDGE_TEXT_BW_1920x416.png)
 
 # SidecarT Documentation 
 {: .d-inline-block }
