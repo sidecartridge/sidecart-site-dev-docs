@@ -26,10 +26,13 @@ Before you begin the installation and setup of the SidecarTridge TOS emulator, e
 
 ## Required Components
 
-- **SidecarTridge TOS Emulator Kit**: This should include the SidecarTridge ROM Emulator Board, the SidecarTridge Atari ST Model Carrier Board, a 3 1/2 floppy disk with the SWITCHER.TOS application (optional), a USB-C cable (Optional), and the RESCUE cable (Optional).
-- **3 1/2 inch Floppy Disk**: With the SWITCHER.TOS program for managing TOS versions on the Atari ST. This program can also be downloaded from the SidecarTridge website.
-- **A USB-C cable (not included in the kit)**: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
-- **RESCUE cable (not included in the kit)**: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
+- **SidecarTridge TOS Emulator Kit**: This should include:
+  1. the SidecarTridge ROM Emulator Board
+  2. Tthe SidecarTridge Atari ST Carrier Board
+  3. (Optional) 3 1/2 floppy disk with the SWITCHER.TOS application. It is the program for managing TOS versions on the Atari ST. It can also be downloaded from the SidecarTridge website.
+  4. (Optional) USB-C cable: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
+  5. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
+
 - **Atari ST Computer**: The emulator is compatible with various models, including the ST, STE, Mega ST, and Mega STE. The following list of motherboards and carrier boards is supported:
 
 Here is a markdown table with the information extracted and formatted as requested:

@@ -53,17 +53,17 @@ The SidecarTridge TOS emulator streamlines the process of managing and updating 
         </td>
         <td style="border: none;">
             <h3>⚙️ <a href="/sidecartridge-tos/userguide">User Guide</a></h3>
-            <p>Learn how to use the SidecarT.</p>
+            <p>Learn how to use the SidecarTridge TOS emulator.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>🤝 <a href="/sidecartridge-tos/compatibility_issues">Compatibility</a></h3>
-            <p>Please read this section if you have issues with your SidecarT.</p>
+            <h3>🤝 <a href="/sidecartridge-tos/compatibility">Compatibility</a></h3>
+            <p>Please read this section to know about open issues and compatibility.</p>
         </td>
         <td style="border: none;">
             <h3>🛠️ <a href="/sidecartridge-tos/troubleshooting">Troubleshooting</a></h3>
-            <p>Check this section if you have issues with your SidecarT.</p>
+            <p>Check this section if you have issues with your SidecarTridge.</p>
         </td>
         <td style="border: none;">
             <h3>❓ <a href="/sidecartridge-tos/faq">FAQ</a></h3>
