@@ -5,7 +5,7 @@ nav_order: 0
 ---
 
 
-![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_BW_1920x416.png)
+![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
 
 # SidecarTridge TOS Documentation 
 {: .d-inline-block }
