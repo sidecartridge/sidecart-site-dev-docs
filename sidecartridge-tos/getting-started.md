@@ -152,7 +152,7 @@ The firmware version is displayed at the top of the file in the format `SidecarT
 
 ### Upgrading the Firmware
 
-If there is a newer firmware version available, you can proceed with the firmware update process. Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/index.md) and store it in a temporary location on your computer.
+If there is a newer firmware version available, you can proceed with the firmware update process. Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/index) and store it in a temporary location on your computer.
 
 To update the firmware, follow these steps:
 1. Hold the `RESET` button on the SidecarTridge TOS ROM Board.

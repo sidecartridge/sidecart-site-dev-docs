@@ -120,18 +120,18 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 | TOS 1.62 UK | 256       | Yes    | Yes   |       |
 | TOS 1.62 US | 256       | Yes    | Yes   |       |
 | TOS 1.62 ES with an easter egg | 256       | Yes    | Yes   | Customized TOS |
-| TOS 1.7 DE | 256       | No     | No    | Customized TOS (TEX TOS) |
-| TOS 2.00 US | 256      | No    | No    | Pre-release  TOS |
-| TOS 2.05 DE | 256      | No   | No    | Mega STE TOS |
-| TOS 2.05 FR | 256      | No   | No    |       |
-| TOS 2.05 ES | 256      | No   | No    |       |
-| TOS 2.05 SE | 256      | No   | No    |       |
-| TOS 2.05 UK | 256      | No   | No    |       |
-| TOS 2.05 US | 256      | No   | No    |       |
-| TOS 2.06 DE | 256      | No   | No    | ST/STE TOS |
-| TOS 2.06 FR | 256      | No   | No    |       |
-| TOS 2.06 ES | 256      | No   | No    |       |
-| TOS 2.06 SE | 256      | No   | No    |       |
+| TOS 1.7 DE | 256       | No     | ?     | Customized TOS (TEX TOS) |
+| TOS 2.00 US | 256      | No    | ?     | Pre-release  TOS |
+| TOS 2.05 DE | 256      | No   | ?     | Mega STE TOS |
+| TOS 2.05 FR | 256      | No   | ?     |       |
+| TOS 2.05 ES | 256      | No   | ?     |       |
+| TOS 2.05 SE | 256      | No   | ?     |       |
+| TOS 2.05 UK | 256      | No   | ?     |       |
+| TOS 2.05 US | 256      | No   | ?     |       |
+| TOS 2.06 DE | 256      | No   | ?     | ST/STE TOS |
+| TOS 2.06 FR | 256      | No   | ?     |       |
+| TOS 2.06 ES | 256      | No   | ?     |       |
+| TOS 2.06 SE | 256      | No   | ?     |       |
 | TOS 2.06 UK | 256      | Yes  | Yes   |       |
 | TOS 2.06 US | 256      | Yes  | Yes   |       |
 | EmuTOS 1.2.1 ES | 192 | Yes  | Yes   | Open-source TOS |
