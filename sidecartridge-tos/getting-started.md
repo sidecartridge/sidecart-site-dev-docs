@@ -115,14 +115,12 @@ Now, open the `SidecarTrdg` volume on your computer to access the firmware files
 
 There is also some system files and directories starting with a dot (.) that are used by the SidecarTridge TOS emulator, and a EmuTOS image file for your computer. For STF, STFM and Mega ST models the file is 192KBytes, for STE and Mega STE models the file is 256KBytes.
 
-![SidecarTridge Volume](/sidecartridge-tos/assets/images/sidecartridge-volume.png)
-
-
 {: .note }
 It could be an offset of 4KBytes between the real size of the image and the size of the file displayed. This is because the SidecarTridge TOS emulator uses a FAT16 file system to store the TOS images with a 4KBytes cluster size.
 
+![SidecarTridge Volume](/sidecartridge-tos/assets/images/sidecartridge-volume.png)
 
-### Obtaining the Installed Firmware Version
+### Obtaining the Installed Firmware Version
 
 Now open the `INFO.TXT` file to check the installed firmware version. The file should contain information similar to the following:
 
