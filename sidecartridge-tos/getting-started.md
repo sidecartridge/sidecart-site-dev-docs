@@ -83,9 +83,70 @@ The SidecarTridge TOS emulator comes with a default EmuTOS image pre-installed a
 
 ## Unboxing and Inspecting the Components
 
+### SidecarTridge TOS Emulator Kit
+
+When you receive your SidecarTridge TOS emulator kit, carefully unbox and inspect the components to ensure everything is included and in good condition. All kits should contain the following items:
+
+1. **SidecarTridge ROM Emulator Board soldered onto the Carrier Board**: This is the main component that will replace the ROM chips on your Atari ST motherboard.
+2. **RESCUE cable and push button**: This cable allows you to connect an external push button to the SidecarTridge TOS emulator for entering rescue mode. 
+3. **SidecarTridge QR Code card**: This card contains a QR code that links to the SidecarTridge website for firmware updates and documentation.
+
+### Additional Components
+
+If you have purchased additional components like the USB-C cable or the SWITCHER.TOS floppy disk, ensure they are also included in the package.
+
 ## Firmware Installation
-- Connecting the Device to a Computer
-- Upgrading the Firmware
+
+The SidecarTridge TOS emulator comes with a pre-installed firmware version and a default EmuTOS image. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
+
+### Connecting the Device to a Computer
+
+Connect the SidecarTridge TOS emulator to your computer using the USB-C cable. The emulator will appear as a USB mass storage device on your computer with the volume name `SidecarTrdg`.
+
+{: .note }
+If the `SidecarTrdg` volume does not appear on your computer, ensure the USB cable is properly connected and press the `RESET` button on the SidecarTridge TOS ROM Board for a few seconds. This will ensure the device enters the mass storage mode.
+
+Now, open the `SidecarTrdg` volume on your computer to access the firmware files and TOS image files. The following files should be present:
+
+- `INDEX.HTM`: Opening this file in a web browser will open the SidecarTridge TOS documentation website.
+- `INFO.TXT`: This file contains information about the firmware version and the installed TOS images. 
+- `DEFAULT.TXT`: This file contains the name of the default active TOS image file.
+- `RESCUE.TXT`: This file contains the name of the rescue TOS image file.
+
+There is also some system files and directories starting with a dot (.) that are used by the SidecarTridge TOS emulator, and a EmuTOS image file for your computer. For STF, STFM and Mega ST models the file is 192KBytes, for STE and Mega STE models the file is 256KBytes.
+
+{: .note }
+It could be an offset of 4KBytes between the real size of the image and the size of the file displayed. This is because the SidecarTridge TOS emulator uses a FAT16 file system to store the TOS images with a 4KBytes cluster size.
+
+### Obtaining the Installed Firmware Version
+
+Now open the `INFO.TXT` file to check the installed firmware version. The file should contain information similar to the following:
+
+```
+SidecarTridge ROM chip emulator v1.0.0 - (C)2024 GOODDATA LABS SL
+
+Total ROMs:	1
+Default ROM index:	0	address: 0x10040000	block size: 48
+Rescue ROM index:	0	address: 0x10040000	block size: 48
+
+ROM images:
+EmuTOS 1.3.0 192KB UK.img: 	start address: 0x10040000, blocks: 48 metadata: 0x30030
+
+FLASH fragmentation:
+GAP: 0, start address: 10070000, blocks: 3982
+
+Summary:
+Total:			16208896 bytes
+Free:			16310272 bytes
+Fragmented:		0 bytes
+Fragmented space:	0.00%
+Max free space:		100.63%
+
+Open the INDEX.HTM file to access instructions online
+Edit the DEFAULT.TXT and RESCUE.TXT files to modify the default and rescue TOS images
+```
+
+### Upgrading the Firmware
 
 ## Preparing the ROM Images
 - Connecting the Device to a Computer
