@@ -150,7 +150,24 @@ Open the INDEX.HTM file to access instructions online
 Edit the DEFAULT.TXT and RESCUE.TXT files to modify the default and rescue TOS images
 ```
 
+The firmware version is displayed at the top of the file in the format `SidecarTridge ROM chip emulator v1.0.0`. If there is a newer firmware version available, you can proceed with the firmware update process in the next section. If the firmware version is up-to-date, you can skip the firmware update and proceed with the [Preparing the ROM Images](#preparing-the-rom-images) section.
+
 ### Upgrading the Firmware
+
+If there is a newer firmware version available, you can proceed with the firmware update process. Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/index.md) and store it in a temporary location on your computer.
+
+To update the firmware, follow these steps:
+1. Hold the `RESET` button on the SidecarTridge TOS ROM Board.
+2. While holding the `RESET` button, hold the `BOOT` button.
+3. Release the `RESET` button.
+4. Release the `BOOT` button.
+
+The SidecarTridge TOS emulator will enter the firmware update mode and appear as a USB mass storage device on your computer with the name `RPI-RP2`. Copy the firmware file to the root directory of the mass storage device and wait for the firmware update process to complete. If after the update the SidecarTridge TOS emulator does not reboot, press the `RESET` button for a few seconds to restart the device.
+
+The firmware update process is now complete, and you can proceed with the [Preparing the ROM Images](#preparing-the-rom-images) section.
+
+{: .note }
+The firmware update process is straightforward and will not affect the TOS images stored on the SidecarTridge TOS emulator. However, it is recommended to back up the TOS images before updating the firmware to avoid any data loss.
 
 ## Preparing the ROM Images
 - Connecting the Device to a Computer
