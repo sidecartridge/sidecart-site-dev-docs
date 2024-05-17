@@ -20,6 +20,35 @@ This section provides guidance on the initial steps to start working with the Si
 {:toc}
 </details>
 
+## Before You Buy
+
+The SidecarTridge TOS emulator is designed to work with specific Atari ST models and motherboards. There are different versions of the device to accommodate various motherboard configurations. **Please follow these steps before purchasing the emulator**:
+
+### 1. Check Your Atari ST Motherboard Model
+
+To learn more about your Atari ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos/compatibility) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
+
+### 2. Determine the Number of ROMs
+
+At this moment, the SidecarTridge TOS emulator supports Atari ST motherboards with two ROM chips. If your motherboard has a different number of ROMs, you'll need to wait for the next version of the SidecarTridge TOS emulator with support for six ROMs.
+
+### 3. ROMs Plugged or Soldered
+
+If your ROMs are plugged, congratulations, you can proceed with the purchase. If they are soldered, you will need to desolder them and plug them into sockets. 
+
+{: .warning}
+If you are not comfortable with desoldering and soldering, please seek professional help to avoid damaging your Atari ST motherboard. We strongly recommend using an experienced technician to perform this task.
+
+### 4. Purchase the Right SidecarTridge TOS Emulator Kit
+
+Once you have verified the compatibility of your Atari ST motherboard, you can proceed to purchase the appropriate SidecarTridge TOS emulator kit. Ensure you select the correct kit based on your motherboard model number and the number of ROMs.
+
+| SidecarTridge TOS Emulator Kit | Supported Motherboards           | Number of ROMs |
+|--------------------------------|----------------------------------|----------------|
+| [STF and STFM Kit]()           | 070789-001, C103175-001, C103414-001 | 2              |
+| [STE Kit]()                    | CA4003290                        | 2              |
+| [Mega STE Kit]()               | CA400677                         | 2              |
+
 ## Prerequisites
 
 Before you begin the installation and setup of the SidecarTridge TOS emulator, ensure you have the following items and tools:
@@ -27,77 +56,13 @@ Before you begin the installation and setup of the SidecarTridge TOS emulator, e
 ## Required Components
 
 - **SidecarTridge TOS Emulator Kit**: This should include:
-  1. the SidecarTridge ROM Emulator Board
-  2. Tthe SidecarTridge Atari ST Carrier Board
+  1. The SidecarTridge ROM Emulator Board
+  2. The SidecarTridge Atari ST Carrier Board. **The ROM Emulator Board is soldered onto this carrier board**.
   3. (Optional) 3 1/2 floppy disk with the SWITCHER.TOS application. It is the program for managing TOS versions on the Atari ST. It can also be downloaded from the SidecarTridge website.
   4. (Optional) USB-C cable: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
   5. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
 
-- **Atari ST Computer**: The emulator is compatible with various models, including the ST, STE, Mega ST, and Mega STE. The following list of motherboards and carrier boards is supported:
-
-Here is a markdown table with the information extracted and formatted as requested:
-
-Sure, here is the revised table with the model column removed and the required information:
-
-### Supported Atari ST Motherboards and Carrier Boards
-
-{: .info}
-Carrier boards for non supported motherboards are in active development. Please check the SidecarTridge website for updates.
-{: .warning}
-
-#### Atari ST series
-
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
-|--------------------------|----------------|-----------------|
-| C070115 Rev. 2           |                | Not supported   |
-| C070243 Rev. C           |                | Not supported   |
-| C070243 Rev. E           |                | Not supported   |
-| C070243 Rev. F           |                | Not supported   |
-| C070243 Rev. H           |                | Not supported   |
-| C070243 Rev. I           |                | Not supported   |
-| C070523-001 Rev. C       |                | Not supported   |
-| C070523-001 Rev. D       |                | Not supported   |
-| C070789-001 Rev. A       |       2        | Supported       |
-| C070789-001 Rev. B       |       2        | Supported       |
-| C070789-001 Rev. C       |       2        | Supported       |
-| C070789-001 Rev. D       |       2        | Supported       |
-| C070789-001 Rev. F       |       2        | Supported       |
-| C070859                  |       2        | Supported       |
-| C103088 Rev. 3.1         |                | Not supported   |
-| C103253 Rev. 3.1         |                | Not supported   |
-| C103088 Rev. 5.3         |                | Not supported   |
-| C103253 Rev. 5.3         |                | Not supported   |
-| C103175-001 Rev. 1       |       2        | Supported       |
-| C103175-001 Rev. 1.1     |       2        | Supported       |
-| C103225 Rev. 1           |                | Not supported   |
-| C103414-001 Rev. 1       |       2        | Supported       |
-| C103414-001 Rev. 1.1     |       2        | Supported       |
-
-#### Atari Mega ST series
-
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
-|--------------------------|----------------|-----------------|
-| C100167-001 Rev. 4.0     |                | Not supported   |
-| C100167-001 Rev. B       |                | Not supported   |
-| C100167-001 Rev. 5.0     |                | Not supported   |
-
-
-#### Atari STE series
-
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
-|--------------------------|----------------|-----------------|
-| CA4003290                |       2        | Supported       |
-
-
-#### Atari Mega STE series
-
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
-|--------------------------|----------------|-----------------|
-| CA400677 Rev. F          |       2        | Supported       |
-
-
-{: .warning}
-If you can't find your motherboard model number in the list, or have any doubts about compatibility, please contact us for further assistance.
+- **Atari ST Computer**: The emulator is compatible with various models, please read the previous section to ensure compatibility with your Atari ST model.
 
 ## Tools and Equipment
 - **Phillips Head Screwdriver**: For opening the Atari ST case.
@@ -111,7 +76,10 @@ If you can't find your motherboard model number in the list, or have any doubts 
 - **TOS Image Files**: Ensure you have the necessary TOS image files ready for transfer. These can be downloaded from reputable sources like [Avtandil website](https://avtandil.narod.ru/tose.html), [EmuTOS website](https://emutos.sourceforge.io/), or other trusted sources.
 - **SWITCHER.TOS Program**: A program for selecting and managing TOS versions on the Atari ST. This program is required to switch between TOS versions and can be downloaded from the SidecarTridge website.
 
-By having these prerequisites in place, you will be well-prepared to proceed with the installation and setup of your SidecarTridge TOS emulator.
+{: .note }
+The SidecarTridge TOS emulator comes with a default EmuTOS image pre-installed and ready to boot. Since the original TOS image files are copyrighted, it's up to you to find the TOS images for your Atari ST model. At this moment every single TOS version found and tested on the internet is working with the SidecarTridge TOS emulator. Please read the [Compatibility](/sidecartridge-tos/compatibility) section for a full list of tested TOS versions.
+
+**By having these prerequisites in place, you will be well-prepared to proceed with the installation and setup of your SidecarTridge TOS emulator.**
 
 ## Unboxing and Inspecting the Components
 
