@@ -37,7 +37,7 @@ The SidecarT board can be configured to emulate a ROM file from a microSD card o
 2. Emulate ROM image from Wi-Fi
 ```
 
-For option 1, the SidecarT board needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/how_to#format_the_microsd_card) section. For option 2, the SidecarT board needs to be connected to a Wi-Fi network. The user can learn how to connect the SidecarT board to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/how_to#connect_to_a_wifi_network) section.
+For option 1, the SidecarT board needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/how_to/#format_the_microsd_card) section. For option 2, the SidecarT board needs to be connected to a Wi-Fi network. The user can learn how to connect the SidecarT board to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/how_to/#connect_to_a_wifi_network) section.
 
 {: .note }
 The emulation of ROMs from Wi-Fi does not need a microSD card to work. And the emulation of ROMs from microSD card does not need to be connected to a Wi-Fi network to work.
@@ -55,7 +55,7 @@ Simply press again the `SELECT` button more than one second to enter into the `C
 
 The SidecarT board can be configured to use a folder in the microSD card to host the ROM files. This section explains how to configure the SidecarT board to use a folder in the microSD card. 
 
-1. **Preparation**: Ensure you have a microSD card formatted to FAT16 or exFAT. For instructions, visit [How to format the microSD card](/how_to#format-the-microsd-card).
+1. **Preparation**: Ensure you have a microSD card formatted to FAT16 or exFAT. For instructions, visit [How to format the microSD card](/how_to/#format-the-microsd-card).
    
 2. **Folder Creation**: On the root directory of the microSD card, create a folder named `roms`. This will serve as the storage for the ROM files. By default, the SidecarT board will scan this directory for ROMs.
 
@@ -76,7 +76,7 @@ If you prefer a different folder name instead of `roms`, you can modify the `ROM
 
 The SidecarT board can be configured to use a web server to host the ROM files. This section explains how to configure the SidecarT board to use a web server.
 
-1. **URL Configuration**: Point the SidecarT board to your web server's ROM directory by setting the `ROMS_YAML_URL` parameter. The board expects a `roms.json` file at this location. To know more about creating this file, see [Set up your own HTTP server for your ROMs](/how_to#set-up-your-own-http-server-for-your-roms).
+1. **URL Configuration**: Point the SidecarT board to your web server's ROM directory by setting the `ROMS_YAML_URL` parameter. The board expects a `roms.json` file at this location. To know more about creating this file, see [Set up your own HTTP server for your ROMs](/how_to/#set-up-your-own-http-server-for-your-roms).
 
 2. **HTTPS Limitation**:
 {: .warning}
@@ -113,7 +113,7 @@ The Floppies Emulation represents a significant enhancement to the SidecarT boar
 
 To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16 or exFAT formatted microSD card.
 
-1. **MicroSD Preparation**: The first requirement is a FAT16 or exFAT formatted microSD card. Instructions can be found in the [How to format the microSD card](/how_to#format-the-microsd-card) guide.
+1. **MicroSD Preparation**: The first requirement is a FAT16 or exFAT formatted microSD card. Instructions can be found in the [How to format the microSD card](/how_to/#format-the-microsd-card) guide.
 
 {: .note}
 If you've already set up ROM Emulation, your microSD is likely formatted appropriately, and you can bypass this step.
@@ -220,7 +220,7 @@ The original GEMDOS driver allowed for the mounting of a Windows/OSX/Linux files
 
 To activate the hard disk emulation feature on the SidecarT board, you must first ensure that the emulation files are properly placed within a designated directory on a FAT16 or exFAT formatted microSD card. While `hd` is the default directory name for these files, it can be customized to suit your preferences.
 
-1. **MicroSD Card Setup**: Skip this step if your microSD card is already set up with ROMs and/or floppy images. Otherwise, start by formatting the microSD card to FAT16 or exFAT. Detailed formatting instructions are available in the [microSD Card Formatting Guide](/how_to#format-the-microsd-card).
+1. **MicroSD Card Setup**: Skip this step if your microSD card is already set up with ROMs and/or floppy images. Otherwise, start by formatting the microSD card to FAT16 or exFAT. Detailed formatting instructions are available in the [microSD Card Formatting Guide](/how_to/#format-the-microsd-card).
 
 2. **Creating the Directory**: In the root directory of the microSD card, create a folder named `hd`. This folder will be scanned by the board to locate your emulated hard disk files.
 
@@ -296,7 +296,7 @@ For avanced users only.
 
 The SidecarT board can be configured to use a web server to host both the database and images files. It's not necessary to have both in the same server. 
 
-1. **URL Configuration**: Point the SidecarT board to your web server's Atari ST database by setting the `FLOPPY_DB_URL` parameter. The board expects a folder named `db` and a file for each alphabet letter and number. Each of these files in Comma Separated Values (CSV) format contains the list of disk files urls. See [Set up your own HTTP server for your Atari ST database](/how_to#set-up-your-own-http-server-for-your-atari-st-database).
+1. **URL Configuration**: Point the SidecarT board to your web server's Atari ST database by setting the `FLOPPY_DB_URL` parameter. The board expects a folder named `db` and a file for each alphabet letter and number. Each of these files in Comma Separated Values (CSV) format contains the list of disk files urls. See [Set up your own HTTP server for your Atari ST database](/how_to/#set-up-your-own-http-server-for-your-atari-st-database).
 
 2. **HTTPS Limitation**:
 {: .warning}
@@ -461,7 +461,7 @@ If `LATEST_RELEASE_URL` points to `http://atarist./beta.txt`, users will be aler
 
 In both cases, the SidecarT board will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
 
-To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to#update-the-firmware) guide.
+To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads) and download the appropriate file. Then, follow the [Update the firmware](/how_to/#update-the-firmware) guide.
 
 ## Enhanced Network Configuration
 {: .d-inline-block }
