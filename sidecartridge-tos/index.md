@@ -18,7 +18,7 @@ Welcome to the SidecarTridge TOS Documentation! This comprehensive guide provide
 
 ## Introduction
 
-The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version or custom ROMs without swapping chips. It also supports EmuTOS, an open-source TOS replacement.
+The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version or custom ROMs without swapping chips.
 
 ### Key Features
 
@@ -34,10 +34,7 @@ The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST i
 The SidecarTridge TOS emulator simplifies managing and updating TOS versions, providing an efficient solution for Atari ST enthusiasts and developers.
 
 ## 🚀 Latest STABLE Firmware: {{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}
-* **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
-
-## 🐞 Bugs, Issues, and Enhancements
-* [Reporting tool](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues)
+* **💾 [Download STABLE Release {{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
 
 ## Table of Contents
 
