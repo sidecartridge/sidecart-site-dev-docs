@@ -42,71 +42,71 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
 <table style="border-collapse: collapse; border: 0;">
     <tr>
         <td style="border: none;">
-            <h3>📘 <a href="/introduction">Introduction</a></h3>
+            <h3>📘 <a href="/introduction/">Introduction</a></h3>
             <p>An overview of the SidecarT project, explaining the project's purpose, objectives, and the intended audience.</p>
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/getting_started">Getting started</a></h3>
+            <h3>🚀 <a href="/getting_started/">Getting started</a></h3>
             <p>Guidance on the initial steps including prerequisites, board assembly instructions, setup and configuration.</p>
         </td>
         <td style="border: none;">
-            <h3>⚙️ <a href="/userguide">User Guide</a></h3>
+            <h3>⚙️ <a href="/userguide/">User Guide</a></h3>
             <p>Learn how to use the SidecarT.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>🏛️ <a href="/architecture_and_design">Architecture and Design</a></h3>
+            <h3>🏛️ <a href="/architecture_and_design/">Architecture and Design</a></h3>
             <p>Explore the underlying architecture and design principles of the SidecarT board.</p>
         </td>
         <td style="border: none;">
-            <h3>🔌 <a href="/hardware_interface">Hardware interface</a></h3>
+            <h3>🔌 <a href="/hardware_interface/">Hardware interface</a></h3>
             <p>How the board and the code in the RP2040 handle the mismatch of the buses size between the RP2040 and the Atari ST cartridge.</p>
         </td>
         <td style="border: none;">
-            <h3>💻 <a href="/software_development">Software Development</a></h3>
+            <h3>💻 <a href="/software_development/">Software Development</a></h3>
             <p>Setting up the development environment, compiling the code, debugging, testing and building the firmware.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>👨‍💻 <a href="/programming_sidecart">Programming SidecarT</a></h3>
+            <h3>👨‍💻 <a href="/programming_sidecart/">Programming SidecarT</a></h3>
             <p>Learn about the ROM emulation, the asynchronous and synchronous programs, develop the firmware and drivers.</p>
         </td>
         <td style="border: none;">
-            <h3>📄 <a href="/parameters">Parameters</a></h3>
+            <h3>📄 <a href="/parameters/">Parameters</a></h3>
             <p>Description of all the parameters available in the SidecarT.</p>
         </td>
         <td style="border: none;">
-            <h3>🔧 <a href="/how_to">How to</a></h3>
+            <h3>🔧 <a href="/how_to/">How to</a></h3>
             <p>Different small tutorials to customize the SidecarT to your needs.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>🤝 <a href="/compatibility_issues">Compatibility</a></h3>
+            <h3>🤝 <a href="/compatibility_issues/">Compatibility</a></h3>
             <p>Please read this section if you have issues with your SidecarT.</p>
         </td>
         <td style="border: none;">
-            <h3>🛠️ <a href="/troubleshooting">Troubleshooting</a></h3>
+            <h3>🛠️ <a href="/troubleshooting/">Troubleshooting</a></h3>
             <p>Check this section if you have issues with your SidecarT.</p>
         </td>
         <td style="border: none;">
-            <h3>❓ <a href="/faq">FAQ</a></h3>
+            <h3>❓ <a href="/faq/">FAQ</a></h3>
             <p>Frequently Asked Questions.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>📦 <a href="/cases">Enclosures</a></h3>
+            <h3>📦 <a href="/cases/">Enclosures</a></h3>
             <p>Different enclosures for your board.</p>
         </td>
         <td style="border: none;">
-            <h3>🔄 <a href="/revisions">Board revisions</a></h3>
+            <h3>🔄 <a href="/revisions/">Board revisions</a></h3>
             <p>Tracing the path of the SidecarT boards.</p>
          </td>
         <td style="border: none;">
-            <h3>🔄 <a href="/publicfloppydb">Public Floppy DB</a></h3>
+            <h3>🔄 <a href="/publicfloppydb/">Public Floppy DB</a></h3>
             <p>Contribute to the Floppy Images Database with your own images</p>
         </td>
     </tr>
