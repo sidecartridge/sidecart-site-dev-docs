@@ -28,7 +28,7 @@ The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST i
 
 ### Installing and Using the SidecarTridge TOS Emulator
 
-1. **Connect and Copy**: Connect to a computer via USB and copy the TOS image file to the device.
+1. **Connect and Copy**: Connect to a computer via USB and copy the TOS image files to the device.
 2. **Select and Reboot**: Use `SWITCHER.TOS` -an Atari ST program- to hot-swap the desired TOS version and reboot to apply it.
 
 The SidecarTridge TOS emulator simplifies managing and updating TOS versions, providing an efficient solution for Atari ST enthusiasts and developers.
