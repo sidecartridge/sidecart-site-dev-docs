@@ -26,7 +26,7 @@ The SidecarTridge TOS emulator is designed to work with specific Atari ST models
 
 ### Check Your Atari ST Motherboard Model
 
-To learn more about your Atari ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos/compatibility) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
+To learn more about your Atari ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos/compatibility/) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
 
 ### Determine the Number of ROMs
 
@@ -77,7 +77,7 @@ Before you begin the installation and setup of the SidecarTridge TOS emulator, e
 - **SWITCHER.TOS Program**: A program for selecting and managing TOS versions on the Atari ST. This program is required to switch between TOS versions and can be downloaded from the SidecarTridge website.
 
 {: .note }
-The SidecarTridge TOS emulator comes with a default EmuTOS image pre-installed and ready to boot. Since the original TOS image files are copyrighted, it's up to you to find the TOS images for your Atari ST model. At this moment every single TOS version found and tested on the internet is working with the SidecarTridge TOS emulator. Please read the [Compatibility](/sidecartridge-tos/compatibility) section for a full list of tested TOS versions.
+The SidecarTridge TOS emulator comes with a default EmuTOS image pre-installed and ready to boot. Since the original TOS image files are copyrighted, it's up to you to find the TOS images for your Atari ST model. At this moment every single TOS version found and tested on the internet is working with the SidecarTridge TOS emulator. Please read the [Compatibility](/sidecartridge-tos/compatibility/) section for a full list of tested TOS versions.
 
 **By having these prerequisites in place, you will be well-prepared to proceed with the installation and setup of your SidecarTridge TOS emulator.**
 
@@ -152,7 +152,7 @@ The firmware version is displayed at the top of the file in the format `SidecarT
 
 ### Upgrading the Firmware
 
-If there is a newer firmware version available, you can proceed with the firmware update process. Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/index) and store it in a temporary location on your computer.
+If there is a newer firmware version available, you can proceed with the firmware update process. Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/) and store it in a temporary location on your computer.
 
 To update the firmware, follow these steps:
 1. Hold the `RESET` button on the SidecarTridge TOS ROM Board.
