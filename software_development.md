@@ -123,7 +123,7 @@ For a quick tutorial about how to flash the firmware in the Raspberry Pi Pico, p
 
 ## Changelog
 
-The full changelog is available in the [CHANGELOG.md](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/CHANGELOG.md) file. 
+The full changelog is available in the [CHANGELOG.md](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/main/CHANGELOG.md) file. 
 
 ## Resources 
 
@@ -156,6 +156,6 @@ We appreciate any and all contributions, and we'll do our best to review and res
 
 ## Licenses
 
-The source code of the project is licensed under the GNU General Public License v3.0. The full license is accessible in the [LICENSE](LICENSE) file. 
+The source code of the project is licensed under the GNU General Public License v3.0. The full license is accessible in the [LICENSE](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/main/LICENSE) file. 
 
 
