@@ -41,7 +41,7 @@ In summary, the SidecarTridge TOS emulator is a powerful tool that modernizes th
 
 The primary purpose of the SidecarTridge TOS emulator is to **provide Atari ST users with a versatile and modern solution for managing and utilizing various TOS versions and custom ROMs**. By eliminating the need for physical ROM swaps, the emulator addresses one of the main problems when considering upgrading the TOS, making it easier to switch between different operating systems and experiment with custom firmware.
 
-#### Objectives
+### Objectives
 
 The SidecarTridge TOS emulator aims to achieve several key objectives:
 
