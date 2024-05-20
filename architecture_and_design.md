@@ -53,7 +53,7 @@ In the **Full ROM Emulation Mode**, the RP2040 maximizes its hardware, employing
 
 ### Hybrid Emulation Mode
 
-Transitioning to **Hybrid Emulation Mode**, the RP2040 extends beyond utilizing PIO and DMA. It reads incoming information from the Atari ST computer, interpreting it to materialize the desired functionality. **This code segment will demand modifications from developers to implement specific functionalities.** Refer to [Programming SidecarT](/programming_sidecart) for guidance on execution. An exemplification of this would be the implementation of the [Configurator](https://github.com/sidecartridge/atarist-sidecart-firmware) application (or 'The Firmware'), a tool for configuring the SidecarT board. Implementational code for this functionality on the RP2040's end is housed within the [`romloader.c`](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/main/romemul/romloader.c) file.
+Transitioning to **Hybrid Emulation Mode**, the RP2040 extends beyond utilizing PIO and DMA. It reads incoming information from the Atari ST computer, interpreting it to materialize the desired functionality. **This code segment will demand modifications from developers to implement specific functionalities.** Refer to [Programming SidecarT](/programming_sidecart/) for guidance on execution. An exemplification of this would be the implementation of the [Configurator](https://github.com/sidecartridge/atarist-sidecart-firmware) application (or 'The Firmware'), a tool for configuring the SidecarT board. Implementational code for this functionality on the RP2040's end is housed within the [`romloader.c`](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/main/romemul/romloader.c) file.
 
 ## Design Considerations
 
@@ -105,7 +105,7 @@ For debugging purposes and directing output to the Raspberry Pi Pico W's serial 
 
 ### Raspberry Pi Pico Connections
 
-Additional details are available in the [Hardware Interface](/hardware_interface) section.
+Additional details are available in the [Hardware Interface](/hardware_interface/) section.
 
 ### Second Power Supply Connection
 
@@ -128,5 +128,5 @@ Pull-ups and capacitors are connected as detailed in the [Hardware design with R
 
 ### Atari ST Cartridge Connections
 
-Refer to the [Hardware Interface](/hardware_interface) section for further details.
+Refer to the [Hardware Interface](/hardware_interface/) section for further details.
 

@@ -7,7 +7,7 @@ nav_order: 8
 # Configuration Parameters
 
 {: warning}
-Please modify the parameters with caution, as they can affect the behavior of the SidecarT board. Read the [User Guide](/userguide) section for more information.
+Please modify the parameters with caution, as they can affect the behavior of the SidecarT board. Read the [User Guide](/userguide/) section for more information.
 
 | Parameter            | Type      | Description                                            | Released | Default                              |
 |:---------------------|:----------|:-------------------------------------------------------|:---------|:-------------------------------------|

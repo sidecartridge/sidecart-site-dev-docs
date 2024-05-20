@@ -68,7 +68,7 @@ The SidecarT board can be configured to use a folder in the microSD card to host
    - Access `Configurator` mode by pressing the `SELECT` button, navigate to the ROM selection, and choose your desired ROM. The Atari ST will access this ROM as if it was a physical chip.
 
 {: .note }
-If you prefer a different folder name instead of `roms`, you can modify the `ROMS_FOLDER` parameter. Details can be found in the [Configuration Parameters](/parameters) section.
+If you prefer a different folder name instead of `roms`, you can modify the `ROMS_FOLDER` parameter. Details can be found in the [Configuration Parameters](/parameters/) section.
 {: .note }
 
 
@@ -138,7 +138,7 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
    - [F] - Format a floppy image: Press `F` to format a floppy image in the drive A. This will create a new floppy image in the `floppies` folder with the `.ST` extension. The user can select the size of the floppy image to create and the volume name of the floppy. See the instructions below.
 
 {: .note }
-If `floppies` isn't your desired directory name, it can be changed. Adjust the `FLOPPIES_FOLDER` parameter. Details are available in the [Configuration Parameters](/parameters) section.
+If `floppies` isn't your desired directory name, it can be changed. Adjust the `FLOPPIES_FOLDER` parameter. Details are available in the [Configuration Parameters](/parameters/) section.
 {: .note}
 
 ### Select a .ST or .MSA Floppy Image to Emulate
@@ -239,7 +239,7 @@ To activate the hard disk emulation feature on the SidecarT board, you must firs
    - Additional options include:
      - [S] - Start Emulation: Press `S` to commence hard disk emulation using the chosen drive letter.
 
-> **Note:** If you prefer a directory name other than `hd`, you can modify the `GEMDRIVE_DRIVE` parameter in the configuration settings. For more information, refer to the [Configuration Parameters](/parameters) section.
+> **Note:** If you prefer a directory name other than `hd`, you can modify the `GEMDRIVE_DRIVE` parameter in the configuration settings. For more information, refer to the [Configuration Parameters](/parameters/) section.
 
 ### Features not supported and known issues
 
@@ -414,7 +414,7 @@ This behavior is determined by the `SAFE_CONFIG_REBOOT` parameter.
 
 Immediately transitioning can be jarring for ongoing Atari ST applications. Especially for applications or drivers overseeing other storage devices, this abrupt switch can lead to compatibility concerns. As a preventive measure, the SidecarT board can be set to defer this transition until the subsequent power cycle.
 
-By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will hold off until the next power cycle before transitioning to `Configurator` mode. Altering this behavior involves tweaking the `SAFE_CONFIG_REBOOT` parameter. Further insights can be found in the [Configuration Parameters](/parameters) section.
+By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will hold off until the next power cycle before transitioning to `Configurator` mode. Altering this behavior involves tweaking the `SAFE_CONFIG_REBOOT` parameter. Further insights can be found in the [Configuration Parameters](/parameters/) section.
 
 {: .note}
 There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes sense. For instance, developers frequently adjusting the SidecarT configuration might find repeatedly waiting for a power cycle tedious. However, exercise this option judiciously.
@@ -424,11 +424,11 @@ There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes se
 
 The SidecarT board can be configured to count the number of files in the folders of the microSD card. This feature is useful to know how many ROMs or floppy images and files in the hard disk folders are available. This feature is configured by default, but the user can disable it if the number of files is too big and the SidecarT board is slow to boot.
 
-To disable this feature, the user must set the `FILE_COUNT_ENABLED` parameter to `false`. The user can learn more about this parameter in the [Configuration Parameters](/parameters) section. To return to the default behavior, the user must set the `FILE_COUNT_ENABLED` parameter to `true`.
+To disable this feature, the user must set the `FILE_COUNT_ENABLED` parameter to `false`. The user can learn more about this parameter in the [Configuration Parameters](/parameters/) section. To return to the default behavior, the user must set the `FILE_COUNT_ENABLED` parameter to `true`.
 
 ### Dark mode
 
-The SidecarT board can be configured to use a dark mode in the Configurator application for medium resolution mode. This feature is useful for old CRT monitors that can have problems with the white background of the Configurator application. By default the dark mode is disabled, but the user can enable it by setting the `CONFIGURATOR_DARK` parameter to `true`. The user can learn more about this parameter in the [Configuration Parameters](/parameters) section. To return to the default behavior, the user must set the `CONFIGURATOR_DARK` parameter to `false`.
+The SidecarT board can be configured to use a dark mode in the Configurator application for medium resolution mode. This feature is useful for old CRT monitors that can have problems with the white background of the Configurator application. By default the dark mode is disabled, but the user can enable it by setting the `CONFIGURATOR_DARK` parameter to `true`. The user can learn more about this parameter in the [Configuration Parameters](/parameters/) section. To return to the default behavior, the user must set the `CONFIGURATOR_DARK` parameter to `false`.
 
 ### Latest release verification
 
@@ -469,7 +469,7 @@ To download the STABLE (latest) or BETA release, navigate to the [Download page]
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/parameters)** menu.
+As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/parameters/)** menu.
 
 ### Viewing Network Status
 

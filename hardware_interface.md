@@ -85,7 +85,7 @@ In our configuration, the GPIOs are attributed to the following functions:
 - GP27: `!READ` - output
 - GP28: `!WRITE` - output
 
-There are three pins that are very important for developers but not for users not willing to develop their own software. These pins are the SWD pins, which are used to program the RP2040. The SWD pins are not used by the SidecarT software, but they are used by the Raspberry Pi Pico SDK to program the RP2040. Please see the section on [Software Development](/software_development) for more information.
+There are three pins that are very important for developers but not for users not willing to develop their own software. These pins are the SWD pins, which are used to program the RP2040. The SWD pins are not used by the SidecarT software, but they are used by the Raspberry Pi Pico SDK to program the RP2040. Please see the section on [Software Development](/software_development/) for more information.
 
 As a prudent guideline, altering the direction of the GPIOs is typically discouraged unless executed with impeccable timing. The modulated directional change of GP6 to GP21 every 250ms—implemented to read the address bus and write the data bus—emerges as an optimal solution, adeptly navigating the discrepancy in bus sizes between the RP2040 and the Atari ST cartridge port, as will be explored in the ensuing section.
 
