@@ -121,7 +121,7 @@ In summary, the SidecarTridge TOS emulator is designed to make TOS management mo
 
 By incorporating these features and benefits, the SidecarTridge TOS emulator significantly enhances the usability and versatility of the Atari ST, making it an invaluable tool for enthusiasts, developers, and users seeking to explore the full potential of the system.
 
-### Intended Audience
+## Intended Audience
 
 The SidecarTridge TOS emulator is designed to meet the needs of a diverse range of users, including:
 
@@ -139,7 +139,7 @@ The SidecarTridge TOS emulator is designed to meet the needs of a diverse range 
 
 The SidecarTridge TOS emulator is an invaluable tool for anyone seeking to maximize the functionality, flexibility, and longevity of their Atari ST computers. Whether you are a developer or enthusiast, the emulator provides a powerful and user-friendly solution for managing and exploring the wide range of TOS versions and custom ROMs available.
 
-### Project Background
+## Project Background
 
 The development of the SidecarTridge TOS emulator originated from a need identified during the creation of the SidecarTridge multi-device cartridge. One of the significant challenges encountered was testing firmware across different TOS versions. Existing software solutions often proved unreliable, leading to a cumbersome and inefficient testing process.
 
@@ -149,7 +149,7 @@ By leveraging the bit-banged emulation capabilities, the SidecarTridge TOS emula
 
 The SidecarTridge TOS emulator embodies a solution that combines modern technology with the classic Atari ST hardware, providing users with a versatile and efficient tool for enhancing their retro computing experience.
 
-### Key Components
+## Key Components
 
 The SidecarTridge TOS emulator comprises several key components, each playing a vital role in its functionality and ease of use. Below is a list and description of the main components:
 
@@ -167,11 +167,11 @@ The SidecarTridge TOS emulator comprises several key components, each playing a 
 
 These components work together to provide a seamless and user-friendly experience, enabling users to manage and switch between different TOS versions and custom ROMs with ease. The SidecarTridge TOS emulator offers a modern and efficient solution for enhancing the capabilities of the Atari ST series computers.
 
-### How It Works
+## How It Works
 
 The SidecarTridge TOS emulator operates through a combination of advanced hardware and software techniques, replicating the functionality of the original Atari ST ROMs at the signal level. This section explains the technical aspects of how the emulator functions, including bit-banged emulation and interaction with the Atari ST bus.
 
-#### Bit-Banged Emulation
+### Bit-Banged Emulation
 
 1. **Programmable Input Output (PIO) of the Raspberry RP2040**:
    - The emulator leverages the PIO capabilities of the Raspberry RP2040 microcontroller. This technology allows precise control over the timing and sequencing of signals, enabling the emulator to mimic the behavior of the original 27C256 ROMs (and their equivalents) used in Atari ST computers. The PIO provides the necessary flexibility and accuracy to emulate the ROMs effectively, even at frequencies up to 16MHz in the MegaSTE model.
@@ -179,12 +179,12 @@ The SidecarTridge TOS emulator operates through a combination of advanced hardwa
 2. **Signal Level Emulation**:
    - Bit-banging refers to the technique of manually driving the signals that would typically be handled by dedicated hardware. In this context, the emulator generates the necessary address and data signals to fully emulate the ROM chips. This involves coordinating the timing of these signals to match the original ROM's behavior precisely.
 
-#### Flash Memory Storage
+### Flash Memory Storage
 
 1. **USB Interface for ROM Management**:
    - Users can connect the emulator to a computer via USB to manage ROM files. The emulator appears as a FAT16 mass storage device, allowing users to easily copy TOS image files and custom ROMs. This USB interface simplifies the process of updating and switching ROMs without physically interacting with the Atari ST’s internals. The file system has been enhanced to provide information about the status of the emulator and the installed ROMs, as well as the ability to modify the default and rescue ROMs.
 
-#### Hot Swapping the ROMs from the Atari ST
+### Hot Swapping the ROMs from the Atari ST
 
 1. **Software Control**:
    - A user-friendly software interface is provided for managing the ROMs. Users can select the desired TOS version or custom ROM from the Atari ST itself, making the process of switching ROMs as simple as launching a program, selecting the TOS, and rebooting the system.
@@ -192,7 +192,7 @@ The SidecarTridge TOS emulator operates through a combination of advanced hardwa
 2. **Boot Process**:
    - When powering the computer on, the SidecarTridge TOS emulator is already active and ready to provide the necessary ROM signals to the Atari ST. The computer boots as usual, unaware that the ROM chips have been replaced with the emulator. There is no need to modify the Atari ST hardware or perform any additional steps to enable the emulator.
 
-#### Developing and Testing Custom ROMs
+### Developing and Testing Custom ROMs
 
 1. **Custom ROM Support**:
    - A simple API will be provided to allow developers to create their own software to upload ROMs from the Atari ST computers themselves.
