@@ -128,7 +128,7 @@ These prerequisites are considered as a minimum baseline. Being well-versed with
 ### Board Assembly
 Anyone with the requisite skills can opt to build their own SidecarT board. The schematics needed to assemble the board can be found in the [Github repository](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/tree/main/schematics). It provides detailed blueprints to guide users through the assembly process.
 
-However, it is worth noting that acquiring the board through our [online shop](<Insert Shop URL here>) is likely to be both cheaper and more convenient, given the complexities involved in assembling the board.
+However, it is worth noting that acquiring the board through our [online shop](https://store.sidecartridge.com) is likely to be both cheaper and more convenient, given the complexities involved in assembling the board.
 
 {: .warning }
 Assembling the board independently can be a rewarding and enriching learning experience for those who are interested in a hands-on approach to understanding the intricate workings of the SidecarT board. Obviously, it is not recommended for those who are new to hardware development.
