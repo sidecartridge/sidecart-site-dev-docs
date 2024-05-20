@@ -95,7 +95,7 @@ If a developer wants to develop software only using 64Kbytes of shared RAM (or R
 
 ### Debugging
 
-It's not easy to debug the PIO section of the code, but it's possible to interrupt the DMA channels with IRQs and read the data from the FIFO queues. The code to do so is in the file [`romemul.c`](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/`romemul.c`#L27C1-L52C2). To enable these functions, they must be passed as argument in the `init_romemul` function. Example:
+It's not easy to debug the PIO section of the code, but it's possible to interrupt the DMA channels with IRQs and read the data from the FIFO queues. The code to do so is in the file [`romemul.c`](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/d2e7a2183a06a3a33a59dd23e89b5a2de5f59de5/romemul/romemul.c#L27C1-L52C2). To enable these functions, they must be passed as argument in the `init_romemul` function. Example:
 
 ```c
   init_romemul(NULL, dma_irq_handler_lookup_callback, true);

@@ -157,7 +157,7 @@ An example of a `roms.json` file is shown below:
 ]
 ```
 
-The full content of the sample `roms.json` file can be found [here](http://roms./roms.json). You can use this file as a template to create your own `roms.json` file.
+The full content of the sample `roms.json` file can be found [here](http://roms.sidecartridge.com/roms.json). You can use this file as a template to create your own `roms.json` file.
 
 ### Upload the ROM images to the server
 
