@@ -115,3 +115,4 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
 
 Explore, learn, and contribute to the SidecarT project!
 
+[&nbsp;](/sidecartridge-tos/index/)
