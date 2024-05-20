@@ -136,6 +136,7 @@ To copy TOS image files to the SidecarTridge TOS emulator, drag and drop them in
 
 By following these guidelines, you can ensure that TOS image files are stored correctly and accessible by the emulator. Also, depending on the operating system of your computer you may need to follow some additional steps to ensure the files are correctly copied to the SidecarTridge TOS emulator.
 
+
 ### Copying TOS Image Files
 
 Before copying TOS image files to the SidecarTridge TOS emulator, it is strongly recommended to first copy all files to a folder on your computer. This way, you can easily restore them if needed and reduce the risk of fragmentation during the copy process.
@@ -154,36 +155,35 @@ Create a folder on your desktop named `Atari STE TOS Images` to store and organi
 
 With the TOS image files organized and renamed, you can proceed to copy them to the SidecarTridge TOS emulator.
 
-#### Copying the TOS Images in MacOS
+#### Copying the TOS Images on macOS
 
 You can simply drag and drop the TOS image files from the `Atari STE TOS Images` folder to the `SidecarTrdg` volume. The files will be copied to the emulator's storage space and will be accessible for booting the Atari ST with the selected TOS image.
 
 If you copy multiple files at once, ensure they are copied in a single batch to avoid fragmentation. Once the files are copied, you can proceed to the next section.
 
-When drag and dropping files from a Mac to the SidecarTridge TOS emulator, the MacOS creates temporary hidden files that are not supported by the SidecarTridge TOS emulator. To avoid this, it is recommended to open a Terminal window to copy the files to the SidecarTridge TOS emulator.
+When dragging and dropping files from a Mac to the SidecarTridge TOS emulator, macOS creates temporary hidden files that are not supported by the SidecarTridge TOS emulator. To avoid this, it is recommended to open a Terminal window to copy the files to the SidecarTridge TOS emulator.
 
 ```bash
 cp -R /path/to/Atari\ STE\ TOS\ Images/* /Volumes/SidecarTrdg/
 ```
 
-#### Copying the TOS Images in Windows
+#### Copying the TOS Images on Windows
 
-In Windows, you can also drag and drop the TOS image files from the `Atari STE TOS Images` folder to the `SidecarTrdg` volume. Please follow the same guidelines as in MacOS to avoid fragmentation and ensure the files are copied correctly.
+In Windows, you can also drag and drop the TOS image files from the `Atari STE TOS Images` folder to the `SidecarTrdg` volume. Please follow the same guidelines as in macOS to avoid fragmentation and ensure the files are copied correctly.
 
-#### Copying the TOS Images in Linux
+#### Copying the TOS Images on Linux
 
-In Linux, you can use the `cp` command to copy the TOS image files from the `Atari STE TOS Images` folder to the `SidecarTrdg` volume. Please follow the same guidelines as in MacOS and Windows to avoid fragmentation and ensure the files are copied correctly.
+In Linux, you can use the `cp` command to copy the TOS image files from the `Atari STE TOS Images` folder to the `SidecarTrdg` volume. Please follow the same guidelines as in macOS and Windows to avoid fragmentation and ensure the files are copied correctly.
 
 ```bash
 cp -R /path/to/Atari\ STE\ TOS\ Images/* /media/username/SidecarTrdg/
 ```
 
-{: .note }
-Depending on the Linux distribution, the mount point of the SidecarTridge TOS emulator may vary. Replace `/media/username/SidecarTrdg/` with the correct mount point of the emulator.
+**Note:** Depending on the Linux distribution, the mount point of the SidecarTridge TOS emulator may vary. Replace `/media/username/SidecarTrdg/` with the correct mount point of the emulator.
 
 ### Obtaining Information about the TOS Images and Flash Status
 
-We have copied the TOS images to the SidecarTridge TOS emulator. Now, let's check the information about the TOS images and the flash status. Open the `INFO.TXT` file in the `SidecarTrdg` volume to view the information. The file should contain details similar to the following:
+After copying the TOS images to the SidecarTridge TOS emulator, you can check the information about the TOS images and the flash status. Open the `INFO.TXT` file in the `SidecarTrdg` volume to view the information. The file should contain details similar to the following:
 
 ```
 SidecarTridge ROM chip emulator v1.0.0 - (C)2024 GOODDATA LABS SL
@@ -237,7 +237,9 @@ Fragmented space:	6.65%
 Max free space:		74.12%
 
 Open the INDEX.HTM file to access instructions online
-Edit the DEFAULT.TXT and RESCUE.TXT files to modify the default and rescue TOS images
+Edit the DEFAULT.TXT and RESCUE
+
+.TXT files to modify the default and rescue TOS images
 ```
 
 The `INFO.TXT` file provides information about the files stored in the following format:
@@ -249,29 +251,28 @@ The `INFO.TXT` file provides information about the files stored in the following
 - **FLASH fragmentation**: Information about the gaps in the flash memory.
 - **Summary**: The total, free, fragmented, and fragmented space in the flash memory.
 
-It is not a surprise that even copying the files in a single batch, the SidecarTridge TOS emulator will show some fragmentation. After copying a batch of files, you can force to defragment the flash memory simply by copying a file name `DEFRAG` to the SidecarTrdg volume. 
+It is not surprising that even after copying the files in a single batch, the SidecarTridge TOS emulator will show some fragmentation. After copying a batch of files, you can force the flash memory to defragment by creating a file named `DEFRAG` on the SidecarTrdg volume.
 
-For example, in MacOS:
+For example, on macOS:
 ```bash
 touch /Volumes/SidecarTrdg/DEFRAG
 ```
 
-In Windows (D drive where the SidecarTrdg volume is mounted):
+On Windows (D drive where the SidecarTrdg volume is mounted):
 ```cmd
 TYPE NUL > D:\DEFRAG
 ```
 
-In Linux:
+On Linux:
 ```bash
 touch /media/username/SidecarTrdg/DEFRAG
 ```
 
-After copying the `DEFRAG` file, the SidecarTridge TOS emulator will defragment the flash memory and remove the fragmentation. Wait for the volume to disappear and reappear on your computer to ensure the defragmentation process is complete.
+After creating the `DEFRAG` file, the SidecarTridge TOS emulator will defragment the flash memory and remove the fragmentation. Wait for the volume to disappear and reappear on your computer to ensure the defragmentation process is complete.
 
-{: .warning }
-The defragmentation process may take some time depending on the number of files stored on the SidecarTridge TOS emulator. It is recommended to wait for the volume to reappear on your computer before proceeding with other operations.
+**Warning:** The defragmentation process may take some time depending on the number of files stored on the SidecarTridge TOS emulator. It is recommended to wait for the volume to reappear on your computer before proceeding with other operations.
 
-After the defragmentation process is complete, if we open the `INFO.TXT` file again, we should see that the fragmented space is reduced to 0.00%.
+After the defragmentation process is complete, if you open the `INFO.TXT` file again, you should see that the fragmented space is reduced to 0.00%.
 
 ```
 SidecarTridge ROM chip emulator v1.0.0 - (C)2024 GOODDATA LABS SL
@@ -318,27 +319,27 @@ Now that the flash memory is defragmented, we can proceed to the next section to
 
 ### Modifying the Default and Rescue TOS Images
 
-The SidecarTridge TOS emulator allows you to set a default active TOS image and a rescue TOS image. The *default* TOS image is the one that will be booted when the Atari ST is powered on, while the *rescue* TOS image is used in case of a boot failure as a fallback option by enabling the rescue mode setting the `RESCUE` signal to the SidecarTridge TOS emulator up using the RESCUE connector and a push button.
+The SidecarTridge TOS emulator allows you to set a default active TOS image and a rescue TOS image. The *default* TOS image is the one that will boot when the Atari ST is powered on, while the *rescue* TOS image is used in case of a boot failure as a fallback option by enabling the rescue mode. You can set the `RESCUE` signal on the SidecarTridge TOS emulator using the RESCUE connector and a push button.
 
-The *default* image can be changed by editing the `DEFAULT.TXT` file in the `SidecarTrdg` volume, or by using the `SWITCHER.TOS` program on the Atari ST. 
+The *default* image can be changed by editing the `DEFAULT.TXT` file in the `SidecarTrdg` volume or by using the `SWITCHER.TOS` program on the Atari ST. 
 
-The *rescue* image ONLY can be changed by editing the `RESCUE.TXT` file in the `SidecarTrdg` volume.
+The *rescue* image can ONLY be changed by editing the `RESCUE.TXT` file in the `SidecarTrdg` volume.
 
 {: .warning}
-We strongly recommend using the `SWITCHER.TOS` program to change the *default* TOS image. We also recommend changing the *rescue* TOS image only when necessary, as it is a critical setting that should be used in case of boot failure. 
+We strongly recommend using the `SWITCHER.TOS` program to change the *default* TOS image. Change the *rescue* TOS image only when necessary, as it is a critical setting that should be used in case of boot failure. 
 
-To change the *default* and *rescue* TOS images using the `SWITCHER.TOS` program, please refer to the [Switching Between TOS Versions](#switching-between-tos-versions) in the User Guide.
+To change the *default* and *rescue* TOS images using the `SWITCHER.TOS` program, please refer to the [Switching Between TOS Versions](#switching-between-tos-versions) section in the User Guide.
 
-Changing the *default* and *rescue* TOS images by editing the `DEFAULT.TXT` and `RESCUE.TXT` files is a straightforward process. Open the `DEFAULT.TXT` file in the `SidecarTrdg` volume and replace the name of the default TOS image with the desired TOS image file name. For example, to set `TOS 2.06 - SuperTOS - 50Hz` as the default TOS image, the `DEFAULT.TXT` file should contain exactly the name of the file (don't forget the extension if exists):
+Changing the *default* and *rescue* TOS images by editing the `DEFAULT.TXT` and `RESCUE.TXT` files is straightforward. Open the `DEFAULT.TXT` file in the `SidecarTrdg` volume and replace the name of the default TOS image with the desired TOS image file name. For example, to set `TOS 2.06 - SuperTOS - 50Hz` as the default TOS image, the `DEFAULT.TXT` file should contain exactly the name of the file (including the extension if it exists):
 
 ```
 TOS 2.06 - SuperTOS - 50Hz
 ```
 
 {: .note }
-The MacOS and Windows operating systems may create hidden files when copying files to the SidecarTridge TOS emulator. These hidden files are not supported by the emulator and may cause issues. Use the Terminal in MacOS or the Command Prompt in Windows to edit the files directly.
+macOS and Windows operating systems may create hidden files when copying files to the SidecarTridge TOS emulator. These hidden files are not supported by the emulator and may cause issues. Use the Terminal in macOS or the Command Prompt in Windows to edit the files directly.
 
-After editing the `DEFAULT.TXT` and `RESCUE.TXT` files, save the changes and eject the `SidecarTrdg` volume from your computer. Next time you mount the SidecarTrdg volume and open the `INFO.TXT` file, you should see the changes reflected in the default and rescue TOS images.
+After editing the `DEFAULT.TXT` and `RESCUE.TXT` files, save the changes and eject the `SidecarTrdg` volume from your computer. The next time you mount the SidecarTrdg volume and open the `INFO.TXT` file, you should see the changes reflected in the default and rescue TOS images.
 
 ```
 SidecarTridge ROM chip emulator v1.0.0 - (C)2024 GOODDATA LABS SL
@@ -384,13 +385,12 @@ Edit the DEFAULT.TXT and RESCUE.TXT files to modify the default and rescue TOS i
 The default index is now set to 17, which corresponds to the `TOS 2.06 - SuperTOS - 50Hz` image. The rescue index remains at 0, which is the default EmuTOS image.
 
 {: .note }
-The reason why you need to eject the SidecarTrdg volume and mount it again is that all operating systems will cache the files and the changes will not be reflected until the volume is mounted again. 
+The reason you need to eject the SidecarTrdg volume and mount it again is that all operating systems will cache the files, and the changes will not be reflected until the volume is mounted again. 
 
-{: note}
-If you are using MacOS, you can use the `purge` command in the Terminal to clear the disk cache and force the system to reload the files, without the need to eject and mount the volume again.
+If you are using macOS, you can use the `purge` command in the Terminal to clear the disk cache and force the system to reload the files, without the need to eject and mount the volume again.
 
 {: .warning}
-As a rule of thumb, always eject the SidecarTrdg volume after making any change to the files. This will ensure that the changes are correctly saved and reflected in the emulator.
+As a rule of thumb, always eject the SidecarTrdg volume after making any changes to the files. This will ensure that the changes are correctly saved and reflected in the emulator.
 
 ### Advanced Commands
 
@@ -399,15 +399,16 @@ The SidecarTridge TOS emulator supports some advanced commands that can be used 
 - `DEFRAG`: Forces the emulator to defragment the flash memory. This command is useful after copying multiple files to the emulator to optimize the storage space. When the `DEFRAG` file is created, the emulator will unmount the volume, defragment the flash memory, and remount the volume. Wait for the volume to reappear on your computer to ensure the defragmentation process is complete.
 - `WIPE_OUT`: Erases all files stored on the emulator, including the pre-installed EmuTOS image. This command is useful when you want to start fresh with a clean slate. When the `WIPE_OUT` file is created, the emulator will unmount the volume, erase all files, and remount the volume. Wait for the volume to reappear on your computer to ensure the wipe-out process is complete.
 
+
 ## Firmware Installation
 
-The SidecarTridge TOS emulator comes with a pre-installed firmware version and a default EmuTOS image. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
+The SidecarTridge TOS emulator comes with pre-installed firmware and a default EmuTOS image. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
 
 We assume that you have already connected the SidecarTridge TOS emulator to your computer using the USB-C cable and that the `SidecarTrdg` volume is accessible. If you have not done so, please refer to the [Connecting the Device to a Computer](#connecting-the-device-to-a-computer) section.
 
 ### Obtaining the Installed Firmware Version
 
-Now open the `INFO.TXT` file to check the installed firmware version. The file should contain information similar to the following:
+Open the `INFO.TXT` file to check the installed firmware version. The file should contain information similar to the following:
 
 ```
 SidecarTridge ROM chip emulator v1.0.0 - (C)2024 GOODDATA LABS SL
@@ -445,7 +446,7 @@ To update the firmware, follow these steps:
 3. Release the `RESET` button.
 4. Release the `BOOT` button.
 
-The SidecarTridge TOS emulator will enter the firmware update mode and appear as a USB mass storage device on your computer with the name `RPI-RP2`. Copy the firmware file to the root directory of the mass storage device and wait for the firmware update process to complete. If after the update the SidecarTridge TOS emulator does not reboot, press the `RESET` button for a few seconds to restart the device.
+The SidecarTridge TOS emulator will enter the firmware update mode and appear as a USB mass storage device on your computer with the name `RPI-RP2`. Copy the firmware file to the root directory of the mass storage device and wait for the firmware update process to complete. If, after the update, the SidecarTridge TOS emulator does not reboot, press the `RESET` button for a few seconds to restart the device.
 
 The firmware update process is now complete, and you can proceed to the next section to verify the installation.
 
