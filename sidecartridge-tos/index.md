@@ -44,29 +44,29 @@ The SidecarTridge TOS emulator streamlines the process of managing and updating 
 <table style="border-collapse: collapse; border: 0;">
     <tr>
         <td style="border: none;">
-            <h3>📘 <a href="/sidecartridge-tos/introduction">Introduction</a></h3>
+            <h3>📘 <a href="/sidecartridge-tos/introduction/">Introduction</a></h3>
             <p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-tos/getting-started">Getting started</a></h3>
+            <h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
             <p>Guidance on the initial steps including prerequisites, installation instructions, setup and configuration.</p>
         </td>
         <td style="border: none;">
-            <h3>⚙️ <a href="/sidecartridge-tos/userguide">User Guide</a></h3>
+            <h3>⚙️ <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
             <p>Learn how to use the SidecarTridge TOS emulator.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>🤝 <a href="/sidecartridge-tos/compatibility">Compatibility</a></h3>
+            <h3>🤝 <a href="/sidecartridge-tos/compatibility/">Compatibility</a></h3>
             <p>Please read this section to know about open issues and compatibility.</p>
         </td>
         <td style="border: none;">
-            <h3>🛠️ <a href="/sidecartridge-tos/troubleshooting">Troubleshooting</a></h3>
+            <h3>🛠️ <a href="/sidecartridge-tos/troubleshooting/">Troubleshooting</a></h3>
             <p>Check this section if you have issues with your SidecarTridge.</p>
         </td>
         <td style="border: none;">
-            <h3>❓ <a href="/sidecartridge-tos/faq">FAQ</a></h3>
+            <h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
             <p>Frequently Asked Questions.</p>
         </td>
     </tr>
