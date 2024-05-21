@@ -45,21 +45,22 @@ The SidecarTridge TOS emulator simplifies managing and updating TOS versions, pr
             <p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
-            <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
+            <h3>🚀 <a href="/sidecartridge-tos/before-buy/">Before You Buy</a></h3>
+            <p>What you need to know before buying a kit</p>
         </td>
         <td style="border: none;">
-            <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
-            <p>Learn how to installation the device in your computers.</p>
+            <h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
+            <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>🤝 <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
-            <p>Learn how to use the device day in day out</p>
+            <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
+            <p>Learn how to installation the device in your computers.</p>
         </td>
         <td style="border: none;">
-&nbsp;
+            <h3>🤝 <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
+            <p>Learn how to use the device day in day out</p>
         </td>
         <td style="border: none;">
 &nbsp;
