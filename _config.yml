@@ -7,11 +7,6 @@ repository: sidecartridge/sidecart-site-dev-docs
 theme: just-the-docs
 favicon_ico: "/assets/images/favicon.ico"
 
-# _config.yml
-assets:
-  stylesheets:
-    - /assets/css/custom.css
-
 permalink: pretty
 
 exclude:
