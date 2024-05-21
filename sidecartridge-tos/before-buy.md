@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 title: Before you buy
 nav_order: 2
 nav_exclude: true

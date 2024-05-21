@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 title: User Guide
 nav_order: 3
 nav_exclude: true

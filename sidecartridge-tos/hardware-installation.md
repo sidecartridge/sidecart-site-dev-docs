@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 title: Hardware Installation
 nav_order: 2
 nav_exclude: true

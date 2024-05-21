@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: minimal
 title: Troubleshooting
 nav_exclude: true
 ---
