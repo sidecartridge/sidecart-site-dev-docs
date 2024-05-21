@@ -30,3 +30,6 @@ This section provides guidance on the initial steps to start working with the Si
 ## Rescue Mode
 - Booting with the Rescue TOS
 - Restoring the Default TOS
+
+[Previous: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn .mr-4 }
+[Next: Troubleshooting](/sidecartridge-tos/troubleshooting/){: .btn }

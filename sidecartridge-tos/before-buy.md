@@ -43,6 +43,5 @@ Once you have verified the compatibility of your Atari ST motherboard, you can p
 | [Mega STE Kit]()               | CA400677                         | 2              |
 
 
-[NEXT: Getting started](/sidecartridge-tos/getting-started/)
-{: .btn .btn-purple .fs-5 .mb-4 .mt-4}
-TEST
+[Previous: Introduction](/sidecartridge-tos/introduction/){: .btn .mr-4 }
+[Next: Getting Started](/sidecartridge-tos/getting-started/){: .btn }

@@ -426,23 +426,5 @@ The firmware update process is now complete, and you can proceed to the next sec
 The firmware update process is straightforward and will not affect the TOS images stored on the SidecarTridge TOS emulator. However, it is recommended to back up the TOS images before updating the firmware to avoid any data loss.
 
 
-## Unplugging the Atari ST ROMs
-- Opening the Atari ST Case
-- Removing the Atari ST ROMs
-
-## Plugging the SidecarTridge TOS Emulator
-- Connecting the SidecarTridge Atari ST Model Carrier Board
-- Securing the Boards
-
-## Closing the Atari ST Case
-
-## Initial Setup
-- Powering On the Atari ST
-- The SWITCHER.TOS Program
-- Verifying the Installation
-- Selecting a New Active Default TOS Version
-- Switching Between TOS Versions
-
-## Rescue Mode
-- Booting with the Rescue TOS
-- Restoring the Default TOS
+[Previous: Before You Buy](/sidecartridge-tos/before-buy/){: .btn .mr-4 }
+[Next: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn }
