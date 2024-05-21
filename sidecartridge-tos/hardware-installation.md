@@ -20,8 +20,6 @@ The different Atari ST models are encased in a plastic outer shell that must be 
 {:toc}
 </details>
 
-Certainly! Here's the detailed content for the section "Opening the Atari ST Case":
-
 ## Opening the Atari ST Case
 
 ### Overview
@@ -57,9 +55,16 @@ Once the plastic case is removed, you'll find a metal shielding that also needs 
     - Once the metal shielding is removed, you'll find the Atari ST ROM chips.
     - Depending on the Atari ST model, they will be in different locations:
         - Atari STF/STFM: The ROMs are located at the left side of the motherboard, under the power supply unit or below the keyboard.
+
+![Atari ST/STF/STFM ROMs location](/sidecartridge-tos/assets/images/sidecartridge-st2-position.png)
+
         - Atari STE: The ROMs are located near the keyboard connector, partially covered by the floppy drive.
-        - Atari Mega ST: The ROMs are located in the middle of the motherboard, near the CPU.
+
+![Atari STE ROMs location](/sidecartridge-tos/assets/images/sidecartridge-ste-position.png)
+
         - Atari Mega STE: The ROMs are located at the right side of the motherboard close to the bottom edge, below the hard disk drive unit.
+
+![Atari Mega STE ROMs location](/sidecartridge-tos/assets/images/sidecartridge-megaste-position.png)
 
 By following these instructions, you can safely open your Atari ST case and prepare for the hardware installation of the SidecarTridge TOS Emulator.
 
@@ -83,13 +88,15 @@ Inspect the now-empty sockets on the motherboard for any debris or damage. Clean
 
 The SidecarTridge TOS Emulator carrier board is configured to replace the original ROMs pin by pin. If the computer has jumpers to select the chip types, set them to match the original ROMs as follows:
 
-### Atari STF/ST
+### Atari ST/STF/STFM
 
 The jumpers must be set to the 1M position for all jumpers on a motherboard with only two ROMs (the original ROMs are 1Mbit).
 
 - **A17 jumper:** 1M position
 - **A18 jumper:** 1M position
 - **CE jumper:** 1M position
+
+![Atari ST/STF/STFM jumpers](/sidecartridge-tos/assets/images/sidecartridge-st2-jumpers.png)
 
 ### Atari STE
 
@@ -98,6 +105,8 @@ There are three jumpers that must be set to the correct position for the Sidecar
 - **W102 jumper:** 2-3 position
 - **W103 jumper:** 2-3 position
 - **W104 jumper:** 2-3 position
+
+![Atari STE jumpers](/sidecartridge-tos/assets/images/sidecartridge-ste-jumpers.png)
 
 {: .note}
 The Atari STE had a 0 Ohm resistor instead of a jumper bridge. It's perfectly safe to replace it with a jumper bridge or a soldered wire.
@@ -111,6 +120,8 @@ Following the same logic as the Atari STE, the jumpers must be set to the same p
 - **W201 jumper:** 2-3 position
 - **W202 jumper:** 2-3 position
 - **W203 jumper:** NC (Not Connected)
+
+![Atari Mega STE jumpers](/sidecartridge-tos/assets/images/sidecartridge-megaste-jumpers.png)
 
 The Atari Mega STE also has two 32-pin ROM sockets, but the SidecarTridge TOS Emulator only uses the first 28 pins. The first four pins are not connected, and it must be aligned to the right side of the socket.
 
@@ -126,13 +137,19 @@ The SidecarTridge carrier board has to be plugged into the ROM sockets marked as
 
 The sockets are 28 pins wide like the SidecarTridge TOS Emulator, so it should be easy to align the emulator with the sockets. 
 
-#### Atari STE/Mega STE
+![Atari ST/STF/STFM Sidecartridge TOS](/sidecartridge-tos/assets/images/sidecartridge-st2-plugged.png)
+
+#### Atari STE
 
 The SidecarTridge carrier board has to be plugged into the ROM sockets marked as LO and HI. Insert the HIGH part of the SidecarTridge TOS Emulator into the HI socket and the LOW part into the LO socket. Don't forget to align the SidecarTridge TOS Emulator to the left side of the socket!
+
+![Atari STE plugged SidecarTridge TOS](/sidecartridge-tos/assets/images/sidecartridge-ste-plugged.png)
 
 #### Atari Mega STE
 
 The SidecarTridge carrier board has to be plugged into the ROM sockets marked as LO and HI. Insert the LOW part of the SidecarTridge TOS Emulator into the LO socket and the HIGH part into the HI socket. Don't forget to align the SidecarTridge TOS Emulator to the right side of the socket!
+
+![Atari Mega STE plugged SidecarTridge TOS](/sidecartridge-tos/assets/images/sidecartridge-megaste-plugged.png)
 
 #### Insert the Emulator
 Gently press the SidecarTridge TOS Emulator into the ROM sockets. Apply even pressure on both sides to avoid bending any pins. Make sure it is fully seated and secure in the sockets. Try to insert all the pins at once, and don't force it if it doesn't fit.
