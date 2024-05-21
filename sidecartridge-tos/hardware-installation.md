@@ -54,16 +54,15 @@ Once the plastic case is removed, you'll find a metal shielding that also needs 
 4. **Locate the Atari ST ROMs:**
     - Once the metal shielding is removed, you'll find the Atari ST ROM chips.
     - Depending on the Atari ST model, they will be in different locations:
-        - Atari STF/STFM: The ROMs are located at the left side of the motherboard, under the power supply unit or below the keyboard.
 
+Atari STF/STFM: The ROMs are located at the left side of the motherboard, under the power supply unit or below the keyboard.
 ![Atari ST/STF/STFM ROMs location](/sidecartridge-tos/assets/images/sidecartridge-st2-position.png)
 
-        - Atari STE: The ROMs are located near the keyboard connector, partially covered by the floppy drive.
 
+Atari STE: The ROMs are located near the keyboard connector, partially covered by the floppy drive.
 ![Atari STE ROMs location](/sidecartridge-tos/assets/images/sidecartridge-ste-position.png)
 
-        - Atari Mega STE: The ROMs are located at the right side of the motherboard close to the bottom edge, below the hard disk drive unit.
-
+Atari Mega STE: The ROMs are located at the right side of the motherboard close to the bottom edge, below the hard disk drive unit.
 ![Atari Mega STE ROMs location](/sidecartridge-tos/assets/images/sidecartridge-megaste-position.png)
 
 By following these instructions, you can safely open your Atari ST case and prepare for the hardware installation of the SidecarTridge TOS Emulator.
