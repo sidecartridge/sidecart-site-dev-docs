@@ -27,6 +27,13 @@ The SidecarTridge TOS emulator is designed to work with specific Atari ST models
 ### Check Your Atari ST Motherboard Model
 
 To learn more about your Atari ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos/compatibility/) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
+For example:
+
+An Atari ST motherboard model number might look like this:
+![Atari ST Motherboard Model](/sidecartridge-tos/assets/images/sidecartridge-st2-motherboard.png)
+
+An Atari STE motherboard model number might look like this:
+![Atari STE Motherboard Model](/sidecartridge-tos/assets/images/sidecartridge-ste-motherboard.png)
 
 ### Determine the Number of ROMs
 
