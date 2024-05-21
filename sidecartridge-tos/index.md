@@ -46,11 +46,23 @@ The SidecarTridge TOS emulator simplifies managing and updating TOS versions, pr
         </td>
         <td style="border: none;">
             <h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
-            <p>Guidance on the initial steps including prerequisites, installation instructions, setup and configuration.</p>
+            <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
         </td>
         <td style="border: none;">
-            <h3>⚙️ <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
-            <p>Learn how to use the SidecarTridge TOS emulator.</p>
+            <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
+            <p>Learn how to installation the device in your computers.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: none;">
+            <h3>🤝 <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
+            <p>Learn how to use the device day in day out</p>
+        </td>
+        <td style="border: none;">
+&nbsp;
+        </td>
+        <td style="border: none;">
+&nbsp;
         </td>
     </tr>
     <tr>
