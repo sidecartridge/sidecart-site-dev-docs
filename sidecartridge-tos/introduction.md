@@ -201,6 +201,6 @@ By incorporating these technical elements, the SidecarTridge TOS emulator provid
 
 
 [Previous: Index](/sidecartridge-tos)
-{: .btn .btn-purple .fs-5 .mb-4 .mt-4 style="color: white;"}
+{: .btn .btn-purple .fs-5 .mb-4 .mt-4 .btn-white-text}
 [Next: Before You Buy](/sidecartridge-tos/before-buy/)
-{: .btn .btn-purple .fs-5 .mb-4 .mt-4 style="color: white;"}
+{: .btn .btn-purple .fs-5 .mb-4 .mt-4 .btn-white-text}
