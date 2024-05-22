@@ -2,6 +2,7 @@
 layout: minimal
 title: Troubleshooting
 nav_exclude: true
+parent: SidecarTridge TOS
 ---
 
 # Troubleshooting

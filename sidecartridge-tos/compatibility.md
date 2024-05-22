@@ -3,6 +3,7 @@ layout: minimal
 title: Compatbility
 nav_order: 9
 nav_exclude: true
+parent: SidecarTridge TOS
 
 ---
 

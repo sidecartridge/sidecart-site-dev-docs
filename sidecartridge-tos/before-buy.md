@@ -3,7 +3,7 @@ layout: minimal
 title: Before you buy
 nav_order: 2
 nav_exclude: true
-
+parent: SidecarTridge TOS
 ---
 
 # Before You Buy

@@ -3,6 +3,7 @@ layout: minimal
 title: Introduction
 nav_order: 1
 nav_exclude: true
+parent: SidecarTridge TOS
 ---
 
 # Introduction

@@ -3,6 +3,7 @@ layout: minimal
 title: Frequently Asked Questions
 nav_order: 9
 nav_exclude: true
+parent: SidecarTridge TOS
 ---
 
 # Frequently Asked Questions

@@ -3,6 +3,7 @@ layout: minimal
 title: User Guide
 nav_order: 3
 nav_exclude: true
+parent: SidecarTridge TOS
 ---
 
 # User Guide
@@ -43,7 +44,8 @@ Use the arrow keys to navigate the list and press the `RETURN` key to select the
 
 ![SidecarTridge Switcher selected](/sidecartridge-tos/assets/images/sidecartridge-switcher-select.gif)
 
-This is the recommended way to switch between TOS versions.
+{: .note}
+This is the recommended way to switch between TOS versions. It is also possible to switch TOS versions modifying the `DEFAULT.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-started/) section, but this method is not recommended for daily use.
 
 ## Rescue Mode
 
@@ -67,6 +69,10 @@ To force boot the rescue TOS ROM, follow these steps:
 5. Release the rescue mode button once the Atari ST is powered on.
 
 The Atari ST will boot the rescue TOS ROM. You can then use the SWITCHER.TOS program to select a new active TOS ROM.
+
+## Select a new Rescue TOS ROM
+
+The recue TOS cannot be changed using the SWITCHER.TOS program or the internal API call to switch TOS ROMs. To change the rescue TOS ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-started/) section.
 
 [Previous: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn .mr-4 }
 [Back to Top](/sidecartridge-tos){: .btn .mr-4 }
