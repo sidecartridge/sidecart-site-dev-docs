@@ -8,30 +8,15 @@ nav_exclude: true
 
 ![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
 
-# SidecarTridge TOS Documentation 
+# SidecarTridge TOS Emulator 
 {: .d-inline-block }
 
 STABLE-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}
 {: .label .label-green }
 
-Welcome to the SidecarTridge TOS Documentation! This comprehensive guide provides detailed information about the SidecarTridge TOS emulator for the Atari ST series of computers. Please refer to the relevant sections below to explore specific topics.
+The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version or custom ROMs without swapping chips. 
 
-## Introduction
-
-The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version or custom ROMs without swapping chips.
-
-### Key Features
-
-- **Compact Design**: Measures 5cm x 2cm x 0.7cm, fitting inside the Atari ST case.
-- **Seamless Integration**: Powered by the Atari ST 5V rail, it communicates with the internal bus, requiring no modifications other than replacing the ROM chips.
-- **Easy Installation**: Ensures a clean setup by allowing the case to be closed after installation.
-
-### Installing and Using the SidecarTridge TOS Emulator
-
-1. **Connect and Copy**: Connect to a computer via USB and copy the TOS image files to the device.
-2. **Select and Reboot**: Use `SWITCHER.TOS` -an Atari ST program- to hot-swap the desired TOS version and reboot to apply it.
-
-The SidecarTridge TOS emulator simplifies managing and updating TOS versions, providing an efficient solution for Atari ST enthusiasts and developers.
+This comprehensive guide provides detailed information about the SidecarTridge TOS emulator for the Atari ST series of computers. Please refer to the relevant sections below to explore specific topics.
 
 ## 🚀 Latest STABLE Firmware: {{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}
 * **💾 [Download STABLE Release {{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
