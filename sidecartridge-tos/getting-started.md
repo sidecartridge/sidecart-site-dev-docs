@@ -424,6 +424,8 @@ To update the firmware, follow these steps:
 3. Release the `RESET` button.
 4. Release the `BOOT` button.
 
+![SidecarTridge Firmware Update](/sidecartridge-tos/assets/images/sidecartridge-firmware-update.gif)
+
 The SidecarTridge TOS emulator will enter the firmware update mode and appear as a USB mass storage device on your computer with the name `RPI-RP2`. Copy the firmware file to the root directory of the mass storage device and wait for the firmware update process to complete. If, after the update, the SidecarTridge TOS emulator does not reboot, press the `RESET` button for a few seconds to restart the device.
 
 The firmware update process is now complete, and you can proceed to the next section to verify the installation.
