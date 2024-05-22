@@ -44,4 +44,5 @@ Once you have verified the compatibility of your Atari ST motherboard, you can p
 
 
 [Previous: Introduction](/sidecartridge-tos/introduction/){: .btn .mr-4 }
+[Back to Top](/sidecartridge-tos){: .btn .mr-4 }
 [Next: Getting Started](/sidecartridge-tos/getting-started/){: .btn }
