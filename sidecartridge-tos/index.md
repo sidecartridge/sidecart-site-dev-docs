@@ -36,50 +36,32 @@ The SidecarTridge TOS emulator simplifies managing and updating TOS versions, pr
 ## 🚀 Latest STABLE Firmware: {{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}
 * **💾 [Download STABLE Release {{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
 
+## 🚀 Latest SWITCHER.TOS app: {{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }}
+* **💾 [Download SWITCHER.TOS Release {{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }}](https://sidecartridge.com/downloads)**
+
 ## Table of Contents
 
-<table style="border-collapse: collapse; border: 0;">
-    <tr>
-        <td style="border: none;">
-            <h3>📘 <a href="/sidecartridge-tos/introduction/">Introduction</a></h3>
-            <p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
-        </td>
-        <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-tos/before-buy/">Before You Buy</a></h3>
-            <p>What you need to know before buying a kit</p>
-        </td>
-        <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
-            <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
-            <p>Learn how to installation the device in your computers.</p>
-        </td>
-        <td style="border: none;">
-            <h3>🤝 <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
-            <p>Learn how to use the device day in day out</p>
-        </td>
-        <td style="border: none;">
-&nbsp;
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <h3>🤝 <a href="/sidecartridge-tos/compatibility/">Compatibility</a></h3>
-            <p>Please read this section to know about open issues and compatibility.</p>
-        </td>
-        <td style="border: none;">
-            <h3>🛠️ <a href="/sidecartridge-tos/troubleshooting/">Troubleshooting</a></h3>
-            <p>Check this section if you have issues with your SidecarTridge.</p>
-        </td>
-        <td style="border: none;">
-            <h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
-            <p>Frequently Asked Questions.</p>
-        </td>
-    </tr>
-</table>
+<h3>📘 <a href="/sidecartridge-tos/introduction/">Introduction</a></h3>
+<p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
 
+<h3>💲 <a href="/sidecartridge-tos/before-buy/">Before You Buy</a></h3>
+<p>What you need to know before buying a kit</p>
+
+<h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
+<p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
+
+<h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
+<p>Learn how to installation the device in your computers.</p>
+
+<h3>😊 <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
+<p>Learn how to use the device day in day out</p>
+
+<h3>🤝 <a href="/sidecartridge-tos/compatibility/">Compatibility</a></h3>
+<p>Please read this section to know about open issues and compatibility.</p>
+
+<h3>🛠️ <a href="/sidecartridge-tos/troubleshooting/">Troubleshooting</a></h3>
+<p>Check this section if you have issues with your SidecarTridge.</p>
+
+<h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
+<p>Frequently Asked Questions.</p>
 
