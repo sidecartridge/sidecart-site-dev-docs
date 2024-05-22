@@ -27,14 +27,20 @@ Before you begin the installation and setup of the SidecarTridge TOS emulator, e
 
 ### Required Components
 
-- **SidecarTridge TOS Emulator Kit**: This should include:
-  1. The SidecarTridge ROM Emulator Board
-  2. The SidecarTridge Atari ST Carrier Board. **The ROM Emulator Board is soldered onto this carrier board**.
-  3. (Optional) 3 1/2 floppy disk with the SWITCHER.TOS application. It is the program for managing TOS versions on the Atari ST. It can also be downloaded from the SidecarTridge website.
-  4. (Optional) USB-C cable: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
-  5. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
+#### SidecarTridge TOS Emulator Kit
 
-- **Atari ST Computer**: The emulator is compatible with various models, please read the previous section to ensure compatibility with your Atari ST model.
+This should include:
+1. The SidecarTridge ROM Emulator Board
+2. The SidecarTridge Atari ST Carrier Board. **The ROM Emulator Board is soldered onto this carrier board**.
+3. (Optional) 3 1/2 floppy disk with the SWITCHER.TOS application. It is the program for managing TOS versions on the Atari ST. It can also be downloaded from the SidecarTridge website.
+4. (Optional) USB-C cable: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
+5. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
+
+![SidecarTridge Kit](/sidecartridge-tos/assets/images/sidecartridge-kit.png)
+
+
+#### Atari ST Computer
+The emulator is compatible with various models, please read the [previous section to ensure compatibility](/sidecartridge-tos/before-buy/) with your Atari ST model.
 
 ### Tools and Equipment
 - **Phillips Head Screwdriver**: For opening the Atari ST case.
