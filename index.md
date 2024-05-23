@@ -1,7 +1,7 @@
 ---
 layout: home
 title: SidecarTridge Documentation Site
-nav_order: 0
+nav_exclude: true
 ---
 
 
