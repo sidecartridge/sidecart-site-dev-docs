@@ -19,6 +19,7 @@ Please select a project below to view the documentation.
             <p>State-of-the-art multi-device emulator crafted for the Atari ST, STE, and Mega series.</p>
         </td>
     </tr>
+<!--
     <tr>
         <td style="border: none;">
             <img src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge PSU thumbnail" style="vertical-align: middle; width: 128px"> 
@@ -46,4 +47,5 @@ Please select a project below to view the documentation.
             <p>27CXXXX and equivalent ROM emulator. The core custom board inside the TOS emulator.</p>
         </td>
     </tr>
+-->
 </table>
