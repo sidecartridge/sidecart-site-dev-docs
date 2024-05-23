@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: SidecarTridge TOS
 nav_order: 0
 nav_exclude: true
