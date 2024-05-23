@@ -9,17 +9,17 @@ nav_order: 0
 
 # SidecarTridge Documentation Site
 
+Please select a project below to view the documentation.
 
-
-
+<div style="box-shadow:0">
 <table style="border-collapse: collapse; border: 0;">
     <tr>
         <td style="border: none;">
             <img src="/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-16-9.png" alt="SidecarTridge multi-device thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST</a></h3>
-            <p></p>
+            <h3><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST</a></h3>
+            <p>State-of-the-art multi-device emulator crafted for the Atari ST, STE, and Mega series.</p>
         </td>
     </tr>
     <tr>
@@ -27,8 +27,8 @@ nav_order: 0
             <img src="/sidecartridge-psu/assets/images/psu_kit_top-1024x768.png" alt="SidecarTridge PSU thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST</a></h3>
-            <p></p>
+            <h3><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST</a></h3>
+            <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
         </td>
     </tr>
     <tr>
@@ -36,8 +36,8 @@ nav_order: 0
             <img src="/sidecartridge-tos/assets/images/sidecartridge-kit.png" alt="SidecarTridge TOS thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST</a></h3>
-            <p></p>
+            <h3><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST</a></h3>
+            <p>A compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version without swapping chips.</p>
         </td>
     </tr>
     <tr>
@@ -45,8 +45,9 @@ nav_order: 0
             <img src="/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-16-9.png" alt="SidecarTridge ROM thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h3>
+            <h3><a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h3>
             <p></p>
         </td>
     </tr>
 </table>
+</div>
