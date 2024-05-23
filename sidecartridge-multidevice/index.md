@@ -2,7 +2,7 @@
 layout: home
 title: SidecarTridge Multi-device
 nav_order: 0
-nav_exclude: true
+nav_exclude: false
 has_children: true
 ---
 
@@ -116,3 +116,8 @@ Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guid
 
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!
+
+[&nbsp;](/sidecartridge-multidevice/)
+[&nbsp;](/sidecartridge-tos/)
+[&nbsp;](/sidecartridge-psu/)
+[&nbsp;](/sidecartridge-rom/)

@@ -2,7 +2,7 @@
 layout: default
 title: Programming SidecarT
 nav_order: 7
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 

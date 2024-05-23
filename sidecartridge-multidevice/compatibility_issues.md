@@ -2,7 +2,7 @@
 layout: default
 title: Compatibility Issues
 nav_order: 8
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 

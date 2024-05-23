@@ -2,7 +2,7 @@
 layout: default
 title: Hardware Interface
 nav_order: 5
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 

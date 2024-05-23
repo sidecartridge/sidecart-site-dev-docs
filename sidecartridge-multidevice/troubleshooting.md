@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Troubleshooting
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started
 nav_order: 2
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 

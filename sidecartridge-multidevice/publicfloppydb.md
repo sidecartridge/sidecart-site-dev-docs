@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Public Floppy DB
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 

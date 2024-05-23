@@ -1,121 +1,51 @@
 ---
 layout: home
-title: SidecarTridge Multi-device
+title: SidecarTridge Documentation Site
 nav_order: 0
 ---
 
 
-![SidecarTridge Multi-device](/assets/images/board-2.1.0-developers-perspective-16-9.png)
+![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
 
-# SidecarTridge Multi-device Documentation 
-{: .d-inline-block }
-
-STABLE-{{ site.FIRMWARE_VERSION }}
-{: .label .label-green }
-
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
-
-Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarTridge Multi-device board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
-
-## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
-* **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
-* 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
-
-## 🚀 Latest BETA Firmware: {{ site.FIRMWARE_BETA_VERSION }}
-* **💾 [Download BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_BETA_VERSION }})**
-
-## 🐞 Bugs, Issues, and Enhancements
-* [Reporting tool](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues)
-
-## Other Quick links
-* [RP2040 firmware source code](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico)
-* [Atari ST Configurator firmware source code](https://github.com/sidecartridge/atarist-sidecart-firmware)
-* [Atari ST Floppy Emulator firmware source code](https://github.com/sidecartridge/atarist-sidecart-floppy-emulator)
-* [Test ROM](https://github.com/sidecartridge/atarist-sidecart-test-rom)
-* [Documentation site (this site)](https://github.com/sidecartridge/sidecart-site-dev-docs)
-
-## Table of Contents
+Please select a project below to view the documentation.
 
 <table style="border-collapse: collapse; border: 0;">
     <tr>
         <td style="border: none;">
-            <h3>📘 <a href="/introduction/">Introduction</a></h3>
-            <p>An overview of the SidecarTridge Multi-device project, explaining the project's purpose, objectives, and the intended audience.</p>
+            <img src="/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-thumbnail.png" alt="SidecarTridge multi-device thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>🚀 <a href="/getting_started/">Getting started</a></h3>
-            <p>Guidance on the initial steps including prerequisites, board assembly instructions, setup and configuration.</p>
+            <h2><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST</a></h2>
+            <p>State-of-the-art multi-device emulator crafted for the Atari ST, STE, and Mega series.</p>
+        </td>
+    </tr>
+<!--
+    <tr>
+        <td style="border: none;">
+            <img src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge PSU thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>⚙️ <a href="/userguide/">User Guide</a></h3>
-            <p>Learn how to use the SidecarTridge Multi-device.</p>
+            <h2><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST</a></h2>
+            <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>🏛️ <a href="/architecture_and_design/">Architecture and Design</a></h3>
-            <p>Explore the underlying architecture and design principles of the SidecarTridge Multi-device board.</p>
+            <img src="/sidecartridge-tos/assets/images/sidecartridge-kit-thumbnail.png" alt="SidecarTridge TOS thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>🔌 <a href="/hardware_interface/">Hardware interface</a></h3>
-            <p>How the board and the code in the RP2040 handle the mismatch of the buses size between the RP2040 and the Atari ST cartridge.</p>
-        </td>
-        <td style="border: none;">
-            <h3>💻 <a href="/software_development/">Software Development</a></h3>
-            <p>Setting up the development environment, compiling the code, debugging, testing and building the firmware.</p>
+            <h2><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST</a></h2>
+            <p>A compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version without swapping chips.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>👨‍💻 <a href="/programming_sidecart/">Programming SidecarTridge Multi-device</a></h3>
-            <p>Learn about the ROM emulation, the asynchronous and synchronous programs, develop the firmware and drivers.</p>
+            <img src="/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-thumbnail.png" alt="SidecarTridge ROM thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h3>📄 <a href="/parameters/">Parameters</a></h3>
-            <p>Description of all the parameters available in the SidecarTridge Multi-device.</p>
-        </td>
-        <td style="border: none;">
-            <h3>🔧 <a href="/how_to/">How to</a></h3>
-            <p>Different small tutorials to customize the SidecarTridge Multi-device to your needs.</p>
+            <h2><a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h2>
+            <p>27CXXXX and equivalent ROM emulator. The core custom board inside the TOS emulator.</p>
         </td>
     </tr>
-    <tr>
-        <td style="border: none;">
-            <h3>🤝 <a href="/compatibility_issues/">Compatibility</a></h3>
-            <p>Please read this section if you have issues with your SidecarTridge Multi-device.</p>
-        </td>
-        <td style="border: none;">
-            <h3>🛠️ <a href="/troubleshooting/">Troubleshooting</a></h3>
-            <p>Check this section if you have issues with your SidecarTridge Multi-device.</p>
-        </td>
-        <td style="border: none;">
-            <h3>❓ <a href="/faq/">FAQ</a></h3>
-            <p>Frequently Asked Questions.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <h3>📦 <a href="/cases/">Enclosures</a></h3>
-            <p>Different enclosures for your board.</p>
-        </td>
-        <td style="border: none;">
-            <h3>🔄 <a href="/revisions/">Board revisions</a></h3>
-            <p>Tracing the path of the SidecarTridge Multi-device boards.</p>
-         </td>
-        <td style="border: none;">
-            <h3>🔄 <a href="/publicfloppydb/">Public Floppy DB</a></h3>
-            <p>Contribute to the Floppy Images Database with your own images</p>
-        </td>
-    </tr>
+-->
 </table>
-
-
-Explore, learn, and contribute to the SidecarTridge Multi-device project!
-
-[&nbsp;](/sidecartridge-multidevice/)
-[&nbsp;](/sidecartridge-tos/)
-[&nbsp;](/sidecartridge-psu/)
-[&nbsp;](/sidecartridge-rom/)

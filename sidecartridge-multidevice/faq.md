@@ -2,7 +2,7 @@
 layout: default
 title: Frequently Asked Questions
 nav_order: 9
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 ---
 
