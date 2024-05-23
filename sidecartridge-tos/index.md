@@ -6,7 +6,7 @@ nav_exclude: true
 ---
 
 
-![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
+![SidecarTridge TOS](/sidecartridge-tos/assets/images/sidecartridge-kit.png)
 
 # SidecarTridge TOS Emulator 
 {: .d-inline-block }
