@@ -7,7 +7,7 @@ has_children: true
 ---
 
 
-![SidecarTridge ROM](/sidecartridge-tos/assets/images/sidecartridge-rom-kit.png)
+![SidecarTridge ROM](/sidecartridge-rom/assets/images/sidecartridge-rom-kit.png)
 
 # SidecarTridge ROM Emulator 
 {: .d-inline-block }

@@ -151,5 +151,5 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 
 
 [Previous: User Guide](/sidecartridge-tos/user-guide/){: .btn .mr-4 }
-[Main](/sidecartridge-tos){: .btn .mr-4 }
+[Main](/sidecartridge-tos/){: .btn .mr-4 }
 [Next: Troubleshooting](/sidecartridge-tos/troubleshooting/){: .btn }

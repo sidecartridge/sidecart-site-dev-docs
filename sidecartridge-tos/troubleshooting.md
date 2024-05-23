@@ -22,5 +22,5 @@ parent: SidecarTridge TOS
 
 
 [Previous: Compatibility](/sidecartridge-tos/compatibility/){: .btn .mr-4 }
-[Main](/sidecartridge-tos){: .btn .mr-4 }
+[Main](/sidecartridge-tos/){: .btn .mr-4 }
 [Next: FAQ](/sidecartridge-tos/faq/){: .btn }

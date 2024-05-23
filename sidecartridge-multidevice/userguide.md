@@ -246,7 +246,7 @@ To activate the hard disk emulation feature on the SidecarT board, you must firs
 ### Features not supported and known issues
 
 {: .warning }
-If you can't enter into Configurator, please [read this](https://docs.sidecartridge.com/troubleshooting/#configurator-takes-very-long-to-start-and-stops-responding-or-ask-me-to-reboot-the-computer-or-show-bombs-on-the-screen)
+If you can't enter into Configurator, please [read this](https://docs.sidecartridge.com/sidecartridge-multidevice/troubleshooting/#configurator-takes-very-long-to-start-and-stops-responding-or-ask-me-to-reboot-the-computer-or-show-bombs-on-the-screen)
 
 The SidecarT board's hard disk emulation feature does not support the following functionalities in verision v0.0.16:
 

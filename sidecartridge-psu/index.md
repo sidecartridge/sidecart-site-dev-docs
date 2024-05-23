@@ -14,4 +14,4 @@ The PSU for Atari ST is a modern, solderless replacement power supply unit desig
 
 This replacement PSU is based on the reliable Mean Well RPD-60, known for its efficiency and stability. The kit includes all necessary components for a straightforward, solderless installation: a custom riser board, connectors, screws, and a specialized cable for seamless connection to the Atari ST motherboard and AC power plug. The riser board ensures the new PSU fits perfectly in the original PSU's location, maintaining the correct alignment and positioning within the computer. This thoughtful design makes the installation process easy and ensures that your Atari ST runs smoothly and reliably for years to come.
 
-You can buy the PSU for Atari ST from the [SidecarTridge store](https://sidecartridge.com/store/) and you can learn how to install it by following the [Quickstart](https://sidecartridge.com/quickstart/psu-atari-st/) in the main website.
+You can buy the PSU for Atari ST from the [SidecarTridge store](https://store.sidecartridge.com) and you can learn how to install it by following the [Quickstart](https://sidecartridge.com/quickstart/psu-atari-st/) in the main website.

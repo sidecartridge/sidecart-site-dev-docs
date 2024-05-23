@@ -170,7 +170,7 @@ A simple API will be provided to allow developers to create their own software t
 By incorporating these technical elements, the SidecarTridge TOS emulator provides a robust and flexible solution for managing and running different TOS versions and custom ROMs on the Atari ST series, enhancing the usability and functionality of these classic computers.
 
 
-[Previous: Index](/sidecartridge-tos){: .btn .mr-4 }
-[Main](/sidecartridge-tos){: .btn .mr-4 }
+[Previous: Index](/sidecartridge-tos/){: .btn .mr-4 }
+[Main](/sidecartridge-tos/){: .btn .mr-4 }
 [Next: Before You Buy](/sidecartridge-tos/before-buy/){: .btn }
 

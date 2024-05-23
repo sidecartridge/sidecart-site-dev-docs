@@ -75,5 +75,5 @@ The Atari ST will boot the rescue TOS ROM. You can then use the SWITCHER.TOS pro
 The recue TOS cannot be changed using the SWITCHER.TOS program or the internal API call to switch TOS ROMs. To change the rescue TOS ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-started/) section.
 
 [Previous: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn .mr-4 }
-[Main](/sidecartridge-tos){: .btn .mr-4 }
+[Main](/sidecartridge-tos/){: .btn .mr-4 }
 [Next: Compatibility](/sidecartridge-tos/compatibility/){: .btn }
