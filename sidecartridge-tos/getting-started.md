@@ -436,5 +436,5 @@ The firmware update process is straightforward and will not affect the TOS image
 
 
 [Previous: Before You Buy](/sidecartridge-tos/before-buy/){: .btn .mr-4 }
-[Back to Top](/sidecartridge-tos){: .btn .mr-4 }
+[Main](/sidecartridge-tos){: .btn .mr-4 }
 [Next: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn }

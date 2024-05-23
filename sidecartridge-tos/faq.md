@@ -65,3 +65,7 @@ The name of the TOS images is limited to 56 characters to ensure it is possible 
 ## Software Questions
 
 ## Troubleshooting Questions
+
+
+[Previous: Troubleshooting](/sidecartridge-tos/troubleshooting/){: .btn .mr-4 }
+[Main](/sidecartridge-tos){: .btn .mr-4 }

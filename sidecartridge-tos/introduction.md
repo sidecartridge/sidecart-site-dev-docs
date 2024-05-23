@@ -202,6 +202,6 @@ By incorporating these technical elements, the SidecarTridge TOS emulator provid
 
 
 [Previous: Index](/sidecartridge-tos){: .btn .mr-4 }
-[Back to Top](/sidecartridge-tos){: .btn .mr-4 }
+[Main](/sidecartridge-tos){: .btn .mr-4 }
 [Next: Before You Buy](/sidecartridge-tos/before-buy/){: .btn }
 
