@@ -117,3 +117,4 @@ Explore, learn, and contribute to the SidecarTridge Multi-device project!
 
 [&nbsp;](/sidecartridge-tos/)
 [&nbsp;](/sidecartridge-psu/)
+[&nbsp;](/sidecartridge-rom/)
