@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: SidecarTridge Power Supply Unit
 nav_order: 0
 nav_exclude: true
