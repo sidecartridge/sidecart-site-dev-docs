@@ -9,7 +9,7 @@ parent: SidecarTridge Multi-device
 # How to
 {: .no_toc }
 
-This section showcases a variety of different configurations and parametric setups for the SidecarT board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the SidecarT board. If you are new to the SidecarT project, please refer to the [Getting Started](/getting_started/) section first.
+This section showcases a variety of different configurations and parametric setups for the SidecarT board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the SidecarT board. If you are new to the SidecarT project, please refer to the [Getting Started](/sidecartridge-multidevice/getting_started/) section first.
 
 <details open markdown="block">
   <summary>

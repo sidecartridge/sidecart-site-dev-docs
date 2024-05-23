@@ -471,7 +471,7 @@ To download the STABLE (latest) or BETA release, navigate to the [Download page]
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/parameters/)** menu.
+As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/sidecartridge-multidevice/parameters/)** menu.
 
 ### Viewing Network Status
 
