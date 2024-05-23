@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Troubleshooting
 nav_exclude: true
 parent: SidecarTridge TOS

@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Getting Started
 nav_order: 2
 nav_exclude: true

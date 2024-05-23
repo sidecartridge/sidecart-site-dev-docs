@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: default
 title: Compatbility
 nav_order: 9
 nav_exclude: true
