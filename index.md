@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Home
+title: SidecarTridge Multi-device
 nav_order: 0
 ---
 
 
-![SidecarT](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
+![SidecarTridge Multi-device](/assets/images/board-2.1.0-developers-perspective-16-9.png)
 
-# SidecarT Documentation 
+# SidecarTridge Multi-device Documentation 
 {: .d-inline-block }
 
 STABLE-{{ site.FIRMWARE_VERSION }}
@@ -16,7 +16,7 @@ STABLE-{{ site.FIRMWARE_VERSION }}
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-Welcome to the SidecarT Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarT board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
+Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarTridge Multi-device board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
 ## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
 * **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
@@ -34,8 +34,8 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
 * [RP2040 firmware source code](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico)
 * [Atari ST Configurator firmware source code](https://github.com/sidecartridge/atarist-sidecart-firmware)
 * [Atari ST Floppy Emulator firmware source code](https://github.com/sidecartridge/atarist-sidecart-floppy-emulator)
-* [SidecarT Test ROM](https://github.com/sidecartridge/atarist-sidecart-test-rom)
-* [SidecarT documentation site (this site)](https://github.com/sidecartridge/sidecart-site-dev-docs)
+* [Test ROM](https://github.com/sidecartridge/atarist-sidecart-test-rom)
+* [Documentation site (this site)](https://github.com/sidecartridge/sidecart-site-dev-docs)
 
 ## Table of Contents
 
@@ -43,7 +43,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
     <tr>
         <td style="border: none;">
             <h3>📘 <a href="/introduction/">Introduction</a></h3>
-            <p>An overview of the SidecarT project, explaining the project's purpose, objectives, and the intended audience.</p>
+            <p>An overview of the SidecarTridge Multi-device project, explaining the project's purpose, objectives, and the intended audience.</p>
         </td>
         <td style="border: none;">
             <h3>🚀 <a href="/getting_started/">Getting started</a></h3>
@@ -51,13 +51,13 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         </td>
         <td style="border: none;">
             <h3>⚙️ <a href="/userguide/">User Guide</a></h3>
-            <p>Learn how to use the SidecarT.</p>
+            <p>Learn how to use the SidecarTridge Multi-device.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
             <h3>🏛️ <a href="/architecture_and_design/">Architecture and Design</a></h3>
-            <p>Explore the underlying architecture and design principles of the SidecarT board.</p>
+            <p>Explore the underlying architecture and design principles of the SidecarTridge Multi-device board.</p>
         </td>
         <td style="border: none;">
             <h3>🔌 <a href="/hardware_interface/">Hardware interface</a></h3>
@@ -70,26 +70,26 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>👨‍💻 <a href="/programming_sidecart/">Programming SidecarT</a></h3>
+            <h3>👨‍💻 <a href="/programming_sidecart/">Programming SidecarTridge Multi-device</a></h3>
             <p>Learn about the ROM emulation, the asynchronous and synchronous programs, develop the firmware and drivers.</p>
         </td>
         <td style="border: none;">
             <h3>📄 <a href="/parameters/">Parameters</a></h3>
-            <p>Description of all the parameters available in the SidecarT.</p>
+            <p>Description of all the parameters available in the SidecarTridge Multi-device.</p>
         </td>
         <td style="border: none;">
             <h3>🔧 <a href="/how_to/">How to</a></h3>
-            <p>Different small tutorials to customize the SidecarT to your needs.</p>
+            <p>Different small tutorials to customize the SidecarTridge Multi-device to your needs.</p>
         </td>
     </tr>
     <tr>
         <td style="border: none;">
             <h3>🤝 <a href="/compatibility_issues/">Compatibility</a></h3>
-            <p>Please read this section if you have issues with your SidecarT.</p>
+            <p>Please read this section if you have issues with your SidecarTridge Multi-device.</p>
         </td>
         <td style="border: none;">
             <h3>🛠️ <a href="/troubleshooting/">Troubleshooting</a></h3>
-            <p>Check this section if you have issues with your SidecarT.</p>
+            <p>Check this section if you have issues with your SidecarTridge Multi-device.</p>
         </td>
         <td style="border: none;">
             <h3>❓ <a href="/faq/">FAQ</a></h3>
@@ -103,7 +103,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
         </td>
         <td style="border: none;">
             <h3>🔄 <a href="/revisions/">Board revisions</a></h3>
-            <p>Tracing the path of the SidecarT boards.</p>
+            <p>Tracing the path of the SidecarTridge Multi-device boards.</p>
          </td>
         <td style="border: none;">
             <h3>🔄 <a href="/publicfloppydb/">Public Floppy DB</a></h3>
@@ -113,6 +113,7 @@ Welcome to the SidecarT Documentation! This comprehensive guide is aimed at prov
 </table>
 
 
-Explore, learn, and contribute to the SidecarT project!
+Explore, learn, and contribute to the SidecarTridge Multi-device project!
 
 [&nbsp;](/sidecartridge-tos/)
+[&nbsp;](/sidecartridge-psu/)
