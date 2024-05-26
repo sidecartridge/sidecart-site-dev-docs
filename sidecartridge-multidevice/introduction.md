@@ -85,5 +85,5 @@ Below are some quick guidelines to ensure smooth contributions to our project.
 
 ### 🙌 Thank You!
 
-Thank you for your interest in contributing to SidecarT! Your contributions are valuable to SidecarT. Let's build something great together!
+Thank you for your interest in contributing to SidecarTridge Multi-device! Your contributions are valuable to SidecarT. Let's build something great together!
 
