@@ -62,9 +62,34 @@ The name of the TOS images is limited to 56 characters to ensure it is possible 
 
 ## Hardware Questions
 
+### There is no power LED on the SidecarTridge TOS emulator. How do I know if it is powered on?
+
+The SidecarTridge TOS emulator does not have a power LED. However, the device is powered on when the carrier board is connected to the Atari ST motherboard and the Atari ST is powered on, or when the SidecarTridge TOS emulator is connected to a USB power source.
+
+When the SidecarTridge TOS emulator is powered on and connected to a USB power source, you must press the RESET button during a few seconds to start the device. Then, it will appear as a USB drive on your computer with the name `SidecarTrdg`.
+
+### Can I use a 256KB ROM image in a ST/STF/STFM motherboard?
+
+You can't use a 256KB ROM image in a ST/STF/STFM motherboard because these motherboards only support 192KB ROMs. 
+
+Also, keep in mind that the TOS for ST/STF/STFM motherboards starts at address `0xFC0000` and ends at `0xFEFFFF`. The STE/MegaSTE TOS starts at `0xE00000` to `0xE3FFFF`.
+
+There are modded motherboards that support 256KB ROMs for ST/STF/STFM motherboards, but they are not tested with the SidecarTridge TOS emulator. 
+
 ## Software Questions
 
-## Troubleshooting Questions
+### How do I update the firmware of the SidecarTridge TOS emulator?
+
+The firmware of the SidecarTridge TOS emulator can be updated following the instructions provided in the [Firmware Update](/sidecartridge-tos/getting-started/#firmware-installation) section.
+
+### I want to update the firmware of the SidecarTridge TOS emulator but I don't want to lose my TOS images. What should I do?
+
+There are two firmwares available for the SidecarTridge TOS emulator: 
+- the standard firmware with a EmuTOS image already flashed. **This firmware will overwrite the existing firmware and TOS images.**
+- the update firmware with no EmuTOS image. **This firmware will keep the existing TOS images.**
+
+Follow the instructions provided in the [Firmware Update](/sidecartridge-tos/getting-started/#firmware-installation) section to update the firmware without losing your TOS images.
+
 
 
 [Previous: Troubleshooting](/sidecartridge-tos/troubleshooting/){: .btn .mr-4 }
