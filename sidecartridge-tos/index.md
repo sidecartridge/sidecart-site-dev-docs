@@ -25,6 +25,34 @@ This comprehensive guide provides detailed information about the SidecarTridge T
 ## 🚀 Latest SWITCHER.TOS app: {{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }}
 * **💾 [Download SWITCHER.TOS Release {{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }}](https://sidecartridge.com/downloads)**
 
+## Firmware
+
+The SidecarTridge TOS Emulator firmware runs on the Raspberry Pi RP2040 microcontroller. Updating the software is as simple as copying the firmware file to the RP2040's USB drive. You can follow the [Update the firmware](/sidecartridge-tos/getting-started/#firmware-installation) guide or revisit the [Quickstart](https://sidecartridge.com/quickstart/sidecartridge-tos-atari-st/) section.
+
+### Latest New Installation STABLE Releases  ({{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }})
+
+**These firmware versions will OVERWRITE the existing TOS ROM images.**
+
+- **Firmware Version for ST/STF/STFM/MegaST new installation:** [sidecartridge-tos-emutos-192k-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.uf2](https://tosemulator.sidecartridge.com/sidecartridge-tos-emutos-192k-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.uf2)
+
+- **Firmware Version for STE/MegaSTE new installation:** [sidecartridge-tos-emutos-256k-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.uf2](https://tosemulator.sidecartridge.com/sidecartridge-tos-emutos-256k-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.uf2)
+
+### Latest Upgrading STABLE Releases  ({{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }})
+
+**These firmware versions will NOT overwrite the existing TOS ROM images and are valid for any Atari ST/STF/STFM/MegaST/STE/MegaSTE model.**
+
+- **Firmware Version for upgrading:** [sidecartridge-tos-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.uf2](https://tosemulator.sidecartridge.com/sidecartridge-tos-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.uf2)
+
+## SWITCHER.TOS Application
+
+The SWITCHER.TOS application is a straightforward TOS application for Atari ST computers, enabling you to hot-swap between different TOS versions on the SidecarTridge TOS Emulator. Simply copy the application to your Atari ST computer and run it to seamlessly switch TOS versions.
+
+### Latest STABLE release ({{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }})
+- **Latest STABLE SWITCHER.TOS Version:** [SWITCHER.TOS-{{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }}.TOS](https://tosemulator.sidecartridge.com/SWITCHER.TOS-{{ site.SIDECARTRIDGE_TOS_SWITCHER_VERSION }})
+
+**Remove the trailing version number and rename to `SWITCHER.TOS` before copying to your Atari ST computer.**
+
+
 ## Table of Contents
 
 <h3>📘 <a href="/sidecartridge-tos/introduction/">Introduction</a></h3>
