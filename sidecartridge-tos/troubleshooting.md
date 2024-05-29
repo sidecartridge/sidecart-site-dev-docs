@@ -20,8 +20,17 @@ parent: SidecarTridge TOS
 
 ## Common Issues and Resolutions
 
-{: warning}
+{: .warning}
 The top issue is the fragmentation of the filesystem. Please read [The Mini-FAT16 Filesystem](/sidecartridge-tos/getting-started/#the-mini-fat16-file-system) first to save headaches later.
+
+### Some of the TOS images are not recognized by the Atari ST
+
+It is possible that the TOS image is not correctly flashed on the SidecarTridge TOS due to fragmentation issues. To solve this issue:
+
+1. copy the TOS images in small batches
+2. use the `DEFRAG` command in the SidecarTridge TOS to defragment the filesystem as described in the [Copying TOS image files section](/sidecartridge-tos/getting-started/#copying-tos-image-files) section.
+3. verify that the TOS image is correctly flashed on the SidecarTridge TOS. Check the information in the file `INFO.TXT` to see if the TOS image is correctly flashed.
+4. Repeat the process until all the TOS images are correctly recognized by the Atari ST.
 
 ### The `Sidecartrdg` volume is not recognized by the host computer when the device is connected to a USB power source
 
@@ -43,18 +52,9 @@ Ensure that the TOS images are correctly flashed on the SidecarTridge TOS:
 
 Explore the capabilities and limits of the board copying and flashing images in small batches first. This will help you to understand the limitations of the board and the filesystem.
 
-### When I copy a TOS image to the SidecarTridge TOS, the file is not recognized or stored correctly
+### When I copy a TOS image to the SidecarTridge TOS, the file is not recognized or stored correctly
 
 The host computers implement in the external storage devices a cache mechanism that can cause the file to be stored incorrectly. To solve this issue, eject the SidecarTridge TOS volume ALWAYS from the host computer when you finish copying the TOS images.
-
-### Some of the TOS images are not recognized by the Atari ST
-
-It is possible that the TOS image is not correctly flashed on the SidecarTridge TOS due to fragmentation issues. To solve this issue:
-
-1. copy the TOS images in small batches
-2. use the `DEFRAG` command in the SidecarTridge TOS to defragment the filesystem as described in the [Copying TOS image files section](/sidecartridge-tos/getting-started/#copying-tos-image-files) section.
-3. verify that the TOS image is correctly flashed on the SidecarTridge TOS. Check the information in the file `INFO.TXT` to see if the TOS image is correctly flashed.
-4. Repeat the process until all the TOS images are correctly recognized by the Atari ST.
 
 
 
