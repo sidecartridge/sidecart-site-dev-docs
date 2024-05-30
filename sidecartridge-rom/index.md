@@ -17,6 +17,8 @@ The SidecarTridge ROM emulator is a compact board designed to emulate ROM, EPROM
 
 This comprehensive guide provides detailed information about the SidecarTridge ROM emulator board targeted at developers, builders and hardware makers who want to use the SidecarTridge ROM emulator in their projects. Please refer to the relevant sections below to explore specific topics.
 
+![SidecarTridge ROM Emulator pinout diagram](/sidecartridge-rom/assets/images/sidecartridge_rom_pinout_diagram.png)
+
 To use the SidecarTridge ROM emulator you will need to choose first the right firmware version for the integrated ROM/EPROM/EEPROM circuit you want to emulate and the speed of the system clock of the target system. 
 
 
