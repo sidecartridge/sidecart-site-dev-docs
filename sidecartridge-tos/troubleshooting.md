@@ -18,7 +18,7 @@ parent: SidecarTridge TOS
 {:toc}
 </details>
 
-## Common Issues and Resolutions
+## Preparing the SidecarTridge TOS files
 
 {: .warning}
 The top issue is the fragmentation of the filesystem. Please read [The Mini-FAT16 Filesystem](/sidecartridge-tos/getting-started/#the-mini-fat16-file-system) first to save headaches later.
@@ -40,6 +40,12 @@ Depending on the host computer's operating system and USB port manufacturer it c
 
 If the SidecarTridge TOS takes the power from the Atari ST it will not be recognized by the host computer and the device will start working in the TOS emulator mode and not in the mass storage mode. To solve this issue, double check that your Atari ST is powered off when you connect the SidecarTridge TOS to the Atari ST.
 
+### When I copy a TOS image to the SidecarTridge TOS, the file is not recognized or stored correctly
+
+The host computers implement in the external storage devices a cache mechanism that can cause the file to be stored incorrectly. To solve this issue, eject the SidecarTridge TOS volume ALWAYS from the host computer when you finish copying the TOS images.
+
+## Atari ST Issues
+
 ### The Atari ST does not boot when the SidecarTridge TOS is connected
 
 Ensure that the TOS images are correctly flashed on the SidecarTridge TOS:
@@ -52,10 +58,16 @@ Ensure that the TOS images are correctly flashed on the SidecarTridge TOS:
 
 Explore the capabilities and limits of the board copying and flashing images in small batches first. This will help you to understand the limitations of the board and the filesystem.
 
-### When I copy a TOS image to the SidecarTridge TOS, the file is not recognized or stored correctly
+### The Atari ST boots with a black screen or garbage characters
 
-The host computers implement in the external storage devices a cache mechanism that can cause the file to be stored incorrectly. To solve this issue, eject the SidecarTridge TOS volume ALWAYS from the host computer when you finish copying the TOS images.
+Some USB cables can set some signals on the USB port that can interfere with the SidecarTridge TOS Emulator. To solve this issue, fully unplug the USB cable from the SidecarTridge TOS and try again.
 
+
+## SWITCHER.TOS Issues
+
+### The SWITCHER.TOS program hangs when loading available TOS images
+
+The SWITCHER.TOS program can hang when loading the available TOS images if the USB cable is connected to the SidecarTridge TOS. To solve this issue, fully unplug the USB cable from the SidecarTridge TOS. Some USB cables can set some signals on the USB port that can interfere with the SidecarTridge TOS Emulator.
 
 
 [Previous: Compatibility](/sidecartridge-tos/compatibility/){: .btn .mr-4 }

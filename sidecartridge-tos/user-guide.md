@@ -32,6 +32,9 @@ The SWITCHER.TOS program is a utility that allows you to switch between TOS vers
 
 ## Select a New Active Default TOS Version
 
+{: .note}
+Unplug the SidecarTridge TOS Emulator from the USB port before running the SWITCHER.TOS program. Some cables may set some signals on the USB port that can interfere with the SidecarTridge TOS Emulator.
+
 Open the SWITCHER.TOS application. The program will display a list of available TOS ROMs with the following information:
 
 - **TOS ROM images**: The list of available TOS ROM images.
