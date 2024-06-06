@@ -316,7 +316,10 @@ TOS 2.06 - SuperTOS - 50Hz
 ```
 
 {: .note }
-macOS and Windows operating systems may create hidden files when copying files to the SidecarTridge TOS emulator. These hidden files are not supported by the emulator and may cause issues. Use the Terminal in macOS or the Command Prompt in Windows to edit the files directly.
+macOS and Windows operating systems may create hidden files when copying files to the SidecarTridge TOS emulator. These hidden files are not supported by the emulator and may cause issues. **Use the Terminal in macOS or the Command Prompt in Windows to edit the files directly.**
+
+{: .warning }
+Some text editors do not modify the files when saving them. They create a new file and rename the old one. This will cause issues with the SidecarTridge TOS emulator, as it will not recognize the new file. Use a text editor that modifies the file directly. In Mac OSX and Linux, you can use the `vi`, `vim` or `nano` text editor in the Terminal. In Windows, you can use the `notepad` text editor in the Command Prompt.
 
 After editing the `DEFAULT.TXT` and `RESCUE.TXT` files, save the changes and eject the `SidecarTrdg` volume from your computer. The next time you mount the SidecarTrdg volume and open the `INFO.TXT` file, you should see the changes reflected in the default and rescue TOS images.
 
