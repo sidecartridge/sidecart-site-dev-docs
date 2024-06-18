@@ -471,7 +471,7 @@ To download the STABLE (latest) or BETA release, navigate to the [Download page]
 {: .d-inline-block }
 
 {{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple 
+{: .label .label-purple }
 
 As of Beta release v0.0.17, the SidecarTridge multidevice board introduces the Mass Storage Mode feature, enabling users to access the microSD card as a mass storage device when connected to a computer via USB. This mode facilitates seamless file transfers between the microSD card and the computer, enhancing the SidecarTridge's versatility and user experience.
 
