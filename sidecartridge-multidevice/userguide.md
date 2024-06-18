@@ -486,7 +486,7 @@ The Mass Storage Mode can only be enabled when connecting the SidecarTridge boar
 The first time the user enables the Mass Storage Mode, the microSD card should be formatted to FAT16 or exFAT. This is a one-time operation and the user doesn't need to format the microSD card every time the Mass Storage Mode is enabled. Please see the the chapter [Format the microSD card](/sidecartridge-multidevice/how_to/#format-the-microsd-card) for more information.
 
 {:refdef: style="text-align: center;"}
-![SidecarTridge multi-device Mass Storage Mode](/sidecartridge-multidevice/assets/images/mass-storage.png)
+![SidecarTridge multi-device Mass Storage Mode](/sidecartridge-multidevice/assets/images/mass-storage.gif)
 {: refdef}
 
 Also, the user should create the default folders and configurations files in the microSD card:
@@ -501,7 +501,7 @@ Also the user can configure the default password in the[.wifipass](/sidecartridg
 
 Simply do not power the SidecarTridge board from the USB port. If the power is not coming from the USB port, the SidecarTridge board will boot normally in your Atari ST computer.
 
-### Fully disabling the Mass Storage Mode
+### Fully disabling the Mass Storage Mode
 
 If the user wants to fully disable the Mass Storage Mode, the user should set the `SD_MASS_STORAGE` parameter to `false`. The user can learn more about this parameter in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section. To return to the default behavior, the user must set the `MASS_STORAGE_ENABLED` parameter to `true`.
 
