@@ -63,7 +63,7 @@ The Initial Setup and Configuration is a multi-step process aimed at preparing t
 
 <figure class="video_container">
     <iframe
-        src="https://www.youtube-nocookie.com/embed/d1EatFnmPGs?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        src="https://www.youtube-nocookie.com/embed/XoWQq3EhQeI?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
         allowfullscreen allowtransparency></iframe>
 </figure>
 
