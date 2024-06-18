@@ -248,14 +248,16 @@ To activate the hard disk emulation feature on the SidecarT board, you must firs
 {: .warning }
 If you can't enter into Configurator, please [read this](https://docs.sidecartridge.com/sidecartridge-multidevice/troubleshooting/#configurator-takes-very-long-to-start-and-stops-responding-or-ask-me-to-reboot-the-computer-or-show-bombs-on-the-screen)
 
-The SidecarT board's hard disk emulation feature does not support the following functionalities in verision v0.0.16:
+The SidecarT board's hard disk emulation feature does not support the following functionalities in version v0.0.16:
+- **Support for MegaSTE in 16Mhz + Cache enabled**: This configuration is not supported in v0.0.16, but it will eventually be supported in v0.0.17.
+
+- **AUTO folder shuffle**: The GEMDRIVE can read from the AUTO folder, but the order of the files is lexical. This can be a problem for some software that needs to be executed in a specific order. This will be fixed in future versions.
+
+The SidecarT board's hard disk emulation feature does not support the following functionalities in version v0.0.16 and v0.0.17:
 
 - **Volume Name**: It does not support volume names for the hard disk emulation. The Atari ST will not display the volume name of the hard disk.
 - **Pipes**: The current version does not support pipes. The Atari ST will not be able to use pipes with the hard disk emulation.
 
-- **Support for MegaSTE in 16Mhz + Cache enabled**: This configuration is not supported in v0.0.16, but it will eventually be supported in v0.0.17.
-
-- **AUTO folder shuffle**: The GEMDRIVE can read from the AUTO folder, but the order of the files is lexical. This can be a problem for some software that needs to be executed in a specific order. This will be fixed in future versions.
 
 All the features are planned for future releases.
 
