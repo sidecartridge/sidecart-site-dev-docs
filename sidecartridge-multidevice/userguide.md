@@ -465,6 +465,46 @@ In both cases, the SidecarT board will check for the latest release and display 
 
 To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads) and download the appropriate file. Then, follow the [Update the firmware](/sidecartridge-multidevice/how_to/#update-the-firmware) guide.
 
+## Mass Storage Mode
+{: .d-inline-block }
+
+{{ site.FIRMWARE_BETA_VERSION }}
+{: .label .label-purple 
+
+As of Beta release v0.0.17, the SidecarTridge multidevice board introduces the Mass Storage Mode feature, enabling users to access the microSD card as a mass storage device when connected to a computer via USB. This mode facilitates seamless file transfers between the microSD card and the computer, enhancing the SidecarTridge's versatility and user experience.
+
+One of the most annoying things when using the SidecarTridge board is the need to remove the microSD card from the device and use a standard card reader to transfer files. The Mass Storage Mode eliminates this inconvenience, allowing users to access the microSD card directly from their computer, streamlining the file management process.
+
+### Enabling Mass Storage Mode
+
+The Mass Storage Mode can only be enabled when connecting the SidecarTridge board with a microSD inserted to a computer via USB and getting the power from the USB port. That's because the USB port is used to communicate with the computer and the power is used to power the SidecarTridge board. Then, the tiny green LED in the Raspberry Pi Pico W/WH will keep steady on. Now wait for a few seconds to let the computer recognize the SidecarTridge board as a mass storage device and you are ready to go.
+
+### Preparing the microSD card for the first time
+
+The first time the user enables the Mass Storage Mode, the microSD card should be formatted to FAT16 or exFAT. This is a one-time operation and the user doesn't need to format the microSD card every time the Mass Storage Mode is enabled. Please see the the chapter [Format the microSD card](/sidecartridge-multidevice/how_to/#format-the-microsd-card) for more information.
+
+{:refdef: style="text-align: center;"}
+![SidecarTridge multi-device Mass Storage Mode](/sidecartridge-multidevice/assets/images/mass-storage.png)
+{: refdef}
+
+Also, the user should create the default folders and configurations files in the microSD card:
+
+- `roms` folder: This folder should contain the ROM images to be used by the SidecarTridge board. 
+- `floppies` folder: This folder should contain the floppy images to be used by the SidecarTridge board. The floppy images should be in the `.ST`  and `.MSA` format.
+- `hd` folder: This folder should contain the files to be used by the SidecarTridge board as a hard disk. 
+
+Also the user can configure the default password in the[.wifipass](/sidecartridge-multidevice/how_to/#configure-the-wifi-password-in-a-file-in-the-microsd-card) file, or the default bootable ROM in the [.romrescue](/sidecartridge-multidevice/how_to/#boot-a-rom-image-from-the-microsd-card-in-rescue-mode) file.
+
+### Disabling Mass Storage Mode
+
+Simply do not power the SidecarTridge board from the USB port. If the power is not coming from the USB port, the SidecarTridge board will boot normally in your Atari ST computer.
+
+### Fully disabling the Mass Storage Mode
+
+If the user wants to fully disable the Mass Storage Mode, the user should set the `SD_MASS_STORAGE` parameter to `false`. The user can learn more about this parameter in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section. To return to the default behavior, the user must set the `MASS_STORAGE_ENABLED` parameter to `true`.
+
+When the Mass Storage Mode is disabled, the SidecarTridge board will not enter in the Mass Storage Mode when connected to a computer via USB.
+
 ## Enhanced Network Configuration
 {: .d-inline-block }
 

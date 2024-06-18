@@ -41,6 +41,8 @@ Please modify the parameters with caution, as they can affect the behavior of th
 | RTC_TYPE             | STRING    | The type of RTC to emulate: SIDECART, DALLAS           | v0.0.12  | SIDECART                             |
 | RTC_UTC_OFFSET       | STRING    | The UTC offset of the RTC                              | v0.0.12  | 0                                    |
 | SAFE_CONFIG_REBOOT   | BOOL      | If true, the SidecarT will reboot after a computer power cycle, otherwise it will reboot immediately | v0.0.9   | true                                 |
+| SD_MASS_STORAGE      | BOOLEAN   | Enable or disable the SD mass storage mode             | v0.0.17  | true                                 |
+| SD_BAUD_RATE_KB      | INTEGER   | The baud rate in Kbps for the microSD card (Max:25000) | v0.0.17  | 12500                                |
 | WIFI_PASSWORD        | STRING    | The password of the WiFi network to connect to         | v0.0.1   |                                      |
 | WIFI_SCAN_SECONDS    | INTEGER   | The number of seconds to scan for WiFi networks        | v0.0.1   | 15                                   |
 | WIFI_SSID            | STRING    | The SSID of the WiFi network to connect to             | v0.0.1   |                                      |

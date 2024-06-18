@@ -49,6 +49,15 @@ Starting in Febrary 2024, revision 2.0 integrates the best features from its pre
 ### Revision 2.1
 Revision 2.1 introduces two minor updates to Revision 2.0: the power LED's resistor has been changed to a 6k8 to dim the LED, and it reverts to the original Ground and UART headers configuration due to JLCPB's new charges for this SMT option as if it were a through-hole component.
 
+### Revision 2.2.0
+Revision 2.2.0 introduces several important enhancements to Revision 2.1:
+- Dual USB-A ports for power output only.  The power lines are protected by fuses and schottky diodes to protect your Atari ST, SidecarTridge and USB devices.
+- Dual JST SH 2xmale 1.0mm pitch connectors for the RESET and SELECT buttons.  This allows for easier installation and removal of the buttons in enclosures.
+
+### Revision 2.2.1
+Revision 2.2.1 introduces aminor addition to Revision 2.2.0:
+- Single JST SH 3xmale 1.0mm pitch connectors for the UART and GND pins.  Now it's easier to connect to the Raspberry Pi Debug probe for developers.
+
 ## Want to contribute?
 
 You can contribute to page. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
