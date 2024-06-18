@@ -479,7 +479,11 @@ One of the most annoying things when using the SidecarTridge board is the need t
 
 ### Enabling Mass Storage Mode
 
-The Mass Storage Mode can only be enabled when connecting the SidecarTridge board with a microSD inserted to a computer via USB and getting the power from the USB port. That's because the USB port is used to communicate with the computer and the power is used to power the SidecarTridge board. Then, the tiny green LED in the Raspberry Pi Pico W/WH will keep steady on. Now wait for a few seconds to let the computer recognize the SidecarTridge board as a mass storage device and you are ready to go.
+The Mass Storage Mode can only be enabled when the SidecarTridge board, with a microSD card inserted in its microSD card reader, is connected to a computer via USB. The USB port provides both communication with the computer and power to the SidecarTridge board. When properly connected, the small green LED on the Raspberry Pi Pico W/WH will stay on steadily. Wait a few seconds for the computer to recognize the SidecarTridge board as a mass storage device, and you're ready to go. 
+
+{: .note}
+The mass storage device is not very fast compared to a standard card reader or a USB stick. So if it looks slow, it's normal.
+{: .note}
 
 ### Preparing the microSD card for the first time
 
