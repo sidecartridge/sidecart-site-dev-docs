@@ -38,9 +38,9 @@ Once you have verified the compatibility of your Atari ST motherboard, you can p
 
 | SidecarTridge TOS Emulator Kit | Supported Motherboards           | Number of ROMs |
 |--------------------------------|----------------------------------|----------------|
-| [STF and STFM Kit](https://store.sidecartridge.com/sidecartridge-tos/)           | 070789-001, C103175-001, C103414-001 | 2              |
-| [STE Kit](https://store.sidecartridge.com/sidecartridge-tos/)                    | CA4003290                        | 2              |
-| [Mega STE Kit](https://store.sidecartridge.com/sidecartridge-tos/)               | CA400677                         | 2              |
+| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)           | 070789-001, C103175-001, C103414-001 | 2              |
+| [STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)                    | CA4003290                        | 2              |
+| [Mega STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)               | CA400677                         | 2              |
 
 
 [Previous: Introduction](/sidecartridge-tos/introduction/){: .btn .mr-4 }
