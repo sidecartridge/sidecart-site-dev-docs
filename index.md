@@ -28,7 +28,6 @@ Please select a project below to view the documentation.
             <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
         </td>
     </tr>
-<!--
     <tr>
         <td style="border: none;">
             <img src="/sidecartridge-tos/assets/images/sidecartridge-kit-thumbnail.png" alt="SidecarTridge TOS thumbnail" style="vertical-align: middle; width: 128px"> 
@@ -47,5 +46,4 @@ Please select a project below to view the documentation.
             <p>27CXXXX and equivalent ROM emulator. The core custom board inside the TOS emulator.</p>
         </td>
     </tr>
--->
 </table>
