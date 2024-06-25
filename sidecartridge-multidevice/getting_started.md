@@ -122,6 +122,12 @@ Additionally, developers need the following hardware:
 ![Raspberry Pi Pico WH](/sidecartridge-multidevice/assets/images/debug-probe.jpg)
 {: refdef}
 
+- A [Mini JST SH 1.0mm pitch double 3xpin female connectors](https://store.sidecartridge.com/products/mini-jst-sh-1-0mm-pitch-double-3xpin-female-connectors-10cm) to connect the UART pins from the Raspberry Pi Pico W to the Raspberry Pi Debug board
+
+{:refdef: style="text-align: center;"}
+![Mini JST SH 1.0mm pitch double 3x](https://store.sidecartridge.com/cdn/shop/files/dual-jst-sh-1mm-3-female-pins-10cm.png?v=1718732895&width=1426)
+{: refdef}
+
 - A Windows PC, Linux or a Mac with a USB port to connect to the Raspberry Pi Debug board and the Raspberry Pi Pico W board to program it
 
 {: .note }
