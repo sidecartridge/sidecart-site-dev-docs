@@ -21,7 +21,7 @@ This comprehensive guide provides detailed information about the SidecarTridge T
 
 ## 🚀 Latest Firmware and applications
 The current firmware version is STABLE-{{ site.SIDECARTRIDGE_TOS_FIRMWARE_VERSION }}.
-Visit the official [downloads](https://sidecartridge.com/downloads) page to get the latest firmware and applications.
+Visit the official [downloads](https://sidecartridge.com/downloads/) page to get the latest firmware and applications.
 
 ## Table of Contents
 

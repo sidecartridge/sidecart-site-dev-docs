@@ -44,7 +44,7 @@ If the SidecarT board is not detected by the computer, please check the followin
 
 ### CONFIGURATOR mode crashes with two bombs
 
-This is a [known issue](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues/55) commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads) available.
+This is a [known issue](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues/55) commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads/) available.
 
 ### CONFIGURATOR takes very long to start and stops responding or ask me to reboot the computer or show bombs on the screen
 

@@ -59,7 +59,7 @@ Users will need the following hardware:
 - (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to/#format-the-microsd-card).
 
 ### Initial Setup and Configuration
-The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecartridge.com/quickstart).
+The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecartridge.com/quickstart/sidecartridge-multidevice-atari-st/).
 
 <figure class="video_container">
     <iframe
