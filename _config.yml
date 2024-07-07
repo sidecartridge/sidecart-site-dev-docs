@@ -128,6 +128,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-github-metadata
   - jekyll-include-cache
+  - jekyll-redirect-from
 
 kramdown:
   syntax_highlighter_opts:
