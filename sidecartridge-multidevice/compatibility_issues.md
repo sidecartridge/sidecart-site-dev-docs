@@ -4,6 +4,8 @@ title: Compatibility Issues
 nav_order: 8
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /compatibility_issues
 ---
 
 # Compatibility Issues

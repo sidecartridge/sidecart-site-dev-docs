@@ -3,6 +3,8 @@ layout: default
 title: Enclosures/Cases
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /cases
 ---
 
 # Enclosures/Cases

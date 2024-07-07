@@ -4,6 +4,8 @@ title: Getting Started
 nav_order: 2
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /getting_started
 ---
 
 # Getting Started

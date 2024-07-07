@@ -4,6 +4,8 @@ title: Frequently Asked Questions
 nav_order: 9
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /faq
 ---
 
 # Frequently Asked Questions

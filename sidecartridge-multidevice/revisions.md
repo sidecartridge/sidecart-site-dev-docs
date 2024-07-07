@@ -3,6 +3,8 @@ layout: default
 title: Board revisions
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /revisions
 ---
 
 # Board revisions

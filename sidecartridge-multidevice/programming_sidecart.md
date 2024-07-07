@@ -4,6 +4,8 @@ title: Programming SidecarT
 nav_order: 7
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /programming_sidecart
 ---
 
 # Programming SidecarT

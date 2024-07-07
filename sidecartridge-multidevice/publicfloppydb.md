@@ -3,6 +3,8 @@ layout: default
 title: Public Floppy DB
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /publicfloppydb
 ---
 
 # Public Floppy Database

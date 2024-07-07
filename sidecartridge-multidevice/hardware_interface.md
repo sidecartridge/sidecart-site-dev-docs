@@ -4,6 +4,8 @@ title: Hardware Interface
 nav_order: 5
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /hardware_interface
 ---
 
 # Hardware Interface

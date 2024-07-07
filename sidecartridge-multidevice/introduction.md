@@ -4,6 +4,8 @@ title: Introduction
 nav_order: 1
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /introduction
 ---
 
 # Introduction

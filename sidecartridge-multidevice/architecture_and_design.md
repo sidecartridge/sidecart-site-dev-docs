@@ -4,6 +4,8 @@ title: Architecture and Design
 nav_order: 4
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /sidecartridge-multidevice/architecture_and_design
 ---
 
 # Architecture and Design

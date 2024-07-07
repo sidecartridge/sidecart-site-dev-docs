@@ -4,6 +4,8 @@ title: Parameters
 nav_order: 8
 nav_exclude: false
 parent: SidecarTridge Multi-device
+redirect_from:
+  - /parameters
 ---
 
 # Configuration Parameters
