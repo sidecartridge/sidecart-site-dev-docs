@@ -5,7 +5,7 @@ nav_order: 3
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
-  - /userguide/
+  - /userguide
 ---
 
 # User Guide
