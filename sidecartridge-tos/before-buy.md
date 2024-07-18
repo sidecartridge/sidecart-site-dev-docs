@@ -36,10 +36,13 @@ If you are not comfortable with desoldering and soldering, please seek professio
 
 Once you have verified the compatibility of your Atari ST motherboard, you can proceed to purchase the appropriate SidecarTridge TOS emulator kit. Ensure you select the correct kit based on your motherboard model number and the number of ROMs.
 
+
 | SidecarTridge TOS Emulator Kit | Supported Motherboards           | Number of ROMs |
 |--------------------------------|----------------------------------|----------------|
 | [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)           | 070789-001, C103175-001, C103414-001 | 2              |
+| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)           | 070789-001, C103175-001, C103414-001 | 6              |
 | [STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)                    | CA4003290                        | 2              |
+| [Mega ST Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)               | C103544-001, C100167                         | 2              |
 | [Mega STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)               | CA400677                         | 2              |
 
 
