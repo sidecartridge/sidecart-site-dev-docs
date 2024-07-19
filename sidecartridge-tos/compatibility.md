@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Compatbility
-nav_order: 9
-nav_exclude: true
+nav_order: 6
+nav_exclude: false
 parent: SidecarTridge TOS
 
 ---

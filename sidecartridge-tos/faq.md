@@ -1,12 +1,12 @@
 ---
 layout: default
-title: TOS Emulator - Frequently Asked Questions
+title: Frequently Asked Questions
 nav_order: 9
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge TOS
 ---
 
-# TOS Emulator - Frequently Asked Questions
+# Frequently Asked Questions
 
 This section compiles a list of frequently asked questions (FAQs) aimed at addressing common inquiries, clarifications, and concerns. Developers are encouraged to consult this section for quick references and insights.
 

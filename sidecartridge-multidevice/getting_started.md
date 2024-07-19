@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Multi-device Getting Started
+title: Getting Started
 nav_order: 2
 nav_exclude: false
 parent: SidecarTridge Multi-device
@@ -8,7 +8,7 @@ redirect_from:
   - /getting_started
 ---
 
-# Multi-device Getting Started
+# Getting Started
 {: .no_toc }
 
 This section provides guidance on the initial steps to start working with the SidecarT board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the SidecarT board by following the procedures outlined in this and coming sections.

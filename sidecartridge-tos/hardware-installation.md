@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Hardware Installation
-nav_order: 2
-nav_exclude: true
+nav_order: 4
+nav_exclude: false
 parent: SidecarTridge TOS
 
 ---

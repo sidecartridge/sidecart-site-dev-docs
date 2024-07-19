@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Muñti-device Troubleshooting
+title: Troubleshooting
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /troubleshooting
 ---
 
-# Multi-device Troubleshooting
+# Troubleshooting
 {: .no_toc }
 
 This section is dedicated to assisting developers in resolving issues encountered while working with the SidecarT board. It includes common troubleshooting steps, frequently asked questions, and resources for additional support, enabling developers to find solutions and get back to development swiftly.
