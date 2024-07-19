@@ -7,6 +7,8 @@ nav_exclude: true
 
 ![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
 
+# SidecarTridge Documentation Site
+
 Please select a project below to view the documentation.
 
 <table style="border-collapse: collapse; border: 0;">
