@@ -19,8 +19,6 @@ redirect_from:
 {:toc}
 </details>
 
-# Public Floppy Database
-
 ## Introduction
 
 One notable feature of Sidecart is its ability to emulate Floppy Drives. This is executed efficiently; it does not consume any system RAM space. The driver needed for this emulation is exclusively located in the cartridge ROM, ensuring that system resources are used optimally and system performance is maintained.

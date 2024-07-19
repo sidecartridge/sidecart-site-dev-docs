@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Introduction
+title: TOS Emulator - Introduction
 nav_order: 1
 nav_exclude: true
 parent: SidecarTridge TOS
 ---
 
-# Introduction
+# TOS Emulator - Introduction
 {: .no_toc }
 
 The first chapter provides an overview of the SidecarTridge TOS emulator kit. The goal is to give readers a concise understanding of what the device entails and what it seeks to achieve.

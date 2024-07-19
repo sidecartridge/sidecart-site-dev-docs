@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Troubleshooting
+title: TOS Emulator - Troubleshooting
 nav_exclude: true
 parent: SidecarTridge TOS
 ---
 
-# Troubleshooting
+# TOS Emulator - Troubleshooting
 {: .no_toc }
 
 

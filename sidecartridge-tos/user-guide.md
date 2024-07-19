@@ -1,12 +1,12 @@
 ---
 layout: default
-title: User Guide
+title: TOS Emulator - User Guide
 nav_order: 3
 nav_exclude: true
 parent: SidecarTridge TOS
 ---
 
-# User Guide
+# TOS Emulator - User Guide
 {: .no_toc }
 
 This section provides guidance on the initial steps and daily operation of the SidecarTridge TOS Emulator, including how to power on the Atari ST, switch between TOS versions, and use the rescue mode.

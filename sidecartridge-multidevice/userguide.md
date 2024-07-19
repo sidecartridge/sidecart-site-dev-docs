@@ -1,6 +1,6 @@
 ---
 layout: default
-title: User Guide
+title: Multi-device User Guide
 nav_order: 3
 nav_exclude: false
 parent: SidecarTridge Multi-device
@@ -8,7 +8,7 @@ redirect_from:
   - /userguide
 ---
 
-# User Guide
+# Multi-device User Guide
 {: .no_toc }
 
 <details open markdown="block">

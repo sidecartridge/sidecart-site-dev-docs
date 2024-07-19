@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Getting Started
+title: TOS Emulator - Getting Started
 nav_order: 2
 nav_exclude: true
 parent: SidecarTridge TOS
 
 ---
 
-# Getting Started
+# TOS Emulator - Getting Started
 {: .no_toc }
 
 This section provides guidance on the initial steps to start working with the SidecarTridge TOS emulator. It includes prerequisites, hardware installation instructions, software setup, and configuration. By following the procedures outlined in this and the upcoming sections, users can ensure a smooth start to their journey with the SidecarTridge TOS emulator.
