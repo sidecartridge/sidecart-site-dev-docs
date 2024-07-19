@@ -5,6 +5,7 @@ nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /troubleshooting
+  - /troubleshooting/
 ---
 
 # Troubleshooting

@@ -6,6 +6,7 @@ nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /software_development
+  - /software_development/
 ---
 
 # Software Development

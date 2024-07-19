@@ -6,6 +6,7 @@ nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /programming_sidecart
+  - /programming_sidecart/
 ---
 
 # Programming SidecarT

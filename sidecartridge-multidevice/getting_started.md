@@ -6,6 +6,7 @@ nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /getting_started
+  - /getting_started/
 ---
 
 # Getting Started

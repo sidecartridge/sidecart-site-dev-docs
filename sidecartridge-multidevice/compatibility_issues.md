@@ -6,6 +6,7 @@ nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /compatibility_issues
+  - /compatibility_issues/
 ---
 
 # Compatibility Issues
