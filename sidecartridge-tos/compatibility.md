@@ -87,7 +87,7 @@ If you can't find your motherboard model number in the list, or have any doubts 
 You can find below a list of TOS versions tested with the SidecarTridge TOS emulator. The list includes the TOS version, the size of the ROM, if it was tested, if it works, and any additional notes. You can download them from several sites like:
 
 - [AVTANDIL website](https://avtandil.narod.ru/tose.html)
-- [Peter Putnick custom images](https://atari.8bitchip.info/TOS/TOSdep.html)
+- [Peter Putnik custom images](https://atari.8bitchip.info/TOS/TOSdep.html)
 
 | TOS Version | Size (KB) | Tested | Works | Notes |
 |-------------|-----------|--------|-------|-------|
@@ -151,7 +151,13 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 | EmuTOS 1.3.0 UK | 256 | Yes  | Yes   |       |
 | EmuTOS 1.3.0 US | 256 | Yes  | Yes   |       |
 
+You can learn about the different TOS versions in these videos:
 
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/OfeVdY9EVSc?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
 
 [Previous: User Guide](/sidecartridge-tos/user-guide/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
