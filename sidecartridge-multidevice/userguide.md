@@ -90,6 +90,13 @@ The SidecarT board currently doesn't support HTTPS. Ensure that your server uses
 
 3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
 
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/DHQEe6xgJnc?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
+
 ### Enable ROM delay / Ripper mode
 
 The SidecarT board can be configured to add an extra step when accessing the ROM files. This is useful for example for ROMs tha require a post-activation after another software is loaded from a floppy or hard disk, like ripper-style ROMs did. This section explains how to configure the SidecarT board to enable the ROM delay.
@@ -105,6 +112,13 @@ Pressing the `D` key switches the `DELAY_ROM_EMULATION` parameter between `false
 {: .important }
 Given the `SELECT` button's dual function, you cannot access the `Configurator` mode using it directly. After enabling the ROM, press `SELECT` again to access the `Configurator` mode.
 {: .important}
+
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/ov0FR23XvAY?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
 
 ## Floppies Emulation
 {: .d-inline-block }
@@ -184,6 +198,12 @@ The default format supported by the SidecarT is the `.ST` format. Starting from 
 
 A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The SidecarT board will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
 
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/toL0mca4ff8?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
 ## Hard Disk Emulation
 {: .d-inline-block }
 
@@ -251,21 +271,20 @@ To activate the hard disk emulation feature on the SidecarT board, you must firs
 {: .warning }
 If you can't enter into Configurator, please [read this](https://docs.sidecartridge.com/sidecartridge-multidevice/troubleshooting/#configurator-takes-very-long-to-start-and-stops-responding-or-ask-me-to-reboot-the-computer-or-show-bombs-on-the-screen)
 
-The SidecarT board's hard disk emulation feature does not support the following functionalities in version v0.0.16:
-- **Support for MegaSTE in 16Mhz + Cache enabled**: This configuration is not supported in v0.0.16, but it will eventually be supported in v0.0.17.
-
-- **AUTO folder shuffle**: The GEMDRIVE can read from the AUTO folder, but the order of the files is lexical. This can be a problem for some software that needs to be executed in a specific order. This will be fixed in future versions.
-
 The SidecarT board's hard disk emulation feature does not support the following functionalities in version v0.0.16 and v0.0.17:
 
 - **Volume Name**: It does not support volume names for the hard disk emulation. The Atari ST will not display the volume name of the hard disk.
 - **Pipes**: The current version does not support pipes. The Atari ST will not be able to use pipes with the hard disk emulation.
 
-
 All the features are planned for future releases.
 
 The lastest adapted games for hard disk by Peter Putnik and others does support the GEMdrive emulation. You can find them in the [Atari ST Adapted Games](https://atari.8bitchip.info/fromhd3.php) site. Most of the games with HAGA and HAGE support does work with the GEMdrive emulation with TOS ranging from 1.00 to 2.06 and 1MB of RAM. 
 
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/QDGnY_9nJnQ?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
 
 ## Atari ST database of floppy images
 {: .d-inline-block }
@@ -294,6 +313,12 @@ This section explains how to select the floppy image to emulate from the databas
 5. After the download is finished, the Atari ST will redirect the user to the Floppy Emulation menu to select how to use the floppy image.
 
 4. From the menu the user can reset the computer. The Atari ST will boot normally and will use the floppy image as if it was a physical floppy disk.
+
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/Cee2fCGCBvI?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
 
 
 ### Set the URL of the database and images files
@@ -726,3 +751,9 @@ Given that the files targeted for download typically do not exceed 1MB, the defa
 - **Decreasing the Timeout:** Conversely, if downloads are consistently finishing well before the 60-second mark, you might consider reducing the timeout setting. This can streamline the network interaction process, preventing unnecessary delays in cases where downloads are completed more swiftly.
 
 Adjusting the `DOWNLOAD_TIMEOUT_SEC` parameter allows you to tailor the download experience to your specific network conditions and the performance of the SidecarT board. Experimenting with different settings can help identify the optimal timeout duration for your setup, balancing efficiency with reliability in file retrieval operations.
+
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/BStDWGTrfuw?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
