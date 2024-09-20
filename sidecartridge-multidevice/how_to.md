@@ -53,7 +53,7 @@ To use the SidecarT effectively, your microSD card needs to be formatted in FAT1
 1. Insert your microSD card into your computer.
 2. Open `Terminal` (you can use Spotlight with `Command + Space` and then type "Terminal").
 3. Type 'diskutil list' to get a list of all dtives. Identify your SD Card. Example: disk8s1, where 8 is the Disk and s1 the Volume. It also shows you filesystem, name and size. Doublecheck and make sure to pick the right Disk!
-4. Type `diskutil eraseVolume "MS-DOS FAT16" <NAME> disk<X>s<Y>` NAME=Name for the disk. X=Disk, Y=Volume.
+4. Type `diskutil eraseDisk exFAT <NAME> disk<X>` NAME=Name for the disk. X=Disk.
 5. Once the process completes, you can safely eject the microSD card.
 
 ### Linux:
@@ -108,6 +108,9 @@ The SidecarT board also only supports access through port 80 and without proxy. 
 
 
 ### Create the `roms.json` file
+
+{: .warning }
+The JSON file has been deprecated starting in version v0.0.18 of the firmware due to performance reasons. Please see the `roms.csv` format instead.
 
 The `roms.json` file is a JSON file that contains the list of ROMs available on the server. The SidecarT board will use this file to display the list of ROMs in the `Configurator` application. The file must be located at any accessible path on the server. For example, if the server is running on `http://yourserver`, the file can be located at `http://yourserver/roms.json`.
 
@@ -164,6 +167,35 @@ An example of a `roms.json` file is shown below:
 
 The full content of the sample `roms.json` file can be found [here](http://roms.sidecartridge.com/roms.json). You can use this file as a template to create your own `roms.json` file.
 
+
+### Create the `roms.csv` file
+
+The `roms.csv` file is comma separated values file that comes to replace the `roms.json` file due to performance and memory reasons. It contains the same values but in a different format. The device will use this file to display the list of ROMs in the `Configurator` application. The file must be located at any accessible path on the server. For example, if the server is running on `http://yourserver`, the file can be located at `http://yourserver/roms.csv`.
+
+
+The format of the file is as follows:
+
+- The file must be a CSV file separated by commas.
+- Each field value must be enclosed in double quotes.
+- Each line must contain the following fields:
+  1. `url`: The URL of the ROM file. If only contains a name, it will assume is in the same path as the `roms.csv` file.
+  - `name`: The name of the ROM.
+  - `description`: A short description of the ROM.
+  - `tags`: An array of tags describing the ROM.
+  - `size_kb`: The size of the ROM in kilobytes.
+
+The first line of the file must contain the field names. An example of a `roms.csv` file is shown below:
+
+```csv
+"URL","Name","Description","Tags","Size (KB)"
+"1st%20address%20v1.01-D.bin","1st address v1.01-D","1st address is a file management assistant.","tools; office","16"
+"backpack.stc","Backpack","Utility software for file management.","utility; management","128"
+"Buggy%20Boy.img","Buggy Boy","An off-road racing game where players drive a buggy and avoid obstacles.","racing; arcade","128"
+"cumana%20OS-9.stc","Cumana OS-9","A popular operating system.","os","128"
+```
+
+The full content of the sample `roms.csv` file can be found [here](http://roms.sidecartridge.com/roms.csv). You can use this file as a template to create your own `roms.csv` file.
+
 ### Upload the ROM images to the server
 
 The ROM images can be uploaded to any accessible path on the server. For example, if the server is running on `http://yourserver`, the ROM images can be located at `http://yourserver/roms/`. 
@@ -171,12 +203,13 @@ The ROM images can be uploaded to any accessible path on the server. For example
 If the ROM images have a suffix with the name `.STC` and also the first four bytes are zeroed out, the SidecarT board will automatically detect the ROM as a STEEM ROM and will offset the four bytes out. Otherwise, the ROM will be detected as a standard Atari ST ROM. 
 
 {: .warning }
-Don't forget to update the `url` field in the `roms.json` file to point to the correct location of the ROM images.
+Don't forget to update the `url` field in the `roms.csv` file to point to the correct location of the ROM images.
+
 
 
 ### Change the SidecarT board configuration
 
-The SidecarT board can be configured to use any HTTP server by changing the `ROMS_YAML_URL` parameter in the configuration parameters of the `Configursator`. The default value of this parameter is `http://roms./roms.json`. You should change this value to point to your own `roms.json` file.
+The SidecarT board can be configured to use any HTTP server by changing the `ROMS_YAML_URL` parameter in the configuration parameters of the `Configursator`. The default value of this parameter is `http://roms.sidecartridge.com/roms.csv`. You should change this value to point to your own `roms.csv` file.
 
 {: .note }
 The `ROMS_YAML_URL` is not the right name for this parameter. It will be renamed in the future to `ROMS_JSON_URL`.

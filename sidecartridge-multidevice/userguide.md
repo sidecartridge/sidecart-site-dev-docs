@@ -81,7 +81,7 @@ If you prefer a different folder name instead of `roms`, you can modify the `ROM
 
 The SidecarT board can be configured to use a web server to host the ROM files. This section explains how to configure the SidecarT board to use a web server.
 
-1. **URL Configuration**: Point the SidecarT board to your web server's ROM directory by setting the `ROMS_YAML_URL` parameter. The board expects a `roms.json` file at this location. To know more about creating this file, see [Set up your own HTTP server for your ROMs](/sidecartridge-multidevice/how_to/#set-up-your-own-http-server-for-your-roms).
+1. **URL Configuration**: Point the SidecarT board to your web server's ROM directory by setting the `ROMS_YAML_URL` parameter. The board expects a `roms.csv` file at this location. To know more about creating this file, see [Set up your own HTTP server for your ROMs](/sidecartridge-multidevice/how_to/#set-up-your-own-http-server-for-your-roms).
 
 2. **HTTPS Limitation**:
 {: .warning}
@@ -147,14 +147,25 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
    - Power up the board; it should recognize the microSD card automatically.
    - Enter `Configurator` mode by pressing the `SELECT` button. Navigate to `Emulate Floppy` menu option.
    - A menu will display the following options:
-     - Floppy [A]: Press `A` to select the floppy image to emulate in drive A from the list of available images in the folder.
+     - Floppy A: Image selection for drive A, or `<EMPTY>` if no image is selected.
+     - Floppy B: Image selection for drive B, or `<EMPTY>` if no image is selected.
      - [E]xecute boot sector: Press `E` to enable or disable the execution of the boot sector of the floppy image. Sometimes the boot sector contains an antivirus or copy protection that can interfere with the emulation, so it's useful to disable it.
      - [X]BIOS interception: Press `X` to enable or disable the interception of the XBIOS calls to the floppy drive. Some software uses the XBIOS calls to access the floppy drive, so it's useful to disable it specially in versions of TOS 1.00 and TOS 1.02.
      - Temp [M]emory type: Press `M` to select the memory type to use for the temporary memory used by the floppy emulation.The default is `_dskbuf` that uses the buffer created by the operating system. The other option is `heap` and uses the heap memory. This is an advanced parameter and I don't recommend to change it unless you know what you are doing.
-5. **Rebooting**: There are three more options:
-   - [S] - Start emulation: Press `S` to start the emulation of the floppy image in drive A in read-only mode.
-   - [W] - Start emulation in read-write mode. Press `W` to start the emulation of the floppy image in drive A in read-write mode. This will create a copy of the floppy image with the `.rw` extension to avoid data loss, if it does not already exists.
-   - [F] - Format a floppy image: Press `F` to format a floppy image in the drive A. This will create a new floppy image in the `floppies` folder with the `.ST` extension. The user can select the size of the floppy image to create and the volume name of the floppy. See the instructions below.
+
+5. **Selecting Floppy Images**:
+    - [A] - Select the floppy image for drive A: Press `A` to choose the floppy image for drive A. It will display the list of floppy images available in the `floppies` folder. Select the desired image to emulate.
+    - [B] - Select the floppy image for drive B: Press `B` to choose the floppy image for drive B. It will display the list of floppy images available in the `floppies` folder. Select the desired image to emulate.
+
+6. **Ejecting Floppy Images**:
+    - [SHIFT + A] - Eject the floppy image from drive A:
+    - [SHIFT + B] - Eject the floppy image from drive B:
+
+7. **Formatting a Floppy Image**:
+    - [F] - Format a floppy image: Press `F` to format a floppy image in the drive A. This will create a new floppy image in the `floppies` folder with the `.ST` extension. The user can select the size of the floppy image to create and the volume name of the floppy. [Read the instructions below](#create-an-empty-writable-floppy-image).
+
+8. **Start the emulation**: There are three more options:
+    - [S] - Start emulation: Press `S` to start the emulation. The Atari ST will ask the user to press a key to reset the computer and start the emulation.
 
 {: .note }
 If `floppies` isn't your desired directory name, it can be changed. Adjust the `FLOPPIES_FOLDER` parameter. Details are available in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section.
@@ -203,6 +214,26 @@ A special mention to read-write images with the extions `.rw`. All `.ST` files a
         src="https://www.youtube-nocookie.com/embed/toL0mca4ff8?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
         allowfullscreen allowtransparency></iframe>
 </figure>
+
+### Runtime emulation
+
+After selecting the floppy images to emulate, device will start the emulation of the floppy images. The Atari ST will boot normally and will perform the following configuration process:
+
+1. Detect there is a microSD card inserted in the board.
+2. Detect the floppy images selected in the `Configurator` mode.
+3. Connect to the WiFi network if the user has configured the board to connect to a WiFi network.
+4. Set up and start a web server to host an application to manage the floppy images.
+5. Modify the XBIOS calls to the floppy drive to intercept the calls and redirect them to the device.
+6. Wait for the user to press `SPACE` key or timeout the configuration process.
+
+Now, the computer will boot normally and the user can use the floppy images as if they were physical floppy disks. 
+
+### Web server to manage the floppy images
+
+If the user wants to swap the floppy images or eject them, the user will have to connect to the web server hosted by the device. The url of the web server is displayed in the screen of the Atari ST at boot time. The user can use a web browser to connect to the web server and manage the floppy images. It's possible to use a smartphone, tablet or computer to connect to the web server, the application is responsive and can be used in any device.
+
+The user can insert and eject virtual floppy images from the Atari ST using the web server at any time, but it's recommended to eject the floppy images while they are not in use to prevent data corruption. Some applications do not like to have the floppy images ejected while they are using them, so the user can do it during the boot process of the Atari ST, or can also reset the computer after swapping the floppy images, the board will remember the floppy images selected in the `Configurator` and in the web server.
+
 
 ## Hard Disk Emulation
 {: .d-inline-block }
@@ -507,7 +538,7 @@ One of the most annoying things when using the SidecarTridge board is the need t
 
 ### Enabling Mass Storage Mode
 
-The Mass Storage Mode can only be enabled when the SidecarTridge board, with a microSD card inserted in its microSD card reader, is connected to a computer via USB. The USB port provides both communication with the computer and power to the SidecarTridge board. When properly connected, the small green LED on the Raspberry Pi Pico W/WH will stay on steadily. Wait a few seconds for the computer to recognize the SidecarTridge board as a mass storage device, and you're ready to go. 
+The Mass Storage Mode can only be enabled when the SidecarTridge board, with a microSD card inserted in its microSD card reader, is connected to a computer via USB and the SidecarTridge board is also in `Configurator` mode. The USB port provides both communication with the computer and power to the SidecarTridge board. When properly connected, the small green LED on the Raspberry Pi Pico W/WH will stay on steadily. Wait a few seconds for the computer to recognize the SidecarTridge board as a mass storage device, and you're ready to go. 
 
 {: .note}
 The mass storage device is not very fast compared to a standard card reader or a USB stick. So if it looks slow, it's normal.
