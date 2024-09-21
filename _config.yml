@@ -148,7 +148,7 @@ compress_html:
 
 # Versions of SidecarT
 FIRMWARE_VERSION: v0.0.11
-FIRMWARE_BETA_VERSION: beta-v0.0.18
+FIRMWARE_BETA_VERSION: beta-v0.0.18a
 TEST_FIRMWARE_VERSION: v0.0.3
 
 # Versions of the SidecarTridge TOS
