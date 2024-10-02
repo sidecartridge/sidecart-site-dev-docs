@@ -74,7 +74,7 @@ You can't use a 256KB ROM image in a ST/STF/STFM motherboard because these mothe
 
 Also, keep in mind that the TOS for ST/STF/STFM motherboards starts at address `0xFC0000` and ends at `0xFEFFFF`. The STE/MegaSTE TOS starts at `0xE00000` to `0xE3FFFF`.
 
-There are modded motherboards that support 256KB ROMs for ST/STF/STFM motherboards, but they are not tested with the SidecarTridge TOS emulator. 
+There are modified motherboards that support 256KB ROMs for ST/STF/STFM motherboards, but they are not tested with the SidecarTridge TOS emulator. 
 
 ## Software Questions
 
