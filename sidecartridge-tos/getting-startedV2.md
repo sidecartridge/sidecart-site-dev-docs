@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started
 nav_order: 3
-nav_exclude: false
+nav_exclude: true
 parent: SidecarTridge TOS
 
 ---
@@ -195,9 +195,25 @@ We assume that you have already connected the SidecarTridge TOS emulator to your
 
 TODO
 
-### Upgrading the Firmware
+### Upgrading the Firmware from major version 1 to version 2
 
-If there is a newer firmware version available, you can proceed with the firmware update process. Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/) and store it in a temporary location on your computer.
+The new version 2 has several new features and improvements over the previous version:
+
+- **New TOS ROM management**: It is now possible to upload and delete a new TOS ROM image from any Atari ST/MegaST/STE/MegaSTE computer.
+- **New FAT12 file system**: The SidecarTridge TOS emulator now uses a FAT12 file system with a 4KBytes cluster size, allowing for better compatibility with different operating systems.
+- **No more fragmentation**: The emulator now can handle the fragmentation of the flash memory after copying files.
+
+The firmware update process from version 1 to version 2 is straightforward and does not require any special tools or equipment, **but it will erase all the TOS images stored on the SidecarTridge TOS emulator. Before proceeding with the firmware update, ensure you have backed up all the TOS images to avoid data loss.**
+
+Before downloading the firmware, ensure you know what is the right firmware version file for your computer:
+
+- **For Atari ST/MegaST:** Download the firmware file `sidecartridge-tos-emutos-192k-vX.Y.Z.uf2` for the 192KBytes EmuTOS image.
+- **For Atari STE/MegaSTE:** Download the firmware file `sidecartridge-tos-emutos-256k-vX.Y.Z.uf2` for the 256KBytes EmuTOS image.
+
+{: .note }
+If your Atari ST/MegaST has a 256KBytes ROM decoder, you can use the 256KBytes EmuTOS image. If you are not sure about the ROM decoder, use the 192KBytes EmuTOS image.
+
+Download the latest firmware version from the main page of the [SidecarTridge TOS documentation website](/sidecartridge-tos/) and store it in a temporary location on your computer.
 
 To update the firmware, follow these steps:
 1. Hold the `RESET` button on the SidecarTridge TOS ROM Board.
@@ -212,8 +228,13 @@ The SidecarTridge TOS emulator will enter the firmware update mode and appear as
 The firmware update process is now complete, and you can proceed to the next section to verify the installation.
 
 {: .note }
-The firmware update process is straightforward and will not affect the TOS images stored on the SidecarTridge TOS emulator. However, it is recommended to back up the TOS images before updating the firmware to avoid any data loss.
+Upgrading the firmware from version 1 to version 2 will erase all the TOS images stored on the SidecarTridge TOS emulator. Ensure you have backed up all the TOS images before proceeding with the firmware update.
 
+### Upgrading the firmware versions in the same major version
+
+The firmware update process for the same major version is similar to the process described above. However, the update process will not erase the TOS images stored on the SidecarTridge TOS emulator. 
+
+If you want to update the firmware to a newer version within the same major version, choose the firmware file with the corresponding version number and the suffix `upgrade`. For example, if you are updating from version 2.0 to version 2.1, choose the firmware file named `sidecartridge-tos-v2.0.4-upgrade.uf2`.
 
 [Previous: Before You Buy](/sidecartridge-tos/before-buy/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }

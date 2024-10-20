@@ -2,7 +2,7 @@
 layout: default
 title: User Guide
 nav_order: 5
-nav_exclude: false
+nav_exclude: true
 parent: SidecarTridge TOS
 ---
 
