@@ -96,6 +96,7 @@ Open the `ROMEMUL` volume on your computer to access firmware files and TOS imag
 
 - `INDEX.HTM`: Opens the SidecarTridge TOS documentation website.
 - `INFO.TXT`: Contains information about the firmware version installed in the SidecarTridge TOS emulator.
+- `SWITCHER.TOS`: The program for managing TOS versions on the Atari ST. **You must copy this file to your Atari ST computer to switch between TOS versions. You can learn to use in the [User Guide](/sidecartridge-tos/user-guideV2.md)**
 - `DEFAULT.TXT`: Contains the name of the default active TOS image file.
 - `RESCUE.TXT`: Contains the name of the rescue TOS image file.
 
@@ -193,7 +194,19 @@ We assume that you have already connected the SidecarTridge TOS emulator to your
 
 ### Obtaining the Installed Firmware Version
 
-TODO
+To learn the firmware version installed on the SidecarTridge TOS emulator, open the `INFO.TXT` file in the `ROMEMUL` volume. The file contains information about the firmware version, the date of the firmware, the microcontroller used, the board ID, and the flash size. For example:
+
+```
+SidecarTridge ROM emulator. (C) 2024 GOODDATA LABS SL
+Version: v2.0.0
+Date: 2024-10-21 16:09:45
+Mode: RELEASE
+Microcontroller: RP2040-B2
+Board ID: e46358c8071c0c29
+Flash size: 16777216 bytes
+```
+
+The firmware version is displayed as `Version: vX.Y.Z`, where `X.Y.Z` is the major, minor, and patch version numbers. In this example, the firmware version is `v2.0.0`. 
 
 ### Upgrading the Firmware from major version 1 to version 2
 
