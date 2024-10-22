@@ -83,6 +83,10 @@ Starting from version 2 of the firmware it is possible to upload and delete a ne
 
 To upload a new TOS ROM image from the Atari ST computer, press the [`U`]pload key in the SWITCHER.TOS program. The program will show you a file system browser to select the TOS ROM image to upload from your computer. Navigate to the desired TOS ROM image and press the `RETURN` key to start the upload process.
 
+{: .warning}
+The upload and delete features cannot be interrupted. Do not turn off the Atari ST computer while the upload or delete process is in progress. It may damage the storage memory of the SidecarTridge TOS Emulator needing a reflash of the firmware.
+
+
 ![SidecarTridge Switcher upload](/sidecartridge-tos/assets/images/sidecartridge-switcher-upload.png)
 
 The SWITCHER.TOS program will upload the TOS ROM image to the SidecarTridge TOS Emulator. This process may take a few minutes depending on the size of the TOS ROM image. Once the upload is complete, appliaction will verify that the new image is correct and will reindex the TOS ROM images list.
