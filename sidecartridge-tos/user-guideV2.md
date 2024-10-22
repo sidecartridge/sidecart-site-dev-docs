@@ -41,7 +41,7 @@ Open the SWITCHER.TOS application. The program will display a list of available 
 - **Default TOS ROM**: The currently active TOS ROM or the default TOS ROM.
 - **Rescue TOS ROM**: The TOS ROM used for the rescue mode.
 
-![SidecarTridge Switcher list](/sidecartridge-tos/assets/images/sidecartridge-switcher-list.png)
+![SidecarTridge Switcher list](/sidecartridge-tos/assets/images/sidecartridge-switcher-listV2.png)
 
 Use the arrow keys to navigate the list and press the `RETURN` key to select the desired TOS ROM. The program will then reboot the Atari ST with the selected TOS ROM.
 
@@ -81,7 +81,7 @@ Starting from version 2 of the firmware it is possible to upload and delete a ne
 
 To upload a new TOS ROM image from the Atari ST computer, press the [`U`]pload key in the SWITCHER.TOS program. The program will show you a file system browser to select the TOS ROM image to upload from your computer. Navigate to the desired TOS ROM image and press the `RETURN` key to start the upload process.
 
-![SidecarTridge Switcher upload](/sidecartridge-tos/assets/images/sidecartridge-switcher-upload.gif)
+![SidecarTridge Switcher upload](/sidecartridge-tos/assets/images/sidecartridge-switcher-upload.png)
 
 The SWITCHER.TOS program will upload the TOS ROM image to the SidecarTridge TOS Emulator. This process may take a few minutes depending on the size of the TOS ROM image. Once the upload is complete, appliaction will verify that the new image is correct and will reindex the TOS ROM images list.
 
@@ -91,7 +91,7 @@ The uploaded TOS ROM image will be available in the list of TOS ROM images. You 
 
 To delete a TOS ROM image from the Atari ST computer, select the TOS ROM image you want to delete from the list of TOS ROM images and press the [`D`]elete key in the SWITCHER.TOS program. The program will ask you to confirm the deletion of the TOS ROM image. The SWITCHER.TOS program will delete the TOS ROM image from the SidecarTridge TOS Emulator and reindex the TOS ROM images list.
 
-![SidecarTridge Switcher delete](/sidecartridge-tos/assets/images/sidecartridge-switcher-delete.gif)
+![SidecarTridge Switcher delete](/sidecartridge-tos/assets/images/sidecartridge-switcher-delete.png)
 
 {:.note}
 It is not possible to delete the default TOS ROM image or the rescue TOS ROM image. If you want to delete the default TOS ROM image, you must first select a new default TOS ROM image. If you want to delete the rescue TOS ROM image, you also must first select a new rescue TOS ROM image.
