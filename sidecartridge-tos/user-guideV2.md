@@ -73,6 +73,7 @@ To force boot the rescue TOS ROM, follow these steps:
 
 The Atari ST will boot the rescue TOS ROM. You can then use the SWITCHER.TOS program to select a new active TOS ROM.
 
+
 ## TOS ROM management from the Atari ST
 
 Starting from version 2 of the firmware it is possible to upload and delete a new TOS ROM image from any Atari ST/MegaST/STE/MegaSTE computer. This feature is useful if you want to upload a new TOS ROM image without the need of a computer with a USB port and/or the need to open the Atari ST computer case.
@@ -87,7 +88,7 @@ The SWITCHER.TOS program will upload the TOS ROM image to the SidecarTridge TOS 
 
 The uploaded TOS ROM image will be available in the list of TOS ROM images. You can now select the new TOS ROM image as the active default TOS ROM.
 
-### Deleting a TOS ROM from the Atari ST computer
+## Deleting a TOS ROM from the Atari ST computer
 
 To delete a TOS ROM image from the Atari ST computer, select the TOS ROM image you want to delete from the list of TOS ROM images and press the [`D`]elete key in the SWITCHER.TOS program. The program will ask you to confirm the deletion of the TOS ROM image. The SWITCHER.TOS program will delete the TOS ROM image from the SidecarTridge TOS Emulator and reindex the TOS ROM images list.
 
