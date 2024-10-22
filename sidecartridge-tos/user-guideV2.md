@@ -75,6 +75,8 @@ The Atari ST will boot the rescue TOS ROM. You can then use the SWITCHER.TOS pro
 
 ## TOS Management from the Atari ST
 
+### Version 2 Firmware
+
 Starting from version 2 of the firmware it is possible to upload and delete a new TOS ROM image from any Atari ST/MegaST/STE/MegaSTE computer. This feature is useful if you want to upload a new TOS ROM image without the need of a computer with a USB port and/or the need to open the Atari ST computer case.
 
 ### Uploading a new TOS ROM from the Atari ST computer
