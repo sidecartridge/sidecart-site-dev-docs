@@ -1,10 +1,14 @@
 ---
 layout: default
-title: User Guide
-nav_order: 5
+title: "DEPRECATED: User Guide (v1.0 firmware)"
+nav_order: 11
 nav_exclude: true
 parent: SidecarTridge TOS
 ---
+
+{: warning}
+This is a deprecated version of the User Guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest User Guide](/sidecartridge-tos/user-guideV2/) for the most up-to-date information.
+
 
 # User Guide
 {: .no_toc }

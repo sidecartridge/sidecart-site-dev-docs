@@ -1,11 +1,15 @@
 ---
 layout: default
-title: Getting Started
-nav_order: 3
+title: "DEPRECATED: Getting Started (v1.0 firmware)"
+nav_order: 10
 nav_exclude: true
 parent: SidecarTridge TOS
 
 ---
+
+{: warning}
+This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
+
 
 #  Getting Started
 {: .no_toc }

@@ -174,7 +174,7 @@ Before closing the case, ensure there is no contacts of any of the elements of t
 {: .warning}
 **Atari STE owners**: Be careful when reassembling the Atari STE case and put a strip of insulating tape between the SidecarTridge TOS Emulator and the floppy drive to avoid any short circuit.
 
-[Previous: Getting Started](/sidecartridge-tos/getting-started/){: .btn .mr-4 }
+[Previous: Getting Started](/sidecartridge-tos/getting-startedV2/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
-[Next: User Guide](/sidecartridge-tos/user-guide/){: .btn }
+[Next: User Guide](/sidecartridge-tos/user-guideV2/){: .btn }
 
