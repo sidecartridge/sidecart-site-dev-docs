@@ -6,12 +6,11 @@ nav_exclude: true
 parent: SidecarTridge TOS
 ---
 
-{: warn}
-This is a deprecated version of the User Guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest User Guide](/sidecartridge-tos/user-guideV2/) for the most up-to-date information.
-
-
 # User Guide
 {: .no_toc }
+
+{: warn}
+This is a deprecated version of the User Guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest User Guide](/sidecartridge-tos/user-guideV2/) for the most up-to-date information.
 
 This section provides guidance on the initial steps and daily operation of the SidecarTridge TOS Emulator, including how to power on the Atari ST, switch between TOS versions, and use the rescue mode.
 

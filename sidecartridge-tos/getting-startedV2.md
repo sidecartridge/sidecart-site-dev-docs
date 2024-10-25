@@ -156,7 +156,8 @@ In Linux, you can use the `cp` command to copy the TOS image files from the `TOS
 cp -R /path/to/TOS\ Images/* /media/username/ROMEMUL/
 ```
 
-**Note:** Depending on the Linux distribution, the mount point of the SidecarTridge TOS emulator may vary. Replace `/media/username/ROMEMUL/` with the correct mount point of the emulator.
+{: .note }
+Depending on the Linux distribution, the mount point of the SidecarTridge TOS emulator may vary. Replace `/media/username/ROMEMUL/` with the correct mount point of the emulator.
 
 ### Modifying the Default and Rescue TOS Images
 

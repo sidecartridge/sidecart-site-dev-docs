@@ -7,12 +7,13 @@ parent: SidecarTridge TOS
 
 ---
 
-{: warn}
-This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
-
 
 #  Getting Started
 {: .no_toc }
+
+{: warn}
+This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
+
 
 This section provides guidance on the initial steps to start working with the SidecarTridge TOS emulator. It includes prerequisites, hardware installation instructions, software setup, and configuration. By following the procedures outlined in this and the upcoming sections, users can ensure a smooth start to their journey with the SidecarTridge TOS emulator.
 
