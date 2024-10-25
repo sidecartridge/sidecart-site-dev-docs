@@ -7,6 +7,8 @@ parent: SidecarTridge TOS
 
 ---
 
+{: .warn }
+This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
 
 #  Getting Started
 {: .no_toc }
@@ -28,9 +30,6 @@ This section provides guidance on the initial steps to start working with the Si
 1. TOC
 {:toc}
 </details>
-
-{: warn }
-This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
 
 ## Prerequisites
 
