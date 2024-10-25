@@ -11,10 +11,6 @@ parent: SidecarTridge TOS
 #  Getting Started
 {: .no_toc }
 
-{: warn}
-This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
-
-
 This section provides guidance on the initial steps to start working with the SidecarTridge TOS emulator. It includes prerequisites, hardware installation instructions, software setup, and configuration. By following the procedures outlined in this and the upcoming sections, users can ensure a smooth start to their journey with the SidecarTridge TOS emulator.
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
@@ -33,6 +29,8 @@ This section provides guidance on the initial steps to start working with the Si
 {:toc}
 </details>
 
+{: warn }
+This is a deprecated version of the Getting Started guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest Getting Started guide](/sidecartridge-tos/getting-startedV2/) for the most up-to-date information.
 
 ## Prerequisites
 
@@ -316,7 +314,7 @@ The *default* image can be changed by editing the `DEFAULT.TXT` file in the `Sid
 
 The *rescue* image can ONLY be changed by editing the `RESCUE.TXT` file in the `SidecarTrdg` volume.
 
-{: .warn}
+{: .warn }
 We strongly recommend using the `SWITCHER.TOS` program to change the *default* TOS image. Change the *rescue* TOS image only when necessary, as it is a critical setting that should be used in case of boot failure. 
 
 To change the *default* and *rescue* TOS images using the `SWITCHER.TOS` program, please refer to the [Switching Between TOS Versions](#switching-between-tos-versions) section in the User Guide.
@@ -383,7 +381,7 @@ The reason you need to eject the SidecarTrdg volume and mount it again is that a
 
 If you are using macOS, you can use the `purge` command in the Terminal to clear the disk cache and force the system to reload the files, without the need to eject and mount the volume again.
 
-{: .warn}
+{: .warn }
 As a rule of thumb, always eject the SidecarTrdg volume after making any changes to the files. This will ensure that the changes are correctly saved and reflected in the emulator.
 
 ### Advanced Commands
