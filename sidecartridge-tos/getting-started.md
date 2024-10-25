@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started
 nav_order: 3
-nav_exclude: false
+nav_exclude: true
 parent: SidecarTridge TOS
 
 ---

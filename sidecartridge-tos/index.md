@@ -31,13 +31,13 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 <h3>💲 <a href="/sidecartridge-tos/before-buy/">Before You Buy</a></h3>
 <p>What you need to know before buying a kit</p>
 
-<h3>🚀 <a href="/sidecartridge-tos/getting-started/">Getting started</a></h3>
+<h3>🚀 <a href="/sidecartridge-tos/getting-startedV2/">Getting started</a></h3>
 <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
 
 <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
 <p>Learn how to installation the device in your computers.</p>
 
-<h3>😊 <a href="/sidecartridge-tos/user-guide/">User Guide</a></h3>
+<h3>😊 <a href="/sidecartridge-tos/user-guideV2/">User Guide</a></h3>
 <p>Learn how to use the device day in day out</p>
 
 <h3>🤝 <a href="/sidecartridge-tos/compatibility/">Compatibility</a></h3>
@@ -48,4 +48,10 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 
 <h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
 <p>Frequently Asked Questions.</p>
+
+<h3>Previous Firmware Versions</h3>
+
+<h4><a href="/sidecartridge-tos/getting-started/">Getting started</a></h4>
+
+<h4><a href="/sidecartridge-tos/user-guide/">User Guide</a></h4>
 
