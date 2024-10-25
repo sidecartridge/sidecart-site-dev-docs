@@ -62,8 +62,8 @@ Carrier boards for non supported motherboards are in active development. Please 
 | C100167-001 Rev. 4.0     |       2        | Supported       |
 | C100167-001 Rev. B       |       2        | Supported       |
 | C100167-001 Rev. 5.0     |       2        | Supported       |
+| C103277 Rev 2.2          |       2        | Supported       | 
 | C103544-001              |       2        | Supported       |
-
 
 ### Atari STE series
 
