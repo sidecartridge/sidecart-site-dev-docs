@@ -14,7 +14,7 @@ This section provides guidance on the initial steps to start working with the Si
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-        src="https://www.youtube-nocookie.com/embed/sdvNxO436ck?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        src="https://www.youtube-nocookie.com/embed/rzN72bL8n3Y?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
         allowfullscreen allowtransparency></iframe>
 </figure>
 
