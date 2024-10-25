@@ -6,7 +6,7 @@ nav_exclude: true
 parent: SidecarTridge TOS
 ---
 
-{: warning}
+{: warn}
 This is a deprecated version of the User Guide for the SidecarTridge TOS emulator with firmware version 1.0. Upgrade to the latest firmware version and refer to the [latest User Guide](/sidecartridge-tos/user-guideV2/) for the most up-to-date information.
 
 
