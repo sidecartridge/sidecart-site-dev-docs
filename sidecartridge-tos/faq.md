@@ -80,7 +80,7 @@ There are modified motherboards that support 256KB ROMs for ST/STF/STFM motherbo
 
 ### How do I update the firmware of the SidecarTridge TOS emulator?
 
-The firmware of the SidecarTridge TOS emulator can be updated following the instructions provided in the [Firmware Update](/sidecartridge-tos/getting-started/#firmware-installation) section.
+The firmware of the SidecarTridge TOS emulator can be updated following the instructions provided in the [Firmware Update](/sidecartridge-tos/getting-startedV2V2/#firmware-installation) section.
 
 ### I want to update the firmware of the SidecarTridge TOS emulator but I don't want to lose my TOS images. What should I do?
 
