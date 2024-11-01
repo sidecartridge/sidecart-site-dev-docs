@@ -59,7 +59,7 @@ Please modify the parameters with caution, as they can affect the behavior of th
 | WIFI_IP              | STRING    | The IP address of the WiFi network when DHCP disabled  | v1.0.0   |                                      |
 | WIFI_NETMASK         | STRING    | The netmask of the WiFi network when DHCP disabled     | v1.0.0   |                                      |
 | WIFI_PASSWORD        | STRING    | The password of the WiFi network to connect to         | v0.0.1   |                                      |
-| WIFI_POWER           | INTEGER   | The power configuration of the Wifi chip               | v1.0.0   | 0
-| WIFI_RSSI            | BOOLEAN   | Show RSSI of the connected network: 0 - power management disabled 1 - Maximize performance 2 - Aggresive power management 3 - Default chip values 4 - No power saving                     | v1.0.0   | true                                 |
+| WIFI_POWER           | INTEGER   | The power configuration of the Wifi chip. 0 - power management disabled 1 - Maximize performance 2 - Aggresive power management 3 - Default chip values 4 - No power saving               | v1.0.0   | 0
+| WIFI_RSSI            | BOOLEAN   | Show RSSI of the connected network:                    | v1.0.0   | true                                 |
 | WIFI_SCAN_SECONDS    | INTEGER   | The number of seconds to scan for WiFi networks        | v0.0.1   | 15                                   |
 | WIFI_SSID            | STRING    | The SSID of the WiFi network to connect to             | v0.0.1   |                                      |
