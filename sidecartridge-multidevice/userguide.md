@@ -152,6 +152,7 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
      - [E]xecute boot sector: Press `E` to enable or disable the execution of the boot sector of the floppy image. Sometimes the boot sector contains an antivirus or copy protection that can interfere with the emulation, so it's useful to disable it.
      - [X]BIOS interception: Press `X` to enable or disable the interception of the XBIOS calls to the floppy drive. Some software uses the XBIOS calls to access the floppy drive, so it's useful to disable it specially in versions of TOS 1.00 and TOS 1.02.
      - Temp [M]emory type: Press `M` to select the memory type to use for the temporary memory used by the floppy emulation.The default is `_dskbuf` that uses the buffer created by the operating system. The other option is `heap` and uses the heap memory. This is an advanced parameter and I don't recommend to change it unless you know what you are doing.
+     - [W]eb manager: Press `W` to enable or disable the web manager to manage the floppy images from a web browser. This is an experimental feature and it's recommended to disable it when not in use.
 
 5. **Selecting Floppy Images**:
     - [A] - Select the floppy image for drive A: Press `A` to choose the floppy image for drive A. It will display the list of floppy images available in the `floppies` folder. Select the desired image to emulate.
@@ -228,7 +229,7 @@ After selecting the floppy images to emulate, device will start the emulation of
 
 Now, the computer will boot normally and the user can use the floppy images as if they were physical floppy disks. 
 
-### Web server to manage the floppy images
+### Web server to manage the floppy images (EXPERIMENTAL)
 
 If the user wants to swap the floppy images or eject them, the user will have to connect to the web server hosted by the device. The url of the web server is displayed in the screen of the Atari ST at boot time. The user can use a web browser to connect to the web server and manage the floppy images. It's possible to use a smartphone, tablet or computer to connect to the web server, the application is responsive and can be used in any device.
 
@@ -240,10 +241,6 @@ The user can insert and eject virtual floppy images from the Atari ST using the 
 
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
-
-{: .warning }
-The Hard Disk Emulation feature is an experimental feature. It remains under active testing and development. If you opt to use it please backup your data regularly.
-{: .warning}
 
 ### Introduction
 
@@ -290,7 +287,8 @@ To activate the hard disk emulation feature on the SidecarT board, you must firs
      - [D]rive: Hit `D` to choose the drive letter for emulation, ranging from `C` to `Z`. Select a unique letter if using multiple hard disk drivers.
      - Temp [M]emory Type: Press `M` to pick the type of temporary memory for emulation. The default `_dskbuf` utilizes the operating system's buffer, while `heap` opts for heap memory. This setting is advanced and should only be altered with caution.
      - [R]TC Enabled: Toggle the Real Time Clock (RTC) by pressing `R`. Enabling RTC ensures accurate date and time for files and the Atari ST computer.
-     - [T]imeout (Seconds): Set the wait time for network and NTP server synchronization, with a default of 45 seconds.
+     - [F]ake floppy: Press `F` to enable or disable the fake floppy feature. This feature is useful for software that requires a floppy drive to be present, like the detection of AUTO folder programs or by passing the annoying 2.06 TOS floppy disk check on boot.
+     - Network [T]imeout: Set the wait time for network and NTP server synchronization, with a default of 45 seconds.
 5. **Starting the Emulation**:
    - Additional options include:
      - [S] - Start Emulation: Press `S` to commence hard disk emulation using the chosen drive letter.
@@ -712,6 +710,38 @@ While lowering the `WIFI_SCAN_SECONDS` value can aid in detecting Wi-Fi networks
 
 - **Resource Consumption:** More frequent scanning consumes additional computational resources. This heightened activity can impact the performance of the Configurator application, potentially leading to a less responsive user experience.
 
+#### Power management configuration
+
+Starting in version v1.0.0, it can be modified to adjust the power management configuration of the Wi-Fi module. The `WIFI_POWER` parameter can be set to the following values:
+
+0 - power management disabled 
+1 - Maximize performance 
+2 - Aggresive power management 
+3 - Default chip values 
+4 - No power saving
+
+The default configuration of the CYW43 module is 3, but the default configuration has been change to no power management since the Atari computer can deliver enough power to the SidecarT board. Try different values to see if the Wi-Fi module can connect to the network faster or get better RSSI values.
+
+#### Display RSSI values
+
+Starting in version v1.0.0, the SidecarT board can display the RSSI values of the Wi-Fi networks. The RSSI values are displayed in the `W. Wi-Fi Configuration` menu when scanning for Wi-Fi networks. The RSSI values are displayed in dBm and can be used to determine the signal strength of the Wi-Fi networks. The RSSI values are displayed in the `RSSI` column. It's also possible to display the current RSSI value of the connected Wi-Fi network if the parameter `WIFI_RSSI` is set to `true`. By default, the `WIFI_RSSI` parameter is set to `false` because it can slow down the user interface.
+
+As a reference, the following table provides a general overview of RSSI values and their corresponding signal strengths:
+
+| **RSSI Value (dBm)**  | **Signal Strength**        | **Probability of Good Connectivity**          |
+|-----------------------|----------------------------|-----------------------------------------------|
+| -30 dBm to -50 dBm    | Excellent                  | Very high, fast, and reliable connection.     |
+| -51 dBm to -60 dBm    | Good                       | High, stable connection with good speed.      |
+| -61 dBm to -70 dBm    | Fair                       | Moderate, generally reliable but slower.      |
+| -71 dBm to -80 dBm    | Weak                       | Low, possible connection issues or dropouts.  |
+| -81 dBm to -90 dBm    | Poor                       | Very low, frequent dropouts, slow speeds.     |
+| -91 dBm and below     | Unusable                   | Extremely low, likely no connection at all.   |
+
+
+Below -80 dBm, the signal strength is considered weak, potentially leading to connectivity issues. By monitoring the RSSI values, you can identify networks with stronger signals, enabling you to connect to more reliable Wi-Fi networks.
+
+A network below -85db is considered too weak to connect to.
+
 #### Finding the Right Balance
 
 Finding the optimal setting for `WIFI_SCAN_SECONDS` involves balancing the need for effective network detection with maintaining good system performance. 
@@ -723,6 +753,12 @@ Ensuring seamless network detection and connection is critical for the optimal o
 #### Initial Connection and IP Address Acquisition
 
 Once a Wi-Fi connection is successfully established, the SidecarT board seeks to obtain an IP address from the DHCP server. A failure to secure a valid IP address results in the absence of displayed network details, indicating an incomplete connection.
+
+If the signal strength is weak or the network is congested, the board may struggle to connect to the Wi-Fi network and acquire an IP address. In such cases, adjusting the `WIFI_CONNECT_TIMEOUT` parameter to a lower value can help improve the connectivity because the device will retry to connect to the network faster, but a failure to connect to the network is probably caused by a weak signal.
+
+The IP address acquisition process can be slow due to network latency or DHCP server issues. The device will wait for a valid IP address for the time specified in the `WIFI_CONNECT_TIMEOUT` parameter. If the device doesn't get a valid IP address in this time, it will retry to connect to the network. 
+
+If you suspect network latency or DHCP server delays are hindering the IP address acquisition process, consider disabling the network configuration acquisition from the DHCP server by setting the `WIFI_DHCP` parameter to `false`. This will allow you to manually set the IP address, gateway, and DNS server values, potentially expediting the connection process. To setup the IP address, gateway, and DNS server values, use the `WIFI_IP`, `WIFI_GATEWAY`, `WIFI_NETMASK` and `WIFI_DNS` parameters respectively and reboot the device after setting the values.
 
 #### Monitoring Network Status
 
