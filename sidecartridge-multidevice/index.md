@@ -108,9 +108,19 @@ Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guid
             <p>Tracing the path of the SidecarTridge Multi-device boards.</p>
          </td>
         <td style="border: none;">
-            <h3>🔄 <a href="/sidecartridge-multidevice/publicfloppydb/">Public Floppy DB</a></h3>
+            <h3>🗄️ <a href="/sidecartridge-multidevice/publicfloppydb/">Public Floppy DB</a></h3>
             <p>Contribute to the Floppy Images Database with your own images</p>
         </td>
+    </tr>
+    <tr>
+        <td style="border: none;">
+            <h3>🗄️ <a href="/sidecartridge-multidevice/publicromdb/">Public ROM DB</a></h3>
+            <p>Contribute to the ROM Images Database with your own images</p>
+        </td>
+        <td style="border: none;">
+        </td>
+        <td style="border: none;">
+         </td>
     </tr>
 </table>
 

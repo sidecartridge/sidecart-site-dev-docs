@@ -27,11 +27,11 @@ redirect_from:
 {{ site.FIRMWARE_VERSION }}
 {: .label .label-green }
 
-ROM Emulation is a pivotal feature of the SidecarT board, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how use and set up the ROM Emulation.
+ROM Emulation is a pivotal feature of the Multi-device, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how use and set up the ROM Emulation.
 
 ### Select the ROM to emulate
 
-The SidecarT board can be configured to emulate a ROM file from a microSD card or an external web server. This section explains how to select the ROM to emulate in both cases. 
+The Multi-device can be configured to emulate a ROM file from a microSD card or an external web server. This section explains how to select the ROM to emulate in both cases. 
 
 1. Enter into the `Configurator` mode by pressing the `SELECT` button more than one second. Now, power cycle your computer and the `Configurator` boot menu will be displayed. Press LEFT SHIFT to enter into the `Configurator` application, or wait 5 seconds to boot the Atari ST normally, open the `Cartridge` drive and run the `SIDECART.TOS` file.
 
@@ -42,13 +42,13 @@ The SidecarT board can be configured to emulate a ROM file from a microSD card o
 2. Emulate ROM image from Wi-Fi
 ```
 
-For option 1, the SidecarT board needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/sidecartridge-multidevice/how_to/#format_the_microsd_card) section. For option 2, the SidecarT board needs to be connected to a Wi-Fi network. The user can learn how to connect the SidecarT board to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/sidecartridge-multidevice/how_to/#connect_to_a_wifi_network) section.
+For option 1, the Multi-device needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/sidecartridge-multidevice/how_to/#format_the_microsd_card) section. For option 2, the Multi-device needs to be connected to a Wi-Fi network. The user can learn how to connect the Multi-device to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/sidecartridge-multidevice/how_to/#connect_to_a_wifi_network) section.
 
 {: .note }
 The emulation of ROMs from Wi-Fi does not need a microSD card to work. And the emulation of ROMs from microSD card does not need to be connected to a Wi-Fi network to work.
 {: .note }
 
-3. In the ROM selection menu, the user can select the ROM to emulate from the list of ROMs available. Simply press `RETURN` or `ENTER` to select the ROM to emulate, and the Atari ST will load and prepare the ROM to be used. The SidecarT board green led will blink an `E` in Morse code to indicate that the ROM is ready to be used.
+3. In the ROM selection menu, the user can select the ROM to emulate from the list of ROMs available. Simply press `RETURN` or `ENTER` to select the ROM to emulate, and the Atari ST will load and prepare the ROM to be used. The Multi-device green led will blink an `E` in Morse code to indicate that the ROM is ready to be used.
 
 4. Gently reset or power cycle the Atari ST to use the ROM. The Atari ST will boot normally and will use the ROM as if it was a physical chip.
 
@@ -58,18 +58,18 @@ Simply press again the `SELECT` button more than one second to enter into the `C
 
 ### Set the folder hosting the ROM files
 
-The SidecarT board can be configured to use a folder in the microSD card to host the ROM files. This section explains how to configure the SidecarT board to use a folder in the microSD card. 
+The Multi-device can be configured to use a folder in the microSD card to host the ROM files. This section explains how to configure the Multi-device to use a folder in the microSD card. 
 
 1. **Preparation**: Ensure you have a microSD card formatted to FAT16 or exFAT. For instructions, visit [How to format the microSD card](/sidecartridge-multidevice/how_to/#format-the-microsd-card).
    
-2. **Folder Creation**: On the root directory of the microSD card, create a folder named `roms`. This will serve as the storage for the ROM files. By default, the SidecarT board will scan this directory for ROMs.
+2. **Folder Creation**: On the root directory of the microSD card, create a folder named `roms`. This will serve as the storage for the ROM files. By default, the Multi-device will scan this directory for ROMs.
 
 3. **ROM Transfers**: Copy your ROM files into the `roms` folder. Supported formats are:
    - Pure binary (Raw binary data of the ROM)
    - STEEM format (Recognized if the file begins with four zeros or has a `.STC` extension)
 
 4. **Activation**:
-   - Insert the microSD into the SidecarT board and power it up. The board will auto-recognize the microSD.
+   - Insert the microSD into the Multi-device and power it up. The board will auto-recognize the microSD.
    - Access `Configurator` mode by pressing the `SELECT` button, navigate to the ROM selection, and choose your desired ROM. The Atari ST will access this ROM as if it was a physical chip.
 
 {: .note }
@@ -79,13 +79,13 @@ If you prefer a different folder name instead of `roms`, you can modify the `ROM
 
 ### Set the URL of the ROM files
 
-The SidecarT board can be configured to use a web server to host the ROM files. This section explains how to configure the SidecarT board to use a web server.
+The Multi-device can be configured to use a web server to host the ROM files. This section explains how to configure the Multi-device to use a web server.
 
-1. **URL Configuration**: Point the SidecarT board to your web server's ROM directory by setting the `ROMS_YAML_URL` parameter. The board expects a `roms.csv` file at this location. To know more about creating this file, see [Set up your own HTTP server for your ROMs](/sidecartridge-multidevice/how_to/#set-up-your-own-http-server-for-your-roms).
+1. **URL Configuration**: Point the Multi-device to your web server's ROM directory by setting the `ROMS_YAML_URL` parameter. The board expects a `roms.csv` file at this location. To know more about creating this file, see [Set up your own HTTP server for your ROMs](/sidecartridge-multidevice/how_to/#set-up-your-own-http-server-for-your-roms).
 
 2. **HTTPS Limitation**:
 {: .warning}
-The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
+The Multi-device currently doesn't support HTTPS. Ensure that your server uses HTTP only.
 {: .warning}
 
 3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
@@ -96,10 +96,13 @@ The SidecarT board currently doesn't support HTTPS. Ensure that your server uses
         allowfullscreen allowtransparency></iframe>
 </figure>
 
+### Contribute to the Public ROM Database
+
+The Multidevice board access a public ROM database, allowing users to download ROMs directly to the device. If you want to contribute to the database, follow the instructions in the [Public ROM Database](/sidecartridge-multidevice/publicromdb/) section.
 
 ### Enable ROM delay / Ripper mode
 
-The SidecarT board can be configured to add an extra step when accessing the ROM files. This is useful for example for ROMs tha require a post-activation after another software is loaded from a floppy or hard disk, like ripper-style ROMs did. This section explains how to configure the SidecarT board to enable the ROM delay.
+The Multi-device can be configured to add an extra step when accessing the ROM files. This is useful for example for ROMs tha require a post-activation after another software is loaded from a floppy or hard disk, like ripper-style ROMs did. This section explains how to configure the Multi-device to enable the ROM delay.
 
 1. **Toggling Delay**: Access the `Configurator` application's main menu and press the `D` key to enable/disable the ROM delay.
 
@@ -126,11 +129,11 @@ Given the `SELECT` button's dual function, you cannot access the `Configurator` 
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-The Floppies Emulation represents a significant enhancement to the SidecarT board. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
+The Floppies Emulation represents a significant enhancement to the Multi-device. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
 
 ### Pre-requisite: Hosting Floppy Images on microSD
 
-To use the SidecarT board's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16 or exFAT formatted microSD card.
+To use the Multi-device's floppy emulation feature, the floppy images must reside in a specific directory on a FAT16 or exFAT formatted microSD card.
 
 1. **MicroSD Preparation**: The first requirement is a FAT16 or exFAT formatted microSD card. Instructions can be found in the [How to format the microSD card](/sidecartridge-multidevice/how_to/#format-the-microsd-card) guide.
 
@@ -143,7 +146,7 @@ If you've already set up ROM Emulation, your microSD is likely formatted appropr
 3. **Transferring Floppy Images**: Move your `.ST` and `.MSA` formatted floppy images into the `floppies` directory. The board recognizes these files automatically.
 
 4. **Initialization and Configuration**:
-   - Insert the microSD into the SidecarT board.
+   - Insert the microSD into the Multi-device.
    - Power up the board; it should recognize the microSD card automatically.
    - Enter `Configurator` mode by pressing the `SELECT` button. Navigate to `Emulate Floppy` menu option.
    - A menu will display the following options:
@@ -181,21 +184,21 @@ The steps to select the floppy image to emulate are the same for both read-only 
 
 ### Read-Write Emulation for Floppy Images
 
-The SidecarT board's ability to emulate floppy images in read-write mode is powerful. It lets the Atari ST write to these images, but this also poses risks.
+The Multi-device's ability to emulate floppy images in read-write mode is powerful. It lets the Atari ST write to these images, but this also poses risks.
 
-To mitigate potential data loss, when a floppy image is chosen for read-write emulation, the SidecarT board creates a copy in the `FLOPPIES_FOLDER`. This duplicate has the `.rw` extension, and the Atari ST writes to it, leaving the original image untouched.
+To mitigate potential data loss, when a floppy image is chosen for read-write emulation, the Multi-device creates a copy in the `FLOPPIES_FOLDER`. This duplicate has the `.rw` extension, and the Atari ST writes to it, leaving the original image untouched.
 
 If a `.rw` duplicate already exists, the board will prioritize it over the original. It won't spawn another `.rw` file, ensuring consistency between sessions.
 
 {: .warning }
-It's important to note that the SidecarT board won't validate the integrity of `.rw` files. If such a file is corrupted, the Atari ST won't be able to interface with it, either for reading or writing.
+It's important to note that the Multi-device won't validate the integrity of `.rw` files. If such a file is corrupted, the Atari ST won't be able to interface with it, either for reading or writing.
 {: .warning}
 
 ### Create an empty writable floppy image
 
-The SidecarT board can be configured to create an empty writable floppy image to create our own content or have a blank floppy image to copy files from the Atari ST.
+The Multi-device can be configured to create an empty writable floppy image to create our own content or have a blank floppy image to copy files from the Atari ST.
 
-After selecting the option `[F] - Format a floppy image` . Select this option and the SidecarT board will prompt for several parameters:
+After selecting the option `[F] - Format a floppy image` . Select this option and the Multi-device will prompt for several parameters:
 
 - `Size [1]-SS/DD (360KB), [2]-DS/DD (720KB), [3]-HD (1.44MB)`: Select the size of the floppy image to create.
 - `Volume name (max 8 chars, dot, max 3 chars)`: The volume name of the floppy for the Atari ST computer. Can be empty.
@@ -208,7 +211,7 @@ Now the SidecarT will need a few seconds to create the empty floppy image. After
 
 The default format supported by the SidecarT is the `.ST` format. Starting from version v0.0.11, SidecarT can also read the `.MSA` format, converting it to `.ST` format on the fly. Under the covers, everything is a `.ST` file.
 
-A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The SidecarT board will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
+A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The Multi-device will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
@@ -244,13 +247,13 @@ The user can insert and eject virtual floppy images from the Atari ST using the 
 
 ### Introduction
 
-The SidecarT board introduces a hard disk emulation feature for the Atari ST, offering a significant storage solution without the necessity for an actual hard disk. This guide details the setup and utilization of the Hard Disk Emulation feature.
+The Multi-device introduces a hard disk emulation feature for the Atari ST, offering a significant storage solution without the necessity for an actual hard disk. This guide details the setup and utilization of the Hard Disk Emulation feature.
 
-Distinct from other methods, the SidecarT board uniquely facilitates hard disk emulation by integrating the Atari ST's file system with that of a microSD card, managed by the RP2040 microcontroller. This method presents several benefits and drawbacks:
+Distinct from other methods, the Multi-device uniquely facilitates hard disk emulation by integrating the Atari ST's file system with that of a microSD card, managed by the RP2040 microcontroller. This method presents several benefits and drawbacks:
 
 - **Advantages**:
   - Unlimited hard disk size, allowing the use of the full capacity of the microSD card.
-  - Not affected by the infamous Bad-DMA issue, as the SidecarT board doesn't rely on the Atari ST's DMA controller.
+  - Not affected by the infamous Bad-DMA issue, as the Multi-device doesn't rely on the Atari ST's DMA controller.
   - Compatibility across TOS versions 1.00 to 2.06.
   - Enables organizing files into folders on the microSD card, simulating multiple hard disks on a single card.
   - Facilitates easy file transfer between the microSD card and computers (PC/Mac/Linux).
@@ -261,26 +264,26 @@ Distinct from other methods, the SidecarT board uniquely facilitates hard disk e
   - Not all software is compatible, particularly those making direct hardware calls to the hard disk, as the SidecarT emulates hard disk functions by intercepting GEMDOS calls.
   - The emulation driver is less mature, potentially leading to bugs or issues during use.
 
-Despite these challenges, the benefits of Hard Disk Emulation often surpass the drawbacks, providing a reliable storage solution. Moreover, with ongoing development, the SidecarT board is poised for further enhancements, promising an even more robust and user-friendly experience in the future.
+Despite these challenges, the benefits of Hard Disk Emulation often surpass the drawbacks, providing a reliable storage solution. Moreover, with ongoing development, the Multi-device is poised for further enhancements, promising an even more robust and user-friendly experience in the future.
 
 ### What is a GEMdrive
 
-The concept for the GEMdrive hard disk emulation originated with the GEMDOS component of the Hatari emulator, though it's worth noting that there exists a GemDrive for the ACSI2STM project, which serves a different purpose. Initially, the plan was to borrow the GEMDOS implementation from Hatari and adapt it for use with the SidecarT board. However, this strategy proved unfeasible due to the Hatari emulator's capability for extensive interaction with both the Atari ST's internals and the host computer—capabilities that the SidecarT board, as a peripheral, cannot match due to its need to adhere to the Atari ST's hardware constraints. The GEMDOS code from Hatari was ultimately deemed too intricate and too intertwined with the emulator itself for direct application in the SidecarT environment. Nevertheless, the exploration of Hatari's GEMDOS code was highly informative, leading to the development of a bespoke GEMdrive code specifically tailored for the SidecarT board.
+The concept for the GEMdrive hard disk emulation originated with the GEMDOS component of the Hatari emulator, though it's worth noting that there exists a GemDrive for the ACSI2STM project, which serves a different purpose. Initially, the plan was to borrow the GEMDOS implementation from Hatari and adapt it for use with the Multi-device. However, this strategy proved unfeasible due to the Hatari emulator's capability for extensive interaction with both the Atari ST's internals and the host computer—capabilities that the Multi-device, as a peripheral, cannot match due to its need to adhere to the Atari ST's hardware constraints. The GEMDOS code from Hatari was ultimately deemed too intricate and too intertwined with the emulator itself for direct application in the SidecarT environment. Nevertheless, the exploration of Hatari's GEMDOS code was highly informative, leading to the development of a bespoke GEMdrive code specifically tailored for the Multi-device.
 
 The original GEMDOS driver allowed for the mounting of a Windows/OSX/Linux filesystem as an Atari ST disk drive, a functionality mirrored by the GEMdrive through its use of the microSD card filesystem, FatFS. While some advanced users may view this solution as excessive, it represents the sole method by which to provide substantial storage capacity to the Atari ST. More significantly, it marks a crucial **initial step towards realizing a network filesystem for the Atari ST.**
 
 ### Setting Up Hard Disk Emulation
 
-To activate the hard disk emulation feature on the SidecarT board, you must first ensure that the emulation files are properly placed within a designated directory on a FAT16 or exFAT formatted microSD card. While `hd` is the default directory name for these files, it can be customized to suit your preferences.
+To activate the hard disk emulation feature on the Multi-device, you must first ensure that the emulation files are properly placed within a designated directory on a FAT16 or exFAT formatted microSD card. While `hd` is the default directory name for these files, it can be customized to suit your preferences.
 
 1. **MicroSD Card Setup**: Skip this step if your microSD card is already set up with ROMs and/or floppy images. Otherwise, start by formatting the microSD card to FAT16 or exFAT. Detailed formatting instructions are available in the [microSD Card Formatting Guide](/sidecartridge-multidevice/how_to/#format-the-microsd-card).
 
 2. **Creating the Directory**: In the root directory of the microSD card, create a folder named `hd`. This folder will be scanned by the board to locate your emulated hard disk files.
 
-3. **File Transfer**: Transfer files and folders from your PC/Mac/Linux computer to the `hd` folder on the microSD card. These will be recognized by the SidecarT board as part of the emulated hard disk. Additionally, you can manage file transfers between the emulated hard disk and other hard disk drivers.
+3. **File Transfer**: Transfer files and folders from your PC/Mac/Linux computer to the `hd` folder on the microSD card. These will be recognized by the Multi-device as part of the emulated hard disk. Additionally, you can manage file transfers between the emulated hard disk and other hard disk drivers.
 
 4. **Initialization and Setup**:
-   - Insert the prepared microSD card into the SidecarT board.
+   - Insert the prepared microSD card into the Multi-device.
    - Turn on the board. It will automatically detect the microSD card.
    - Access the `Configurator` by pressing the `SELECT` button and navigate to the `Emulate Hard Disk` option.
    - Within this menu, you will find several settings:
@@ -300,7 +303,7 @@ To activate the hard disk emulation feature on the SidecarT board, you must firs
 {: .warning }
 If you can't enter into Configurator, please [read this](https://docs.sidecartridge.com/sidecartridge-multidevice/troubleshooting/#configurator-takes-very-long-to-start-and-stops-responding-or-ask-me-to-reboot-the-computer-or-show-bombs-on-the-screen)
 
-The SidecarT board's hard disk emulation feature does not support the following functionalities in version v0.0.16 and v0.0.17:
+The Multi-device's hard disk emulation feature does not support the following functionalities in version v0.0.16 and v0.0.17:
 
 - **Volume Name**: It does not support volume names for the hard disk emulation. The Atari ST will not display the volume name of the hard disk.
 - **Pipes**: The current version does not support pipes. The Atari ST will not be able to use pipes with the hard disk emulation.
@@ -321,7 +324,7 @@ The lastest adapted games for hard disk by Peter Putnik and others does support 
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-The SidecarT board can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This is an out of the box feature that doesn't require any additional configuration besides the one explained above for the Floppies Emulation. 
+The Multi-device can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This is an out of the box feature that doesn't require any additional configuration besides the one explained above for the Floppies Emulation. 
 
 ### How to download and emulate a floppy image from the database
 
@@ -337,7 +340,7 @@ This section explains how to select the floppy image to emulate from the databas
 
 3. In the menu, there is a bar with the alphabet and numbers. Selecting the letter or number will display the list of applications starting with that letter in the name. 
 
-4. The user can now select the application to download pressing `RETURN` or `ENTER`. Now, the SidecarT board will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
+4. The user can now select the application to download pressing `RETURN` or `ENTER`. Now, the Multi-device will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
 
 5. After the download is finished, the Atari ST will redirect the user to the Floppy Emulation menu to select how to use the floppy image.
 
@@ -355,13 +358,13 @@ This section explains how to select the floppy image to emulate from the databas
 {: .warning }
 For avanced users only.
 
-The SidecarT board can be configured to use a web server to host both the database and images files. It's not necessary to have both in the same server. 
+The Multi-device can be configured to use a web server to host both the database and images files. It's not necessary to have both in the same server. 
 
-1. **URL Configuration**: Point the SidecarT board to your web server's Atari ST database by setting the `FLOPPY_DB_URL` parameter. The board expects a folder named `db` and a file for each alphabet letter and number. Each of these files in Comma Separated Values (CSV) format contains the list of disk files urls. See [Set up your own HTTP server for your Atari ST database](/sidecartridge-multidevice/how_to/#set-up-your-own-http-server-for-your-atari-st-database).
+1. **URL Configuration**: Point the Multi-device to your web server's Atari ST database by setting the `FLOPPY_DB_URL` parameter. The board expects a folder named `db` and a file for each alphabet letter and number. Each of these files in Comma Separated Values (CSV) format contains the list of disk files urls. See [Set up your own HTTP server for your Atari ST database](/sidecartridge-multidevice/how_to/#set-up-your-own-http-server-for-your-atari-st-database).
 
 2. **HTTPS Limitation**:
 {: .warning}
-The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
+The Multi-device currently doesn't support HTTPS. Ensure that your server uses HTTP only.
 {: .warning}
 
 3. **Finalizing Setup**: After updating the configuration, save your changes and reboot the board in `Configurator` mode.
@@ -373,7 +376,7 @@ The SidecarT board currently doesn't support HTTPS. Ensure that your server uses
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-Starting from the version v0.0.11 of the firmware, the SidecarT board can be configured to be a Real Time Clock (RTC) for the Atari ST. This section explains how to configure the SidecarT board to be a RTC.
+Starting from the version v0.0.11 of the firmware, the Multi-device can be configured to be a Real Time Clock (RTC) for the Atari ST. This section explains how to configure the Multi-device to be a RTC.
 
 ### Enter into the RTC configuration menu
 
@@ -402,7 +405,7 @@ The user can change the NTP server host and port by pressing the `H` and `P` key
 
 ### Set the UTC offset
 
-The user can change the UTC offset by pressing the `U` key. The default value is `0`, which means the UTC offset is null. The NTP time returned by any server does not know about timezones, so the SidecarT board needs to know the UTC offset to be able to convert the UTC time to the local time. The UTC offset is expressed in positive or negative hours.
+The user can change the UTC offset by pressing the `U` key. The default value is `0`, which means the UTC offset is null. The NTP time returned by any server does not know about timezones, so the Multi-device needs to know the UTC offset to be able to convert the UTC time to the local time. The UTC offset is expressed in positive or negative hours.
 
 Also note that the Atari ST does not know about timezones either, so the RTC time will be the local time of the Atari ST.
 
@@ -421,9 +424,9 @@ Both solutions workaround the Y2K problem, or any problem with dates this centur
 
 ### Boot the emulator
 
-To Boot the emulator, press the `B` key. The SidecarT board will reboot and depending on the RTC type chosen the flow will differ:
+To Boot the emulator, press the `B` key. The Multi-device will reboot and depending on the RTC type chosen the flow will differ:
 
-- `SIDECART`: The SidecarT board will boot the cartridge firmware that will set the date and time in the Atari ST computer. After that, the Atari ST will boot normally. The firmware will report how the process goes in the screen. This is important because the RP2040 must query the NTP server to get the time and set it in the Atari ST computer, and this can take several seconds. The Atari ST will not boot until the date and time are set, or fails. 
+- `SIDECART`: The Multi-device will boot the cartridge firmware that will set the date and time in the Atari ST computer. After that, the Atari ST will boot normally. The firmware will report how the process goes in the screen. This is important because the RP2040 must query the NTP server to get the time and set it in the Atari ST computer, and this can take several seconds. The Atari ST will not boot until the date and time are set, or fails. 
 
 - `DALLAS`: The Atari ST will boot normally. As explained above, the user must use a program that reads the values provided by the DALLAS 1216 emulator and sets the date and time in the Atari ST computer. Please keep in mind that DALLAS RTC emulation will only provide a valid date and time once the RP2040 obtains a valid date and time from the NTP server.
 
@@ -460,20 +463,20 @@ To disable the Rescue Mode, the user must delete the `.romrescue` file from the 
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-The Configurator application serves as the central interface for the SidecarT board's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
+The Configurator application serves as the central interface for the Multi-device's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
 
 ### Boot Mode Adjustments
 
-Upon the initial power-up of the SidecarT board, or when the `SELECT` button is held for over 1 second, the Configurator is invoked. This application resides in the `Cartridge` drive, which is visible upon starting the Atari ST.
+Upon the initial power-up of the Multi-device, or when the `SELECT` button is held for over 1 second, the Configurator is invoked. This application resides in the `Cartridge` drive, which is visible upon starting the Atari ST.
 
-The behavior when pressing `SELECT` for over 1 second is configurable. The SidecarT board can either:
+The behavior when pressing `SELECT` for over 1 second is configurable. The Multi-device can either:
 
 1. Swiftly transition to the `Configurator` mode, or
 2. Delay this transition until the Atari ST's next full power cycle (not just a reset).
 
 This behavior is determined by the `SAFE_CONFIG_REBOOT` parameter.
 
-Immediately transitioning can be jarring for ongoing Atari ST applications. Especially for applications or drivers overseeing other storage devices, this abrupt switch can lead to compatibility concerns. As a preventive measure, the SidecarT board can be set to defer this transition until the subsequent power cycle.
+Immediately transitioning can be jarring for ongoing Atari ST applications. Especially for applications or drivers overseeing other storage devices, this abrupt switch can lead to compatibility concerns. As a preventive measure, the Multi-device can be set to defer this transition until the subsequent power cycle.
 
 By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will hold off until the next power cycle before transitioning to `Configurator` mode. Altering this behavior involves tweaking the `SAFE_CONFIG_REBOOT` parameter. Further insights can be found in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section.
 
@@ -483,32 +486,32 @@ There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes se
 
 ### Count the number files in the folders of the microSD card
 
-The SidecarT board can be configured to count the number of files in the folders of the microSD card. This feature is useful to know how many ROMs or floppy images and files in the hard disk folders are available. This feature is configured by default, but the user can disable it if the number of files is too big and the SidecarT board is slow to boot.
+The Multi-device can be configured to count the number of files in the folders of the microSD card. This feature is useful to know how many ROMs or floppy images and files in the hard disk folders are available. This feature is configured by default, but the user can disable it if the number of files is too big and the Multi-device is slow to boot.
 
 To disable this feature, the user must set the `FILE_COUNT_ENABLED` parameter to `false`. The user can learn more about this parameter in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section. To return to the default behavior, the user must set the `FILE_COUNT_ENABLED` parameter to `true`.
 
 ### Dark mode
 
-The SidecarT board can be configured to use a dark mode in the Configurator application for medium resolution mode. This feature is useful for old CRT monitors that can have problems with the white background of the Configurator application. By default the dark mode is disabled, but the user can enable it by setting the `CONFIGURATOR_DARK` parameter to `true`. The user can learn more about this parameter in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section. To return to the default behavior, the user must set the `CONFIGURATOR_DARK` parameter to `false`.
+The Multi-device can be configured to use a dark mode in the Configurator application for medium resolution mode. This feature is useful for old CRT monitors that can have problems with the white background of the Configurator application. By default the dark mode is disabled, but the user can enable it by setting the `CONFIGURATOR_DARK` parameter to `true`. The user can learn more about this parameter in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section. To return to the default behavior, the user must set the `CONFIGURATOR_DARK` parameter to `false`.
 
 ### Latest release verification
 
-The SidecarT board can be configured to check for the latest release of the firmware available. When the board is connected to the internet, it will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. This section explains how to configure the SidecarT board to check for the latest release.
+The Multi-device can be configured to check for the latest release of the firmware available. When the board is connected to the internet, it will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. This section explains how to configure the Multi-device to check for the latest release.
 
 {: .note}
 You have to be connected to the internet to check for the latest release.
 {: .note}
 
-1. **URL Configuration**: The parameter `LATEST_RELEASE_URL` has to point to a file hosted on a web server. This file has to contain the latest release version number in the first line. The SidecarT board will check this file and compare the version number with the current version number. If the version number is different, the SidecarT board will display a blinking exclamation mark as explained above.
+1. **URL Configuration**: The parameter `LATEST_RELEASE_URL` has to point to a file hosted on a web server. This file has to contain the latest release version number in the first line. The Multi-device will check this file and compare the version number with the current version number. If the version number is different, the Multi-device will display a blinking exclamation mark as explained above.
 
 2. **HTTPS Limitation**:
 {: .warning}
-The SidecarT board currently doesn't support HTTPS. Ensure that your server uses HTTP only.
+The Multi-device currently doesn't support HTTPS. Ensure that your server uses HTTP only.
 {: .warning}
 
 ### The STABLE and BETA release distribution workflows
 
-The SidecarT board Latest release verification can be configured to check for new releases of type STABLE or BETA. With the growing user base of SidecarT, the need for extensive and stability-focused testing is becoming increasingly important. To address this, we propose introducing two distinct release workflows. This approach aims to balance the needs of our diverse user community, ranging from makers to those seeking more stable and reliable software.
+The Multi-device Latest release verification can be configured to check for new releases of type STABLE or BETA. With the growing user base of SidecarT, the need for extensive and stability-focused testing is becoming increasingly important. To address this, we propose introducing two distinct release workflows. This approach aims to balance the needs of our diverse user community, ranging from makers to those seeking more stable and reliable software.
 
 1. **BETA Release Workflow**: This caters to users who are interested in testing the latest features and providing valuable feedback. It allows us to incorporate user experiences into development, ensuring that the software meets a wide range of needs and use cases.
 
@@ -520,7 +523,7 @@ If `LATEST_RELEASE_URL` points to `http://atarist./version.txt`, users will be n
 
 If `LATEST_RELEASE_URL` points to `http://atarist./beta.txt`, users will be alerted when a new BETA release is available.
 
-In both cases, the SidecarT board will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
+In both cases, the Multi-device will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
 
 To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads/) and download the appropriate file. Then, follow the [Update the firmware](/sidecartridge-multidevice/how_to/#update-the-firmware) guide.
 
@@ -574,7 +577,7 @@ When the Mass Storage Mode is disabled, the SidecarTridge board will not enter i
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-As of Beta release v0.0.15, the SidecarT board introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/sidecartridge-multidevice/parameters/)** menu.
+As of Beta release v0.0.15, the Multi-device introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/sidecartridge-multidevice/parameters/)** menu.
 
 ### Viewing Network Status
 
@@ -585,12 +588,12 @@ To get an overview of the current network configuration and status, navigate to 
 - **Scan Interval:** Defines the duration, in seconds, between consecutive Wi-Fi network scans. This setting helps in refreshing the network list periodically, based on the `WIFI_SCAN_SECONDS` parameter.
 - **Country:** Sets the country code for the Wi-Fi network. Initially configured to a default value that accommodates a broad range of networks globally, it may need adjustment to match the ISO-3166-alpha-2 code of your specific country for optimal performance. This is modifiable through the `WIFI_COUNTRY` parameter.
 - **Status:** Provides real-time insights into the connection's current state.
-- **IP Address:** Displays the SidecarT board's IP address within the Wi-Fi network.
+- **IP Address:** Displays the Multi-device's IP address within the Wi-Fi network.
 - **Gateway:** Shows the gateway's IP address for the Wi-Fi network.
 - **Netmask:** Indicates the network's subnet mask.
 - **DNS Server:** Reveals the DNS server's IP address used by the Wi-Fi network.
-- **MAC Address:** Lists the MAC address of the SidecarT board within the network.
-- **Check Interval:** The frequency, in seconds, at which the SidecarT board reviews the network's status, controlled by the `NETWORK_STATUS_SEC` parameter.
+- **MAC Address:** Lists the MAC address of the Multi-device within the network.
+- **Check Interval:** The frequency, in seconds, at which the Multi-device reviews the network's status, controlled by the `NETWORK_STATUS_SEC` parameter.
 - **File Download Timeout:** The maximum wait time, in seconds, for downloading a file over the Wi-Fi network, set using the `DOWNLOAD_TIMEOUT_SEC` parameter.
 
 These configurable options empower users to fine-tune their network settings, facilitating improved connectivity and troubleshooting capabilities.
@@ -599,11 +602,11 @@ These configurable options empower users to fine-tune their network settings, fa
 
 #### Configuring Authentication Mode
 
-The SidecarT board employs a smart mechanism to determine the Wi-Fi network's authentication mode, enhancing the ease of connectivity. This section guides you through adjusting the authentication settings to ensure a successful network connection.
+The Multi-device employs a smart mechanism to determine the Wi-Fi network's authentication mode, enhancing the ease of connectivity. This section guides you through adjusting the authentication settings to ensure a successful network connection.
 
 #### Default Authentication Behavior
 
-Upon attempting to connect to a Wi-Fi network, the SidecarT board initially endeavors to intelligently ascertain the network's authentication mode under the following conditions:
+Upon attempting to connect to a Wi-Fi network, the Multi-device initially endeavors to intelligently ascertain the network's authentication mode under the following conditions:
 
 - If the `WIFI_PASSWORD` parameter is populated (i.e., the string length is greater than 0) or if a `.wifipass` file is present at the root of the microSD card, the board attempts to automatically identify the correct authentication mode for the specified SSID.
 
@@ -622,11 +625,11 @@ There may be instances where automatic detection does not yield the correct auth
 
 Should you encounter difficulties in establishing a connection or receiving a valid IP address from the DHCP server, it is recommended to experiment with the different `WIFI_AUTH` values. Switching between authentication modes can help identify a compatible setting that facilitates a successful connection to the network.
 
-By understanding and leveraging the `WIFI_AUTH` parameter, you can fine-tune the SidecarT board's network authentication to match the security requirements of your Wi-Fi network, ensuring a stable and secure connection.
+By understanding and leveraging the `WIFI_AUTH` parameter, you can fine-tune the Multi-device's network authentication to match the security requirements of your Wi-Fi network, ensuring a stable and secure connection.
 
 ### Configuring the Country Code for Wi-Fi
 
-The SidecarT board facilitates precise control over Wi-Fi connectivity through the `WIFI_COUNTRY` parameter. This setting allows users to define the country code corresponding to their Wi-Fi network, optimizing performance by aligning with local network regulations and bands.
+The Multi-device facilitates precise control over Wi-Fi connectivity through the `WIFI_COUNTRY` parameter. This setting allows users to define the country code corresponding to their Wi-Fi network, optimizing performance by aligning with local network regulations and bands.
 
 #### Default Configuration
 
@@ -698,11 +701,11 @@ Experimenting with different `WIFI_COUNTRY` settings may be necessary to resolve
 
 ### Troubleshooting Wi-Fi Network Detection
 
-Detecting Wi-Fi networks with the SidecarT board can sometimes be challenging due to various external factors such as environmental conditions, network congestion, and signal interference. If you're experiencing issues with finding your Wi-Fi network, adjusting the `WIFI_SCAN_SECONDS` parameter may improve the situation.
+Detecting Wi-Fi networks with the Multi-device can sometimes be challenging due to various external factors such as environmental conditions, network congestion, and signal interference. If you're experiencing issues with finding your Wi-Fi network, adjusting the `WIFI_SCAN_SECONDS` parameter may improve the situation.
 
 #### Adjusting Scan Frequency
 
-The `WIFI_SCAN_SECONDS` parameter controls how often the SidecarT board scans for available Wi-Fi networks. Decreasing this value causes the board to search for networks more frequently, which might increase the chances of successfully detecting your Wi-Fi network.
+The `WIFI_SCAN_SECONDS` parameter controls how often the Multi-device scans for available Wi-Fi networks. Decreasing this value causes the board to search for networks more frequently, which might increase the chances of successfully detecting your Wi-Fi network.
 
 #### Considerations
 
@@ -720,11 +723,11 @@ Starting in version v1.0.0, it can be modified to adjust the power management co
 3 - Default chip values 
 4 - No power saving
 
-The default configuration of the CYW43 module is 3, but the default configuration has been change to no power management since the Atari computer can deliver enough power to the SidecarT board. Try different values to see if the Wi-Fi module can connect to the network faster or get better RSSI values.
+The default configuration of the CYW43 module is 3, but the default configuration has been change to no power management since the Atari computer can deliver enough power to the Multi-device. Try different values to see if the Wi-Fi module can connect to the network faster or get better RSSI values.
 
 #### Display RSSI values
 
-Starting in version v1.0.0, the SidecarT board can display the RSSI values of the Wi-Fi networks. The RSSI values are displayed in the `W. Wi-Fi Configuration` menu when scanning for Wi-Fi networks. The RSSI values are displayed in dBm and can be used to determine the signal strength of the Wi-Fi networks. The RSSI values are displayed in the `RSSI` column. It's also possible to display the current RSSI value of the connected Wi-Fi network if the parameter `WIFI_RSSI` is set to `true`. By default, the `WIFI_RSSI` parameter is set to `false` because it can slow down the user interface.
+Starting in version v1.0.0, the Multi-device can display the RSSI values of the Wi-Fi networks. The RSSI values are displayed in the `W. Wi-Fi Configuration` menu when scanning for Wi-Fi networks. The RSSI values are displayed in dBm and can be used to determine the signal strength of the Wi-Fi networks. The RSSI values are displayed in the `RSSI` column. It's also possible to display the current RSSI value of the connected Wi-Fi network if the parameter `WIFI_RSSI` is set to `true`. By default, the `WIFI_RSSI` parameter is set to `false` because it can slow down the user interface.
 
 As a reference, the following table provides a general overview of RSSI values and their corresponding signal strengths:
 
@@ -748,11 +751,11 @@ Finding the optimal setting for `WIFI_SCAN_SECONDS` involves balancing the need 
 
 ### Diagnosing Network Detection and Connectivity Issues
 
-Ensuring seamless network detection and connection is critical for the optimal operation of the SidecarT board. This process involves establishing a Wi-Fi connection followed by acquiring an IP address from the DHCP server. Understanding and managing these steps can significantly enhance your network interaction experience.
+Ensuring seamless network detection and connection is critical for the optimal operation of the Multi-device. This process involves establishing a Wi-Fi connection followed by acquiring an IP address from the DHCP server. Understanding and managing these steps can significantly enhance your network interaction experience.
 
 #### Initial Connection and IP Address Acquisition
 
-Once a Wi-Fi connection is successfully established, the SidecarT board seeks to obtain an IP address from the DHCP server. A failure to secure a valid IP address results in the absence of displayed network details, indicating an incomplete connection.
+Once a Wi-Fi connection is successfully established, the Multi-device seeks to obtain an IP address from the DHCP server. A failure to secure a valid IP address results in the absence of displayed network details, indicating an incomplete connection.
 
 If the signal strength is weak or the network is congested, the board may struggle to connect to the Wi-Fi network and acquire an IP address. In such cases, adjusting the `WIFI_CONNECT_TIMEOUT` parameter to a lower value can help improve the connectivity because the device will retry to connect to the network faster, but a failure to connect to the network is probably caused by a weak signal.
 
@@ -762,7 +765,7 @@ If you suspect network latency or DHCP server delays are hindering the IP addres
 
 #### Monitoring Network Status
 
-The frequency at which the SidecarT board checks the network status is determined by the `NETWORK_STATUS_SEC` parameter. This check occurs periodically:
+The frequency at which the Multi-device checks the network status is determined by the `NETWORK_STATUS_SEC` parameter. This check occurs periodically:
 
 - **Without a Valid IP Address:** If the board hasn't received a valid IP from the DHCP server, it performs status checks every `NETWORK_STATUS_SEC` seconds to attempt to resolve this issue.
 - **With a Valid IP Address:** Once a valid IP is obtained, the board continues to monitor the network at the same interval, ensuring the connection remains active.
@@ -775,11 +778,11 @@ Modifying the `NETWORK_STATUS_SEC` parameter to a lower figure can lead to incre
 
 #### Finding the Optimal Balance
 
-Adjusting network settings on the SidecarT board, especially the `NETWORK_STATUS_SEC` parameter, requires a careful balance between ensuring quick network connectivity and maintaining overall system performance. Experimenting with different settings can help identify the most effective configuration for your specific network environment and usage requirements.
+Adjusting network settings on the Multi-device, especially the `NETWORK_STATUS_SEC` parameter, requires a careful balance between ensuring quick network connectivity and maintaining overall system performance. Experimenting with different settings can help identify the most effective configuration for your specific network environment and usage requirements.
 
 ### Managing MAC Address Restrictions
 
-The MAC address serves as a fixed, unique identifier for the SidecarT board's network interface, essential for communication within the physical network segment. It's important to note that the MAC address of the SidecarT board cannot be altered.
+The MAC address serves as a fixed, unique identifier for the Multi-device's network interface, essential for communication within the physical network segment. It's important to note that the MAC address of the Multi-device cannot be altered.
 
 #### Understanding MAC Address Filtering
 
@@ -787,21 +790,21 @@ Many networks implement MAC address filtering as a security measure, controlling
 
 #### Integrating the SidecarT with MAC Address Filtering
 
-Should your network employ MAC address filtering, you must register the SidecarT board's MAC address with your router to grant it network access. You can find the MAC address listed within the `W. Wi-Fi Configuration` menu of the SidecarT board.
+Should your network employ MAC address filtering, you must register the Multi-device's MAC address with your router to grant it network access. You can find the MAC address listed within the `W. Wi-Fi Configuration` menu of the Multi-device.
 
 #### Steps to Add the SidecarT MAC Address to Your Router
 
-1. Access the `W. Wi-Fi Configuration` menu on your SidecarT board to locate its MAC address.
+1. Access the `W. Wi-Fi Configuration` menu on your Multi-device to locate its MAC address.
 2. Log into your router's administration interface. This typically involves entering the router's IP address in a web browser and signing in with your credentials.
 3. Navigate to the MAC address filtering section. The exact location of this setting can vary depending on your router's brand and firmware.
-4. Enter the SidecarT board's MAC address into the list of allowed devices. You may need to select an option to "Add" or "Allow" a new device.
+4. Enter the Multi-device's MAC address into the list of allowed devices. You may need to select an option to "Add" or "Allow" a new device.
 5. Save your changes and, if necessary, restart the router for the new settings to take effect.
 
-By ensuring the SidecarT board's MAC address is recognized and permitted by your network's filtering rules, you'll facilitate a smooth connection process, allowing the board to communicate effectively with other devices on the network.
+By ensuring the Multi-device's MAC address is recognized and permitted by your network's filtering rules, you'll facilitate a smooth connection process, allowing the board to communicate effectively with other devices on the network.
 
 ### Adjusting the File Download Timeout Setting
 
-The `DOWNLOAD_TIMEOUT_SEC` parameter on the SidecarT board plays a critical role in defining the time limit for file downloads over the Wi-Fi network. This setting is crucial for efficiently managing the retrieval of ROM and floppy images, ensuring that these resources are accessed in a timely manner.
+The `DOWNLOAD_TIMEOUT_SEC` parameter on the Multi-device plays a critical role in defining the time limit for file downloads over the Wi-Fi network. This setting is crucial for efficiently managing the retrieval of ROM and floppy images, ensuring that these resources are accessed in a timely manner.
 
 #### Understanding the Default Timeout Duration
 
@@ -817,7 +820,7 @@ Given that the files targeted for download typically do not exceed 1MB, the defa
   
 - **Decreasing the Timeout:** Conversely, if downloads are consistently finishing well before the 60-second mark, you might consider reducing the timeout setting. This can streamline the network interaction process, preventing unnecessary delays in cases where downloads are completed more swiftly.
 
-Adjusting the `DOWNLOAD_TIMEOUT_SEC` parameter allows you to tailor the download experience to your specific network conditions and the performance of the SidecarT board. Experimenting with different settings can help identify the optimal timeout duration for your setup, balancing efficiency with reliability in file retrieval operations.
+Adjusting the `DOWNLOAD_TIMEOUT_SEC` parameter allows you to tailor the download experience to your specific network conditions and the performance of the Multi-device. Experimenting with different settings can help identify the optimal timeout duration for your setup, balancing efficiency with reliability in file retrieval operations.
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
