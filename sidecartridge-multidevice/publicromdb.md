@@ -25,7 +25,7 @@ redirect_from:
 The original purpose of the SidecarTridge Multidevice was to emulate ROMs for the Atari ST computer. One of its standout features is access to a public ROM database, allowing ROMs to be downloaded directly to the device and accessible from the computer. This document explains how to add content to the public database of ROMs created by the users.
 
 ## List of ROMs available
-You can find the full list in the JSON file [here](http://roms.sidecartridge.com/roms.json) and in this markdown file: https://github.com/sidecartridge/atarist-roms-database/blob/main/roms.md
+You can find the full list in the JSON file [here](http://roms.sidecartridge.com/roms.json) and in this [markdown file](https://github.com/sidecartridge/atarist-roms-database/blob/main/roms.md).
 
 All ROMs are available for download clicking on the links. The files are not hosted on this repository, but on a separate server.
 
