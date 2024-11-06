@@ -44,7 +44,7 @@ Please select a project below to view the documentation.
             <img src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT.png" alt="SidecarTridge 256KB Decoder thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h2><a href="/sidecartridge-tos-256KB-decoder/">SidecarTridge TOS 256KB Decoder for Atari ST/MegaST</a></h2>
+            <h2><a href="/sidecartridge-tos-256kb-decoder/">SidecarTridge TOS 256KB Decoder for Atari ST/MegaST</a></h2>
             <p>A Decoder board that enables 256KB ROM decoding for Atari ST and MegaST series with the TOS emulator.</p>
         </td>
     </tr>
