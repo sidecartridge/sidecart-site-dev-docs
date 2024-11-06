@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Compatbility
-nav_order: 6
+nav_order: 4
 nav_exclude: false
-parent: SidecarTridge TOS
+parent: SidecarTridge TOS 256KB Decoder
 
 ---
 
@@ -39,21 +39,24 @@ Carrier boards for non supported motherboards are in active development. Please 
 | C070243 Rev. I           |                | Not supported   |
 | C070523-001 Rev. C       |                | Not supported   |
 | C070523-001 Rev. D       |                | Not supported   |
-| C070789-001 Rev. A       |    2 and 6     | Supported       |
-| C070789-001 Rev. B       |    2 and 6     | Supported       |
-| C070789-001 Rev. C       |    2 and 6     | Supported       |
-| C070789-001 Rev. D       |    2 and 6     | Supported       |
-| C070789-001 Rev. F       |    2 and 6     | Supported       |
-| C070859                  |    2 and 6     | Supported       |
+| C070789-001 Rev. A       |    2*          | Supported       |
+| C070789-001 Rev. B       |    2*          | Supported       |
+| C070789-001 Rev. C       |    2*          | Supported       |
+| C070789-001 Rev. D       |    2*          | Supported       |
+| C070789-001 Rev. F       |    2*          | Supported       |
+| C070859                  |    2*          | Supported       |
 | C103088 Rev. 3.1         |                | Not supported   |
 | C103253 Rev. 3.1         |                | Not supported   |
 | C103088 Rev. 5.3         |                | Not supported   |
 | C103253 Rev. 5.3         |                | Not supported   |
-| C103175-001 Rev. 1       |   2 and 6      | Supported       |
-| C103175-001 Rev. 1.1     |   2 and 6      | Supported       |
+| C103175-001 Rev. 1       |   2*           | Supported       |
+| C103175-001 Rev. 1.1     |   2*           | Supported       |
 | C103225 Rev. 1           |                | Not supported   |
-| C103414-001 Rev. 1       |   2 and 6      | Supported       |
-| C103414-001 Rev. 1.1     |   2 and 6      | Supported       |
+| C103414-001 Rev. 1       |   2*           | Supported       |
+| C103414-001 Rev. 1.1     |   2*           | Supported       |
+
+{: .warning}
+Hexa (6) ROM configurations are supported but require a custom solution that increases the cost by 20% over the dual ROM configuration. If you still want to use the SidecarTridge TOS 256KB decoder with a hexa ROM configuration, please contact us for a custom solution.
 
 ### Atari Mega ST series
 

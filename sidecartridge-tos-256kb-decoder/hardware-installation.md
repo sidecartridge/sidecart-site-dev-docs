@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hardware Installation
-nav_order: 4
+nav_order: 3
 nav_exclude: false
 parent: SidecarTridge TOS 256KB Decoder
 
