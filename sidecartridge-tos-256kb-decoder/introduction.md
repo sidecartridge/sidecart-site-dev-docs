@@ -9,8 +9,6 @@ parent: SidecarTridge TOS 256KB Decoder
 # Introduction
 {: .no_toc }
 
-# Introduction
-
 This chapter provides a concise overview of the SidecarTridge TOS 256KB Decoder, explaining its purpose, features, and benefits for Atari ST and Mega ST computers.
 
 ## Overview
