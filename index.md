@@ -17,7 +17,7 @@ Please select a project below to view the documentation.
             <img src="/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-thumbnail.png" alt="SidecarTridge multi-device thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h2><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST</a></h2>
+            <h2><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST/MegaST/STE/MegaSTE</a></h2>
             <p>State-of-the-art multi-device emulator crafted for the Atari ST, STE, and Mega series.</p>
         </td>
     </tr>
@@ -26,7 +26,7 @@ Please select a project below to view the documentation.
             <img src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge PSU thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h2><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST</a></h2>
+            <h2><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST/MegaST/STE</a></h2>
             <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
         </td>
     </tr>
@@ -35,8 +35,17 @@ Please select a project below to view the documentation.
             <img src="/sidecartridge-tos/assets/images/sidecartridge-kit-thumbnail.png" alt="SidecarTridge TOS thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
-            <h2><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST</a></h2>
+            <h2><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST/MegaST/STE/MegaSTE</a></h2>
             <p>A compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version without swapping chips.</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: none;">
+            <img src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT.png" alt="SidecarTridge 256KB Decoder thumbnail" style="vertical-align: middle; width: 128px"> 
+        </td>
+        <td style="border: none;">
+            <h2><a href="/sidecartridge-tos-256KB-decoder/">SidecarTridge TOS 256KB Decoder for Atari ST/MegaST</a></h2>
+            <p>A Decoder board that enables 256KB ROM decoding for Atari ST and MegaST series with the TOS emulator.</p>
         </td>
     </tr>
     <tr>
