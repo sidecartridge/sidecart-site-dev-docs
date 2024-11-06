@@ -35,7 +35,7 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
 
 <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
-<p>Learn how to installation the device in your computers.</p>
+<p>Learn how to install the device in your computers.</p>
 
 <h3>😊 <a href="/sidecartridge-tos/user-guideV2/">User Guide</a></h3>
 <p>Learn how to use the device day in day out</p>
