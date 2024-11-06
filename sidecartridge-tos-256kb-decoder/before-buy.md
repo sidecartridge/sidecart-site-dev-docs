@@ -8,7 +8,9 @@ parent: SidecarTridge TOS 256KB Decoder
 
 # Before You Buy
 
-The SidecarTridge TOS 256KB decoder is designed to work ONLY with specific Atari ST and MegaST models and motherboards. There are different versions of the device to accommodate various motherboard configurations. **Please follow these steps before purchasing the emulator**:
+The SidecarTridge TOS 256KB decoder is designed to work ONLY with specific Atari ST and MegaST models and motherboards. There are different versions of the device to accommodate various motherboard configurations. 
+
+**Please follow these steps before purchasing the emulator**:
 
 ### Check Your Atari ST Motherboard Model
 
@@ -21,7 +23,7 @@ An Atari ST motherboard model number might look like this:
 
 ### Dual or Hexa ROM Configuration
 
-With the 256kb decoder is no longer relevant the number of ROMs on the motherboard. The 256KB decoder will work with both dual and hexa ROM configurations. 
+While the SidecarTridge TOS 256KB decoder supports both dual and hexa ROM configurations, however, there is no support for the 6 (HEXA) ROM configuration. The reason for this is pure economics. If you want to use the SidecarTridge TOS 256KB decoder with a hexa ROM configuration, contact us for a custom solution, but assume a 20% increase in price over the dual ROM configuration.
 
 ### ROMs Plugged or Soldered
 

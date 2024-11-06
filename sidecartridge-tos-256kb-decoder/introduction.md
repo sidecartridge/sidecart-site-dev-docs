@@ -67,6 +67,6 @@ The SidecarTridge TOS 256KB Decoder kit includes several essential components, e
 
 ---
 
-[Previous: Index](/sidecartridge-tos-256kb-decoder/)
-[Main](/sidecartridge-tos-256kb-decoder/)
-[Next: Before You Buy](/sidecartridge-tos-256kb-decoder/before-buy/)
+[Previous: Index](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
+[Main](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
+[Next: Before You Buy](/sidecartridge-tos-256kb-decoder/before-buy/){: .btn .mr-4 }
