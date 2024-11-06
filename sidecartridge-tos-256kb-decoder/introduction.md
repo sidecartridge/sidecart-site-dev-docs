@@ -15,12 +15,12 @@ This chapter provides a concise overview of the SidecarTridge TOS 256KB Decoder,
 
 ## Overview
 
-The SidecarTridge TOS emulator is an innovative solution that enhances the functionality and flexibility of the Atari ST series. Utilizing bit-banged emulation, it replicates the internal ROMs of the Atari ST, allowing users to access and run any version of TOS (The Operating System) without physically swapping ROM chips. This capability extends to custom ROMs, including EmuTOS—an open-source TOS replacement.
-
 The **256KB Decoder** is an add-on board for the SidecarTridge TOS emulator that enables decoding of 256KB ROMs used in the Atari STe and Mega STe computers, bringing this functionality to the Atari ST and Mega ST series. **Soldered onto the Motorola 68000 CPU**, it performs two key functions:
 
 - **Provides necessary address signals** to the SidecarTridge TOS emulator for reading the ROMs.
 - **Generates a synthetic Chip Enable (CE) signal** to activate the ROMs only when accessed by the CPU in the address range starting at $E00000 for the 256KB ROMs.
+
+The SidecarTridge TOS emulator is an innovative solution that enhances the functionality and flexibility of the Atari ST series. Utilizing bit-banged emulation, it replicates the internal ROMs of the Atari ST, allowing users to access and run any version of TOS (The Operating System) without physically swapping ROM chips. This capability extends to custom ROMs, including EmuTOS—an open-source TOS replacement.
 
 Combined with a custom version of the SidecarTridge TOS emulator hardware, an Atari ST or Mega ST computer can transparently decode both 192KB and 256KB ROMs.
 
@@ -42,7 +42,8 @@ By combining the SidecarTridge TOS emulator and the 256KB Decoder, you can enjoy
 - **EmuTOS 192KB**
 - **EmuTOS 256KB**
 
-> **Note:** The 256KB TOS versions 1.06, 1.62, and 2.05 are not compatible with Atari ST and Mega ST computers. While the SidecarTridge TOS emulator with the 256KB Decoder can decode them, these versions do not function on these models.
+{: .warning }
+The 256KB TOS versions 1.06, 1.62, and 2.05 are not compatible with Atari ST and Mega ST computers. While the SidecarTridge TOS emulator with the 256KB Decoder can decode them, these versions do not function on these models.
 
 ## Intended Audience
 
