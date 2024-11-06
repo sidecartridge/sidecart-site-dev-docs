@@ -136,6 +136,6 @@ And this is how it should look like in a Mega ST:
 After completing the installation of the SidecarTridge TOS 256KB Decoder and the TOS Emulator, power on the Atari ST or Mega ST computer to test the functionality of the decoder board. If the installation was successful, you should be able to access and run different TOS versions and custom ROMs on your Atari ST or Mega ST computer.
 
 [Previous: Before you buy](/sidecartridge-tos-256kb-decoder/before-buy/){: .btn .mr-4 }
-[Main](/sidecartridge-tos/){: .btn .mr-4 }
+[Main](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
 [Next: Compatiibility](/sidecartridge-tos-256kb-decoder/compatibility/){: .btn }
 
