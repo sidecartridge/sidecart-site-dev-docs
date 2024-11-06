@@ -35,6 +35,9 @@ Soldering the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU requires
 - Low temperature solder or solder paste
 - Flux
 - Isopropyl alcohol
+- Multimeter
+- Blue tack (optional)
+
 
 ### Safety Precautions
 1. **Power Off and Unplug:** Ensure the Atari ST is powered off and unplugged from any power source before beginning the disassembly.
@@ -48,42 +51,71 @@ Soldering the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU requires
 The SidecarTridge TOS 256KB Decoder board is designed to be soldered directly onto the Motorola 68000 CPU. The board has a specific alignment and orientation to ensure proper functionality. The decoder board should be aligned with the CPU pins and soldered in place according to the following guidelines:
 
 1. **Orientation**: The decoder board should be oriented with the components facing up, the solder pins facing down sitting on the CPU pins, and the connector facing towards the opposite side of the CPU orientation notch.
+
+![Motorola 68000 orientation](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-1.png)
+
 2. **Alignment**: The decoder board must sit on top of the CPU pins with the same numbers displayed on the CPU and the decoder board. The pins should align correctly to ensure a proper connection. The motherboards have the pins numbered from 1 to 64, but if the numbers are blurred or missing, you can use the CPU orientation notch as a reference: the pin at the top left corner is pin 1, and the pin at the top right corner is pin 64.
+
+The left side of the decoder has the following signals printed, with the pin numbers in parentheses:
+
+- AS (6)
+- RW (9)
+- DTACK (10)
+
+and the right side has the following signals printed, with the pin numbers in parentheses:
+
+- A16 (44)
+- A17 (45)
+- A20 (48)
+- +5V (49)
+- A21 (50)
+- A22 (51)
+- A23 (52)
+- GND (53)
+
+![256KB Decoder orientation top](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-2.png)
+
+![256KB Decoder orientation right](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-3.png)
+
+![256KB Decoder orientation left](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-4.png)
 
 Before starting with the soldering process, ensure that the decoder board is correctly aligned and oriented with the Motorola 68000 CPU.
 
-### Soldering the Decoder to the CPU with low-temperature solder
+{: .note}
+A little bit of blue tack can be used to hold the decoder board in place while soldering. This will help to keep the board aligned with the CPU pins and prevent it from moving during the soldering process.
 
-Since the computers are old and the components are sensitive to heat, it is recommended to use low-temperature solder to solder the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU. Low-temperature solder melts at a lower temperature than standard solder, reducing the risk of damaging the CPU or other components on the motherboard.
+### Soldering the Decoder to the CPU with Low-Temperature Solder
 
-1. **Apply Flux**: Apply a small amount of flux to the CPU pins to help the solder flow and create a strong bond.
-2. **Align the Decoder**: Carefully place the SidecarTridge TOS 256KB Decoder board on top of the Motorola 68000 CPU, aligning the pins correctly.
-3. **Solder the Pins**: Using a soldering iron, solder each pin of the decoder board to the corresponding pin on the CPU. Be careful not to create solder bridges between adjacent pins.
-4. **Inspect the Solder Joints**: After soldering all the pins, inspect the connections to ensure that each pin is securely soldered and there are no solder bridges or cold joints.
+Given the age and heat sensitivity of these computers, it’s recommended to use low-temperature solder when attaching the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU. This type of solder melts at a lower temperature than standard solder, minimizing the risk of damage to the CPU and other components on the motherboard.
+
+1. **Apply Flux**: Begin by applying a small amount of flux to the CPU pins to help the solder flow smoothly and ensure a strong bond.
+2. **Align the Decoder**: Carefully position the SidecarTridge TOS 256KB Decoder board on top of the Motorola 68000 CPU, making sure the pins are properly aligned.
+3. **Solder the Pins**: With a soldering iron, solder each pin of the decoder board to the corresponding pin on the CPU. Take care to avoid creating solder bridges between adjacent pins.
+4. **Inspect the Solder Joints**: Once all pins are soldered, inspect each connection to ensure secure soldering with no solder bridges or cold joints.
 5. **Clean the Board**: Use isopropyl alcohol to clean the board and remove any flux residue.
 
-### Soldering the Decoder to the CPU with solder paste
+### Soldering the Decoder to the CPU with Solder Paste
 
-Alternatively, you can use solder paste to solder the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU. Solder paste is a mixture of flux and solder particles that can be applied to the CPU pins and the decoder board before reflowing the solder to create a strong bond.
+Alternatively, solder paste can be used to attach the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU. Solder paste is a blend of flux and solder particles applied to the CPU pins and decoder board, then reflowed to create a strong bond.
 
-1. **Apply Solder Paste**: Apply a small amount of solder paste to the CPU pins using a fine-tipped applicator or syringe.
-2. **Align the Decoder**: Carefully place the SidecarTridge TOS 256KB Decoder board on top of the Motorola 68000 CPU, aligning the pins correctly.
-3. **Reflow the Solder**: Use a hot air rework station or a reflow oven to heat the solder paste and create a strong bond between the decoder board and the CPU pins. If you don't have a reflow station, you can use a soldering iron to heat the solder paste, but be careful not to overheat the components.
-4. **Inspect the Solder Joints**: After reflowing the solder, inspect the connections to ensure that each pin is securely soldered and there are no solder bridges or cold joints.
-5. **Clean the Board**: Use isopropyl alcohol to clean the board and remove any flux residue.
+1. **Apply Solder Paste**: Using a fine-tipped applicator or syringe, apply a small amount of solder paste to the CPU pins.
+2. **Align the Decoder**: Position the SidecarTridge TOS 256KB Decoder board carefully on top of the Motorola 68000 CPU, ensuring proper pin alignment.
+3. **Reflow the Solder**: Use a hot air rework station or reflow oven to heat the solder paste, bonding the decoder board and CPU pins. If a reflow station isn’t available, you can use a soldering iron to heat the solder paste, taking care not to overheat the components.
+4. **Inspect the Solder Joints**: After reflowing, inspect each connection to confirm secure soldering with no solder bridges or cold joints.
+5. **Clean the Board**: Clean the board with isopropyl alcohol to remove any remaining flux residue.
 
 {: .warning}
-If you are not comfortable with soldering or do not have the necessary tools and skills, it is recommended to seek professional assistance to install the SidecarTridge TOS 256KB Decoder. Incorrect soldering can damage the CPU or other components on the motherboard.
+If you’re not confident in your soldering skills or don’t have the proper tools, it’s advisable to seek professional assistance for installing the SidecarTridge TOS 256KB Decoder. Improper soldering could damage the CPU or other motherboard components.
+
 
 ### Verify the Installation
 
-After soldering the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU, verify the installation by checking the connections and ensuring that the decoder board is securely attached to the CPU. Before powering on the Atari ST or Mega ST computer use a multimeter to check for continuity between the decoder board pins and the CPU pins to confirm a proper connection. It is also a good idea to check continuity between adjacent pins to ensure there are no solder bridges.
+After soldering the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU, it’s essential to verify the installation to ensure all connections are secure. Before powering on your Atari ST or Mega ST, use a multimeter to check continuity between the decoder board pins and the CPU pins to confirm proper connections. Also, check continuity between adjacent pins to ensure there are no unintended solder bridges.
 
-If you have not removed the old ROMs from the motherboard, you can power on the computer to verify that the computer boots correctly. If the installation was successful, the decoder board should not have any impact on the computer's operation until the SidecarTridge TOS Emulator is installed.
+If the original ROMs are still installed on the motherboard, you can power on the computer to verify that it boots correctly. A successful installation of the decoder board will not affect the computer’s operation until the SidecarTridge TOS Emulator is added.
 
 {: .warning}
-Do not pass to the next step until you have verified that the SidecarTridge TOS 256KB Decoder does not interfere with the normal operation of the Atari ST or Mega ST computer with the old ROMs installed.
-
+Do not proceed to the next step until you have confirmed that the SidecarTridge TOS 256KB Decoder does not interfere with the normal operation of the Atari ST or Mega ST with the original ROMs installed.
 
 ## Continue with the SidecarTridge TOS Emulator Installation
 
@@ -91,7 +123,13 @@ Once the SidecarTridge TOS 256KB Decoder is installed on the Motorola 68000 CPU,
 
 ## Connect the Decoder to the Carrier Board
 
-Once the SidecarTridge TOS 256KB Decoder is soldered to the Motorola 68000 CPU and the TOS Emulator installed, connect the decoder board to the SidecarTridge TOS emulator carrier board using the 6-pin connector. The connector should be securely attached to both boards to ensure a proper connection.
+Once the SidecarTridge TOS 256KB Decoder is soldered to the Motorola 68000 CPU and the TOS Emulator installed, connect the decoder board to the SidecarTridge TOS emulator carrier board using the 6-pin flat cable. The connector should be securely attached to both boards to ensure a proper connection.
+
+This is how it should look like in an Atari ST:
+![256KB Decoder to TOS Emulator for Atari ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-STDUAL-MOTHERBOARD.png)
+
+And this is how it should look like in a Mega ST:
+![256KB Decoder to TOS Emulator for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-MOTHERBOARD.png)
 
 ## Power On and Test
 
