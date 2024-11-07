@@ -11,6 +11,13 @@ parent: SidecarTridge TOS 256KB Decoder
 
 This chapter provides a concise overview of the SidecarTridge TOS 256KB Decoder, explaining its purpose, features, and benefits for Atari ST and Mega ST computers.
 
+
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/xYn6r8SssYQ?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
 ## Overview
 
 The **256KB Decoder** is an add-on board for the SidecarTridge TOS emulator that enables decoding of 256KB ROMs used in the Atari STe and Mega STe computers, bringing this functionality to the Atari ST and Mega ST series. **Soldered onto the Motorola 68000 CPU**, it performs two key functions:
