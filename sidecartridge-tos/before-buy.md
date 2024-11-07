@@ -39,11 +39,11 @@ Once you have verified the compatibility of your Atari ST motherboard, you can p
 
 | SidecarTridge TOS Emulator Kit | Supported Motherboards           | Number of ROMs |
 |--------------------------------|----------------------------------|----------------|
-| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)           | 070789-001, C103175-001, C103414-001 | 2              |
-| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)           | 070789-001, C103175-001, C103414-001 | 6              |
-| [STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)                    | CA4003290                        | 2              |
-| [Mega ST Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)               | C103544-001, C100167                         | 2              |
-| [Mega STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)               | CA400677                         | 2              |
+| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste?variant=48912746217805)           | 070789-001, C103175-001, C103414-001 | 2              |
+| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste?variant=49130525098317)           | 070789-001, C103175-001, C103414-001 | 6              |
+| [STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste?variant=48912746250573)                    | CA4003290                        | 2              |
+| [Mega ST Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste?variant=49130525131085)               | C103544-001, C103277, C100167                         | 2              |
+| [Mega STE Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste?variant=48912746283341)               | CA400677                         | 2              |
 
 
 [Previous: Introduction](/sidecartridge-tos/introduction/){: .btn .mr-4 }
