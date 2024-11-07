@@ -37,11 +37,10 @@ If you are not comfortable with desoldering and soldering, please seek professio
 Once you have verified the compatibility of your Atari ST motherboard, you can proceed to purchase the appropriate SidecarTridge TOS 256KB Decoder emulator kit. Ensure you select the correct kit based on your motherboard model number and the number of ROMs.
 
 
-| SidecarTridge TOS 256KB Decoder | Supported Motherboards           |
+| Kit | Supported Motherboards           |
 |--------------------------------|----------------------------------|
-| [STF and STFM Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)           | 070789-001, C103175-001, C103414-001 |
-| [Mega ST Kit](https://store.sidecartridge.com/products/sidecartridge%C2%AE-tos-emulator-for-atari-st-e-and-megast-ste)               | C103544-001, C100167                         |
-
+| [STF and STFM Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433379661)           | 070789-001, C103175-001, C103414-001 |
+| [Mega ST Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433412429)               | C103544-001, C100167                         |
 
 [Previous: Introduction](/sidecartridge-tos-256kb-decoder/introduction/){: .btn .mr-4 }
 [Main](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
