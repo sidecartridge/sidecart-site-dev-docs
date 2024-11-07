@@ -20,15 +20,6 @@ The first chapter provides an overview of the SidecarTridge TOS emulator kit. Th
 {:toc}
 </details>
 
-
-<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
-    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-        src="https://www.youtube-nocookie.com/embed/xYn6r8SssYQ?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
-        allowfullscreen allowtransparency></iframe>
-</figure>
-
-
-
 ## Overview
 
 The SidecarTridge TOS emulator is an innovative solution designed to enhance the functionality and flexibility of the Atari ST series of computers. By leveraging bit-banged emulation, the SidecarTridge TOS emulator replicates the internal ROMs of the Atari ST, allowing users to access and run any TOS (The Operating System) version without the need to physically swap ROM chips. This advanced capability extends to the use of custom ROMs, including EmuTOS, an open-source TOS replacement.
