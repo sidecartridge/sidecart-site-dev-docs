@@ -19,35 +19,58 @@ parent: SidecarTridge TOS
 {:toc}
 </details>
 
-## Preparing the SidecarTridge TOS files
+## Hardware Issues
 
 {: .warning}
-UPGRADE TO VERSION FIRMWARE VERSION 2. In version 1 of the firmware, the top issue is the fragmentation of the filesystem. Please read [The Mini-FAT16 Filesystem](/sidecartridge-tos/getting-started/#the-mini-fat16-file-system) first to save headaches later.
+UPGRADE TO VERSION FIRMWARE VERSION 2. In version 1 of the firmware, the top issue is the fragmentation of the filesystem. This issue is solved in version 2.
 
-### Some of the TOS images are not recognized by the Atari ST in Firmware version <=1.0.4
+### The `ROMEMUL` volume is not recognized by the host computer when the device is connected to a USB power source
 
-It is possible that the TOS image is not correctly flashed on the SidecarTridge TOS due to fragmentation issues. To solve this issue:
+If the `ROMEMUL` volume is not recognized by the host computer when the device is connected to a USB power source, we need to figure out if the issue is related to the USB power source or the SidecarTridge TOS device. To solve this issue, follow these steps:
 
-1. copy the TOS images in small batches
-2. use the `DEFRAG` command in the SidecarTridge TOS to defragment the filesystem as described in the [Copying TOS image files section](/sidecartridge-tos/getting-started/#copying-tos-image-files) section.
-3. verify that the TOS image is correctly flashed on the SidecarTridge TOS. Check the information in the file `INFO.TXT` to see if the TOS image is correctly flashed.
-4. Repeat the process until all the TOS images are correctly recognized by the Atari ST.
+#### Check the USB connection
 
-As a rule of thumb, upgrade to firmware version 2.0. Fragmentation is no longer an issue.
+Verify that the cable is correctly connected to the SidecarTridge TOS device and the USB power source. Try using a different USB cable or USB power source to see if the issue is related to the USB connection.
 
-### The `Sidecartrdg` volume is not recognized by the host computer when the device is connected to a USB power source in Firmware version <=1.0.4
+#### Enter into BOOTSEL mode
 
-Depending on the host computer's operating system and USB port manufacturer it can take more than 10 miliseconds to set the power signals in the USB port. This can cause the device to not be recognized by the host computer. To solve this issue, press the RESET button on the TOS emulator board for a few seconds until the `Sidecartrdg` volume appears on the host computer.
+The BOOTSEL mode is the mode to flash the firmware on the SidecarTridge TOS device. To enter into BOOTSEL mode, this is the well-known procedure for the RP2040 microcontroller:
 
-As a rule of thumb, upgrade to firmware version 2.0. Fragmentation is no longer an issue.
+1. Hold down the `RESET` button on the SidecarTridge TOS ROM Board.
+2. While holding `RESET`, press and hold the `BOOT` button.
+3. Release the `RESET` button.
+4. Release the `BOOT` button.
 
-### The `Sidecartrdg` volume (Firmware version <=1.04) or `ROMEMUL` volume (Firmware version >= 2.0.0) are not recognized by the host computer when the device is connected to the Atari ST
+Alternatively, you can do this without using the RESET button:
+
+1. Unplug the device from the USB connector and power off the computer.
+2. Hold the `BOOT` button.
+3. Plug in the USB connector.
+4. Release the `BOOT` button.
+
+If the `RPI-RP2` volume does not appear on your computer, check that the USB cable is correctly connected to the SidecarTridge TOS device and the USB power source.
+
+If the `RPI-RP2` volume appears, try reinstalling the firmware: [Firmware Installation Guide](https://docs.sidecartridge.com/sidecartridge-tos/getting-startedV2/#firmware-installation)
+
+
+### The `ROMEMUL` volume are not recognized by the host computer when the device is connected to the Atari ST
 
 If the SidecarTridge TOS takes the power from the Atari ST it will not be recognized by the host computer and the device will start working in the TOS emulator mode and not in the mass storage mode. To solve this issue, double check that your Atari ST is powered off when you connect the SidecarTridge TOS to the Atari ST.
 
 ### When I copy a TOS image to the SidecarTridge TOS, the file is not recognized or stored correctly
 
 The host computers implement in the external storage devices a cache mechanism that can cause the file to be stored incorrectly. To solve this issue, **eject the SidecarTridge TOS volume ALWAYS from the host computer when you finish copying the TOS images**.
+
+### The SidecarTridge TOS does not respond to the RESET button
+
+If the SidecarTridge TOS does not respond to the RESET button we need to figure out if the device enters into the BOOTSEL mode. Follow these steps described in the previous section.
+
+If the device enters into the BOOTSEL mode, try pressing the RESET button again. If the device does not respond to the RESET button, try cleaning the RESET button with isopropyl alcohol: Occasionally, micro-buttons can stop responding due to dust, grease, or flux buildup. Apply isopropyl alcohol (IPA) to the buttons, press them multiple times while wet, and allow the IPA to evaporate.
+
+### The SidecarTridge TOS does not respond to the BOOT button
+
+If the SidecarTridge TOS does not respond to the BOOT button after following the procedure to enter into the BOOTSEL mode, try cleaning the BOOT button with isopropyl alcohol as described in the previous section.
+
 
 ## Atari ST Issues
 
@@ -64,7 +87,6 @@ Ensure that the TOS images are correctly flashed on the SidecarTridge TOS:
 ### The Atari ST boots with a black screen or garbage characters
 
 Some USB cables can set some signals on the USB port that can interfere with the SidecarTridge TOS Emulator. To solve this issue, fully unplug the USB cable from the SidecarTridge TOS and try again.
-
 
 ## SWITCHER.TOS Issues
 

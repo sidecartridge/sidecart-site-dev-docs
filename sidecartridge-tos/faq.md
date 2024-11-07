@@ -48,17 +48,17 @@ The RESCUE button recovers the SidecarTridge ROM board in case of a failed firmw
 
 Due to space constraints and the potential for users to access the RESCUE button through a cable or case hole, it is not included directly on the SidecarTridge ROM board.
 
-### Why is the FAT16 filesystem used in the SidecarTridge ROM board not fully implemented?
+### Why does the SidecarTridge TOS emulator use a FAT12 filesystem?
 
-The FAT16 filesystem is used for storing TOS images. For performance reasons, it is implemented simply to store and read images sequentially, avoiding fragmentation issues.
+The FAT12 filesystem is used to ensure compatibility with all operating systems, including Windows, macOS, and Linux. It is a simple and efficient filesystem that is easy to implement and use.
 
 ### Why is the number of available TOS images limited to 64?
 
 It's a design choice to keep the firmware simple and efficient. The number of available TOS images is limited to 64 to ensure that the firmware remains responsive and reliable. Future firmware updates may increase this limit.
 
-### Why is the name of the TOS images limited to 56 characters?
+### Why is the name of the TOS images limited to 64 characters?
 
-The name of the TOS images is limited to 56 characters to ensure it is possible to fit 64 names in 512 bytes of RAM memory. The memory available in the RP2040 microcontroller is limited, so the firmware must be optimized to fit within these constraints.
+The name of the TOS images is limited to 64 characters to ensure it is possible to fit 64 names in 512 bytes of RAM memory. The memory available in the RP2040 microcontroller is limited, so the firmware must be optimized to fit within these constraints.
 
 ## Hardware Questions
 
@@ -66,7 +66,7 @@ The name of the TOS images is limited to 56 characters to ensure it is possible 
 
 The SidecarTridge TOS emulator does not have a power LED. However, the device is powered on when the carrier board is connected to the Atari ST motherboard and the Atari ST is powered on, or when the SidecarTridge TOS emulator is connected to a USB power source.
 
-When the SidecarTridge TOS emulator is powered on and connected to a USB power source, you must press the RESET button during a few seconds to start the device. Then, it will appear as a USB drive on your computer with the name `SidecarTrdg`.
+When the SidecarTridge TOS emulator is powered on and connected to a USB power source, you must press the RESET button during a few seconds to start the device. Then, it will appear as a USB drive on your computer with the name `ROMEMUL`.
 
 ### Can I use a 256KB ROM image in a ST/STF/STFM motherboard?
 
@@ -74,7 +74,7 @@ You can't use a 256KB ROM image in a ST/STF/STFM motherboard because these mothe
 
 Also, keep in mind that the TOS for ST/STF/STFM motherboards starts at address `0xFC0000` and ends at `0xFEFFFF`. The STE/MegaSTE TOS starts at `0xE00000` to `0xE3FFFF`.
 
-There are modified motherboards that support 256KB ROMs for ST/STF/STFM motherboards, but they are not tested with the SidecarTridge TOS emulator. 
+If you want to use a 256KB ROM image in a ST/STF/STFM motherboard checkout the [256KB Decoder](/sidecartridge-tos-256kb-decoder/) version of the SidecarTridge TOS emulator.
 
 ## Software Questions
 
