@@ -32,6 +32,8 @@ If the `ROMEMUL` volume is not recognized by the host computer when the device i
 
 Verify that the cable is correctly connected to the SidecarTridge TOS device and the USB power source. Try using a different USB cable or USB power source to see if the issue is related to the USB connection.
 
+**We cannot stress enough the importance of using a good quality USB <u>data transering</u> cable.**
+
 #### Enter into BOOTSEL mode
 
 The BOOTSEL mode is the mode to flash the firmware on the SidecarTridge TOS device. To enter into BOOTSEL mode, this is the well-known procedure for the RP2040 microcontroller:
@@ -101,6 +103,25 @@ The SWITCHER.TOS program can hang when loading the available TOS images if the U
 ### Cannot upload TOS images with names longer than 8 characters and three-letter extension
 
 The SWITCHER.TOS program supports long filenames up to 64 characters. However, the Atari ST operating system only supports filenames with 8 characters and three-letter extension. To solve this issue and upload TOS images with long filenames, use the mass storage mode of the SidecarTridge TOS and copy the TOS images directly to the `ROMEMUL` volume from a host computer.
+
+## TOS Images and Volume copying/transferring issues
+
+### When copying TOS-images to the ROM emulator via USB, they don’t appear in SWITCHER.TOS
+
+For the images to appear in SWITCHER.TOS, you must first eject the USB volume after copying. This triggers the system to reindex and recognize the newly added TOS images.
+
+### When copying TOS-images from the Atari computer via SWITCHER.TOS, the images from a previous USB copy session appear
+
+Copying TOS-images through SWITCHER.TOS directly from the Atari computer prompts the system to refresh the image index automatically. This includes detecting any TOS-images copied over USB that haven’t yet been recognized because the volume wasn’t ejected.
+
+### Manually editing DEFAULT.TXT and RESCUE.TXT doesn’t seem to have any effect
+
+DEFAULT.TXT and RESCUE.TXT require reindexing after editing to apply changes. To do this, make your edits, save the files, and then eject the USB volume. This triggers the reindexing process so that SWITCHER.TOS and the ROM emulator can recognize the updates in these files.
+
+### After manually editing DEFAULT.TXT and RESCUE.TXT, it seems to find the first image in the list
+
+If you’ve edited DEFAULT.TXT and RESCUE.TXT and the system seems to find the first image in the list, it’s likely that the files are not formatted correctly. Please check that the file names includeing the extension are correct and they are 64 characters or less.
+
 
 
 [Previous: Compatibility](/sidecartridge-tos/compatibility/){: .btn .mr-4 }
