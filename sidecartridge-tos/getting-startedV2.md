@@ -83,6 +83,9 @@ If you have purchased additional components like the USB-C cable or the SWITCHER
 
 ## Preparing the ROM Images
 
+{: .warning}
+As a rule of thumb, ALWAYS eject the `ROMEMUL` volume after making any changes to the files. This will ensure that the changes are correctly saved and reflected in the emulator.
+
 ### Connecting the Device to a Computer
 
 The SidecarTridge TOS emulator has two modes: mass storage mode for transferring TOS image files and ROM emulation mode for booting the Atari ST with the selected TOS image. This section focuses on mass storage mode.
@@ -184,7 +187,7 @@ macOS and Windows operating systems may create hidden files when copying files t
 After editing the `DEFAULT.TXT` and `RESCUE.TXT` files, save the changes and eject the `ROMEMUL` volume from your computer. When ejecting the volume, the SidecarTridge TOS emulator will automatically reindex the TOS images and update the default and rescue TOS images.
 
 {: .warning}
-As a rule of thumb, ALWAYS eject the `ROMEMUL` volume after making any changes to the files. This will ensure that the changes are correctly saved and reflected in the emulator.
+Have you already read that as a rule of thumb, ALWAYS eject the `ROMEMUL` volume after making any changes to the files? No? Ok, this is a reminder to ensure that the changes are correctly saved and reflected in the emulator.
 
 
 ## Firmware Installation
