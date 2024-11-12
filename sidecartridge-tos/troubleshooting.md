@@ -32,7 +32,7 @@ If the `ROMEMUL` volume is not recognized by the host computer when the device i
 
 Verify that the cable is correctly connected to the SidecarTridge TOS device and the USB power source. Try using a different USB cable or USB power source to see if the issue is related to the USB connection.
 
-**We cannot stress enough the importance of using a good quality USB <u>data transering</u> cable.**
+**We cannot stress enough the importance of using a good quality USB <u>data transfering</u> cable.**
 
 #### Enter into BOOTSEL mode
 
