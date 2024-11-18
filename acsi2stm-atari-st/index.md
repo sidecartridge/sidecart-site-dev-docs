@@ -2,7 +2,7 @@
 layout: home
 title: ACSI2STM Hard Disk for Atari ST
 nav_order: 0
-nav_exclude: true
+nav_exclude: false
 has_children: true
 ---
 

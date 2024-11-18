@@ -2,7 +2,7 @@
 layout: default
 title: Introduction
 nav_order: 1
-nav_exclude: true
+nav_exclude: false
 parent: ACSI2STM Hard Disk for Atari ST
 ---
 
