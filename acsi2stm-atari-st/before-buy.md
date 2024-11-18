@@ -63,4 +63,4 @@ You can learn more about the different options in the [official documentation](h
 
 [Previous: Introduction](/acsi2stm-atari-st/introduction/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
-[Next: Hardware Installation](/acsi2stm-atari-st/user-guide/){: .btn }
+[Next: User Guide](/acsi2stm-atari-st/user-guide/){: .btn }

@@ -13,6 +13,8 @@ has_children: true
 
 The ACSI2STM is an open-source hard drive emulator designed for Atari ST computers, enabling the use of SD cards as storage devices. Powered by an STM32 microcontroller, it bridges the Atari’s ACSI port with modern SD cards, providing a cost-effective, reliable, and versatile solution for expanding storage on vintage Atari systems.
 
+This version of the ACSI2STM has been slightly modified by SidecarTridge to reduce the size of the board a few millimiters to avoid cabling problems in Mega ST computer and also has small changes in the jumper and 32Mhz crystal position. All changes are backward compatible with the original ACSI2STM and were submitted as a pull request to the original project.
+
 ## Table of Contents
 
 <h3>📘 <a href="/acsi2stm-atari-st/introduction/">Introduction</a></h3>

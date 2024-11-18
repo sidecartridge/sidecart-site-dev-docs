@@ -54,7 +54,7 @@ The Atari ST hard disk interface uses **ACSI** (Atari Computer System Interface)
 - Each device on the ACSI bus is assigned a unique **identifier** (ID), ranging from **0 to 7**. This ID ensures that each device can be addressed independently.
 - Most ACSI-compatible peripherals include a selector (e.g., DIP switches or jumpers) to manually set their ID. However, some devices may have limited ID ranges or fixed IDs.
 
-#### **Important Rules for ACSI IDs**
+#### Important Rules for ACSI IDs
 - **Do Not Assign Duplicate IDs:** Assigning the same ID to multiple devices will cause hardware conflicts. Devices attempting to send signals simultaneously on the bus can overload their internal circuitry, potentially leading to permanent damage.
 - **ID Assignment Order:** It is best practice to start assigning IDs from **0** and increase sequentially for additional devices.
 - **Software Limitations:** Some software imposes restrictions on supported IDs, so ensure your configuration aligns with your software's requirements.
