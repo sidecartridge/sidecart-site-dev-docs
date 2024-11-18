@@ -87,7 +87,6 @@ If you can't find your motherboard model number in the list, or have any doubts 
 You can find below a list of TOS versions tested with the SidecarTridge TOS emulator. The list includes the TOS version, the size of the ROM, if it was tested, if it works, and any additional notes. You can download them from several sites like:
 
 - [AVTANDIL website](https://avtandil.narod.ru/tose.html)
-- [Peter Putnik custom images](https://atari.8bitchip.info/TOS/TOSdep.html)
 
 | TOS Version | Size (KB) | Tested | Works | Notes |
 |-------------|-----------|--------|-------|-------|
@@ -137,7 +136,7 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 | TOS 2.06 UK | 256      | Yes  | Yes   |       |
 | TOS 2.06 US | 256      | Yes  | Yes   |       |
 | TOS 2.06 UK SuperTOS | 256      | Yes  | Yes   | Custom TOS (Unknown creator)      |
-| TOS 2.16 DE PPera | 256      | Yes  | Yes   | Custom TOS (Peter Putnik) |
+| TOS 2.16 DE | 256      | Yes  | Yes   | Custom TOS |
 | EmuTOS 1.2.1 ES | 192 | Yes  | Yes   | Open-source TOS |
 | EmuTOS 1.2.1 UK | 192 | Yes  | Yes   |       |
 | EmuTOS 1.2.1 US | 192 | Yes  | Yes   |       |

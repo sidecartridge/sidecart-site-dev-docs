@@ -310,7 +310,7 @@ The Multi-device's hard disk emulation feature does not support the following fu
 
 All the features are planned for future releases.
 
-The lastest adapted games for hard disk by Peter Putnik and others does support the GEMdrive emulation. You can find them in the [Atari ST Adapted Games](https://atari.8bitchip.info/fromhd3.php) site. Most of the games with HAGA and HAGE support does work with the GEMdrive emulation with TOS ranging from 1.00 to 2.06 and 1MB of RAM. 
+The lastest adapted games for hard disk does support the GEMdrive emulation. Most of the games with HAGA and HAGE support does work with the GEMdrive emulation with TOS ranging from 1.00 to 2.06 and 1MB of RAM. 
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
