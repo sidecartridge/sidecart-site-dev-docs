@@ -6,7 +6,7 @@ nav_exclude: true
 parent: ACSI2STM Hard Disk for Atari ST
 ---
 
-# Troubleshooting
+# Frequently Asked Questions
 {: .no_toc }
 
 

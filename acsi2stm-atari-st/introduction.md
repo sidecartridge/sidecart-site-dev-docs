@@ -50,9 +50,11 @@ The ACSI2STM Hard Disk device provided by the SidecarTridge project consists of 
 
 1. **ACSI2STM PCB**: The main board that houses the STM32 microcontroller, SD card slot, and other components. The PCB has all the components soldered and tested, including the DB-19 pins for the Atari ACSI port.
 
-4. **IDC-20 Connector**: An optional connector that expands the ACSI port to support additional devices like Satan Disk. This connector is not soldered to the PCB and must be installed by the user.
+2. **IDC-20 Connector**: An optional connector that expands the ACSI port to support additional devices like Satan Disk. This connector is not soldered to the PCB and must be installed by the user.
 
-5. **Pre-installed Firmware**: The ACSI2STM device comes with the latest stable firmware pre-installed, ensuring that it is ready for use out of the box.
+3. **Pre-installed Firmware**: The ACSI2STM device comes with the latest stable firmware pre-installed, ensuring that it is ready for use out of the box.
+
+4. **USB-C Power Cable (NOT INCLUDED)**: A USB-C cable is required to power the ACSI2STM device, as it cannot draw enough power from the Atari’s ACSI port.
 
 ---
 
