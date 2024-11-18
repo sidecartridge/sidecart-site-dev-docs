@@ -218,6 +218,6 @@ Starting from version **4.0**, the **ACSI2STM** allows firmware updates directly
 If you need to flash the firmware to the STM32 microcontroller, you will need a special USB-to-UART dongle. The process is detailed in the [official documentation](https://github.com/retro16/acsi2stm/blob/stable/doc/quick_start.md#flashing-firmware).
 
 
-[Previous: Before You Buy](/acsi2stm-atari-st/before-buy.md){: .btn .mr-4 }
+[Previous: Before You Buy](/acsi2stm-atari-st/before-buy/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
-[Next: Troubleshooting](/acsi2stm-atari-st/troubleshooting){: .btn }
+[Next: Troubleshooting](/acsi2stm-atari-st/troubleshooting/){: .btn }
