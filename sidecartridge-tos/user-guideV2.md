@@ -102,6 +102,21 @@ To delete a TOS ROM image from the Atari ST computer, select the TOS ROM image y
 {:.note}
 It is not possible to delete the default TOS ROM image or the rescue TOS ROM image. If you want to delete the default TOS ROM image, you must first select a new default TOS ROM image. If you want to delete the rescue TOS ROM image, you also must first select a new rescue TOS ROM image.
 
+### Renaming a TOS ROM from the Atari ST computer
+{: .d-inline-block }
+
+{{ v2.1.0 }}
+{: .label .label-green }
+
+To rename a TOS ROM image from the Atari ST computer, select the TOS ROM image you want to rename from the list of TOS ROM images and press the [`R`]ename key in the SWITCHER.TOS program. The program will ask you to enter the new name for the TOS ROM image. The SWITCHER.TOS program will rename the TOS ROM image and reindex the TOS ROM images list.
+
+The new name must be valid Long File Name (LFN) of up to 64 characters in the ASCII range 32-126. The SWITCHER.TOS program will check the new name and will reject it if it is not valid or longer than 64 characters.
+
+The new name will be rejected if it is already in use by another TOS ROM image.
+
+{:.note}
+As the delete feature, it is not possible to rename the default TOS ROM image or the rescue TOS ROM image. If you want to rename the default or rescue TOS ROM image, you must first select a new default TOS ROM image.
+
 ## Select a new Rescue TOS ROM
 
 The recue TOS cannot be changed using the SWITCHER.TOS program or the internal API call to switch TOS ROMs. To change the rescue TOS ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-started/) section.

@@ -189,6 +189,20 @@ After editing the `DEFAULT.TXT` and `RESCUE.TXT` files, save the changes and eje
 {: .warning}
 Have you already read that as a rule of thumb, ALWAYS eject the `ROMEMUL` volume after making any changes to the files? No? Ok, this is a reminder to ensure that the changes are correctly saved and reflected in the emulator.
 
+### Magic File and Folder names
+{: .d-inline-block }
+
+{{ v2.1.0 }}
+{: .label .label-green }
+
+Starting from firmware version 2.1.0, the SidecarTridge TOS emulator recognizes specific file and folder names that trigger actions when the volume is ejected. These magic names are used to perform maintenance tasks on the device without the need for additional tools or software.
+
+The following magic names are recognized by the SidecarTridge TOS emulator:
+- `REBOOT`: When the volume is ejected, the device will try to mount the volume again.
+- `RESET`: When the volume is ejected, the device will enter BOOTSEL mode. The volume `RPI-RP2` will be mounted again, and the user can flash a new firmware.
+
+The files or folders with these magic names will be deleted after the action is triggered.
+
 
 ## Firmware Installation
 
