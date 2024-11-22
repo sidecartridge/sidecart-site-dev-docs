@@ -192,7 +192,7 @@ Have you already read that as a rule of thumb, ALWAYS eject the `ROMEMUL` volume
 ### Magic File and Folder names
 {: .d-inline-block }
 
-{{ v2.1.0 }}
+v2.1.0
 {: .label .label-green }
 
 Starting from firmware version 2.1.0, the SidecarTridge TOS emulator recognizes specific file and folder names that trigger actions when the volume is ejected. These magic names are used to perform maintenance tasks on the device without the need for additional tools or software.
