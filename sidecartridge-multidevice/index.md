@@ -118,6 +118,8 @@ Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guid
             <p>Contribute to the ROM Images Database with your own images</p>
         </td>
         <td style="border: none;">
+            <h3>🗄️ <a href="/sidecartridge-multidevice/unofficial_firmwares/">Unnoficial Firmwares</a></h3>
+            <p>Smart people out there building incredible stuff with the device</p>
         </td>
         <td style="border: none;">
          </td>
