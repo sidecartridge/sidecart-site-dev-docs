@@ -31,4 +31,4 @@ redirect_from:
 
 ## Want to contribute?
 
-You can contribute to this list by submitting your own case design. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
+There are a lot of smart people out there with great ideas. If you have created a new firmware for the SidecarTridge Multi-device and would like to share it with the community, please let us know. We would be happy to include it in this list. Or even better, you can create a pull request to add it yourself.
