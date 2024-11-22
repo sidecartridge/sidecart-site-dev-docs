@@ -49,6 +49,9 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 <h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
 <p>Frequently Asked Questions.</p>
 
+<h3>📝 <a href="/sidecartridge-tos/changelog/">Changelog</a></h3>
+<p>The latest changes in the firmware, applications and hardware.</p>
+
 <h3>Previous Deprecated Firmware Versions</h3>
 
 <h4><a href="/sidecartridge-tos/getting-started/">Firmware v1.0: Getting started</a></h4>

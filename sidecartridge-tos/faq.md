@@ -94,3 +94,4 @@ Follow the instructions provided in the [Firmware Update](/sidecartridge-tos/get
 
 [Previous: Troubleshooting](/sidecartridge-tos/troubleshooting/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
+[Next: Changelog](/sidecartridge-tos/changelog/){: .btn }
