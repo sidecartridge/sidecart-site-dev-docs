@@ -26,67 +26,68 @@ One notable feature of Sidecart is its ability to emulate Floppy Drives. This is
 
 One of the popular features of the SidecarT is the search and download of floppy images from the public database. This document explains how to add content to the public database of floppy images created by the users.
 
+## The repository
+
+The GitHub repository is located at [sidecartridge/atarist-public-floppy-db](https://github.com/sidecartridge/atarist-public-floppy-db).
+
+This repository is a way to share with the community the floppy images that are created by the users and that are not available in the public database. The images are uploaded to an external repository, while the metadata is stored in this repository.
+
+## List of floppies available
+
+You can find the full list in the folder here: https://ataristdb.sidecartridge.com/db/*.csv
+
+Where the asterisk is the first letter of the name of the floppy. The database is sharded by the first letter of the name of the floppy to allow the database to be easily parsed by the SidecarTridge Multi-device Floppy Database.
+
+All the floppies added through the pull requests will be added to the database and will be available for the community as follows:
+- It will be added to the database in its corresponding shard.
+- It will be available in the special shard `_.csv` that contains all the new stuff sorted by most recent addenda. The maximum size of this file is 300 rows, so the oldest will be deleted when they reach this pointer.
+
 ## How to contribute
 
-1. **Host your floppy images in a public web storage**. The floppy images must be in .ST format, and it must be accessible through HTTP since HTTPS is not supported by the SidecarT firmware. The repository must be public and accessible without any authentication.
+If you have a Floppy Image that is not listed here, you can contribute to the database by submitting a pull request with the following information:
 
-Example: I want to host a floppy image called `SILLYDEMO.ST` in my public webserver in the URL `http://ataristdb.sidecartridge.com/MISC/SILLYDEMO.ST`. 
+- Name of the Floppy
+- Description
+- Type: can only be `CRACKTROS`, `DEMOS`, `HOMEBREW`,  `INTROS`.
 
-2. **Checkout the repository**. Clone the `https://github.com:diegoparrilla/atarist-public-floppy-db` repository in your local machine, or fork it and clone your fork. If you are not familiar with Git, you can follow the instructions in the [Git documentation](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository). As an alternative, you can also use edit directly the files explained in the next steps in the GitHub web interface.
+**You must include the Floppy Image file in the pull request in .ST format.** The file must be in a single file. If the floppy has more than one disk, you must create a separate pull request for each disk.
 
-Example: 
-```bash
-git clone git@github.com:diegoparrilla/atarist-public-floppy-db.git
-```
+## How to create a Pull Request (PR) from the GitHub website
 
-3. **Create your working branch**. Create a new branch in your local repository to add your floppy image. The name of the branch should be descriptive of the floppy you are adding. 
+First, you need to have a GitHub account. If you don't have one, you can create one for free at the [GitHub website](https://github.com).
 
-Example:
-```bash
-git checkout -b add-silly-demo
-```
+1. Fork the repository by clicking on the "Fork" button on the top right corner of the repository page.
 
-4. **Choose the folder with the category of your floppy**. The floppy images are organized in folders by category. If you don't find a category that fits your floppy, you can create a new one. The name of the folder must be in uppercase and without spaces.
+2. Go to your forked repository and click on the "Add file" button and select "Upload files".
 
-Example: I want to host the `SILLYDEMO.ST` floppy in the `CRACKTROS` category. I will use the `CRACKTROS` folder.
+3. Drag and drop the Floppy image file to the file selection area.
 
-5. **Edit the list.txt file**. Inside the folder of the category, there is a file called `list.txt`. This file contains the list of floppy images in the category. Add a new line with the URL of your floppy image. As a respect to the Atari ST community, please add the content in alphabetical order, and use the following format:
+4. In the `Commit changes` section, simply add the name of the Floppy Image. No need for a description or any other information at this point.
 
-```
-"NAME OF THE APPLICATION";"URL OF THE FLOPPY IMAGE"
-```
+5. Select the "Create a new branch for this commit and start a pull request" option.
 
-If the `list.txt` file does not exist, create it.
+6. Enter a name for the branch and click on the "Propose changes" button.
 
-Example:
-```
-"The Very Silly STE Demo (C) 2024 by @Logronoide";"http://ataristdb.sidecartridge.com/MISC/SILLYDEMO.ST"
-```
+7. **IMPORTANT: On the next page, click on `compare across forks` and select the original repository as the base repository `sidecartridge/atarist-public-floppy-db` and the `main` branch at the left side, and the branch you just created as the head repository at the right side.**
 
-6. **Commit your changes**. Commit your changes to your local repository. You can use the following commands to commit your changes:
+8. On the next page, **edit the description in the following fields**:
+    - Filename: Enter the exact filename of the Floppy image file you uploaded. Please match the case and extension of the file. Only .ST files are allowed.
+    - Name: Enter the name of the Flopy Image in human readable format. It must be short and descriptive.
+    - Description: Enter a brief description of the Floppy Image.
+    - Type: Enter the type of the Floppy Image. Recommended values are `DEMOS`, `GRAPHICS`, `MUSIC`,  `GAMES`, `INTROS` and `HOMEBREW_GAMES`. But another descriptive type can be used. Uppercase, please.
 
-Example:
-```bash
-git add .
-git commit -m "Add Silly Demo floppy"
-```
+9. Click on the "Create pull request" button.
 
-7. **Push your changes**. Push your changes to your fork of the repository. Please don't push directly to the main repository, as it is not allowed. Please create a pull request.
+10. Wait for the repository owner to review your pull request. If everything is correct, your Floppy Image will be added to the database.
 
-Example:
-```bash
-git push origin add-silly-demo
-```
+11. If there are any issues with your pull request, the repository owner will leave a comment on the pull request page. You can then make the necessary changes and resubmit the pull request.
 
-8. **Wait for the pull request to be reviewed**. After you push your changes, the pull request will be reviewed by the maintainers of the repository, and if everything is correct, it will be merged.
+12. Once your pull request is accepted and merged, you can delete the branch you created for the pull request.
 
-9. **Celebrate!**. Your floppy image is now available for the Atari ST community through the SidecarT Floppy Database.
+## How to create a Pull Request (PR) from the command line
 
-## Requirements
+If you are familiar with Git and the command line, you can also create a pull request from your local machine. No need to explain how to do it here, as you probably already know how to do it. Just make sure to follow the same steps as above and include the Floppy image file in the pull request.
 
-Please ensure you have the following prerequisites before proceeding:
+## Disclaimer
 
-1. The floppy image must be in .ST format.
-2. The floppy image must be accessible through HTTP since HTTPS is not supported by the SidecarT firmware.
-3. The service is case sensitive, so the URL must be in the same case as the file name.
-
+The Floppy images provided in this database are for educational and archival purposes only. The repository owner does not condone or support piracy in any form. The Floppy images are provided as-is and without any warranty. Use at your own risk.
