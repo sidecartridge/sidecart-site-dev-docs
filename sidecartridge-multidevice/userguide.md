@@ -290,6 +290,7 @@ To activate the hard disk emulation feature on the Multi-device, you must first 
      - [D]rive: Hit `D` to choose the drive letter for emulation, ranging from `C` to `Z`. Select a unique letter if using multiple hard disk drivers.
      - Temp [M]emory Type: Press `M` to pick the type of temporary memory for emulation. The default `_dskbuf` utilizes the operating system's buffer, while `heap` opts for heap memory. This setting is advanced and should only be altered with caution.
      - [R]TC Enabled: Toggle the Real Time Clock (RTC) by pressing `R`. Enabling RTC ensures accurate date and time for files and the Atari ST computer.
+     - [Y]2K Patch: Press `Y` to activate the Year 2000 (Y2K) patch. This feature is crucial for ensuring the correct date and time display on the Atari ST if you don't use a program that patches the Y2K bug. This feature is only available for TOS versions 1.00 to 2.06, EmuTOS is not affected by the Y2K bug.
      - [F]ake floppy: Press `F` to enable or disable the fake floppy feature. This feature is useful for software that requires a floppy drive to be present, like the detection of AUTO folder programs or by passing the annoying 2.06 TOS floppy disk check on boot.
      - Network [T]imeout: Set the wait time for network and NTP server synchronization, with a default of 45 seconds.
 5. **Starting the Emulation**:
@@ -338,7 +339,7 @@ This section explains how to select the floppy image to emulate from the databas
 5. Download from the Floppy Images database
 ```
 
-3. In the menu, there is a bar with the alphabet and numbers. Selecting the letter or number will display the list of applications starting with that letter in the name. 
+3. In the menu, there is a bar with the underscore, alphabet and numbers. Selecting the letter or number will display the list of applications starting with that letter in the name. Selecting the underscore will display the latest applications added to the database, from the newest to the oldest, which is useful to find the latest applications added to the database.
 
 4. The user can now select the application to download pressing `RETURN` or `ENTER`. Now, the Multi-device will find the floppy image in the database that contains the application and download it to the storage folder for floppy images.
 
@@ -393,6 +394,7 @@ Options:
 [U] - Change UTC offset
 [H] - Change NTP server host
 [P] - Change NTP server port
+[Y] - Toogle Y2K patch
 
 [B] - Boot emulator
 
@@ -416,6 +418,10 @@ For the version v0.0.11, there are two RTC types available: `SIDECART` and `DALL
 - `SIDECART`: This is the default RTC type. To set the date and time it uses a small cartridge firmware at boot time that sets the date and time in the Atari ST computer. This firmware is executed at boot time as an executable cartridge and does not impact in the overall performance or memory usage of the system.
 
 - `DALLAS`: This RTC type emulates a DALLAS 1216 RTC integrated chip. To set the date and time the user must use a program that reads the values provided by the DALLAS 1216 emulator and sets the date and time in the Atari ST computer. There are several programs that can do this, but I strongly recommend the [tools created by Troed Sångberg](https://blog.troed.se/projects/dallas-rtc-sync-tos-y2k-fix/).
+
+### Toogle the Y2K patch
+
+This feature is crucial for ensuring the correct date and time display on the Atari ST if you don't use a program that patches the Y2K bug. This feature is only available for TOS versions 1.00 to 2.06, EmuTOS is not affected by the Y2K bug.
 
 
 {: .note}
