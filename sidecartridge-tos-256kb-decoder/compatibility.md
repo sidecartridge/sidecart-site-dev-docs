@@ -32,11 +32,11 @@ Carrier boards for non supported motherboards are in active development. Please 
 | Motherboard Model Number | Number of ROMs | Carrier Board   |
 |--------------------------|----------------|-----------------|
 | C070115 Rev. 2           |                | Not supported   |
-| C070243 Rev. C           |                | Not supported   |
-| C070243 Rev. E           |                | Not supported   |
-| C070243 Rev. F           |                | Not supported   |
-| C070243 Rev. H           |                | Not supported   |
-| C070243 Rev. I           |                | Not supported   |
+| C070243 Rev. C           |    2*          | Supported       |
+| C070243 Rev. E           |    2*          | Supported       |
+| C070243 Rev. F           |    2*          | Supported       |
+| C070243 Rev. H           |    2*          | Supported       |
+| C070243 Rev. I           |    2*          | Supported       |
 | C070523-001 Rev. C       |                | Not supported   |
 | C070523-001 Rev. D       |                | Not supported   |
 | C070789-001 Rev. A       |    2*          | Supported       |

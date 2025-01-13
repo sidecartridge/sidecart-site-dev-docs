@@ -39,6 +39,7 @@ Once you have verified the compatibility of your Atari ST motherboard, you can p
 
 | Kit | Supported Motherboards           |
 |--------------------------------|----------------------------------|
+| [ST+ and STM Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50843744108877)           | 070243 |
 | [STF and STFM Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433379661)           | 070789-001, C103175-001, C103414-001 |
 | [Mega ST Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433412429)               | C103544-001, C100167                         |
 
