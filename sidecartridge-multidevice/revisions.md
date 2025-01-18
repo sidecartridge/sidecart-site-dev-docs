@@ -61,6 +61,11 @@ Revision 2.2.0 introduces several important enhancements to Revision 2.1:
 Revision 2.2.1 introduces aminor addition to Revision 2.2.0:
 - Single JST SH 3xmale 1.0mm pitch connectors for the UART and GND pins.  Now it's easier to connect to the Raspberry Pi Debug probe for developers.
 
+### Revision 2.3.0
+Revision 2.3.0 introduces a minor addition to Revision 2.2.x series to improve the radio signal of the Pico W module:
+- Minor rewiring of some tracks under the Pico W radio module.
+- Larger no-copper area under the Pico W radio module.
+
 ## Want to contribute?
 
 You can contribute to page. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
