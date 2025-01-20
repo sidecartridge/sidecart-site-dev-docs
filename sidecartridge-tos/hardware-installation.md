@@ -131,13 +131,19 @@ Depending on the Atari ST model, the SidecarTridge TOS Emulator carrier board mu
 
 ### Find the Correct Orientation
 
-#### Atari ST/STF/STFM
+#### Atari STF/STFM
 
-The SidecarTridge carrier board has to be plugged into the ROM sockets marked as HI-0 and LO-0 on the Atari ST motherboard. The HI-0 socket is the one closest to the bottom edge of the motherboard.
+The SidecarTridge carrier board has to be plugged into the ROM sockets marked as HI-0 and LO-0 on the Atari ST motherboard. **The HI-0 socket is the one closest to the bottom edge of the motherboard.**
 
 The sockets are 28 pins wide like the SidecarTridge TOS Emulator, so it should be easy to align the emulator with the sockets. 
 
 ![Atari ST/STF/STFM Sidecartridge TOS](/sidecartridge-tos/assets/images/sidecartridge-st2-plugged.png)
+
+#### Atari ST/ST+/STM
+
+The SidecarTridge carrier board has to be plugged into the ROM sockets marked as HI-0 and LO-0 on the Atari ST motherboard. **The LO-0 socket is the one closest to the bottom edge of the motherboard.**
+
+The sockets are 28 pins wide like the SidecarTridge TOS Emulator, so it should be easy to align the emulator with the sockets. 
 
 #### Atari STE
 

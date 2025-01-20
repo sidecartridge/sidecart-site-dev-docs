@@ -23,7 +23,7 @@ An Atari STE motherboard model number might look like this:
 
 ### Determine the Number of ROMs
 
-At this moment, the SidecarTridge TOS emulator supports Atari ST motherboards with two ROM chips. If your motherboard has a different number of ROMs, you'll need to wait for the next version of the SidecarTridge TOS emulator with support for six ROMs.
+At this moment, the SidecarTridge TOS emulator supports Atari ST motherboards with two and six ROM chips. Please double check the number of ROMs on your motherboard before proceeding
 
 ### ROMs Plugged or Soldered
 
