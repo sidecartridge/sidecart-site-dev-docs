@@ -7,13 +7,21 @@ has_children: true
 ---
 
 
-![ACSI2STM Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM-SDCARDS-BATTERY-TOP.png)
+![ACSI2STM Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM2-SDCARDS-BATTERY-TOP.png)
 
 # ACSI2STM Hard Disk for Atari ST
 
 The ACSI2STM is an open-source hard drive emulator designed for Atari ST computers, enabling the use of SD cards as storage devices. Powered by an STM32 microcontroller, it bridges the Atari’s ACSI port with modern SD cards, providing a cost-effective, reliable, and versatile solution for expanding storage on vintage Atari systems.
 
-This version of the ACSI2STM has been slightly modified by SidecarTridge to reduce the size of the board a few millimiters to avoid cabling problems in Mega ST computer and also has small changes in the jumper and 32Mhz crystal position. All changes are backward compatible with the original ACSI2STM and were submitted as a pull request to the original project.
+After extensive testing of the original ACSI2STM device, SidecarTridge has introduced an enhanced version with several key improvements:
+
+- **Upgraded 4-Layer PCB Design:** This new design ensures optimal performance, even in older and noisier computer systems, by reducing issues like crosstalk and electrical interference.
+
+- **Premium microSD Card Slots:** Utilizing the same high-quality slots as the SidecarTridge Multi-device, these are more robust and feature a built-in eject mechanism, facilitating easy insertion and removal of microSD cards.
+
+- **Optimized Crystal Oscillator Circuit:** Adjustments in the capacitors of the crystal oscillator circuit have been made to enhance performance and stability. This modification addresses a flaw in the original design that could cause operational failures or prolonged boot times. For detailed information on recalibrating the capacitors in the crystal oscillator circuit, please refer to the [GitHub issue discussion](https://github.com/retro16/acsi2stm/issues/58). 
+
+**The new board design is slightly larger than the original ACSI2STM with this very distintictive castile shape, and that is why it is called the "Castillian" ACSI2STM board. The new design is fully compatible with the original ACSI2STM firmware and retains all the features and functionality of the original device.**
 
 ## Table of Contents
 
