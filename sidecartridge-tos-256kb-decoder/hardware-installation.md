@@ -126,7 +126,7 @@ The SidecarTridge TOS 256KB Decoder V2.0 already has the Blitter patch integrate
 To install the SidecarTridge TOS 256KB Decoder V2.0, follow the same steps as described above for the V1.0 version and also:
 
 1. Disconnect the cable from the motherboard to the Blitter patch and connect it to the SidecarTridge TOS 256KB Decoder V2.0 `WIRE` pad as shown in the following image below.
-2. Solder the Blitter Patch specific pins BGACK, CLK, and RESET to the Motorola 68000 CPU. These pins are easy to identify because they have white silkscreen on the board.
+2. Solder the Blitter Patch specific pins `BGACK`, `CLK`, and `RESET` to the Motorola 68000 CPU. These pins are easy to identify because they have white silkscreen on the board.
 
 ![256KB Decoder V2.0 to Mega ST CPU](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-BLITTER-V2.png)
 
