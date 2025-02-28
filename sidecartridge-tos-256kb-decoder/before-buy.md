@@ -32,6 +32,10 @@ If your ROMs are plugged, congratulations, you can proceed with the purchase. If
 {: .warning}
 If you are not comfortable with desoldering and soldering, please seek professional help to avoid damaging your Atari ST motherboard. We strongly recommend using an experienced technician to perform this task.
 
+###  A note about the Blitter Patch in the Mega ST
+
+Most of the Mega ST motherboards have a Blitter patch soldered on top of the Motorola 68000 CPU. While the SidecarTridge TOS 256KB decoder V1.0 is compatible with the Blitter patch, the version 2.0 (Released 28th of February 2025) already has the Blitter patch integrated into the design. This means that you can use the SidecarTridge TOS 256KB decoder V2.0 and removing the Blitter patch.
+
 ### Purchase the Right SidecarTridge TOS 256KB Decoder Kit
 
 Once you have verified the compatibility of your Atari ST motherboard, you can proceed to purchase the appropriate SidecarTridge TOS 256KB Decoder emulator kit. Ensure you select the correct kit based on your motherboard model number and the number of ROMs.

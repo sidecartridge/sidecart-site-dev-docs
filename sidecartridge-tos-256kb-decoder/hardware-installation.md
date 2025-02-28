@@ -107,11 +107,22 @@ Alternatively, solder paste can be used to attach the SidecarTridge TOS 256KB De
 {: .warning}
 If you’re not confident in your soldering skills or don’t have the proper tools, it’s advisable to seek professional assistance for installing the SidecarTridge TOS 256KB Decoder. Improper soldering could damage the CPU or other motherboard components.
 
-### A note to Mega ST owners
+### A note to Mega ST owners 
+
+#### 256KB Decoder V1.0
 
 Some Mega ST models already have a board soldered on top of the CPU. This board is called the 'Blitter Fix' or 'Blitter Patch' and must be removed and placed on top of the SidecarTridge TOS 256KB Decoder. It is a small PCB that corrects a design flaw in the Mega ST motherboard related to the Blitter chip. The soldering of both boards is a bit tricky, but it can be done with care and precision as shown in the following image:
 
 ![256KB Decoder to Blitter Fix to Mega ST CPU](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-BLITTER.png)
+
+#### 256KB Decoder V2.0
+
+The SidecarTridge TOS 256KB Decoder V2.0 already has the Blitter patch integrated into the design. This means that you can use the SidecarTridge TOS 256KB Decoder V2.0 and removing the Blitter patch.
+
+To install the SidecarTridge TOS 256KB Decoder V2.0, follow the same steps as described above for the V1.0 version. The only difference is that you must disconnect the cable from the motherboard to the Blitter patch and connect it to the SidecarTridge TOS 256KB Decoder V2.0 `WIRE` pad as shown in the following image:
+
+![256KB Decoder V2.0 to Mega ST CPU](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-BLITTER-V2.png)
+
 
 ### Verify the Installation
 
