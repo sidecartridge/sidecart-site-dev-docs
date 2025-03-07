@@ -66,6 +66,16 @@ Revision 2.3.0 introduces a minor addition to Revision 2.2.x series to improve t
 - Minor rewiring of some tracks under the Pico W radio module.
 - Larger no-copper area under the Pico W radio module.
 
+### Revision 3.1
+Revision 3.1 is a general improvement over the previous revisions. It includes the following changes:
+- Smaller & More Compact: A slimmer design makes installation easier while maintaining all functionality.
+- Enhanced Performance & Stability: ENIG PCBs and optimized track layout improve signal integrity and reduce electrical noise, especially in older machines.
+- Improved Power Efficiency: Optimized power handling lowers power consumption without compromising performance.
+- Stronger WiFi Signal: A larger copper window for the WiFi antenna enhances signal strength and reduces interference.
+- Flexible Pico W Integration: Supports direct soldering or reflowing of the Raspberry Pi Pico W for a professional-grade assembly.
+- Expanded Connectivity for Makers: Now includes both JST and classic two-pin connectors to externalize the RESET and SELECT buttons, support UART for developers, and even enable DEBUG access for advanced users.
+
+
 ## Want to contribute?
 
 You can contribute to page. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
