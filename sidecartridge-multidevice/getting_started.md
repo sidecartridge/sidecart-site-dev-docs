@@ -41,15 +41,18 @@ Users will need the following hardware:
 - A SidecarT board
 
 {:refdef: style="text-align: center;"}
-![SidecarT without Raspberry Pi Pico](https://sidecartridge.com/assets/images/quickstart/board-single.png)
+![SidecarT without Raspberry Pi Pico](/sidecartridge-multidevice/assets/images/BOARD-3.1-KIT-TOP.png)
 {: refdef}
 
 
-- A [Raspberry Pi Pico WH (Reference SC0919)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh), which already comes with the necessary 40-pin connectors to attach to the SidecarT's motherboard, or a [Raspberry Pi Pico W (Reference SC0918)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh) and procure two 20-pin connectors, then solder them to the board yourself. Here's a [link to a manufacturer](https://www.lcsc.com/product-detail/span-style-background-color-ff0-Pin-span-Headers_BOOMELE-Boom-Precision-Elec-C50981_C50981.html) for reference.
+- A [Raspberry Pi Pico WH (Reference SC0919)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh), which already comes with the necessary 40-pin connectors to attach to the SidecarT's motherboard, or a [Raspberry Pi Pico W (Reference SC0918)](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#raspberry-pi-pico-w-and-pico-wh).
 
 {:refdef: style="text-align: center;"}
 ![Raspberry Pi Pico WH](https://sidecartridge.com/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
 {: refdef}
+
+{: .important }
+Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldered to the board. If you want to use a Raspberry Pi Pico WH, you will have to solder two 20-pin female headers connectors to the board. You can find them in [our store here](https://store.sidecartridge.com/products/pair-of-2-54mm-square-plugin-2p-female-headers), or in any electronic store.
 
 
 - A USB A to micro USB *data* cable to install and update the SidecarT firmware on the Raspberry Pi Pico W. It's important to note the emphasis on a "data" cable - a simple charging cable won't suffice.
@@ -112,7 +115,7 @@ Additionally, developers need the following hardware:
 
 - A SidecarT board (See above)
 
-- A [Raspberry Pi Pico WH board](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-wh) to connect it to the SidecarT board. The `W` stands for **Wireless** and the `H` stands for **Header**. The `H` version comes with the header pins already soldered to the board and a JST debugger connector needed to connect the Raspberry Pi Debug Board.
+- A [Raspberry Pi Pico W or WH board](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-wh) to connect it to the SidecarT board. The `W` stands for **Wireless** and the `H` stands for **Header**. The `H` version comes with the header pins already soldered to the board and a JST debugger connector needed to connect the Raspberry Pi Debug Board. Since version 3.1 of the board, it's also possible to get the debug signals directly on the JST connector of the board.
 
 {:refdef: style="text-align: center;"}
 ![Raspberry Pi Pico WH](https://sidecartridge.com/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)

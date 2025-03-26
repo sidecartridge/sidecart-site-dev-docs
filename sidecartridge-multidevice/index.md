@@ -7,7 +7,7 @@ has_children: true
 ---
 
 
-![SidecarTridge Multi-device](/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-16-9.png)
+![SidecarTridge Multi-device](/sidecartridge-multidevice/assets/images/BOARD-3.1-PICOW-PERSPECTIVE.png)
 
 # SidecarTridge Multi-device Documentation 
 {: .d-inline-block }

@@ -14,7 +14,7 @@ Please select a project below to view the documentation.
 <table style="border-collapse: collapse; border: 0;">
     <tr>
         <td style="border: none;">
-            <img src="/sidecartridge-multidevice/assets/images/board-2.1.0-developers-perspective-thumbnail.png" alt="SidecarTridge multi-device thumbnail" style="vertical-align: middle; width: 128px"> 
+            <img src="/sidecartridge-multidevice/assets/images/BOARD-3.1-PICOW-PERSPECTIVE.png" alt="SidecarTridge multi-device thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
             <h2><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST/MegaST/STE/MegaSTE</a></h2>
