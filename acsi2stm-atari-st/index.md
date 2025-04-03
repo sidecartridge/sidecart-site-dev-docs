@@ -19,7 +19,9 @@ After extensive testing of the original ACSI2STM device, SidecarTridge has intro
 
 - **Premium microSD Card Slots:** Utilizing the same high-quality slots as the SidecarTridge Multi-device, these are more robust and feature a built-in eject mechanism, facilitating easy insertion and removal of microSD cards.
 
-- **Optimized Crystal Oscillator Circuit:** Adjustments in the capacitors of the crystal oscillator circuit have been made to enhance performance and stability. This modification addresses a flaw in the original design that could cause operational failures or prolonged boot times. For detailed information on recalibrating the capacitors in the crystal oscillator circuit, please refer to the [GitHub issue discussion](https://github.com/retro16/acsi2stm/issues/58). 
+- **Optimized Crystal Oscillator Circuit:** Adjustments in the capacitors of the crystal oscillator circuit have been made to enhance performance and stability. This modification addresses a flaw in the original design that could cause operational failures or prolonged boot times. For detailed information on recalibrating the capacitors in the crystal oscillator circuit, please refer to the [GitHub issue discussion](https://github.com/retro16/acsi2stm/issues/58).
+
+- **External LED connector:** The new design includes a connector for an external LED, allowing users to display the activity of the ACSI2STM device. This feature is particularly useful for those who prefer to place the ACSI2STM inside their Atari Mega ST or Mega STE, as it provides a visual indication of the device’s status without needing to open the case. 
 
 **The new board design is slightly larger than the original ACSI2STM with this very distintictive castile shape, and that is why it is called the "Castillian" ACSI2STM board. The new design is fully compatible with the original ACSI2STM firmware and retains all the features and functionality of the original device.**
 
@@ -33,6 +35,9 @@ After extensive testing of the original ACSI2STM device, SidecarTridge has intro
 
 <h3>🤝 <a href="/acsi2stm-atari-st/user-guide/">User Guide</a></h3>
 <p>Please read this section to know about open issues and compatibility.</p>
+
+<h3>🛠️ <a href="/acsi2stm-atari-st/external-led/">External Activity LED</a></h3>
+<p>How to connect an external activity LED to the ACSI2STM</p>
 
 <h3>🔧 <a href="/acsi2stm-atari-st/troubleshooting/">Troubleshooting</a></h3>
 <p>Common issues and how to solve them</p>
