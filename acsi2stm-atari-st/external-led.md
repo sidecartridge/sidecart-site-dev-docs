@@ -30,12 +30,18 @@ Earlier ACSI2STM versions included an onboard orange SMD activity LED. However, 
   A 2-pin header is provided on the PCB (below the onboard LED) labeled `EXTLED`. Polarity labels (+/-) are printed on the board.  
   > *Note: This header is not pre-soldered. You must install it yourself.*
 
+![ACSI2STM Activity External LED Connector](/acsi2stm-atari-st/assets/images/ACSI2STM2-EXTLED-CONNECTOR.png)
+
 - **SMD 220Ω Resistor**  
   Soldered on the PCB by default, this resistor limits the current through the external LED.
+
+![ACSI2STM Activity External LED SMD Resistor](/acsi2stm-atari-st/assets/images/ACSI2STM2-EXTLED-R12.png)
 
 - **Through-Hole Resistor Footprint**  
   An alternative to the SMD resistor, this placeholder allows the user to fine-tune LED brightness with a custom resistor.  
   > *Important: If you use the through-hole resistor, you should first remove the SMD resistor to avoid reducing total resistance too much.*
+
+![ACSI2STM Activity External LED Through Hole Resistor](/acsi2stm-atari-st/assets/images/ACSI2STM2-EXTLED-R14.png)
 
 By default, the circuit is compatible with the stock **Mega STe front-panel HDD activity LED**. However, LED brightness can vary depending on the LED’s forward voltage and current. In many cases, users may find the LED too dim and choose to replace the SMD resistor with a lower-value through-hole resistor (e.g., 220Ω or less).
 
