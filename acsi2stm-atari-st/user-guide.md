@@ -220,4 +220,4 @@ If you need to flash the firmware to the STM32 microcontroller, you will need a 
 
 [Previous: Before You Buy](/acsi2stm-atari-st/before-buy/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
-[Next: Troubleshooting](/acsi2stm-atari-st/troubleshooting/){: .btn }
+[Next: External LED](/acsi2stm-atari-st/external-led/){: .btn }

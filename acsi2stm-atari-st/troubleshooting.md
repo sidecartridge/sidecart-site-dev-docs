@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Troubleshooting
-nav_order: 4
+nav_order: 5
 nav_exclude: false
 parent: ACSI2STM Hard Disk for Atari ST
 ---
@@ -22,6 +22,6 @@ parent: ACSI2STM Hard Disk for Atari ST
 
 
 
-[Previous: User Guide](/acsi2stm-atari-st/user-guide){: .btn .mr-4 }
+[Previous: External LED](/acsi2stm-atari-st/external-led){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
 [Next: FAQ](/acsi2stm-atari-st/faq/){: .btn }

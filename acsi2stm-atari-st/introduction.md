@@ -56,6 +56,12 @@ The ACSI2STM Hard Disk device provided by the SidecarTridge project consists of 
 
 4. **USB-C Power Cable (NOT INCLUDED)**: A USB-C cable is required to power the ACSI2STM device, as it cannot draw enough power from the Atari’s ACSI port.
 
+5. **3V Lithium Battery (NOT INCLUDED)**: A CR2032 battery is required for the Real-Time Clock (RTC) functionality. This battery is not included with the device and must be purchased separately.
+
+6. **SD Card (NOT INCLUDED)**: At least an SD card is required for storage. The ACSI2STM device does not come with an SD card, so users must provide their own. It is recommended to use a high-quality SD card for optimal performance.
+
+7. **1x2 Pin Header**: Starting April 2025, a 1x2 pin header is included for connecting the external activity LED. This LED is not included with the device but can be found in Atari Mega STE computers. For other Atari models, the documentation provides instructions on how to make a simple LED circuit.
+
 ---
 
 [Previous: Index](/acsi2stm-atari-st/){: .btn .mr-4 }
