@@ -17,6 +17,9 @@ This section explains how to connect an external activity LED to the **ACSI2STM*
 {:toc}
 </details>
 
+![ACSI2STM Activity External LED](/acsi2stm-atari-st/assets/images/ACSI2STM2-EXTLED.png)
+
+
 ## 🧩 LED Circuit Overview
 
 Earlier ACSI2STM versions included an onboard orange SMD activity LED. However, since it’s not visible once the device is mounted inside an Atari Mega case, **revision 2.1 (April 2025)** added a circuit to support an external LED.
