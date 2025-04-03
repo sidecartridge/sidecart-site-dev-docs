@@ -50,7 +50,7 @@ Please select a project below to view the documentation.
     </tr>
     <tr>
         <td style="border: none;">
-            <img src="/acsi2stm-atari-st/assets/images/ACSI2STM2-SDCARDS-BATTERY-TOP.png"  alt="ACSI2STM HD thumbnail" style="vertical-align: middle; width: 128px"> 
+            <img src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP.png"  alt="ACSI2STM HD thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
             <h2><a href="/acsi2stm-atari-st/">ACSI2STM Hard Disk for ST/MegaST/STE/MegaSTE</a></h2>
