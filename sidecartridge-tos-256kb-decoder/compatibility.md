@@ -65,6 +65,7 @@ Hexa (6) ROM configurations are supported but require a custom solution that inc
 | C100167-001 Rev. 4.0     |       2        | Supported       |
 | C100167-001 Rev. B       |       2        | Supported       |
 | C100167-001 Rev. 5.0     |       2        | Supported       |
+| C100501-001              |       2        | Supported       | 
 | C103277 Rev 2.2          |       2        | Supported       | 
 | C103544-001              |       2        | Supported       |
 
