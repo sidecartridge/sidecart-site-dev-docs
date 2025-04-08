@@ -12,7 +12,12 @@ redirect_from:
 # Programming SidecarTridge Multi-device
 {: .no_toc }
 
-This section provides developers with in-depth guidance on programming the Multi-device board. It covers the ROM emulation, the asynchronous and synchronous programs and how to develop the firmware and drivers. It also covers deployment procedures, debugging strategies, and optimization techniques. A thorough understanding of these topics is essential for developing efficient, stable, and maintainable software for Multi-device.
+This section provides developers with in-depth guidance on programming the Multi-device board. It mainly covers the development of new applications or "microfirmware apps" for the RP2040 microcontroller. The guide is structured to help you understand the architecture of the Multi-device board, the microfirmware apps, and how to set up your development environment.
+
+{: .warning}
+This guide applies to the new version 2.0 of the firmware in alpha stage.
+
+
 
 <details open markdown="block">
   <summary>
