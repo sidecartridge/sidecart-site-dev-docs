@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Programming SidecarT
+title: Programming SidecarTridge Multi-device
 nav_order: 7
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
-  - /programming_sidecart
-  - /programming_sidecart/
+  - /programming
+  - /progamming/
 ---
 
-# Programming SidecarT
+# Programming SidecarTridge Multi-device
 {: .no_toc }
 
 This section provides developers with in-depth guidance on programming the SidecarT board. It covers the ROM emulation, the asynchronous and synchronous programs and how to develop the firmware and drivers. It also covers deployment procedures, debugging strategies, and optimization techniques. A thorough understanding of these topics is essential for developing efficient, stable, and maintainable software for SidecarT.

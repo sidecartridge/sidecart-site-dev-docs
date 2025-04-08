@@ -58,7 +58,7 @@ In the **Full ROM Emulation Mode**, the RP2040 maximizes its hardware, employing
 
 ### Hybrid Emulation Mode
 
-Transitioning to **Hybrid Emulation Mode**, the RP2040 extends beyond utilizing PIO and DMA. It reads incoming information from the Atari ST computer, interpreting it to materialize the desired functionality. **This code segment will demand modifications from developers to implement specific functionalities.** Refer to [Programming Multi-device](/sidecartridge-multidevice/programming_sidecart/) for guidance on execution. An exemplification of this would be the implementation of the [Configurator](https://github.com/sidecartridge/atarist-sidecart-firmware) application (or 'The Firmware'), a tool for configuring the Multi-device board. 
+Transitioning to **Hybrid Emulation Mode**, the RP2040 extends beyond utilizing PIO and DMA. It reads incoming information from the Atari ST computer, interpreting it to materialize the desired functionality. **This code segment will demand modifications from developers to implement specific functionalities.** Refer to [Programming Multi-device](/sidecartridge-multidevice/programming/) for guidance on execution. An exemplification of this would be the implementation of the [Configurator](https://github.com/sidecartridge/atarist-sidecart-firmware) application (or 'The Firmware'), a tool for configuring the Multi-device board. 
 
 ## Design Considerations
 

@@ -81,7 +81,7 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
     </tr>
     <tr>
         <td style="border: none;">
-            <h3>👨‍💻 <a href="/sidecartridge-multidevice/programming_sidecart/">Programming SidecarTridge Multi-device</a></h3>
+            <h3>👨‍💻 <a href="/sidecartridge-multidevice/programming/">Programming SidecarTridge Multi-device</a></h3>
             <p>Learn about the ROM emulation, the asynchronous and synchronous programs, develop the firmware and drivers.</p>
         </td>
         <td style="border: none;">
