@@ -543,6 +543,12 @@ As of Beta release v0.0.17, the SidecarTridge multidevice board introduces the M
 
 One of the most annoying things when using the SidecarTridge board is the need to remove the microSD card from the device and use a standard card reader to transfer files. The Mass Storage Mode eliminates this inconvenience, allowing users to access the microSD card directly from their computer, streamlining the file management process.
 
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/h6nc69UldEw?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
 ### Enabling Mass Storage Mode
 
 The Mass Storage Mode can only be enabled when the SidecarTridge board, with a microSD card inserted in its microSD card reader, is connected to a computer via USB and the SidecarTridge board is also in `Configurator` mode. The USB port provides both communication with the computer and power to the SidecarTridge board. When properly connected, the small green LED on the Raspberry Pi Pico W/WH will stay on steadily. Wait a few seconds for the computer to recognize the SidecarTridge board as a mass storage device, and you're ready to go. 
