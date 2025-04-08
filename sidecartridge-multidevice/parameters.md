@@ -12,7 +12,7 @@ redirect_from:
 # Configuration Parameters
 
 {: warning}
-Please modify the parameters with caution, as they can affect the behavior of the SidecarT board. Read the [User Guide](/sidecartridge-multidevice/userguide/) section for more information.
+Please modify the parameters with caution, as they can affect the behavior of the SidecarTridge Multi-device board. Read the [User Guide](/sidecartridge-multidevice/userguide/) section for more information.
 
 | Parameter            | Type      | Description                                            | Released | Default                              |
 |:---------------------|:----------|:-------------------------------------------------------|:---------|:-------------------------------------|

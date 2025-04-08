@@ -180,7 +180,7 @@ If `floppies` isn't your desired directory name, it can be changed. Adjust the `
 {: .note }
 Starting from v0.0.11 the Floppy Emulation supports .MSA files.
 
-The steps to select the floppy image to emulate are the same for both read-only and read-write modes. The SidecarT will convert the `.MSA` files to `.ST` files on the fly. 
+The steps to select the floppy image to emulate are the same for both read-only and read-write modes. The Multi-device will convert the `.MSA` files to `.ST` files on the fly. 
 
 ### Read-Write Emulation for Floppy Images
 
@@ -204,12 +204,12 @@ After selecting the option `[F] - Format a floppy image` . Select this option an
 - `Volume name (max 8 chars, dot, max 3 chars)`: The volume name of the floppy for the Atari ST computer. Can be empty.
 - `Image name (max 255 chars)`: The name of the floppy image file stored in the microSD card. Cannot be empty.
 
-Now the SidecarT will need a few seconds to create the empty floppy image. After that, the Atari ST will report to the user that the new image is ready to be used. The user can choose to start the image in read-only or read-write mode.
+Now the Multi-device will need a few seconds to create the empty floppy image. After that, the Atari ST will report to the user that the new image is ready to be used. The user can choose to start the image in read-only or read-write mode.
 
 {: .note }
 ### Floppy image formats supported
 
-The default format supported by the SidecarT is the `.ST` format. Starting from version v0.0.11, SidecarT can also read the `.MSA` format, converting it to `.ST` format on the fly. Under the covers, everything is a `.ST` file.
+The default format supported by the Multi-device is the `.ST` format. Starting from version v0.0.11, Multi-device can also read the `.MSA` format, converting it to `.ST` format on the fly. Under the covers, everything is a `.ST` file.
 
 A special mention to read-write images with the extions `.rw`. All `.ST` files are read-only files. The Multi-device will create a copy of the `.ST` file with the `.rw` extension to emulate a writable floppy image.
 
@@ -261,14 +261,14 @@ Distinct from other methods, the Multi-device uniquely facilitates hard disk emu
   
 - **Disadvantages**:
   - Writing operations to the hard disk are slower than reading due to the slower protocol communication with the RP2040 during write operations.
-  - Not all software is compatible, particularly those making direct hardware calls to the hard disk, as the SidecarT emulates hard disk functions by intercepting GEMDOS calls.
+  - Not all software is compatible, particularly those making direct hardware calls to the hard disk, as the Multi-device emulates hard disk functions by intercepting GEMDOS calls.
   - The emulation driver is less mature, potentially leading to bugs or issues during use.
 
 Despite these challenges, the benefits of Hard Disk Emulation often surpass the drawbacks, providing a reliable storage solution. Moreover, with ongoing development, the Multi-device is poised for further enhancements, promising an even more robust and user-friendly experience in the future.
 
 ### What is a GEMdrive
 
-The concept for the GEMdrive hard disk emulation originated with the GEMDOS component of the Hatari emulator, though it's worth noting that there exists a GemDrive for the ACSI2STM project, which serves a different purpose. Initially, the plan was to borrow the GEMDOS implementation from Hatari and adapt it for use with the Multi-device. However, this strategy proved unfeasible due to the Hatari emulator's capability for extensive interaction with both the Atari ST's internals and the host computer—capabilities that the Multi-device, as a peripheral, cannot match due to its need to adhere to the Atari ST's hardware constraints. The GEMDOS code from Hatari was ultimately deemed too intricate and too intertwined with the emulator itself for direct application in the SidecarT environment. Nevertheless, the exploration of Hatari's GEMDOS code was highly informative, leading to the development of a bespoke GEMdrive code specifically tailored for the Multi-device.
+The concept for the GEMdrive hard disk emulation originated with the GEMDOS component of the Hatari emulator, though it's worth noting that there exists a GemDrive for the ACSI2STM project, which serves a different purpose. Initially, the plan was to borrow the GEMDOS implementation from Hatari and adapt it for use with the Multi-device. However, this strategy proved unfeasible due to the Hatari emulator's capability for extensive interaction with both the Atari ST's internals and the host computer—capabilities that the Multi-device, as a peripheral, cannot match due to its need to adhere to the Atari ST's hardware constraints. The GEMDOS code from Hatari was ultimately deemed too intricate and too intertwined with the emulator itself for direct application in the Multi-device environment. Nevertheless, the exploration of Hatari's GEMDOS code was highly informative, leading to the development of a bespoke GEMdrive code specifically tailored for the Multi-device.
 
 The original GEMDOS driver allowed for the mounting of a Windows/OSX/Linux filesystem as an Atari ST disk drive, a functionality mirrored by the GEMdrive through its use of the microSD card filesystem, FatFS. While some advanced users may view this solution as excessive, it represents the sole method by which to provide substantial storage capacity to the Atari ST. More significantly, it marks a crucial **initial step towards realizing a network filesystem for the Atari ST.**
 
@@ -437,7 +437,7 @@ To Boot the emulator, press the `B` key. The Multi-device will reboot and depend
 - `DALLAS`: The Atari ST will boot normally. As explained above, the user must use a program that reads the values provided by the DALLAS 1216 emulator and sets the date and time in the Atari ST computer. Please keep in mind that DALLAS RTC emulation will only provide a valid date and time once the RP2040 obtains a valid date and time from the NTP server.
 
 {: .warning}
-The SidecarT will not return a valid date and time until it obtains a valid date and time from the NTP server. In the SIDECART RTC type, the Atari ST will not boot until the date and time are set, or fails. In the DALLAS RTC type, the Atari ST will boot normally, but the date and time will be invalid until the user sets them with a program.
+The Multi-device will not return a valid date and time until it obtains a valid date and time from the NTP server. In the SIDECART RTC type, the Atari ST will not boot until the date and time are set, or fails. In the DALLAS RTC type, the Atari ST will boot normally, but the date and time will be invalid until the user sets them with a program.
 {: .warning}
 
 ## Boot a ROM image from the microSD card in 'Rescue Mode'
@@ -446,7 +446,7 @@ The SidecarT will not return a valid date and time until it obtains a valid date
 {{ site.FIRMWARE_VERSION }}
 {: .label .label-green }
 
-The SidecarT can be a very helpful device to troubleshoot damaged computers. A good use case is bypass the configurator and let the SidecarT to run a "default ROM" when plugged. This new feature is called "Rescue Mode", and it will boot a ROM image from the microSD card when the SidecarT is plugged in the Atari ST without interacting with the configurator.
+The Multi-device can be a very helpful device to troubleshoot damaged computers. A good use case is bypass the configurator and let the Multi-device to run a "default ROM" when plugged. This new feature is called "Rescue Mode", and it will boot a ROM image from the microSD card when the Multi-device is plugged in the Atari ST without interacting with the configurator.
 
 ### How to enable the Rescue Mode
 To enable the Rescue Mode, the user must create a file named `.romrescue` in the root of the microSD card. The content of the file must be the name of the ROM image to boot as found in the `ROMS_FOLDER` (`roms` by default) configuration parameter. It's important to note that the user does not have to include the full path, just the name of the ROM image.
@@ -454,13 +454,13 @@ To enable the Rescue Mode, the user must create a file named `.romrescue` in the
 For example, if the user wants to boot a diagnostic ROM image named `ST Test v4.4.img` located in the `roms` folder, the content of the `.romrescue` file must be `ST Test v4.4.img`.
 
 ### First boot after enabling the Rescue Mode
-After saving the `.romrescue` file in the microSD card, insert the microSD card in the SidecarT and power on the Atari ST. Now, press the `SELECT` button more than one second to enter into the `Configurator` mode. Now the SidecarT will automatically read the `.romrescue` file and will save its content in the FLASH memory of the RP2040. 
+After saving the `.romrescue` file in the microSD card, insert the microSD card in the Multi-device and power on the Atari ST. Now, press the `SELECT` button more than one second to enter into the `Configurator` mode. Now the Multi-device will automatically read the `.romrescue` file and will save its content in the FLASH memory of the RP2040. 
 
 ### Next boots
-After that, the SidecarT will reboot in `ROM_EMULATION` mode and the Atari ST will boot the ROM image specified. 
+After that, the Multi-device will reboot in `ROM_EMULATION` mode and the Atari ST will boot the ROM image specified. 
 
 ### How to disable the Rescue Mode
-To disable the Rescue Mode, the user must delete the `.romrescue` file from the microSD card, or rename it. After that, if the user press the `SELECT` button for more than one second, the SidecarT will start in the `Configurator` mode as usual.
+To disable the Rescue Mode, the user must delete the `.romrescue` file from the microSD card, or rename it. After that, if the user press the `SELECT` button for more than one second, the Multi-device will start in the `Configurator` mode as usual.
 
 
 ## Configurator Application
@@ -484,10 +484,10 @@ This behavior is determined by the `SAFE_CONFIG_REBOOT` parameter.
 
 Immediately transitioning can be jarring for ongoing Atari ST applications. Especially for applications or drivers overseeing other storage devices, this abrupt switch can lead to compatibility concerns. As a preventive measure, the Multi-device can be set to defer this transition until the subsequent power cycle.
 
-By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the SidecarT will hold off until the next power cycle before transitioning to `Configurator` mode. Altering this behavior involves tweaking the `SAFE_CONFIG_REBOOT` parameter. Further insights can be found in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section.
+By default, `SAFE_CONFIG_REBOOT` is set to `true`. This means the Multi-device will hold off until the next power cycle before transitioning to `Configurator` mode. Altering this behavior involves tweaking the `SAFE_CONFIG_REBOOT` parameter. Further insights can be found in the [Configuration Parameters](/sidecartridge-multidevice/parameters/) section.
 
 {: .note}
-There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes sense. For instance, developers frequently adjusting the SidecarT configuration might find repeatedly waiting for a power cycle tedious. However, exercise this option judiciously.
+There are valid scenarios where setting `SAFE_CONFIG_REBOOT` to `false` makes sense. For instance, developers frequently adjusting the Multi-device configuration might find repeatedly waiting for a power cycle tedious. However, exercise this option judiciously.
 {: .note}
 
 ### Count the number files in the folders of the microSD card
@@ -517,7 +517,7 @@ The Multi-device currently doesn't support HTTPS. Ensure that your server uses H
 
 ### The STABLE and BETA release distribution workflows
 
-The Multi-device Latest release verification can be configured to check for new releases of type STABLE or BETA. With the growing user base of SidecarT, the need for extensive and stability-focused testing is becoming increasingly important. To address this, we propose introducing two distinct release workflows. This approach aims to balance the needs of our diverse user community, ranging from makers to those seeking more stable and reliable software.
+The Multi-device Latest release verification can be configured to check for new releases of type STABLE or BETA. With the growing user base of Multi-device, the need for extensive and stability-focused testing is becoming increasingly important. To address this, we propose introducing two distinct release workflows. This approach aims to balance the needs of our diverse user community, ranging from makers to those seeking more stable and reliable software.
 
 1. **BETA Release Workflow**: This caters to users who are interested in testing the latest features and providing valuable feedback. It allows us to incorporate user experiences into development, ensuring that the software meets a wide range of needs and use cases.
 
@@ -583,7 +583,7 @@ When the Mass Storage Mode is disabled, the SidecarTridge board will not enter i
 {{ site.FIRMWARE_BETA_VERSION }}
 {: .label .label-purple }
 
-As of Beta release v0.0.15, the Multi-device introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. SidecarT Configuration](/sidecartridge-multidevice/parameters/)** menu.
+As of Beta release v0.0.15, the Multi-device introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. Multi-device Configuration](/sidecartridge-multidevice/parameters/)** menu.
 
 ### Viewing Network Status
 
@@ -794,11 +794,11 @@ The MAC address serves as a fixed, unique identifier for the Multi-device's netw
 
 Many networks implement MAC address filtering as a security measure, controlling access by explicitly permitting or blocking devices based on their MAC addresses. This approach ensures only recognized devices can connect to the network.
 
-#### Integrating the SidecarT with MAC Address Filtering
+#### Integrating the Multi-device with MAC Address Filtering
 
 Should your network employ MAC address filtering, you must register the Multi-device's MAC address with your router to grant it network access. You can find the MAC address listed within the `W. Wi-Fi Configuration` menu of the Multi-device.
 
-#### Steps to Add the SidecarT MAC Address to Your Router
+#### Steps to Add the Multi-device MAC Address to Your Router
 
 1. Access the `W. Wi-Fi Configuration` menu on your Multi-device to locate its MAC address.
 2. Log into your router's administration interface. This typically involves entering the router's IP address in a web browser and signing in with your credentials.

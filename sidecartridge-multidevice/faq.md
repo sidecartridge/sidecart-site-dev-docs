@@ -10,13 +10,13 @@ redirect_from:
 ---
 
 # Frequently Asked Questions
-This section compiles a list of frequently asked questions (FAQs) about the SidecarT board, aimed at addressing common inquiries, clarifications, and concerns. Developers are encouraged to consult this section for quick references and insights.
+This section compiles a list of frequently asked questions (FAQs) about the SidecarTridge Multi-device board, aimed at addressing common inquiries, clarifications, and concerns. Developers are encouraged to consult this section for quick references and insights.
 
 ## General Questions
 
 ### What does the different LED blinking patterns mean?
 
-The SidecarT board features a series of LEDs that provide visual feedback on the board's status and operation. The following table outlines the different LED blinking patterns and their corresponding meanings:
+The Multi-device board features a series of LEDs that provide visual feedback on the board's status and operation. The following table outlines the different LED blinking patterns and their corresponding meanings:
 
 - ROM Emulation: 'E' (Emulator)
 - Configurator: 'C'

@@ -12,7 +12,7 @@ redirect_from:
 # Getting Started
 {: .no_toc }
 
-This section provides guidance on the initial steps to start working with the SidecarT board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the SidecarT board by following the procedures outlined in this and coming sections.
+This section provides guidance on the initial steps to start working with the SidecarTridge Multi-device board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the Multi-device board by following the procedures outlined in this and coming sections.
 
 <details open markdown="block">
   <summary>
@@ -26,19 +26,19 @@ This section provides guidance on the initial steps to start working with the Si
 ## Prerequisites for All Users
 
 ### Skills
-To begin with the SidecarT board, **all users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari ST computer series, its hardware, and software.
+To begin with the Multi-device board, **all users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari ST computer series, its hardware, and software.
 
 ### Hardware
 Users will need the following hardware:
 
-- An Atari ST computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the SidecarT board can emulate a physical floppy drive, so an Atari ST without a (or a broken) floppy drive can still be used with the SidecarT board. The SidecarT board is also compatible with TOS versions ranging from 1.00 to 2.06, almost every single ST and STE series compute sold.
+- An Atari ST computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the Multi-device board can emulate a physical floppy drive, so an Atari ST without a (or a broken) floppy drive can still be used with the Multi-device board. The Multi-device board is also compatible with TOS versions ranging from 1.00 to 2.06, almost every single ST and STE series compute sold.
 
 {:refdef: style="text-align: center;"}
 ![Atari 520ST](https://sidecartridge.com/assets/images/quickstart/atari520st.jpeg)
 {: refdef}
 
 
-- A SidecarT board
+- A Multi-device board
 
 {:refdef: style="text-align: center;"}
 ![SidecarT without Raspberry Pi Pico](/sidecartridge-multidevice/assets/images/BOARD-3.1-KIT-TOP.png)
@@ -55,7 +55,7 @@ Users will need the following hardware:
 Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldered to the board. If you want to use a Raspberry Pi Pico WH, you will have to solder two 20-pin female headers connectors to the board. You can find them in [our store here](https://store.sidecartridge.com/products/pair-of-2-54mm-square-plugin-2p-female-headers), or in any electronic store.
 
 
-- A USB A to micro USB *data* cable to install and update the SidecarT firmware on the Raspberry Pi Pico W. It's important to note the emphasis on a "data" cable - a simple charging cable won't suffice.
+- A USB A to micro USB *data* cable to install and update the Multi-device firmware on the Raspberry Pi Pico W. It's important to note the emphasis on a "data" cable - a simple charging cable won't suffice.
 
 {:refdef: style="text-align: center;"}
 ![USB A to micro USB](https://sidecartridge.com/assets/images/quickstart/microusb.jpeg)
@@ -65,7 +65,7 @@ Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldere
 - (Optional) A microSD card [formatted as FAT16 or exFAT](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to/#format-the-microsd-card).
 
 ### Initial Setup and Configuration
-The Initial Setup and Configuration is a multi-step process aimed at preparing the SidecarT board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecartridge.com/quickstart/sidecartridge-multidevice-atari-st/).
+The Initial Setup and Configuration is a multi-step process aimed at preparing the Multi-device board for use with the Atari ST, STE, or Mega computer. Here’s a summarized version of the [detailed instructions available here](https://sidecartridge.com/quickstart/sidecartridge-multidevice-atari-st/).
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
@@ -74,13 +74,13 @@ The Initial Setup and Configuration is a multi-step process aimed at preparing t
 </figure>
 
 {: .important }
-It does not matter if you are an experience developer or a novice enthusiast; the above steps are mandatory to get started with the SidecarT board. Please don't skip any of the steps, as it may lead to unexpected results.
+It does not matter if you are an experience developer or a novice enthusiast; the above steps are mandatory to get started with the Multi-device board. Please don't skip any of the steps, as it may lead to unexpected results.
 
 
 ## Prerequisites for Developers and Makers
 
 ### Skills
-To begin with the SidecarT board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. To contribute effectively to the SidecarT project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
+To begin with the Multi-device board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. To contribute effectively to the Multi-device project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
 
 - **C Programming**: Essential for software development and firmware writing. Ensure you have a grasp on data structures, memory management, and algorithm development within C.
 
@@ -104,25 +104,25 @@ To begin with the SidecarT board, **developers are required to have a minimum ex
 
 - **Integration with GDB**: Skills in using GDB for debugging software, setting breakpoints, inspecting variables, and analyzing program flow, especially in conjunction with Visual Studio Code, are essential for troubleshooting and ensuring software stability.
 
-And if you want to contribute to the harware, skills in reading schematics, understanding electronic components, and practical skills like soldering will facilitate working with the hardware aspects of SidecarT.
+And if you want to contribute to the harware, skills in reading schematics, understanding electronic components, and practical skills like soldering will facilitate working with the hardware aspects of Multi-device.
     
 {: .note }
-Even if you’re not an expert in all these areas, your contribution is still valuable. Engage, learn, and grow with the SidecarT community!
+Even if you’re not an expert in all these areas, your contribution is still valuable. Engage, learn, and grow with the Multi-device community!
 
 ### Hardware
 Additionally, developers need the following hardware:
 - An Atari ST computer series: ST, STE, or Mega (See above)
 
-- A SidecarT board (See above)
+- A Multi-device board (See above)
 
-- A [Raspberry Pi Pico W or WH board](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-wh) to connect it to the SidecarT board. The `W` stands for **Wireless** and the `H` stands for **Header**. The `H` version comes with the header pins already soldered to the board and a JST debugger connector needed to connect the Raspberry Pi Debug Board. Since version 3.1 of the board, it's also possible to get the debug signals directly on the JST connector of the board.
+- A [Raspberry Pi Pico W or WH board](https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-wh) to connect it to the Multi-device board. The `W` stands for **Wireless** and the `H` stands for **Header**. The `H` version comes with the header pins already soldered to the board and a JST debugger connector needed to connect the Raspberry Pi Debug Board. Since version 3.1 of the board, it's also possible to get the debug signals directly on the JST connector of the board.
 
 {:refdef: style="text-align: center;"}
 ![Raspberry Pi Pico WH](https://sidecartridge.com/assets/images/quickstart/raspberry-pi-pico-rp2040-wh.png)
 {: refdef}
 
 
-- A [Raspberry Pi Debug board](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) or an equivalent debug board to connect it to the SidecarT board
+- A [Raspberry Pi Debug board](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) or an equivalent debug board to connect it to the Multi-device board
 
 {:refdef: style="text-align: center;"}
 ![Raspberry Pi Pico WH](/sidecartridge-multidevice/assets/images/debug-probe.jpg)
@@ -137,12 +137,12 @@ Additionally, developers need the following hardware:
 - A Windows PC, Linux or a Mac with a USB port to connect to the Raspberry Pi Debug board and the Raspberry Pi Pico W board to program it
 
 {: .note }
-These prerequisites are considered as a minimum baseline. Being well-versed with the aforementioned technologies and having the required hardware will ensure a seamless initial experience with the SidecarT board.
+These prerequisites are considered as a minimum baseline. Being well-versed with the aforementioned technologies and having the required hardware will ensure a seamless initial experience with the Multi-device board.
 
 ### Board Assembly
-Anyone with the requisite skills can opt to build their own SidecarT board. The schematics needed to assemble the board can be found in the [Github repository](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/tree/main/schematics). It provides detailed blueprints to guide users through the assembly process.
+Anyone with the requisite skills can opt to build their own Multi-device board. The schematics needed to assemble the board can be found in the [Github repository](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/tree/main/schematics). It provides detailed blueprints to guide users through the assembly process.
 
 However, it is worth noting that acquiring the board through our [online shop](https://store.sidecartridge.com) is likely to be both cheaper and more convenient, given the complexities involved in assembling the board.
 
 {: .warning }
-Assembling the board independently can be a rewarding and enriching learning experience for those who are interested in a hands-on approach to understanding the intricate workings of the SidecarT board. Obviously, it is not recommended for those who are new to hardware development.
+Assembling the board independently can be a rewarding and enriching learning experience for those who are interested in a hands-on approach to understanding the intricate workings of the Multi-device board. Obviously, it is not recommended for those who are new to hardware development.

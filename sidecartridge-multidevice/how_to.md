@@ -12,7 +12,7 @@ redirect_from:
 # How to
 {: .no_toc }
 
-This section showcases a variety of different configurations and parametric setups for the SidecarT board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the SidecarT board. If you are new to the SidecarT project, please refer to the [Getting Started](/sidecartridge-multidevice/getting_started/) section first.
+This section showcases a variety of different configurations and parametric setups for the SidecarTridge Multi-device board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the Multi-device board. If you are new to the Multi-device project, please refer to the [Getting Started](/sidecartridge-multidevice/getting_started/) section first.
 
 <details open markdown="block">
   <summary>
@@ -25,7 +25,7 @@ This section showcases a variety of different configurations and parametric setu
 
 ## Update the firmware
 
-To install the latest SidecarT firmware on the Raspberry Pi Pico W, connect your PC, Mac, or Linux to the Raspberry Pi Pico W using the USB cable. Now hold down the BOOTSEL button for a few seconds and then hold down the RESET button. Now release the RESET button and gently release the BOOTSEL button afterwards. A new drive named `RPI-RP2` should appear on your PC, Mac, or Linux. Open it.
+To install the latest Multi-device firmware on the Raspberry Pi Pico W, connect your PC, Mac, or Linux to the Raspberry Pi Pico W using the USB cable. Now hold down the BOOTSEL button for a few seconds and then hold down the RESET button. Now release the RESET button and gently release the BOOTSEL button afterwards. A new drive named `RPI-RP2` should appear on your PC, Mac, or Linux. Open it.
 
 {:refdef: style="text-align: center;"}
 ![How enter in BOOTSEL mode](https://sidecartridge.com/assets/images/quickstart/bootsel-mode.gif)
@@ -37,7 +37,7 @@ Once you've copied the file corresponding to your Raspberry Pico W, disconnect t
 
 ## Format the microSD card
 
-To use the SidecarT effectively, your microSD card needs to be formatted in FAT16 or exFAT. Here's how you can format it in FAT16 or exFAT on various platforms:
+To use the Multi-device effectively, your microSD card needs to be formatted in FAT16 or exFAT. Here's how you can format it in FAT16 or exFAT on various platforms:
 
 ### Windows:
 
@@ -85,17 +85,17 @@ Always ensure you've selected the correct device to format, especially when work
 
 ### Introduction
 
-The SidecarT board is designed to be used with a web server to host the ROMs. This is the recommended way to use the board if you don't want to store the ROM files in the microSD card, as it allows for a more flexible and user-friendly experience. This guide will show you how to set up a local HTTP server on your computer and configure the SidecarT board to use it.
+The Multi-device board is designed to be used with a web server to host the ROMs. This is the recommended way to use the board if you don't want to store the ROM files in the microSD card, as it allows for a more flexible and user-friendly experience. This guide will show you how to set up a local HTTP server on your computer and configure the Multi-device board to use it.
 
 ### Set up a HTTP server
 
 There are many ways to set up a HTTP server and there are plenty of tutorials online. It's also possible to use a storage cloud service like Amazon S3 to host the ROMs. For the purpose of this guide, we will only reference some standard HTTP server setups from the internet.
 
 {: .note }
-The SidecarT bord does not support HTTPS at the moment. Make sure to disable HTTPS and use HTTP only.
+The Multi-device bord does not support HTTPS at the moment. Make sure to disable HTTPS and use HTTP only.
 
 {: .note }
-The SidecarT board also only supports access through port 80 and without proxy. Make sure to configure your server accordingly.
+The Multi-device board also only supports access through port 80 and without proxy. Make sure to configure your server accordingly.
 
 {: .note }
 
@@ -112,7 +112,7 @@ The SidecarT board also only supports access through port 80 and without proxy. 
 {: .warning }
 The JSON file has been deprecated starting in version v0.0.18 of the firmware due to performance reasons. Please see the `roms.csv` format instead.
 
-The `roms.json` file is a JSON file that contains the list of ROMs available on the server. The SidecarT board will use this file to display the list of ROMs in the `Configurator` application. The file must be located at any accessible path on the server. For example, if the server is running on `http://yourserver`, the file can be located at `http://yourserver/roms.json`.
+The `roms.json` file is a JSON file that contains the list of ROMs available on the server. The Multi-device board will use this file to display the list of ROMs in the `Configurator` application. The file must be located at any accessible path on the server. For example, if the server is running on `http://yourserver`, the file can be located at `http://yourserver/roms.json`.
 
 
 The format of the file is as follows:
@@ -200,16 +200,16 @@ The full content of the sample `roms.csv` file can be found [here](http://roms.s
 
 The ROM images can be uploaded to any accessible path on the server. For example, if the server is running on `http://yourserver`, the ROM images can be located at `http://yourserver/roms/`. 
 
-If the ROM images have a suffix with the name `.STC` and also the first four bytes are zeroed out, the SidecarT board will automatically detect the ROM as a STEEM ROM and will offset the four bytes out. Otherwise, the ROM will be detected as a standard Atari ST ROM. 
+If the ROM images have a suffix with the name `.STC` and also the first four bytes are zeroed out, the Multi-device board will automatically detect the ROM as a STEEM ROM and will offset the four bytes out. Otherwise, the ROM will be detected as a standard Atari ST ROM. 
 
 {: .warning }
 Don't forget to update the `url` field in the `roms.csv` file to point to the correct location of the ROM images.
 
 
 
-### Change the SidecarT board configuration
+### Change the Multi-device board configuration
 
-The SidecarT board can be configured to use any HTTP server by changing the `ROMS_YAML_URL` parameter in the configuration parameters of the `Configursator`. The default value of this parameter is `http://roms.sidecartridge.com/roms.csv`. You should change this value to point to your own `roms.csv` file.
+The Multi-device board can be configured to use any HTTP server by changing the `ROMS_YAML_URL` parameter in the configuration parameters of the `Configursator`. The default value of this parameter is `http://roms.sidecartridge.com/roms.csv`. You should change this value to point to your own `roms.csv` file.
 
 {: .note }
 The `ROMS_YAML_URL` is not the right name for this parameter. It will be renamed in the future to `ROMS_JSON_URL`.
@@ -222,7 +222,7 @@ Once the parameter is changed, you can test the configuration by running the `Co
 
 ### Introduction
 
-The SidecarT board is designed to access to a remote Atari ST database of floppy images with hundreds of images and thousands of applications. Thanks to this database, the SidecarT board can easily find and launch software in an easy way. The previous chapter explained how to configure a generic HTTP server, this chapter will explain how to configure the specific files for the Atari ST database.
+The Multi-device board is designed to access to a remote Atari ST database of floppy images with hundreds of images and thousands of applications. Thanks to this database, the Multi-device board can easily find and launch software in an easy way. The previous chapter explained how to configure a generic HTTP server, this chapter will explain how to configure the specific files for the Atari ST database.
 
 ### The database files
 
@@ -250,13 +250,13 @@ For example a excerpt of the file `a.csv`:
 
 ### Introduction
 
-The SidecarT board can be configured to connect to a WiFi network by configuring the WiFi SSID and password in the `Configurator`. Sometimes entering the WiFi password using the `Configurator` can be cumbersome, especially if the password is long. This how-to will explain how to configure the WiFi password in a file in the microSD card so that the SidecarT board can automatically connect to the WiFi network.
+The Multi-device board can be configured to connect to a WiFi network by configuring the WiFi SSID and password in the `Configurator`. Sometimes entering the WiFi password using the `Configurator` can be cumbersome, especially if the password is long. This how-to will explain how to configure the WiFi password in a file in the microSD card so that the Multi-device board can automatically connect to the WiFi network.
 
 ### Create the `.wifipass` file
 
-The `.wifipass` file is a text file that contains the WiFi password. The file must be located at the root of the microSD card. The SidecarT board will automatically read the file and connect to the WiFi network, overriding the WiFi password configured in the `Configurator`.
+The `.wifipass` file is a text file that contains the WiFi password. The file must be located at the root of the microSD card. The Multi-device board will automatically read the file and connect to the WiFi network, overriding the WiFi password configured in the `Configurator`.
 
-To create the file, open a text editor in your PC/Mac/Linux computer and type the WiFi password. Save the file as `.wifipass` and insert the microSD card into the SidecarT board. The SidecarT board will automatically read the file and connect to the WiFi network after a reboot or power cycle of the SidecarT board.
+To create the file, open a text editor in your PC/Mac/Linux computer and type the WiFi password. Save the file as `.wifipass` and insert the microSD card into the Multi-device board. The Multi-device board will automatically read the file and connect to the WiFi network after a reboot or power cycle of the Multi-device board.
 
 {: .note }
 The maximum length of the WiFi password is 63 characters.

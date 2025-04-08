@@ -12,7 +12,7 @@ redirect_from:
 # Software Development
 {: .no_toc }
 
-This section is dedicated to providing developers with a comprehensive guide to software development for the SidecarT board. It covers setting up the development environment, understanding the software architecture, utilizing the API, and exploring example projects. Grasping these elements is crucial for developing robust, efficient, and innovative applications on the SidecarT platform.
+This section is dedicated to providing developers with a comprehensive guide to software development for the SidecarTrige Multi-device board. It covers setting up the development environment, understanding the software architecture, utilizing the API, and exploring example projects. Grasping these elements is crucial for developing robust, efficient, and innovative applications on the Multi-device platform.
 
 <details open markdown="block">
   <summary>
@@ -33,7 +33,7 @@ We also think it's very important to setup the picoprobe debugging hardware. The
 - [Raspberry Pi Pico and RP2040 - C/C++ Part 1: Blink and VS Code](https://www.digikey.es/en/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-1-blink-and-vs-code/7102fb8bca95452e9df6150f39ae8422)
 - [Raspberry Pi Pico and RP2040 - C/C++ Part 2 Debugging with VS Code](https://www.digikey.es/en/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0)
 
-To support the debugging the SidecarT has four pins that are connected to the picoprobe hardware debugger. These pins are:
+To support the debugging the Multi-device has four pins that are connected to the picoprobe hardware debugger. These pins are:
 - UART TX: This pin is used to send the debug information from the RP2040 to the picoprobe hardware debugger.
 - UART RX: This pin is used to send the debug information from the picoprobe hardware debugger to the RP2040.
 - GND: Two ground pins. One MUST connect to the GND of the Raspberry Pi Pico W (the middle connector between DEBUG and SWCLK and SWDIO) and the other MUST connect to the GND of the picoprobe hardware debugger. Don't let this pins floating, otherwise the debugging will not work.
@@ -75,7 +75,7 @@ The `.vscode` folder contains the configuration files for Visual Studio Code. **
 ## Building the firmware
 ### From the command line
 
-To build a production ready firmware for the SidecarT board, follow these steps:
+To build a production ready firmware for the Multi-device board, follow these steps:
 
 1. Clone this repository:
 
@@ -115,10 +115,10 @@ The development on the RP2040 of the Raspberry Pi Pico is straightforward if you
 Here goes a list of things to take into account when developing:
 
 1. The source code is inside the `romemul` folder. This name could change in the future.
-2. `memmap_romemul.ld` is the linker script used to link the code. It contains the different memory sections that the Sidecart needs. Please don't change these values if you don't know what you are doing. The RAM for the RP2040 has been reduced to 128Kbytes to keep the Atari ST ROMs in the RAM for performance reasons. Also, don't modify the space needed for configuration data. This data is used to store the configuration of the SidecarT board and it's used by the `CONFIGURATOR` tool.
+2. `memmap_romemul.ld` is the linker script used to link the code. It contains the different memory sections that the Multi-device needs. Please don't change these values if you don't know what you are doing. The RAM for the RP2040 has been reduced to 128Kbytes to keep the Atari ST ROMs in the RAM for performance reasons. Also, don't modify the space needed for configuration data. This data is used to store the configuration of the Multi-device board and it's used by the `CONFIGURATOR` tool.
 3. CMakelists.txt is the file used by the CMake tool to build the project.
 
-A special note about the `firmware.c` file. This file is an array generated with the python script `download_firmware.py`. This script downloads the latest version of the Atari ST firmware contained in the repository [atarist-sidecart-firmware](https://github.com/sidecartridge/atarist-sidecart-firmware). The same can apply to `firmware_floppyemul` file. This file is an array generated with the python script `download_floppyemul.py`. This script downloads the latest version of the Atari ST Floppy emulator driver contained in the repository [atarist-sidecart-floppy-emulator](https://github.com/sidecartridge/atarist-sidecart-floppy-emulator). Hence, the code embeds the Atari ST firmware in the SidecarT firmware. This is done to simplify the development and to avoid the need to flash the Atari ST firmware in the RP2040. **As a rule of thumb, if you modify any of those firmwares, you have to regenerate the `firmware.c` and `firmware_floppyemul.c` file. To do that, just run the `download_firmware.py` and `download_floppyemul.py` scripts.**
+A special note about the `firmware.c` file. This file is an array generated with the python script `download_firmware.py`. This script downloads the latest version of the Atari ST firmware contained in the repository [atarist-sidecart-firmware](https://github.com/sidecartridge/atarist-sidecart-firmware). The same can apply to `firmware_floppyemul` file. This file is an array generated with the python script `download_floppyemul.py`. This script downloads the latest version of the Atari ST Floppy emulator driver contained in the repository [atarist-sidecart-floppy-emulator](https://github.com/sidecartridge/atarist-sidecart-floppy-emulator). Hence, the code embeds the Atari ST firmware in the Multi-device firmware. This is done to simplify the development and to avoid the need to flash the Atari ST firmware in the RP2040. **As a rule of thumb, if you modify any of those firmwares, you have to regenerate the `firmware.c` and `firmware_floppyemul.c` file. To do that, just run the `download_firmware.py` and `download_floppyemul.py` scripts.**
 
 ## Releases
 
@@ -126,15 +126,6 @@ For releases, head over to the [Releases page](https://github.com/sidecartridge/
 
 For a quick tutorial about how to flash the firmware in the Raspberry Pi Pico, please read the [Quickstart](https://sidecartridge.com/quickstart/sidecartridge-multidevice-atari-st/).
 
-## Changelog
-
-The full changelog is available in the [CHANGELOG.md](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/main/CHANGELOG.md) file. 
-
-## Resources 
-
-- [Sidecart ROM Emulator website](https://)
-- [Sidecart Atari ST Firmware](https://github.com/sidecartridge/atarist-sidecart-firmware).
-- [Sidecart Atari ST Test ROM](https://github.com/sidecartridge/atarist-sidecart-test-rom).
 
 ## Contribute
 
