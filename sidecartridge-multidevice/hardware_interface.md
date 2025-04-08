@@ -12,7 +12,7 @@ redirect_from:
 # Hardware Interface
 {: .no_toc }
 
-This section delves into the hardware interface of the SidecarT board, specifically the way the board and the code in the RP2040 handle the mismatch of the size of the buses between the RP2040 and the Atari ST cartridge port.
+This section delves into the hardware interface of the Multi-device board, specifically the way the board and the code in the RP2040 handle the mismatch of the size of the buses between the RP2040 and the Atari ST cartridge port.
 
 <details open markdown="block">
   <summary>
@@ -69,7 +69,7 @@ The Raspberry Pi Pico extends support for the subsequent peripheral interfaces o
 - 16x PWM channels
 - 4x ADC pins
 
-The RP2040 GPIOs can play different roles depending on the configuration given. For SidecarT, we will use as pure GPIOs pins. The RP2040 GPIOs can be configured as inputs or outputs, and the direction can be changed dynamically. The RP2040 GPIOs can also be configured to have a pull-up or pull-down resistor, and the resistor can be enabled or disabled dynamically.
+The RP2040 GPIOs can play different roles depending on the configuration given. For Multi-device, we will use as pure GPIOs pins. The RP2040 GPIOs can be configured as inputs or outputs, and the direction can be changed dynamically. The RP2040 GPIOs can also be configured to have a pull-up or pull-down resistor, and the resistor can be enabled or disabled dynamically.
 
 Of the remaining 14 pins, the Raspberry Pi Pico possesses numerous power pins, including 3V3 (OUT), VSYS, and VBUS, which are demarcated as red on the pinout diagrams. Moreover, several ground pins are presented, marked in black on the pinout diagrams, while the remaining pins are designated for internal GPIOs and ground connections.
 
@@ -77,7 +77,7 @@ Of the remaining 14 pins, the Raspberry Pi Pico possesses numerous power pins, i
 ![Raspberry Pi Pico W Pinout](/sidecartridge-multidevice/assets/images/Raspberry-Pi-Pico-W-Pinout.webp)
 {: refdef}
 
-### The SidecarT GPIOs
+### The Multi-device GPIOs
 
 In our configuration, the GPIOs are attributed to the following functions:
 
@@ -90,7 +90,7 @@ In our configuration, the GPIOs are attributed to the following functions:
 - GP27: `!READ` - output
 - GP28: `!WRITE` - output
 
-There are three pins that are very important for developers but not for users not willing to develop their own software. These pins are the SWD pins, which are used to program the RP2040. The SWD pins are not used by the SidecarT software, but they are used by the Raspberry Pi Pico SDK to program the RP2040. Please see the section on [Software Development](/sidecartridge-multidevice/software_development/) for more information.
+There are three pins that are very important for developers but not for users not willing to develop their own software. These pins are the SWD pins, which are used to program the RP2040. The SWD pins are not used by the Multi-device software, but they are used by the Raspberry Pi Pico SDK to program the RP2040. Please see the section on [Software Development](/sidecartridge-multidevice/software_development/) for more information.
 
 As a prudent guideline, altering the direction of the GPIOs is typically discouraged unless executed with impeccable timing. The modulated directional change of GP6 to GP21 every 250ms—implemented to read the address bus and write the data bus—emerges as an optimal solution, adeptly navigating the discrepancy in bus sizes between the RP2040 and the Atari ST cartridge port, as will be explored in the ensuing section.
 
@@ -119,7 +119,7 @@ Hence, we have to focus on `!ROM3` and `!ROM4`. So this is the algorithm we have
 ![Ideal Read Access to Atari ST cartridge](/sidecartridge-multidevice/assets/wavedrom/ideal-read-operation.png)
 {: refdef}
 
-This diagram represents the ideal behaviour of a read data access in the Atari ST cartridge. The red columns represents the address bus access and the blue columns represents the data bus access. An Atari ST program requests to the &FA0001, &FA0003, &FA0001, &FA8007 addresses to return from the memory a word value (in this example it returns the value of the address). Since the example is simply an example of the ideal usage, the address data stays in the address bus even when the data bus is populated with the result, until the `!ROM4` is deactivated again. As we will see, this is not the case in the SidecarT implementation.
+This diagram represents the ideal behaviour of a read data access in the Atari ST cartridge. The red columns represents the address bus access and the blue columns represents the data bus access. An Atari ST program requests to the &FA0001, &FA0003, &FA0001, &FA8007 addresses to return from the memory a word value (in this example it returns the value of the address). Since the example is simply an example of the ideal usage, the address data stays in the address bus even when the data bus is populated with the result, until the `!ROM4` is deactivated again. As we will see, this is not the case in the Multi-device implementation.
 
 So the `!ROM4` (it could be `!ROM3` as well) are actually playing the role of a READ signal: when any of them are active, the peripheral in the cartridge expansion port must read the address bus and write to the data bus before the `!ROM4` signals are deactivated again.
 
@@ -146,9 +146,9 @@ In the diagram above about the ideal scenario we draw on purpose how the Address
 {: .note }
 The floating state, or high-impedance state (Hi-Z), refers to a condition in which a circuit component, such as a bus line, is not actively being driven to a logical high (1) or low (0) level.
 
-In electronic engineering it's very common to use **Tri-State Buffer** to change from the active/inactive states to Hi-Z state. And guess what? The SidecarT board has two sets of Tri-State Buffers in the level shifters. The Tri-State Buffers are controlled by the `!OE` signal. When the `!OE` signal is low, the Tri-State Buffers are enabled and the signals are allowed to cross from one side to the other. When the `!OE` signal is high, the Tri-State Buffers are disabled and the signals are not allowed to cross from one side to the other. So we can use the `!OE` signal to control the Hi-Z state of the address and data bus signals.
+In electronic engineering it's very common to use **Tri-State Buffer** to change from the active/inactive states to Hi-Z state. And guess what? The Multi-device board has two sets of Tri-State Buffers in the level shifters. The Tri-State Buffers are controlled by the `!OE` signal. When the `!OE` signal is low, the Tri-State Buffers are enabled and the signals are allowed to cross from one side to the other. When the `!OE` signal is high, the Tri-State Buffers are disabled and the signals are not allowed to cross from one side to the other. So we can use the `!OE` signal to control the Hi-Z state of the address and data bus signals.
 
-So we have all the electronics needed to orchestrate our time multiplexed access to the Atari ST cartridge address and data bus. Now we need the orchestra director, which is the RP2040, to decide when to read the address bus and when to write the data bus. This is the reason why in the SidecarT board there are two output GPIOs that are not present in the Atari ST cartridge port: `!READ` and `!WRITE`. These two GPIOs are used by the RP2040 to control the `!OE` signal of the level shifters and therefore to control the Hi-Z state of the address and data bus signals.
+So we have all the electronics needed to orchestrate our time multiplexed access to the Atari ST cartridge address and data bus. Now we need the orchestra director, which is the RP2040, to decide when to read the address bus and when to write the data bus. This is the reason why in the Multi-device board there are two output GPIOs that are not present in the Atari ST cartridge port: `!READ` and `!WRITE`. These two GPIOs are used by the RP2040 to control the `!OE` signal of the level shifters and therefore to control the Hi-Z state of the address and data bus signals.
 
 A smart reader could make the guess that it is not necessary to have a `!READ` and `!WRITE` signal, but having only one and inverting the signal to control the `!OE` signal of the level shifter could be enough. But this is not case we want to tackle. There is a third scenario when you want no access at all from the RP2040 to the Atari ST cartridges buses. There is an alternative mixing the `ROM3` and `ROM4` signals and a hypothetical `RW` signal at the electronics level to control the `!OE` signal of the level shifter. But it would complicate the design and reduce the flexibility of the solution. So we will keep the `!READ` and `!WRITE` signals.
 
@@ -182,6 +182,7 @@ This diagram shows the address bus signals crossing the 75LVS245 level shifter w
 is low the level shifter is enabled and the signals are allowed to cross from one side to the other. So all the address bus signals
 will propagate from the Atari ST side to the RP2040 side.
 
+```
 ns    0                                                      SCycle 1 (500ns)                                              SCycle 2 (500ns)
 ------|-------------------------------------------------------------|--------------------------------------------------------------|
 
@@ -205,6 +206,7 @@ A12:   -------------------------------------------------------------------------
 A13:   ---------------------------------------------------------------------------------------------------------------------_______
 A14:   ----------------------------------------------------------------------------------------------------------------------------
 A15:   ----------------------------------------------------------------------------------------------------------------------------
+```
 
 ## A1 to A15 address bus with ROMx signals control
 
