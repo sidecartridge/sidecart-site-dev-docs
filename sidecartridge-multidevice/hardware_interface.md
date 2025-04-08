@@ -217,13 +217,17 @@ To avoid unnecessary reads to the address bus, we can use the `!ROM4` and `!ROM3
 Striclty speaking, the level shifter `!OE` signal could be connected always to GND and the address bus signals will be propagated 
 always to the RP2040 side. In the RP2040 side we can use the `!ROM4` and `!ROM3` signals to control when the address bus is read.
  
-
-
-
-
-
-
-
 ## How to orchestrate the access to the Atari ST cartridge address and data buses
 
+The code in `romemul.pio` is a PIO program that orchestrates the access to the Atari ST cartridge address and data buses. As we have seen in the previous sections, we have to share the GPIOs of the RP2040 between the address bus and the data bus. The PIO program will take care of this. The PIO program is a state machine that will execute the following steps:
+
+1. Wait until the `!ROM4` or `!ROM3` signals are low (ACTIVE). 
+2. Enable the `!READ` signal and disable the `!WRITE` signal. This will enable the level shifter and allow the address bus signals to cross from the Atari ST side to the RP2040 side.
+3. Read the address bus and wait until the address information is stable. This should not take more than 1 Atari ST clock cycles (125ns) and the remaining time not consumed in step 1.
+4. Write the address bus signals to the FIFO queue, and wait for the chained DMAs to read the memory value obtained.
+5. Disable the `!READ` signal and enable the `!WRITE` signal. This will disable the level shifter and allow the data bus signals to cross from the RP2040 side to the Atari ST side.
+6. Read the data value from the FIFO queue and write it to the data bus. This should take 1 Atari ST clock cycles (125ns) plus the remaining time not consumed in previous steps.
+7. Wait until the `!ROM4` or `!ROM3` signals are high (INACTIVE).
+8. Disable the `!WRITE` and `!READ` signals. 
+9. Repeat
 
