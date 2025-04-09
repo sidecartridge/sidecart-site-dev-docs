@@ -78,13 +78,6 @@ All the compile, debug and build scripts use these environment variables to loca
 
 To configure Visual Studio Code to work with the Raspberry Pi Pico, please follow the [Raspberry Pi Pico and RP2040 - C/C++ Part 2 Debugging with VS Code](https://www.digikey.es/en/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0) tutorial.
 
-The `.vscode` folder contains the configuration files for Visual Studio Code. **Please modify them as follows**:
-
-- `launch.json`: Modify the `gdbPath` property to point to the `arm-none-eabi-gdb` file in your computer.
-- `launch.json`: Modify the `searchDir` property to point to the `/tcl` folder inside the `openocd` project in your computer.
-- `settings.json`: Modify the `cortex-debug.gdbPath` property to point to the `arm-none-eabi-gdb` file in your computer.
-
-These variables allow the debugger to **automatically find GDB and OpenOCD** without modifying the `launch.json` file every time you switch environments.
 
 **Linux/macOS**
 ```sh
@@ -166,8 +159,118 @@ The Pico W and Pico 2W feature a **2MB flash memory**, structured as follows:
 +-----------------------------------------------------+
 ```
 
+## How to Create a New Firmware Project Using `md-microfirmware-template`
 
-### Microfirmware app libraries and components  
+This guide walks you through the steps to clone and configure a new firmware project for the SidecarTridge Multi-device platform, using `md-rtc-emulator` as an example.
+
+### 1. **Create a GitHub Repository from the Template**  
+
+![Clone template](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-1.png)
+
+1. Navigate to the [`md-microfirmware-template`](https://github.com/sidecartridge/md-microfirmware-template) repository.
+2. Click the green **“Use this template”** button and select **“Create a new repository”**.
+3. Set the repository name to `md-rtc-emulator` (or any other descriptive name).
+4. Ensure visibility is set to **Public** or **Private** as needed.
+5. Click **“Create repository”**.
+
+![Clone template 2](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-2.png)
+
+### 2. **Clone Your New Repository Locally**  
+
+![Clone template 3](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-3.png)
+
+Pick the URL of the new repository you just created.
+
+![Clone template 4](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-4.png)
+
+Clone your new repo using SSH or HTTPS:
+
+```bash
+git clone git@github.com:sidecartridge/md-rtc-emulator.git
+cd md-rtc-emulator
+```
+
+![Clone template 5](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-5.png)
+
+### 3. **Initialize Git Submodules**  
+
+
+Run the following commands to initialize all required submodules:
+
+```bash
+git submodule init
+git submodule update --init --recursive
+```
+
+This pulls in essential dependencies like:
+- `pico-sdk`
+- `pico-extras`
+- `fatfs-sdk`
+
+![Clone template 5.1](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-5.1.png)
+
+
+### 4. **Build the Project**  
+
+Run the build script for your target board (e.g., `pico_w`) and mode (`debug`):
+
+```bash
+./build.sh pico_w debug 44444444-4444-4444-8444-444444444444
+```
+
+![Clone template 5.2](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-5.2.png)
+
+and after a few seconds, you will see the build process output in the terminal.
+
+![Clone template 5.3](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-5.3.png)
+
+In the `/dist` folder, you will find:
+- the `44444444-4444-4444-8444-444444444444.uf2` binary file with the microfirmware app. 
+- the `44444444-4444-4444-8444-444444444444.json` file with the app information. This file is used by the Booster app to identify the app and show it in the list of apps.
+- the `44444444-4444-4444-8444-444444444444.md5` file with the md5 checksum of the binary file. This file is used by the Booster app to verify the integrity of the binary file.
+
+![Clone template 5.4](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-5.4.png)
+
+The developer can now deploy the uf2 file to the Raspberry Pi Pico W using the `picotool` command line tool. For example:
+
+```bash
+picotool load dist/44444444-4444-4444-8444-444444444444.uf2
+```
+
+And rebooting the board connected to the computer will load the new firmware if the uf2 file is valid and in the Booster app the developer has selected the option to launch the `DEV APP`
+
+But this is not a very quick way to develop a firmware. It's much easier to use the `picoprobe` hardware debugger and Visual Studio code to debug the code. 
+
+### 5. **Open the Project in VS Code**  
+
+![Clone template 6](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-6.png)
+
+Open the project folder in **Visual Studio Code** or **VS Code Insiders** using the entry in the menu `File` → `Add Folder to Workspace...` and select the folder you just cloned.
+
+![Clone template 7](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-7.png)
+
+Use the **CMake Tools** extension to select a build environment:
+- Open the **command palette** → “CMake: Select a Kit”
+- Choose a compiler (e.g., `GCC 14.2.1 arm-none-eabi`)
+
+Ensure that the `Auto Save` option is enabled for smooth development.
+
+![Clone template 8](/sidecartridge-multidevice/assets/images/md-microfirmware-template-howto-8.png)
+
+### 6. **Adjust the debugging options in Visual Studio code**  
+
+The `.vscode` folder contains the configuration files for Visual Studio Code. **Please modify them as follows**:
+
+- `launch.json`: Modify the `gdbPath` property to point to the `arm-none-eabi-gdb` file in your computer.
+- `launch.json`: Modify the `searchDir` property to point to the `/tcl` folder inside the `openocd` project in your computer.
+- `settings.json`: Modify the `cortex-debug.gdbPath` property to point to the `arm-none-eabi-gdb` file in your computer.
+
+These variables allow the debugger to **automatically find GDB and OpenOCD** without modifying the `launch.json` file every time you switch environments.
+
+
+## Microfirmware design
+
+### Libraries and components  
 
 #### External Libraries  
 
