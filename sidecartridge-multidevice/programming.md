@@ -272,8 +272,7 @@ The `.vscode` folder contains the configuration files for Visual Studio Code. **
 
 These variables allow the debugger to **automatically find GDB and OpenOCD** without modifying the `launch.json` file every time you switch environments.
 
-
-## Microfirmware design
+## Microfirmware design
 
 ### Libraries and components  
 
