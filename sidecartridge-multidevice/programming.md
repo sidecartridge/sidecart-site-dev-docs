@@ -161,7 +161,7 @@ The Pico W and Pico 2W feature a **2MB flash memory**, structured as follows:
 
 ## How to Create a New Firmware Project Using `md-microfirmware-template`
 
-This guide walks you through the steps to clone and configure a new firmware project for the SidecarTridge Multi-device platform, using `md-rtc-emulator` as an example.
+This guide walks you through the steps to clone and configure a new firmware project for the SidecarTridge Multi-device platform, using `md-rtc-emulator` as an example. You can find the template repository in [https://github.com/sidecartridge/md-microfirmware-template](https://github.com/sidecartridge/md-microfirmware-template)
 
 ### 1. **Create a GitHub Repository from the Template**  
 
@@ -212,7 +212,12 @@ This pulls in essential dependencies like:
 
 ### 4. **Build the Project**  
 
-Run the build script for your target board (e.g., `pico_w`) and mode (`debug`):
+The main build script is `build.sh`, located in the root directory of the project executes both `buid.sh` scripts in the `/rp` and `/target` folders. The script in the `/rp` folder builds the microfirmware app for the RP2040, while the script in the `/target` folder builds the computer firmware for the target computer.
+
+The parameters for the build script are:
+1. The target device. In this version it can be `pico_w`.
+2. The build type. It can be `debug` or `release`. `debug` will create a version with debug symbols and output traces through the UART. `release` will create a version without debug symbols and output traces.
+3. The UUID of the app. This is a valid UUID v4 that will be used to identify the app. It must be unique for each app. The UUID is used to create the lookup table in the flash memory and to create the app info file. During development time, you can use the UUID `44444444-4444-4444-8444-444444444444` to test the app. 
 
 ```bash
 ./build.sh pico_w debug 44444444-4444-4444-8444-444444444444
