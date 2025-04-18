@@ -23,8 +23,7 @@ redirect_from:
 ## List of cases available
 
 ### Revision 0.x.x and 1.x.x
-|  |  |
-|-------|---------|
+
 | ![SidecarTridge Multi-device case by AtariSTFan](https://cdn.thingiverse.com/assets/d3/71/cf/bb/23/large_display_c1fe8e43-8782-46f7-9aab-abc67d63a741.jpeg) | **SidecarTridge Multi-device case by AtariSTFan**: The first one designed for the SidecarTridge Multi-device board by AtariSTFan, aimed to enhance the device's usability and aesthetic appeal. Offers downloadable files for 3D printing. For revision 0. [View on Thingiverse](https://www.thingiverse.com/thing:6280055) |
 | ![Sidecar case by Krupkaj](https://media.printables.com/media/prints/720834/images/5654780_9d353f89-7fda-41ea-ae05-6c770b5f52fd_7d53013c-36fe-45da-bf0b-9dec2e38171f/thumbs/inside/1920x1440/jpeg/img_1902.webp) | **SidecarTridge Multi-device case by Krupkaj**: Tailored for those interested in 3D printing a protective and custom look case for the SidecarTridge Multi-device device by Krupkaj. Includes detailed model information and files for printing. For revision 0. [View on Printables](https://www.printables.com/model/720834-SidecarTridge Multi-device-case-for-atari-st) |
 | ![SidecarTridge Multi-device case by Koe](https://cdn.thingiverse.com/assets/f5/52/a3/8c/58/large_display_a7b32150-079f-4b3d-b198-001e9172d59b.jpg) | **SidecarTridge Multi-device case by Koe**: A new case tailored for the revision 0. [View on Thingiverse](https://www.thingiverse.com/thing:6514625) |
@@ -39,9 +38,9 @@ redirect_from:
 
 | ![SidecarTridge Multi-device case by Krupkaj](https://media.printables.com/media/prints/720834/images/7331128_fd906c3c-d35a-4c59-bbbf-d0fb59a5e5bc_ab8a9182-d475-49b2-9df7-59f2f2d26500/thumbs/inside/1920x1440/jpeg/img_3131.webp) | **SidecarTridge Multi-device case by Krupkaj**: Another case by Krupkaj. Includes detailed model information and files for printing. For revision 2.2.x, the one with the stacked double USB connector [View on Printables](https://www.printables.com/model/720834-SidecarTridge Multi-device-case-for-atari-st) |
 | ![SidecarTridge Multi-device case by darthvader911](https://cdn.thingiverse.com/assets/b2/db/1b/07/83/large_display_bb01a841-83c2-4b60-9b3a-4c4b410727e8.png) | **SidecarTridge Multi-device case by darthvader911**: A new enclosure for 2.2.x board revision. [View on Thingiverse](https://www.thingiverse.com/thing:6712743) |  
-| ![SidecarTridge Multi-device case by Jbizze](https://cdn.thingiverse.com/assets/85/ab/a3/a5/86/large_display_IMG_20241216_080547.jpg) | **SidecarTridge Multi-device case by Jbizze**: A enclosure for 2.2.x board revision. It can be printed with no supports. The case is shortest one so the whole thing is more compact. [View on Thingiverse](https://www.thingiverse.com/thing:6872981) |  
+| ![SidecarTridge Multi-device case by Jbizze](https://cdn.thingiverse.com/assets/85/ab/a3/a5/86/large_display_IMG_20241216_080547.jpg) | **SidecarTridge Multi-device case by Jbizze**: A enclosure for 2.2.x board revision. It can be printed with no supports. The case is shortest one so the whole thing is more compact. [View on Thingiverse](https://www.thingiverse.com/thing:6872981) |
 
-### Revision 3.x.x
+### Revision 3.x.x
 
 | ![SidecarTridge Multi-device V3 Shell for Atari ST by Retro Frog](https://media.printables.com/media/prints/328cfe40-162e-4b1a-985d-58c846fb90f1/images/9522381_40e09728-fb22-4062-99d2-bab001096642_1a1e2917-71f4-4fe6-be2d-2f8262182d36/thumbs/inside/1600x1200/png/sidecart_case_2025-apr-16_03-53-05pm-000_customizedview24830383044.webp) | **SidecarTridge Multi-device V3 Shell for Atari ST by Retro Frog**: This is a full shell for version 3 of the SidecarTridge pcb for Atari ST computers. This shell only fits the version 3 pcb and assumes that you have flush solderied the Raspberry Pi to the PCB (no headers) and that you have aligned up it's pads evenly (so the USB port lines up in the rear). [View on Printables](https://www.printables.com/model/1267880-sidecartridge-v3-shell-for-atari-st) |
 
