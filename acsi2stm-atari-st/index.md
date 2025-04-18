@@ -45,6 +45,9 @@ After extensive testing of the original ACSI2STM device, SidecarTridge has intro
 <h3>? <a href="/acsi2stm-atari-st/faq/">Frequently Asked Questions</a></h3>
 <p>Answers to common questions about the ACSI2STM</p>
 
+<h3>📦 <a href="/acsi2stm-atari-st/cases/">Enclosures/Cases</a></h3>
+<p>List of enclosures and cases available for the ACSI2STM</p>
+
 {: .warning}
 The ACSI2STM is an Open Source project, and you can find the source code and schematics in the [GitHub repository](https://github.com/retro16/acsi2stm/). The repository contains more in depth information about the project, and you can also contribute to the project by submitting issues or pull requests.
 
