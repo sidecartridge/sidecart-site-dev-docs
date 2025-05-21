@@ -19,6 +19,9 @@ parent: ACSI2STM Hard Disk for Atari ST
 {:toc}
 </details>
 
+## GEMDRIVE units not found in EmuTOS or TOS 2.0x
+
+If you have a GEMDRIVE unit that is not found in EmuTOS or TOS 2.0x, you must ensure that the **GEMDRIVE.PRG** driver is executed at boot time. This driver is included firmware package of the project in the **tools** folder of the [release package](https://github.com/retro16/acsi2stm/releases/tag/5.00).
 
 
 

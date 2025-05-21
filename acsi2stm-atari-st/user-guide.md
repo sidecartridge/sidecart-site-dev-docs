@@ -144,6 +144,10 @@ The GemDrive hard disk emulation of the [SidecarTridge Multidevice](https://side
 
 This innovative approach bypasses many of TOS’s limitations, enabling a modern, efficient, and compatible SD card-based storage solution for Atari ST systems.
 
+### GemDrive with EmuTOS and TOS 2.0x versions
+
+Previous versions to **TOS 2.06** do support **GemDrive** without the need for any additional drivers. However, **TOS 2.06** and **EmuTOS** versions require the **GEMDRIVE.PRG** driver to be executed at boot time. This driver is included firmware package of the project in the **tools** folder of the [relase package](https://github.com/retro16/acsi2stm/releases/tag/5.00).
+
 ### Mixing GemDrive with ACSI Drivers and Devices
 
 #### Mixing GemDrive with ICD PRO
