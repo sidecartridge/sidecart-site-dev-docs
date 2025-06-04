@@ -140,6 +140,7 @@ Do you want to test the new Alpha firmware? Check the following links below:
 * **💾 [Download ALPHA Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/nightly/rp-booster-v1.0.0alpha-full.uf2)**
 * Learn to install and configure with the [Getting Started Guide](/sidecartridge-multidevice/getting_started_v2/)
 * Learn to download and install the different [microfirmwares](/sidecartridge-multidevice/userguide_v2/)
+* Browse the list of available [microfirmwares](/sidecartridge-multidevice/microfirmwares/index/)
 * Are you a brave developer? Check the [Development Guide](/sidecartridge-multidevice/programming/)
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!

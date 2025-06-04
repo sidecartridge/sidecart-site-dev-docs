@@ -119,4 +119,4 @@ It also provides two buttons to reboot the device:
 
 [Previous: Getting Started](/sidecartridge-multidevice/getting_started_v2/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
-[Next: Microfirmwares](/sidecartridge-multidevice/microfirmwares/){: .btn }
+[Next: Microfirmwares](/sidecartridge-multidevice/microfirmwares/index/){: .btn }
