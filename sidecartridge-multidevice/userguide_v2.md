@@ -2,7 +2,7 @@
 layout: default
 title: User Guide Firmware V2.0 (ALPHA)
 nav_order: 3
-nav_exclude: false
+nav_exclude: true
 parent: SidecarTridge Multi-device
 redirect_from:
   - /userguide_v2/
