@@ -12,6 +12,8 @@ redirect_from:
 # Getting Started
 {: .no_toc }
 
+{{ site.FIRMWARE_ALPHA_VERSION }}
+
 This section provides guidance on the initial steps to start working with the SidecarTridge Multi-device board with the latest firmware v2. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the Multi-device board by following the procedures outlined in this and coming sections.
 
 {: .warning }

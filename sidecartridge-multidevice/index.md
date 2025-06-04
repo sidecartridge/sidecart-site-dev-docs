@@ -15,8 +15,9 @@ has_children: true
 STABLE-{{ site.FIRMWARE_VERSION }}
 {: .label .label-green }
 
-{{ site.FIRMWARE_BETA_VERSION }}
+{{ site.FIRMWARE_ALPHA_VERSION }}
 {: .label .label-purple }
+
 
 Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarTridge Multi-device board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
@@ -33,10 +34,6 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 * **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
 * **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
 * 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
-
-## 🚀 Latest BETA Firmware: {{ site.FIRMWARE_BETA_VERSION }}
-* **💾 [Download BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for BETA Release {{ site.FIRMWARE_BETA_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_BETA_VERSION }})**
 
 ## 🐞 Bugs, Issues, and Enhancements
 * [Reporting tool](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues)
@@ -135,9 +132,11 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
     </tr>
 </table>
 
-Do you want to test the new Alpha firmware? Check the following links below:
+## Do you want to test the new Alpha firmware?
 
-* **💾 [Download ALPHA Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/nightly/rp-booster-v1.0.0alpha-full.uf2)**
+Check the following links below:
+
+* **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/nightly/rp-booster-v1.0.0alpha-full.uf2)**
 * Learn to install and configure with the [Getting Started Guide](/sidecartridge-multidevice/getting_started_v2/)
 * Learn to download and install the different [microfirmwares](/sidecartridge-multidevice/userguide_v2/)
 * Browse the list of available [microfirmwares](/sidecartridge-multidevice/microfirmwares/)
