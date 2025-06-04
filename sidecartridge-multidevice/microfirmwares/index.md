@@ -5,8 +5,8 @@ nav_order: 3
 nav_exclude: true
 parent: SidecarTridge Multi-device
 redirect_from:
-  - /microfirmwares/index/
-  - /microfirmwares/index
+  - /microfirmwares
+  - /microfirmwares/
 ---
 
 # Microfirmwares for the Firmware V2.0 (ALPHA)
