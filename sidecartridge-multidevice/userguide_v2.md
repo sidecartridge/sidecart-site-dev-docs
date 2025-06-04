@@ -74,7 +74,7 @@ The Booster microfirmware app is now installed in the flash memory of the device
 
 To return to the Booster app, the user needs to use the command menu on the microfirmware app to do it, or press the SELECT button for more than 10 seconds and then power off and power on the device and the computer.
 
-> **Note**: In this Alpha version, the only microfirmware app available is the **[ROM Emulator](https://github.com/sidecartridge/md-rom-emulator)** app. The **DEV APP** is a placeholder development app for anybody who wants to develop a microfirmware app. It is not a real app and it does not do anything.
+> **Note**: In this Alpha version, the **DEV APP** is a placeholder development app for anybody who wants to develop a microfirmware app. It is not a real app and it does not do anything.
 
 ### WiFi view
 
