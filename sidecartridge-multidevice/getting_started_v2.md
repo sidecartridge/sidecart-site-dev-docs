@@ -219,3 +219,7 @@ However, it is worth noting that acquiring the board through our [online shop](h
 
 {: .warning }
 Assembling the board independently can be a rewarding and enriching learning experience for those who are interested in a hands-on approach to understanding the intricate workings of the Multi-device board. Obviously, it is not recommended for those who are new to hardware development.
+
+[Previous: Introduction](/sidecartridge-multidevice/introduction/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: User Guide](/sidecartridge-multidevice/userguide_v2/){: .btn }
