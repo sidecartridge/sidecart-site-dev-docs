@@ -11,6 +11,10 @@ redirect_from:
 
 # SidecarTridge Multi-device Drives Emulator
 {: .no_toc }
+{: .d-inline-block }
+
+{{ site.FIRMWARE_ALPHA_VERSION }}
+{: .label .label-purple }
 
 This is a microfirmware application for the **SidecarTridge Multi-device**, designed to emulate hard disks and floppy drives for Atari computers, including the **Atari ST, STe, Mega ST, and Mega STe**.
 

@@ -135,6 +135,10 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 </table>
 
 ## Do you want to test the new Alpha firmware?
+{: .d-inline-block }
+
+{{ site.FIRMWARE_ALPHA_VERSION }}
+{: .label .label-purple }
 
 ### 🚀 What’s new in Firmware v2?
 

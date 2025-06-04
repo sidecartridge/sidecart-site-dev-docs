@@ -13,9 +13,6 @@ redirect_from:
 {: .no_toc }
 {: .d-inline-block }
 
-STABLE-{{ site.FIRMWARE_VERSION }}
-{: .label .label-green }
-
 {{ site.FIRMWARE_ALPHA_VERSION }}
 {: .label .label-purple }
 
