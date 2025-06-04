@@ -136,6 +136,22 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
 ## Do you want to test the new Alpha firmware?
 
+### 🚀 What’s new in Firmware v2?
+
+Firmware v2 introduces a new architecture for the SidecarTridge Multi-device that brings flexibility, modularity, and a more efficient workflow — especially for power users and developers:
+
+* **🧩 Modular Microfirmwares**
+  The core of v2 is the concept of *Microfirmwares*: standalone apps (ROM emulator, floppy emulator, RTC, custom tools, etc.) that you can install and switch between on the same hardware — no need to reflash the entire board.
+
+* **📡 OTA (Over The Air) Downloads & Updates**
+  You can now browse and download Microfirmwares directly from official — and even private — Microfirmware repositories, over Wi-Fi. Install or update apps without removing the SD card or using a PC. A simple and secure way to keep your device up to date.
+
+* **⚙️ Per-app Configurations**
+  Each Microfirmware stores its own settings in flash memory, isolated from other apps. This allows you to easily switch between functions without losing or reconfiguring settings.
+
+* **🛠️ Optimized Development Workflow & Architecture**
+  The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
+
 Check the following links below:
 
 * **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/nightly/rp-booster-v1.0.0alpha-full.uf2)**
