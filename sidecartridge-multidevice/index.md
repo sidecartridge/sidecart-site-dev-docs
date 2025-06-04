@@ -132,7 +132,7 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
     </tr>
 </table>
 
-## Do you want to test the new Alpha firmware?
+## Do you want to test the new Alpha firmware?
 
 Check the following links below:
 
