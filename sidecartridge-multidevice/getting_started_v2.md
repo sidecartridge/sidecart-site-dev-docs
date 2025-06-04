@@ -147,8 +147,10 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
     ![Booster Maneger Mode step 2](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-2.png)
 
-    Your WiFi setup is now complete. From now on, the Booster app will boot directly into **Manager mode**.  
-    See the next section for details on using Manager mode.
+    Your WiFi setup is now complete. From now on, the Booster app will boot directly into **Manager mode**. 
+
+Now you can start using the Booster app to manage your microfirmware apps! Learn how to do it in the [User Guide](/sidecartridge-multidevice/userguide_v2/).
+
 
 ## Prerequisites for Developers and Makers
 

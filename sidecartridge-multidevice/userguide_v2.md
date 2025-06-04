@@ -116,3 +116,7 @@ It also provides two buttons to reboot the device:
 
 - **Reboot the device**: Reboot the device and load the microfirmware app in flash memory. This is the normal way to reboot the device.
 - **Reboot the device in default fabric settings**: Reboot the device and load the Booster app in **Factory mode**. This is useful to reset the device to factory settings or to change the WiFi network.
+
+[Previous: Getting Started](/sidecartridge-multidevice/getting_started_v2/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Microfirmwares](/sidecartridge-multidevice/microfirmwares/){: .btn }
