@@ -89,3 +89,7 @@ See the [LICENSE](https://github.com/sidecartridge/md-rtc-emulator/blob/main/LIC
 
 ## 🤝 Contributing
 Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
+
+[Previous: ROM Emulator](/sidecartridge-multidevice/microfirmwares/rom_emulator/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/){: .btn }

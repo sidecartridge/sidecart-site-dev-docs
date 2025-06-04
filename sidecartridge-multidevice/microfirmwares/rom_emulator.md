@@ -99,3 +99,7 @@ See the [LICENSE](https://github.com/sidecartridge/md-rom-emulator/blob/main/LIC
 
 ## 🤝 Contributing
 Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
+
+[Previous: Microfirmwares](/sidecartridge-multidevice/microfirmwares/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: RTC Emulator](/sidecartridge-multidevice/microfirmwares/rtc_emulator/){: .btn }
