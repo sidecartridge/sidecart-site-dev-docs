@@ -103,7 +103,7 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 4. The Booster app will automatically start in **Factory (Fabric) mode**, showing the following message on screen:
 
-   ![Booster Factory Mode step 1](/sidecartridge-multidevice/assets/images/images/BOOSTER-FABRIC-1.png)
+   ![Booster Factory Mode step 1](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-1.png)
 
    This screen confirms that the Booster app is running in Factory mode and is ready to be configured.  
    Scan the **QR code** with your smartphone to connect to the WiFi network created by the Booster app, or manually connect via your WiFi settings.  
@@ -113,7 +113,7 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 5. Once connected to the WiFi, the Booster app will detect the connection and show the following screen:
 
-   ![Booster Factory Mode step 2](/sidecartridge-multidevice/assets/images/images/BOOSTER-FABRIC-2.png)
+   ![Booster Factory Mode step 2](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-2.png)
 
    This screen invites you to open a web browser and navigate to either:
    - `http://sidecart.local`  
@@ -124,28 +124,28 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
    Select your WiFi SSID from the list (you can click **Refresh** if it doesn’t appear), then click it to continue.  
    In this example, the network is `CHISMEROUTER`.
 
-   ![Booster Factory Mode step 3](/sidecartridge-multidevice/assets/images/images/BOOSTER-FABRIC-3.png)
+   ![Booster Factory Mode step 3](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-3.png)
 
 7. Enter your WiFi password and click the **Connect** button.
 
-   ![Booster Factory Mode step 4](/sidecartridge-multidevice/assets/images/images/BOOSTER-FABRIC-4.png)
+   ![Booster Factory Mode step 4](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-4.png)
 
 8. The Booster app will save the WiFi credentials to flash memory and reboot.  
    It will then connect to your WiFi network and show this message:
 
-   ![Booster Factory Mode step 5](/sidecartridge-multidevice/assets/images/images/BOOSTER-FABRIC-5.png)
+   ![Booster Factory Mode step 5](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-5.png)
 
    Meanwhile, the device will also display a reboot message on the Atari screen:
 
-   ![Booster Factory Mode step 6](/sidecartridge-multidevice/assets/images/images/BOOSTER-FABRIC-6.png)
+   ![Booster Factory Mode step 6](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-6.png)
 
 9. After rebooting, the Booster app will attempt to connect to your configured WiFi network:
 
-   ![Booster Manager Mode step 1](/sidecartridge-multidevice/assets/images/images/BOOSTER-MANAGER-1.png)
+   ![Booster Manager Mode step 1](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-1.png)
 
 10. Once connected successfully, the screen will show:
 
-    ![Booster Maneger Mode step 2](/sidecartridge-multidevice/assets/images/images/BOOSTER-MANAGER-2.png)
+    ![Booster Maneger Mode step 2](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-2.png)
 
     Your WiFi setup is now complete. From now on, the Booster app will boot directly into **Manager mode**.  
     See the next section for details on using Manager mode.
