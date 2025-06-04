@@ -157,7 +157,7 @@ The Drives Emulator app is designed to return to the setup screen after a power 
 This project is based on an early version of the [SidecarTridge Multi-device Microfirmware App Template](https://github.com/sidecartridge/md-microfirmware-template).  
 To set up your development environment, please follow the instructions provided in the [official documentation](https://docs.sidecartridge.com/sidecartridge-multidevice/programming/).
 
-## Missing features in ALPHA version
+## Missing features in ALPHA version
 
 - [ ] Support for Disk Swapping (changing floppy disk images on the fly).
 - [ ] Support for Downloading images from the internet repository.
