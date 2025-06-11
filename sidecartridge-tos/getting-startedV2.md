@@ -47,8 +47,7 @@ This should include:
 4. (Optional) USB-C cable: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
 5. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
 
-![SidecarTridge Kit](/sidecartridge-tos/assets/images/sidecartridge-kit.png)
-
+![SidecarTridge Kit](/sidecartridge-tos/assets/images/sidecartridge-switcher-upload.png)
 
 #### Atari ST Computer
 The emulator is compatible with various models, please read the [previous section to ensure compatibility](/sidecartridge-tos/before-buy/) with your Atari ST model.

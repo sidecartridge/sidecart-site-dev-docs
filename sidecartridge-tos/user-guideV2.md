@@ -82,7 +82,7 @@ Rewriting the TOS ROM images is a good option if you have easy access to a compu
 
 The rescue mode can be activated by short-circuiting the `RESCUE` jumper on the reverse side of the SidecarTridge TOS Emulator. For user convenience, a rescue mode cable and button are included with the emulator.
 
-![SidecarTridge Rescue Mode](/sidecartridge-tos/assets/images/sidecartridge-rescue.png)
+![SidecarTridge Rescue Mode](/sidecartridge-tos/assets/images/sidecartridge-rescue-board-v3.png)
 
 To force boot the rescue TOS ROM, follow these steps:
 
