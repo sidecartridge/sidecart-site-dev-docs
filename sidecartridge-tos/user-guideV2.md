@@ -20,13 +20,34 @@ This section provides guidance on the initial steps and daily operation of the S
 {:toc}
 </details>
 
+## Powering on the TOS Emulator
+
+Starting in version 3 of the board, the SidecarTridge TOS Emulator has a built-in red LED indicator that lights up when the board is powered on. It will light up when the Atari ST is powered on, or when the SidecarTridge TOS Emulator is powered via USB. This LED indicator is not present in version 1 and 2 of the board.
+
 ## Powering On the Atari ST
 
 Simply turn on the Atari ST as you normally would. The SidecarTridge TOS Emulator will automatically boot the active TOS version. If no active TOS version is selected, the emulator will boot the default EmuTOS version provided with the kit.
 
+{: .note}
+Starting from version 3 of the board, the SidecarTridge TOS Emulator will light up a green LED indicator when the firmware is running. This LED indicator is not present in version 1 and 2 of the board.
+
+## Powering On USB-connected to a PC/Mac/Linux Computer
+When the SidecarTridge TOS Emulator is connected to a computer via USB, it will automatically automatically start in USB Mass Storage mode. This allows you to access the internal flash memory of the SidecarTridge TOS Emulator as a USB drive on your computer.
+
+{: .note}
+Starting from version 3 of the board, the SidecarTridge TOS Emulator will light up an orange LED indicator when the internal USB drive is mounted. This LED indicator is not present in version 1 and 2 of the board. When transferring files to the internal USB drive, this LED will blink to indicate data transfer activity.
+
+{: .warning}
+The SidecarTridge TOS Emulator will not boot the Atari ST when connected to a computer via USB. To boot the Atari ST, you must disconnect the USB cable and power on the Atari ST as usual.
+
 ## The SWITCHER.TOS Program
 
-The SWITCHER.TOS program is a utility that allows you to switch between TOS versions. This program can be downloaded from the main page of the documentation or ordered on a physical diskette. SWITCHER.TOS can be run from the desktop like any other TOS program.
+The SWITCHER.TOS program is a utility that allows you to switch between TOS versions. This program can be obtained through different ways:
+- copied from the SidecarTridge TOS Emulator internal USB drive
+- downloaded from the main page of the documentation
+- ordered on a physical diskette. 
+
+SWITCHER.TOS can be run from the desktop like any other TOS program.
 
 ![SidecarTridge Switcher app](/sidecartridge-tos/assets/images/sidecartridge-switcher-desktop.png)
 
@@ -48,7 +69,7 @@ Use the arrow keys to navigate the list and press the `RETURN` key to select the
 ![SidecarTridge Switcher selected](/sidecartridge-tos/assets/images/sidecartridge-switcher-select.gif)
 
 {: .note}
-This is the recommended way to switch between TOS versions. It is also possible to switch TOS versions modifying the `DEFAULT.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-started/) section, but this method is not recommended for daily use.
+This is the recommended way to switch between TOS versions. It is also possible to switch TOS versions modifying the `DEFAULT.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-startedV2/) section, but this method is not recommended for daily use.
 
 ## Rescue Mode
 
@@ -75,9 +96,8 @@ The Atari ST will boot the rescue TOS ROM. You can then use the SWITCHER.TOS pro
 
 ## TOS Management from the Atari ST
 
-### Version 2 Firmware
-
-Starting from version 2 of the firmware it is possible to upload and delete a new TOS ROM image from any Atari ST/MegaST/STE/MegaSTE computer. This feature is useful if you want to upload a new TOS ROM image without the need of a computer with a USB port and/or the need to open the Atari ST computer case.
+{: .note}
+Starting from version 2 of the firmware it is possible to upload, delete and rename a new TOS ROM image from any Atari ST/MegaST/STE/MegaSTE computer. This feature is useful if you want to upload a new TOS ROM image without the need of a computer with a USB port and/or the need to open the Atari ST computer case.
 
 ### Uploading a new TOS ROM from the Atari ST computer
 
