@@ -32,7 +32,7 @@ Simply turn on the Atari ST as you normally would. The SidecarTridge TOS Emulato
 Starting from version 3 of the board, the SidecarTridge TOS Emulator will light up a green LED indicator when the firmware is running. This LED indicator is not present in version 1 and 2 of the board.
 
 ## Powering On USB-connected to a PC/Mac/Linux Computer
-When the SidecarTridge TOS Emulator is connected to a computer via USB, it will automatically automatically start in USB Mass Storage mode. This allows you to access the internal flash memory of the SidecarTridge TOS Emulator as a USB drive on your computer.
+When the SidecarTridge TOS Emulator is connected to a computer via USB, it will automatically start in USB Mass Storage mode. This allows you to access the internal flash memory of the SidecarTridge TOS Emulator as a USB drive on your computer.
 
 {: .note}
 Starting from version 3 of the board, the SidecarTridge TOS Emulator will light up an orange LED indicator when the internal USB drive is mounted. This LED indicator is not present in version 1 and 2 of the board. When transferring files to the internal USB drive, this LED will blink to indicate data transfer activity.
