@@ -12,6 +12,9 @@ parent: SidecarTridge TOS
 
 The different Atari ST models are encased in a plastic outer shell that must be fully removed to access the internal components. This guide will walk you through the steps necessary to open these cases and install the SidecarTridge TOS Emulator safely and effectively.
 
+{: .warning}
+IMPORT INFORMATION ABOUT THE ATARI ST MODELS: The metal shielding inside the Atari ST models can be too tight and in some cases it must be removed to close the plastic case properly. 
+
 <details open markdown="block">
   <summary>
     Table of contents
