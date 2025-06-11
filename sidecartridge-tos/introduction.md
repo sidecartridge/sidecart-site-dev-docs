@@ -22,19 +22,20 @@ The first chapter provides an overview of the SidecarTridge TOS emulator kit. Th
 
 ## Overview
 
-The SidecarTridge TOS emulator is an innovative solution designed to enhance the functionality and flexibility of the Atari ST series of computers. By leveraging bit-banged emulation, the SidecarTridge TOS emulator replicates the internal ROMs of the Atari ST, allowing users to access and run any TOS (The Operating System) version without the need to physically swap ROM chips. This advanced capability extends to the use of custom ROMs, including EmuTOS, an open-source TOS replacement.
+The SidecarTridge TOS emulator brings new levels of flexibility and functionality to the Atari ST series. Using bit-banged emulation, it replicates the internal ROMs of the Atari ST, enabling users to run any version of TOS (The Operating System) without having to physically replace ROM chips. This feature also allows for the use of custom ROMs, including EmuTOS, an open-source TOS alternative.
 
-The kit is based on the [SidecarTridge ROM Emulator board](/sidecartridge-rom/). The compact design of the SidecarTridge ROM emulator board ensures a seamless integration into the Atari ST, with dimensions of just 5cm x 2cm x 0.7cm. It fits perfectly inside the Atari ST case, powered directly by the 5V rail, and communicates with the internal Atari ST bus to deliver necessary signals transparently to the motherboard. This means the Atari ST operates as usual, with no modifications required other than replacing the original ROM chips with the emulator.
+Built on the [SidecarTridge ROM Emulator board](/sidecartridge-rom/), the compact design ensures easy installation within the Atari ST case—removal of the metal enclosure may be required depending on the model. It is powered by the 5V rail and interfaces directly with the Atari ST bus to provide all necessary signals, allowing the computer to operate normally with no modifications beyond replacing the original ROM chips.
 
-The SidecarTridge TOS emulator simplifies the process of installing and switching between different TOS versions. Users can easily connect the emulator to a computer via USB, transfer TOS image files, and select the desired version through a simple program on the Atari ST. This user-friendly approach eliminates the hassle of manual ROM swapping, providing a more efficient and versatile experience for both developers and enthusiasts.
+Switching between TOS versions is made simple with the SidecarTridge TOS emulator. Users can connect the device to a computer via USB to transfer TOS image files or use a straightforward program on the Atari ST to upload and select the preferred version. This streamlined process removes the inconvenience of manual ROM swaps, offering a more efficient and flexible experience for both users and developers.
 
-Key benefits of the SidecarTridge TOS emulator include:
+Key advantages of the SidecarTridge TOS emulator include:
 
-- **Enhanced Flexibility**: Ability to run any TOS version or custom ROMs without physical ROM swaps.
-- **Compact and Seamless Integration**: Fits inside the Atari ST case and operates transparently with the motherboard.
-- **User-Friendly Setup**: Easy installation and configuration through USB connection and software interface.
+* **Enhanced Flexibility**: Run any TOS version or custom ROM without the need for physical ROM replacement.
+* **Compact and Seamless Integration**: Installs inside the Atari ST case and works transparently with the motherboard.
+* **User-Friendly Setup**: Straightforward installation and management via USB connection and software tools.
 
-In summary, the SidecarTridge TOS emulator is a powerful tool that modernizes the Atari ST, making it easier to explore, develop, and enjoy the wide range of TOS versions and custom ROMs available.
+Overall, the SidecarTridge TOS emulator is a powerful solution for modernizing the Atari ST, making it easier than ever to explore, develop, and enjoy different TOS versions and custom ROMs.
+
 
 ## Purpose and Objectives
 
@@ -64,19 +65,19 @@ In summary, the SidecarTridge TOS emulator is designed to make TOS management mo
 
 ### Features
 
-1. **Bit-Banged Emulation**: Leveraging the powerful Programmable Input Output (PIO) features of the Raspberry RP2040, the SidecarTridge ROM emulator board emulates the internal ROMs of the Atari ST series through bit-banged emulation, eliminating the need for custom firmware or complex hardware.
+1. **Bit-Banged Emulation**: Leveraging the powerful Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x, the SidecarTridge ROM emulator board emulates the internal ROMs of the Atari ST series through bit-banged emulation, eliminating the need for custom firmware or complex hardware.
 
 2. **Multi-TOS Version Support**: With 16MB of flash memory allows users to store and access up to 64 different TOS versions without requiring physical ROM swaps.
 
 3. **Custom ROM Support**: The emulator can run any ROM image file, including custom ROMs and open-source TOS replacements like [EmuTOS](https://emutos.sourceforge.io/). This enables users to experiment with various firmware options and enhance the functionality of the Atari ST.
 
-4. **Compact Design**: The carrier boards for the ROM emulator board fit seamlessly inside the Atari ST case thanks to measuring just 5cm x 2cm x 0.7cm.
+4. **Compact Design**: The carrier boards for the ROM emulator board fit seamlessly inside the Atari ST case.
 
 5. **Seamless Integration**: Communicates with the Atari ST bus and provides necessary signals to the motherboard without requiring modifications to the computer. Simply replace the original ROM chips with the emulator for use with Atari ST, STE, Mega ST, and Mega STE computers.
 
 6. **USB Connectivity**: Connects to a computer via USB, appearing as a mass storage device for easy ROM file transfer. Users can copy TOS image files to the device, select the desired version, and reboot the Atari ST to apply changes. It works with Windows, macOS, and Linux without needing additional drivers.
 
-7. **User-Friendly Software**: SWITCHER.TOS is an easy-to-use software interface for selecting and managing TOS versions and custom ROMs directly from the Atari ST computer. This software provides a convenient way to switch between different firmware options.
+7. **User-Friendly Software**: SWITCHER.TOS is an easy-to-use software interface for selecting and managing TOS versions and custom ROMs directly from the Atari ST computer. This software provides a convenient way to upload new TOS images and switch between different firmware options.
 
 8. **Transparent Operation**: Ensures the Atari ST boots normally, with the system unaware that the ROM chips have been replaced with the emulator. Power on the Atari ST, and it will boot as usual.
 
@@ -128,13 +129,13 @@ Hence, the SidecarTridge TOS emulator combines the core functionality of the ROM
 
 The SidecarTridge TOS emulator comprises several key components, each playing a vital role in its functionality and ease of use. Below is a list and description of the main components:
 
-1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge TOS emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Atari ST bus through  TTL (5 volts)to CMOS (3.3 Volts) bus level shifters.
+1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge TOS emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Atari ST bus through  TTL (5 volts)to CMOS (3.3 Volts) bus level shifters.
 
 2. **SidecarTridge Atari ST Model Carrier Board**: The carrier boars are designed to fit seamlessly into various models of the Atari ST series, including the ST, STE, Mega ST, and Mega STE. It connects the ROM emulator board to the Atari ST bus, allowing the emulator to communicate with the motherboard and provide the necessary signals transparently. The current versions of the carriers boards are designed to fit the Atari ST, STE, and Mega STE models with 2 ROM sockets, but a six ROM socket version is in development.
 
-3. **USB Cable**: A standard USB-C cable is needed to connect the SidecarTridge ROM emulator board to a computer. This connection is used for transferring TOS image files and custom ROMs to the emulator, making it appear as a mass storage device for easy file management. The USB cable also provides power to the emulator during the firmware update process and file transfer.
+3. **USB Cable (Optional)**: A standard USB-C cable is needed to connect the SidecarTridge ROM emulator board to a computer. This connection is used for transferring TOS image files and custom ROMs to the emulator, making it appear as a mass storage device for easy file management. The USB cable also provides power to the emulator during the firmware update process and file transfer. 
 
-4. **RESCUE connector**: The RESCUE connector is a crucial accessory for troubleshooting and recovery. In case of any issues with a new ROM image, the RESCUE cable can be used to restore the system to a known good TOS version, ensuring the Atari ST can boot correctly and reliably.
+4. **RESCUE connector (Optional)**: The RESCUE connector is a crucial accessory for troubleshooting and recovery. In case of any issues with a new ROM image, the RESCUE cable can be used to restore the system to a known good TOS version, ensuring the Atari ST can boot correctly and reliably.
 
 These components work together to provide a seamless and user-friendly experience, enabling users to manage and switch between different TOS versions and custom ROMs with ease. The SidecarTridge TOS emulator offers a modern and efficient solution for enhancing the capabilities of the Atari ST series computers.
 
@@ -146,7 +147,7 @@ The SidecarTridge TOS emulator operates through a combination of advanced hardwa
 
 Bit-banging refers to the technique of manually driving the signals that would typically be handled by dedicated hardware. In this context, the emulator generates the necessary address and data signals to fully emulate the ROM chips. This involves coordinating the timing of these signals to match the original ROM's behavior precisely.
 
-The emulator leverages the PIO capabilities of the Raspberry RP2040 microcontroller. This technology allows precise control over the timing and sequencing of signals, enabling the emulator to mimic the behavior of the original 27CXXXX integrated circuits (and their equivalents) used in Atari ST computers. The PIO provides the necessary flexibility and accuracy to emulate the ROMs effectively, even at frequencies up to 16MHz in the MegaSTE model.
+The emulator leverages the PIO capabilities of the Raspberry RP2040 and RP235x microcontroller. This technology allows precise control over the timing and sequencing of signals, enabling the emulator to mimic the behavior of the original 27CXXXX integrated circuits (and their equivalents) used in Atari ST computers. The PIO provides the necessary flexibility and accuracy to emulate the ROMs effectively, even at frequencies up to 16MHz in the MegaSTE model.
 
 
 ### Flash Memory Storage
@@ -159,7 +160,7 @@ Users can connect the emulator to a computer via USB to manage ROM files. The em
 
 When powering the computer on, the SidecarTridge TOS emulator is already active and ready to provide the necessary ROM signals to the Atari ST. The computer boots as usual, unaware that the ROM chips have been replaced with the emulator. There is no need to modify the Atari ST hardware or perform any additional steps to enable the emulator.
 
-SWITCHER.TOS is a user-friendly software provided for managing the ROMs. Users can select the desired TOS version or custom ROM from the Atari ST itself, making the process of switching ROMs as simple as launching a program, selecting the TOS, and rebooting the system.
+SWITCHER.TOS is a user-friendly software provided for managing the ROMs. Users can select the desired TOS version or custom ROM from the Atari ST itself, making the process of uploading ROMs using the host computer, switching ROMs as simple as launching a program, selecting the TOS, and rebooting the system.
 
 ### Developing and Testing Custom ROMs
 

@@ -12,13 +12,15 @@ has_children: true
 # SidecarTridge TOS Emulator 
 {: .d-inline-block }
 
-The SidecarTridge TOS emulator is a compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version or custom ROMs without swapping chips. 
+The SidecarTridge TOS emulator is a compact board that emulates Atari ST internal ROMs, enabling users to run any TOS version or custom ROM without physically swapping chips.
 
-This comprehensive guide provides detailed information about the SidecarTridge TOS emulator for the Atari ST series of computers. Please refer to the relevant sections below to explore specific topics.
+This guide offers comprehensive information about the SidecarTridge TOS emulator for the Atari ST family of computers. Explore the relevant sections below to find specific details.
 
-There are two different versions of the SidecarTridge TOS emulator:
-- **SidecarTridge TOS v1 and v2**: This version is designed for the Atari ST, STE, and Mega ST and Mega STE computers. It is based on the **Raspberry Pi RP2040 microcontroller** and is mounted directly on top of the computer’s carrier board using a short pin header. This version is thinner, and when connected via USB or to the computer, there is no red LED to indicate power. You can see the board in the image above on the left side.
-- **SidecarTridge TOS v3**: This version is designed for the Atari ST, STE, Mega ST, and Mega STE computers, but also there are versions in progress for other computers. It is based on the more powerful **Raspberry Pi RP2350 microcontroller** and is surface mounted directly on top of the computer’s carrier board with a soldered castellated board. This version is wider, and when connected via USB or to the computer, there is a **red LED** to indicate power. It also has a green LED to indicate the firmware is running, and an orange LED to indicate the internal USB drive is mounted. You can see the board in the image above on the right side.
+There are two main versions of the SidecarTridge TOS emulator:
+
+- **SidecarTridge TOS v1 and v2**: Designed for the Atari ST, STE, Mega ST, and Mega STE, this version uses the Raspberry Pi RP2040 microcontroller and mounts directly onto the computer’s carrier board via a short pin header. It features a slimmer profile, and when powered via USB or the computer, there is no red LED indicator. In the image above, this board appears on the left.
+
+- **SidecarTridge TOS v3**: This version also supports the Atari ST, STE, Mega ST, and Mega STE, with additional versions in development for other systems. It is based on the more advanced Raspberry Pi RP2350 microcontroller and is surface-mounted with a soldered castellated board. The v3 board is wider, and features a red LED for power, a green LED to show the firmware is running, and an orange LED to indicate the internal USB drive is mounted. In the image above, you’ll find this board on the right.
 
 **ALL BOARDS SHIPPED AFTER MID JUNE 2025 ARE v3 BOARDS.**
 
