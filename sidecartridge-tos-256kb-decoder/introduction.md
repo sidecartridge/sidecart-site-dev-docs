@@ -62,7 +62,7 @@ The SidecarTridge TOS 256KB Decoder is an extension of the [SidecarTridge TOS em
 
 The SidecarTridge TOS 256KB Decoder kit includes several essential components, each contributing to its functionality and ease of use. It can be considered a superset of the SidecarTridge TOS Emulator. The main components are:
 
-1. **SidecarTridge ROM Emulator Board**: The core of the SidecarTridge TOS emulator, it leverages the Programmable Input/Output (PIO) features of the Raspberry Pi RP2040 microcontroller to emulate a ROM chip at the signal level. This board contains the necessary circuitry and flash memory to store multiple custom ROMs, provides a USB interface for connectivity, and communicates with the Atari ST bus through bus level shifters converting TTL (5 volts) to CMOS (3.3 volts).
+1. **SidecarTridge ROM Emulator Board**: The core of the SidecarTridge TOS emulator, it leverages the Programmable Input/Output (PIO) features of the Raspberry Pi RP2040 or RP2350 microcontroller to emulate a ROM chip at the signal level. This board contains the necessary circuitry and flash memory to store multiple custom ROMs, provides a USB interface for connectivity, and communicates with the Atari ST bus through bus level shifters converting TTL (5 volts) to CMOS (3.3 volts).
 
 2. **SidecarTridge Atari ST or Mega ST Models Carrier Board for 256KB Decoder**: Designed to fit seamlessly into various models the carrier board for the Atari ST and Mega ST series includes a multiplexer. This allows the SidecarTridge TOS emulator to select between 192KB and 256KB ROMs, enabling transparent decoding of both.
 

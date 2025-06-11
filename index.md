@@ -41,7 +41,7 @@ Please select a project below to view the documentation.
     </tr>
     <tr>
         <td style="border: none;">
-            <img src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT.png" alt="SidecarTridge 256KB Decoder thumbnail" style="vertical-align: middle; width: 128px"> 
+            <img src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT-BOARD-V3-THUMBNAIL.png" alt="SidecarTridge 256KB Decoder thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
             <h2><a href="/sidecartridge-tos-256kb-decoder/">SidecarTridge TOS 256KB Decoder for Atari ST/MegaST</a></h2>

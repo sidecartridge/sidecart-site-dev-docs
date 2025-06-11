@@ -7,7 +7,7 @@ has_children: true
 ---
 
 
-![SidecarTridge TOS 256KB Decoder](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT.png)
+![SidecarTridge TOS 256KB Decoder](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT-BOARD-V3.png)
 
 # SidecarTridge TOS 256KB Decoder
 

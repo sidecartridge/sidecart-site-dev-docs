@@ -23,7 +23,7 @@ An Atari ST motherboard model number might look like this:
 
 ### Dual or Hexa ROM Configuration
 
-While the SidecarTridge TOS 256KB decoder supports both dual and hexa ROM configurations, however, there is no support for the 6 (HEXA) ROM configuration. The reason for this is pure economics. If you want to use the SidecarTridge TOS 256KB decoder with a hexa ROM configuration, contact us for a custom solution, but assume a 20% increase in price over the dual ROM configuration.
+While the SidecarTridge TOS 256KB decoder supports both dual and hexa ROM configurations, however, there is only support for the 6 (HEXA) ROM configuratio for the Atari ST series. The reason for this is most of the Atari Mega ST motherboards already support the 2 (DUAL) ROM configuration.
 
 ### ROMs Plugged or Soldered
 
