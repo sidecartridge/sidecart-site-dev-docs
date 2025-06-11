@@ -12,6 +12,9 @@ parent: SidecarTridge TOS
 
 This section provides guidance on the initial steps to start working with the SidecarTridge TOS emulator. It includes prerequisites, hardware installation instructions, software setup, and configuration. By following the procedures outlined in this and the upcoming sections, users can ensure a smooth start to their journey with the SidecarTridge TOS emulator.
 
+{: .warning}
+The instructions in this section are valid for the SidecarTridge TOS v1, v2, and v3 boards. 
+
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
         src="https://www.youtube-nocookie.com/embed/rzN72bL8n3Y?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
@@ -40,7 +43,7 @@ Before you begin the installation and setup of the SidecarTridge TOS emulator, e
 This should include:
 1. The SidecarTridge ROM Emulator Board
 2. The SidecarTridge Atari ST Carrier Board. **The ROM Emulator Board is soldered onto this carrier board**.
-3. (Optional) 3 1/2 floppy disk with the SWITCHER.TOS application. It is the program for managing TOS versions on the Atari ST. It can also be downloaded from the SidecarTridge website.
+3. (Optional) 3 1/2 floppy disk with the SWITCHER.TOS application. It is the program for managing TOS versions on the Atari ST. You can find this program in the USB storage when connecting the device to a PC/Mac/Linux. It can also be downloaded from the SidecarTridge website. 
 4. (Optional) USB-C cable: for connecting the SidecarTridge TOS emulator to a computer for firmware updates and TOS image transfers.
 5. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge TOS emulator to enter rescue mode.
 
@@ -60,7 +63,7 @@ The emulator is compatible with various models, please read the [previous sectio
 
 ### Software and Files
 - **TOS Image Files**: Ensure you have the necessary TOS image files ready for transfer. These can be downloaded from reputable sources like [Avtandil website](https://avtandil.narod.ru/tose.html), [EmuTOS website](https://emutos.sourceforge.io/), or other trusted sources.
-- **SWITCHER.TOS Program**: A program for selecting and managing TOS versions on the Atari ST. This program is required to switch between TOS versions and can be downloaded from the SidecarTridge website.
+- **SWITCHER.TOS Program**: A program for selecting and managing TOS versions on the Atari ST. This program is required to upload new TOS images or switch between TOS versions and can be downloaded from the SidecarTridge website or copied from the `ROMEMUL` volume when connecting the SidecarTridge TOS emulator to a computer.
 
 {: .note }
 The SidecarTridge TOS emulator comes with a default EmuTOS image pre-installed and ready to boot. Since the original TOS image files are copyrighted, it's up to you to find the TOS images for your Atari ST model. At this moment every single TOS version found and tested on the internet is working with the SidecarTridge TOS emulator. Please read the [Compatibility](/sidecartridge-tos/compatibility/) section for a full list of tested TOS versions.
@@ -75,7 +78,7 @@ When you receive your SidecarTridge TOS emulator kit, carefully unbox and inspec
 
 1. **SidecarTridge ROM Emulator Board soldered onto the Carrier Board**: This is the main component that will replace the ROM chips on your Atari ST motherboard.
 2. **RESCUE cable and push button**: This cable allows you to connect an external push button to the SidecarTridge TOS emulator for entering rescue mode. 
-3. **SidecarTridge QR Code card**: This card contains a QR code that links to the SidecarTridge website for firmware updates and documentation.
+3. **SidecarTridge sticker with QR Code**: This sticker contains a QR code that links to the SidecarTridge TOS documentation website, providing access to the user guide, compatibility information, and other resources.
 
 ### Additional Components
 
@@ -99,9 +102,12 @@ Open the `ROMEMUL` volume on your computer to access firmware files and TOS imag
 
 - `INDEX.HTM`: Opens the SidecarTridge TOS documentation website.
 - `INFO.TXT`: Contains information about the firmware version installed in the SidecarTridge TOS emulator.
-- `SWITCHER.TOS`: The program for managing TOS versions on the Atari ST. **You must copy this file to your Atari ST computer to switch between TOS versions. You can learn to use in the [User Guide](/sidecartridge-tos/user-guideV2.md)**
+- `SWITCHER.TOS`: The program for managing TOS versions on the Atari ST. **You must copy this file to your Atari ST computer to manage your TOS versions. You can learn to use in the [User Guide](/sidecartridge-tos/user-guideV2.md)**
 - `DEFAULT.TXT`: Contains the name of the default active TOS image file.
 - `RESCUE.TXT`: Contains the name of the rescue TOS image file.
+- `CONFIG.TXT`: (v3 Boards and v3 firmware only) Starting in version 3 of the SidecarTridge TOS emulator, this file contains the advanced configuration settings for the emulator. The settings helps to adjust the speed of the address bus when the emulator runs in computers with very noisy buses, or when the computer has accelerated boards.
+
+{: .note }
 
 There are also system files and directories starting with a dot (.) used by the SidecarTridge TOS emulator and an EmuTOS image file for your computer. For STF, STFM, and Mega ST models, the file is 192KBytes; for STE and Mega STE models, the file is 256KBytes.
 
@@ -199,7 +205,7 @@ Starting from firmware version 2.1.0, the SidecarTridge TOS emulator recognizes 
 
 The following magic names are recognized by the SidecarTridge TOS emulator:
 - `REBOOT`: When the volume is ejected, the device will try to mount the volume again.
-- `RESET`: When the volume is ejected, the device will enter BOOTSEL mode. The volume `RPI-RP2` will be mounted again, and the user can flash a new firmware.
+- `RESET`: When the volume is ejected, the device will enter BOOTSEL mode. The volume `RPI-RP2` or `RP2350` will be mounted again, and the user can flash a new firmware.
 
 The files or folders with these magic names will be deleted after the action is triggered.
 
@@ -225,6 +231,9 @@ Flash size: 16777216 bytes
 ```
 
 The firmware version is displayed as `Version: vX.Y.Z`, where `X.Y.Z` is the major, minor, and patch version numbers. In this example, the firmware version is `v2.0.0`. 
+
+{: .warning}
+You MUST install version 2.1 firmwares on the SidecarTridge TOS v2 boards, and version 3.0 firmwares on the SidecarTridge TOS v3 boards. Installing a firmware version for a different board will not work and may cause issues with the device.
 
 ### Upgrading the Firmware from major version 1 to version 2
 
@@ -254,7 +263,7 @@ To update the firmware, follow these steps:
 
 ![SidecarTridge Firmware Update](/sidecartridge-tos/assets/images/sidecartridge-firmware-update.gif)
 
-The SidecarTridge TOS emulator will enter the firmware update mode and appear as a USB mass storage device on your computer with the name `RPI-RP2`. Copy the firmware file to the root directory of the mass storage device and wait for the firmware update process to complete. If, after the update, the SidecarTridge TOS emulator does not reboot, press the `RESET` button for a few seconds to restart the device.
+The SidecarTridge TOS emulator will enter the firmware update mode and appear as a USB mass storage device on your computer with the name `RPI-RP2` for v1 and v2 boards, or `RP2350` for v3 boards. Copy the firmware file to the root directory of the mass storage device and wait for the firmware update process to complete. If, after the update, the SidecarTridge TOS emulator does not reboot, press the `RESET` button for a few seconds to restart the device.
 
 The firmware update process is now complete, and you can proceed to the next section to verify the installation.
 
