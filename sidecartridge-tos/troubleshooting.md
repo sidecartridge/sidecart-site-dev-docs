@@ -50,9 +50,9 @@ Alternatively, you can do this without using the RESET button:
 3. Plug in the USB connector.
 4. Release the `BOOT` button.
 
-If the `RPI-RP2` volume does not appear on your computer, check that the USB cable is correctly connected to the SidecarTridge TOS device and the USB power source.
+If the `RPI-RP2` or `RP2350` volume does not appear on your computer, check that the USB cable is correctly connected to the SidecarTridge TOS device and the USB power source.
 
-If the `RPI-RP2` volume appears, try reinstalling the firmware: [Firmware Installation Guide](https://docs.sidecartridge.com/sidecartridge-tos/getting-startedV2/#firmware-installation)
+If the `RPI-RP2` or `RP2350` volume appears, try reinstalling the firmware: [Firmware Installation Guide](https://docs.sidecartridge.com/sidecartridge-tos/getting-startedV2/#firmware-installation)
 
 
 ### The `ROMEMUL` volume are not recognized by the host computer when the device is connected to the Atari ST

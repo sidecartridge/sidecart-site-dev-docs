@@ -21,6 +21,24 @@ parent: SidecarTridge TOS
 
 ## Firmware Changelog
 
+### 3.0.0 (2025-06-01) - v3 release
+This firmware release is the first stable release of the SidecarTridge TOS v3 board. It includes several new features and improvements over the previous versions.
+
+#### Changes
+- The firmware is now based on the RP2350 microcontroller, which provides more features and better performance.
+- The firmware now supports 512KB ROMs.
+- The upload feature now display the progress in blocks of 64KB, which is more efficient and faster.
+
+#### New Features
+- The firmware now supports the RP2350 microcontroller, which provides more features and better performance.
+- There is a new red LED indicator that lights up when the board is powered on.
+- There is a new green LED indicator that lights up when the firmware is running.
+- There is a new orange LED indicator that lights up when the internal USB drive is mounted or transferring data.
+- There is a new CONFIG.TXT file that allows the user to configure some advanced firmware options.
+- The parameter READ_BUS_TICKS in the CONFIG.TXT file allows the user to configure the number of ticks to wait for the bus to be ready before reading it. This is useful for some Atari ST motherboards that require more time to read the bus. Each tick is 12.5ns.
+- The parameter USE_OE in the CONFIG.TXT file allows the user to configure if the OE signal is used or not. Not strictly necessary for Atari computers.
+- Support for Commodore Amiga on EmuTOS.
+
 ### 2.1.0 (2024-11-21) - Commands release
 
 This firmware release adds some maintenance commands and modifies the creation of the INFO.TXT file to avoid issues when powering on the device.

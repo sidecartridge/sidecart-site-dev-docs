@@ -14,7 +14,9 @@ This section compiles a list of frequently asked questions (FAQs) aimed at addre
 
 ### What is the maximum number of ROMs that the SidecarTridge TOS emulator can support?
 
-The number of ROMs that the device can support depends on the carrier board, not the SidecarTridge ROM emulator itself. The emulator is compatible at the signal level with any ROM, EPROM, or EEPROM with a bus width of 17 or 18 bits (256KBytes of address space), 8 or 16 bits of data bus, and CE and/or OE signals.
+Depend on the version of the SidecarTridge TOS emulator you have:
+- **SidecarTridge TOS v1 and v2**: The number of ROMs that the device can support depends on the carrier board, not the SidecarTridge ROM emulator itself. The emulator is compatible at the signal level with any ROM, EPROM, or EEPROM with a bus width of 17 or 18 bits (256KBytes of address space), 8 or 16 bits of data bus, and CE and/or OE signals.
+- **SidecarTridge TOS v3**: Same as the previous versions, the number of ROMs that the device can support depends on the carrier board, not the SidecarTridge ROM emulator itself. But it can support 512KB ROMs and an extra bit in the address bus. Sadly, the Atari ST/STE/MegaST/MegaSTE motherboards only support 192KB or 256KB ROMs, so the SidecarTridge TOS v3 is limited to 256KB ROMs.
 
 ### Why is the SidecarTridge TOS emulator not compatible with certain Atari ST motherboards?
 
@@ -26,11 +28,8 @@ Potentially yes, but it is best to inquire first. For unique or unknown motherbo
 
 ### Why is the SidecarTridge TOS emulator limited to 256KB ROMs maximum?
 
-It uses the RP2040 microcontroller in the SidecarTridge ROM emulator, which has a maximum of 264KB of RAM memory. With 8KB reserved for the program, the maximum ROM size is 256KB.
-
-### Will the SidecarTridge TOS emulator support larger ROMs in the future?
-
-Potentially, but it cannot be promised. There are rumors of a new RP2040 microcontroller with more memory and features, but it is not yet available.
+This is a limitation of the RP2040 microcontroller used in the v1 and v2 versions of the SidecarTridge ROM emulator. The RP2040 has a maximum address space of 256KB, which means it can only address up to 256KB of ROM memory.
+The v3 version of the SidecarTridge TOS emulator can support 512KB ROMs thanks to the RP2350 microcontroller, but the Atari ST/STE/MegaST/MegaSTE motherboards only support 192KB or 256KB ROMs, so the SidecarTridge TOS v3 is limited to 256KB ROMs.
 
 ### Why is the SidecarTridge TOS limited to 16MBytes of Flash storage?
 
@@ -52,21 +51,20 @@ Due to space constraints and the potential for users to access the RESCUE button
 
 The FAT12 filesystem is used to ensure compatibility with all operating systems, including Windows, macOS, and Linux. It is a simple and efficient filesystem that is easy to implement and use.
 
-### Why is the number of available TOS images limited to 64?
-
-It's a design choice to keep the firmware simple and efficient. The number of available TOS images is limited to 64 to ensure that the firmware remains responsive and reliable. Future firmware updates may increase this limit.
 
 ### Why is the name of the TOS images limited to 64 characters?
 
-The name of the TOS images is limited to 64 characters to ensure it is possible to fit 64 names in 512 bytes of RAM memory. The memory available in the RP2040 microcontroller is limited, so the firmware must be optimized to fit within these constraints.
+The name of the TOS images is limited to 64 characters to ensure it is possible to fit 64 names in 512 bytes of RAM memory. The memory available in the RP2040 and RP2350 microcontroller is limited, so the firmware must be optimized to fit within these constraints.
 
 ## Hardware Questions
 
 ### There is no power LED on the SidecarTridge TOS emulator. How do I know if it is powered on?
 
-The SidecarTridge TOS emulator does not have a power LED. However, the device is powered on when the carrier board is connected to the Atari ST motherboard and the Atari ST is powered on, or when the SidecarTridge TOS emulator is connected to a USB power source.
+The SidecarTridge TOS emulator board v1 and v2 does not have a power LED. However, the device is powered on when the carrier board is connected to the Atari ST motherboard and the Atari ST is powered on, or when the SidecarTridge TOS emulator is connected to a USB power source.
 
 When the SidecarTridge TOS emulator is powered on and connected to a USB power source, you must press the RESET button during a few seconds to start the device. Then, it will appear as a USB drive on your computer with the name `ROMEMUL`.
+
+Version 3 of the SidecarTridge TOS emulator has a red LED that indicates when the device is powered on.
 
 ### Can I use a 256KB ROM image in a ST/STF/STFM motherboard?
 
