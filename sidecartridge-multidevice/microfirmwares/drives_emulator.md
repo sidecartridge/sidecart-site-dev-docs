@@ -179,3 +179,4 @@ Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
 [Previous: RTC Emulator](/sidecartridge-multidevice/microfirmwares/rtc_emulator/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Multidevice Test](/sidecartridge-multidevice/microfirmwares/multidevice-test/){: .btn }
