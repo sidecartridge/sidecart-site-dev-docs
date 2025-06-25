@@ -122,6 +122,52 @@ DEFAULT.TXT and RESCUE.TXT require reindexing after editing to apply changes. To
 
 If you’ve edited DEFAULT.TXT and RESCUE.TXT and the system seems to find the first image in the list, it’s likely that the files are not formatted correctly. Please check that the file names includeing the extension are correct and they are 64 characters or less.
 
+## Errors ejecting / unmounting the ROMEMUL volume
+
+Errors when ejecting or unmounting the ROMEMUL volume affects the ability to change TOS images or update the DEFAULT/RESCUE images. This can happen for several reasons, and here are some common solutions:
+
+### The host computer returns an error when ejecting or unmounting the ROMEMUL volume
+
+If the host computer returns an error when ejecting or unmounting the ROMEMUL volume, it’s likely that some programs in your computer are still accessing the volume. Please close all programs that might be accessing the ROMEMUL volume and try again.
+
+Also, you can check the following:
+
+1. **Third-party tools and drivers**: On Windows especially, various utilities and antivirus software may flood removable media with hidden files and metadata — often the root cause of strange behavior. Please disable or uninstall any third-party tools that might be interfering with the ROMEMUL volume.
+2. **USB-C cables**: Please try with a different USB-C cable. Some cables are designed only for charging and do not support data transfer, which can lead to issues with the ROMEMUL volume.
+3. **USB-C host hubs**: Some hubs handle the device well, others do not. Results vary widely depending on your system's USB stack and chipset. In this case, try with a different computer.
+
+
+### Can't change the RESCUE and DEFAULT/ACTIVE images from the host computer
+
+The DEFAULT or ACTIVE image is the one that will be loaded by the Atari ST when it boots. You can always change it from the `SWITCHER.TOS` program.
+
+The RESCUE image cannot be changed from the `SWITCHER.TOS` program. It is designed to be a fallback image that can be used to recover the device in case of a failed broken image. The RESCUE image is set in the `RESCUE.TXT` file, which is located in the root directory of the ROMEMUL volume.
+
+The restriction in `SWITCHER.TOS` is intentional — it's designed to prevent users from casually modifying the `RESCUE` image. That said, the restriction is **soft** and can be bypassed with the following steps:
+
+#### 🛠 How to change the RESCUE image
+
+1. **Connect** your device to your PC via USB, as usual.
+2. **Edit** the `RESCUE.TXT` file and replace the line with the name of the new rescue image (e.g., `TOS206UK.IMG`).
+3. **Wait** about a minute to allow your operating system to flush the file to disk. On macOS/Linux, you can run `sync` manually. On Windows, there’s no direct equivalent — just waiting is your best option.
+4. **Unplug** the USB cable directly — **do not eject or unmount** the volume first. This ensures the changes to `RESCUE.TXT` are preserved, but the reindexing hasn’t yet triggered.
+5. **Boot your Atari ST** and launch the `SWITCHER.TOS` program.
+6. The list of available TOS images will appear, but the old RESCUE image will still be marked — that’s expected.
+7. **Select the new image** (the one matching the name in `RESCUE.TXT`) and **rename it to exactly the same name** (same characters and extension). This step confirms and activates the RESCUE flag.
+8. After renaming, the new image should now appear in the list with the RESCUE tag assigned.
+
+With this workaround, you can reassign the RESCUE image directly from within `SWITCHER.TOS`.
+
+### The ROMEMUL volume is not mounted again after ejecting it
+
+By default, when the ROMEMUL volume is ejected, it will not be automatically remounted again right away. The device needs to be powered off and on again to remount the ROMEMUL volume. To modify the default behavior, you have to do the following:
+
+1. Connect the SidecarTridge TOS to your computer via USB.
+2. Open the `ROMEMUL` volume in your file manager.
+3. Create a file named `REBOOT` in the root directory of the `ROMEMUL` volume.
+4. Eject the `ROMEMUL` volume from your computer.
+
+Now, when you eject the `ROMEMUL` volume, the device will automatically remount it again after a few seconds.
 
 
 [Previous: Compatibility](/sidecartridge-tos/compatibility/){: .btn .mr-4 }
