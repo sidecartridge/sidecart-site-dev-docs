@@ -126,7 +126,7 @@ If you’ve edited DEFAULT.TXT and RESCUE.TXT and the system seems to find the f
 
 Errors when ejecting or unmounting the ROMEMUL volume affects the ability to change TOS images or update the DEFAULT/RESCUE images. This can happen for several reasons, and here are some common solutions:
 
-### The host computer returns an error when ejecting or unmounting the ROMEMUL volume
+### The host computer returns an error when ejecting or unmounting the ROMEMUL volume
 
 If the host computer returns an error when ejecting or unmounting the ROMEMUL volume, it’s likely that some programs in your computer are still accessing the volume. Please close all programs that might be accessing the ROMEMUL volume and try again.
 
