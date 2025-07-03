@@ -126,9 +126,6 @@ Given the `SELECT` button's dual function, you cannot access the `Configurator` 
 ## Floppies Emulation
 {: .d-inline-block }
 
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
-
 The Floppies Emulation represents a significant enhancement to the Multi-device. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
 
 ### Pre-requisite: Hosting Floppy Images on microSD
@@ -242,9 +239,6 @@ The user can insert and eject virtual floppy images from the Atari ST using the 
 ## Hard Disk Emulation
 {: .d-inline-block }
 
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
-
 ### Introduction
 
 The Multi-device introduces a hard disk emulation feature for the Atari ST, offering a significant storage solution without the necessity for an actual hard disk. This guide details the setup and utilization of the Hard Disk Emulation feature.
@@ -322,9 +316,6 @@ The lastest adapted games for hard disk does support the GEMdrive emulation. Mos
 ## Atari ST database of floppy images
 {: .d-inline-block }
 
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
-
 The Multi-device can read a database of floppy images hosted on a remote web server. This feature is built on top of the Floppies Emulation one. This is an out of the box feature that doesn't require any additional configuration besides the one explained above for the Floppies Emulation. 
 
 ### How to download and emulate a floppy image from the database
@@ -373,9 +364,6 @@ The Multi-device currently doesn't support HTTPS. Ensure that your server uses H
 
 ## Real Time Clock (RTC)
 {: .d-inline-block }
-
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
 
 Starting from the version v0.0.11 of the firmware, the Multi-device can be configured to be a Real Time Clock (RTC) for the Atari ST. This section explains how to configure the Multi-device to be a RTC.
 
@@ -466,9 +454,6 @@ To disable the Rescue Mode, the user must delete the `.romrescue` file from the 
 ## Configurator Application
 {: .d-inline-block }
 
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
-
 The Configurator application serves as the central interface for the Multi-device's configurations. It's alternately known as the `firmware` or the `firmware application`. This guide will walk you through the nuances of the Configurator application.
 
 ### Boot Mode Adjustments
@@ -515,13 +500,11 @@ You have to be connected to the internet to check for the latest release.
 The Multi-device currently doesn't support HTTPS. Ensure that your server uses HTTP only.
 {: .warning}
 
-### The STABLE and BETA release distribution workflows
+### The STABLE release distribution workflows
 
-The Multi-device Latest release verification can be configured to check for new releases of type STABLE or BETA. With the growing user base of Multi-device, the need for extensive and stability-focused testing is becoming increasingly important. To address this, we propose introducing two distinct release workflows. This approach aims to balance the needs of our diverse user community, ranging from makers to those seeking more stable and reliable software.
+The Multi-device Latest release verification can be configured to check for new releases of type STABLE. 
 
-1. **BETA Release Workflow**: This caters to users who are interested in testing the latest features and providing valuable feedback. It allows us to incorporate user experiences into development, ensuring that the software meets a wide range of needs and use cases.
-
-2. **STABLE Release Workflow**: Aimed at users who prioritize stability and reliability. This workflow focuses on delivering a polished and thoroughly tested version of the software, thereby reducing support queries and enhancing user satisfaction.
+1. **STABLE Release Workflow**: Aimed at users who prioritize stability and reliability. This workflow focuses on delivering a polished and thoroughly tested version of the software, thereby reducing support queries and enhancing user satisfaction.
 
 This is controlled through the `LATEST_RELEASE_URL` parameter in the configuration.
 
@@ -531,13 +514,10 @@ If `LATEST_RELEASE_URL` points to `http://atarist./beta.txt`, users will be aler
 
 In both cases, the Multi-device will check for the latest release and display a blinking exclamation mark at the right side of the current version number at the top bar of the Configurator application. 
 
-To download the STABLE (latest) or BETA release, navigate to the [Download page](https://sidecartridge.com/downloads/) and download the appropriate file. Then, follow the [Update the firmware](/sidecartridge-multidevice/how_to/#update-the-firmware) guide.
+To download the STABLE (latest), navigate to the [Download page](https://sidecartridge.com/downloads/) and download the appropriate file. Then, follow the [Update the firmware](/sidecartridge-multidevice/how_to/#update-the-firmware) guide.
 
 ## Mass Storage Mode
 {: .d-inline-block }
-
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
 
 As of Beta release v0.0.17, the SidecarTridge multidevice board introduces the Mass Storage Mode feature, enabling users to access the microSD card as a mass storage device when connected to a computer via USB. This mode facilitates seamless file transfers between the microSD card and the computer, enhancing the SidecarTridge's versatility and user experience.
 
@@ -585,9 +565,6 @@ When the Mass Storage Mode is disabled, the SidecarTridge board will not enter i
 
 ## Enhanced Network Configuration
 {: .d-inline-block }
-
-{{ site.FIRMWARE_BETA_VERSION }}
-{: .label .label-purple }
 
 As of Beta release v0.0.15, the Multi-device introduces the capability to adjust a range of network settings, designed to aid in diagnosing and resolving Wi-Fi and other network-related challenges. These settings are accessible through the **[C. Multi-device Configuration](/sidecartridge-multidevice/parameters/)** menu.
 

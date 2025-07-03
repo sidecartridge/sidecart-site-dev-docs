@@ -31,7 +31,7 @@ To install the latest Multi-device firmware on the Raspberry Pi Pico W, connect 
 ![How enter in BOOTSEL mode](https://sidecartridge.com/assets/images/quickstart/bootsel-mode.gif)
 {: refdef}
 
-In this directory, you will need to copy the latest STABLE or BETA Firmware versions, which you can directly get from the [download page](https://sidecartridge.com/downloads/).
+In this directory, you will need to copy the latest STABLE Firmware versions, which you can directly get from the [download page](https://sidecartridge.com/downloads/).
 
 Once you've copied the file corresponding to your Raspberry Pico W, disconnect the power cable. The new firmware has now been flashed.
 
