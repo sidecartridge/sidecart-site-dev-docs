@@ -110,7 +110,7 @@ The Floppies Emulation represents a significant enhancement to the Multi-device.
 
 ### Real Time Clock Emulation
 
-Temporarily disabled.
+The Real Time Clock (RTC) emulation allows the Multi-device to emulate the RTC functionality of Atari ST computers, enabling accurate timekeeping and date management. Please refer to the [RTC Emulator documentation](/sidecartridge-multidevice/microfirmwares/rtc_emulator/) for more details on how to use this feature.
 
 ### Other Setup Screen Commands
 
@@ -132,6 +132,9 @@ The internal browser allows you to navigate through the microSD card's directory
 As a rule of thumb, **`SPACE`** will select the current item. So, if you want to choose a new folder, navigate to it, press **`ENTER`** to enter it, and then press **`SPACE`** to select it. If you want to select a file, navigate to it, and then press **`SPACE`** to select it.
 
 ### 💾 Concurrent USB Mass Storage
+
+{: .warning}
+This feature has been temporaly disabled in the current version of the app. It's only possible to use the USB mass storage during the setup menu.
 
 The Multi-device supports **simultaneous USB mass storage access**, allowing you to read and write to the microSD card *while the emulator is running*. You can copy files to and from the card without pausing or interrupting the emulator.
 
@@ -155,6 +158,25 @@ The Drives Emulator app is **resistant to system resets**. Pressing the reset bu
 
 The Drives Emulator app is designed to return to the setup screen after a power cycle. When you power off and on your Atari, the app will display the setup screen again, allowing you to configure the emulator or launch it with the last used settings.
 
+### ⚙️ Advanced Features
+
+#### Changing the speed of the microSD card 
+
+The speed of the microSD is measured in the megahertzs (MHz) of the Serial Peripheral Interface (SPI) bus that connects the RP2040 microcontroller to the microSD card. The range of speeds supported by the Multi-device is from 1 MHz to 24 MHz. The default speed is set to 12.5 MHz, which is a good balance between performance and stability.
+
+The microSD card speed is a global setting that applies not only to the GEMDRIVE and Floppy emulation, but also to all the other microfirmwares that use the microSD card. Hence, this paremeter is set in the **Booster App** and not in the Drives Emulator app.
+
+To modify the microSD card speed, follow these steps:
+1. Launch the **Booster App** on your SidecarTridge Multi-device. If you are not already in the Booster App, press the **`X`** button on your Multi-device to return to the Booster menu.
+2. Open the Booster web interface.
+3. In the **"Config"** tab, locate the **"SD card bus speed (KHz)"** setting and adjust it to your desired value. The value is in kilohertz (KHz), so for example, if you want to set the speed to 24 MHz, enter `24000`.
+4. Click **"Save"** to apply the changes.
+5. Go back to the **"Apps"** tab and launch the **"Drives Emulator"** app again.
+
+{: .warning}
+Any value below 1Mhz will be discarded and the speed will be set to 1 MHz. Same for values above 24 MHz, which will be set to 24 MHz.
+
+**It's relatively safe to set the speed to 24 MHz**, but if you experience issues with the emulator, try lowering the speed to 12.5 MHz or even 6 MHz. Any modern microSD card should be able to handle these speeds without issue.
 
 ## 🛠️ Setting Up the Development Environment
 
@@ -166,7 +188,6 @@ To set up your development environment, please follow the instructions provided 
 - [ ] Support for Disk Swapping (changing floppy disk images on the fly).
 - [ ] Support for Downloading images from the internet repository.
 - [ ] Support for Read-Only GEMDRIVE (currently, it is read/write).
-- [ ] Support for Real Time Clock emulation (currently, it is disabled).
 
 
 ## 📄 License
