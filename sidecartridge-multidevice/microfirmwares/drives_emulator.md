@@ -120,6 +120,7 @@ The Real Time Clock (RTC) emulation allows the Multi-device to emulate the RTC f
 ### ⬇️ Browsing the microSD Card
 
 The internal browser allows you to navigate through the microSD card's directory structure. You can select folders and files using the keyboard:
+
 | Key | Action |
 |-----|--------|
 | **`UP`** | Move up in the directory structure |
