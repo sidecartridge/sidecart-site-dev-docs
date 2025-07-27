@@ -35,7 +35,16 @@ This is an **ALPHA** version of the firmware, and it is not recommended for prod
 
 A Microfirmware app is a small, self-contained program that runs on a standalone RP2040 or RP235x chip, along with a companion firmware on your computer that talks to it. Together, they provide the features of the device.
 
-Here’s how it works:
+### Available Microfirmware Apps
+
+The following Microfirmware apps are available in the public repository:
+- [ROM Emulator](/sidecartridge-multidevice/microfirmwares/rom_emulator/): An emulator for ROM files, allowing you to run games and applications from the microSD card or from a remote server.
+- [Real Time Clock Emulator](/sidecartridge-multidevice/microfirmwares/rtc_emulator/): An emulator for real-time clock functionality, allowing you to set and read the current time and date from a remote NTP server. It also emulates a DS1307 chip.
+- [Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/): An emulator for hard disk and floppy disk drives, allowing you to access and manage disk images stored on the microSD card. It also includes a Real Time Clock emulator.
+- [Multi-device Test ROM](/sidecartridge-multidevice/microfirmwares/multidevice-test/): A test program designed to validate the functionality and performance of the SidecarTridge Multidevice.
+- [File & Download Manager](/sidecartridge-multidevice/microfirmwares/browser/): A file manager and download manager that allows you to browse, search, and download files from the public floppy image database, as well as manage files on your microSD card.
+
+### How it works:
 
 ### Microfirmware App Core
 This is the main program running on the RP2040 chip. It manages things like reading the microSD card, talking to the computer, and (if needed) providing a web interface.
@@ -58,14 +67,6 @@ The available Microfirmware apps are listed in a public repository, which the Bo
 To develop your own Microfirmware apps, there is a  [template repository](https://github.com/sidecartridge/md-microfirmware-template) and follow the instructions in the [Programming Guide](/sidecartridge-multidevice/programming/).
 
 Each Microfirmware app should be a self-contained program that can run on the RP2040 or RP235x chip. It should include the necessary code to read the microSD card, communicate with the computer, and provide any additional features you want. 
-
-### Available Microfirmware Apps
-
-The following Microfirmware apps are available in the public repository:
-- [ROM Emulator](/sidecartridge-multidevice/microfirmwares/rom_emulator/): An emulator for ROM files, allowing you to run games and applications from the microSD card or from a remote server.
-- [Real Time Clock Emulator](/sidecartridge-multidevice/microfirmwares/rtc_emulator/): An emulator for real-time clock functionality, allowing you to set and read the current time and date from a remote NTP server. It also emulates a DS1307 chip.
-- [Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/): An emulator for hard disk and floppy disk drives, allowing you to access and manage disk images stored on the microSD card. It also includes a Real Time Clock emulator.
-- [Multi-device Test ROM](/sidecartridge-multidevice/microfirmwares/multidevice-test/): A test program designed to validate the functionality and performance of the SidecarTridge Multidevice.
 
 
 [Previous: User Guide](/sidecartridge-multidevice/userguide_v2/){: .btn .mr-4 }

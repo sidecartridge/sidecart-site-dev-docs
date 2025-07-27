@@ -98,6 +98,6 @@ See the [LICENSE](https://github.com/sidecartridge/md-rom-emulator/blob/main/LIC
 ## 🤝 Contributing
 Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
-[previous: Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/){: .btn .mr-4 }
+[Previous: Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
 [Next: File & Download Manager](/sidecartridge-multidevice/microfirmwares/browser/){: .btn }
