@@ -100,3 +100,4 @@ Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
 [previous: Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: File & Download Manager](/sidecartridge-multidevice/microfirmwares/browser/){: .btn }
