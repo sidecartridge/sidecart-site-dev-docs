@@ -43,6 +43,7 @@ The following Microfirmware apps are available in the public repository:
 - [Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/): An emulator for hard disk and floppy disk drives, allowing you to access and manage disk images stored on the microSD card. It also includes a Real Time Clock emulator.
 - [Multi-device Test ROM](/sidecartridge-multidevice/microfirmwares/multidevice-test/): A test program designed to validate the functionality and performance of the SidecarTridge Multidevice.
 - [File & Download Manager](/sidecartridge-multidevice/microfirmwares/browser/): A file manager and download manager that allows you to browse, search, and download files from the public floppy image database, as well as manage files on your microSD card.
+- [GPU Demo](/sidecartridge-multidevice/microfirmwares/gpu-demo/): A demo showcasing the graphics capabilities of the RP2040 chip, rendering sprites and tiles in real-time in a low-resolution mode of the Atari ST / STE.
 
 ### How it works:
 

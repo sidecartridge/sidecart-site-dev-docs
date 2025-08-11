@@ -194,3 +194,4 @@ Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
 [Previous: Multidevice Test](/sidecartridge-multidevice/microfirmwares/multidevice-test/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: GPU Demo](/sidecartridge-multidevice/microfirmwares/gpu_demo/){: .btn }
