@@ -29,7 +29,7 @@ This micro-firmware app for the **SidecarTridge Multi-device** showcases the RP2
 {:toc}
 </details>
 
-<figure class="video_container" style="position: relative; padding-bottom: 177.78%; height: 0; overflow: hidden; max-width: 360px; margin: 0 auto; background: #000;">
+<figure class="video_container" style="position: relative; padding-bottom: 140%; height: 0; overflow: hidden; max-width: 420px; margin: 0 auto; background: #000;">
   <iframe 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     src="https://www.youtube.com/embed/NPjklKdaaVs?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
@@ -38,6 +38,7 @@ This micro-firmware app for the **SidecarTridge Multi-device** showcases the RP2
     allowtransparency>
   </iframe>
 </figure>
+
 
 
 ## ⚠️ Attention
@@ -98,22 +99,22 @@ This demo is a re-imagining of the [RP2040 VGA 6-bit demo](https://github.com/mo
 The framebuffers follow the classic Atari ST low-res layout: 32 KB of contiguous memory, four bitplanes. The RP2040 keeps them updated with whatever’s happening in the scene, and the Atari just reads and displays them.
 
 
-## Tiles, sprites, and color conversion
+### Tiles, sprites, and color conversion
 
 In the original VGA demo, tiles and sprites are stored in **RGB6** format: 6 bits per pixel, two bits each for red, green, and blue, allowing 64 colors. The Atari ST can only show 16 colors at a time, so conversion is necessary. A “smart” approach would be to pre-convert all data to the ST’s planar format. This demo takes the opposite route: it converts on-the-fly.
 
 Why? Because the goal isn’t raw performance — it’s to explore strategies for live conversion from chunky RGB6 to the ST’s planar format, which might be useful for future work. Converting a whole screen of background tiles takes around 8 ms, which would be too slow for some uses but serves fine here.
 
 
-## Transparency
+### Transparency
 
 Sprites use a simple color-key transparency: one palette color is treated as invisible, and any pixel matching it isn’t drawn. This, too, is handled live during conversion. 
 
-## Text
+### Text
 
 Text rendering works the same way — a small 6×8 bitmap font is stored in the RP2040, converted to planar format as needed, and blended into the scene.
 
-## ST vs. STE
+### ST vs. STE
 
 The core loop is tuned differently for the two machines. On a plain ST, it’s raw 68000 speed, using self-generated `MOVEM.L` sequences to blast the framebuffer to screen memory in under 20 ms:
 
@@ -125,11 +126,11 @@ MOVEM.L D0-D7/A0-A7, $70000
 
 On an STE, the blitter takes over, copying large chunks in one go and finishing much faster. In the ST version you’ll see a red timing bar at the bottom showing how much copy time is used; on the STE, that bar turns blue and is shorter, thanks to the blitter’s speed.
 
-## Double buffering
+### Double buffering
 
 Two framebuffers live in the RP2040’s RAM and two more in the Atari’s. This is overkill but makes tearing impossible: while one buffer is displayed, the other is being drawn. It could be made leaner, but again, performance tuning wasn’t the main goal here.
 
-## What’s next
+### What’s next
 
 I don’t plan to push this much further — it’s a proof of concept and a learning project before tackling something far bigger, like getting DOOM running on the Multi-device.
 
