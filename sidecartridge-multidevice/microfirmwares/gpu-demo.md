@@ -13,7 +13,8 @@ redirect_from:
 {: .no_toc }
 
 {: .d-inline-block }
-{{ site.MICROFIRMWARE_GPU_DEMO_VERSION }}{: .label .label-purple }
+
+{{ site.MICROFIRMWARE_GPU_DEMO_VERSION }} {: .label .label-purple }
 [Source code](https://github.com/sidecartridge/md-sprites-demo){: .label .label-blue }
 [CHANGELOG](https://github.com/sidecartridge/md-sprites-demo/blob/main/CHANGELOG.md){: .label .label-green }
 
