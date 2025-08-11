@@ -11,10 +11,13 @@ redirect_from:
 
 # SidecarTridge Multi-device Test ROM
 {: .no_toc }
+
 {: .d-inline-block }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
-{: .label .label-purple }
+[Source code](https://github.com/sidecartridge/md-testrom){: .label .label-blue }
+[CHANGELOG](https://github.com/sidecartridge/md-testrom/blob/main/CHANGELOG.md){: .label .label-green }
+[{{ site.MICROFIRMWARE_TESTROM_VERSION }}](){: .label .label-purple }
+
 
 This is a microfirmware application for the **SidecarTridge Multi-device**, that contains a test program designed to validate the functionality and performance of the Sidecartridge Multidevice. 
 
