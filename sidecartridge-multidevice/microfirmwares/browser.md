@@ -11,9 +11,12 @@ redirect_from:
 
 # SidecarTridge Multi-device File & Download Manager
 {: .no_toc }
+
 {: .d-inline-block }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
+[Source code](https://github.com/sidecartridge/md-browser){: .label .label-blue }
+[CHANGELOG](https://github.com/sidecartridge/md-browser/blob/main/CHANGELOG.md){: .label .label-green }
+{{ site.MICROFIRMWARE_BROWSER_VERSION }}
 {: .label .label-purple }
 
 This microfirmware app for the **SidecarTridge Multi-device** enables you to browse, search, and download files from the public floppy image database, as well as manage files on your microSD card—all from a modern web interface.
