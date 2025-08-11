@@ -29,7 +29,7 @@ This micro-firmware app for the **SidecarTridge Multi-device** showcases the RP2
 {:toc}
 </details>
 
-<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+<figure class="video_container" style="position: relative; padding-bottom: 177.78%; height: 0; overflow: hidden; max-width: 360px; margin: 0 auto; background: #000;">
   <iframe 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     src="https://www.youtube.com/embed/NPjklKdaaVs?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
@@ -38,6 +38,7 @@ This micro-firmware app for the **SidecarTridge Multi-device** showcases the RP2
     allowtransparency>
   </iframe>
 </figure>
+
 
 ## ⚠️ Attention
 
