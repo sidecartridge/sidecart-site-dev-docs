@@ -101,7 +101,7 @@ Since this is a new version of the firmware and still in **ALPHA** stage, you wi
 ### Option 1: Using the drag-and-drop method
 1. Connect the Raspberry Pi Pico W micro USB connector to your computer while holding the **BOOTSEL** button.
 2. Your computer should recognize the device as the mass storage device `RPI-RP2`. Now you can release the **BOOTSEL** button.
-3. Drag and drop the [Full {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/nightly/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2) file to the `RPI-RP2` drive.
+3. Drag and drop the [Full {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2) file to the `RPI-RP2` drive.
 4. Wait for the file to be copied. When the copy is complete you can disconnect the Raspberry Pi Pico W from your computer.
 
 ### Option 2: Using picotool

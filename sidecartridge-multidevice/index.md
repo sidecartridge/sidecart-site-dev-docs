@@ -158,7 +158,7 @@ Firmware v2 introduces a new architecture for the SidecarTridge Multi-device tha
 
 Check the following links below:
 
-* **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/nightly/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2)**
+* **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2)**
 * Learn to install and configure with the [Getting Started Guide](/sidecartridge-multidevice/getting_started_v2/)
 * Learn to download and install the different [microfirmwares](/sidecartridge-multidevice/userguide_v2/)
 * Browse the list of available [microfirmwares](/sidecartridge-multidevice/microfirmwares/)
