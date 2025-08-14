@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Getting Started Firmware V2.0 (ALPHA)
+title: Getting Started Firmware V2.0 
 nav_order: 2
 nav_exclude: true
 parent: SidecarTridge Multi-device
@@ -17,9 +17,6 @@ redirect_from:
 {: .label .label-purple }
 
 This section provides guidance on the initial steps to start working with the SidecarTridge Multi-device board with the latest firmware v2. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the Multi-device board by following the procedures outlined in this and coming sections.
-
-{: .warning }
-This is an **ALPHA** version of the firmware, and it is not recommended for production use. It is intended for developers and makers who want to experiment with the Multi-device board and contribute to its development with code or just submitting bugs. If you are a novice user, please refer to the [previous version of the firmware](https://docs.sidecartridge.com/sidecartridge-multidevice/getting_started/) for a more stable experience.
 
 {: .important }
 

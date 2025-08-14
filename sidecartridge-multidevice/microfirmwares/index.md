@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Microfirmwares for the Firmware V2.0 (ALPHA)
+title: Microfirmwares for the Firmware V2.0 
 nav_order: 3
 nav_exclude: true
 parent: SidecarTridge Multi-device
@@ -9,16 +9,12 @@ redirect_from:
   - /microfirmwares/
 ---
 
-# Microfirmwares for the Firmware V2.0 (ALPHA)
+# Microfirmwares for the Firmware V2.0 
 {: .no_toc }
 {: .d-inline-block }
 
 {{ site.FIRMWARE_ALPHA_VERSION }}
 {: .label .label-purple }
-
-{: .warning }
-This is an **ALPHA** version of the firmware, and it is not recommended for production use. It is intended for developers and makers who want to experiment with the Multi-device board and contribute to its development with code or just submitting bugs. If you are a novice user, please refer to the [previous version of the firmware](https://docs.sidecartridge.com/sidecartridge-multidevice/userguide/) for a more stable experience.
-
 
 <details open markdown="block">
   <summary>
