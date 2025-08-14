@@ -149,7 +149,7 @@ compress_html:
 # Versions of SidecarT
 FIRMWARE_VERSION: v1.0.1
 FIRMWARE_BETA_VERSION: v1.0.1
-FIRMWARE_ALPHA_VERSION: v2.0.5alpha
+FIRMWARE_ALPHA_VERSION: v2.0.6beta
 TEST_FIRMWARE_VERSION: v0.0.3
 
 # Versions of microfirmwares
