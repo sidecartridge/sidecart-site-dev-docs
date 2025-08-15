@@ -40,8 +40,6 @@ To install the Drives Emulator app on your SidecarTridge Multi-device:
 4. Click **"Download"** to install the app to your SidecarTridge’s microSD card.
 5. Once installed, select the app and click **"Launch"** to activate it.
 
-> **⚠️ WARNING:** Booster Loader is currently in **alpha**. Use at your own risk.
-
 After launching, the app will automatically run every time your Atari computer is powered on.
 
 ## 🕹️ Usage

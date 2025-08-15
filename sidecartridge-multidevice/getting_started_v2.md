@@ -93,7 +93,7 @@ Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldere
 ### Firmware Installation
 
 {: .important }
-Since this is a new version of the firmware and still in **ALPHA** stage, you will need to install the bootloader on your Raspberry Pi Pico W. This is a one-time process that allows the Multi-device board to run the new firmware. Go for the option that best suits you. Both options will install the bootloader on your Raspberry Pi Pico W.
+Starting in version **v2.0.6Beta** you don't need to download the newer firmware version manually. Instead, the Booster app will report available updates and guide you through the installation process. The process described below applies to first time installation of the firmware or recovery process.
 
 ### Option 1: Using the drag-and-drop method
 1. Connect the Raspberry Pi Pico W micro USB connector to your computer while holding the **BOOTSEL** button.

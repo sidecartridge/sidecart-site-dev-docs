@@ -74,8 +74,6 @@ The Booster microfirmware app is now installed in the flash memory of the device
 
 To return to the Booster app, the user needs to use the command menu on the microfirmware app to do it, or press the SELECT button for more than 10 seconds and then power off and power on the device and the computer.
 
-> **Note**: In this Alpha version, the **DEV APP** is a placeholder development app for anybody who wants to develop a microfirmware app. It is not a real app and it does not do anything.
-
 ### WiFi view
 
 The **WiFi view** shows the list of available WiFi networks and permits some basic network configuration options:
@@ -86,7 +84,7 @@ The **WiFi view** shows the list of available WiFi networks and permits some bas
 - **Hostname**: The hostname of the device. This is used to identify the device on the network. By default is `sidecart`. 
 - **Wifi Power**: The power of the WiFi module. From 0 to 4. 
 - **Show RSSI**: Show the RSSI of the WiFi module. This is used to show the signal strength of the WiFi network.
-- **DHCP Enabled**: Enable or disable the DHCP server. This is used to assign IP addresses to the devices connected to the Booster app. In Alpha, only DHCP is tested.
+- **DHCP Enabled**: Enable or disable the DHCP server. This is used to assign IP addresses to the devices connected to the Booster app.
 
 Don't forget to click the **Save** button to save the changes!
 
@@ -105,10 +103,10 @@ The **Device view** shows the device information and some basic configuration op
 ![Booster Manager Device View](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-CONFIG-1.png)
 
 - **Apps folder**: The folder where the apps are stored. By default is `/apps`. This folder is created on the microSD card when the Booster app is launched for the first time if it does not exist.
-- **Apps catalog URL**: The URL of the apps catalog. By default is `http://atarist.sidecartridge.com/apps.json`. You can configure your own apps catalog URL if you want to use your own apps. In the alpha version, the `apps.json` file must be hosted in a HTTP server. HTTPS is not supported yet.
+- **Apps catalog URL**: The URL of the apps catalog. By default is `http://atarist.sidecartridge.com/apps.json`. You can configure your own apps catalog URL if you want to use your own apps. The `apps.json` file must be hosted in a HTTP server
 - **Boot feature**: The UUID of the microfirmware app to load at boot time, or the Booster mode: `FABRIC` o `MANAGER`. If the app cannot find the UUID of the microfirmware in the flash memory, it will load the Booster app in **Manager mode**.
-- **Safe SELECT reboot**: Not used in alpha version.
-- **SD card baud rate (KB)**: The baud rate of the SD card. By default is `12500`. It can be safely increased to `25000`. Above this value, the SD card may not work properly or the value will be ignored.
+- **Safe SELECT reboot**: Not used in this version.
+- **SD card baud rate (KB)**: The baud rate of the SD card. By default is `12500`. It can be safely increased to `24000`. Above this value, the SD card may not work properly or the value will be ignored.
 
 Don't forget to click the **Save** button to save the changes!
 

@@ -56,8 +56,6 @@ To install the GPU Demo app on your SidecarTridge Multi-device:
 4. Click **Download** to install the app to your SidecarTridge’s microSD card.
 5. Once installed, select the app and click **Launch**.
 
-> **⚠️ WARNING:** The Booster Loader is currently in **alpha** — use at your own risk.
-
 After installation, the GPU Demo will start automatically every time your Atari is powered on.
 
 ## 🕹️ Usage

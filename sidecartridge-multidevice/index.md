@@ -35,7 +35,7 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 * **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
 * 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
 
-## 👉 [Do you want to test the new Alpha firmware?](#do-you-want-to-test-the-new-alpha-firmware)
+## 👉 [Do you want to test the new firmware?](#do-you-want-to-test-the-new-alpha-firmware)
 
 ## 🐞 Bugs, Issues, and Enhancements
 * [Reporting tool](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues)
