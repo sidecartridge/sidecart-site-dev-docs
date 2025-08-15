@@ -119,11 +119,17 @@ It also provides two buttons to reboot the device:
 
 Starting in version **v2.0.6Beta** you don't need to download the newer firmware version manually. Instead, the Booster app will report available updates and guide you through the installation process.
 
+![Booster Manager Firmware Update Banner](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-UPDATE-1.png)
+
 When a new firmware version is available, the Booster app will show a message on top of the web interface, prompting you to update.
 
-The update process is straightforward and can be done directly from the web interface. First, the user needs to confirm the update by clicking the **Update** button. The Booster app will then download the new firmware version. It can take about two minutes to complete the update process. The screen on the Atari ST computer will display information about the update progress.
+The update process is straightforward and can be done directly from the web interface. First, the user needs to confirm the update by clicking the **Continue upgrading** button. The Booster app will then download the new firmware version. It can take about two minutes to complete the update process. The screen on the Atari ST computer will display information about the update progress.
 
-Once the new firmware has been downloaded to the microSD card, the Booster app will ask the user to confirm the installation. The user needs to click the **Install** button to proceed. It will take a few seconds to reflash the firmware in the Raspberry Pi Pico W.
+![Booster Manager Firmware Update Download](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-UPDATE-2.png)
+
+Once the new firmware has been downloaded to the microSD card, the Booster app will ask the user to confirm the installation. The user needs to click the **Confirm firmware upgrade** button to proceed. It will take a few seconds to reflash the firmware in the Raspberry Pi Pico W.
+
+![Booster Manager Firmware Update Reflash](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-UPDATE-3.png)
 
 After the reflashing process is complete, the screen on the Atari ST computer will turn black and the Booster app will reboot activating the new firmware.
 
