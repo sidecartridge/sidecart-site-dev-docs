@@ -134,7 +134,7 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
     </tr>
 </table>
 
-## Do you want to test the new Alpha firmware?
+## Do you want to test the new firmware?
 {: .d-inline-block }
 
 {{ site.FIRMWARE_ALPHA_VERSION }}
