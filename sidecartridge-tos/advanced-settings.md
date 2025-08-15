@@ -74,6 +74,9 @@ The `USE_OE` parameter controls whether the ROM Emulator waits for the Output En
 
 While this value is not commonly adjusted, it can be useful in certain situations where a custom hardware configuration requires it. Theoretically, setting this value to 1 could improve compatibility with certain hardware setups that rely on the OE signal, but stock Atari ROMs don't require it.
 
+{: .warning}
+As a kind reminder, ALWAYS eject the `ROMEMUL` volume after making any changes to the files. This will ensure that the changes are correctly saved and reflected in the emulator.
+
 [Previous: User Guide](/sidecartridge-tos/user-guideV2/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
 [Next: Compatibility](/sidecartridge-tos/compatibility/){: .btn }
