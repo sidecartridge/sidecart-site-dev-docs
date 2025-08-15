@@ -115,6 +115,22 @@ It also provides two buttons to reboot the device:
 - **Reboot the device**: Reboot the device and load the microfirmware app in flash memory. This is the normal way to reboot the device.
 - **Reboot the device in default fabric settings**: Reboot the device and load the Booster app in **Factory mode**. This is useful to reset the device to factory settings or to change the WiFi network.
 
+### Firmware update
+
+Starting in version **v2.0.6Beta** you don't need to download the newer firmware version manually. Instead, the Booster app will report available updates and guide you through the installation process.
+
+When a new firmware version is available, the Booster app will show a message on top of the web interface, prompting you to update.
+
+The update process is straightforward and can be done directly from the web interface. First, the user needs to confirm the update by clicking the **Update** button. The Booster app will then download the new firmware version. It can take about two minutes to complete the update process. The screen on the Atari ST computer will display information about the update progress.
+
+Once the new firmware has been downloaded to the microSD card, the Booster app will ask the user to confirm the installation. The user needs to click the **Install** button to proceed. It will take a few seconds to reflash the firmware in the Raspberry Pi Pico W.
+
+After the reflashing process is complete, the screen on the Atari ST computer will turn black and the Booster app will reboot activating the new firmware.
+
+{: .note }
+If the update process fails or gets interrupted, the device can get bricked. In this case, you will need to perform a [fresh installation of the firmware](/sidecartridge-multidevice/getting_started_v2/#initial-setup-and-configuration).
+
+
 [Previous: Getting Started](/sidecartridge-multidevice/getting_started_v2/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
 [Next: Microfirmwares](/sidecartridge-multidevice/microfirmwares/){: .btn }
