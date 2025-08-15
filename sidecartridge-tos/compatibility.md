@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Compatbility
-nav_order: 6
+nav_order: 7
 nav_exclude: false
 parent: SidecarTridge TOS
 
@@ -143,7 +143,7 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 | EmuTOS 1.2.1 ES | 192 | Yes  | Yes   | Open-source TOS |
 | EmuTOS 1.2.1 UK | 192 | Yes  | Yes   |       |
 | EmuTOS 1.2.1 US | 192 | Yes  | Yes   |       |
-| EmuTOS 1.2.1 ES | 256 | Yes  | Yes   | Open-source TOS |
+| EmuTOS 1.2.1 ES | 256 | Yes  | Yes   |       |
 | EmuTOS 1.2.1 UK | 256 | Yes  | Yes   |       |
 | EmuTOS 1.2.1 US | 256 | Yes  | Yes   |       |
 | EmuTOS 1.3.0 ES | 192 | Yes  | Yes   |       |
@@ -152,9 +152,15 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 | EmuTOS 1.3.0 ES | 256 | Yes  | Yes   |       |
 | EmuTOS 1.3.0 UK | 256 | Yes  | Yes   |       |
 | EmuTOS 1.3.0 US | 256 | Yes  | Yes   |       |
-| Magic 6.20 UK | 256 | Yes  | Yes   | Custom TOS |
-| Magic 6.20 DE | 256 | Yes  | Yes   | Custom TOS |
-| Magic 6.20 US | 256 | Yes  | Yes   | Custom TOS |
+| EmuTOS 1.4.0 ES | 192 | Yes  | Yes   |       |
+| EmuTOS 1.4.0 UK | 192 | Yes  | Yes   |       |
+| EmuTOS 1.4.0 US | 192 | Yes  | Yes   |       |
+| EmuTOS 1.4.0 ES | 256 | Yes  | Yes   |       |
+| EmuTOS 1.4.0 UK | 256 | Yes  | Yes   |       |
+| EmuTOS 1.4.0 US | 256 | Yes  | Yes   |       |
+| MagiC 6.20 UK | 256 | Yes  | Yes   | Custom TOS |
+| MagiC 6.20 DE | 256 | Yes  | Yes   | Custom TOS |
+| MagiC 6.20 US | 256 | Yes  | Yes   | Custom TOS |
 
 You can learn about the different TOS versions in these videos:
 

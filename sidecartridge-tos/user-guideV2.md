@@ -143,4 +143,4 @@ The recue TOS cannot be changed using the SWITCHER.TOS program or the internal A
 
 [Previous: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
-[Next: Compatibility](/sidecartridge-tos/compatibility/){: .btn }
+[Next: Advanced Settings](/sidecartridge-tos/advanced-settings/){: .btn }
