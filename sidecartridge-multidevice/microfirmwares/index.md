@@ -85,7 +85,7 @@ The Booster App is designed to manage the Microfirmware apps on the device, allo
 
 The available Microfirmware apps are listed in a public repository, which the Booster app connects to. Users can browse and install apps from this repository, or upload their own apps to the device. They can also install their own repository for themselves or others to use.
 
-### Developing Microfirmware Apps
+### Developing Microfirmware Apps
 
 To develop your own Microfirmware apps, there is a  [template repository](https://github.com/sidecartridge/md-microfirmware-template) and follow the instructions in the [Programming Guide](/sidecartridge-multidevice/programming/).
 
