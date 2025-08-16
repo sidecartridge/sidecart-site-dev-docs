@@ -200,45 +200,27 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
 </div>
 
-## 👉 Do you want to test the new firmware?
-{: #do-you-want-to-test-the-new-alpha-firmware }
+## Do you want to test the new firmware?
+{: .d-inline-block }
 
-<style>
-  .alpha-ribbon {
-    background:#0f172a; color:#fff; border-radius:10px;
-    padding:.85rem 1rem; display:flex; flex-wrap:wrap; align-items:center; gap:.6rem;
-    box-shadow:0 6px 18px rgba(0,0,0,.18); margin:1rem 0 1.1rem 0;
-  }
-  .alpha-ribbon .chip {
-    background:#1f2937; border:1px solid #334155; border-radius:999px;
-    padding:.22rem .6rem; font-size:.78rem; font-weight:700;
-  }
-  .alpha-ribbon .spacer { flex:1 1 auto; }
-  .alpha-ribbon .btn {
-    background:#22d3ee; color:#0f172a; border:0; border-radius:10px; font-weight:800;
-    padding:.5rem .9rem; text-decoration:none;
-  }
-  .alpha-ribbon .btn.secondary {
-    background:transparent; color:#e2e8f0; border:1px solid #334155;
-  }
-</style>
-
-<div class="alpha-ribbon">
-  <span class="chip">ALPHA {{ site.FIRMWARE_ALPHA_VERSION }}</span>
-  <span class="chip">Firmware v2</span>
-  <span class="spacer"></span>
-  <a class="btn" href="https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2">Download</a>
-  <a class="btn secondary" href="/sidecartridge-multidevice/getting_started_v2/">Getting Started</a>
-  <a class="btn secondary" href="/sidecartridge-multidevice/microfirmwares/">Microfirmwares</a>
-  <a class="btn secondary" href="/sidecartridge-multidevice/programming/">Dev Guide</a>
-</div>
+{{ site.FIRMWARE_ALPHA_VERSION }}
+{: .label .label-purple }
 
 ### 🚀 What’s new in Firmware v2?
 
+Firmware v2 introduces a new architecture for the SidecarTridge Multi-device that brings flexibility, modularity, and a more efficient workflow — especially for power users and developers:
+
 * **🧩 Modular Microfirmwares**
+  The core of v2 is the concept of *Microfirmwares*: standalone apps (ROM emulator, floppy emulator, RTC, custom tools, etc.) that you can install and switch between on the same hardware — no need to reflash the entire board.
+
 * **📡 OTA (Over The Air) Downloads & Updates**
+  You can now browse and download Microfirmwares directly from official — and even private — Microfirmware repositories, over Wi-Fi. Install or update apps without removing the SD card or using a PC. A simple and secure way to keep your device up to date.
+
 * **⚙️ Per-app Configurations**
+  Each Microfirmware stores its own settings in flash memory, isolated from other apps. This allows you to easily switch between functions without losing or reconfiguring settings.
+
 * **🛠️ Optimized Development Workflow & Architecture**
+  The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
 
 Check the following links below:
 
