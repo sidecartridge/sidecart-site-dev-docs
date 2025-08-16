@@ -33,36 +33,118 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 
 ## Table of Contents
 
-<h3>📘 <a href="/sidecartridge-tos/introduction/">Introduction</a></h3>
-<p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
+<!-- Card grid + chips (scoped to this section) -->
+<style>
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 0.75rem;
+  }
+  .toc-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .toc-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+  .toc-card h3 {
+    margin: .25rem 0 .35rem 0;
+    font-size: 1.05rem;
+    line-height: 1.25;
+  }
+  .toc-card h3 a { text-decoration: none; }
+  .toc-card p {
+    margin: 0;
+    font-size: .95rem;
+    color: #333;
+  }
+  .toc-chip {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    padding: .22rem .5rem;
+    border-radius: 999px;
+    margin-bottom: .25rem;
+    user-select: none;
+  }
+  .chip-guide   { background: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; }
+  .chip-ref     { background: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
+  .chip-howto   { background: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+  .chip-depr    { background: #eceff1; color: #37474f; border: 1px solid #cfd8dc; }
+</style>
 
-<h3>💲 <a href="/sidecartridge-tos/before-buy/">Before You Buy</a></h3>
-<p>What you need to know before buying a kit</p>
+<div class="toc-grid">
 
-<h3>🚀 <a href="/sidecartridge-tos/getting-startedV2/">Getting started</a></h3>
-<p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>📘 <a href="/sidecartridge-tos/introduction/">Introduction</a></h3>
+    <p>An overview of the SidecarTridge TOS emulator project, explaining the project's purpose, objectives, and the intended audience.</p>
+  </div>
 
-<h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
-<p>Learn how to install the device in your computers.</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-guide">Guide</span>
+    <h3>💲 <a href="/sidecartridge-tos/before-buy/">Before You Buy</a></h3>
+    <p>What you need to know before buying a kit</p>
+  </div>
 
-<h3>😊 <a href="/sidecartridge-tos/user-guideV2/">User Guide</a></h3>
-<p>Learn how to use the device day in day out</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-guide">Guide</span>
+    <h3>🚀 <a href="/sidecartridge-tos/getting-startedV2/">Getting started</a></h3>
+    <p>Guidance on the initial steps including prerequisites, setup and configuration.</p>
+  </div>
 
-<h3>🤝 <a href="/sidecartridge-tos/compatibility/">Compatibility</a></h3>
-<p>Please read this section to know about open issues and compatibility.</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>⚙️ <a href="/sidecartridge-tos/hardware-installation/">Hardware Installation</a></h3>
+    <p>Learn how to install the device in your computers.</p>
+  </div>
 
-<h3>🛠️ <a href="/sidecartridge-tos/troubleshooting/">Troubleshooting</a></h3>
-<p>Check this section if you have issues with your SidecarTridge.</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-guide">Guide</span>
+    <h3>😊 <a href="/sidecartridge-tos/user-guideV2/">User Guide</a></h3>
+    <p>Learn how to use the device day in day out</p>
+  </div>
 
-<h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
-<p>Frequently Asked Questions.</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>🤝 <a href="/sidecartridge-tos/compatibility/">Compatibility</a></h3>
+    <p>Please read this section to know about open issues and compatibility.</p>
+  </div>
 
-<h3>📝 <a href="/sidecartridge-tos/changelog/">Changelog</a></h3>
-<p>The latest changes in the firmware, applications and hardware.</p>
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>🛠️ <a href="/sidecartridge-tos/troubleshooting/">Troubleshooting</a></h3>
+    <p>Check this section if you have issues with your SidecarTridge.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>❓ <a href="/sidecartridge-tos/faq/">FAQ</a></h3>
+    <p>Frequently Asked Questions.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>📝 <a href="/sidecartridge-tos/changelog/">Changelog</a></h3>
+    <p>The latest changes in the firmware, applications and hardware.</p>
+  </div>
+
+</div>
 
 <h3>Previous Deprecated Firmware Versions</h3>
 
-<h4><a href="/sidecartridge-tos/getting-started/">Firmware v1.0: Getting started</a></h4>
-
-<h4><a href="/sidecartridge-tos/user-guide/">Firmware V1.0: User Guide</a></h4>
+<div class="toc-grid">
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-tos/getting-started/">Firmware v1.0: Getting started</a></h3>
+  </div>
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a h
 
