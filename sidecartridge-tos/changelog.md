@@ -21,7 +21,7 @@ parent: SidecarTridge TOS
 
 ## Firmware Changelog
 
-### 3.0.0 (2025-06-01) - v3 release
+### 3.0.0 (2025-06-01) - v3 release
 This firmware release is the first stable release of the SidecarTridge TOS v3 board. It includes several new features and improvements over the previous versions.
 
 #### Changes
