@@ -200,34 +200,97 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
 </div>
 
-## Do you want to test the new firmware?
-{: .d-inline-block }
+## 👉 Do you want to test the new firmware?
+{: #do-you-want-to-test-the-new-alpha-firmware }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
-{: .label .label-purple }
+<!-- Scoped styles for the alpha CTA -->
+<style>
+  .alpha-cta {
+    background: linear-gradient(135deg,#5b7cfa 0%, #7c3aed 60%, #b832f6 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(124,58,237,.25);
+    margin: 1rem 0 1.25rem 0;
+  }
+  .alpha-cta .row {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+  @media (max-width: 880px) {
+    .alpha-cta .row { grid-template-columns: 1fr; }
+  }
+  .alpha-chip {
+    display:inline-block; font-weight:700; letter-spacing:.02em;
+    padding:.28rem .6rem; border-radius:999px; background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.35); backdrop-filter: blur(6px);
+    font-size:.78rem; margin-right:.5rem;
+  }
+  .alpha-title {
+    margin:.2rem 0 .6rem 0; font-size:1.25rem; line-height:1.25;
+  }
+  .alpha-card {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 12px; padding: .9rem .95rem;
+  }
+  .alpha-actions {
+    display:flex; flex-wrap:wrap; gap:.55rem; margin-top:.75rem;
+  }
+  .alpha-btn {
+    display:inline-block; text-decoration:none; font-weight:700;
+    padding:.55rem .9rem; border-radius:10px; background:#fff; color:#3b2a7b;
+    border:1px solid rgba(0,0,0,.06);
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+  }
+  .alpha-btn.secondary {
+    background: transparent; color:#fff; border:1px solid rgba(255,255,255,.6);
+  }
+  .alpha-list { margin:.4rem 0 0 1.05rem; }
+  .alpha-list li { margin:.25rem 0; }
+</style>
 
-### 🚀 What’s new in Firmware v2?
+<div class="alpha-cta">
+  <div class="row">
+    <div>
+      <span class="alpha-chip">ALPHA {{ site.FIRMWARE_ALPHA_VERSION }}</span>
+      <span class="alpha-chip">Firmware v2</span>
+      <h3 class="alpha-title">Do you want to test the new firmware?</h3>
 
-Firmware v2 introduces a new architecture for the SidecarTridge Multi-device that brings flexibility, modularity, and a more efficient workflow — especially for power users and developers:
+      <div class="alpha-card">
+        <h4 style="margin:.1rem 0 .35rem 0;">🚀 What’s new in Firmware v2?</h4>
+        <ul class="alpha-list">
+          <li><strong>🧩 Modular Microfirmwares</strong> — install/switch apps without reflashing.</li>
+          <li><strong>📡 OTA downloads & updates</strong> — browse official/private repos over Wi-Fi.</li>
+          <li><strong>⚙️ Per-app configurations</strong> — isolated settings in flash.</li>
+          <li><strong>🛠️ Optimized dev workflow</strong> — faster build-test via emulator → device.</li>
+        </ul>
+      </div>
 
-* **🧩 Modular Microfirmwares**
-  The core of v2 is the concept of *Microfirmwares*: standalone apps (ROM emulator, floppy emulator, RTC, custom tools, etc.) that you can install and switch between on the same hardware — no need to reflash the entire board.
+      <div class="alpha-actions">
+        <a class="alpha-btn" href="https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2">💾 Download {{ site.FIRMWARE_ALPHA_VERSION }}</a>
+        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/getting_started_v2/">Getting Started Guide</a>
+        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/userguide_v2/">User Guide</a>
+        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/microfirmwares/">Browse Microfirmwares</a>
+        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/programming/">Development Guide</a>
+      </div>
+    </div>
 
-* **📡 OTA (Over The Air) Downloads & Updates**
-  You can now browse and download Microfirmwares directly from official — and even private — Microfirmware repositories, over Wi-Fi. Install or update apps without removing the SD card or using a PC. A simple and secure way to keep your device up to date.
-
-* **⚙️ Per-app Configurations**
-  Each Microfirmware stores its own settings in flash memory, isolated from other apps. This allows you to easily switch between functions without losing or reconfiguring settings.
-
-* **🛠️ Optimized Development Workflow & Architecture**
-  The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
-
-Check the following links below:
-
-* **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2)**
-* Learn to install and configure with the [Getting Started Guide](/sidecartridge-multidevice/getting_started_v2/)
-* Learn to download and install the different [microfirmwares](/sidecartridge-multidevice/userguide_v2/)
-* Browse the list of available [microfirmwares](/sidecartridge-multidevice/microfirmwares/)
-* Are you a brave developer? Check the [Development Guide](/sidecartridge-multidevice/programming/)
+    <div>
+      <div class="alpha-card">
+        <p style="margin:0 0 .5rem 0;">Check the following links below:</p>
+        <ul style="margin:.2rem 0 0 1.05rem;">
+          <li><strong>💾 Download {{ site.FIRMWARE_ALPHA_VERSION }} Release</strong></li>
+          <li>Learn to install and configure with the <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/getting_started_v2/">Getting Started Guide</a></li>
+          <li>Learn to download and install the different <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/userguide_v2/">microfirmwares</a></li>
+          <li>Browse the list of available <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/microfirmwares/">microfirmwares</a></li>
+          <li>Are you a brave developer? Check the <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/programming/">Development Guide</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!
