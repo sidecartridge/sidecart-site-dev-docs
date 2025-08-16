@@ -115,6 +115,14 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
     <p>Connect, power, mount USB storage, and load your first ROM image.</p>
   </div>
 
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>🧱 <a href="/sidecartridge-rom/hardware-overview/">Bus Protocol &amp; Timing Diagrams</a></h3>
+    <p>Signal-level emulation explained with WaveDrom: CS#, OE#, WE#, address/data timing, and wait-states.</p>
+  </div>
+
+
+
 <!--
 
   <div class="toc-card">
