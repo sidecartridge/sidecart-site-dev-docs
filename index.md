@@ -63,7 +63,7 @@ Please select a project below to view the documentation.
         </td>
         <td style="border: none;">
             <h2><a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h2>
-            <p>27CXXXX and equivalent ROM emulator. The core custom board inside the TOS emulator.</p>
+            <p>Programmable 512 KB ROM emulator for 8/16-bit data buses with dynamic speed selection. The core custom board inside the TOS emulator.</p>
         </td>
     </tr>
 </table>
