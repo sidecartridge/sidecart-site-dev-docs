@@ -33,13 +33,39 @@ A Microfirmware app is a small, self-contained program that runs on a standalone
 
 ### Available Microfirmware Apps
 
-The following Microfirmware apps are available in the public repository:
-- [ROM Emulator](/sidecartridge-multidevice/microfirmwares/rom_emulator/): An emulator for ROM files, allowing you to run games and applications from the microSD card or from a remote server.
-- [Real Time Clock Emulator](/sidecartridge-multidevice/microfirmwares/rtc_emulator/): An emulator for real-time clock functionality, allowing you to set and read the current time and date from a remote NTP server. It also emulates a DS1307 chip.
-- [Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/): An emulator for hard disk and floppy disk drives, allowing you to access and manage disk images stored on the microSD card. It also includes a Real Time Clock emulator.
-- [Multi-device Test ROM](/sidecartridge-multidevice/microfirmwares/multidevice-test/): A test program designed to validate the functionality and performance of the SidecarTridge Multidevice.
-- [File & Download Manager](/sidecartridge-multidevice/microfirmwares/browser/): A file manager and download manager that allows you to browse, search, and download files from the public floppy image database, as well as manage files on your microSD card.
-- [GPU Demo](/sidecartridge-multidevice/microfirmwares/gpu-demo/): A demo showcasing the graphics capabilities of the RP2040 chip, rendering sprites and tiles in real-time in a low-resolution mode of the Atari ST / STE.
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem;">
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>📀 <a href="/sidecartridge-multidevice/microfirmwares/rom_emulator/">ROM Emulator</a></h3>
+<p>An emulator for ROM files. Run games and apps from microSD or a remote server.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>⏰ <a href="/sidecartridge-multidevice/microfirmwares/rtc_emulator/">Real Time Clock Emulator</a></h3>
+<p>Provides RTC functionality, syncs with NTP servers, and emulates a DS1307 chip.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>💾 <a href="/sidecartridge-multidevice/microfirmwares/drives_emulator/">Drives Emulator</a></h3>
+<p>Emulates hard and floppy drives with microSD-stored images. Includes RTC emulator.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🧪 <a href="/sidecartridge-multidevice/microfirmwares/multidevice-test/">Multi-device Test ROM</a></h3>
+<p>A diagnostic tool to validate functionality and performance of your device.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🌐 <a href="/sidecartridge-multidevice/microfirmwares/browser/">File & Download Manager</a></h3>
+<p>Browse and download from the public floppy DB. Manage files on your microSD card.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🎨 <a href="/sidecartridge-multidevice/microfirmwares/gpu-demo/">GPU Demo</a></h3>
+<p>Showcases RP2040 graphics: real-time sprites and tiles in Atari ST/STE modes.</p>
+</div>
+
+</div>
 
 ### How it works:
 
