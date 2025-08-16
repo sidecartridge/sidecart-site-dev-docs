@@ -9,12 +9,12 @@ nav_exclude: true
 
 # SidecarTridge Documentation Site
 
-<!-- Project grid (scoped styles) -->
+<!-- Project list – single column with left thumbnail -->
 <style>
-  .proj-grid {
+  .proj-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: 1fr;      /* always one per row */
+    gap: 1rem;
     margin-top: 0.75rem;
   }
   .proj-card {
@@ -30,12 +30,12 @@ nav_exclude: true
   }
   .proj-inner {
     display: grid;
-    grid-template-columns: 112px 1fr;
+    grid-template-columns: 112px 1fr; /* thumbnail left, content right */
     gap: .9rem;
     align-items: center;
   }
-  @media (max-width: 560px) {
-    .proj-inner { grid-template-columns: 1fr; }
+  @media (max-width: 520px) {
+    .proj-inner { grid-template-columns: 1fr; } /* stack on very small screens */
   }
   .proj-thumb {
     width: 100%;
@@ -59,7 +59,7 @@ nav_exclude: true
   }
 </style>
 
-<div class="proj-grid">
+<div class="proj-list">
 
   <div class="proj-card">
     <div class="proj-inner">
