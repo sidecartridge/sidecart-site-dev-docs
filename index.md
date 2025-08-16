@@ -9,61 +9,116 @@ nav_exclude: true
 
 # SidecarTridge Documentation Site
 
-Please select a project below to view the documentation.
+<!-- Project grid (scoped styles) -->
+<style>
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.2rem;
+    margin-top: 0.75rem;
+  }
+  .proj-card {
+    background: #f8f9fa;
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .proj-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  }
+  .proj-inner {
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    gap: .9rem;
+    align-items: center;
+  }
+  @media (max-width: 560px) {
+    .proj-inner { grid-template-columns: 1fr; }
+  }
+  .proj-thumb {
+    width: 100%;
+    max-height: 96px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #fff;
+    padding: .25rem;
+    border: 1px solid #e9ecef;
+  }
+  .proj-card h2 {
+    margin: 0 0 .25rem 0;
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+  .proj-card h2 a { text-decoration: none; }
+  .proj-card p {
+    margin: 0;
+    font-size: .95rem;
+    color: #333;
+  }
+</style>
 
-<table style="border-collapse: collapse; border: 0;">
-    <tr>
-        <td style="border: none;">
-            <img src="/sidecartridge-multidevice/assets/images/BOARD-3.1-PICOW-PERSPECTIVE.png" alt="SidecarTridge multi-device thumbnail" style="vertical-align: middle; width: 128px"> 
-        </td>
-        <td style="border: none;">
-            <h2><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST/MegaST/STE/MegaSTE</a></h2>
-            <p>State-of-the-art multi-device emulator crafted for the Atari ST, STE, and Mega series.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <img src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge PSU thumbnail" style="vertical-align: middle; width: 128px"> 
-        </td>
-        <td style="border: none;">
-            <h2><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST/MegaST/STE</a></h2>
-            <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <img src="/sidecartridge-tos/assets/images/sidecartridge-tos-boards-versions-thumbnail.png" alt="SidecarTridge TOS thumbnail" style="vertical-align: middle; width: 128px"> 
-        </td>
-        <td style="border: none;">
-            <h2><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST/MegaST/STE/MegaSTE</a></h2>
-            <p>A compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version without swapping chips.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <img src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT-BOARD-V3-THUMBNAIL.png" alt="SidecarTridge 256KB Decoder thumbnail" style="vertical-align: middle; width: 128px"> 
-        </td>
-        <td style="border: none;">
-            <h2><a href="/sidecartridge-tos-256kb-decoder/">SidecarTridge TOS 256KB Decoder for Atari ST/MegaST</a></h2>
-            <p>A Decoder board that enables 256KB ROM decoding for Atari ST and MegaST series with the TOS emulator.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <img src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP.png"  alt="ACSI2STM HD thumbnail" style="vertical-align: middle; width: 128px"> 
-        </td>
-        <td style="border: none;">
-            <h2><a href="/acsi2stm-atari-st/">ACSI2STM Hard Disk for ST/MegaST/STE/MegaSTE</a></h2>
-            <p>A modern hard disk device for Atari ST/MegaST/STE/MegaSTE.</p>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: none;">
-            <img src="/sidecartridge-rom/assets/images/PINOUT_DIAGRAM_V2_1280px.png" alt="SidecarTridge ROM thumbnail" style="vertical-align: middle; width: 128px"> 
-        </td>
-        <td style="border: none;">
-            <h2><a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h2>
-            <p>Programmable 512 KB ROM emulator for 8/16-bit data buses with dynamic speed selection. The core custom board inside the TOS emulator.</p>
-        </td>
-    </tr>
-</table>
+<div class="proj-grid">
+
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/sidecartridge-multidevice/assets/images/BOARD-3.1-PICOW-PERSPECTIVE.png" alt="SidecarTridge multi-device thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-multidevice/">SidecarTridge Multi-device for Atari ST/MegaST/STE/MegaSTE</a></h2>
+        <p>State-of-the-art multi-device emulator crafted for the Atari ST, STE, and Mega series.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge PSU thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST/MegaST/STE</a></h2>
+        <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/sidecartridge-tos/assets/images/sidecartridge-tos-boards-versions-thumbnail.png" alt="SidecarTridge TOS thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST/MegaST/STE/MegaSTE</a></h2>
+        <p>A compact board designed to emulate Atari ST internal ROMs, allowing users to access any TOS version without swapping chips.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT-BOARD-V3-THUMBNAIL.png" alt="SidecarTridge 256KB Decoder thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-tos-256kb-decoder/">SidecarTridge TOS 256KB Decoder for Atari ST/MegaST</a></h2>
+        <p>A Decoder board that enables 256KB ROM decoding for Atari ST and MegaST series with the TOS emulator.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP.png" alt="ACSI2STM HD thumbnail">
+      <div>
+        <h2><a href="/acsi2stm-atari-st/">ACSI2STM Hard Disk for ST/MegaST/STE/MegaSTE</a></h2>
+        <p>A modern hard disk device for Atari ST/MegaST/STE/MegaSTE.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/sidecartridge-rom/assets/images/PINOUT_DIAGRAM_V2_1280px.png" alt="SidecarTridge ROM thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h2>
+        <p>Programmable 512 KB ROM emulator for 8/16-bit data buses with dynamic speed selection. The core custom board inside the TOS emulator.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
