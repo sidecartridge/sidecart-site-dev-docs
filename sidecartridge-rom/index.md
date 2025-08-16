@@ -115,13 +115,14 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
     <p>Connect, power, mount USB storage, and load your first ROM image.</p>
   </div>
 
+<!--
+
   <div class="toc-card">
     <span class="toc-chip chip-guide">Guide</span>
     <h3>🧩 <a href="/sidecartridge-rom/host-api-and-tools/">Host API &amp; Tools</a></h3>
     <p>Use the host API/CLI to list, upload, select, and switch images.</p>
   </div>
 
-  <!-- How-to -->
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
     <h3>🗂️ <a href="/sidecartridge-rom/image-management/">Image Management</a></h3>
@@ -140,7 +141,6 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
     <p>Dynamic speed selection, wait states, and tuning for stability.</p>
   </div>
 
-  <!-- Reference -->
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
     <h3>🧱 <a href="/sidecartridge-rom/hardware-overview/">Hardware Overview</a></h3>
@@ -182,5 +182,7 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
     <h3>📝 <a href="/sidecartridge-rom/changelog/">Changelog</a></h3>
     <p>Latest firmware, tooling, and documentation updates.</p>
   </div>
+
+-->
 
 </div>
