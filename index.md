@@ -59,7 +59,7 @@ Please select a project below to view the documentation.
     </tr>
     <tr>
         <td style="border: none;">
-            <img src="/sidecartridge-rom/assets/images/sidecartridge_rom_pinout_diagram.png" alt="SidecarTridge ROM thumbnail" style="vertical-align: middle; width: 128px"> 
+            <img src="/sidecartridge-rom/assets/images/PINOUT_DIAGRAM_V2_1280px.png" alt="SidecarTridge ROM thumbnail" style="vertical-align: middle; width: 128px"> 
         </td>
         <td style="border: none;">
             <h2><a href="/sidecartridge-rom/">SidecarTridge ROM emulator board</a></h2>
