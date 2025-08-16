@@ -203,94 +203,49 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 ## 👉 Do you want to test the new firmware?
 {: #do-you-want-to-test-the-new-alpha-firmware }
 
-<!-- Scoped styles for the alpha CTA -->
 <style>
-  .alpha-cta {
-    background: linear-gradient(135deg,#5b7cfa 0%, #7c3aed 60%, #b832f6 100%);
-    color: #fff;
-    border-radius: 16px;
-    padding: 1.25rem;
-    box-shadow: 0 10px 30px rgba(124,58,237,.25);
-    margin: 1rem 0 1.25rem 0;
+  .alpha-ribbon {
+    background:#0f172a; color:#fff; border-radius:10px;
+    padding:.85rem 1rem; display:flex; flex-wrap:wrap; align-items:center; gap:.6rem;
+    box-shadow:0 6px 18px rgba(0,0,0,.18); margin:1rem 0 1.1rem 0;
   }
-  .alpha-cta .row {
-    display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    gap: 1.25rem;
-    align-items: start;
+  .alpha-ribbon .chip {
+    background:#1f2937; border:1px solid #334155; border-radius:999px;
+    padding:.22rem .6rem; font-size:.78rem; font-weight:700;
   }
-  @media (max-width: 880px) {
-    .alpha-cta .row { grid-template-columns: 1fr; }
+  .alpha-ribbon .spacer { flex:1 1 auto; }
+  .alpha-ribbon .btn {
+    background:#22d3ee; color:#0f172a; border:0; border-radius:10px; font-weight:800;
+    padding:.5rem .9rem; text-decoration:none;
   }
-  .alpha-chip {
-    display:inline-block; font-weight:700; letter-spacing:.02em;
-    padding:.28rem .6rem; border-radius:999px; background:rgba(255,255,255,.15);
-    border:1px solid rgba(255,255,255,.35); backdrop-filter: blur(6px);
-    font-size:.78rem; margin-right:.5rem;
+  .alpha-ribbon .btn.secondary {
+    background:transparent; color:#e2e8f0; border:1px solid #334155;
   }
-  .alpha-title {
-    margin:.2rem 0 .6rem 0; font-size:1.25rem; line-height:1.25;
-  }
-  .alpha-card {
-    background: rgba(255,255,255,.1);
-    border: 1px solid rgba(255,255,255,.25);
-    border-radius: 12px; padding: .9rem .95rem;
-  }
-  .alpha-actions {
-    display:flex; flex-wrap:wrap; gap:.55rem; margin-top:.75rem;
-  }
-  .alpha-btn {
-    display:inline-block; text-decoration:none; font-weight:700;
-    padding:.55rem .9rem; border-radius:10px; background:#fff; color:#3b2a7b;
-    border:1px solid rgba(0,0,0,.06);
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
-  }
-  .alpha-btn.secondary {
-    background: transparent; color:#fff; border:1px solid rgba(255,255,255,.6);
-  }
-  .alpha-list { margin:.4rem 0 0 1.05rem; }
-  .alpha-list li { margin:.25rem 0; }
 </style>
 
-<div class="alpha-cta">
-  <div class="row">
-    <div>
-      <span class="alpha-chip">ALPHA {{ site.FIRMWARE_ALPHA_VERSION }}</span>
-      <span class="alpha-chip">Firmware v2</span>
-      <h3 class="alpha-title">Do you want to test the new firmware?</h3>
-
-      <div class="alpha-card">
-        <h4 style="margin:.1rem 0 .35rem 0;">🚀 What’s new in Firmware v2?</h4>
-        <ul class="alpha-list">
-          <li><strong>🧩 Modular Microfirmwares</strong> — install/switch apps without reflashing.</li>
-          <li><strong>📡 OTA downloads & updates</strong> — browse official/private repos over Wi-Fi.</li>
-          <li><strong>⚙️ Per-app configurations</strong> — isolated settings in flash.</li>
-          <li><strong>🛠️ Optimized dev workflow</strong> — faster build-test via emulator → device.</li>
-        </ul>
-      </div>
-
-      <div class="alpha-actions">
-        <a class="alpha-btn" href="https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2">💾 Download {{ site.FIRMWARE_ALPHA_VERSION }}</a>
-        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/getting_started_v2/">Getting Started Guide</a>
-        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/userguide_v2/">User Guide</a>
-        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/microfirmwares/">Browse Microfirmwares</a>
-        <a class="alpha-btn secondary" href="/sidecartridge-multidevice/programming/">Development Guide</a>
-      </div>
-    </div>
-
-    <div>
-      <div class="alpha-card">
-        <p style="margin:0 0 .5rem 0;">Check the following links below:</p>
-        <ul style="margin:.2rem 0 0 1.05rem;">
-          <li><strong>💾 Download {{ site.FIRMWARE_ALPHA_VERSION }} Release</strong></li>
-          <li>Learn to install and configure with the <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/getting_started_v2/">Getting Started Guide</a></li>
-          <li>Learn to download and install the different <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/userguide_v2/">microfirmwares</a></li>
-          <li>Browse the list of available <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/microfirmwares/">microfirmwares</a></li>
-          <li>Are you a brave developer? Check the <a style="color:#fff;text-decoration:underline;" href="/sidecartridge-multidevice/programming/">Development Guide</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="alpha-ribbon">
+  <span class="chip">ALPHA {{ site.FIRMWARE_ALPHA_VERSION }}</span>
+  <span class="chip">Firmware v2</span>
+  <span class="spacer"></span>
+  <a class="btn" href="https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2">Download</a>
+  <a class="btn secondary" href="/sidecartridge-multidevice/getting_started_v2/">Getting Started</a>
+  <a class="btn secondary" href="/sidecartridge-multidevice/microfirmwares/">Microfirmwares</a>
+  <a class="btn secondary" href="/sidecartridge-multidevice/programming/">Dev Guide</a>
 </div>
+
+### 🚀 What’s new in Firmware v2?
+
+* **🧩 Modular Microfirmwares**
+* **📡 OTA (Over The Air) Downloads & Updates**
+* **⚙️ Per-app Configurations**
+* **🛠️ Optimized Development Workflow & Architecture**
+
+Check the following links below:
+
+* **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2)**
+* Learn to install and configure with the [Getting Started Guide](/sidecartridge-multidevice/getting_started_v2/)
+* Learn to download and install the different [microfirmwares](/sidecartridge-multidevice/userguide_v2/)
+* Browse the list of available [microfirmwares](/sidecartridge-multidevice/microfirmwares/)
+* Are you a brave developer? Check the [Development Guide](/sidecartridge-multidevice/programming/)
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!
