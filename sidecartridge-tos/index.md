@@ -146,5 +146,6 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
   </div>
   <div class="toc-card">
     <span class="toc-chip chip-depr">Deprecated</span>
-    <h3><a h
-
+    <h3><a href="/sidecartridge-tos/user-guide/">Firmware V1.0: User Guide</a></h3>
+  </div>
+</div>
