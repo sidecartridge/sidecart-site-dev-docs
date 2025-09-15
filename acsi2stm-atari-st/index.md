@@ -7,7 +7,7 @@ has_children: true
 ---
 
 
-![ACSI2STM Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP.png)
+![ACSI2STM Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png)
 
 # ACSI2STM Hard Disk for Atari ST
 

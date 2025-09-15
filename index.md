@@ -103,7 +103,7 @@ nav_exclude: true
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP.png" alt="ACSI2STM HD thumbnail">
+      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png" alt="ACSI2STM HD thumbnail">
       <div>
         <h2><a href="/acsi2stm-atari-st/">ACSI2STM Hard Disk for ST/MegaST/STE/MegaSTE</a></h2>
         <p>A modern hard disk device for Atari ST/MegaST/STE/MegaSTE.</p>
