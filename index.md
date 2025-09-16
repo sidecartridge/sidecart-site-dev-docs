@@ -57,6 +57,15 @@ nav_exclude: true
     font-size: .95rem;
     color: #333;
   }
+  .support-note {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f1f3f5;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #222;
+  }
 </style>
 
 <div class="proj-list">
@@ -122,3 +131,8 @@ nav_exclude: true
   </div>
 
 </div>
+
+<div class="support-note">
+  Looking for support? <a href="https://discord.com/invite/u73QP9MEYC">Join our Discord server</a> or <a href="mailto:sidecart+support@gooddatalabs.com">drop us an email</a>!
+</div>
+
