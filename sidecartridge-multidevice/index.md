@@ -222,6 +222,9 @@ Firmware v2 introduces a new architecture for the SidecarTridge Multi-device tha
 * **🛠️ Optimized Development Workflow & Architecture**
   The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
 
+* **⬆️ Adaptive bus speed for Atari Falcon, TT and accelerated computers**
+  The new firmware can automatically adjust the bus speed to ensure compatibility with a wider range of Atari computers, including Falcon and TT models, as well as accelerated systems. This means improved performance and stability across different hardware configurations.
+s
 Check the following links below:
 
 * **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2)**
