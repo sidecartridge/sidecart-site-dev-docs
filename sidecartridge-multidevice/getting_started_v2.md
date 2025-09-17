@@ -57,7 +57,7 @@ To begin with the Multi-device board, **all users are required to have a minimum
 ### Hardware
 Users will need the following hardware:
 
-- An Atari 16/32 computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the Multi-device board can emulate a physical floppy drive, so an Atari 16/32 without a (or a broken) floppy drive can still be used with the Multi-device board. The Multi-device board is also compatible with TOS versions ranging from 1.00 to 2.06 and EmuTOS, almost every single ST and STE series compute sold.
+- An Atari 16/32 computer series: ST, STE, Mega ST, Mega STE, TT or Falcon. It's worth noting that the Multi-device board can emulate a physical floppy drive, so an Atari 16/32 without a (or a broken) floppy drive can still be used with the Multi-device board.  
 
 {:refdef: style="text-align: center;"}
 ![Atari 520ST](https://sidecartridge.com/assets/images/quickstart/atari520st.jpeg)
