@@ -46,16 +46,18 @@ Firmware v2 introduces a new architecture for the SidecarTridge Multi-device tha
 * **🛠️ Optimized Development Workflow & Architecture**
   The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
 
+* **⬆️ Adaptive bus speed for Atari Falcon, TT and accelerated computers**
+  The new firmware can automatically adjust the bus speed to ensure compatibility with a wider range of Atari computers, including Falcon and TT models, as well as accelerated systems. This means improved performance and stability across different hardware configurations.
 
 ## Prerequisites for All Users
 
 ### Skills
-To begin with the Multi-device board, **all users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari ST computer series, its hardware, and software.
+To begin with the Multi-device board, **all users are required to have a minimum experience with computers**. Power on, power off, and basic knowledge of how to use a computer is enough to get started. However, it’s desirable for users to be familiar with the Atari 16/32 computer series, its hardware, and software.
 
 ### Hardware
 Users will need the following hardware:
 
-- An Atari ST computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the Multi-device board can emulate a physical floppy drive, so an Atari ST without a (or a broken) floppy drive can still be used with the Multi-device board. The Multi-device board is also compatible with TOS versions ranging from 1.00 to 2.06 and EmuTOS, almost every single ST and STE series compute sold.
+- An Atari 16/32 computer series: ST, STE, or MegaST or MegaSTE. It's worth noting that the Multi-device board can emulate a physical floppy drive, so an Atari 16/32 without a (or a broken) floppy drive can still be used with the Multi-device board. The Multi-device board is also compatible with TOS versions ranging from 1.00 to 2.06 and EmuTOS, almost every single ST and STE series compute sold.
 
 {:refdef: style="text-align: center;"}
 ![Atari 520ST](https://sidecartridge.com/assets/images/quickstart/atari520st.jpeg)
@@ -116,9 +118,9 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 1. Format a microSD card with either **exFAT** or **FAT32** file system and insert it into the SidecarTridge Multidevice board.
 
-2. Plug the SidecarTridge Multidevice into the **cartridge port** of your Atari ST series computer.
+2. Plug the SidecarTridge Multidevice into the **cartridge port** of your Atari 16/32 series computer.
 
-3. Power on the Atari ST computer.
+3. Power on the Atari 16/32 computer.
 
 4. The Booster app will automatically start in **Factory (Fabric) mode**, showing the following message on screen:
 
@@ -174,15 +176,15 @@ Now you can start using the Booster app to manage your microfirmware apps! Learn
 ## Prerequisites for Developers and Makers
 
 ### Skills
-To begin with the Multi-device board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari ST peculiarities. To contribute effectively to the Multi-device project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
+To begin with the Multi-device board, **developers are required to have a minimum experience with C**. However, it’s desirable for developers to be proficient in C, 68000 Assembler, Microcontroller development, and have a deep understanding of Atari 16/32 peculiarities. To contribute effectively to the Multi-device project, having a foundation in certain skills will be beneficial. Here’s a breakdown:
 
 - **C Programming**: Essential for software development and firmware writing. Ensure you have a grasp on data structures, memory management, and algorithm development within C.
 
-- **68000 Assembler**: Crucial for understanding and working with low-level part of the firmware for Atari ST.
+- **68000 Assembler**: Crucial for understanding and working with low-level part of the firmware for Atari 16/32.
 
 - **Microcontroller Development**: Familiarity with microcontrollers, especially with Raspberry Pi Pico's microcontroller RP2040, is vital. You should understand how to write, test, and debug firmware, manage I/O operations, and deal with real-time constraints.
 
-- **Atari ST Knowledge**: A robust understanding of Atari ST hardware and software, its system call and memory management will significantly boost your contribution efforts.
+- **Atari 16/32 Knowledge**: A robust understanding of Atari 16/32 hardware and software, its system call and memory management will significantly boost your contribution efforts.
 
 - **Version Control/Git**: Ability to effectively use git, manage branches, resolve merge conflicts, and understand the workflow to keep the codebase stable and collaborative.
 
@@ -205,7 +207,7 @@ Even if you’re not an expert in all these areas, your contribution is still va
 
 ### Hardware
 Additionally, developers need the following hardware:
-- An Atari ST computer series: ST, STE, or Mega (See above)
+- An Atari 16/32 computer series: ST, STE, Mega ST, Mega STE, Falcon or TT.
 
 - A Multi-device board (See above)
 
