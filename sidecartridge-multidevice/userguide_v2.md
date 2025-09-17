@@ -123,7 +123,7 @@ Starting in version **v2.0.6Beta** you don't need to download the newer firmware
 
 When a new firmware version is available, the Booster app will show a message on top of the web interface, prompting you to update.
 
-The update process is straightforward and can be done directly from the web interface. First, the user needs to confirm the update by clicking the **Continue upgrading** button. The Booster app will then download the new firmware version. It can take about two minutes to complete the update process. The screen on the Atari ST computer will display information about the update progress.
+The update process is straightforward and can be done directly from the web interface. First, the user needs to confirm the update by clicking the **Continue upgrading** button. The Booster app will then download the new firmware version. It can take about two minutes to complete the update process. The screen on the Atari 16/32 computer will display information about the update progress.
 
 ![Booster Manager Firmware Update Download](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-UPDATE-2.png)
 
@@ -131,7 +131,7 @@ Once the new firmware has been downloaded to the microSD card, the Booster app w
 
 ![Booster Manager Firmware Update Reflash](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-UPDATE-3.png)
 
-After the reflashing process is complete, the screen on the Atari ST computer will turn black and the Booster app will reboot activating the new firmware.
+After the reflashing process is complete, the screen on the Atari 16/32 computer will turn black and the Booster app will reboot activating the new firmware.
 
 {: .note }
 If the update process fails or gets interrupted, the device can get bricked. In this case, you will need to perform a [fresh installation of the firmware](/sidecartridge-multidevice/getting_started_v2/#initial-setup-and-configuration).
