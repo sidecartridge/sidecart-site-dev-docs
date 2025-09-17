@@ -15,7 +15,7 @@ redirect_from:
 This section provides developers with in-depth guidance on programming the Multi-device board. It mainly covers the development of new applications or "microfirmware apps" for the RP2040 microcontroller. The guide is structured to help you understand the architecture of the Multi-device board, the microfirmware apps, and how to set up your development environment.
 
 {: .warning}
-This guide applies to the new version 2.0 of the firmware in alpha stage.
+This guide applies to the new version 2.0 of the firmware in beta stage.
 
 
 
