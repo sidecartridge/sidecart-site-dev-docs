@@ -126,11 +126,11 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
     <p>How the board and the code in the RP2040 handle the mismatch of the buses size between the RP2040 and the Atari ST cartridge.</p>
   </div>
 
-  <div class="toc-card">
+  <!-- <div class="toc-card">
     <span class="toc-chip chip-guide">Guide</span>
     <h3>💻 <a href="/sidecartridge-multidevice/software_development/">Software Development</a></h3>
     <p>Setting up the development environment, compiling the code, debugging, testing and building the firmware.</p>
-  </div>
+  </div> -->
 
   <div class="toc-card">
     <span class="toc-chip chip-guide">Guide</span>
