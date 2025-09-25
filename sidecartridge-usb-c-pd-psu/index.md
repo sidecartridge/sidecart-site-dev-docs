@@ -6,7 +6,7 @@ nav_exclude: true
 ---
 
 
-![SidecarTridge USB-C PD Multi-Rail board](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.pngUSB-C-PD-BOARD.png)
+![SidecarTridge USB-C PD Multi-Rail board](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.png)
 
 # SidecarTridge USB-C PD Multi-Rail Power Supply Unit board
 
