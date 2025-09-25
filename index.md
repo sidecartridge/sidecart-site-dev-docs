@@ -2,8 +2,17 @@
 layout: home
 title: SidecarTridge Documentation Site
 nav_exclude: true
----
+redirect_from: 
+  - /sidecartridge-v2-user-guide/
+  - /sidecartridge-v2-user-guide
+  - /sidecartridge-v2-programming-guide/
+  - /sidecartridge-v2-programming-guide
+  - /downloads
+  - /downloads/
+  - /sidecartridge-v2-microfirmwares/
+  - /sidecartridge-v2-microfirmwares
 
+---
 
 ![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)
 
