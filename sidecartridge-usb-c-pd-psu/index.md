@@ -36,7 +36,6 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 | Apple       | A2452 USB-C Power Adapter              | 140 W        | Works well|
 | Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers|
 | Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
-| Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
 | Essager      | GaN PD Power Adapter        | 100 W         | Works well, but it is a noisy adapter|
 
 
