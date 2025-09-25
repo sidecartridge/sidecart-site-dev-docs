@@ -16,9 +16,9 @@ This USB-C Power Delivery multi-rail converter board is designed to generate cle
 
 The board is powered by a USB-C PD charger that must provide either 15 V or 20 V input voltage. It includes overcurrent and thermal protection features to ensure safe operation. The board is compact and easy to integrate into existing systems, making it a convenient solution for powering retro computing devices.
 
-It is important to note that this board is not a standalone power supply and requires an external USB-C PD charger to function. The board is designed for use by individuals with experience in electronics and should be handled with care to avoid damage or injury.
-
 ## USB-C PD charger requirements
+
+**It is important to note that this board is not a standalone power supply and requires an external USB-C PD charger to function.**
 
 * Minimum output: 60 W
 * Required PD profiles: 15 V and 20 V
@@ -29,10 +29,16 @@ It is important to note that this board is not a standalone power supply and req
 
 ## List of charger models tested
 
-| Brand         | Model                          | Output Power | Notes                                      |
+| Brand         | Model                          | Output Power | Notes|
 |---------------|--------------------------------|--------------|--------------------------------------------|
-| Apple       | USB-C Power Adapter              | 96 W         | Works well                                 |
-| Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers                                |
+| Apple       | A2743 USB-C Power Adapter              | 70 W         | Works well|
+| Apple       | A2166 USB-C Power Adapter              | 96 W         | Works well|
+| Apple       | A2452 USB-C Power Adapter              | 140 W        | Works well|
+| Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers|
+| Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
+| Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
+| Essager      | GaN PD Power Adapter        | 100 W         | Works well, but it is a noisy adapter|
+
 
 
 ## List of SidecarTridge products using the USB-C PD Multi-Rail board

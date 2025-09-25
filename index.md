@@ -94,7 +94,7 @@ nav_exclude: true
     <div class="proj-inner">
       <img class="proj-thumb" src="/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.png" alt="SidecarTridge USB-C PD Multi-Rail Power Supply Unit thumbnail">
       <div>
-        <h2><a href="/sidecartridge-usb-c-pd-psu/">SidecarTridge USB-C PD Multi-Rail Power Supply Units</a></h2>
+        <h2><a href="/sidecartridge-usb-c-pd-psu/">SidecarTridge USB-C PD Multi-Rail Power Supply</a></h2>
         <p>A modern USB-C PD Multi-Rail PSU drop-in replacement for Atari ST/STE/MegaST and Amiga computers</p>
       </div>
     </div>
