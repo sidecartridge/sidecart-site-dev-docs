@@ -92,6 +92,16 @@ nav_exclude: true
 
   <div class="proj-card">
     <div class="proj-inner">
+      <img class="proj-thumb" src="/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.png" alt="SidecarTridge USB-C PD Multi-Rail Power Supply Unit thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-usb-c-pd-psu/">SidecarTridge USB-C PD Multi-Rail Power Supply Units</a></h2>
+        <p>A modern USB-C PD Multi-Rail PSU drop-in replacement for Atari ST/STE/MegaST and Amiga computers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
       <img class="proj-thumb" src="/sidecartridge-tos/assets/images/sidecartridge-tos-boards-versions-thumbnail.png" alt="SidecarTridge TOS thumbnail">
       <div>
         <h2><a href="/sidecartridge-tos/">SidecarTridge TOS emulator for Atari ST/MegaST/STE/MegaSTE</a></h2>
