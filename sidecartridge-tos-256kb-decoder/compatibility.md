@@ -37,8 +37,8 @@ Carrier boards for non supported motherboards are in active development. Please 
 | C070243 Rev. F           |    2*          | Supported       |
 | C070243 Rev. H           |    2*          | Supported       |
 | C070243 Rev. I           |    2*          | Supported       |
-| C070523-001 Rev. C       |                | Not supported   |
-| C070523-001 Rev. D       |                | Not supported   |
+| C070523-001 Rev. C       |    6           | Supported       |
+| C070523-001 Rev. D       |    6           | Supported       |
 | C070789-001 Rev. A       |    2*          | Supported       |
 | C070789-001 Rev. B       |    2*          | Supported       |
 | C070789-001 Rev. C       |    2*          | Supported       |
