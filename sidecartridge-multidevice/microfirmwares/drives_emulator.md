@@ -132,16 +132,12 @@ The internal browser allows you to navigate through the microSD card's directory
 
 As a rule of thumb, **`SPACE`** will select the current item. So, if you want to choose a new folder, navigate to it, press **`ENTER`** to enter it, and then press **`SPACE`** to select it. If you want to select a file, navigate to it, and then press **`SPACE`** to select it.
 
-### 💾 Concurrent USB Mass Storage
+### 💾 USB Mass Storage
 
 {: .warning}
 This feature has been temporaly disabled in the current version of the app. It's only possible to use the USB mass storage during the setup menu.
 
-The Multi-device supports **simultaneous USB mass storage access**, allowing you to read and write to the microSD card *while the emulator is running*. You can copy files to and from the card without pausing or interrupting the emulator.
-
-For example, if you are developing an application, you can compile it on your computer, test it in an Atari ST emulator (such as Hatari or STEEM), and then simply copy the finished binary to the mounted USB drive. **GEMDRIVE** will automatically detect the new file and make it available to the Atari ST—no need to restart the emulator or the Atari itself.
-
-This provides a fast, seamless workflow for development and testing.
+The Multi-device supports **USB mass storage access**, allowing you to read and write to the microSD card *while the emulator is running in the setup menu*. You can copy files to and from the card without pausing or interrupting the emulator.
 
 It's recommened to connect the Multi-device to your computer via USB before launching the emulator. 
 
