@@ -16,6 +16,7 @@ redirect_from:
 
 [Source code](https://github.com/sidecartridge/md-testrom){: .label .label-blue }
 [CHANGELOG](https://github.com/sidecartridge/md-testrom/blob/main/CHANGELOG.md){: .label .label-green }
+[Report BUG](https://github.com/sidecartridge/md-testrom/issues){: .label .label-red }
 [{{ site.MICROFIRMWARE_TESTROM_VERSION }}](){: .label .label-purple }
 
 

@@ -16,6 +16,7 @@ redirect_from:
 
 [Source code](https://github.com/sidecartridge/md-drives-emulator){: .label .label-blue }
 [CHANGELOG](https://github.com/sidecartridge/md-drives-emulator/blob/main/CHANGELOG.md){: .label .label-green }
+[Report BUG](https://github.com/sidecartridge/md-drives-emulator/issues){: .label .label-red }
 [{{ site.MICROFIRMWARE_DRIVES_EMULATOR_VERSION }}](){: .label .label-purple }
 
 This is a microfirmware application for the **SidecarTridge Multi-device**, designed to emulate hard disks and floppy drives for Atari computers, including the **Atari ST, STe, Mega ST, and Mega STe**.
