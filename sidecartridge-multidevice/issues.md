@@ -9,7 +9,7 @@ redirect_from:
   - /issues
 ---
 
-# User Guide
+# Issues and Bug Reporting
 {: .no_toc }
 {: .d-inline-block }
 
@@ -25,7 +25,7 @@ redirect_from:
 {:toc}
 </details>
 
-## Issues and Bug Reporting
+## Overview
 
 The SidecarTridge Multi-device and its microfirmware applications are actively developed and maintained. If you encounter any issues or bugs while using the device or its apps, please report them to help us improve the software.
 
@@ -44,7 +44,7 @@ But if you want to report a specific issue related to a particular microfirmware
 - [GPU Demo Issues](https://github.com/sidecartridge/md-gpu-demo/issues)
 - [Test ROM Issues](https://github.com/sidecartridge/md-test-rom/issues)
 
-### Booster Firmware Issues
+### Booster Firmware Issues
 
 If you want to report an issue related to the Booster firmware itself, please visit the [Booster Firmware Issues](https://github.com/sidecartridge/rp2-booster-bootloader/issues).
 
