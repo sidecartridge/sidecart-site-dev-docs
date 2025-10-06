@@ -13,9 +13,6 @@ redirect_from:
 {: .no_toc }
 {: .d-inline-block }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
-{: .label .label-purple }
-
 <details open markdown="block">
   <summary>
     Table of contents
@@ -48,7 +45,7 @@ But if you want to report a specific issue related to a particular microfirmware
 
 If you want to report an issue related to the Booster firmware itself, please visit the [Booster Firmware Issues](https://github.com/sidecartridge/rp2-booster-bootloader/issues).
 
-### Reporting an Issue
+### How to report an Issue
 
 When reporting an issue, please provide as much detail as possible to help us understand and reproduce the problem, including:
 
