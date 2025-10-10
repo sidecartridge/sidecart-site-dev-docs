@@ -29,11 +29,13 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 
 ## List of charger models tested
 
+> **Warning:** Power adapters must be PD 3.0 compliant. Some chargers with PD 3.1 may not work properly -specifically with support for Extended Power Range (EPR), although they announce backwards compatibility with PD 3.0.
+
 | Brand         | Model                          | Output Power | Notes|
 |---------------|--------------------------------|--------------|--------------------------------------------|
-| Anker       | A2039 (523-Series) Power Adapter | 47 W         | Works well|
+| Anker       | A2039 (523-Series) Power Adapter | 47 W         | Works well, But a user reported ghosting issues. |
 | Apple       | A2166 USB-C Power Adapter      | 96 W         | Works well|
-| Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers|
+| Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers, because of its multi output configuration|
 | Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
 | Dell     | LA60NM200 Power Adapter         | 60 W         | Works well|
 | Essager      | GaN PD Power Adapter        | 100 W         | Works well, but it is a noisy adapter|
