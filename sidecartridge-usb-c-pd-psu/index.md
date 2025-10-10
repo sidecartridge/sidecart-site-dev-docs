@@ -31,11 +31,13 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 
 | Brand         | Model                          | Output Power | Notes|
 |---------------|--------------------------------|--------------|--------------------------------------------|
-| Apple       | A2166 USB-C Power Adapter              | 96 W         | Works well|
+| Anker       | A2039 (523-Series) Power Adapter | 47 W         | Works well|
+| Apple       | A2166 USB-C Power Adapter      | 96 W         | Works well|
 | Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers|
 | Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
 | Dell     | LA60NM200 Power Adapter         | 60 W         | Works well|
 | Essager      | GaN PD Power Adapter        | 100 W         | Works well, but it is a noisy adapter|
+| Lenovo      | ADLX65YLC3D Power Adapter    | 65 W         | Works well|
 
 
 
