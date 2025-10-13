@@ -33,13 +33,15 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 
 | Brand         | Model                          | Output Power | Notes|
 |---------------|--------------------------------|--------------|--------------------------------------------|
-| Anker       | A2039 (523-Series) Power Adapter | 47 W         | Works well, But a user reported ghosting issues. |
-| Apple       | A2166 USB-C Power Adapter      | 96 W         | Works well|
-| Baseus       | GaN PD Power Adapter        | 65 W         | It may not support Atari STE computers, because of its multi output configuration|
-| Baseus       | GaN PD Power Adapter        | 100 W         | Works well|
-| Dell     | LA60NM200 Power Adapter         | 60 W         | Works well|
-| Essager      | GaN PD Power Adapter        | 100 W         | Works well, but it is a noisy adapter|
-| Lenovo      | ADLX65YLC3D Power Adapter    | 65 W         | Works well|
+| Anker       | A2039 (523-Series) Power Adapter | 47 W         | OK. A user reported ghosting issues. |
+| Apple       | A2166 USB-C Power Adapter      | 96 W         | OK |
+| Apple       | A2743 USB-C Power Adapter      | 70 W         | OK |
+| Baseus       | GaN PD Power Adapter        | 65 W         | OK. With STE computers fails to deliver enough power. |
+| Baseus       | GaN PD Power Adapter        | 100 W         | OK |
+| Dell     | LA60NM200 Power Adapter         | 60 W         | OK |
+| Essager      | GaN PD Power Adapter        | 100 W         | OK. Reported ghosting issues. |
+| Lenovo      | ADLX65YLC3D Power Adapter    | 65 W         | OK |
+| Raspberry Pi | 27W USB-C Power Adapter      | 27 W         | OK with 15V. With STE computers fails to deliver enough power. |
 
 
 
