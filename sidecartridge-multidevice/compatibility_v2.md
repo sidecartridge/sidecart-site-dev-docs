@@ -28,4 +28,4 @@ I am more than willing to issue refunds to users who encounter compatibility iss
 
 [Previous: Parameters](/sidecartridge-multidevice/parameters_v2/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
-[Next: Compatibility](/sidecartridge-multidevice/compatibility_v2/){: .btn }
+[Next: Troubleshooting](/sidecartridge-multidevice/troubleshooting_v2/){: .btn }
