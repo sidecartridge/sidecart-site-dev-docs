@@ -261,3 +261,6 @@ To create the file, open a text editor in your PC/Mac/Linux computer and type th
 {: .note }
 The maximum length of the WiFi password is 63 characters.
 
+[Previous: Parameters](/sidecartridge-multidevice/parameters_v2/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: How to](/sidecartridge-multidevice/how_to/){: .btn }

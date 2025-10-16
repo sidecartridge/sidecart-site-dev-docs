@@ -91,3 +91,7 @@ If you are familiar with Git and the command line, you can also create a pull re
 ## Disclaimer
 
 The Floppy images provided in this database are for educational and archival purposes only. The repository owner does not condone or support piracy in any form. The Floppy images are provided as-is and without any warranty. Use at your own risk.
+
+[Previous: Board Revisions](/sidecartridge-multidevice/revisions/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Public ROM Database](/sidecartridge-multidevice/publicromdb/){: .btn }

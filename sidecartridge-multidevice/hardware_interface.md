@@ -231,3 +231,6 @@ The code in `romemul.pio` is a PIO program that orchestrates the access to the A
 8. Disable the `!WRITE` and `!READ` signals. 
 9. Repeat
 
+[Previous: Architecture and Design](/sidecartridge-multidevice/architecture_and_design/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Programming](/sidecartridge-multidevice/programming/){: .btn }

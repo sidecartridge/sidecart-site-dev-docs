@@ -145,3 +145,4 @@ Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
 [Previous: Browser](/sidecartridge-multidevice/microfirmwares/browser/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Architecture and Design](/sidecartridge-multidevice/architecture_and_design/){: .btn }

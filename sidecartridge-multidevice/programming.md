@@ -1039,3 +1039,6 @@ THEGROUP=$(id -g)
 docker run -it --rm  -v ${ST_WORKING_FOLDER}:'/tmp' --user "${THEUSER}:${THEGROUP}" ${THEDOCKER} $@
 ```
 
+[Previous: Hardware Interface](/sidecartridge-multidevice/hardware_interface/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Parameters](/sidecartridge-multidevice/parameters_v2/){: .btn }

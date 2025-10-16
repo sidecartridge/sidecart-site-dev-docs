@@ -51,3 +51,8 @@ redirect_from:
 ## Want to contribute?
 
 You can contribute to this list by submitting your own case design. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
+
+
+[Previous: Troubleshooting](/sidecartridge-multidevice/troubleshooting_v2/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Board Revisions](/sidecartridge-multidevice/revisions/){: .btn }

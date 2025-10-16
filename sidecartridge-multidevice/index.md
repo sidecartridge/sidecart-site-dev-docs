@@ -32,20 +32,15 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
 ## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
 * **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases/tag/{{ site.FIRMWARE_VERSION }})**
+* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/rp2-booster-bootloader/releases/tag/{{ site.FIRMWARE_VERSION }})**
 * 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
 
-## 👉 [Do you want to test the new firmware?](#do-you-want-to-test-the-new-firmware)
-
 ## 🐞 Bugs, Issues, and Enhancements
-* [Reporting tool](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues)
+* [Project management tool](https://github.com/orgs/sidecartridge/projects/2)
 
 ## Other Quick links
-* [RP2040 firmware source code](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico)
-* [Atari ST Configurator firmware source code](https://github.com/sidecartridge/atarist-sidecart-firmware)
-* [Atari ST Floppy Emulator firmware source code](https://github.com/sidecartridge/atarist-sidecart-floppy-emulator)
-* [Test ROM](https://github.com/sidecartridge/atarist-sidecart-test-rom)
-* [Documentation site (this site)](https://github.com/sidecartridge/sidecart-site-dev-docs)
+* [SidecarTridge source code repositories](https://github.com/sidecartridge/)
+
 
 ## Table of Contents
 
@@ -104,14 +99,20 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
   <div class="toc-card">
     <span class="toc-chip chip-guide">Guide</span>
-    <h3>🚀 <a href="/sidecartridge-multidevice/getting_started/">Getting started</a></h3>
+    <h3>🚀 <a href="/sidecartridge-multidevice/getting_started_v2/">Getting started</a></h3>
     <p>Guidance on the initial steps including prerequisites, board assembly instructions, setup and configuration.</p>
   </div>
 
   <div class="toc-card">
     <span class="toc-chip chip-guide">Guide</span>
-    <h3>⚙️ <a href="/sidecartridge-multidevice/userguide/">User Guide</a></h3>
+    <h3>⚙️ <a href="/sidecartridge-multidevice/userguide_v2/">User Guide</a></h3>
     <p>Learn how to use the SidecarTridge Multi-device.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-guide">Guide</span>
+    <h3>🔧 <a href="/sidecartridge-multidevice/microfirmwares/">Microfirmwares</a></h3>
+    <p>The self-contained program that runs standalone providing the features of the device.</p>
   </div>
 
   <div class="toc-card">

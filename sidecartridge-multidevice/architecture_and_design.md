@@ -135,3 +135,6 @@ Pull-ups and capacitors are connected as detailed in the [Hardware design with R
 
 Refer to the [Hardware Interface](/sidecartridge-multidevice/hardware_interface/) section for further details.
 
+[Previous: Microfirmwares](/sidecartridge-multidevice/microfirmwares/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Hardware interface](/sidecartridge-multidevice/hardware_interface/){: .btn }

@@ -53,17 +53,17 @@ Below are some quick guidelines to ensure smooth contributions to our project.
 
 ### 📜 Licensing
 
-- **Software**: Contributed code must adhere to the [GNU General Public License v3.0](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/blob/main/LICENSE).
+- **Software**: Contributed code must adhere to the [GNU General Public License v3.0](https://github.com/sidecartridge/rp2-booster-bootloader/blob/main/LICENSE).
 - **Hardware**: The design and schematics of the hardware are licensed under the [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ### 🐞 Reporting Bugs
 
-- Check for existing reports to avoid duplicates in the [Issues](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues) section. Please tag as `bug`.
+- Check for existing reports to avoid duplicates in the [Project management](https://github.com/orgs/sidecartridge/projects/2) section. Please tag as `bug`.
 - Provide clear details and steps to reproduce.
 
 ### 💡 Feature Requests
 
-- Describe the feature and its advantages in the [Issues](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues) section. Please tag as `enhancement`.
+- Describe the feature and its advantages in the [Project management](https://github.com/orgs/sidecartridge/projects/2) section. Please tag as `enhancement`.
 - Suggest possible solutions or alternatives.
 
 ### 💻 Code Contributions
@@ -90,3 +90,5 @@ Below are some quick guidelines to ensure smooth contributions to our project.
 
 Thank you for your interest in contributing to SidecarTridge Multi-device! Your contributions are valuable to us. Let's build something great together!
 
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Getting Started](/sidecartridge-multidevice/getting_started_v2/){: .btn }

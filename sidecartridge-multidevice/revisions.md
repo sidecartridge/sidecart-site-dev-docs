@@ -87,4 +87,8 @@ Revision 3.1 is a general improvement over the previous revisions. It includes t
 
 ## Want to contribute?
 
-You can contribute to page. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
+You can contribute to this page. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
+
+[Previous: Enclosures](/sidecartridge-multidevice/cases/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Public Floppy Database](/sidecartridge-multidevice/publicfloppydb/){: .btn }

@@ -82,3 +82,6 @@ If you are familiar with Git and the command line, you can also create a pull re
 
 The ROM images provided in this database are for educational and archival purposes only. The repository owner does not condone or support piracy in any form. The ROM images are provided as-is and without any warranty. Use at your own risk.
 
+[Previous: Public Floppy Database](/sidecartridge-multidevice/publicfloppydb/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn .mr-4 }
+[Next: Unofficial Firmwares](/sidecartridge-multidevice/unofficial_firmwares/){: .btn }
