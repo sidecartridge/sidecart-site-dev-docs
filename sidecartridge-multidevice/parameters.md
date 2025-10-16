@@ -2,7 +2,7 @@
 layout: default
 title: Parameters
 nav_order: 8
-nav_exclude: false
+nav_exclude: true
 parent: SidecarTridge Multi-device
 redirect_from:
   - /parameters

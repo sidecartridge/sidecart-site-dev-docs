@@ -12,9 +12,6 @@ has_children: true
 # SidecarTridge Multi-device Documentation 
 {: .d-inline-block }
 
-STABLE-{{ site.FIRMWARE_VERSION }}
-{: .label .label-green }
-
 {{ site.FIRMWARE_ALPHA_VERSION }}
 {: .label .label-purple }
 
@@ -30,9 +27,9 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 </figure>
 
 
-## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
-* **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/rp2-booster-bootloader/releases/tag/{{ site.FIRMWARE_VERSION }})**
+## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_ALPHA_VERSION }}
+* **💾 [Download STABLE Release {{ site.FIRMWARE_ALPHA_VERSION }}](https://sidecartridge.com/downloads)**
+* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_ALPHA_VERSION }}](https://github.com/sidecartridge/rp2-booster-bootloader/releases/tag/{{ site.FIRMWARE_ALPHA_VERSION }})**
 * 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
 
 ## 🐞 Bugs, Issues, and Enhancements
@@ -201,37 +198,5 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
 </div>
 
-## Do you want to test the new firmware?
-{: .d-inline-block }
-
-{{ site.FIRMWARE_ALPHA_VERSION }}
-{: .label .label-purple }
-
-### 🚀 What’s new in Firmware v2?
-
-Firmware v2 introduces a new architecture for the SidecarTridge Multi-device that brings flexibility, modularity, and a more efficient workflow — especially for power users and developers:
-
-* **🧩 Modular Microfirmwares**
-  The core of v2 is the concept of *Microfirmwares*: standalone apps (ROM emulator, floppy emulator, RTC, custom tools, etc.) that you can install and switch between on the same hardware — no need to reflash the entire board.
-
-* **📡 OTA (Over The Air) Downloads & Updates**
-  You can now browse and download Microfirmwares directly from official — and even private — Microfirmware repositories, over Wi-Fi. Install or update apps without removing the SD card or using a PC. A simple and secure way to keep your device up to date.
-
-* **⚙️ Per-app Configurations**
-  Each Microfirmware stores its own settings in flash memory, isolated from other apps. This allows you to easily switch between functions without losing or reconfiguring settings.
-
-* **🛠️ Optimized Development Workflow & Architecture**
-  The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
-
-* **⬆️ Adaptive bus speed for Atari Falcon, TT and accelerated computers**
-  The new firmware can automatically adjust the bus speed to ensure compatibility with a wider range of Atari computers, including Falcon and TT models, as well as accelerated systems. This means improved performance and stability across different hardware configurations.
-s
-Check the following links below:
-
-* **💾 [Download {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2)**
-* Learn to install and configure with the [Getting Started Guide](/sidecartridge-multidevice/getting_started_v2/)
-* Learn to download and install the different [microfirmwares](/sidecartridge-multidevice/userguide_v2/)
-* Browse the list of available [microfirmwares](/sidecartridge-multidevice/microfirmwares/)
-* Are you a brave developer? Check the [Development Guide](/sidecartridge-multidevice/programming/)
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!

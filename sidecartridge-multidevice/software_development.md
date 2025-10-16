@@ -2,7 +2,7 @@
 layout: default
 title: Software Development
 nav_order: 6
-nav_exclude: false
+nav_exclude: true
 parent: SidecarTridge Multi-device
 redirect_from:
   - /software_development
