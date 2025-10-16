@@ -163,7 +163,7 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
-    <h3>❓ <a href="/sidecartridge-multidevice/faq/">FAQ</a></h3>
+    <h3>❓ <a href="/sidecartridge-multidevice/faq_v2/">FAQ</a></h3>
     <p>Frequently Asked Questions.</p>
   </div>
 

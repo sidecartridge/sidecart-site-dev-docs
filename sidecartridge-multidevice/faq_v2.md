@@ -5,8 +5,8 @@ nav_order: 9
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
-  - /faq
-  - /faq/
+  - /faq_v2
+  - /faq_v2/
 ---
 
 # Frequently Asked Questions
@@ -38,3 +38,8 @@ If the LED is not blinking but steady on, it indicates that the Mass Storage Dev
 EmuTOS does not support the c: cartridge unit. The c: cartridge unit is a feature of the original TOS operating system, which is not available in EmuTOS. As a result, the c: cartridge unit will not work in EmuTOS.
 
 ## Contribution Questions
+
+
+
+[Previous: Unofficial Firmwares](/sidecartridge-multidevice/unofficial_firmwares/){: .btn .mr-4 }
+[Main](/sidecartridge-multidevice/){: .btn }
