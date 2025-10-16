@@ -4,13 +4,13 @@ title: SidecarTridge Multi-device
 nav_order: 0
 nav_exclude: false
 has_children: true
-toc: false
 ---
 
 
 ![SidecarTridge Multi-device](/sidecartridge-multidevice/assets/images/BOARD-3.1-PICOW-PERSPECTIVE.png)
 
 # SidecarTridge Multi-device Documentation 
+{: .no_toc }
 {: .d-inline-block }
 
 {{ site.FIRMWARE_ALPHA_VERSION }}
