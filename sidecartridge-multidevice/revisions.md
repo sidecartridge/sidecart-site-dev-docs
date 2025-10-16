@@ -76,6 +76,11 @@ Revision 2.3.0 introduces a minor addition to Revision 2.2.x series to improve t
 - Larger no-copper area under the Pico W radio module.
 
 ### Revision 3.1
+
+{:refdef: style="text-align: center;"}
+![Multi-device revision 3.1](/sidecartridge-multidevice/assets/images/BOARD-3.1-KIT-TOP.png)
+{: refdef}
+
 Revision 3.1 is a general improvement over the previous revisions. It includes the following changes:
 - Smaller & More Compact: A slimmer design makes installation easier while maintaining all functionality.
 - Enhanced Performance & Stability: ENIG PCBs and optimized track layout improve signal integrity and reduce electrical noise, especially in older machines.
