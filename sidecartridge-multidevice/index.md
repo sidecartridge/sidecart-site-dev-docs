@@ -15,6 +15,8 @@ has_children: true
 {{ site.FIRMWARE_ALPHA_VERSION }}
 {: .label .label-purple }
 
+{: .no_toc }
+
 
 Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarTridge Multi-device board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
