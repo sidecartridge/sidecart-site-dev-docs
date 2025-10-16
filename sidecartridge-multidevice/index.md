@@ -145,7 +145,7 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
-    <h3>🔧 <a href="/sidecartridge-multidevice/how_to/">How to</a></h3>
+    <h3>🔧 <a href="/sidecartridge-multidevice/how_to_v2/">How to</a></h3>
     <p>Different small tutorials to customize the SidecarTridge Multi-device to your needs.</p>
   </div>
 
