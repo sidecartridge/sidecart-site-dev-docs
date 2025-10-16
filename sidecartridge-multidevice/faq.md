@@ -20,7 +20,7 @@ The Multi-device board features a series of LEDs that provide visual feedback on
 
 - ROM Emulation: 'E' (Emulator)
 - Configurator: 'C'
-- GEMBENCH: 'H' (Hard disk)
+- GEMDRIVE: 'H' (Hard disk)
 - Floppy emulation: 'F'
 - ROM Emulation with Delay enabled: 'D'
 - RTC: 'T' (Time)
