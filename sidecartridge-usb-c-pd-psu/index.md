@@ -53,5 +53,5 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 ![SidecarTridge USB-C PD Multi-Rail PSU Drop-In](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-INTERNAL-KIT-ATARI-ST.png)
 
 - [Product page](https://sidecartridge.com/products/usb-c-pd-psu-atari-st/)
-- [Shopify store](https://store.sidecartridge.com/products/usb-c-pd-psu-atari-st)
+- [Shopify store](https://store.sidecartridge.com/products/usb-c-pd-multi-rail-power-supply-unit-for-atari-st-e-and-megast)
 - [Quickstart installation guide](https://sidecartridge.com/quickstart/usb-c-pd-psu-atari-st/)
