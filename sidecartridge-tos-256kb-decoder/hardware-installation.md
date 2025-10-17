@@ -160,5 +160,5 @@ After completing the installation of the SidecarTridge TOS 256KB Decoder and the
 
 [Previous: Before you buy](/sidecartridge-tos-256kb-decoder/before-buy/){: .btn .mr-4 }
 [Main](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
-[Next: Compatiibility](/sidecartridge-tos-256kb-decoder/compatibility/){: .btn }
+[Next: Compatibility](/sidecartridge-tos-256kb-decoder/compatibility/){: .btn }
 

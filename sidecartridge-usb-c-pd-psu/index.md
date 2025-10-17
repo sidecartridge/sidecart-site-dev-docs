@@ -41,7 +41,8 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 | Dell     | LA60NM200 Power Adapter         | 60 W         | OK |
 | Essager      | GaN PD Power Adapter        | 100 W         | OK. Reported ghosting issues. |
 | Lenovo      | ADLX65YLC3D Power Adapter    | 65 W         | OK |
-| Raspberry Pi | 27W USB-C Power Adapter      | 27 W         | OK with 15V. With STE computers fails to deliver enough power. |
+| Raspberry Pi | P4123 - 27W USB-C Power Adapter      | 27 W         | OK with 15V. With STE computers fails to deliver enough power. |
+| Raspberry Pi | P5224 - 45W USB-C Power Adapter      | 45 W         | OK. Cheapest option with remarkable quality. |
 
 
 
@@ -52,5 +53,5 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 ![SidecarTridge USB-C PD Multi-Rail PSU Drop-In](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-INTERNAL-KIT-ATARI-ST.png)
 
 - [Product page](https://sidecartridge.com/products/usb-c-pd-psu-atari-st/)
-- [Shopify store](https://store.sidecartridge.com/products//usb-c-pd-psu-atari-st)
+- [Shopify store](https://store.sidecartridge.com/products/usb-c-pd-psu-atari-st)
 - [Quickstart installation guide](https://sidecartridge.com/quickstart/usb-c-pd-psu-atari-st/)

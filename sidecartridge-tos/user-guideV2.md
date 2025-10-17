@@ -139,7 +139,7 @@ As the delete feature, it is not possible to rename the default TOS ROM image or
 
 ## Select a new Rescue TOS ROM
 
-The recue TOS cannot be changed using the SWITCHER.TOS program or the internal API call to switch TOS ROMs. To change the rescue TOS ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-started/) section. If you still want to change the rescue TOS ROM using the SWITCHER.TOS program, you can do so by [following these steps](/sidecartridge-tos/troubleshooting.md#cant-change-the-rescue-and-defaultactive-images-from-the-host-computer) at your own risk.
+The rescue TOS cannot be changed using the SWITCHER.TOS program or the internal API call to switch TOS ROMs. To change the rescue TOS ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-startedV2/) section. If you still want to change the rescue TOS ROM using the SWITCHER.TOS program, you can do so by [following these steps](/sidecartridge-tos/troubleshooting/#cant-change-the-rescue-and-defaultactive-images-from-the-host-computer) at your own risk.
 
 [Previous: Hardware Installation](/sidecartridge-tos/hardware-installation/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }

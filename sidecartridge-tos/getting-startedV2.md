@@ -103,7 +103,7 @@ Open the `ROMEMUL` volume on your computer to access firmware files and TOS imag
 
 - `INDEX.HTM`: Opens the SidecarTridge TOS documentation website.
 - `INFO.TXT`: Contains information about the firmware version installed in the SidecarTridge TOS emulator.
-- `SWITCHER.TOS`: The program for managing TOS versions on the Atari ST. **You must copy this file to your Atari ST computer to manage your TOS versions. You can learn to use in the [User Guide](/sidecartridge-tos/user-guideV2.md)**
+- `SWITCHER.TOS`: The program for managing TOS versions on the Atari ST. **You must copy this file to your Atari ST computer to manage your TOS versions. You can learn to use in the [User Guide](/sidecartridge-tos/user-guideV2/)**
 - `DEFAULT.TXT`: Contains the name of the default active TOS image file.
 - `RESCUE.TXT`: Contains the name of the rescue TOS image file.
 - `CONFIG.TXT`: (v3 Boards and v3 firmware only) Starting in version 3 of the SidecarTridge TOS emulator, this file contains the advanced configuration settings for the emulator. The settings helps to adjust the speed of the address bus when the emulator runs in computers with very noisy buses, or when the computer has accelerated boards.

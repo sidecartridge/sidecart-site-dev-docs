@@ -78,7 +78,7 @@ Unlike modern systems, **Atari TOS** does not include a fully integrated hard dr
 
 #### ACSI Drivers: How They Work
 
-When purchasing a hard drive for the Atari ST, users typically received a driver on a floppy disk. The most common driver was Atari’s **AHDI driver**, notorious for its numerous limitations and bugs. In response, third-party companies developed superior alternatives that were more reliable and feature-rich. See the [Before You Buy section](/acsi2stm-atari-st/before-buy.md) for more information.
+When purchasing a hard drive for the Atari ST, users typically received a driver on a floppy disk. The most common driver was Atari’s **AHDI driver**, notorious for its numerous limitations and bugs. In response, third-party companies developed superior alternatives that were more reliable and feature-rich. See the [Before You Buy section](/acsi2stm-atari-st/before-buy/) for more information.
 
 All these drivers operate on the same basic principle:
 
