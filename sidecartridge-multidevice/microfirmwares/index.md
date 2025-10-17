@@ -13,7 +13,7 @@ redirect_from:
 {: .no_toc }
 {: .d-inline-block }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
+{{ site.FIRMWARE_VERSION }}
 {: .label .label-purple }
 
 <details open markdown="block">

@@ -147,8 +147,7 @@ compress_html:
   #   envs: all
 
 # Versions of SidecarT
-FIRMWARE_VERSION: v1.0.1
-FIRMWARE_BETA_VERSION: v1.0.1
+FIRMWARE_VERSION: v2.0.8
 FIRMWARE_ALPHA_VERSION: v2.0.7beta
 TEST_FIRMWARE_VERSION: v0.0.3
 

@@ -13,7 +13,7 @@ redirect_from:
 {: .no_toc }
 {: .d-inline-block }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
+{{ site.FIRMWARE_VERSION }}
 {: .label .label-purple }
 
 This section provides guidance on the initial steps to start working with the SidecarTridge Multi-device board with the latest firmware v2. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the Multi-device board by following the procedures outlined in this and coming sections.
@@ -100,7 +100,7 @@ Starting in version **v2.0.6Beta** you don't need to download the newer firmware
 ### Option 1: Using the drag-and-drop method
 1. Connect the Raspberry Pi Pico W micro USB connector to your computer while holding the **BOOTSEL** button.
 2. Your computer should recognize the device as the mass storage device `RPI-RP2`. Now you can release the **BOOTSEL** button.
-3. Drag and drop the [Full {{ site.FIRMWARE_ALPHA_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_ALPHA_VERSION }}/rp-booster-{{ site.FIRMWARE_ALPHA_VERSION }}-full.uf2) file to the `RPI-RP2` drive.
+3. Drag and drop the [Full {{ site.FIRMWARE_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_VERSION }}/rp-booster-{{ site.FIRMWARE_VERSION }}-full.uf2) file to the `RPI-RP2` drive.
 4. Wait for the file to be copied. When the copy is complete you can disconnect the Raspberry Pi Pico W from your computer.
 
 ### Option 2: Using picotool

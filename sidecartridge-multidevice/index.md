@@ -13,7 +13,7 @@ has_children: true
 {: .no_toc }
 {: .d-inline-block }
 
-{{ site.FIRMWARE_ALPHA_VERSION }}
+{{ site.FIRMWARE_VERSION }}
 {: .label .label-purple }
 
 
@@ -28,9 +28,9 @@ You can learn about the hardware evolution of the SidecarTridge Multi-device in 
 </figure>
 
 
-## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_ALPHA_VERSION }}
-* **💾 [Download STABLE Release {{ site.FIRMWARE_ALPHA_VERSION }}](https://sidecartridge.com/downloads)**
-* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_ALPHA_VERSION }}](https://github.com/sidecartridge/rp2-booster-bootloader/releases/tag/{{ site.FIRMWARE_ALPHA_VERSION }})**
+## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
+* **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
+* **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/rp2-booster-bootloader/releases/tag/{{ site.FIRMWARE_VERSION }})**
 * 🕒 [Older Versions](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/releases)
 
 ## 🐞 Bugs, Issues, and Enhancements
