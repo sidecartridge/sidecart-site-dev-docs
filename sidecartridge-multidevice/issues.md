@@ -38,7 +38,7 @@ But if you want to report a specific issue related to a particular microfirmware
 - [RTC Emulator Issues](https://github.com/sidecartridge/md-rtc-emulator/issues)
 - [Drives Emulator Issues](https://github.com/sidecartridge/md-drives-emulator/issues)
 - [File & Download Manager Issues](https://github.com/sidecartridge/md-browser/issues)
-- [GPU Demo Issues](https://github.com/sidecartridge/md-gpu-demo/issues)
+- [GPU Demo Issues](https://github.com/sidecartridge/md-sprites-demo/issues)
 - [Test ROM Issues](https://github.com/sidecartridge/md-test-rom/issues)
 
 ### Booster Firmware Issues
