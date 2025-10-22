@@ -4,6 +4,7 @@ title: Advanced Settings
 nav_order: 6
 nav_exclude: false
 parent: SidecarTridge Kickstart
+---
 
 # Advanced Settings
 {: .no_toc }
