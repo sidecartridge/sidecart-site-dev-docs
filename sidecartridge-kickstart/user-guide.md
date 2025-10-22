@@ -59,7 +59,7 @@ Open the SWITCHER application. The program will display a list of available Kick
 
 Use the arrow keys to navigate the list and press the `RETURN` key to select the desired ROM. The program will then reboot the Amiga with the selected ROM.
 
-![SidecarTridge Switcher selected](/sidecartridge-kickstart/assets/images/sidecartridge-switcher-select.gif)
+![SidecarTridge Switcher selected](/sidecartridge-kickstart/assets/images/sidecartridge-switcher-select.png)
 
 {: .note}
 This is the recommended way to switch between ROM versions. It is also possible to switch ROM versions modifying the `DEFAULT.TXT` file as described in the [Getting Started](/sidecartridge-kickstart/getting-started/) section, but this method is not recommended for daily use.
@@ -124,8 +124,12 @@ The new name must be valid Long File Name (LFN) of up to 64 characters in the AS
 
 The new name will be rejected if it is already in use by another ROM image.
 
+![SidecarTridge Switcher rename](/sidecartridge-kickstart/assets/images/sidecartridge-switcher-rename.png)
+
 {:.note}
 As the delete feature, it is not possible to rename the default ROM image or the rescue ROM image. If you want to rename the default or rescue ROM image, you must first select a new default ROM image.
+
+
 
 ## Select a new Rescue ROM
 
