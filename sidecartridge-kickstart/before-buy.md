@@ -16,7 +16,7 @@ To learn more about your Amiga motherboard model, open the case and look for the
 For example:
 
 An Amiga 500 revision 5 motherboard model number might look like this:
-![Amiga 500 revision 5 Motherboard Model](/sidecartridge-kickstart/assets/images/sidecartridge-amiga500-v5-motherboard.png)
+![Amiga 500 revision 5 Motherboard Model](/sidecartridge-kickstart/assets/images/amiga500-5.jpeg)
 
 
 ### ROMs Plugged or Soldered
@@ -40,11 +40,11 @@ Once you have verified the compatibility of your Amiga 500 motherboard, you can 
 
 I have followed the guidelines from [this blog](https://dfarq.homeip.net/amiga-500-motherboard-revisions) to create the following table to help you identify your Amiga 500 motherboard revision.
 
-| Revision  | Notable Features |
-|----------|------------------|
-| [rev3](/sidecartridge-kickstart/assets/images/amiga500-3.jpeg) | Lack of silkscreen above the memory chips is the easiest way to identify an Amiga 500 revision 3 motherboard. |
-| [rev5](/sidecartridge-kickstart/assets/images/amiga500-5.jpeg) | 16 RAM chips, with all of the positions populated. Above the RAM chips, you see a silkscreened identifier in white that says A500.  |
-| [rev6a](/sidecartridge-kickstart/assets/images/amiga500-6a.jpeg) | White A500 silkscreen and 8 RAM chip positions rather than 16 to distinguish it from a rev 5 board. |
+| Revision  | Motherboard  | Notable Features |
+|----------|------------------|------------------|
+| rev3 | [rev3](/sidecartridge-kickstart/assets/images/amiga500-3.jpeg) | Lack of silkscreen above the memory chips is the easiest way to identify an Amiga 500 revision 3 motherboard. |
+| rev5 | [rev5](/sidecartridge-kickstart/assets/images/amiga500-5.jpeg) | 16 RAM chips, with all of the positions populated. Above the RAM chips, you see a silkscreened identifier in white that says A500.  |
+| rev6a | [rev6a](/sidecartridge-kickstart/assets/images/amiga500-6a.jpeg) | White A500 silkscreen and 8 RAM chip positions rather than 16 to distinguish it from a rev 5 board. |
 
 
 [Previous: Introduction](/sidecartridge-kickstart/introduction/){: .btn .mr-4 }
