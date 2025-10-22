@@ -18,7 +18,13 @@ redirect_from:
 
 This section provides guidance on the initial steps to start working with the SidecarTridge Multi-device board with the latest firmware v2. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the Multi-device board by following the procedures outlined in this and coming sections.
 
-{: .important }
+You can learn about the new features and improvements in the latest firmware release by watching the video below:
+
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/S1IZKrRRqhw?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
 
 <details open markdown="block">
   <summary>
@@ -28,6 +34,8 @@ This section provides guidance on the initial steps to start working with the Si
 1. TOC
 {:toc}
 </details>
+
+
 
 
 ## 🚀 What’s new in Firmware v2?

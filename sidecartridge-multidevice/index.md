@@ -19,11 +19,11 @@ has_children: true
 
 Welcome to the SidecarTridge Multi-device Documentation! This comprehensive guide is aimed at providing developers with all the information needed to get started with the SidecarTridge Multi-device board, understand its architecture, and contribute to its development. Please refer to the relevant sections below to explore specific topics.
 
-You can learn about the hardware evolution of the SidecarTridge Multi-device in this video:
+You can learn about the new features and improvements in the latest firmware release by watching the video below:
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-        src="https://www.youtube-nocookie.com/embed/RvREQNScEzE?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        src="https://www.youtube-nocookie.com/embed/S1IZKrRRqhw?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
         allowfullscreen allowtransparency></iframe>
 </figure>
 
