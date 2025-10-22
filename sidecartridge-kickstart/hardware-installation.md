@@ -56,7 +56,7 @@ Once the plastic case is removed, you'll find a metal shielding that also needs 
     - Once the metal shielding is removed, you'll find the Amiga ROM chip.
     - Depending on the Amiga model, they will be in different locations:
 
-Amiga 500: The ROM is located at the left side of the motherboard between the Motorola 68000 CPU and the AGNUS chip.
+In the Amiga 500, the ROM is located at the left side of the motherboard between the Motorola 68000 CPU and the AGNUS chip.
 ![Amiga 500 ROM location](/sidecartridge-kickstart/assets/images/amiga-500-rom-chip.jpg)
 
 By following these instructions, you can safely open your Amiga case and prepare for the hardware installation of the SidecarTridge Kickstart Emulator.
