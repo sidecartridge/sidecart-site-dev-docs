@@ -42,9 +42,9 @@ I have followed the guidelines from [this blog](https://dfarq.homeip.net/amiga-5
 
 | Revision  | Motherboard  | Notable Features |
 |----------|------------------|------------------|
-| rev3 | [rev3](/sidecartridge-kickstart/assets/images/amiga500-3.jpeg) | Lack of silkscreen above the memory chips is the easiest way to identify an Amiga 500 revision 3 motherboard. |
-| rev5 | [rev5](/sidecartridge-kickstart/assets/images/amiga500-5.jpeg) | 16 RAM chips, with all of the positions populated. Above the RAM chips, you see a silkscreened identifier in white that says A500.  |
-| rev6a | [rev6a](/sidecartridge-kickstart/assets/images/amiga500-6a.jpeg) | White A500 silkscreen and 8 RAM chip positions rather than 16 to distinguish it from a rev 5 board. |
+| rev3 | ![rev3](/sidecartridge-kickstart/assets/images/amiga500-3.jpeg) | Lack of silkscreen above the memory chips is the easiest way to identify an Amiga 500 revision 3 motherboard. |
+| rev5 | ![rev5](/sidecartridge-kickstart/assets/images/amiga500-5.jpeg) | 16 RAM chips, with all of the positions populated. Above the RAM chips, you see a silkscreened identifier in white that says A500.  |
+| rev6a | ![rev6a](/sidecartridge-kickstart/assets/images/amiga500-6a.jpeg) | White A500 silkscreen and 8 RAM chip positions rather than 16 to distinguish it from a rev 5 board. |
 
 
 [Previous: Introduction](/sidecartridge-kickstart/introduction/){: .btn .mr-4 }
