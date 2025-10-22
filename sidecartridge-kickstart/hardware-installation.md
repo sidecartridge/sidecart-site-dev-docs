@@ -97,6 +97,7 @@ By following these steps, you will have successfully connected and secured the S
 
 ![Amiga 500 ROM socket placement](/sidecartridge-kickstart/assets/images/amiga-500-kickstart-placement.jpg)
 
+As a final step, connect the rescue mode cable to the SidecarTridge Kickstart Emulator. This cable is essential for accessing the rescue mode if needed in the future. The cable is long enough to show outside the Amiga case through the expansion port area.
 
 ## Closing the Amiga 500 Case
 
