@@ -151,7 +151,7 @@ redirect_from:
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/sidecartridge-kickstart/assets/images/sidecartridge-kickstart-kit.png" alt="SidecarTridge Kickstart thumbnail">
+      <img class="proj-thumb" src="/sidecartridge-kickstart/assets/images/KICKSTART-A500-TOP.png" alt="SidecarTridge Kickstart thumbnail">
       <div>
         <h2><a href="/sidecartridge-kickstart/">SidecarTridge Kickstart emulator</a></h2>
         <p>A compact board designed to emulate Amiga internal ROMs, allowing users to access any Kickstart version without swapping chips.</p>
