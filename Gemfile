@@ -15,3 +15,5 @@ gem "html-proofer", "~> 5.0", :group => :development
 gem "jekyll-redirect-from", "~> 0.16.0"
 
 gem "jekyll-sitemap", "~> 1.4.0"
+
+gem "json", ">= 2.10"
