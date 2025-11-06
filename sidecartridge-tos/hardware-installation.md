@@ -169,7 +169,7 @@ Depending on the Atari ST model, the SidecarTridge TOS Emulator carrier board mu
 
 ### Find the Correct Orientation
 
-#### Atari STF/STFM
+#### Atari C070789 Motherboards
 
 The SidecarTridge carrier board has to be plugged into the ROM sockets marked as HI-0 and LO-0 on the Atari ST motherboard. **The HI-0 socket is the one closest to the bottom edge of the motherboard.**
 
@@ -177,11 +177,21 @@ The sockets are 28 pins wide like the SidecarTridge TOS Emulator, so it should b
 
 ![Atari ST/STF/STFM Sidecartridge TOS](/sidecartridge-tos/assets/images/sidecartridge-st2-plugged.png)
 
-#### Atari ST/ST+/STM
+#### Atari C070243 Motherboards
 
 The SidecarTridge carrier board has to be plugged into the ROM sockets marked as HI-0 and LO-0 on the Atari ST motherboard. **The LO-0 socket is the one closest to the bottom edge of the motherboard.**
 
-The sockets are 28 pins wide like the SidecarTridge TOS Emulator, so it should be easy to align the emulator with the sockets. 
+The sockets are 28 pins wide like the SidecarTridge TOS Emulator, so it should be easy to align the emulator with the sockets.
+
+#### Atari C070523 Motherboards
+
+The SidecarTridge carrier board has to be plugged into the ROM sockets marked as HI-2 and LO-2 on the Atari ST motherboard. That means the LOW part of the SidecarTridge TOS Emulator must be plugged into the socket closest to the bottom edge of the motherboard, and the HIGH part into the other socket.
+
+The carrier board is placed below the Power Supply Unit, so it must be removed first to access the ROM sockets. The board is a low profile design to fit in the tight space below the PSU, but it is always a good idea to check for clearance before reassembling the Atari ST case.
+
+#### Atari Mega ST
+
+The SidecarTridge carrier board has to be plugged into the ROM sockets marked as FC-L and FC-H on the Atari Mega ST motherboard. The sockets are the two closest to the bottom edge of the motherboard.
 
 #### Atari STE
 
