@@ -91,8 +91,9 @@ Inspect the now-empty sockets on the motherboard for any debris or damage. Clean
 
 The SidecarTridge TOS Emulator carrier board is configured to replace the original ROMs pin by pin. If the computer has jumpers to select the chip types, set them to match the original ROMs as follows:
 
-### Atari ST/STF/STFM
+### Atari ST C070789 Motherboards
 
+#### Dual ROMs
 The jumpers must be set to the 1M position for all jumpers on a motherboard with only two ROMs (the original ROMs are 1Mbit).
 
 - **A17 jumper:** 1M position
@@ -100,6 +101,40 @@ The jumpers must be set to the 1M position for all jumpers on a motherboard with
 - **CE jumper:** 1M position
 
 ![Atari ST/STF/STFM jumpers](/sidecartridge-tos/assets/images/sidecartridge-st2-jumpers.png)
+
+#### Six ROMs
+The jumpers must be set to the 256K position for all jumpers on a motherboard with six ROMs (the original ROMs are 256Kbit).
+
+### Atari ST C070243 Motherboards
+
+#### Six ROMs
+This is the default configuration for this motherboard version. No changes are needed.
+
+#### Dual ROMs
+This configuration is quite unusual in this motherboard version. We assume that only modded computers have this configuration, so the user has already modified the board to support dual ROMs, a not so common modification.
+
+### Atari ST C070523 Motherboards
+
+#### Six ROMs
+This is the default configuration for this motherboard version. No changes are needed.
+
+#### Dual ROMs
+Not supported.
+
+### Atari Mega ST
+
+### Dual ROMs
+
+Only dual ROMs configuration is supported on the Mega ST. Please set the jumpers as follows:
+- **W2**: 2-3 position closed. 
+- **W3**: 2-3 position closed.
+- **W4**: open (not connected).
+
+If your computer already has two ROMs installed, the jumpers should be already set correctly.
+
+#### Six ROMs
+
+Not supported. Modify the jumpers to support dual ROMs as described above.
 
 ### Atari STE
 
