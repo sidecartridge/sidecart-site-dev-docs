@@ -96,7 +96,7 @@ Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldere
 {: refdef}
 
 
-- Since the firmware version 2.0, a microSD card [formatted as FAT16 or exFAT](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to/#format-the-microsd-card) is required.
+- Since the firmware version 2.0, a microSD card [formatted as FAT32 or exFAT](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to/#format-the-microsd-card) is required.
 
 ## Initial Setup and Configuration
 
@@ -124,7 +124,7 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 ### Initial Factory Configuration
 
-1. Format a microSD card with either **exFAT** or **FAT32** file system and insert it into the SidecarTridge Multidevice board.
+1. Format a microSD card with either **exFAT** or **FAT32** file system and insert it into the SidecarTridge Multidevice board. **We strongly recommend using a high-quality SDHC, SDXC or SDUC microSD from a reputable brand** to ensure optimal performance and reliability. To format the microSD card, you can use the [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) tool available for PC/Mac/Linux.
 
 2. Plug the SidecarTridge Multidevice into the **cartridge port** of your Atari 16/32 series computer.
 
