@@ -18,6 +18,8 @@ redirect_from:
 
 # SidecarTridge Documentation Site
 
+![Discord](https://img.shields.io/discord/1160868666162823218?style=flat&label=Discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2Fu73QP9MEYC)
+
 <!-- Project list – single column with left thumbnail -->
 <style>
   .proj-list {
