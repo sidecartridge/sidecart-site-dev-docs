@@ -46,7 +46,6 @@ If you need support for large size partitions in TOS 1.00 or 1.02, the [SidecarT
 If you wan to use the legacy ACSI mode you will need to create images for the ACSI mode, or find already created images. 
 
 Here goes some links with pre-created images for the ACSI mode:
-- [1GB image empty with prebuilt partitions and HDDriver]()
 - [Image with ACSI2STM utilities](http://atarist.sidecartridge.com.s3.amazonaws.com/acsi2stm-5.00-hd0.img)
 - [Image disk with almost 200 games](hhttp://atarist.sidecartridge.com.s3.amazonaws.com/1GB-GAMES.img.zip)
 - [16MB Image with ICD Pro driver](http://joo.kie.sk/?page_id=306) (After installing the image, continue with the partition as explained in this [guide](http://joo.kie.sk/?page_id=306))
