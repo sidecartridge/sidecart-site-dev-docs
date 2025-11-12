@@ -46,8 +46,9 @@ If you need support for large size partitions in TOS 1.00 or 1.02, the [SidecarT
 If you wan to use the legacy ACSI mode you will need to create images for the ACSI mode, or find already created images. 
 
 Here goes some links with pre-created images for the ACSI mode:
+- [2GB Empty Image with ICD Pro driver](http://atarist.sidecartridge.com.s3.amazonaws.com/atari_2gb_empty_ICD.img.zip)
 - [Image with ACSI2STM utilities](http://atarist.sidecartridge.com.s3.amazonaws.com/acsi2stm-5.00-hd0.img)
-- [Image disk with almost 200 games](hhttp://atarist.sidecartridge.com.s3.amazonaws.com/1GB-GAMES.img.zip)
+- [Image disk with almost 200 games](http://atarist.sidecartridge.com.s3.amazonaws.com/1GB-GAMES.img.zip)
 - [16MB Image with ICD Pro driver](http://joo.kie.sk/?page_id=306) (After installing the image, continue with the partition as explained in this [guide](http://joo.kie.sk/?page_id=306))
 
 Probably the fastest way to burn the images into the SD card is using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
