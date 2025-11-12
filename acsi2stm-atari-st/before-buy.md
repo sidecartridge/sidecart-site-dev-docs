@@ -51,6 +51,9 @@ Here goes some links with pre-created images for the ACSI mode:
 - [Image disk with almost 200 games](http://atarist.sidecartridge.com/1GB-GAMES.img.zip)
 - [16MB Image with ICD Pro driver](http://joo.kie.sk/?page_id=306) (After installing the image, continue with the partition as explained in this [guide](http://joo.kie.sk/?page_id=306))
 
+{: .note}
+If the download links do not start automatically, please right-click on the link and select "Copy link address" , open a new browser tab, paste the link in the address bar, and press Enter.
+
 Probably the fastest way to burn the images into the SD card is using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
 If you want to create your own TOS & DOS compatible images, you should use to [_Atari Hard Disk and File Systems Reference Guide_](http://atarist.sidecartridge.com/atari-st-hd-file-systems-ref-guide.pdf) by Jean Louis-Guerin (DrCoolZic).
