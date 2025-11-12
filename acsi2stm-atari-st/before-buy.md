@@ -21,7 +21,7 @@ The firmware I install in the ACSI2STM devices is the latest stable version but 
 
 If you don't want to take the risk of the Bad-DMA issue, the [SidecarTridge MultiDevice](https://sidecartridge.com/products/sidecartridge-multidevice-atari-st/) GEMDRIVE is a good alternative. It cannot be affected by the Bad-DMA issue and it is compatible with all Atari ST models.
 
-### TOS versions supported
+### TOS versions supported
 
 The ACSI2STM device has two main modes of operation: the ACSI mode and the GEMDRIVE mode. Not all the TOS versions supports both modes. The ACSI mode is the legacy mode that uses the ACSI protocol to communicate with the Atari ST. The GEMDRIVE mode is the modern mode that traps the GEMDOS calls to access the SD card. 
 
