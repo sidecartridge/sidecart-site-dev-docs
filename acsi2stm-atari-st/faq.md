@@ -26,6 +26,22 @@ parent: ACSI2STM Hard Disk for Atari ST
 
 Choose **GEMDRIVE** for convenience and modern workflows, and **ACSI** for full compatibility with vintage software.
 
+### What slots support ACSI mode?
+
+Depends on the TOS version.
+
+#### EMUTOS and TOS 2.0x
+
+Only the leftmost slot labeled SD0 (C: / L:) is available for ACSI mode.
+
+#### Other TOS versions
+
+These TOS versions can execute the embedded GEMDRIVE driver. These driver can change the order of the GEMDRIVE and ACSI units.
+
+### Why can't see GEMDRIVE units in EmuTOS and TOS 2.0x?
+
+To use GEMDRIVE units under EmuTOS and TOS 2.0x you must ensure that the **GEMDRIVE.PRG** driver is executed at boot time. This driver is included firmware package of the project in the **tools** folder of the [release package](https://github.com/retro16/acsi2stm/releases/tag/5.00).
+
 ### Why do I need a USB-C cable?
 
 The ACSI2STM requires a USB-C cable to power the device because it cannot draw enough power from the Atari's ACSI port. The USB-C cable should be connected to a USB power source, such as a computer, USB charger, SidecarTridge Multi-device, or a USB power bank.
