@@ -44,7 +44,31 @@ Since **DB19 connectors** are no longer produced and are increasingly difficult 
 
 The ACSI2STM version of SidecarTridge does have placeholders for the IDC20 connector and the connector is bundled with the kit, just in case you want to use it.
 
-## The ASCI protocol
+## Quickstart
+
+### For ACSI-ready images only
+
+If you want to use the legacy ACSI mode with, for example with some already built images, you can follow these steps:
+
+1. Check that you are running a compatible TOS version with the drivers installed in your disk image. Usually everything above TOS 1.04 is safe.
+2. Insert the microSD with the image burned in the leftmost slot labeled as SDO0 (C: / L:)
+
+### For GEMDRIVE images only
+
+If you want to use the new GEMDRIVE mode:
+
+1. If you are running TOS 1.04 to 1.62 the driver will be preload automatically from firmware. If you have TOS 2.06 or any EmuTOS, you must load the driver manually as described in the instruction below in this chapter.
+2. Insert one or multiple microSD cards in any slot. The driver will detect and mount then.
+
+### For ACSI-ready images and GEMDRIVE images combined.
+
+If you want to have legacy ACSI mode and the new GEMDRIVE mode available simultaneously, you can configure your system accordingly by following the instructions for both modes:
+
+1. Reserve the leftmost slot labeled as SDO0 (C: / L:) for the legacy ACSI mode image.
+2. Use the remaining slots for GEMDRIVE mode images.
+3. Follow the compatibility instructions for each mode as described above. Don't forget the GEMDRIVE driver when needed.
+
+## The ACSI protocol
 
 ### Multiple Devices and ACSI IDs
 
@@ -115,7 +139,7 @@ Atari TOS has a variety of quirks and bugs. While some of these issues can be mi
 5. **Fundamental Instability**:
    - Even with numerous patches and tools, no configuration of TOS has been proven to handle extensive scaling reliably.
 
-ASCI2STM is designed to work with all Atari ST, Mega ST, STe, and Mega STe computers, but it does not behaves the same way with all TOS versions. We strongly recommend to use a device like the [SidecarTridge TOS Emulator](https://sidecartridge.com/products/sidecartridge-tos-atari-st/) to avoid the TOS limitations and change the TOS version on the fly.
+ACSI2STM is designed to work with all Atari ST, Mega ST, STe, and Mega STe computers, but it does not behaves the same way with all TOS versions. We strongly recommend to use a device like the [SidecarTridge TOS Emulator](https://sidecartridge.com/products/sidecartridge-tos-atari-st/) to avoid the TOS limitations and change the TOS version on the fly.
 
 ## The GEMDRIVE protocol
 
