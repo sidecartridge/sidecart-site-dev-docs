@@ -36,7 +36,7 @@ Only the leftmost slot labeled SD0 (C: / L:) is available for ACSI mode.
 
 #### Other TOS versions
 
-These TOS versions can execute the embedded GEMDRIVE driver. These driver can change the order of the GEMDRIVE and ACSI units.
+These TOS versions can execute the embedded GEMDRIVE driver. These driver can change the order of the GEMDRIVE and ACSI units. As a rule of thumb, ACSI should be used in the slot labeled SD0 (C: / L:), and SD1 and SD2 can be used by GEMDRIVE.
 
 ### Why can't see GEMDRIVE units in EmuTOS and TOS 2.0x?
 
