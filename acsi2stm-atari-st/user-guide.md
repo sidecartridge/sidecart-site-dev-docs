@@ -24,7 +24,7 @@ This section provides guidance on the initial steps and daily operation of ACSI2
 
 ### Instructions for Connecting the Device to the Atari ST Hard Disk Port
 
-All Atari ST models and their derivatives feature a dedicated **hard disk port**, typically located on the rear of the machine. This port is a **DB19 female socket**, a rare connector type no longer manufactured.
+All Atari ST models and their derivatives feature a dedicated **hard disk port**, typically located on the rear of the machine. This port is a **DB19 female socket**, a rare connector type no longer massively manufactured. Lucky for us, **the ACSI2STM device includes a brand-new high-quality DB19 male connector that fits perfectly into this port.**
 
 #### Understanding the Hard Disk Port
 - Commonly referred to by various names, including **DB19**, **Hard Disk Port**, **ACSI Port**, or **DMA Port**, this connector serves as the primary interface for external storage and peripherals.
@@ -32,7 +32,7 @@ All Atari ST models and their derivatives feature a dedicated **hard disk port**
 
 #### Key Considerations
 
-1. **Connector Type:** Since the DB19 connector is no longer in production, the connector is built with a set of pins that match the Atari ST hard disk port.
+1. **Connector Type:** The units include a brand-new high-quality DB19 male connector that fits perfectly into the Atari ST hard disk port.
 2. **Clean the connector**: Before connecting the device, ensure that the Atari ST hard disk port is clean and free of dust or debris. This will help establish a secure connection and prevent signal interference.
 3. **Alignment:** When connecting the device, ensure that the pins are correctly aligned with the port. Misalignment can cause damage to the pins or the port itself.
 
