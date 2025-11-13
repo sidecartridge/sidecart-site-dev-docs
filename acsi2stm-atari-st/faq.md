@@ -30,7 +30,7 @@ Choose **GEMDRIVE** for convenience and modern workflows, and **ACSI** for full 
 
 Depends on the TOS version.
 
-#### EMUTOS and TOS 2.0x
+#### EMUTOS and TOS 2.0x
 
 Only the leftmost slot labeled SD0 (C: / L:) is available for ACSI mode.
 
