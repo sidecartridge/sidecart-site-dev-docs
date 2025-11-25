@@ -121,6 +121,12 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
+    <h3>🛠️ <a href="/sidecartridge-kickstart/kickstart-conversion/">Kickstart ROM Conversion</a></h3>
+    <p>Instructions on how to convert Amiga Forever Kickstart ROM files for use with the emulator.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
     <h3>🛠️ <a href="/sidecartridge-kickstart/troubleshooting/">Troubleshooting</a></h3>
     <p>Check this section if you have issues with your device.</p>
   </div>
