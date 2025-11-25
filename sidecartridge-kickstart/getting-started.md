@@ -52,7 +52,7 @@ The emulator is compatible with various models, please read the [previous sectio
 - **Computer with USB Port**: A Windows, macOS, or Linux computer for transferring ROM files and updating firmware.
 
 ### Software and Files
-- **Kickstart Image Files**: Ensure you have the necessary Kickstart image files ready for transfer. These can be downloaded from reputable sources like [Amiga Forever](https://www.amigaforever.com/), [Cloanto](https://www.cloanto.com/), or other trusted sources.
+- **Kickstart Image Files**: Ensure you have the necessary Kickstart image files ready for transfer. These can be downloaded from reputable sources like [Amiga Forever](https://www.amigaforever.com/), [Cloanto](https://www.cloanto.com/), or other trusted sources. Please read the [Kickstart conversion guide](/sidecartridge-kickstart/kickstart-conversion/) if you need help converting your Kickstart ROM files to the required format.
 - **SWITCHER Program**: A program for selecting and managing ROM versions on the Amiga. This program is required to upload new ROM images or switch between Kickstart versions and can be downloaded from the SidecarTridge website or copied from the `ROMEMUL` volume when connecting the SidecarTridge Kickstart emulator to a computer. The folder `AMIGA`contains the `SWITCHER` program as an executable file, a .ADF disk image and also in .ST format for EmuTOS.
 
 {: .note }

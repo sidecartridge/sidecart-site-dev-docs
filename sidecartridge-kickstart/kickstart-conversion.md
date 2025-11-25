@@ -39,11 +39,11 @@ Inside the `rom` folder, you will find various Kickstart ROM files with the `.ro
 {: .note}
 Only the ROM files licensed to Cloanto are encoded and require decoding using the `rom.key` file. Other ROM files are provided in their original format and do not require decoding.
 
-## Converting the Kickstart ROM Files
+## Converting the Kickstart ROM Files
 
 To convert the Kickstart ROM files into a format compatible with the SidecarTridge Kickstart emulator, simply open the online conversion tool available at [our website](https://sidecartridge.com/assets/html/kickstart-converter.html).
 
-![SidecarTridge Kickstart ROM Converter](/sidecartridge-kickstart/assets/images/kickstart-converter.png)
+![SidecarTridge Kickstart ROM Converter](/sidecartridge-kickstart/assets/images/KICKSTART-CONVERTER.png)
 
 To begin the conversion process, first drag and drop or select multiple Kickstart ROM files from the Amiga Forever `rom` folder into the conversion tool. Then upload the `rom.key` file by selecting it from the same folder or dragging and dropping it into the designated area in the conversion tool.
 
