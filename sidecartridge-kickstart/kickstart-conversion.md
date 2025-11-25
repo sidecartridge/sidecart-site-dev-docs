@@ -58,6 +58,6 @@ After downloading the converted Kickstart ROM files, you can proceed to copy the
 Make sure to check the [Compatibility](https://docs.sidecartridge.com/sidecartridge-kickstart/compatibility/) section of the documentation to verify that the converted Kickstart ROM files are compatible with your specific Commodore Amiga motherboard model.
 
 
-[Previous: Before You Buy](/sidecartridge-kickstart/before-buy/){: .btn .mr-4 }
+[Previous: Compatibility](/sidecartridge-kickstart/compatibility/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }
-[Next: Hardware Installation](/sidecartridge-kickstart/hardware-installation/){: .btn }
+[Next: Troubleshooting](/sidecartridge-kickstart/troubleshooting/){: .btn }
