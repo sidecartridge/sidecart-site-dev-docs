@@ -21,6 +21,14 @@ The SidecarTridge Kickstart is a compact board that emulates Classic Amiga ROMs,
 This guide offers comprehensive information about the SidecarTridge Kickstart emulator for the Amiga A500 family of computers. Explore the relevant sections below to find specific details.
 
 
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/-0YuK57OUrY?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
+
+
 ## 🚀 Latest Firmware and applications
 
 - **Firmware v3.x**: This firmware is designed for the SidecarTridge Kickstart v1 boards. The current firmware version is STABLE-{{ site.SIDECARTRIDGE_KICKSTART_FIRMWARE_VERSION }}.
