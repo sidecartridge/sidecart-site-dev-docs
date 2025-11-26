@@ -40,26 +40,24 @@ Before you begin the installation and setup of the SidecarTridge Kickstart emula
 This should include:
 1. The SidecarTridge ROM Emulator Board
 2. The SidecarTridge Amiga Carrier Board. **The ROM Emulator Board is soldered onto this carrier board**.
-3. (Optional) USB-C cable: for connecting the SidecarTridge Kickstart emulator to a computer for firmware updates and TOS image transfers.
-4. (Optional) RESCUE cable: for connecting an external push button to the SidecarTridge Kickstart emulator to enter rescue mode.
+3. RESCUE cable: for connecting an external push button to the SidecarTridge Kickstart emulator to enter rescue mode.
 
 ![SidecarTridge Kit](/sidecartridge-kickstart/assets/images/sidecartridge-kickstart-kit.png)
-
-{: .note }
 
 #### Amiga Computer
 The emulator is compatible with various models, please read the [previous section to ensure compatibility](/sidecartridge-kickstart/before-buy/) with your Amiga model.
 
 ### Tools and Equipment
+-  **USB-C cable**: for connecting the SidecarTridge Kickstart emulator to a computer for firmware updates and Kickstart image transfers.
 - **Phillips Head Screwdriver**: For opening the Amiga case.
 - **Anti-Static Wrist Strap**: To prevent static discharge that could damage electronic components.
 - **Small Container**: To hold screws and small parts during the disassembly of the Amiga.
 - **IC Extractor Tool**: For safely removing the ROM chips from the Amiga motherboard. I strongly recommend using a proper IC extractor tool to avoid damaging the ROM chips or the motherboard. If you don't have one, you can use a flat-head screwdriver, but be very careful not to damage the chips or the motherboard.
-- **Insulating Tape**: To avoid short circuits between the SidecarTridge Kickstart emulator and the Amiga motherboard.
+- **Insulating Tape**: To avoid short circuits between the SidecarTridge Kickstart emulator and the Amiga motherboard. Not strictly necessary, but recommended.
 - **Computer with USB Port**: A Windows, macOS, or Linux computer for transferring ROM files and updating firmware.
 
 ### Software and Files
-- **Kickstart Image Files**: Ensure you have the necessary Kickstart image files ready for transfer. These can be downloaded from reputable sources like [Amiga Forever](https://www.amigaforever.com/), [Cloanto](https://www.cloanto.com/), or other trusted sources. Please read the [Kickstart conversion guide](/sidecartridge-kickstart/kickstart-conversion/) if you need help converting your Kickstart ROM files to the required format.
+- **ROM Image Files**: Ensure you have the necessary Kickstart image files ready for transfer. These can be downloaded from reputable sources like [Amiga Forever](https://www.amigaforever.com/). Please read the [Kickstart conversion guide](/sidecartridge-kickstart/kickstart-conversion/) if you need help converting your Kickstart ROM files to the required format. Also you can use custom ROM images if you have developed your own, or obtained them from other sources like [DiagROM](https://diagrom.com/) or [EmuTOS](https://emutos.sourceforge.io/).
 - **SWITCHER Program**: A program for selecting and managing ROM versions on the Amiga. This program is required to upload new ROM images or switch between Kickstart versions and can be downloaded from the SidecarTridge website or copied from the `ROMEMUL` volume when connecting the SidecarTridge Kickstart emulator to a computer. The folder `AMIGA`contains the `SWITCHER` program as an executable file, a .ADF disk image and also in .ST format for EmuTOS.
 
 {: .note }
@@ -75,7 +73,8 @@ When you receive your SidecarTridge Kickstart emulator kit, carefully unbox and 
 
 1. **SidecarTridge ROM Emulator Board soldered onto the Carrier Board**: This is the main component that will replace the ROM chips on your Atari ST motherboard.
 2. **RESCUE cable and push button**: This cable allows you to connect an external push button to the SidecarTridge Kickstart emulator for entering rescue mode.
-3. **SidecarTridge sticker with QR Code**: This sticker contains a QR code that links to the SidecarTridge Kickstart documentation website, providing access to the user guide, compatibility information, and other resources.
+
+The board and the sticker on the box contain a QR code that links to the SidecarTridge Kickstart documentation website, providing access to the quickstart, user guide, compatibility information, and other resources.
 
 ### Additional Components
 
@@ -131,7 +130,7 @@ Create a folder on your desktop named `ROM Images` to store and organize your RO
 
    ![SidecarTridge Source Folder Example](/sidecartridge-kickstart/assets/images/sidecartridge-source-folder.png)
 
-2. **Rename Files for Clarity**: Rename files to a readable format, such as `ROM Version - Language - Screen Hertz.img`. This helps when selecting the ROM version with the `SWITCHER` program.
+2. **(Optional) Rename Files for Clarity**: Rename files to a readable format. This helps when selecting the ROM version with the `SWITCHER` program.
 
    ![SidecarTridge Source Folder Renamed Example](/sidecartridge-kickstart/assets/images/sidecartridge-source-folder-renamed.png)
 
@@ -163,7 +162,9 @@ cp -R /path/to/ROM\ Images/* /media/username/ROMEMUL/
 {: .note }
 Depending on the Linux distribution, the mount point of the SidecarTridge Kickstart emulator may vary. Replace `/media/username/ROMEMUL/` with the correct mount point of the emulator.
 
-### Modifying the Default and Rescue ROM Images
+### Setting the Default and Rescue ROM Images
+{: note}
+The first time you set up the SidecarTridge Kickstart emulator, you need to set the default and rescue ROM images. This is a mandatory step to ensure the SidecarTridge Kickstart emulator knows which Kickstart image to use as the default and rescue ROM images.
 
 The SidecarTridge Kickstart emulator allows you to set a default active ROM image and a rescue ROM image. The *default* ROM image is the one that will boot when the Amiga is powered on, while the *rescue* ROM image is used in case of a boot failure as a fallback option by enabling the rescue mode. You can set the `RESCUE` signal on the SidecarTridge Kickstart emulator using the RESCUE connector and a push button.
 
@@ -193,8 +194,7 @@ Have you already read that as a rule of thumb, **ALWAYS** eject the `ROMEMUL` vo
 ### Magic File and Folder names
 {: .d-inline-block }
 
-
-Starting from firmware version 2.1.0, the SidecarTridge Kickstart emulator recognizes specific file and folder names that trigger actions when the volume is ejected. These magic names are used to perform maintenance tasks on the device without the need for additional tools or software.
+The SidecarTridge Kickstart emulator recognizes specific file and folder names that trigger actions when the volume is ejected. These magic names are used to perform maintenance tasks on the device without the need for additional tools or software.
 
 The following magic names are recognized by the SidecarTridge Kickstart emulator:
 - `REBOOT`: When the volume is ejected, the device will try to mount the volume again.
