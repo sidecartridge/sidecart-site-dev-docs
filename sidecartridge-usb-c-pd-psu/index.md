@@ -38,6 +38,7 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 | Apple       | A2743 USB-C Power Adapter      | 70 W         | OK |
 | Baseus       | GaN PD Power Adapter        | 65 W         | OK. With STE computers fails to deliver enough power. |
 | Baseus       | GaN PD Power Adapter        | 100 W         | OK |
+| BIOnd       | BGG-GRS-65W Power Adapter    | 65 W         | OK. Low cost device in GAME stores. It says it has 65W but I doubt (45W?) |
 | Dell     | LA60NM200 Power Adapter         | 60 W         | OK |
 | Essager      | GaN PD Power Adapter        | 100 W         | OK. Reported ghosting issues. |
 | Lenovo      | ADLX65YLC3D Power Adapter    | 65 W         | OK |
