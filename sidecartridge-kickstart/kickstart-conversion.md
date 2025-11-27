@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Amiga Forever Kickstart ROM Conversion Guide
-nav_order: 9
+nav_order: 8
 nav_exclude: false
 parent: SidecarTridge Kickstart
 

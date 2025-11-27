@@ -12,10 +12,6 @@ has_children: true
 # SidecarTridge Kickstart
 {: .d-inline-block }
 
-{: .warning}
-THE DOCUMENTATION IS A WORK IN PROGRESS TO HELP TESTERS AND EARLY ADOPTERS. PLEASE BE PATIENT WHILE IT IS COMPLETED.
-
-
 The SidecarTridge Kickstart is a compact board that emulates Classic Amiga ROMs, enabling users to run any Kickstart version or custom ROM without physically swapping chips.
 
 This guide offers comprehensive information about the SidecarTridge Kickstart emulator for the Amiga A500 family of computers. Explore the relevant sections below to find specific details.
