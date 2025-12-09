@@ -47,6 +47,14 @@ Once you have verified the compatibility of your Atari ST motherboard, you can p
 | [STF and STFM Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433379661)           | 070789-001, C103175-001, C103414-001 |
 | [Mega ST Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433412429)               | C103544-001, C103277, C100167, C100501 |
 
+### A final note about The Art of Modding
+
+Modding a 35 to 40 year old computer is never completely risk free. Even if installing the device itself is straightforward, you have to accept that **the machine will not remain in its original factory state**. Working on old hardware often means removing the metal shielding, leaving the case open, adjusting wiring, or making other small changes that were never part of the original design. For the 256KB Decoder for C070789 motherboard I recommend to remove the metal shielding carefully and keep it safe for future use.
+
+These machines are fragile, and sometimes a simple slip can be fatal. If you decide to mod an Atari ST, do it with patience, the right tools, and the understanding that this is part of the process. That is the art of modding.
+
+
+
 [Previous: Introduction](/sidecartridge-tos-256kb-decoder/introduction/){: .btn .mr-4 }
 [Main](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
 [Next: Hardware Installation](/sidecartridge-tos-256kb-decoder/hardware-installation/){: .btn }
