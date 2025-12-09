@@ -84,6 +84,12 @@ and the right side has the following signals printed, with the pin numbers in pa
 
 Before starting with the soldering process, ensure that the decoder board is correctly aligned and oriented with the Motorola 68000 CPU.
 
+The low profile pins sit about 5 mm above the CPU, which gives the chip enough space to breathe and prevents overheating. If you are installing the device on a C070789 motherboard, the clearance between the decoder board and the metal shield can get a bit tight.
+
+As a general rule, there is no real need to keep the metal shielding on a modded Atari ST, but if you remove it, always put a strip of insulation tape on top of the decoder board to avoid accidental shorts.
+
+If you really want to keep the metal shield, you can bend the pins slightly outward so the decoder board sits a little lower. This reduces the height and gives you the clearance you need, but you lose some airflow around the CPU.
+
 {: .note}
 A little bit of blue tack can be used to hold the decoder board in place while soldering. This will help to keep the board aligned with the CPU pins and prevent it from moving during the soldering process.
 
@@ -153,6 +159,12 @@ This is how it should look like in an Atari ST:
 
 And this is how it should look like in a Mega ST:
 ![256KB Decoder to TOS Emulator for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-MOTHERBOARD.png)
+
+## Metal Shielding
+
+Most modded Atari ST computers have the metal shielding removed. The shield was designed for RF compliance in the 80s, not for modern upgrades. Once you start adding things like TOS decoders, ROM emulators, extra RAM, or accelerators, the space under the shield becomes too tight. Most users simply remove it to avoid mechanical stress on components and to improve airflow. The only thing you must do is add insulating tape or a protective layer anywhere a board could touch metal, just in case the top shield is still partially installed.
+
+If you removed the metal shielding from your Atari ST or Mega ST during the installation process, you can choose to reinstall it. However, ensure that there is sufficient clearance between the decoder board and the metal shield to prevent any shorts or interference. If necessary, use insulation tape on top of the decoder board to provide additional protection.
 
 ## Power On and Test
 
