@@ -112,7 +112,7 @@ For example, to automatically load a ROM named `diagnostic.img`, follow these st
 5. Access the Booster web interface and launch the ROM Emulator app.
 6. After a few seconds, the app will automatically load the `diagnostic.img` ROM. The Multi-device green LED will blink slowly to indicate the ROM is ready.
 7. Remove the micro-USB cable. Insert the Multi-device into your Atari computer and power it on. The ROM will be loaded automatically without showing the setup screen. Now every time you power cycle or reset your Atari, the specified ROM will be loaded automatically.
-8. To disable the headless autorun mode, simply delete or rename the `.autorun` file from the `roms/` directory on the microSD card.
+8. To disable the headless autorun mode, simply delete or rename the `.autorun` file from the `roms/` directory on the microSD card. Then use the **SELECT** button behavior described below to exit headless mode.
 
 In this mode, the **SELECT** button retains its normal function but may behave differently:
 
