@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started Firmware V2.0 
 nav_order: 2
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /getting_started_v2/
