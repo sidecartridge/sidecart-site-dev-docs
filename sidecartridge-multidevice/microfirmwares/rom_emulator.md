@@ -111,7 +111,7 @@ For example, to automatically load a ROM named `diagnostic.img`, follow these st
 4. Insert the microSD card into your SidecarTridge Multi-device and power it using a micro-USB cable. If the device has not been configured before, follow the instructions in [Auto setup and headless factory configuration](https://docs.sidecartridge.com/sidecartridge-multidevice/getting_started_v2/#auto-setup-and-headless-factory-configuration) first.
 5. Access the Booster web interface and launch the ROM Emulator app.
 6. After a few seconds, the app will automatically load the `diagnostic.img` ROM. The Multi-device green LED will blink slowly to indicate the ROM is ready.
-7. Insert the Multi-device into your Atari computer and power it on. The ROM will be loaded automatically without showing the setup screen. Now every time you power cycle or reset your Atari, the specified ROM will be loaded automatically.
+7. Remove the micro-USB cable. Insert the Multi-device into your Atari computer and power it on. The ROM will be loaded automatically without showing the setup screen. Now every time you power cycle or reset your Atari, the specified ROM will be loaded automatically.
 8. To disable the headless autorun mode, simply delete or rename the `.autorun` file from the `roms/` directory on the microSD card.
 
 In this mode, the **SELECT** button retains its normal function but may behave differently:
