@@ -91,6 +91,38 @@ The Ripper mode was useful combined with tools like [Ultimate Ripper](https://ww
 5. When you want to rip the ROM, press the **`SELECT`** button on your Multi-device. The game or application should continue running.
 6. Reset (not power cycle) your Atari computer. The screen will look like it is frozen. Now, you have can press F1 (move memory to allocate the ripper program) or F2 (use memory available to allocate the ripper program) to enter the Ultimate Ripper menu.
 
+### 🔁 Headless autorun mode
+
+The ROM Emulator app supports a **headless autorun mode** that automatically loads a specific ROM at startup, skipping the setup screen and requiring no user interaction.
+
+To enable this mode, create a text file named `.autorun` inside the `roms/` directory (default path) on the microSD card. The file must contain **only the filename** of the ROM to be loaded, which must also be located in the same directory.
+
+This mode is especially useful for troubleshooting systems with a faulty keyboard or display, or for simplifying workflows that rely on a frequently used ROM.
+
+For example, to automatically load a ROM named `diagnostic.img`, follow these steps:
+
+1. Create a text file called `.autorun` in the `roms/` directory of the microSD card. Create the `roms/` directory if it does not already exist.
+2. Open the `.autorun` file with a text editor and add the following line:
+
+   ```
+   diagnostic.img
+   ```
+3. Save the file and safely eject the microSD card from your computer.
+4. Insert the microSD card into your SidecarTridge Multi-device and power it using a micro-USB cable. If the device has not been configured before, follow the instructions in [Auto setup and headless factory configuration](https://docs.sidecartridge.com/sidecartridge-multidevice/getting_started_v2/#auto-setup-and-headless-factory-configuration) first.
+5. Access the Booster web interface and launch the ROM Emulator app.
+6. After a few seconds, the app will automatically load the `diagnostic.img` ROM. The Multi-device green LED will blink slowly to indicate the ROM is ready.
+7. Insert the Multi-device into your Atari computer and power it on. The ROM will be loaded automatically without showing the setup screen. Now every time you power cycle or reset your Atari, the specified ROM will be loaded automatically.
+8. To disable the headless autorun mode, simply delete or rename the `.autorun` file from the `roms/` directory on the microSD card.
+
+In this mode, the **SELECT** button retains its normal function but may behave differently:
+
+* Pressing **SELECT** causes the ROM Emulator to re-read the `.autorun` file and reload the specified ROM, if available. The green LED will blink slowly to indicate the ROM is ready.
+* Holding **SELECT** for more than 10 seconds does **not** return to the Factory Reset screen. Instead, it **disables headless autorun mode** and returns the system to the Booster menu. The `.autorun` file remains on the microSD card but is ignored until the ROM Emulator is launched again.
+
+{: .note }
+A list of available ROM files can be found in the [ROMs repository](https://sidecartridge.com/roms/). In a standard ROM emulation setup, ROMs can be downloaded directly using the **[D]ownload** option in the setup screen. When using headless autorun mode, ROM files must typically be copied manually to the microSD card from your computer.
+
+
 ## 🛠️ Setting Up the Development Environment
 
 This project is based on an early version of the [SidecarTridge Multi-device Microfirmware App Template](https://github.com/sidecartridge/md-microfirmware-template).  

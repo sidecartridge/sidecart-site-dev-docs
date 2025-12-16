@@ -212,7 +212,7 @@ Once the microSD card is inserted, connect the Multi-device board to a power sou
 {: .note }
 If `sidecart.local` does not resolve, check your router’s connected devices list to find the IP address assigned to the Multi-device board.
 
-The Booster app operates independently of the Atari ST. You can power the Multi-device board without connecting it to the computer, which is ideal for headless operation or remote management.
+Now you can start using the Booster app to manage your microfirmware apps! Learn how to do it in the [User Guide](/sidecartridge-multidevice/userguide_v2/). The Booster app operates independently of the Atari ST. You can power the Multi-device board without connecting it to the computer, which is ideal for headless operation or troubleshooting.
 
 ## Prerequisites for Developers and Makers
 
