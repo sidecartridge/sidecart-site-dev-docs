@@ -180,6 +180,39 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 Now you can start using the Booster app to manage your microfirmware apps! Learn how to do it in the [User Guide](/sidecartridge-multidevice/userguide_v2/).
 
+### Auto setup and headless factory configuration
+
+Starting with **version 2.0.6 Beta**, the Booster app supports an automatic setup mode that lets you configure WiFi **without connecting to the Booster access point**.
+
+To use this feature, create a file named `.wificonf` in the **root directory** of the microSD card before inserting it into the Multi-device board. The file must contain the following entries:
+
+```
+SSID=YOUR_WIFI_SSID
+PASS=YOUR_WIFI_PASSWORD
+; AUTH values. Use numeric values only
+OPEN=0
+WPA_TKIP_PSK=1
+WPA2_AES_PSK=5
+WPA2_MIXED_PSK=8
+AUTH=AUTH_VALUE
+```
+
+Replace `YOUR_WIFI_SSID` and `YOUR_WIFI_PASSWORD` with your actual network credentials.
+Set `AUTH_VALUE` to the numeric value that matches your WiFi authentication method, as listed in the comments above.
+
+When the Multi-device board is powered on with this preconfigured microSD card, the Booster app will automatically read the `.wificonf` file, connect to the specified WiFi network, and skip the manual setup process.
+
+This mode is especially useful for **headless setups**, such as when no display is available or input devices are not working.
+
+Once the microSD card is inserted, connect the Multi-device board to a power source using a micro-USB cable. The Booster app will boot and connect to your WiFi network automatically. After a few seconds, you can access the Booster web interface at:
+
+* `http://sidecart.local`, or
+* `http://<your_device_ip_address>`
+
+{: .note }
+If `sidecart.local` does not resolve, check your router’s connected devices list to find the IP address assigned to the Multi-device board.
+
+The Booster app operates independently of the Atari ST. You can power the Multi-device board without connecting it to the computer, which is ideal for headless operation or remote management.
 
 ## Prerequisites for Developers and Makers
 
