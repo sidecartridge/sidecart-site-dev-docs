@@ -60,18 +60,12 @@ After launching the Multidevice Test, your computer should start as if nothing h
 
 One of the reasons for running this test suite is to verify the connection between the SidecarTridge Multidevice and your Atari ST computer. So, if your computer is not running correctly with the device connected, you can still run the test suite.
 
-The SidecarTridge Multidevice with the new firmware v2.0 can start and can be configured without the Atari ST computer. In ths *blind mode*, the user must follow these steps:
+The SidecarTridge Multidevice with the new firmware v2.0 can start and can be configured without the Atari ST computer. Please follow first the steps to connect the SidecarTridge Multidevice to your WiFi network using the factory configuration mode as explained in the [Initial Factory Configuration](/sidecartridge-multidevice/getting_started_v2/#initial-factory-configuration) section. Once you have access to the management web interface of the SidecarTridge Multidevice, please follow these steps:
 
-1. Power on the SidecarTridge Multidevice with a USB cable connected to a power source or a computer.
-2. If your device did work and you were able to access the management web interface, you can jump to step 8.
-3. If you are not able to access the management web interface, you can reset the device by pressing the SELECT button for MORE than 10 seconds. Then, the device will reset to factory settings.
-4. Power off and power on the SidecarTridge Multidevice again. Now, it should start in the factory or FABRIC mode.
-5. Connect to the `SIDECART` Wi-Fi network using your computer or smartphone. Use the password `sidecart`.
-6. Open a web browser and go to the address `http://192.168.4.1`. This will take you to the management web interface of the SidecarTridge Multidevice. Select the WiFi network you want to connect to and enter the password for that network. The device will reboot and connect to the selected WiFi network.
-7. The device will now be accessible via the WiFi network you selected as `http://sidecart.local` or `http://<IP_ADDRESS_OF_THE_DEVICE>`. If the DNS of your network cannot be configured to resolve `sidecart.local`, you should find the IP address of the device in your router's DHCP client list.
-8. Once you have access to the management web interface, you have to download the `Multidevice Test` microfirmware and launch it. This microfirmware is designed to work with the programs located in the Atari computer.
-9. Power off the SidecarTridge Multidevice and connect it to your Atari ST computer. Remove the USB cable to guarantee that the device is powered by the Atari ST computer.
-10. Power on the Atari ST computer. The SidecarTridge Multidevice should start automatically, and you can run the `TESTSCRT.TOS` program from your Atari ST computer.
+1. The device will now be accessible via the WiFi network you selected as `http://sidecart.local` or `http://<IP_ADDRESS_OF_THE_DEVICE>`. If the DNS or mDNS of your network cannot be configured to resolve `sidecart.local`, you should find the IP address of the device in your router's DHCP client list.
+2. Once you have access to the management web interface, you have to download the `Multidevice Test` microfirmware and launch it. This microfirmware is designed to work with the programs located in the Atari computer.
+3. Power off the SidecarTridge Multidevice and connect it to your Atari ST computer. Remove the micro-USB cable to guarantee that the device is powered by the Atari ST computer.
+4. Power on the Atari ST computer. The SidecarTridge Multidevice should start automatically, and you can run the `TESTSCRT.TOS` program from your Atari ST computer.
 
 ## Output of the test program
 
