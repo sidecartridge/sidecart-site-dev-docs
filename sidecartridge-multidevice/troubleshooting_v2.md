@@ -57,7 +57,7 @@ If the microSD card is not detected, please check the following:
 
 ## Network issues
 
-### The booster app tries to reconnect to the WiFi network continuously
+### The booster app tries to reconnect to the WiFi network continuously
 
 If the booster app tries to reconnect to the WiFi network continuously, please check the following:
 
@@ -66,11 +66,11 @@ If the booster app tries to reconnect to the WiFi network continuously, please c
 3. Your network is using a 2.4 GHz band. The Multi-device does not support 5 GHz networks.
 4. Your WiFi signal is strong enough. If the signal is weak, the Multi-device may have trouble connecting to the network. Try moving the computer closer to the WiFi router or access point.
 
-### Can't connect to the sidecart.local web server
+### Can't connect to the sidecart.local web server
 
 Some networks do not support mDNS, which is used by the Multi-device to resolve the sidecart.local address. If you cannot connect to the sidecart.local web server, please try connecting to the Multi-device using its IP address. You can find the IP address of the Multi-device in the Booster app screen in your Atari ST.
 
-## Restoring factory settings
+## Restoring factory settings
 
 If you need to restore the factory settings of the Multi-device, you can do it by following these steps:
 
@@ -84,11 +84,11 @@ If the SELECT button does not work, please try powering on the Atari ST while ho
 
 If for any reason the SELECT button does not work, you can reflash the firmware of the Multi-device as described below.
 
-### Reflashing the firmware
+### Reflashing the firmware
 
 If for any reason the above method does not work, you can reflash the firmware of the Multi-device by following the instructions in the [Firmware Update](/sidecartridge-multidevice/getting_started_v2/#firmware-update) section.
 
-### Restore from the Bosster app
+### Restore from the Bosster app
 
 In the configuration section of the Booster app, there is an option to restore the factory settings of the Multi-device. After restoring the factory settings, the Multi-device will reboot and the classic factory settings screen will be displayed, allowing you to reconfigure the Multi-device from scratch as described in the [Initial Factory Configuration](/sidecartridge-multidevice/getting_started_v2/#initial-factory-configuration) section.
 
