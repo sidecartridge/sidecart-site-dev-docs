@@ -45,53 +45,52 @@ If the Multi-device board is not detected by the computer, please check the foll
 2. If the LED blinks upon booting, next connect the Pico W to the Multi-device headers and perform the same operation. The green LED should blink in this case too. If it doesn't, there might be a short circuit on the Multi-device board.
 3. Lastly, try connecting the Multi-device to the computer. It is highly recommended cleaning the Multi-device cartridge connector with isopropyl alcohol before doing this. If the LED does not blink in this case, there might be a short circuit on the Multi-device board. If the LED blinks, the Multi-device board is working fine and the issue is with the cartridge connector on the computer.
 
-### CONFIGURATOR mode crashes with two bombs
-
-This is a [known issue](https://github.com/sidecartridge/atarist-sidecart-raspberry-pico/issues/55) commonly occurs on computers with less than 1MB of RAM and/or TOS versions prior to 1.62. A simple solution is to upgrade to a firmware version beyond v0.0.11. For optimal results, use the [newest beta firmware version](https://sidecartridge.com/downloads/) available.
-
-### CONFIGURATOR takes very long to start and stops responding or ask me to reboot the computer or show bombs on the screen
-
-If the CONFIGURATOR takes a long time to start and stops responding, ask for a reboot or show bombs on the screen, it is likely that the microSD card folders contain a large number of files. The CONFIGURATOR reads all the files in the microSD card folders on start. To resolve this issue, you can also disable the file count in the microSD card folders by setting the `FILE_COUNT_ENABLED` parameter to `false`.  To do this, remove the microSD card, power off/on the computer and press the `BUTTON` of the Multi-device to enter the CONFIGURATOR mode. After changing the `FILE_COUNT_ENABLED` parameter, power off the computer, insert the microSD card again and power on the computer.
-
-### Cannot enter into the CONFIGURATOR mode
-
-If you cannot enter into the CONFIGURATOR mode, please check the following:
-
-1. Check that the Multi-device is properly connected to the computer cartridge connector and that the Multi-device is properly powered.
-2. Press the RESET button on the Multi-device board and keep it pressed.
-3. While keeping the RESET button pressed, press the SELECT button for more than 1 second.
-4. Release the RESET button.
-5. The Multi-device should now be in the CONFIGURATOR mode. The CONFIGURATOR mode is indicated by the green LED blinking a 'C' in Morse code.
-
-### I can't see the cartridge drive in Configurator mode
-
-The cartridge drive uses the letter `c` in lowercase. If you can't see the `Drive c:` unit, please be sure you are in `Configurator` mode:
-
-1. Press the `SELECT` button to enter the `Configurator` mode for more than 1 second.
-2. Power cycle your computer.
-3. After boot, you should see the `Drive c:` unit. If you don't see it, do as follows:
-   - Click on any other unit (e.g. `FLOPPY DISK` or `HARD DISK`).
-   - Open the `Options` menu at the top of the screen.
-   - Click on `Install Disk Drive...`.
-   - Change `Drive identifier` to `c` **in lower casee**.
-   - You should also rename `Icon label` to `Cartridge` or `Cartridge Drive` to make it easier to identify.
-   - Finally, click on `Install`. The `Drive c:` unit should now be visible. Open it and click twice on the application `SIDECART.TOS` to run it.
-
-
-### I get an error message connecting to the WiFi network
-
-This is a known and random issue with the WiFi module. After version v0.0.10 of the firmware, the Multi-device will try to connect to the WiFi network until it succeeds. If you get an error message, please try again. If the problem persists, press the `BUTTON` of the Multi-device.
-
 
 ### microSD card not detected
 
 If the microSD card is not detected, please check the following:
 
-1. The microSD card is formated as Fat16 or exFAT. Please follow the instructions in the [Format de microSD card](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to/#format-the-microsd-card) section.
-2. Check that the microSD card has the correct folders created. Please follow the instructions to [set the folder to host ROM files](/sidecartridge-multidevice/userguide/#set-the-folder-hosting-the-rom-files) and [set the folder to host the floppy disk images](/sidecartridge-multidevice/userguide/#pre-requisite-hosting-floppy-images-on-microsd).
-3. Check that the microSD card is properly inserted in the microSD card slot. The microSD card should be inserted with the label facing up. The microSD card should be inserted until it clicks. 
+1. To use the Multi-device effectively, your microSD card needs to be formatted in FAT32 or exFAT. **We strongly recommend using a high-quality SDHC, SDXC or SDUC microSD from a reputable brand** to ensure optimal performance and reliability. To format the microSD card, you can use the [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) tool available for PC/Mac/Linux.
+2. Check that the microSD card is properly inserted in the microSD card slot. The microSD card should be inserted with the label facing up. The microSD card should be inserted until it clicks. 
 4. Do not power on the Multi-device until the microSD card is properly inserted. If the microSD card is not properly inserted, the Multi-device will not be able to detect it.
-5. In the CONFIGURATOR mode, information about the microSD card is displayed at the bottom of the screen with the space available and the number of files in the folders. If the information is not displayed, the Multi-device is not able to detect the microSD card.
+5. In the Booster app, information about the microSD card is displayed at the bottom of the screen with the space available and the number of files in the folders. If the information is not displayed, the Multi-device is not able to detect the microSD card.
+
+## Network issues
+
+### The booster app tries to reconnect to the WiFi network continuously
+
+If the booster app tries to reconnect to the WiFi network continuously, please check the following:
+
+1. You have entered the correct SSID and password in the configurator. Please follow the instructions in the [Initial Factory Configuration](/sidecartridge-multidevice/getting_started_v2/#initial-factory-configuration) section.
+2. Your WiFi network does not have any MAC address filtering enabled.
+3. Your network is using a 2.4 GHz band. The Multi-device does not support 5 GHz networks.
+4. Your WiFi signal is strong enough. If the signal is weak, the Multi-device may have trouble connecting to the network. Try moving the computer closer to the WiFi router or access point.
+
+### Can't connect to the sidecart.local web server
+
+Some networks do not support mDNS, which is used by the Multi-device to resolve the sidecart.local address. If you cannot connect to the sidecart.local web server, please try connecting to the Multi-device using its IP address. You can find the IP address of the Multi-device in the Booster app screen in your Atari ST.
+
+## Restoring factory settings
+
+If you need to restore the factory settings of the Multi-device, you can do it by following these steps:
+
+### Pressing the SELECT button for more than 10 seconds
+
+It does not matter if the Multi-device runs the Booster app or any of the available Microfirmware apps, pressing the SELECT button for more than 10 seconds will restore the factory settings of the Multi-device. 
+
+After powering off and on again, the classic factory settings screen will be displayed, allowing you to reconfigure the Multi-device from scratch as described in the [Initial Factory Configuration](/sidecartridge-multidevice/getting_started_v2/#initial-factory-configuration) section.
+
+If the SELECT button does not work, please try powering on the Atari ST while holding the SELECT button pressed for more than 10 seconds. 
+
+If for any reason the SELECT button does not work, you can reflash the firmware of the Multi-device as described below.
+
+### Reflashing the firmware
+
+If for any reason the above method does not work, you can reflash the firmware of the Multi-device by following the instructions in the [Firmware Update](/sidecartridge-multidevice/getting_started_v2/#firmware-update) section.
+
+### Restore from the Bosster app
+
+In the configuration section of the Booster app, there is an option to restore the factory settings of the Multi-device. After restoring the factory settings, the Multi-device will reboot and the classic factory settings screen will be displayed, allowing you to reconfigure the Multi-device from scratch as described in the [Initial Factory Configuration](/sidecartridge-multidevice/getting_started_v2/#initial-factory-configuration) section.
 
 ## Floppy emulation
 
