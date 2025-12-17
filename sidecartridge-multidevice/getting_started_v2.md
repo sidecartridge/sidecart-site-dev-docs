@@ -180,6 +180,9 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 Now you can start using the Booster app to manage your microfirmware apps! Learn how to do it in the [User Guide](/sidecartridge-multidevice/userguide_v2/).
 
+{: .note }
+If the app fails to connect to your WiFi network (for example, due to an incorrect password), it is possible to revert to Factory mode by pressing and holding the **SELECT** button for more than 10 seconds while powering on the computer. Another option is to create a `.wificonf` file on the microSD card as described below in the **Auto setup and headless factory configuration** section. As a last resort, you can also reflash the firmware using the methods described above.
+
 ### Auto setup and headless factory configuration
 
 Starting with **version 2.0.6 Beta**, the Booster app supports an automatic setup mode that lets you configure WiFi **without connecting to the Booster access point**.
