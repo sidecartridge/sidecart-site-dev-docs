@@ -193,10 +193,10 @@ To use this feature, create a file named `.wificonf` in the **root directory** o
 SSID=YOUR_WIFI_SSID
 PASS=YOUR_WIFI_PASSWORD
 ; AUTH values. Use numeric values only
-OPEN=0
-WPA_TKIP_PSK=1
-WPA2_AES_PSK=5
-WPA2_MIXED_PSK=8
+; OPEN=0
+; WPA_TKIP_PSK=1
+; WPA2_AES_PSK=5
+; WPA2_MIXED_PSK=8
 AUTH=AUTH_VALUE
 ```
 
