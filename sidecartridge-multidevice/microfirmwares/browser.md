@@ -45,7 +45,7 @@ After launching, the File & Download Manager app will run automatically every ti
 
 ## 🕹️ Usage
 
-When you start your Atari, the app displays a screen with a **QR code**. Scan this QR code with your smartphone or tablet to access the web interface, or enter the provided URL in any browser.
+When you start your Atari, the app displays a screen with a **QR code**. Scan this QR code with your smartphone or tablet to access the web interface, or enter the URL `http://sidecart.local` in your browser. Some home networks may require using the IP address shown on the screen instead if they do not support mDNS.
 
 * To **bypass** the QR code screen and boot directly into GEMDOS, press any key.
 * To **return to the Booster App** and select another app, press the **ESC** key.
@@ -58,7 +58,7 @@ Click the **Floppy DB** menu option in the web interface to access the **Floppy 
 
 **Search Options:**
 
-* **What's new:** Show only files recently added to the database.
+* **What's new:** Show only files recently added to the database. By default, the application shows the new files added.
 * **Filter by label:** Narrow results by label, such as cracking team names or software type.
 
 Start typing in the search box for smart suggestions. For example, typing `xe` will suggest titles like `Xevious` or `Xenon`.
