@@ -13,7 +13,7 @@ parent: SidecarTridge Kickstart
 Use this chapter to install and run DiagROM 1.3 on the SidecarTridge Kickstart emulator. [DiagROM](https://www.diagrom.com/) is a diagnostic ROM by John "Chucky/The Gang" Hertell that helps you test and troubleshoot classic Amiga hardware.
 
 {: note }
-This software is provided by a third party and is not affiliated with or endorsed by the SidecarTridge Kickstart emulator developers, but the developer asks that if you find it useful, please consider a donation to a charity of your choice. See [diagrom.com](https://www.diagrom.com/) for details.
+This software is provided by a third party and is not affiliated with SidecarTridge, but the developer asks that if you find it useful, please consider a donation to a charity of your choice. See [diagrom.com](https://www.diagrom.com/) for details.
 
 ![DIAGROM](/sidecartridge-kickstart/assets/images/DIAGROM-MENU.jpeg){: .img-center }
 
