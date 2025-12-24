@@ -60,4 +60,4 @@ Make sure to check the [Compatibility](https://docs.sidecartridge.com/sidecartri
 
 [Previous: Compatibility](/sidecartridge-kickstart/compatibility/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }
-[Next: Troubleshooting](/sidecartridge-kickstart/troubleshooting/){: .btn }
+[Next: DiagROM Diagnostics](/sidecartridge-kickstart/diagrom/){: .btn }

@@ -150,6 +150,6 @@ By default the volume will not auto-remount immediately. Power-cycle the device 
 
 The device will remount the volume automatically after a few seconds.
 
-[Previous: Kickstart ROM Conversion](/sidecartridge-kickstart/kickstart-conversion/){: .btn .mr-4 }
+[Previous: DiagROM Diagnostics](/sidecartridge-kickstart/diagrom/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }
 [Next: FAQ](/sidecartridge-kickstart/faq/){: .btn }

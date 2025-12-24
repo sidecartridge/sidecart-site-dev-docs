@@ -131,6 +131,12 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
 
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
+    <h3>🧰 <a href="/sidecartridge-kickstart/diagrom/">Diagnosing your Amiga with DIAGROM</a></h3>
+    <p>Install DiagROM 1.3 and use it to run diagnostics through the Kickstart emulator.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
     <h3>🛠️ <a href="/sidecartridge-kickstart/troubleshooting/">Troubleshooting</a></h3>
     <p>Check this section if you have issues with your device.</p>
   </div>
