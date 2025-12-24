@@ -38,13 +38,12 @@ DiagROM 1.x is listed as compatible with the SidecarTridge Kickstart emulator in
 ## Download DiagROM 1.3
 
 1. Open [diagrom.com](https://www.diagrom.com/) and follow the download instructions for the Amiga version.
-2. Select the **`DiagROM`** file from DiagROM 1.3. This matches the A500/A2000 512KB layout required by the emulator.
-3. If the download is a ZIP file, extract it so you have the raw ROM image file.
-4. Rename the file to `DiagROM.rom` for easier identification.
+2. Select the **`DiagROM`** file inside the DiagROM 1.3 zip file. This file matches the A500/A2000 512KB layout required by the emulator.
+3. Rename the file to `DiagROM.rom` for easier identification.
 
 
 {: .note }
-You don't need byte swapping or conversion; the DiagROM 1.3 file is ready to use as-is.
+You don't need byte swapping or conversion; the `DiagROM` file is ready to use as-is with the SidecarTridge Kickstart emulator.
 
 ## Copy DiagROM to the SidecarTridge Kickstart emulator
 
