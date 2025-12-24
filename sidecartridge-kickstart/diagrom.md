@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Diagnosing your Amiga with DIAGROM and Kickstart Emulator
+title: Diagnosing your Amiga with DIAGROM
 nav_order: 8.5
 nav_exclude: false
 parent: SidecarTridge Kickstart
