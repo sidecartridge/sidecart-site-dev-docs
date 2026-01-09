@@ -130,7 +130,7 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
 3. Power on the Atari 16/32 computer.
 
-4. The Booster app will automatically start in **Factory (Fabric) mode**, showing the following message on screen:
+4. The Booster app will automatically start in **Factory (Fabric) mode**, the green LED of the Pico W on, and showing the following message on screen:
 
    ![Booster Factory Mode step 1](/sidecartridge-multidevice/assets/images/BOOSTER-FABRIC-1.png)
 
