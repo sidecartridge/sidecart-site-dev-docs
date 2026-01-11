@@ -23,7 +23,7 @@ This microfirmware app for the **SidecarTridge Multi-device platform** emulates 
 **Oric** computer in the Atari ST class of machines. 
 
 This emulator is based on the [Reload Emulator](https://github.com/vsladkov/reload-emulator)
-project by Vladimir Sladkov. **Huge thanks** for his great work!
+project by Veselin Sladkov. **Huge thanks** for his great work!
 
 <details open markdown="block">
   <summary>
