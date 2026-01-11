@@ -65,6 +65,11 @@ A Microfirmware app is a small, self-contained program that runs on a standalone
 <p>Showcases RP2040 graphics: real-time sprites and tiles in Atari ST/STE modes.</p>
 </div>
 
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🕹️ <a href="/sidecartridge-multidevice/microfirmwares/oric-emulator/">Oric Emulator</a></h3>
+<p>Emulates an Oric computer on Atari ST-class machines via the Multi-device.</p>
+</div>
+
 </div>
 
 ### How it works:
