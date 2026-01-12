@@ -9,8 +9,8 @@ redirect_from:
   - /microfirmwares/oric-emulator/
   - /microfirmwares/oric_emulator
   - /microfirmwares/oric_emulator/
-  - oric_emulator
-  - oric_emulator/
+  - /sidecartridge-multidevice/microfirmwares/oric_emulator
+  - /sidecartridge-multidevice/microfirmwares/oric_emulator/
   ---
 
 # SidecarTridge Multi-device Oric Computer Emulator
