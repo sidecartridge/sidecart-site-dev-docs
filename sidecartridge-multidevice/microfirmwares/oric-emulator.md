@@ -39,6 +39,16 @@ project by Veselin Sladkov. **Huge thanks** for his great work!
 {:toc}
 </details>
 
+<figure class="video_container" style="position: relative; padding-bottom: 140%; height: 0; overflow: hidden; max-width: 420px; margin: 0 auto; background: #000;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    src="https://www.youtube.com/embed/h7e8cHXaVMA?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+    loading="lazy"
+    allowfullscreen
+    allowtransparency>
+  </iframe>
+</figure>
+
 ## ⚠️ Attention
 
 This emulator is designed **only for low-resolution monitors**.
