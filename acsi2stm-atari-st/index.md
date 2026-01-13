@@ -7,11 +7,18 @@ has_children: true
 ---
 
 
-![ACSI2STM Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png)
+![ACSI2STM Compact Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png)
+
+![ACSI2STM Mini Hard Disk](/acsi2stm-atari-st/assets/images/ACSI2STM-MINI-TOP.png)
 
 # ACSI2STM Hard Disk for Atari ST
 
 The ACSI2STM is an open-source hard drive emulator designed for Atari ST computers, enabling the use of SD cards as storage devices. Powered by an STM32 microcontroller, it bridges the Atari’s ACSI port with modern SD cards, providing a cost-effective, reliable, and versatile solution for expanding storage on vintage Atari systems.
+
+SidecarTridge has released two improved versions of the original ACSI2STM device:
+
+1. **ACSI2STM Compact:** This version is a direct replacement for the original ACSI2STM, featuring four PCB layers for enhanced performance and reliability and more robust microSD card slots with built-in eject mechanisms.
+2. **ACSI2STM Mini:** A smaller variant designed for users seeking a more compact solution without sacrificing functionality. It also incorporates the upgraded 4-layer PCB design and premium microSD card slots.
 
 After extensive testing of the original ACSI2STM device, SidecarTridge has introduced an enhanced version with several key improvements:
 
@@ -23,7 +30,24 @@ After extensive testing of the original ACSI2STM device, SidecarTridge has intro
 
 - **External LED connector:** The new design includes a connector for an external LED, allowing users to display the activity of the ACSI2STM device. This feature is particularly useful for those who prefer to place the ACSI2STM inside their Atari Mega ST or Mega STE, as it provides a visual indication of the device’s status without needing to open the case. 
 
-**The new board design is slightly larger than the original ACSI2STM with this very distintictive castile shape, and that is why it is called the "Castillian" ACSI2STM board. The new design is fully compatible with the original ACSI2STM firmware and retains all the features and functionality of the original device.**
+We can summarize the main differences between the two ACSI2STM versions in the following table:
+
+| Feature                          | ACSI2STM Mini                  | ACSI2STM Compact               |
+|----------------------------------|--------------------------------|--------------------------------|
+| **Audience**                     | Users prioritizing size and simplicity   | Users needing expansion and chaining |
+| **Dimensions**                   | 65 mm × 35 mm                  | 70 mm × 60 mm                  |
+| **PCB Layers**                   | 4-layer PCB                    | 4-layer PCB                    |
+| **ACSI Connector**               | Integrated DB-19 connector     | Integrated DB-19 connector     |
+| **Number of microSD Slots**                 | 2  | 3   |
+| **Real-Time Clock (RTC)**        | Yes (CR1220 or CR1225)         | Yes (CR2032)                    |
+| **Firmware Upgrade**             | Via Atari/Serial                  | Via Atari/Serial                |
+| **Operating Modes**              | GemDrive & ACSI                | GemDrive & ACSI                |
+| **Power Supply**                 | USB-C cable (not included)     | USB-C cable (not included)     |
+| **Enclosure Option**             | Yes                            | No                            |
+| **IDC20 Connector for Satan Disk**  | No                             | Yes                            |
+| **External LED Connector**          | No                             | Yes                            |
+
+The **ACSI2STM Mini** offers the **same full feature set as its bigger brother, the ACSI2STM Compact**, in a much smaller form factor. It is ideal for users who prioritize size and simplicity over expansion capabilities. The Mini version is perfect for those who want a compact solution without sacrificing functionality.
 
  ## Table of Contents
 
