@@ -130,7 +130,7 @@ GitHub repository.
 This is a solid first release and a fun experiment, but there is plenty of room
 to improve.
 
-- [ ] Better framebuffer. It refreshes at 50 Hz, but shows the previous frame
+- [x] ✅ Better framebuffer (implemented since v1.0.1beta). It refreshes at 50 Hz, but shows the previous frame
   instead of the latest one.
 - [ ] Joystick/gamepad support.
 - [ ] Floppy disk support. I removed it to save CPU cycles, but that is not the
