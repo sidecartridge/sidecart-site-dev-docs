@@ -164,6 +164,6 @@ redirect_from:
 </div>
 
 <div class="support-note">
-  Looking for support? <a href="https://discord.com/invite/u73QP9MEYC">Join our Discord server</a> or <a href="mailto:sidecart+support@gooddatalabs.com">drop us an email</a>!
+  Looking for support? <a href="https://discord.com/invite/u73QP9MEYC">Join our Discord server</a> or <a href="mailto:support@gooddatalabs.com">drop us an email</a>!
 </div>
 
