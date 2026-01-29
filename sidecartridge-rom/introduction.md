@@ -20,7 +20,7 @@ parent: SidecarTridge ROM
 
 ## Overview
 
-The SidecarTridge ROM Emulator is a developer-oriented module that emulates parallel ROM devices (e.g., 27C/28C families) at the signal level, letting you load, select, and switch between multiple binary images without physically swapping chips. It’s the same core technology used in the [SidecarTridge TOS](/sidecartridge-tos/) product to boot different Atari ST TOS versions and custom ROMs, presented here as a general-purpose building block you can integrate into your own projects.
+The SidecarTridge ROM Emulator is a developer-oriented module that emulates parallel ROM devices (e.g., 27C/28C families) at the signal level, letting you load, select, and switch between multiple binary images without physically swapping chips. It’s the same core technology used in products like the [SidecarTridge TOS](/sidecartridge-tos/) emulator (Atari ST family) and the [SidecarTridge Kickstart](/sidecartridge-kickstart/) emulator (Classic Amiga), presented here as a general-purpose building block you can integrate into your own projects.
 
 The ROM Emulator combines solid hardware (RP2350 + PIO) with a simple host workflow: the on-board flash is exposed as a USB mass-storage volume, you copy images to it, and then select which image is active. Tools and firmware features include FAT12 handling and self-hosted image management (yes, it's possible to upload images directly from the computer running the emulator).
 
@@ -54,8 +54,10 @@ At runtime, RP2350 PIO state machines present address, data, and control timings
 
 ## Prerequisites & related docs
 
-If you’re evaluating this module because you’ve seen the TOS product, the TOS documentation offers helpful patterns for installation, operation, and recovery flows that translate well to other targets:  
-- https://docs.sidecartridge.com/sidecartridge-tos/
+If you’re evaluating this module because you’ve seen other SidecarTridge ROM-emulation products, these docs offer helpful patterns for installation, operation, and recovery flows that translate well to other targets:
+
+- SidecarTridge **TOS Emulator** (Atari ST / STE / Mega ST / Mega STE): https://docs.sidecartridge.com/sidecartridge-tos/
+- SidecarTridge **Kickstart Emulator** (Classic Amiga): https://docs.sidecartridge.com/sidecartridge-kickstart/
 
 
 [Previous: Index](/sidecartridge-rom/){: .btn .mr-4 }
