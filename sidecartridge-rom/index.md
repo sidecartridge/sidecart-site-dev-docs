@@ -116,66 +116,38 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
   </div>
 
   <div class="toc-card">
-    <span class="toc-chip chip-ref">Reference</span>
-    <h3>🧱 <a href="/sidecartridge-rom/hardware-overview/">Bus Protocol &amp; Timing Diagrams</a></h3>
-    <p>Signal-level emulation explained with WaveDrom: CS#, OE#, WE#, address/data timing, and wait-states.</p>
+    <span class="toc-chip chip-guide">Guide</span>
+    <h3>💲 <a href="/sidecartridge-rom/before-buy/">Before You Buy</a></h3>
+    <p>What you need to know before integrating the ROM Emulator module into a project.</p>
   </div>
 
-
-
-<!--
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>🧷 <a href="/sidecartridge-rom/hardware-integration/">Hardware Integration (Carrier Board)</a></h3>
+    <p>Carrier board requirements, soldering notes, and power considerations.</p>
+  </div>
 
   <div class="toc-card">
     <span class="toc-chip chip-guide">Guide</span>
-    <h3>🧩 <a href="/sidecartridge-rom/host-api-and-tools/">Host API &amp; Tools</a></h3>
-    <p>Use the host API/CLI to list, upload, select, and switch images.</p>
+    <h3>💾 <a href="/sidecartridge-rom/firmware-and-files/">Firmware &amp; Files (ROMEMUL)</a></h3>
+    <p>USB mass-storage workflow, volume layout, and safe-eject rules.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>🧩 <a href="/sidecartridge-rom/firmware-api/">Firmware API</a></h3>
+    <p>Host control API: list/upload/select images and configure behavior.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>🤝 <a href="/sidecartridge-rom/compatibility/">Compatibility</a></h3>
+    <p>Known-good integrations, supported sizes/widths, and known issues.</p>
   </div>
 
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
-    <h3>🗂️ <a href="/sidecartridge-rom/image-management/">Image Management</a></h3>
-    <p>Flash layout, FAT12 volume, naming, and organizing up to 64 images.</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-howto">How-to</span>
-    <h3>🔀 <a href="/sidecartridge-rom/switching-mechanisms/">Switching Mechanisms</a></h3>
-    <p>Address-triggered switching, safety notes, and best practices.</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-howto">How-to</span>
-    <h3>⚡ <a href="/sidecartridge-rom/bus-timing-and-performance/">Bus Timing &amp; Performance</a></h3>
-    <p>Dynamic speed selection, wait states, and tuning for stability.</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-ref">Reference</span>
-    <h3>🧱 <a href="/sidecartridge-rom/hardware-overview/">Hardware Overview</a></h3>
-    <p>Board layout, power options, connectors, and physical specs.</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-ref">Reference</span>
-    <h3>📌 <a href="/sidecartridge-rom/pinout-and-electrical/">Pinout &amp; Electrical Specs</a></h3>
-    <p>Pin mapping, logic levels (5 V &amp; TTL), and interfacing notes.</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-ref">Reference</span>
-    <h3>💾 <a href="/sidecartridge-rom/supported-roms/">Supported ROM Types &amp; Sizes</a></h3>
-    <p>27C/28C series, 8/16-bit width, supported size range (4 KB–512 KB).</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-ref">Reference</span>
-    <h3>🧪 <a href="/sidecartridge-rom/examples-and-designs/">Examples &amp; Reference Designs</a></h3>
-    <p>Minimal wiring, adapters, and integration patterns.</p>
-  </div>
-
-  <div class="toc-card">
-    <span class="toc-chip chip-ref">Reference</span>
-    <h3>🔧 <a href="/sidecartridge-rom/troubleshooting/">Troubleshooting</a></h3>
+    <h3>🛠️ <a href="/sidecartridge-rom/troubleshooting/">Troubleshooting</a></h3>
     <p>Common issues, diagnostics, and quick fixes.</p>
   </div>
 
@@ -188,9 +160,7 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
     <h3>📝 <a href="/sidecartridge-rom/changelog/">Changelog</a></h3>
-    <p>Latest firmware, tooling, and documentation updates.</p>
+    <p>Firmware, hardware, and documentation changes over time.</p>
   </div>
-
--->
 
 </div>
