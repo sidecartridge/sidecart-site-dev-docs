@@ -21,6 +21,26 @@ parent: SidecarTridge Kickstart
 
 ## Firmware Changelog
 
+### 3.1.0 (2026-02-01) - Maintenance release
+This firmware release includes several maintenance improvements and bug fixes.
+
+#### Changes
+- Improved writing performance with writing blocks protocol.
+- Better handling of USB disconnections during file transfers.
+- Lowered the speed of the access to the flash memory to improve stability to accomodate some flash memory chip series.
+- New unomunt procedure when the user ejects the `ROMEMUL` volume to avoid data corruption issues with some operating systems (Windows) that expect the device to wait for some time before actually unmounting the volume.
+- Power saving procedures improved to reduce power consumption when detecting the device is connected to the USB-C port.
+- Power off the VOL LED when the device ends unmounting and placed in low power mode.
+
+#### New Features
+No new features in this release.
+
+#### Fixes
+- Fixed an issue where the FAT12 filesystem could become corrupted when uploading images on a fragmented drive.
+- Fixed an issue in the sector count calculation where the RP2350 microcontroller could misbehave rounding numbers, leading to corrupted FAT12 filesystems in some cases.
+
+
+
 ### 3.0.0 (2025-06-01) - v3 release
 This firmware release is the first stable release of the SidecarTridge Kickstart v3 board. It includes several new features and improvements over the previous versions.
 
