@@ -32,7 +32,7 @@ This firmware release includes several maintenance improvements and bug fixes.
 - Power saving procedures improved to reduce power consumption when detecting the device is connected to the USB-C port.
 - Power off the VOL LED when the device ends unmounting and placed in low power mode.
 
-#### New Features
+#### New Features
 No new features in this release.
 
 #### Fixes
