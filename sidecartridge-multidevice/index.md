@@ -201,7 +201,14 @@ You can learn about the new features and improvements in the latest firmware rel
 
 </div>
 
-**Looking for the documentation for version 1 of the firmware?** [Get started here](/sidecartridge-multidevice/getting_started/).
+**Looking for the documentation for version 1 of the firmware?**
+
+1. [Getting started](/sidecartridge-multidevice/getting_started/)
+2. [User Guide](/sidecartridge-multidevice/userguide/)
+3. [How to](/sidecartridge-multidevice/how_to/)
+4. [Troubleshooting](/sidecartridge-multidevice/troubleshooting/)
+5. [Compatibility](/sidecartridge-multidevice/compatibility/)
+6. [FAQ](/sidecartridge-multidevice/faq/)
 
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!

@@ -7,6 +7,8 @@ parent: SidecarTridge Multi-device
 redirect_from:
   - /microfirmwares
   - /microfirmwares/
+toc: false
+has_toc: false
 ---
 
 # Microfirmwares for the Firmware V2.0 

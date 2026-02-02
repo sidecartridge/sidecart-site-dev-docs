@@ -3,6 +3,8 @@ layout: default
 title: SidecarTridge Power Supply Unit
 nav_order: 0
 nav_exclude: true
+toc: false
+has_toc: false
 ---
 
 

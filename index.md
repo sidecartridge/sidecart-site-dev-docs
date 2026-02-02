@@ -12,6 +12,8 @@ redirect_from:
   - /sidecartridge-v2-microfirmwares/
   - /sidecartridge-v2-microfirmwares
 
+toc: false
+has_toc: false
 ---
 
 ![SidecarTridge TOS](/assets/images/SIDECARTRIDGE_TEXT_1920x416_BLACK.png)

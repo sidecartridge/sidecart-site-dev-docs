@@ -4,6 +4,8 @@ title: SidecarTridge TOS 256KB Decoder
 nav_order: 0
 nav_exclude: false
 has_children: true
+toc: false
+has_toc: false
 ---
 
 

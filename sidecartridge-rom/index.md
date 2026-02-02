@@ -4,6 +4,8 @@ title: SidecarTridge ROM Emulator
 nav_order: 0
 nav_exclude: false
 has_children: true
+toc: false
+has_toc: false
 ---
 
 ![SidecarTridge ROM Emulator pinout diagram](/sidecartridge-rom/assets/images/PINOUT_DIAGRAM_V2_1280px.png)

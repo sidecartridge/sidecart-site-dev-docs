@@ -3,6 +3,8 @@ layout: default
 title: SidecarTridge USB-C PD Multi-Rail Power Supply Units
 nav_order: 0
 nav_exclude: true
+toc: false
+has_toc: false
 ---
 
 
