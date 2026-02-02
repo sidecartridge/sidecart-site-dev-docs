@@ -110,7 +110,7 @@ The hard disk drive is assigned to drive letter `C` (or another letter you've ch
 
 ### The hard disk drive letter of the GEMdrive collides with the drive letter of other devices
 
-If the hard disk drive letter of the GEMdrive collides with the drive letter of other devices, you can change the drive letter of the GEMdrive in the configurator. To do this, [follow these steps](/sidecartridge-multidevice/userguide/#hard-disk-emulation). Sometimes the drive letter of other devices cannot be changed, so you must change the drive letter of the GEMdrive.
+If the hard disk drive letter of the GEMdrive collides with the drive letter of other devices, you can change the drive letter of the GEMdrive in the configurator. To do this, [instructions](https://docs.sidecartridge.com/sidecartridge-multidevice/microfirmwares/drives_emulator/#gemdrive-hard-disk-emulation). Sometimes the drive letter of other devices cannot be changed, so you must change the drive letter of the GEMdrive.
 
 [Previous: Compatibility](/sidecartridge-multidevice/compatibility_v2/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }

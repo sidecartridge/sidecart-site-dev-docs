@@ -96,7 +96,7 @@ Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldere
 {: refdef}
 
 
-- Since the firmware version 2.0, a microSD card [formatted as FAT32 or exFAT](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to/#format-the-microsd-card) is required.
+- Since the firmware version 2.0, a microSD card [formatted as FAT32 or exFAT](https://docs.sidecartridge.com/sidecartridge-multidevice/how_to_v2/#format-the-microsd-card) is required.
 
 ## Initial Setup and Configuration
 
