@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Compatibility Issues
+title: Compatibility Issues V2.0
 nav_order: 8
 nav_exclude: false
 parent: SidecarTridge Multi-device

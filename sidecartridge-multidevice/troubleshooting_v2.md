@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Troubleshooting
+title: Troubleshooting V2.0
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:

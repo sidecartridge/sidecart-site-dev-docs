@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Frequently Asked Questions
+title: Frequently Asked Questions V2.0
 nav_order: 9
 nav_exclude: true
 parent: SidecarTridge Multi-device

@@ -4,6 +4,8 @@ title: SidecarTridge Multi-device
 nav_order: 0
 nav_exclude: false
 has_children: true
+toc: false
+has_toc: false
 ---
 
 
@@ -139,7 +141,7 @@ You can learn about the new features and improvements in the latest firmware rel
 
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
-    <h3>📄 <a href="/sidecartridge-multidevice/parameters/">Parameters</a></h3>
+    <h3>📄 <a href="/sidecartridge-multidevice/parameters_v2/">Parameters</a></h3>
     <p>Description of all the parameters available in the SidecarTridge Multi-device.</p>
   </div>
 
@@ -157,7 +159,7 @@ You can learn about the new features and improvements in the latest firmware rel
 
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
-    <h3>🛠️ <a href="/sidecartridge-multidevice/troubleshooting/">Troubleshooting</a></h3>
+    <h3>🛠️ <a href="/sidecartridge-multidevice/troubleshooting_v2/">Troubleshooting</a></h3>
     <p>Check this section if you have issues with your SidecarTridge Multi-device.</p>
   </div>
 
@@ -198,6 +200,8 @@ You can learn about the new features and improvements in the latest firmware rel
   </div>
 
 </div>
+
+**Looking for the documentation for version 1 of the firmware?** [Get started here](/sidecartridge-multidevice/getting_started/).
 
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!
