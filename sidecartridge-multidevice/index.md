@@ -201,14 +201,34 @@ You can learn about the new features and improvements in the latest firmware rel
 
 </div>
 
-**Looking for the documentation for version 1 of the firmware?**
+<h3>Previous Deprecated Firmware Versions</h3>
 
-1. [Getting started](/sidecartridge-multidevice/getting_started/)
-2. [User Guide](/sidecartridge-multidevice/userguide/)
-3. [How to](/sidecartridge-multidevice/how_to/)
-4. [Troubleshooting](/sidecartridge-multidevice/troubleshooting/)
-5. [Compatibility](/sidecartridge-multidevice/compatibility/)
-6. [FAQ](/sidecartridge-multidevice/faq/)
+<div class="toc-grid">
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-multidevice/getting_started/">Firmware v1.0: Getting started</a></h3>
+  </div>
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-multidevice/userguide/">Firmware v1.0: User Guide</a></h3>
+  </div>
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-multidevice/how_to/">Firmware v1.0: How to</a></h3>
+  </div>
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-multidevice/troubleshooting/">Firmware v1.0: Troubleshooting</a></h3>
+  </div>
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-multidevice/compatibility/">Firmware v1.0: Compatibility</a></h3>
+  </div>
+  <div class="toc-card">
+    <span class="toc-chip chip-depr">Deprecated</span>
+    <h3><a href="/sidecartridge-multidevice/faq/">Firmware v1.0: FAQ</a></h3>
+  </div>
+</div>
 
 
 Explore, learn, and contribute to the SidecarTridge Multi-device project!
