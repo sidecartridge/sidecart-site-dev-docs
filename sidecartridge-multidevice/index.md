@@ -222,7 +222,7 @@ You can learn about the new features and improvements in the latest firmware rel
   </div>
   <div class="toc-card">
     <span class="toc-chip chip-depr">Deprecated</span>
-    <h3><a href="/sidecartridge-multidevice/compatibility/">Firmware v1.0: Compatibility</a></h3>
+    <h3><a href="/sidecartridge-multidevice/compatibility_issues/">Firmware v1.0: Compatibility</a></h3>
   </div>
   <div class="toc-card">
     <span class="toc-chip chip-depr">Deprecated</span>
