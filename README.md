@@ -1,9 +1,5 @@
 # just-the-docs-template
 
-## Hardware compatibility
-
-This project works with both `RP2040` and `RP2350` targets.
-
 This is a *bare-minimum* template to create a [Jekyll] site that:
 
 - uses the [Just the Docs] theme;
