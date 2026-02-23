@@ -58,3 +58,27 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 - [Product page](https://sidecartridge.com/products/usb-c-pd-psu-atari-st/)
 - [Shopify store](https://store.sidecartridge.com/products/usb-c-pd-multi-rail-power-supply-unit-for-atari-st-e-and-megast)
 - [Quickstart installation guide](https://sidecartridge.com/quickstart/usb-c-pd-psu-atari-st/)
+
+### External USB-C PD Multi-Rail PSU + Enclosure + Cable Harness for Atari “short model” ST
+
+![External USB-C PD PSU with printed enclosure](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-external-kit.jpg)
+
+Our external kit is aimed at the earliest “short model” Atari ST units that originally relied on an internal linear PSU. It ships fully assembled: the USB-C PD multi-rail board is pre-mounted inside a printed ABS enclosure, the harness terminates in the correct 7-pin power connector, and the cable exit already includes strain relief. Add any 60 W (or higher) USB-C PD charger that supports 15 V/20 V profiles and you can power an ST without re-opening the case.
+
+Key points:
+
+- Single USB-C PD input, regulated +5 V/+12 V/−12 V output for the short-model ST mainboard
+- Harness length matched to fit directly into the rear power inlet of a bare chassis
+- Includes printed enclosure, fasteners, and internal wiring loom — just plug into a PD brick and your Atari
+- Ideal for labs/repairs when you need an immediately swappable supply for case-less boards
+
+### External USB-C PD Multi-Rail PSU + Cable Harness Kit for Atari “short model” ST
+
+Prefer to print your own shell? This version bundles the populated USB-C PD board plus the short-model ST harness and strain-relief hardware, letting you reuse an enclosure of your choice.
+
+- Ships with the same wiring loom and rubber grommet as the pre-built external unit
+- Download the enclosure STL from the product page (or remix your own); the design uses standard M3 machine screws and nuts to clamp the two halves together
+- Recommended hardware: four M3 × 12 mm pan-head screws with matching M3 hex nuts for the enclosure, plus two M2.5 × 10 mm self-tapping screws for the cable clamp
+- Perfect if you already have a 3D printer or want to match a custom color/finish
+
+Both external options rely on the same USB-C PD charger requirements listed above, so you can share a single high-quality PD brick across multiple Atari systems.
