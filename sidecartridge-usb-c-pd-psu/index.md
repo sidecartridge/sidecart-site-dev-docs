@@ -61,7 +61,7 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 
 ![External USB-C PD PSU with printed enclosure](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-external-kit.jpg)
 
-Our external kit is aimed at the earliest “short model” Atari ST units that originally relied on an internal linear PSU. It ships fully assembled: the USB-C PD multi-rail board is pre-mounted inside a printed ABS enclosure, the harness terminates in the correct 7-pin power connector, and the cable exit already includes strain relief. Add any 60 W (or higher) USB-C PD charger that supports 15 V/20 V profiles and you can power an ST without re-opening the case.
+Our external kit is aimed at the earliest “short model” Atari ST units that originally relied on an internal linear PSU. It ships fully assembled: the USB-C PD multi-rail board is pre-mounted inside a resin enclosure, the harness terminates in the correct 6-pin power connector, and the cable exit already includes strain relief. Add any 60 W (or higher) USB-C PD charger that supports 15 V/20 V profiles and you can power an ST without re-opening the case.
 
 Key points:
 
