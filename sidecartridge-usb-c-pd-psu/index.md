@@ -48,6 +48,16 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 | Raspberry Pi | P5224 - 45W USB-C Power Adapter      | 45 W         | OK. Cheapest option with remarkable quality. |
 
 
+## How to select the 15 V or 20 V profile
+
+A hardware slider on the top-left corner of the board lets you decide which Power Delivery profile the PSU negotiates. The silk screen labels the two positions “15V” and “20V”; moving the switch forces the controller to request that specific profile from the USB-C charger.
+
+Keep in mind:
+
+- The connected PD charger **must** support the profile you select. If it lacks the requested 15 V or 20 V mode, negotiation fails.
+- When negotiation succeeds, the red status LED in the top-right corner turns on. If the LED stays off, the charger is not delivering the selected profile—switch to the other position or use a compatible adapter.
+
+Selecting the higher 20 V profile is preferred whenever your charger supports it (extra headroom for expansion boards), but either profile is valid as long as the adapter can supply sufficient current.
 
 ## List of SidecarTridge products using the USB-C PD Multi-Rail board
 
