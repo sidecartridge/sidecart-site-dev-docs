@@ -67,7 +67,7 @@ This fully assembled external PSU directly replaces the original 7-pin Atari ST 
 
 Key points:
 
-- Single USB-C PD input with independently regulated +5 V/+12 V/−12 V rails sized for SidecarTridge add-ons
+- Single USB-C PD input with independently regulated +5 V/+12 V/−12 V rails sized for the short-model Atari ST mainboard plus SidecarTridge add-ons
 - Harness length matched to the short-model ST rear inlet; keeps wiring tidy even on bare chassis
 - Includes printed enclosure, internal wiring loom, fasteners, and pre-installed rubber feet—ready out of the box
 - Integrated +5 V USB-A auxiliary output for devices such as ACSI2STM, SatanDisk, or Gotek
@@ -90,35 +90,6 @@ Designed for short 520ST units that shipped with the external 7-pin PSU brick, i
 - C070243
 
 If your ST has an internal PSU (later STF/STE/Mega variants), use the internal drop-in kit instead.
-
-#### Contents
-
-Each **External USB-C PD PSU for Atari ST** box includes:
-
-- White resin enclosure with pre-installed rubber feet
-- SidecarTridge USB-C PD multi-rail board, mounted and wired
-- Professionally built 1 m harness (JST-VH 3.96 mm + 7-pin DIN)
-- Four M2 × 8 mm screws and hardware for the enclosure
-- Cable strain relief + grommet assembly
-
-Fully assembled and ready to use—no soldering or internal modifications required.
-
-#### FAQ
-
-**Do I need to open the Atari ST?**  
-No. Unplug the old brick, connect the USB-C PD charger to the new PSU, and plug the DIN connector into the ST.
-
-**What is the weight of the PSU unit?**  
-Approximately 250 g.
-
-**Can it harm my computer?**  
-The PSU is designed specifically around the ST’s power requirements with independent regulation on each rail. Just follow the installation steps and use a compliant charger.
-
-**Can it power other devices like ACSI2STM, SatanDisk, or Gotek?**  
-Yes. Use the integrated +5 V USB-A output for storage peripherals that cannot draw power from the ST motherboard.
-
-**Which USB-C PD charger do you recommend?**  
-Any reputable laptop-class PD 3.0 charger that meets the requirements works. A proven budget option is the Raspberry Pi 45 W USB-C Power Supply. See the [tested adapter list](https://docs.sidecartridge.com/sidecartridge-usb-c-pd-psu/) for more models.
 
 ### External USB-C PD Multi-Rail PSU + Cable Harness Kit for Atari “short model” ST
 
