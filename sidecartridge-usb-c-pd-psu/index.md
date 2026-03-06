@@ -10,104 +10,92 @@ has_toc: false
 
 ![SidecarTridge USB-C PD Multi-Rail board](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.png)
 
-# SidecarTridge USB-C PD Multi-Rail Power Supply Unit board
+<div class="hero-highlights">
+  <h1>Internal USB-C PD PSU for Atari ST/STE/Mega ST</h1>
+  <ul>
+    <li>Drop-in USB-C PD multi-rail board – regulated +5V / +12V / −12V</li>
+    <li>Compatible with C070115 / C070243 ST/STE/Mega mainboards</li>
+    <li>Solderless harness, USB-C panel mount, USB-A auxiliary output</li>
+    <li>Works with SidecarTridge Multi-Device, ACSI2STM, and modern expansions</li>
+  </ul>
+</div>
 
-## The USB-C PD Multi-Rail Power Supply Unit board
+## Why upgrade to USB-C PD inside the Atari ST
 
-This USB-C Power Delivery multi-rail converter board is designed to generate clean, regulated +5 V, +12 V, and −12 V inside the machine. The output rails can deliver up to 3 A on +5 V, 3 A on +12 V, and 0.3 A on −12 V. It is intended for use in retro computing applications, such as powering vintage computers like the Atari ST/STE/MegaST or Amiga 500 or other electronics projects that require multiple voltage rails.
+This USB-C Power Delivery multi-rail converter board replaces the original internal PSU and generates clean, regulated +5 V, +12 V, and −12 V rails inside the machine. Ageing stock PSUs develop drifting voltages, noisy 12 V rails, and sudden shutdowns that can kill SidecarTridge expansions. Dropping in the USB-C PD board eliminates the mains transformer, keeps only low-voltage DC inside the chassis, and ensures all rails stay within spec even under modern loads.
 
-The board is powered by a USB-C PD charger that must provide either 15 V or 20 V input voltage. It includes overcurrent and thermal protection features to ensure safe operation. The board is compact and easy to integrate into existing systems, making it a convenient solution for powering retro computing devices.
+### Quick comparison
+
+|                   | Original PSU (1980s) | Mean Well RPD-60 kit | USB-C PD Multi-Rail kit |
+|-------------------|----------------------|----------------------|-------------------------|
+| Input             | 230 V / 120 V AC     | 230 V / 120 V AC     | USB-C PD 15 V / 20 V    |
+| Rails             | +5 V, +12 V, −12 V   | +5 V, +12 V, −12 V   | +5 V, +12 V, −12 V (+5 V USB-A) |
+| Installation      | Stock                | Solderless drop-in   | Solderless drop-in + USB-C panel |
+| Safety            | Full AC inside ST    | AC inside ST         | Low-voltage DC only     |
+| Expansion headroom| Limited              | Good                 | Excellent (SidecarTridge-ready) |
+
+> Want to keep an external brick instead? See [External USB-C PD PSU →](/products/external-usb-c-pd-psu-atari-st/)
 
 ## USB-C PD charger requirements
 
-**It is important to note that this board is not a standalone power supply and requires an external USB-C PD charger to function.**
+**This board is not a standalone power supply; it requires an external USB-C PD charger.**
 
-* Minimum output: 45 W (laptop-class USB-C PD supply)
-* Required PD profiles: 15 V and 20 V
-* Recommended capability: 15 V 3 A and 20 V 3 A or higher
-* Cable: certified USB-C rated 60 W or 100 W
-* Multiport chargers must deliver the full wattage on the chosen port
-* PD 3.0 is required; QC-only or PPS-only chargers are not supported
+- Minimum output: 45 W (60 W recommended)
+- Required PD profiles: 15 V and 20 V
+- Recommended capability: 15 V 3 A and 20 V 3 A or higher
+- Cable: certified USB-C rated 60 W or 100 W
+- Multiport chargers must deliver the full wattage on the chosen port
+- PD 3.0 is required; QC-only or PPS-only chargers are not supported
+- PD 3.1 / EPR bricks may mis-negotiate; check the [tested adapter list](https://docs.sidecartridge.com/sidecartridge-usb-c-pd-psu/)
 
-## List of charger models tested
+## Kit contents
 
-> **Warning:** Power adapters must be PD 3.0 compliant. Some chargers with PD 3.1 may not work properly—specifically those advertising Extended Power Range (EPR)—even if they claim backwards compatibility with PD 3.0.
+- Riser PSU PCB matching the original mounting points
+- SidecarTridge USB-C PD Multi-Rail power board
+- Solderless harness (JST-VH 3.96 mm to TE 171822-6)
+- USB-C panel + JST-PH 2.0 cable
+- 3D-printed covers for AC inlet and power switch
+- M3 screws/nuts and rubber feet
+- +5 V USB-A auxiliary output for ACSI2STM, Gotek, etc.
 
-| Brand         | Model                          | Output Power | Notes|
-|---------------|--------------------------------|--------------|--------------------------------------------|
-| Anker       | A2039 (523-Series) Power Adapter | 47 W         | OK. A user reported ghosting issues. |
-| Apple       | A2166 USB-C Power Adapter      | 96 W         | OK |
-| Apple       | A2743 USB-C Power Adapter      | 70 W         | OK |
-| Baseus       | GaN PD Power Adapter        | 65 W         | OK. With STE computers fails to deliver enough power. |
-| Baseus       | GaN PD Power Adapter        | 100 W         | OK |
-| BIOnd       | BGG-GRS-65W Power Adapter    | 65 W         | OK. Low cost device in GAME stores. It says it has 65W but I doubt (45W?) |
-| Dell     | LA60NM200 Power Adapter         | 60 W         | OK |
-| Essager      | GaN PD Power Adapter        | 100 W         | OK. Reported ghosting issues. |
-| Lenovo      | ADLX65YLC3D Power Adapter    | 65 W         | OK |
-| Raspberry Pi | P4123 - 27W USB-C Power Adapter      | 27 W         | OK with 15V. With STE computers fails to deliver enough power. |
-| Raspberry Pi | P5224 - 45W USB-C Power Adapter      | 45 W         | OK. Cheapest option with remarkable quality. |
+## Installation overview
 
+1. Remove the vintage PSU and shield (ST/STE/Mega instructions on the [Quickstart](https://sidecartridge.com/quickstart/usb-c-pd-psu-atari-st/)).
+2. Mount the USB-C PD board and riser using the supplied screws.
+3. Install the USB-C panel where the original AC inlet lived.
+4. Plug in the JST harness to the motherboard header.
+5. Connect a compliant USB-C PD charger.
 
-## How to select the 15 V or 20 V profile
+Opening the Atari ST requires only a screwdriver. STF/STE systems let you lift the metal shield without full removal; Mega ST variants need complete shield removal.
 
-A hardware slider on the top-left corner of the board lets you decide which Power Delivery profile the PSU negotiates. The silk screen labels the two positions “15V” and “20V”; moving the switch forces the controller to request that specific profile from the USB-C charger.
+## Frequently asked questions
 
-Keep in mind:
+### What USB-C PD power adapter do I need?
+Use a PD 3.0 charger rated for at least 60 W (20 V/3 A). Laptop-class chargers from reputable brands work best. For a budget EU option, the [Raspberry Pi 45 W USB-C supply](https://www.raspberrypi.com/products/45w-power-supply/) is tested and stable.
 
-- The connected PD charger **must** support the profile you select. If it lacks the requested 15 V or 20 V mode, negotiation fails.
-- When negotiation succeeds, the red status LED in the top-right corner turns on. If the LED stays off, the charger is not delivering the selected profile—switch to the other position or use a compatible adapter.
+### Can I choose 15 V or 20 V?
+Yes. A hardware slider selects the PD profile (15 V or 20 V). Pick 20 V for more headroom if your charger supports it. The status LED confirms negotiation.
 
-Selecting the higher 20 V profile is preferred whenever your charger supports it (extra headroom for expansion boards), but either profile is valid as long as the adapter can supply sufficient current.
+### Does it work on Mega STE, TT, or Falcon?
+No—use the dedicated Mega STE or TT/Falcon solutions. For short 520ST machines with external bricks, buy the [external USB-C PD PSU](https://sidecartridge.com/products/external-usb-c-pd-psu-atari-st/).
 
-## List of SidecarTridge products using the USB-C PD Multi-Rail board
+### Do I need to open the Atari ST?
+Yes, but the kit is fully solderless. Remove the original PSU, install the board, and close the machine. No mains voltages remain inside once the USB-C panel is installed.
 
-### USB-C PD Multi-Rail PSU Drop-In Replacement Kit for Atari ST/STE/MegaST
+### Can the PSU harm my computer?
+It meets the power requirements of ST/STE/Mega ST boards and adds overcurrent/thermal protection. Follow the Quickstart instructions and use a compliant USB-C PD charger.
 
-![SidecarTridge USB-C PD Multi-Rail PSU Drop-In](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-INTERNAL-KIT-ATARI-ST.png)
+### Is this product for me?
+This is a homebrew upgrade for hobbyists comfortable opening their Atari ST. If you prefer a drop-in external brick for short models, use the external kit.
 
-- [Product page](https://sidecartridge.com/products/usb-c-pd-psu-atari-st/)
-- [Shopify store](https://store.sidecartridge.com/products/usb-c-pd-multi-rail-power-supply-unit-for-atari-st-e-and-megast)
+### Why can’t I access the store or Discord even though you ship to my country?
+We require basic respect in all community channels; abusive behavior leads to revoked access. We build for tinkerers who enjoy experimentation.
+
+## Documentation and links
+
+- [Product page (Shopify)](https://store.sidecartridge.com/products/usb-c-pd-multi-rail-power-supply-unit-for-atari-st-e-and-megast)
 - [Quickstart installation guide](https://sidecartridge.com/quickstart/usb-c-pd-psu-atari-st/)
+- [SidecarTridge USB-C PD documentation](https://docs.sidecartridge.com/sidecartridge-usb-c-pd-psu/)
+- [KB: microSD card not detected](../SIDECARTRIDGE-KB/products/sidecartridge-multidevice/topics/microsd-not-detected.md)
+- [KB: Improving SIDECART Wi-Fi reliability](../SIDECARTRIDGE-KB/products/sidecartridge-multidevice/topics/improving-wifi-signal.md)
 
-### External USB-C PD Multi-Rail PSU + Enclosure + Cable Harness for Atari “short model” ST
-
-![External USB-C PD PSU with printed enclosure](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-external-kit.jpg)
-
-This fully assembled external PSU directly replaces the original 7-pin Atari ST power brick used by the earliest “short” 520ST units. The SidecarTridge USB-C PD multi-rail board is pre-mounted inside a resin enclosure, the harness is professionally crimped with the correct JST-VH and 7-pin DIN connectors, and strain relief is already in place. Plug in a compliant USB-C PD charger, connect the DIN plug to the ST, and power up—no need to open the computer or touch mains voltages.
-
-Key points:
-
-- Single USB-C PD input with independently regulated +5 V/+12 V/−12 V rails sized for the short-model Atari ST mainboard plus SidecarTridge add-ons
-- Harness length matched to the short-model ST rear inlet; keeps wiring tidy even on bare chassis
-- Includes printed enclosure, internal wiring loom, fasteners, and pre-installed rubber feet—ready out of the box
-- Integrated +5 V USB-A auxiliary output for devices such as ACSI2STM, SatanDisk, or Gotek
-- Ideal for labs/repairs when you need a safe, swappable supply without reassembling the computer
-
-#### Charger requirements for the external PSU
-
-- USB-C Power Delivery 3.0 charger supporting **both 15 V and 20 V** profiles
-- **45 W minimum output** (60 W+ recommended if you share the brick with other hardware)
-- Certified USB-C cable rated for 60 W or 100 W
-- Multi-port chargers must be able to deliver the full wattage on the selected port
-- QC-only, PPS-only, or proprietary fast-charge standards are **not** supported
-- Some PD 3.1 / EPR chargers can mis-negotiate; stick to the [tested adapter list](https://docs.sidecartridge.com/sidecartridge-usb-c-pd-psu/) when in doubt
-
-#### Compatibility
-
-Designed for short 520ST units that shipped with the external 7-pin PSU brick, including motherboards:
-
-- C070115
-- C070243
-
-If your ST has an internal PSU (later STF/STE/Mega variants), use the internal drop-in kit instead.
-
-### External USB-C PD Multi-Rail PSU + Cable Harness Kit for Atari “short model” ST
-
-Prefer to print your own shell? This version bundles the populated USB-C PD board plus the short-model ST harness and strain-relief hardware, letting you reuse an enclosure of your choice.
-
-- Ships with the same wiring loom and rubber grommet as the pre-built external unit
-- Download the enclosure STL from the product page (or remix your own); the design uses standard M3 machine screws and nuts to clamp the two halves together
-- Recommended hardware: four M3 × 12 mm pan-head screws with matching M3 hex nuts for the enclosure, plus two M2.5 × 10 mm self-tapping screws for the cable clamp
-- Perfect if you already have a 3D printer or want to match a custom color/finish
-
-Both external options rely on the same USB-C PD charger requirements listed above, so you can share a single high-quality PD brick across multiple Atari systems.
