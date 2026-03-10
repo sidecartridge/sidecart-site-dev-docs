@@ -50,7 +50,6 @@ Revision 3 is still a passive adapter, but with a stronger electrical design aim
 
 - **4-layer PCB**: improved ground referencing and controlled routing for RGB/sync.
 - **Dedicated RGB low-pass filtering**: reduces edge noise/shimmer that some LCDs amplify.
-- **Instant color ↔ mono switch**: simple slide switch to select modes.
 - **No external power**: designed to be minimal load and plug-and-play.
 
 If your machine already outputs reasonably clean RGB, Rev.3 is usually the best first pick.
