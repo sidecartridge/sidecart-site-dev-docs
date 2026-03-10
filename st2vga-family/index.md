@@ -30,7 +30,7 @@ This page explains the technical approach, the differences between the two varia
 |----------|---------|
 | 1.x | First version. Widely released. Black PCB. |
 | 2.x | Internal prototype revisions, not widely released. Green PCB. |
-| 3.0 | Public release with improved PCB design and filtering. Four-layer PCB, dedicated RGB low-pass filters, and electrical improvements. Green PCB.|
+| 3.X | Public release with improved PCB design and filtering. Four-layer PCB, dedicated RGB low-pass filters, and electrical improvements. Green PCB.|
 
 
 ## The core idea: keep Atari timings, output VGA levels
