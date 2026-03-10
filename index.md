@@ -163,6 +163,16 @@ has_toc: false
     </div>
   </div>
 
+  <div class="proj-card">
+    <div class="proj-inner">
+      <img class="proj-thumb" src="/st2vga-family/assets/images/ST2VGA-REV3-FRONT.png" alt="ST2VGA family thumbnail">
+      <div>
+        <h2><a href="/st2vga-family/">ST2VGA family (Rev.3 & Enhanced)</a></h2>
+        <p>Clean VGA output for Atari ST/STE/Mega ST/Mega STE: passive Rev.3 and the active Enhanced model for difficult video stages.</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <div class="support-note">
