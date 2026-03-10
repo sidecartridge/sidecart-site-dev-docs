@@ -12,50 +12,26 @@ The **ST2VGA** adapters let an Atari ST/STE/Mega ST/Mega STE drive a compatible 
 
 This page explains the technical approach, the differences between the two variants, and when to choose each one.
 
----
-
 ## At a glance
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;align-items:start;">
-  <div>
+| Feature | ST2VGA (Revision 3) | ST2VGA Enhanced |
+|---------|----------------------|-----------------|
+| Preview | ![ST2VGA Rev.3 front view](/st2vga-family/assets/images/ST2VGA-REV3-FRONT.png) | ![ST2VGA Enhanced front view](/st2vga-family/assets/images/ST2VGA-ENHANCED-V1-FRONT.png) |
+| Type | Passive adapter | Active signal-conditioning adapter |
+| Best fit | Most machines with an already decent RGB analog stage | Difficult machines, noisy output, or picky displays |
+| Power | No external power | External **5 V micro-USB** power required |
+| Main benefits | Cleaner output than previous revisions, improved signal integrity, dedicated filtering | RGB amplification, analog filtering, buffered output, reduced vertical jailbars on many systems |
+| Product | https://sidecartridge.com/products/st2vga-atari-st/ | https://sidecartridge.com/products/st2vga-enhanced-atari-st/ |
+| Quickstart | https://sidecartridge.com/quickstart/st2vga-atari-st/ | https://sidecartridge.com/quickstart/st2vga-enhanced-atari-st/ |
 
-### ST2VGA (Revision 3)
+**Revision log**
 
-![ST2VGA Rev.3 front view](/st2vga-family/assets/images/ST2VGA-REV3-FRONT.png)
+| Revision | Changes |
+|----------|---------|
+| 1.x | Original version |
+| 2.x | Internal prototype revisions, not widely released |
+| 3.0 | Public release with improved PCB design and filtering. Four-layer PCB, dedicated RGB low-pass filters, and electrical improvements. |
 
-**Passive adapter** for the vast majority of machines.
-
-- No external power
-- Cleaner output vs previous revisions (signal integrity + filtering)
-- Best choice when your Atari already has a decent RGB analog stage
-
-Product: https://sidecartridge.com/products/st2vga-atari-st/
-
-Quickstart: https://sidecartridge.com/quickstart/st2vga-atari-st/
-
-  </div>
-
-  <div>
-
-### ST2VGA Enhanced
-
-![ST2VGA Enhanced front view](/st2vga-family/assets/images/ST2VGA-ENHANCED-V1-FRONT.png)
-
-**Active conditioning** for “difficult” machines and picky displays.
-
-- Active RGB amplification + analog filtering
-- Buffered output (isolates the Atari from cable/monitor loading)
-- Reduced vertical “jailbars” on many systems
-- Requires external **5 V micro‑USB** power
-
-Product: https://sidecartridge.com/products/st2vga-enhanced-atari-st/
-
-Quickstart: https://sidecartridge.com/quickstart/st2vga-enhanced-atari-st/
-
-  </div>
-</div>
-
----
 
 ## The core idea: keep Atari timings, output VGA levels
 
@@ -68,8 +44,6 @@ Because there is **no scan conversion**, your display must support **15 kHz HSYN
 
 Reference list: http://15khz.wikidot.com/
 
----
-
 ## What changed in ST2VGA Revision 3
 
 Revision 3 is still a passive adapter, but with a stronger electrical design aimed at cleaner analog video:
@@ -80,8 +54,6 @@ Revision 3 is still a passive adapter, but with a stronger electrical design aim
 - **No external power**: designed to be minimal load and plug-and-play.
 
 If your machine already outputs reasonably clean RGB, Rev.3 is usually the best first pick.
-
----
 
 ## What ST2VGA Enhanced adds (and why it needs power)
 
@@ -102,8 +74,6 @@ That active stage requires a stable supply, so Enhanced uses **external 5 V via 
 
 A practical bonus: Enhanced can also be used with very early ST machines that **do not provide +12 V** on the monitor connector.
 
----
-
 ## Which one should I buy?
 
 - Choose **ST2VGA (Rev.3)** if:
@@ -117,13 +87,9 @@ A practical bonus: Enhanced can also be used with very early ST machines that **
   - you have an early ST without +12 V on the video port, or
   - you want the most robust signal conditioning available.
 
----
-
 ## Audio
 
 Both models provide a **3.5 mm audio jack** that routes the Atari’s mono audio to both left/right channels for easy connection to speakers, amps, or capture devices.
-
----
 
 ## Notes & limitations
 
