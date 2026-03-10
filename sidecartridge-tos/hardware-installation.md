@@ -134,7 +134,13 @@ If your computer already has two ROMs installed, the jumpers should be already s
 
 #### Six ROMs
 
-Not supported. Modify the jumpers to support dual ROMs as described above.
+Not supported as-is. Convert the board to the dual-ROM layout before installing the TOS Emulator:
+
+1. Remove the six 256 Kbit ROMs and fit the standard dual-ROM daughterboard or two 32-pin sockets wired for FC-L / FC-H.
+2. Install a **74LS11** (triple AND gate) in the empty IC footprint located immediately to the right of jumper **W4** and above **W2**. Atari left that socket unpopulated on six-ROM machines; the dual-ROM configuration requires it for address decoding.
+3. Move **W2** and **W3** to the 2-3 position and leave **W4** open.
+
+Once those changes are done the motherboard exposes the same HI/LO sockets as later Mega ST revisions, so the SidecarTridge board drops in normally.
 
 ### Atari STE
 
