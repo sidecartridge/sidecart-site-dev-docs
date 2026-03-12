@@ -92,7 +92,16 @@ To force boot the rescue TOS ROM, follow these steps:
 4. Turn on the Atari ST.
 5. Release the rescue mode button once the Atari ST is powered on.
 
-The Atari ST will boot the rescue TOS ROM. You can then use the SWITCHER.TOS program to select a new active TOS ROM.
+Starting with firmware 3.1.0, rescue mode boots the bundled Rescue Switcher image by default. The file name depends on the ROM size used by your setup:
+
+- `RESCUE_SWITCHER_v3.1.0_192KB.img` for 192KB images.
+- `RESCUE_SWITCHER_v3.1.0_256KB.img` for 256KB images.
+
+Rescue Switcher lets you select another TOS ROM image already stored on the device, which makes recovery faster and more convenient.
+
+For a generic overview of the rescue-switcher project, available images, and installation flow, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
+
+If you are using an older configuration or have manually assigned a different rescue TOS ROM, the Atari ST will boot that rescue image instead.
 
 ## TOS Management from the Atari ST
 
@@ -138,6 +147,15 @@ The new name will be rejected if it is already in use by another TOS ROM image.
 As the delete feature, it is not possible to rename the default TOS ROM image or the rescue TOS ROM image. If you want to rename the default or rescue TOS ROM image, you must first select a new default TOS ROM image.
 
 ## Select a new Rescue TOS ROM
+
+Starting with firmware 3.1.0, the factory default rescue image is Rescue Switcher. The file name depends on the ROM size used by your setup:
+
+- `RESCUE_SWITCHER_v3.1.0_192KB.img` for 192KB images.
+- `RESCUE_SWITCHER_v3.1.0_256KB.img` for 256KB images.
+
+This is the recommended rescue configuration because it allows you to choose another ROM image already stored on the device.
+
+For more background on the shared rescue-switcher project, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
 
 The rescue TOS cannot be changed using the SWITCHER.TOS program or the internal API call to switch TOS ROMs. To change the rescue TOS ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-tos/getting-startedV2/) section. If you still want to change the rescue TOS ROM using the SWITCHER.TOS program, you can do so by [following these steps](/sidecartridge-tos/troubleshooting/#cant-change-the-rescue-and-defaultactive-images-from-the-host-computer) at your own risk.
 

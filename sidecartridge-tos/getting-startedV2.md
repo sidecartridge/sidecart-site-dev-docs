@@ -106,6 +106,8 @@ Open the `ROMEMUL` volume on your computer to access firmware files and TOS imag
 - `SWITCHER.TOS`: The program for managing TOS versions on the Atari ST. **You must copy this file to your Atari ST computer to manage your TOS versions. You can learn to use in the [User Guide](/sidecartridge-tos/user-guideV2/)**
 - `DEFAULT.TXT`: Contains the name of the default active TOS image file.
 - `RESCUE.TXT`: Contains the name of the rescue TOS image file.
+- `RESCUE_SWITCHER_v3.1.0_192KB.img`: The bundled Rescue Switcher image for 192KB TOS configurations.
+- `RESCUE_SWITCHER_v3.1.0_256KB.img`: The bundled Rescue Switcher image for 256KB TOS configurations.
 - `CONFIG.TXT`: (v3 Boards and v3 firmware only) Starting in version 3 of the SidecarTridge TOS emulator, this file contains the advanced configuration settings for the emulator. The settings helps to adjust the speed of the address bus when the emulator runs in computers with very noisy buses, or when the computer has accelerated boards.
 
 {: .note }
@@ -171,7 +173,14 @@ Depending on the Linux distribution, the mount point of the SidecarTridge TOS em
 
 ### Modifying the Default and Rescue TOS Images
 
+Starting with firmware 3.1.0, the first-time setup already includes a working rescue image. The factory default rescue image is Rescue Switcher, and the file name depends on the ROM size used by your setup:
+
+- `RESCUE_SWITCHER_v3.1.0_192KB.img` for 192KB images.
+- `RESCUE_SWITCHER_v3.1.0_256KB.img` for 256KB images.
+
 The SidecarTridge TOS emulator allows you to set a default active TOS image and a rescue TOS image. The *default* TOS image is the one that will boot when the Atari ST is powered on, while the *rescue* TOS image is used in case of a boot failure as a fallback option by enabling the rescue mode. You can set the `RESCUE` signal on the SidecarTridge TOS emulator using the RESCUE connector and a push button.
+
+Starting with firmware 3.1.0, rescue mode boots Rescue Switcher by default. Rescue Switcher lets you choose another ROM image already stored on the device, which is often more convenient than editing files from the host computer during recovery.
 
 The *default* image can be changed by editing the `DEFAULT.TXT` file in the `ROMEMUL` volume or by using the `SWITCHER.TOS` program on the Atari ST. 
 
@@ -211,7 +220,7 @@ The files or folders with these magic names will be deleted after the action is 
 
 ## Firmware Installation
 
-The SidecarTridge TOS emulator comes with pre-installed firmware and a default EmuTOS image. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
+The SidecarTridge TOS emulator comes with pre-installed firmware, a default EmuTOS image, and bundled Rescue Switcher images for supported ROM sizes. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
 
 We assume that you have already connected the SidecarTridge TOS emulator to your computer using the USB-C cable and that the `ROMEMUL` volume is accessible. If you have not done so, please refer to the [Connecting the Device to a Computer](#connecting-the-device-to-a-computer) section.
 

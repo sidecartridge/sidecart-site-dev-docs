@@ -89,6 +89,8 @@ To force boot the rescue ROM, follow these steps:
 
 Starting with firmware 3.1.0, rescue mode boots the bundled `RESCUE_SWITCHER_v3.1.0_512KB.img` image by default. Rescue Switcher lets you select another ROM image already stored on the device, which makes recovery faster and more convenient.
 
+For a generic overview of the rescue-switcher project, available images, and installation flow, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
+
 If you are using an older configuration or have manually assigned a different rescue ROM, the Amiga will boot that rescue ROM instead.
 
 ## ROM Management from the Amiga Computer
@@ -138,6 +140,8 @@ As the delete feature, it is not possible to rename the default ROM image or the
 ## Select a new Rescue ROM
 
 Starting with firmware 3.1.0, the factory default rescue image is `RESCUE_SWITCHER_v3.1.0_512KB.img`. This is the recommended rescue configuration because it allows you to choose another ROM image already stored on the device.
+
+For more background on the shared rescue-switcher project, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
 
 The rescue ROM cannot be changed using the SWITCHER program or the internal API call to switch ROMs. To change the rescue ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-kickstart/getting-started/) section. If you still want to change the rescue ROM using the SWITCHER program, you can do so by [following these steps](/sidecartridge-kickstart/troubleshooting/#cant-change-the-rescue-and-defaultactive-images-from-the-host-computer) at your own risk.
 

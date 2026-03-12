@@ -136,6 +136,12 @@ Ideal for makers, developers, and hobbyists—especially when emulating ROMs for
   </div>
 
   <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>🆘 <a href="/sidecartridge-rom/rom-rescue-switcher/">ROM Rescue Switcher</a></h3>
+    <p>Install the rescue chooser image and boot another stored ROM image for recovery.</p>
+  </div>
+
+  <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
     <h3>🧩 <a href="/sidecartridge-rom/firmware-api/">Firmware API</a></h3>
     <p>Host control API: list/upload/select images and configure behavior.</p>
