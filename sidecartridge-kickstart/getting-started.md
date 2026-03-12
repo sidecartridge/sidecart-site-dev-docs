@@ -101,6 +101,8 @@ Open the `ROMEMUL` volume on your computer to access firmware files, Kickstart i
 - `AMIGA`: A folder containing the SWITCHER application in different formats. **You must copy this executable to your AMIGA computer to manage your Kickstart versions. You can learn to use in the [User Guide](/sidecartridge-kickstart/user-guide/)**
 - `DEFAULT.TXT`: Contains the name of the default active Kickstart or custom ROM image file.
 - `RESCUE.TXT`: Contains the name of the rescue Kickstart image or custom ROM image file.
+- `DiagROM.img`: The bundled DiagROM 1.3 image. Starting with firmware 3.1.0, this is the default ROM image that boots automatically. Read [Diagnosing your Amiga with DIAGROM](/sidecartridge-kickstart/diagrom/) for more information.
+- `RESCUE_SWITCHER_v3.1.0_512KB.img`: The bundled Rescue Switcher image. Starting with firmware 3.1.0, this image boots in rescue mode and lets you select another available ROM image as a recovery option.
 - `CONFIG.TXT`: This file contains the advanced configuration settings for the emulator. The settings helps to adjust the speed of the address bus when the emulator runs in computers with very noisy buses, or when the computer has accelerated boards.
 
 {: .note }
@@ -164,9 +166,13 @@ Depending on the Linux distribution, the mount point of the SidecarTridge Kickst
 
 ### Setting the Default and Rescue ROM Images
 {: note}
-The first time you set up the SidecarTridge Kickstart emulator, you need to set the default and rescue ROM images. This is a mandatory step to ensure the SidecarTridge Kickstart emulator knows which Kickstart image to use as the default and rescue ROM images.
+Starting with firmware 3.1.0, the first-time setup already includes working default and rescue ROM images. The default ROM image is `DiagROM.img`, and the rescue ROM image is `RESCUE_SWITCHER_v3.1.0_512KB.img`.
 
 The SidecarTridge Kickstart emulator allows you to set a default active ROM image and a rescue ROM image. The *default* ROM image is the one that will boot when the Amiga is powered on, while the *rescue* ROM image is used in case of a boot failure as a fallback option by enabling the rescue mode. You can set the `RESCUE` signal on the SidecarTridge Kickstart emulator using the RESCUE connector and a push button.
+
+Starting with firmware 3.1.0, the bundled default ROM boots DiagROM automatically. For an overview of the diagnostic workflow, read [Diagnosing your Amiga with DIAGROM](/sidecartridge-kickstart/diagrom/).
+
+Starting with firmware 3.1.0, rescue mode boots the bundled Rescue Switcher image. Rescue Switcher lets you choose another ROM image already stored on the device, which is often more convenient than editing files from the host computer during recovery.
 
 The *default* image can be changed by editing the `DEFAULT.TXT` file in the `ROMEMUL` volume or by using the `SWITCHER` program on the Amiga computer.
 
@@ -177,7 +183,7 @@ We strongly recommend using the `SWITCHER` program to change the *default* ROM i
 
 To change the *default* and *rescue* ROM images using the `SWITCHER` program, please refer to the [Switching Between ROM Versions](#switching-between-rom-versions) section in the User Guide.
 
-Changing the *default* and *rescue* ROM images by editing the `DEFAULT.TXT` and `RESCUE.TXT` files is straightforward. Open the `DEFAULT.TXT` file in the `ROMEMUL` volume and replace the name of the default ROM image with the desired ROM image file name. For example, to set `Kickstart 1.3.img` as the default ROM image, the `DEFAULT.TXT` file should contain exactly the name of the file (including the extension if it exists):
+Changing the *default* and *rescue* ROM images by editing the `DEFAULT.TXT` and `RESCUE.TXT` files is straightforward. Open the `DEFAULT.TXT` file in the `ROMEMUL` volume and replace the name of the default ROM image with the desired ROM image file name. Starting with firmware 3.1.0, the factory default is `DiagROM.img`. For example, to set `Kickstart 1.3.img` as the default ROM image, the `DEFAULT.TXT` file should contain exactly the name of the file (including the extension if it exists):
 
 ```
 Kickstart 1.3.img
@@ -205,7 +211,7 @@ The files or folders with these magic names will be deleted after the action is 
 
 ## Firmware Installation
 
-The SidecarTridge Kickstart emulator does come with pre-installed firmware, but not a default Kickstart image. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
+The SidecarTridge Kickstart emulator does come with pre-installed firmware and bundled recovery ROM images. However, it is recommended to check for the latest firmware version and update if necessary. The firmware update process is straightforward and can be done using a computer with a USB port.
 
 We assume that you have already connected the SidecarTridge Kickstart emulator to your computer using the USB-C cable and that the `ROMEMUL` volume is accessible. If you have not done so, please refer to the [Connecting the Device to a Computer](#connecting-the-device-to-a-computer) section.
 

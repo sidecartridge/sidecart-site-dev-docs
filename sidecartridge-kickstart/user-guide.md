@@ -26,7 +26,9 @@ The SidecarTridge Kickstart Emulator has a built-in red LED indicator that light
 
 ## Powering On the Amiga
 
-Simply turn on the Amiga as you normally would. The SidecarTridge Kickstart Emulator will automatically boot the active Kickstart version, lighting up a green LED indicator when the firmware is running.
+Simply turn on the Amiga as you normally would. The SidecarTridge Kickstart Emulator will automatically boot the active ROM image, lighting up a green LED indicator when the firmware is running.
+
+Starting with firmware 3.1.0, the factory default ROM image is `DiagROM.img`, so a new installation will boot directly into DiagROM. Read [Diagnosing your Amiga with DIAGROM](/sidecartridge-kickstart/diagrom/) for more information.
 
 ## Powering On USB-connected to a PC/Mac/Linux Computer
 When the SidecarTridge Kickstart Emulator is connected to a computer via USB, it will automatically start in USB Mass Storage mode. This allows you to access the internal flash memory of the SidecarTridge Kickstart Emulator as a USB drive on your computer. It will light up an orange LED indicator when the internal USB drive is mounted. When transferring files to the internal USB drive, this LED will blink to indicate data transfer activity.
@@ -36,7 +38,7 @@ The SidecarTridge Kickstart Emulator will not boot the Amiga when connected to a
 
 ## The SWITCHER Program
 
-The SWITCHER program is a utility that allows you to switch between Kickstart versions. This program can be obtained through different ways:
+The SWITCHER program is a utility that allows you to switch between Kickstart and custom ROM images. This program can be obtained through different ways:
 - copied from the SidecarTridge Kickstart Emulator internal USB drive, inside the `/AMIGA` folder.
 - downloaded from the main page of the documentation
 
@@ -44,7 +46,7 @@ SWITCHER can be run from the Amiga Workbench desktop like any other Amiga progra
 
 ![SidecarTridge Switcher app](/sidecartridge-kickstart/assets/images/sidecartridge-switcher-desktop.png)
 
-## Select a New Active Default Kickstart Version
+## Select a New Active Default ROM Image
 
 {: .note}
 Unplug the SidecarTridge Kickstart Emulator from the USB port before running the SWITCHER program. Some cables may set some signals on the USB port that can interfere with the SidecarTridge Kickstart Emulator.
@@ -85,7 +87,9 @@ To force boot the rescue ROM, follow these steps:
 4. Turn on the Amiga.
 5. Release the rescue mode button once the Amiga is powered on.
 
-The Amiga will boot the rescue ROM. You can then use the SWITCHER program to select a new active ROM.
+Starting with firmware 3.1.0, rescue mode boots the bundled `RESCUE_SWITCHER_v3.1.0_512KB.img` image by default. Rescue Switcher lets you select another ROM image already stored on the device, which makes recovery faster and more convenient.
+
+If you are using an older configuration or have manually assigned a different rescue ROM, the Amiga will boot that rescue ROM instead.
 
 ## ROM Management from the Amiga Computer
 
@@ -132,6 +136,8 @@ As the delete feature, it is not possible to rename the default ROM image or the
 
 
 ## Select a new Rescue ROM
+
+Starting with firmware 3.1.0, the factory default rescue image is `RESCUE_SWITCHER_v3.1.0_512KB.img`. This is the recommended rescue configuration because it allows you to choose another ROM image already stored on the device.
 
 The rescue ROM cannot be changed using the SWITCHER program or the internal API call to switch ROMs. To change the rescue ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-kickstart/getting-started/) section. If you still want to change the rescue ROM using the SWITCHER program, you can do so by [following these steps](/sidecartridge-kickstart/troubleshooting/#cant-change-the-rescue-and-defaultactive-images-from-the-host-computer) at your own risk.
 
