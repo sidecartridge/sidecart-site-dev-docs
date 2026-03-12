@@ -155,6 +155,16 @@ has_toc: false
 
   <div class="proj-card">
     <div class="proj-inner">
+      <img class="proj-thumb" src="/assets/images/SIDECART_TEXT_BW_1920x416.png" alt="SidecarTridge Keyboard Emulator thumbnail">
+      <div>
+        <h2><a href="/sidecartridge-keyboard/">SidecarTridge Keyboard Emulator</a></h2>
+        <p>IKBD keyboard-controller emulator for Atari ST-family systems, with the Croissant internal board and the Soufflè external dongle.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-inner">
       <img class="proj-thumb" src="/sidecartridge-kickstart/assets/images/KICKSTART-A500-TOP.png" alt="SidecarTridge Kickstart thumbnail">
       <div>
         <h2><a href="/sidecartridge-kickstart/">SidecarTridge Kickstart emulator</a></h2>
@@ -178,4 +188,3 @@ has_toc: false
 <div class="support-note">
   Looking for support? <a href="https://discord.com/invite/u73QP9MEYC">Join our Discord server</a> or <a href="mailto:support@gooddatalabs.com">drop us an email</a>!
 </div>
-
