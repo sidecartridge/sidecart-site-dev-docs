@@ -10,7 +10,7 @@ parent: SidecarTridge Kickstart
 # Diagnosing your Amiga with DIAGROM and Kickstart Emulator
 {: .no_toc }
 
-Use this chapter to install and run DiagROM 1.3 on the SidecarTridge Kickstart emulator. [DiagROM](https://www.diagrom.com/) is a diagnostic ROM by John "Chucky/The Gang" Hertell that helps you test and troubleshoot classic Amiga hardware.
+Use this chapter to enable and run the bundled DiagROM 1.3 image on the SidecarTridge Kickstart emulator. [DiagROM](https://www.diagrom.com/) is a diagnostic ROM by John "Chucky/The Gang" Hertell that helps you test and troubleshoot classic Amiga hardware.
 
 {: note }
 This software is provided by a third party and is not affiliated with SidecarTridge, but the developer asks that if you find it useful, please consider a donation to a charity of your choice. See [diagrom.com](https://www.diagrom.com/) for details.
@@ -30,32 +30,20 @@ This software is provided by a third party and is not affiliated with SidecarTri
 
 - A SidecarTridge Kickstart emulator installed and working on your Amiga.
 - A computer with USB to access the `ROMEMUL` volume (see [Getting Started](/sidecartridge-kickstart/getting-started/#connecting-the-device-to-a-computer)).
-- The DiagROM 1.3 Amiga ROM image downloaded from [diagrom.com](https://www.diagrom.com/).
 
 {: .note }
 DiagROM 1.x is listed as compatible with the SidecarTridge Kickstart emulator in the [Compatibility](/sidecartridge-kickstart/compatibility/) table.
 
-## Download DiagROM 1.3
+## Bundled DiagROM image
 
-1. Open [diagrom.com](https://www.diagrom.com/) and follow the download instructions for the Amiga version.
-2. Select the **`DiagROM`** file inside the DiagROM 1.3 zip file. This file matches the A500/A2000 512KB layout required by the emulator.
-3. Rename the file to `DiagROM.rom` for easier identification.
-
+Recent SidecarTridge Kickstart emulator bundles already include the DiagROM 1.3 Amiga ROM image, so there is no separate download or conversion step required for normal setup.
 
 {: .note }
-You don't need byte swapping or conversion; the `DiagROM` file is ready to use as-is with the SidecarTridge Kickstart emulator.
+The bundled `DiagROM.img` image is already in the correct format for the emulator. No byte swapping or conversion is required.
 
-## Copy DiagROM to the SidecarTridge Kickstart emulator
+## Select DiagROM on the SidecarTridge Kickstart emulator
 
-1. Connect the SidecarTridge Kickstart emulator to your computer using the USB-C cable.
-2. Open the `ROMEMUL` volume.
-3. Copy the `DiagROM.rom` 1.3 ROM image file to the root of `ROMEMUL`.
-4. Edit `DEFAULT.TXT` and set the `DiagROM.rom` file name as the default ROM.
-5. Edit `RESCUE.TXT` and set the `DiagROM.rom` file name as the rescue ROM (optional).
-6. Eject the `ROMEMUL` volume safely.
-
-{: .warning }
-Always eject the `ROMEMUL` volume after copying files so the emulator reindexes the ROM list.
+Since firmware version 3.1.0, the default ROM image boots the bundled DiagROM program. To install and change the available ROM images, read the [User Guide](/sidecartridge-kickstart/user-guide/).
 
 
 ## Boot and run diagnostics
@@ -65,7 +53,7 @@ Always eject the `ROMEMUL` volume after copying files so the emulator reindexes 
 3. DiagROM should boot directly and present the diagnostics screen.
 4. Use the on-screen tests to check RAM, CPU, and custom chips.
 
-If DiagROM does not boot, confirm the ROM image is 512KB, re-copy it to `ROMEMUL`, and ensure it is selected as the default ROM.
+If DiagROM does not boot, confirm that `DiagROM.img` is still present in `ROMEMUL`, and verify that `DEFAULT.TXT` or `RESCUE.TXT` contains the exact file name.
 
 [Previous: Kickstart ROM Conversion](/sidecartridge-kickstart/kickstart-conversion/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }
