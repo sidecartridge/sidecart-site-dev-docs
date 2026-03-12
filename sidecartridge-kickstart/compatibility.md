@@ -37,7 +37,7 @@ Carrier boards for additional Amiga models are in active development. Check the 
 | A500 rev3            | Single 512KB Kickstart socket | A500 rev3 kit | Supported |
 | A500 rev5            | Single 512KB Kickstart socket | A500 rev5 kit | Supported |
 | A500 rev6a           | Single 512KB Kickstart socket | A500 rev6a kit | Supported |
-| A2000 (Kickstart socket) | Single 512KB Kickstart socket | A500-family carrier board | Supported |
+| A2000 (Kickstart socket) | Single 512KB Kickstart socket (rev4.2 or earlier, or rev4.3 and later) | A500-family carrier board | Supported |
 
 {: .warning}
 If your motherboard revision is not listed, or if you are unsure whether the ROM is socketed, please contact us before purchasing or installing the emulator.
