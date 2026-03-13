@@ -23,9 +23,11 @@ redirect_from:
 [{{ site.MICROFIRMWARE_DEBUG_CART_VERSION }}](){: .label .label-purple }
 
 
-This is a microfirmware application for the **SidecarTridge Multi-device**, designed to provide **debug output for Atari ST-family software** through the cartridge port.
+This microfirmware repurposes the SidecarTridge Multi-device as a **debug output cartridge** for Atari ST-family computers.
 
-It repurposes the SidecarTridge Multi-device as a debug-output device for **Atari ST, STe, Mega ST, and Mega STe** software. Debug output is captured by reading from the cartridge address space and forwarded to a **USB serial connection**. See the [original project Debug Cart by **Christian Zietz** ](https://github.com/czietz/atari-debug-cart) for the original source and implementation details.
+Software running on the Atari can send debug characters through the cartridge address space, which are forwarded to the USB serial port of the Multi-device.
+
+This firmware is useful for low-level development, TOS debugging, driver development, and experiments that require output before normal I/O is available. See the [original project Debug Cart by **Christian Zietz** ](https://github.com/czietz/atari-debug-cart) for the original source and implementation details.
 
 <details open markdown="block">
   <summary>
@@ -57,10 +59,13 @@ Debug output is transmitted by reading from the cartridge address space at `0xFB
 (void)(*((volatile short*)(CARTRIDGE_ROM3 + ('A'<<1))));
 ```
 
+Characters are encoded on address lines A8–A1, so each cartridge read generates one output byte.  
+This makes the debug channel extremely fast and usable even in timing-critical code.
+
 To receive the debug output, the Raspberry Pi Pico on the SidecarTridge Multi-device exposes a **USB serial port**. On modern operating systems, no special drivers are required. Any terminal program that supports serial ports can be used. Because this is **not a physical UART**, the configured baud rate does not matter.
 
 {: .note }
-When using USB debug output, connecting the Pico to a laptop running on battery power can help avoid ground loop issues. This is usually not required, but may improve stability if you see unreliable serial output.
+When using USB debug output, connecting the Pico to a laptop running on battery power may help avoid ground loop issues. This is usually not required, but can improve stability if you see unreliable serial output.
 
 ## 🖥️ Using a Serial Terminal
 
@@ -76,10 +81,11 @@ To enable it, set the `CARTRIDGE_DEBUG_PRINT` macro to `1` in the EmuTOS configu
 
 ## ✨ Benefits
 
-* **Fast output**: cartridge-port access takes only a few CPU cycles, so the timing impact is much lower than with MFP serial output or on-screen debug output.
-* **No hardware initialization required**: cartridge-port access is available immediately.
-* **Useful for early boot debugging**: output can be produced very early in software startup.
-* **Simple host-side setup**: only a USB serial terminal is needed.
+- Very fast output (few CPU cycles per character)
+- No initialization required
+- Works very early during boot, before screen or serial drivers are initialized
+- Does not use MFP or screen output
+- Simple host-side setup using USB serial
 
 ## 🔁 Runtime Behavior
 
@@ -87,7 +93,7 @@ The firmware starts capturing debug bytes as soon as the app is launched and for
 
 ### System Reset Behavior
 
-The app is resistant to Atari system resets. Pressing the reset button on the Atari does not stop the firmware.
+The debug cart continues running across system resets, so output is still available after pressing the reset button on the Atari.
 
 ### Power Cycling
 
@@ -97,6 +103,20 @@ When you power off and on your Atari, the app starts again with the SidecarTridg
 
 * A short press on the **SELECT** button jumps back to the Booster menu.
 * A long press resets the device.
+
+## 📟 Example
+
+The following example sends characters to the debug output:
+```c
+#define CARTRIDGE_ROM3 0xFB0000ul
+
+(void)(((volatile short)(CARTRIDGE_ROM3 + ('H'<<1))));
+(void)(((volatile short)(CARTRIDGE_ROM3 + ('i'<<1))));
+```
+
+This will print:
+
+Hi
 
 ## 🛠️ Setting Up the Development Environment
 
