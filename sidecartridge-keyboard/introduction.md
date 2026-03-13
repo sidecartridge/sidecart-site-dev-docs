@@ -16,7 +16,7 @@ Because the host computer communicates with a real controller implementation, th
 
 This section introduces the project and explains how the emulator fits into Atari keyboard and input device setups.
 
-![SidecarTridge Croissant keyboard emulator board](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png)
+![SidecarTridge Croissant keyboard emulator board](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-SOUFFLE-PERSPECTIVE.png)
 
 <details open markdown="block">
   <summary>
