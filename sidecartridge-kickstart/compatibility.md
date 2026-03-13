@@ -27,16 +27,24 @@ Use this section to confirm that your Amiga model, motherboard revision, and Kic
 Carrier boards for additional Amiga models are in active development. Check the SidecarTridge website for the latest updates.
 {: .warning}
 
-### Amiga 500 and 2000 families
+### Amiga 500 family
 
 - Make sure your Kickstart ROM is socketed; if it is soldered you must add a socket before using the emulator (see [Before You Buy](/sidecartridge-kickstart/before-buy/)).
-- All rows below refer to Classic Amiga 512KB ROM layouts used by the A500 and A2000 families.
+- All rows below refer to Classic Amiga 512KB ROM layouts used by the A500 family.
 
 | Motherboard revision | ROM socket layout | Carrier board / kit | Status |
 |----------------------|-------------------|---------------------|--------|
 | A500 rev3            | Single 512KB Kickstart socket | A500 rev3 kit | Supported |
 | A500 rev5            | Single 512KB Kickstart socket | A500 rev5 kit | Supported |
 | A500 rev6a           | Single 512KB Kickstart socket | A500 rev6a kit | Supported |
+
+### Amiga 2000 family
+
+- Make sure your Kickstart ROM is socketed; if it is soldered you must add a socket before using the emulator (see [Before You Buy](/sidecartridge-kickstart/before-buy/)).
+- All rows below refer to Classic Amiga 512KB Kickstart sockets used by the A2000 family.
+
+| Motherboard revision | ROM socket layout | Carrier board / kit | Status |
+|----------------------|-------------------|---------------------|--------|
 | A2000 rev4.2 and earlier | Single 512KB Kickstart socket | A500-family carrier board | Supported |
 | A2000 rev4.3 and later   | Single 512KB Kickstart socket | A500-family carrier board | Supported |
 
