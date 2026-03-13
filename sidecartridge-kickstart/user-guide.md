@@ -91,6 +91,8 @@ Starting with firmware 3.1.0, rescue mode boots the bundled `RESCUE_SWITCHER_v3.
 
 For a generic overview of the rescue-switcher project, available images, and installation flow, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
 
+![ROM Rescue Switcher chooser screen](/sidecartridge-rom/assets/images/ROMRESCUESWITCHER-1.png)
+
 If you are using an older configuration or have manually assigned a different rescue ROM, the Amiga will boot that rescue ROM instead.
 
 ## ROM Management from the Amiga Computer

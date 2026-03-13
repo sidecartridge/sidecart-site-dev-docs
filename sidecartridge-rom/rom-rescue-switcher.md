@@ -52,14 +52,23 @@ Download the image that matches your target machine and ROM size:
 {: .note }
 Replace `vX.Y.Z` with the actual release version you downloaded.
 
+## Download
+
+1. Open the [project releases page](https://github.com/sidecartridge/romemul-switcher-rom/releases).
+2. Open the latest release, or the specific release version you want to use.
+3. In the release assets, find the rescue image that matches your machine and ROM size from the table above.
+4. Download that `.img` file to your computer.
+
+{: .note }
+You can keep the original file name or rename it, but `RESCUE.TXT` must contain the exact final image file name.
+
 ## Installing the rescue image
 
-1. Download the correct rescue image from the [project releases page](https://github.com/sidecartridge/romemul-switcher-rom/releases).
-2. Connect the device to your computer so the `ROMEMUL` volume appears.
-3. Copy the rescue image file to the root of `ROMEMUL`.
-4. Edit `RESCUE.TXT` so it contains exactly the rescue image file name.
-5. Eject the `ROMEMUL` volume safely.
-6. Enter rescue mode on the target system or product integration.
+1. Connect the device to your computer so the `ROMEMUL` volume appears.
+2. Copy the rescue image file to the root of `ROMEMUL`.
+3. Edit `RESCUE.TXT` so it contains exactly the rescue image file name.
+4. Eject the `ROMEMUL` volume safely.
+5. Enter rescue mode on the target system or product integration.
 
 {: .warning }
 Always eject or unmount `ROMEMUL` after copying files or changing `RESCUE.TXT`, so the device reindexes the file list correctly.
@@ -73,6 +82,14 @@ At rescue boot, the switcher:
 - scans the images already stored on the device
 - shows a text-based selection menu
 - boots the ROM image you select
+
+Chooser screen:
+
+![ROM Rescue Switcher chooser screen](/sidecartridge-rom/assets/images/ROMRESCUESWITCHER-1.png)
+
+Load confirmation screen:
+
+![ROM Rescue Switcher load confirmation screen](/sidecartridge-rom/assets/images/ROMRESCUESWITCHER-2.png)
 
 ## Notes for SidecarTridge products
 

@@ -101,6 +101,8 @@ Rescue Switcher lets you select another TOS ROM image already stored on the devi
 
 For a generic overview of the rescue-switcher project, available images, and installation flow, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
 
+![ROM Rescue Switcher chooser screen](/sidecartridge-rom/assets/images/ROMRESCUESWITCHER-1.png)
+
 If you are using an older configuration or have manually assigned a different rescue TOS ROM, the Atari ST will boot that rescue image instead.
 
 ## TOS Management from the Atari ST
