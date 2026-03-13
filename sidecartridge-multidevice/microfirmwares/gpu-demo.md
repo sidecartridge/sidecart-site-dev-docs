@@ -143,6 +143,6 @@ See the [LICENSE](https://github.com/sidecartridge/md-sprites-demo/blob/main/LIC
 ## 🤝 Contributing
 Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
-[Previous: Browser](/sidecartridge-multidevice/microfirmwares/browser/){: .btn .mr-4 }
+[Previous: Debug Cart](/sidecartridge-multidevice/microfirmwares/debug-cart/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
 [Next: Oric Emulator](/sidecartridge-multidevice/microfirmwares/oric-emulator/){: .btn }

@@ -63,6 +63,11 @@ A Microfirmware app is a small, self-contained program that runs on a standalone
 </div>
 
 <div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🐞 <a href="/sidecartridge-multidevice/microfirmwares/debug-cart/">Debug Cart</a></h3>
+<p>Expose debug output from Atari ST-family software through the cartridge port over USB serial.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
 <h3>🎨 <a href="/sidecartridge-multidevice/microfirmwares/gpu-demo/">GPU Demo</a></h3>
 <p>Showcases RP2040 graphics: real-time sprites and tiles in Atari ST/STE modes.</p>
 </div>
