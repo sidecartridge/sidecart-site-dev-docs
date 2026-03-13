@@ -35,6 +35,8 @@ If you purchased the **Croissant internal model**, inspect the board and verify 
 * the board has no visible damage
 * no loose parts are present
 
+![SidecarTridge Croissant board](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png)
+
 Do this before opening the computer.
 
 ### 1.2 Soufflè
@@ -46,6 +48,8 @@ If you purchased the **Soufflè external dongle**, inspect:
 * the coiled cable
 
 Make sure the cable and connectors are not damaged before connecting the device to the computer.
+
+![SidecarTridge Soufflè external keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-PERSPECTIVE.png)
 
 ### 1.3 Additional components
 

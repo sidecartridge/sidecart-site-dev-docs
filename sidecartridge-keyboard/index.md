@@ -8,6 +8,8 @@ toc: false
 has_toc: false
 ---
 
+![SidecarTridge Keyboard Emulator hardware variants](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png)
+
 # SidecarTridge Keyboard Emulator
 {: .d-inline-block }
 
@@ -25,9 +27,13 @@ The project currently exists in two hardware variants that share the same firmwa
   Internal adapter for Atari ST and Atari STe computers with the internal 7-pin keyboard connector.  
   Works as a middle-man between the motherboard and the original keyboard path, allowing Bluetooth, USB, and mixed input configurations while preserving compatibility with original devices.
 
+![SidecarTridge Croissant internal keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-TOP.png)
+
 - **SidecarTridge Soufflè**  
   External keyboard replacement for Atari Mega ST and Mega STe systems.  
   Connects in place of the original keyboard and adds Bluetooth and USB input support while maintaining normal IKBD behavior.
+
+![SidecarTridge Soufflè external keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-PERSPECTIVE.png)
 
 Both hardware variants use the same firmware architecture, so firmware updates are expected to support both platforms whenever possible.
 

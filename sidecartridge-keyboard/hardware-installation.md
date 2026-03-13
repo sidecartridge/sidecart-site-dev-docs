@@ -90,6 +90,8 @@ Locate the 7-pin keyboard connector on the motherboard.
 
 Insert the Croissant board into the connector.
 
+![SidecarTridge Croissant installed on the Atari ST keyboard header](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-MOTHERBOARD-TOP.png)
+
 Make sure:
 
 * pins are aligned
@@ -100,6 +102,8 @@ The micro-USB connector should face the left side of the computer when looking a
 
 The board should stay in place without support.
 If needed, use non-conductive tape to hold it during testing.
+
+![SidecarTridge Croissant mounted before reconnecting the keyboard cable](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-MOTHERBOARD-PERSPECTIVE.png)
 
 ### Dry-run test
 
@@ -127,6 +131,8 @@ Power off the Atari.
 Connect the keyboard ribbon cable to the Croissant board.
 
 Croissant acts as a pass-through, so the cable must be fully inserted.
+
+![SidecarTridge Croissant with the keyboard cable connected](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-MOTHERBOARD-CONNECTED.png)
 
 Power on the Atari again.
 
