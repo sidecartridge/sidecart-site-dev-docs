@@ -54,7 +54,8 @@ Once you have verified the compatibility of your Amiga 500 or Amiga 2000 motherb
 | [A500 revision 3](https://store.sidecartridge.com)           | A500 rev3 |
 | [A500 revision 5](https://store.sidecartridge.com)           | A500 rev5 |
 | [A500 revision 6a](https://store.sidecartridge.com)          | A500 rev6a |
-| [A2000 carrier](https://store.sidecartridge.com)             | A2000 rev4.2 and earlier, A2000 rev4.3 and later |
+| [A2000 carrier (rev4.2 and earlier)](https://store.sidecartridge.com) | A2000 rev4.2 and earlier |
+| [A2000 carrier (rev4.3 and later)](https://store.sidecartridge.com)   | A2000 rev4.3 and later |
 
 ### Identifying Your Amiga Motherboard Revision
 
