@@ -128,7 +128,7 @@ Before copying ROM image files to the SidecarTridge Kickstart emulator, it is st
 
 Create a folder on your desktop named `ROM Images` to store and organize your ROM image files. For example, using a MacBook Pro with macOS:
 
-1. **Download ROM Images**: Collect a list of ROM images from the internet and store them in the folder. Refer to the [Compatibility](/sidecartridge-kickstart/compatibility/#list-of-supported-kickstart-versions-tested-with-the-sidecartridge-tos-emulator) section for tested versions.
+1. **Download ROM Images**: Collect a list of ROM images from the internet and store them in the folder. Refer to the [Compatibility](/sidecartridge-kickstart/compatibility/#kickstart-and-custom-rom-compatibility) section for tested versions.
 
    ![SidecarTridge Source Folder Example](/sidecartridge-kickstart/assets/images/sidecartridge-source-folder.png)
 
@@ -181,7 +181,7 @@ The *rescue* image can ONLY be changed by editing the `RESCUE.TXT` file in the `
 {: .warning}
 We strongly recommend using the `SWITCHER` program to change the *default* ROM image. Change the *rescue* ROM image only when necessary, as it is a critical setting that should be used in case of boot failure.
 
-To change the *default* and *rescue* ROM images using the `SWITCHER` program, please refer to the [Switching Between ROM Versions](#switching-between-rom-versions) section in the User Guide.
+To change the *default* and *rescue* ROM images using the `SWITCHER` program, please refer to the [Switching Between ROM Versions](https://docs.sidecartridge.com/sidecartridge-kickstart/user-guide/#select-a-new-active-default-rom-image) section in the User Guide.
 
 Changing the *default* and *rescue* ROM images by editing the `DEFAULT.TXT` and `RESCUE.TXT` files is straightforward. Open the `DEFAULT.TXT` file in the `ROMEMUL` volume and replace the name of the default ROM image with the desired ROM image file name. Starting with firmware 3.1.0, the factory default is `DiagROM.img`. For example, to set `Kickstart 1.3.img` as the default ROM image, the `DEFAULT.TXT` file should contain exactly the name of the file (including the extension if it exists):
 

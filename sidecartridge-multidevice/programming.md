@@ -41,7 +41,7 @@ If you want to contribute to the projects as a developer, you'll need a Raspberr
 
 - A Makefile attuned with GNU Make.
 
-- Visual Studio Code is highly recommended if you want to debug the code. You can find the configuration files in the [.vscode](.vscode) folder. 
+- Visual Studio Code is highly recommended if you want to debug the code. You can find the configuration files in the `.vscode` folder. 
 
 - An Atari ST/STE/MegaST/MegaSTE computer. You can also use an emulator such as Hatari or STEEM for testing purposes, but you cannot really test any real functionality of the app without a real computer.
 
@@ -106,7 +106,7 @@ set PICO_OPENOCD_PATH=C:\Path\to\openocd\tcl
 
 ## Architecture review
 
-Before starting with the programming of the Multi-device board, it is important to understand the two basic ROM emulation modes available and describe in detail in the section [Architecture and Design](/sidecartridge-multidevice/architecture_and_design/#the-sidecart-board-from-the-atari-st-perspective). To summarize the two modes:
+Before starting with the programming of the Multi-device board, it is important to understand the two basic ROM emulation modes available and describe in detail in the section [Architecture and Design](/sidecartridge-multidevice/architecture_and_design/#the-multi-device-board-from-the-atari-st-perspective). To summarize the two modes:
 
 - Full ROM emulation mode: the Atari ST effortlessly reads the shared RAM memory as if perusing through a full address range of the ROM memory expansion, void of any perceptible differences. The Atari ST is NOT aware of the existence of the Multi-device.
 - Hybrid ROM emulation mode: the Atari ST accesses the shared RAM memory but only a specific subrange of addresses of the ROM memory expansion. The other subranges are allocated to implement a command protocol between the host and the microcontroller, fostering an interactive session with applications running on the RP2040. The Atari ST is aware of the existence of the Multi-device.

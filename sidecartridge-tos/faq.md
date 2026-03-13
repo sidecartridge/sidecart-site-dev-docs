@@ -78,7 +78,7 @@ Also, keep in mind that the TOS for ST/STF/STFM motherboards starts at address `
 
 ### How do I update the firmware of the SidecarTridge TOS emulator?
 
-The firmware of the SidecarTridge TOS emulator can be updated following the instructions provided in the [Firmware Update](/sidecartridge-tos/getting-startedV2V2/#firmware-installation) section.
+The firmware of the SidecarTridge TOS emulator can be updated following the instructions provided in the [Firmware Update](/sidecartridge-tos/getting-startedV2/#firmware-installation) section.
 
 ### I want to update the firmware of the SidecarTridge TOS emulator but I don't want to lose my TOS images. What should I do?
 

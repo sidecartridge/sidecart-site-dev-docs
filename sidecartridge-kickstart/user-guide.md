@@ -145,7 +145,7 @@ Starting with firmware 3.1.0, the factory default rescue image is `RESCUE_SWITCH
 
 For more background on the shared rescue-switcher project, see [ROM Rescue Switcher](/sidecartridge-rom/rom-rescue-switcher/).
 
-The rescue ROM cannot be changed using the SWITCHER program or the internal API call to switch ROMs. To change the rescue ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-kickstart/getting-started/) section. If you still want to change the rescue ROM using the SWITCHER program, you can do so by [following these steps](/sidecartridge-kickstart/troubleshooting/#cant-change-the-rescue-and-defaultactive-images-from-the-host-computer) at your own risk.
+The rescue ROM cannot be changed using the SWITCHER program or the internal API call to switch ROMs. To change the rescue ROM, you must modify the `RESCUE.TXT` file as described in the [Getting Started](/sidecartridge-kickstart/getting-started/) section. If you still want to change the rescue ROM using the SWITCHER program, you can do so by [following these steps](/sidecartridge-kickstart/troubleshooting/#cant-change-the-rescue-or-defaultactive-images-from-the-host-computer) at your own risk.
 
 [Previous: Hardware Installation](/sidecartridge-kickstart/hardware-installation/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }

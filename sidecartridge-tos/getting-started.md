@@ -316,7 +316,7 @@ The *rescue* image can ONLY be changed by editing the `RESCUE.TXT` file in the `
 {: .warn }
 We strongly recommend using the `SWITCHER.TOS` program to change the *default* TOS image. Change the *rescue* TOS image only when necessary, as it is a critical setting that should be used in case of boot failure. 
 
-To change the *default* and *rescue* TOS images using the `SWITCHER.TOS` program, please refer to the [Switching Between TOS Versions](#switching-between-tos-versions) section in the User Guide.
+To change the *default* and *rescue* TOS images using the `SWITCHER.TOS` program, please refer to the [Switching Between TOS Versions](/sidecartridge-tos/user-guideV2/#select-a-new-active-default-tos-version) section in the User Guide.
 
 Changing the *default* and *rescue* TOS images by editing the `DEFAULT.TXT` and `RESCUE.TXT` files is straightforward. Open the `DEFAULT.TXT` file in the `SidecarTrdg` volume and replace the name of the default TOS image with the desired TOS image file name. For example, to set `TOS 2.06 - SuperTOS - 50Hz` as the default TOS image, the `DEFAULT.TXT` file should contain exactly the name of the file (including the extension if it exists):
 

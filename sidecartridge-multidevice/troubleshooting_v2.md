@@ -86,7 +86,7 @@ If for any reason the SELECT button does not work, you can reflash the firmware 
 
 ### Reflashing the firmware
 
-If for any reason the above method does not work, you can reflash the firmware of the Multi-device by following the instructions in the [Firmware Update](/sidecartridge-multidevice/getting_started_v2/#firmware-update) section.
+If for any reason the above method does not work, you can reflash the firmware of the Multi-device by following the instructions in the [Firmware Installation](/sidecartridge-multidevice/getting_started_v2/#firmware-installation) section.
 
 ### Restore from the Bosster app
 

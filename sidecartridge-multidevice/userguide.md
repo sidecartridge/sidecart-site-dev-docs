@@ -42,7 +42,7 @@ The Multi-device can be configured to emulate a ROM file from a microSD card or 
 2. Emulate ROM image from Wi-Fi
 ```
 
-For option 1, the Multi-device needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/sidecartridge-multidevice/how_to/#format_the_microsd_card) section. For option 2, the Multi-device needs to be connected to a Wi-Fi network. The user can learn how to connect the Multi-device to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/sidecartridge-multidevice/how_to/#connect_to_a_wifi_network) section.
+For option 1, the Multi-device needs a microSD card with the ROM files. The user can learn how to format a microSD card and transfer ROM files in the [How to Format the microSD card](/sidecartridge-multidevice/how_to_v2/#format-the-microsd-card) section. For option 2, the Multi-device needs to be connected to a Wi-Fi network. The user can learn how to connect the Multi-device to a Wi-Fi network in the [How to Connect to a Wi-Fi Network](/sidecartridge-multidevice/getting_started_v2/#initial-factory-configuration) section.
 
 {: .note }
 The emulation of ROMs from Wi-Fi does not need a microSD card to work. And the emulation of ROMs from microSD card does not need to be connected to a Wi-Fi network to work.
@@ -551,7 +551,7 @@ Also, the user should create the default folders and configurations files in the
 - `floppies` folder: This folder should contain the floppy images to be used by the SidecarTridge board. The floppy images should be in the `.ST`  and `.MSA` format.
 - `hd` folder: This folder should contain the files to be used by the SidecarTridge board as a hard disk. 
 
-Also the user can configure the default password in the[.wifipass](/sidecartridge-multidevice/how_to/#configure-the-wifi-password-in-a-file-in-the-microsd-card) file, or the default bootable ROM in the [.romrescue](/sidecartridge-multidevice/how_to/#boot-a-rom-image-from-the-microsd-card-in-rescue-mode) file.
+Also the user can configure the default password in the[.wifipass](/sidecartridge-multidevice/how_to/#configure-the-wifi-password-in-a-file-in-the-microsd-card) file, or the default bootable ROM in the [.romrescue](/sidecartridge-multidevice/microfirmwares/rom_emulator/#-headless-autorun-mode) file.
 
 ### Disabling Mass Storage Mode
 
