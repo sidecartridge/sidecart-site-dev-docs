@@ -25,7 +25,7 @@ redirect_from:
 
 This is a microfirmware application for the **SidecarTridge Multi-device**, designed to provide **debug output for Atari ST-family software** through the cartridge port.
 
-It repurposes the SidecarTridge Multi-device as a debug-output device for **Atari ST, STe, Mega ST, and Mega STe** software. Debug output is captured by reading from the cartridge address space and forwarded to a **USB serial connection**. See the [original project Debug Cart by **Christian Zietz** ](https://github.com/sidecartridge/md-debug-cart) for the original source and implementation details.
+It repurposes the SidecarTridge Multi-device as a debug-output device for **Atari ST, STe, Mega ST, and Mega STe** software. Debug output is captured by reading from the cartridge address space and forwarded to a **USB serial connection**. See the [original project Debug Cart by **Christian Zietz** ](https://github.com/czietz/atari-debug-cart) for the original source and implementation details.
 
 <details open markdown="block">
   <summary>
@@ -106,7 +106,7 @@ To set up the development environment, follow the instructions in the [official 
 
 ## 🙏 Acknowledgements
 
-This project is a direct migration of the Atari ST Debug Cart by **Christian Zietz** and remains closely aligned with the original implementation, with only the changes needed to fit the SidecarTridge Multi-device microfirmware layout. The original code is licensed under **GNU GPL v3.0**, and this project continues under the same terms.
+This project is a direct migration of the [Atari ST Debug Cart by **Christian Zietz**](https://github.com/czietz/atari-debug-cart) and remains closely aligned with the original implementation, with only the changes needed to fit the SidecarTridge Multi-device microfirmware layout. The original code is licensed under **GNU GPL v3.0**, and this project continues under the same terms.
 
 ## 📄 License
 
