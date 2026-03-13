@@ -18,6 +18,7 @@ To learn more about your Amiga motherboard model, open the case and look for the
 Locate the model number near the Kickstart socket (see photos).
 ![Amiga 2000 revision 4 Motherboard Model](/sidecartridge-kickstart/assets/images/amiga2000-4.jpg)
 ![Amiga 2000 revision 4.5 Motherboard Model](/sidecartridge-kickstart/assets/images/amiga2000-4-5.jpg)
+![Amiga 2000 revision 6.2 Motherboard Model](/sidecartridge-kickstart/assets/images/amiga2000-6-2.jpg)
 
 #### Amiga 500
 An Amiga 500 revision 5 motherboard model number might look like this:
