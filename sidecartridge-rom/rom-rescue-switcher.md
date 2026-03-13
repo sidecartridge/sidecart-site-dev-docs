@@ -91,6 +91,13 @@ Load confirmation screen:
 
 ![ROM Rescue Switcher load confirmation screen](/sidecartridge-rom/assets/images/ROMRESCUESWITCHER-2.png)
 
+## Menu markers
+
+As in the full SWITCHER applications for TOS and Kickstart, the rescue-switcher list uses status letters to identify special ROM images:
+
+- `A` means the active or default ROM. This is the ROM image that boots when you power on the device normally.
+- `R` means the rescue ROM. This is the ROM image that boots when you power on the device in rescue mode.
+
 ## Notes for SidecarTridge products
 
 If you are using a product built on the ROM Emulator family, the rescue-mode procedure is product-specific:
@@ -98,7 +105,15 @@ If you are using a product built on the ROM Emulator family, the rescue-mode pro
 - [SidecarTridge TOS rescue mode](/sidecartridge-tos/user-guideV2/#rescue-mode)
 - [SidecarTridge Kickstart rescue mode](/sidecartridge-kickstart/user-guide/#rescue-mode)
 
-For custom carrier-board integrations, rescue-mode activation depends on your board design and firmware setup.
+On SidecarTridge TOS and Kickstart Emulator products, rescue mode is activated by short-circuiting the `RESCUE` jumper on the reverse side of the board. For user convenience, a rescue mode cable and button are included with the emulator.
+
+TOS rescue setup:
+
+[![SidecarTridge TOS rescue mode board](/sidecartridge-tos/assets/images/sidecartridge-rescue-board-v3.png)](/sidecartridge-tos/user-guideV2/#rescue-mode)
+
+Kickstart rescue setup:
+
+[![SidecarTridge Kickstart rescue mode board](/sidecartridge-kickstart/assets/images/sidecartridge-rescue-board.png)](/sidecartridge-kickstart/user-guide/#rescue-mode)
 
 ## Development status
 
