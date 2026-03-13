@@ -8,7 +8,7 @@ toc: false
 has_toc: false
 ---
 
-![SidecarTridge Keyboard Emulator hardware variants](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png)
+![SidecarTridge Keyboard Emulator hardware variants](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-SOUFFLE-PERSPECTIVE.png)
 
 # SidecarTridge Keyboard Emulator
 {: .d-inline-block }

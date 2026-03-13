@@ -155,7 +155,7 @@ has_toc: false
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png" alt="SidecarTridge Keyboard Emulator thumbnail">
+      <img class="proj-thumb" src="/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-SOUFFLE-PERSPECTIVE.png" alt="SidecarTridge Keyboard Emulator thumbnail">
       <div>
         <h2><a href="/sidecartridge-keyboard/">SidecarTridge Keyboard Emulator</a></h2>
         <p>IKBD keyboard-controller emulator for Atari ST-family systems, with the Croissant internal board and the Soufflè external dongle.</p>
