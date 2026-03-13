@@ -10,11 +10,14 @@ parent: SidecarTridge Kickstart
 
 The SidecarTridge Kickstart emulator is designed to work with specific Amiga models and motherboards. There are different versions of the device to accommodate various motherboard configurations. **Please follow these steps before purchasing the emulator**:
 
-### Check Your Amiga Motherboard Model
+### Check Your Amiga Model and Motherboard
 
 To learn more about your Amiga motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-kickstart/compatibility/) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
-For example:
 
+#### Amiga 2000
+*(photo/diagram coming soon; locate the model number near the Kickstart socket)*
+
+#### Amiga 500
 An Amiga 500 revision 5 motherboard model number might look like this:
 ![Amiga 500 revision 5 Motherboard Model](/sidecartridge-kickstart/assets/images/amiga500-5.jpeg)
 
