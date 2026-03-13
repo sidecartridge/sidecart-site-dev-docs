@@ -16,6 +16,8 @@ Because the host computer communicates with a real controller implementation, th
 
 This section introduces the project and explains how the emulator fits into Atari keyboard and input device setups.
 
+![SidecarTridge Croissant keyboard emulator board](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png)
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -52,6 +54,8 @@ It works as a middle-man between the motherboard and the keyboard and allows dif
 
 The operating mode can be changed at boot time without opening the computer enclosure.
 
+![SidecarTridge Croissant installed on an Atari ST motherboard](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-MOTHERBOARD-CONNECTED.png)
+
 
 ### SidecarTridge Soufflè
 
@@ -64,6 +68,8 @@ It connects to the computer in place of the original keyboard and provides:
 - support for original Atari joysticks and mouse together with modern keyboards
 
 Soufflè is intended both as a modernization upgrade and as a replacement for missing or faulty original keyboards.
+
+![SidecarTridge Soufflè external keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-PERSPECTIVE.png)
 
 
 ### Shared firmware
