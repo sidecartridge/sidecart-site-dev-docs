@@ -60,7 +60,7 @@ When reporting an issue, please provide as much detail as possible to help us un
 - Computer memory size (if applicable).
 - Any other devices connected to the computer, such as hard drives or floppy drives (if applicable).
 
-If you have any doubts about how to report an issue, please feel free to join the [SidecarTridge Discord Server](https://discord.com/invite/u73QP9MEYC) and ask for help. 
+If you have any doubts about how to report an issue, please reach out via email (support@gooddatalabs.com) and we'll help you shape it.
 
 Also LLMs like ChatGPT, Perplexity or Gemini can help you to draft a good issue report based on your inputs.
 
