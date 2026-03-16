@@ -20,8 +20,6 @@ has_toc: false
 
 # SidecarTridge Documentation Site
 
-![Discord](https://img.shields.io/discord/1160868666162823218?style=flat&label=Discord&link=https%3A%2F%2Fdiscord.com%2Finvite%2Fu73QP9MEYC)
-
 <!-- Project list – single column with left thumbnail -->
 <style>
   .proj-list {
@@ -186,5 +184,5 @@ has_toc: false
 </div>
 
 <div class="support-note">
-  Looking for support? <a href="https://discord.com/invite/u73QP9MEYC">Join our Discord server</a> or <a href="mailto:support@gooddatalabs.com">drop us an email</a>!
+  Looking for support? <a href="mailto:support@gooddatalabs.com">Drop us an email</a> anytime.
 </div>
