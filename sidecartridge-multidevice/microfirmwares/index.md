@@ -53,6 +53,11 @@ A Microfirmware app is a small, self-contained program that runs on a standalone
 </div>
 
 <div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🎵 <a href="/sidecartridge-multidevice/microfirmwares/mv16-emulator/">MV16 Emulator</a></h3>
+<p>Emulates the MV-16 audio device and routes its output to Bluetooth audio streaming.</p>
+</div>
+
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
 <h3>🧪 <a href="/sidecartridge-multidevice/microfirmwares/multidevice-test/">Multi-device Test ROM</a></h3>
 <p>A diagnostic tool to validate functionality and performance of your device.</p>
 </div>
