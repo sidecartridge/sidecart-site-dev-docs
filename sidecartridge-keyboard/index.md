@@ -48,6 +48,12 @@ Both hardware variants use the same firmware architecture, so firmware updates a
 - [Keyboard Changelog](/sidecartridge-keyboard/changelog/)
 
 
+## Source Code Repositories
+
+- [SidecarTridge Keyboard firmware](https://github.com/sidecartridge/rp2-atarist-rpikb)
+- [SidecarTridge Keyboard booster](https://github.com/sidecartridge/rp2-atarist-rpikb-booster)
+
+
 ## What this project provides
 
 Typical use cases for the SidecarTridge Keyboard Emulator include:
