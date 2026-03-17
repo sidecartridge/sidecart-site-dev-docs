@@ -101,11 +101,13 @@ The device creates a WiFi network with the following SSID:
 
 The UUID is a unique identifier assigned to each device.
 
+![SidecarTridge Keyboard Emulator WiFi access point names](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-WIFI-AP.png)
+
 Open the WiFi settings on your computer, tablet, or phone and connect to the network.
 
 Default password:
 
-sidecart
+`sidecart`
 
 ### 2.4 Opening the configuration page
 
@@ -122,6 +124,16 @@ Soufflè
 [http://souffle.local](http://souffle.local)
 or 
 [http://192.168.1.4](http://192.168.1.4)
+
+After the page loads, you should see the home screen for your device model.
+
+Croissant home page:
+
+![SidecarTridge Keyboard Emulator Croissant home page](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-HOME.png)
+
+Soufflè home page:
+
+![SidecarTridge Keyboard Emulator Soufflè home page](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-HOME.png)
 
 If the configuration page loads, the device is working correctly.
 
