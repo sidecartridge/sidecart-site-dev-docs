@@ -23,11 +23,11 @@ Use this chapter to verify the hardware, power the device for the first time, an
 {:toc}
 </details>
 
-## 1. Unboxing and inspecting the components
+## Unboxing and inspecting the components
 
 When you receive the device, open the package and verify that all expected parts are present and in good condition.
 
-### 1.1 Croissant
+### Croissant
 
 If you purchased the **Croissant internal model**, inspect the board and verify that:
 
@@ -39,7 +39,7 @@ If you purchased the **Croissant internal model**, inspect the board and verify 
 
 Do this before opening the computer.
 
-### 1.2 Soufflè
+### Soufflè
 
 If you purchased the **Soufflè external dongle**, inspect:
 
@@ -51,7 +51,7 @@ Make sure the cable and connectors are not damaged before connecting the device 
 
 ![SidecarTridge Soufflè external keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-PERSPECTIVE.png)
 
-### 1.3 Additional components
+### Additional components
 
 Both models require a **micro-USB cable** for firmware updates and initial configuration.
 
@@ -63,17 +63,17 @@ The firmware is already flashed on the device.
 
 You can power the device and configure it without reflashing, but firmware updates can be installed later if needed.
 
-## 2. First power-on
+## First power-on
 
 The first power-on step is used to verify that the device starts correctly and exposes its initial connectivity features.
 
-### 2.1 Powering the device with micro-USB
+### Powering the device with micro-USB
 
 Connect the device to power using a micro-USB cable.
 
 This first power-on is recommended before installing the device in the computer so you can confirm that the board starts correctly.
 
-### 2.2 LED blinking pattern
+### LED blinking pattern
 
 At first power-on, the device shows a specific LED pattern that indicates that it is in the initial configuration state.
 
@@ -90,7 +90,7 @@ This pattern means:
 
 If you see a different pattern, refer to the troubleshooting section in the User Guide.
 
-### 2.3 WiFi station
+### WiFi station
 
 At first boot, the device starts in WiFi station mode for the initial configuration.
 
@@ -109,7 +109,7 @@ Default password:
 
 `sidecart`
 
-### 2.4 Opening the configuration page
+### Opening the configuration page
 
 After connecting to the WiFi network, open a web browser and go to:
 
@@ -143,7 +143,7 @@ Each model has its own configuration page, but the initial setup procedure is th
 
 You can now power off the device and proceed with the hardware installation (if you have the Croissant model) or with the next steps of the User Guide (if you have the Soufflè model).
 
-## 3. Croissant installation
+## Croissant installation
 
 Installing Croissant requires opening the computer enclosure.
 
@@ -151,7 +151,7 @@ The detailed procedure is described in the next chapter:
 
 [Hardware Installation](/sidecartridge-keyboard/hardware-installation/)
 
-## 4. Soufflè installation
+## Soufflè installation
 
 Connect the coiled cable to the RJ12 connector on both the computer and the device.
 

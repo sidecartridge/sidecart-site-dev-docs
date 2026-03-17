@@ -536,4 +536,4 @@ Use `Station` mode when:
 
 [Previous: Hardware Installation](/sidecartridge-keyboard/hardware-installation/){: .btn .mr-4 }
 [Main](/sidecartridge-keyboard/){: .btn .mr-4 }
-[Next: Compatibility](/sidecartridge-keyboard/compatibility/){: .btn }
+[Next: Firmware Update](/sidecartridge-keyboard/firmware-update/){: .btn }

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Compatibility
-nav_order: 6
+nav_order: 7
 nav_exclude: false
 parent: SidecarTridge Keyboard
 ---
@@ -30,6 +30,6 @@ This page is intended to hold:
 - known incompatibilities
 - workarounds where available
 
-[Previous: User Guide](/sidecartridge-keyboard/user-guide/){: .btn .mr-4 }
+[Previous: Firmware Update](/sidecartridge-keyboard/firmware-update/){: .btn .mr-4 }
 [Main](/sidecartridge-keyboard/){: .btn .mr-4 }
 [Next: Troubleshooting](/sidecartridge-keyboard/troubleshooting/){: .btn }

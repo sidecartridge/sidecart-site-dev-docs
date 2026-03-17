@@ -170,6 +170,9 @@ SIDECARTRIDGE_TOS_FIRMWARE_V3_VERSION: v3.1.0
 SIDECARTRIDGE_TOS_SWITCHER_VERSION: v2.1.0
 SIDECARTRIDGE_TOS_FIRMWARE_V3_VERSION: v3.1.0
 
+# Version of the SidecarTridge Keyboard Emulator
+SIDECARTRIDGE_IKBD_VERSION: v1.0.0
+
 # Google Analytics Tracking (optional)
 ga_tracking: G-6VT9RXTJ2N
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)

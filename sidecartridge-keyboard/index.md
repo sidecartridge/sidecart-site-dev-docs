@@ -13,6 +13,9 @@ has_toc: false
 # SidecarTridge Keyboard Emulator
 {: .d-inline-block }
 
+{{ site.SIDECARTRIDGE_IKBD_VERSION }}
+{: .label .label-purple }
+
 The **SidecarTridge Keyboard Emulator** is a hardware device that emulates the original Atari ST IKBD keyboard controller, allowing modern keyboards, mice, and game controllers to be used on Atari ST-family computers while preserving full compatibility with software that expects the original IKBD behavior.
 
 Unlike simple keyboard adapters that only translate keystrokes, the SidecarTridge Keyboard Emulator reproduces the behavior of the HD6301-based IKBD microcontroller used in the Atari ST, STe, Mega ST, Mega STe, and TT.  
@@ -36,6 +39,13 @@ The project currently exists in two hardware variants that share the same firmwa
 ![SidecarTridge Soufflè external keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-PERSPECTIVE.png)
 
 Both hardware variants use the same firmware architecture, so firmware updates are expected to support both platforms whenever possible.
+
+
+## Latest Stable Firmware: {{ site.SIDECARTRIDGE_IKBD_VERSION }}
+
+- [Download Stable Release {{ site.SIDECARTRIDGE_IKBD_VERSION }}](https://sidecartridge.com/downloads/)
+- [Firmware Update Guide](/sidecartridge-keyboard/firmware-update/)
+- [Keyboard Changelog](/sidecartridge-keyboard/changelog/)
 
 
 ## What this project provides
@@ -126,6 +136,12 @@ Typical use cases for the SidecarTridge Keyboard Emulator include:
     <span class="toc-chip chip-guide">Guide</span>
     <h3>😊 <a href="/sidecartridge-keyboard/user-guide/">User Guide</a></h3>
     <p>Daily operation, expected workflows, and common tasks.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>🔄 <a href="/sidecartridge-keyboard/firmware-update/">Firmware Update</a></h3>
+    <p>How to place the device in BOOTSEL mode and install a newer firmware release.</p>
   </div>
 
   <div class="toc-card">
