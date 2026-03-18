@@ -63,7 +63,7 @@ Bluetooth compatibility in the SidecarTridge Keyboard Emulator follows the devic
 Status legend:
 
 * <span class="label label-green">OK</span> works
-* <span class="label label-yellow">OK WITH CAVEATS</span> works, but requires some extra action by the user
+* <span class="label label-yellow">WORKS WITH NOTES</span> works, but requires some extra action by the user
 * <span class="label label-red">KO</span> does not work
 
 ### Bluetooth keyboards
@@ -75,7 +75,7 @@ Bluepad32 reports these tested keyboards and keyboard-like devices:
 | 8BitDo Retro Mechanical Keyboard | <span class="label label-green">OK</span> | Tested by Bluepad32 |
 | Air Mouse with Touchpad Keyboard | <span class="label label-green">OK</span> | Tested by Bluepad32 |
 | Apple Magic Keyboard 2 model A1644 | <span class="label label-green">OK</span> | Tested by Bluepad32 |
-| Apple Magic Keyboard model A1314 | <span class="label label-yellow">OK WITH CAVEATS</span> | Tested by SidecarTridge. Needs to enter '0000' + ENTER for pairing. |
+| Apple Magic Keyboard model A1314 | <span class="label label-yellow">WORKS WITH NOTES</span> | Tested by SidecarTridge. Needs to enter '0000' + ENTER for pairing. |
 | Esynic Bluetooth Keyboard | <span class="label label-green">OK</span> | Tested by SidecarTridge |
 | Handlebar Media Controller | <span class="label label-green">OK</span> | Tested by Bluepad32 |
 | Microsoft Designer Bluetooth Keyboard | <span class="label label-green">OK</span> | Tested by Bluepad32 |
