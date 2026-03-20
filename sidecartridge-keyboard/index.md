@@ -28,7 +28,7 @@ The project currently exists in two hardware variants that share the same firmwa
 
 - **SidecarTridge Croissant**  
   Internal adapter for Atari ST and Atari STe computers with the internal 7-pin keyboard connector.  
-  Works as a middle-man between the motherboard and the original keyboard path, allowing Bluetooth, USB, and mixed input configurations while preserving compatibility with original devices.
+  Works as a middle-man between the motherboard and the original keyboard path, allowing Bluetooth, and mixed input configurations while preserving compatibility with original devices.
 
 ![SidecarTridge Croissant internal keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-TOP.png)
 
