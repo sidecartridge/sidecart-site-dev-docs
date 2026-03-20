@@ -130,9 +130,11 @@ To enable pass-through mode with the reset code:
 * Wait between 5 and 9 seconds.
 * Release the reset button. The computer will then boot normally with pass-through mode enabled.
 
-Note: if the reset button is held for more than 10 seconds and less than 20 seconds, the device will start in configuration mode.
+{: .note}
+If the reset button is held for more than 10 seconds and less than 20 seconds, the device will start in configuration mode.
 
-Warning: the reset code only affects that boot cycle. To permanently change the operating mode of the Croissant device, enter configuration mode and store the new setting there.
+{: .warning}
+The reset code only affects that boot cycle. To permanently change the operating mode of the Croissant device, enter configuration mode and store the new setting there.
 
 ### Expected behavior in pass-through mode
 
@@ -216,7 +218,8 @@ In the latest firmware version, the following keyboard layouts are supported:
 
 Additional layouts may be added in future firmware versions. If you need a layout that is not currently supported, please open an issue in the GitHub repository so it can be prioritized based on demand.
 
-Note: in normal use, the selected Bluetooth keyboard layout should match the TOS keyboard layout. For example, if the system uses a French TOS, the Bluetooth keyboard should be configured as France ISO (FR). This ensures that the Bluetooth keyboard generates the expected characters and key codes when used with the Atari computer.
+{: .note}
+In normal use, the selected Bluetooth keyboard layout should match the TOS keyboard layout. For example, if the system uses a French TOS, the Bluetooth keyboard should be configured as France ISO (FR). This ensures that the Bluetooth keyboard generates the expected characters and key codes when used with the Atari computer.
 
 ### Mouse speed
 
@@ -378,7 +381,8 @@ In the latest firmware version, the following keyboard layouts are supported:
 
 Additional layouts may be added in future firmware versions. If you need a layout that is not currently supported, please open an issue in the GitHub repository so it can be prioritized based on demand.
 
-Note: in normal use, the selected USB keyboard layout should match the TOS keyboard layout. For example, if the system uses a French TOS, the USB keyboard should be configured as France ISO (FR). This ensures that the USB keyboard generates the correct characters and key codes when used with the Atari computer.
+{: .note}
+In normal use, the selected USB keyboard layout should match the TOS keyboard layout. For example, if the system uses a French TOS, the USB keyboard should be configured as France ISO (FR). This ensures that the USB keyboard generates the correct characters and key codes when used with the Atari computer.
 
 ### Mouse speed
 

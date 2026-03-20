@@ -42,7 +42,7 @@ The RESET button was removed from the latest PCB revisions of both devices becau
 
 ### Why is there no Croissant version for Atari ST computers with an external PSU ("short ST")?
 
-The Croissant version of the SidecarTridge Keyboard Emulator is designed for computers with the 7-pin keyboard connector. Short ST models use a much larger 30-pin connector, which makes the adapter significantly more complex and expensive to design and manufacture. It is probably possible to support them, but there are no plans to do so in the near future.
+The Croissant version of the SidecarTridge Keyboard Emulator is designed for computers with the 7-pin keyboard connector. The well-known "short ST" motherboards C070115 and C070243 use an 18-pin keyboard connector instead and are easy to recognize because they use an external power supply. Supporting those machines would require a different adapter, which makes the design significantly more complex and expensive to develop and manufacture. It is probably possible to support them, but there are no plans to do so in the near future.
 
 ## Souffle
 

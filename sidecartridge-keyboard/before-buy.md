@@ -28,6 +28,9 @@ Choose the hardware variant that matches your Atari computer.
 - **Croissant (internal)**  
   For Atari ST and Atari STe computers with an internal power supply and the internal 7-pin keyboard connector.
 
+{: .warning}
+Croissant does not work on Atari ST motherboards C070115 and C070243. These "short ST" machines use an 18-pin keyboard connector instead, and they are easy to recognize because they have an external power supply.
+
 - **Soufflè (external dongle)**  
   For Atari Mega ST and Atari Mega STe computers with the RJ12 keyboard connector on the left side of the computer.
 
