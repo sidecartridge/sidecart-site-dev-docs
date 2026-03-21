@@ -178,6 +178,21 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
     Your WiFi setup is now complete. From now on, the Booster app will boot directly into **Manager mode**. 
 
+    If you later notice unstable connectivity in **Manager mode**, open the **WiFi view** and enable **Show RSSI**. This will display the RSSI value in dBm for visible WiFi networks and help you estimate signal strength and connection stability. As a general reference, use the first matching threshold in the table below.
+
+    | **RSSI Value (dBm)** | **Signal Strength**     | **Probability of Good Connectivity** |
+    |----------------------|-------------------------|--------------------------------------|
+    | `>= -30 dBm`         | Excellent               | Very high                            |
+    | `>= -40 dBm`         | Very good               | High                                 |
+    | `>= -50 dBm`         | Good                    | Good                                 |
+    | `>= -60 dBm`         | OK                      | Usually good                         |
+    | `>= -67 dBm`         | Minimum for stable WiFi | Acceptable                           |
+    | `>= -70 dBm`         | Weak                    | Borderline                           |
+    | `>= -80 dBm`         | Very weak               | Low                                  |
+    | `< -80 dBm`          | Almost unusable         | Very low                             |
+
+    Below `-80 dBm`, the signal strength is considered weak and can lead to connectivity issues. The board may fail to connect to the selected WiFi network, lose the connection intermittently, or take longer to obtain an IP address from DHCP. Monitoring RSSI values helps you identify networks with stronger signals and connect to more reliable WiFi networks.
+
 Now you can start using the Booster app to manage your microfirmware apps! Learn how to do it in the [User Guide](/sidecartridge-multidevice/userguide_v2/).
 
 {: .note }

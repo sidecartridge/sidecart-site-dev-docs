@@ -83,8 +83,23 @@ The **WiFi view** shows the list of available WiFi networks and permits some bas
 - **Country**: The country code of the WiFi network. This is used to configure the WiFi module to use the correct channels and frequencies.
 - **Hostname**: The hostname of the device. This is used to identify the device on the network. By default is `sidecart`. 
 - **Wifi Power**: The power of the WiFi module. From 0 to 4. 
-- **Show RSSI**: Show the RSSI of the WiFi module. This is used to show the signal strength of the WiFi network.
+- **Show RSSI**: Show the RSSI value in dBm for visible WiFi networks. This helps estimate signal strength and connection stability.
 - **DHCP Enabled**: Enable or disable the DHCP server. This is used to assign IP addresses to the devices connected to the Booster app.
+
+When **Show RSSI** is enabled, the device can show the RSSI value of nearby WiFi networks. As a general reference, use the first matching threshold in the table below.
+
+| **RSSI Value (dBm)** | **Signal Strength**     | **Probability of Good Connectivity** |
+|----------------------|-------------------------|--------------------------------------|
+| `>= -30 dBm`         | Excellent               | Very high                            |
+| `>= -40 dBm`         | Very good               | High                                 |
+| `>= -50 dBm`         | Good                    | Good                                 |
+| `>= -60 dBm`         | OK                      | Usually good                         |
+| `>= -67 dBm`         | Minimum for stable WiFi | Acceptable                           |
+| `>= -70 dBm`         | Weak                    | Borderline                           |
+| `>= -80 dBm`         | Very weak               | Low                                  |
+| `< -80 dBm`          | Almost unusable         | Very low                             |
+
+Below `-80 dBm`, the signal strength is considered weak and can lead to connectivity issues. The board may fail to connect to the selected WiFi network, lose the connection intermittently, or take longer to obtain an IP address from DHCP. Monitoring RSSI values helps you identify networks with stronger signals and connect to more reliable WiFi networks.
 
 Don't forget to click the **Save** button to save the changes!
 
