@@ -178,7 +178,7 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
     Your WiFi setup is now complete. From now on, the Booster app will boot directly into **Manager mode**. 
 
-    If you later notice unstable connectivity in **Manager mode**, open the **WiFi view** and enable **Show RSSI**. This will display the RSSI value in dBm for visible WiFi networks and help you estimate signal strength and connection stability. As a general reference, use the first matching threshold in the table below.
+    If you later notice unstable connectivity, newer firmware versions can also show the signal strength directly on the Atari ST screen, without the need to enter **Manager mode** in the Booster app. You can also open the **WiFi view** and enable **Show RSSI** to display the RSSI value in dBm for visible WiFi networks. As a general reference, use the first matching threshold in the table below.
 
     | **RSSI Value (dBm)** | **Signal Strength**     | **Probability of Good Connectivity** |
     |----------------------|-------------------------|--------------------------------------|
