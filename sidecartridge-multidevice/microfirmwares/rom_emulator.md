@@ -21,6 +21,9 @@ redirect_from:
 
 This is a microfirmware application for the **SidecarTridge Multi-device**, designed to emulate a ROM cartridge for Atari computers, including the **Atari ST, STe, Mega ST, and Mega STe**.
 
+{: .note }
+A list of available ROM files can be found in the [ROMs repository](https://sidecartridge.com/roms/). In a standard ROM emulation setup, ROMs can be downloaded directly using the **[D]ownload** option in the setup screen. When using headless autorun mode, ROM files must typically be copied manually to the microSD card from your computer.
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -123,9 +126,6 @@ In this mode, the **SELECT** button retains its normal function but may behave d
 
 * Pressing **SELECT** causes the ROM Emulator to re-read the `.autorun` file and reload the specified ROM, if available. The green LED will blink slowly to indicate the ROM is ready.
 * Holding **SELECT** for more than 10 seconds does **not** return to the Factory Reset screen. Instead, it **disables headless autorun mode** and returns the system to the Booster menu. The `.autorun` file remains on the microSD card but is ignored until the ROM Emulator is launched again.
-
-{: .note }
-A list of available ROM files can be found in the [ROMs repository](https://sidecartridge.com/roms/). In a standard ROM emulation setup, ROMs can be downloaded directly using the **[D]ownload** option in the setup screen. When using headless autorun mode, ROM files must typically be copied manually to the microSD card from your computer.
 
 
 ## 🛠️ Setting Up the Development Environment
