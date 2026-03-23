@@ -50,6 +50,12 @@ If no key is pressed, the emulator will start emulating the floppy and hard disk
 
 This menu will pop up every time you power on your Atari computer, but not when you reset it. If you want to enter into this menu without powering off your Atari, you can press the **`SELECT`** button on your Multi-device and press the reset button on your Atari.
 
+On first use, the microfirmware will automatically create the default folders it needs on the microSD card if they do not already exist:
+- `/hd` for the GEMDrive hard disk emulation
+- `/floppies` for the floppy emulator
+
+You can change both folders at boot time from the setup screen whenever needed.
+
 ## ⚙️ Setup Screen
 
 ### Information on the Setup Screen
@@ -87,7 +93,7 @@ The concept for the GEMdrive hard disk emulation originated with the GEMDOS comp
 | Command | Description |
 |---------|-------------|
 | **[G]EMDRIVE** | Enable or disable GEMDrive emulation. |
-| **F[o]lder** | Select the folder for the GEMDrive. It allows to navigate through the microSD card's directory structure. |
+| **F[o]lder** | Select the folder for the GEMDrive. By default, the emulator uses `/hd` and creates it automatically on first use if needed. You can change it at boot time by navigating through the microSD card's directory structure. |
 | **[D]rive** | Choose the drive letter for the GEMDrive (e.g., `C:`). Change it if there is a conflict with other hard disk drivers. |
 
 ### Floppy Drive Emulation
@@ -99,7 +105,7 @@ The Floppies Emulation represents a significant enhancement to the Multi-device.
 | Command | Description |
 |---------|-------------|
 | **[F]loppy** | Enable or disable Floppy emulation. |
-| **Fo[l]der** | Select the base folder for the Floppy images. It allows to navigate through the microSD card's directory structure. |
+| **Fo[l]der** | Select the base folder for the Floppy images. By default, the emulator uses `/floppies` and creates it automatically on first use if needed. You can change it at boot time by navigating through the microSD card's directory structure. |
 | **[A] Drive** | Select the .ST (Read only) or .ST.RW  (Read/Write) image file to use as the floppy disk. It  allows to navigate through the microSD card's directory structure. |
 | **[B] Drive** | Select the .ST (Read only) or .ST.RW  (Read/Write) image file to use as the second floppy disk. It allows to navigate through the microSD card's directory structure. |
 | **[SHIFT+A] Drive** | Unmount the floppy disk image from the A: drive. |
