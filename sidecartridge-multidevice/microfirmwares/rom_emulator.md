@@ -47,12 +47,17 @@ After launching, the app will automatically run every time your Atari computer i
 
 If there is no ROM binary file loaded, the app will display a **setup screen**. If there is already a ROM loaded, the app will attempt to run it immediately after powering on your Atari. To return to the setup screen, press **`SELECT`** on your Multi-device and reboot.
 
+On first use, the microfirmware will automatically create the default ROM folder on the microSD card if it does not already exist:
+- `/roms`
+
+Downloaded ROM files are stored in this folder by default.
+
 ### ⚙️ Setup Screen Commands
 
 | Command | Description |
 |---------|-------------|
-| **[B]rowse** | Browse the ROM files on the microSD card. |
-| **[D]ownload** | Download a ROM file from the internet. |
+| **[B]rowse** | Browse the ROM files on the microSD card. By default, ROM files are stored in `/roms`. |
+| **[D]ownload** | Download a ROM file from the internet. Downloaded ROMs are saved in `/roms` by default. |
 | **[S]ettings** | Configure the low level settings for the ROM emulator. |
 | **[R]Ripper** | Enable or Disable the Delay/Ripper mode. It does not load the ROM file until the **`SELECT`** button is pressed. |
 | **[L]aunch** | Launch the selected ROM file, if available. |
@@ -61,8 +66,8 @@ If there is no ROM binary file loaded, the app will display a **setup screen**. 
 
 ### ⬇️ Browsing or Downloading ROM Files
 
-When you select the **[B]rowse** option, the app will display a list of available ROM files on the microSD card. You can navigate through the list using the keyboard and select a ROM file to load it.
-When you select the **[D]ownload** option, the app will show you the list of available ROM files from the internet. You can select a ROM file to download it to your microSD card.
+When you select the **[B]rowse** option, the app will display a list of available ROM files on the microSD card. By default, the ROM Emulator uses the `/roms` folder and creates it automatically on first use if needed. You can navigate through the list using the keyboard and select a ROM file to load it.
+When you select the **[D]ownload** option, the app will show you the list of available ROM files from the internet. You can select a ROM file to download it to your microSD card. Downloaded ROMs are stored in `/roms` by default.
 
 ### 🚀 Launching a ROM
 
