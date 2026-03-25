@@ -77,7 +77,30 @@ Once removed, place the ROM chip on an anti-static mat or in an anti-static bag 
 ### Inspect the Sockets
 Inspect the now-empty sockets on the motherboard for any debris or damage. Clean if necessary, using compressed air or a soft brush.
 
+## Setting the OOPS Bug jumper (only for the Amiga 2000)
 
+While both Amiga 500 (rev 5 and older) and Amiga 2000 motherboards (notably rev 4.2 and older) are affected by the well-known **OOPS bug**, a hardware routing error in the Kickstart ROM address lines present in early Commodore schematics.  
+
+On the Amiga 500 version of the SidecarTridge Kickstart Emulator this setting is implemented as a soldered junction, since the motherboard revision is usually known in advance.  
+On the Amiga 2000, however, the motherboard revision is not always obvious, and many users may not know which version they own when purchasing the device.  
+For this reason, the Amiga 2000 version uses a removable jumper so the OOPS bug compatibility can be easily enabled or disabled if needed.
+
+Because of this bug, some replacement Kickstart ROM devices may fail to boot unless compatibility logic is enabled.
+
+The **SidecarTridge Kickstart Emulator for Amiga 2000 includes an OOPS Bug jumper on the carrier board** to provide compatibility with these early motherboards.
+
+If the jumper is not set properly on affected machines, the Amiga may show a black screen or fail to start after reset.
+
+![OOPS Bug jumper location](/sidecartridge-kickstart/assets/images/sidecartridge-kickstart-oops-bug-jumper.png)
+
+### Setting the jumper
+
+1. Locate the jumper labeled **OOPS BUG** on the SidecarTridge Kickstart Emulator board.
+2. If your Amiga 2000 motherboard is affected by the OOPS bug (rev 4.2 and older), set the jumper to the "YES" position by placing the jumper cap over the designated pins. If the motherboard is not affected, leave the jumper in the "NO" position.
+3. Ensure the jumper is firmly seated before inserting the board into the ROM socket.
+
+
+After setting the jumper, continue with the normal installation procedure.
 ## Plugging the SidecarTridge Kickstart Emulator
 
 Depending on the Amiga model, the SidecarTridge Kickstart Emulator carrier board must be connected to the motherboard in the correct orientation. The following steps provide guidance on connecting the emulator to the Amiga motherboard securely.
