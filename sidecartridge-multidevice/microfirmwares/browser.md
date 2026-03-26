@@ -41,8 +41,6 @@ To install the File & Download Manager app on your SidecarTridge Multi-device:
 4. Click **Download** to install the app onto the microSD card.
 5. Select the newly installed app and click **Launch**.
 
-After launching, the File & Download Manager app will run automatically every time your Atari is powered on.
-
 ## 🕹️ Usage
 
 On boot you’ll see a **QR code** screen. Scan it to open the web UI, or type the displayed hostname/IP address (for example, `http://sidecart.local`).
