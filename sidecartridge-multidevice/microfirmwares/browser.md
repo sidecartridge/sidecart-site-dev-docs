@@ -19,7 +19,7 @@ redirect_from:
 [Report BUG](https://github.com/sidecartridge/md-browser/issues){: .label .label-red }
 [{{ site.MICROFIRMWARE_BROWSER_VERSION }}](){: .label .label-purple }
 
-This microfirmware app for the **SidecarTridge Multi-device** enables you to browse, search, and download files from the public floppy image database, as well as manage files on your microSD card—all from a modern web interface.
+This microfirmware app for the **SidecarTridge Multi-device** lets you browse and download floppy images from the public database, manage files on your microSD card, and even work directly with Atari ST disk images—all from a browser-based UI that runs on your phone, tablet, or desktop.
 
 <details open markdown="block">
   <summary>
@@ -37,160 +37,161 @@ To install the File & Download Manager app on your SidecarTridge Multi-device:
 
 1. **Launch the Booster App** on your SidecarTridge Multi-device.
 2. Open the **Booster web interface** in your browser.
-3. Go to the **Apps** tab and select **File & Download Manager** from the available apps list.
-4. Click **Download** to install the app to your SidecarTridge’s microSD card.
-5. Once installed, select the app and click **Launch** to start it.
+3. Go to the **Apps** tab and select **File & Download Manager** from the list.
+4. Click **Download** to install the app onto the microSD card.
+5. Select the newly installed app and click **Launch**.
 
 After launching, the File & Download Manager app will run automatically every time your Atari is powered on.
 
 ## 🕹️ Usage
 
-When you start your Atari, the app displays a screen with a **QR code**. Scan this QR code with your smartphone or tablet to access the web interface, or enter the URL `http://sidecart.local` in your browser. Some home networks may require using the IP address shown on the screen instead if they do not support mDNS.
+On boot you’ll see a **QR code** screen. Scan it to open the web UI, or type the displayed hostname/IP address (for example, `http://sidecart.local`).
 
-* To **bypass** the QR code screen and boot directly into GEMDOS, press any key.
-* To **return to the Booster App** and select another app, press the **ESC** key.
+* Press **any key** to skip the QR code and boot GEMDOS.
+* Press **ESC** to return to the Booster launcher.
+* You can also jump back to Booster directly from the web UI header.
 
 ### 💾 Floppy Images Database
 
-Click the **Floppy DB** menu option in the web interface to access the **Floppy Images Database**. Here you can browse, search, filter, and download floppy images directly to your microSD card.
+Click **Floppy DB** in the navigation bar to open the public floppy database. The page is divided into two discovery modes:
+
+* **What’s New** – latest uploads curated by the community.
+* **Main Catalog** – the long-term archive, organized by crew label or collection.
 
 ![Floppy Images Database Search Page](/sidecartridge-multidevice/assets/images/BROWSER-FLOPPYDB-MAIN.png)
 
-**Search Options:**
+Use the controls at the top to zero in on what you need:
 
-* **What's new:** Show only files recently added to the database. By default, the application shows the new files added.
-* **Filter by label:** Narrow results by label, such as cracking team names or software type.
-
-Start typing in the search box for smart suggestions. For example, typing `xe` will suggest titles like `Xevious` or `Xenon`.
+* **Search box** – smart suggestions as you type (e.g., `xe` → `Xenon`).
+* **Label chips** – filter by cracking team, app genre, collection tags, etc.
+* **What’s New vs Main Catalog** – flip between recent additions and the deep archive.
 
 ![Floppy Images Database Search Results](/sidecartridge-multidevice/assets/images/BROWSER-FLOPPYDB-RESULT.png)
 
-**Search results** appear as a table with:
+To download an image:
 
-* **Name**: File name
-* **Date**: Date added
-* **Label**: Associated label
-* **Save to**: Button to save the file to your microSD
+1. Click the green **download icon** next to the entry.
+2. Pick the destination folder from the dialog.
+3. Click **Download here** to start the transfer.
 
-To download:
-
-1. Click **Save to** next to the file you want.
-2. Choose a destination folder from the dialog.
-3. Click **Download Here** to start the download.
-
-> **Note:** You must select a folder and then click **Download Here**; clicking the folder name alone is not enough.
-
-When complete, your file is saved to the chosen folder. Use the [Drives Emulator](https://docs.sidecartridge.com/sidecartridge-multidevice/microfirmwares/drives_emulator/) or a solution like Gotek to access your files on your Atari.
+Files land directly on the microSD card. Load them with the [Drives Emulator](https://docs.sidecartridge.com/sidecartridge-multidevice/microfirmwares/drives_emulator/) or any other floppy solution (Gotek, etc.).
 
 ### 🗂️ File Manager
 
 #### Overview
 
-The **File Manager** lets you manage files and folders on your microSD card. You can:
+The File Manager is now a full microSD and floppy image workbench. You can:
 
-* Navigate folders
-* View file details
-* Delete files/folders
-* Upload multiple files
-* Download files
-* Create folders
-* Upload files from internet URLs
+* Browse folders, inspect file metadata, and color-coded attributes.
+* Rename, delete, copy, and move files or folders with progress reporting.
+* Upload multiple files at once or pull files directly from an internet URL.
+* Create folders, blank Atari ST disk images, and `.st`/`.st.rw` containers.
+* Convert `.MSA` ↔ `.ST` floppy images.
+* Mount `.ST` and `.st.rw` images and work inside them (copy, rename, delete, import/export files).
 
 #### Table View
 
-Click **File Manager** in the web interface. You’ll see your microSD card’s contents in a table with columns for:
+Click **File Manager** in the nav. The table lists:
 
-* **Name**
-* **Size**
-* **Timestamp**
-* **Rename** (icon)
-* **Delete** (icon)
+* **Name**, **Size**, **Timestamp**
+* **Actions** (icons for copy, move, rename, delete, download, convert, browse image, etc.)
 
-Toolbar options above the table:
+Toolbar actions include:
 
-* **Upload files**: Select files from your computer to upload (multi-select supported)
-* **Upload from URL**: Download files directly from an internet URL to the current folder
-* **New Folder**: Create a new directory
+* **Upload files** (multi-select)
+* **Upload from URL**
+* **New Folder**
+* **Blank ST Image** (create empty 360 KB/720 KB/1.44 MB/2.88 MB images in `.st` or `.st.rw` format)
 
 ![File Manager Table View](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-ROOT.png)
 
-#### Row Colors
+#### Row Colors & Navigation
 
-Rows are color-coded:
+* **Black** rows – normal files/folders
+* **Gray** rows – hidden entries
+* **Red** rows – read-only items
 
-* **Black:** Standard files and folders
-* **Gray:** Hidden files or folders
-* **Red:** Read-only files
-
-#### Navigation
-
-* Click a folder row to enter it and see its contents.
-* Click **..** at the top to go back to the parent folder.
+Click a folder to enter it; use the leading `..` row to go back.
 
 ![File Manager Navigation](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-NAVIGATION.png)
 
 #### File Actions
 
-Rename or delete files/folders using the icons. Click a file row for more details and options:
+Each row exposes context-aware actions. Depending on the file you can:
 
-* **Toggle hidden** attribute
-* **Toggle read-only** attribute
-* **Rename** file
-* **Delete** file (with confirmation)
-* **Download** file to your computer
+* Toggle **hidden** or **read-only** attributes
+* **Rename**, **delete**, **download**, **copy**, or **move** items
+* **Convert** between `.MSA` and `.ST`
+* **Browse Image** for `.ST` / `.st.rw` contents
 
 ![File Details Actions](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-FILEACTIONS.png)
 
+#### Creating a Blank ST Image
+
+Need a fresh floppy? Click **Blank ST Image**, pick the size, file name, optional volume name, and whether it should be `.st` (read-only) or `.st.rw` (writable/browsable). The image drops straight into the current folder.
+
+![Create Blank ST Image](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-BLANK-ST.png)
+
+#### Converting MSA and ST Images
+
+Use the **convert** icon to flip an `.MSA` into `.ST` (or vice versa) without leaving the browser. Handy when a release comes in the “wrong” format for your workflow.
+
+#### Browsing Inside ST Images
+
+Open any `.ST`/`.st.rw` file with **Browse Image**. The file mounts like a folder so you can inspect or manage its contents. Writable `.st.rw` images support rename, delete, import, and export operations with automatic 8.3 name handling when needed.
+
+![Browsing Inside an ST Image](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-INSIDE-IMAGE.png)
+
 #### Uploading Files
 
-Click **Upload files** to select and upload files from your computer (multiple at once). The upload dialog displays progress bars for each file. New files appear automatically in the table once uploaded.
+* **Upload files** – pick one or multiple files from your computer.
+* **Upload from URL** – fetch a remote file directly into the current folder.
+
+Progress bars track each transfer and completed files appear immediately.
 
 ![File Upload Dialog](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-UPLOADFILES.png)
 ![File Upload Done](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-UPLOADEDFILES.png)
 
 ### 🔌 USB Mass Storage Mode
 
-You can also use your SidecarTridge Multi-device as a USB mass storage device. Simply connect it to your computer via USB, and the microSD card will mount as a regular USB drive. The QR code screen will show a message indicating USB Mass Storage Mode is active.
+Prefer to work from your desktop OS? Plug the Multi-device into USB and the microSD mounts like any other drive. The QR screen displays a USB Mass Storage notice while this mode is active.
 
-> **Note:** You can use the web interface and USB mode simultaneously, but changes made in one mode may not show up immediately in the other. Refresh your browser or file explorer to see updates.
+> You can leave the web UI open while USB mode is active. Just refresh the browser or your file explorer if you don’t immediately see changes from the other side.
 
 ### ⏏️ Exiting to GEMDOS or Booster
 
-* **ESC** on the QR code screen launches the **Booster** app.
-* **Any other key** exits the emulator and boots into the Atari GEM desktop. The web interface remains active.
-* To return to setup, press **SELECT** on your Multi-device and reboot, or power cycle your Atari.
-* **Hold SELECT for 10 seconds** to reset your Multi-device to factory settings (useful for troubleshooting or starting fresh).
+* **ESC** on the QR screen opens **Booster**.
+* The **web UI header** includes a Booster button for quick returns.
+* Any other key exits the app and boots GEM; the web UI stays live in your browser.
+* Hold **SELECT** for 10 seconds to factory-reset the Multi-device (useful for troubleshooting).
 
 ### ♻️ System Reset Behavior
 
-The Drives Emulator app is **resistant to system resets**. Pressing the Atari reset button will **not interrupt downloads or file management**; your session continues seamlessly.
+The File & Download Manager survives warm resets. Pressing RESET on the Atari does not interrupt downloads or file transfers.
 
 ### 🔄 Power Cycling
 
-After a power cycle, the app automatically returns to the QR code screen, ready for the next session.
+After power cycling, the app restarts at the QR code screen ready for another session.
 
 ### ⚙️ Advanced Features
 
 #### Changing the microSD Card Speed
 
-The SPI bus speed (1 MHz – 24 MHz; default is 12.5 MHz) affects all microSD access and is configured in the Booster App:
+The Booster App lets you tune the SPI bus speed (1 MHz – 24 MHz; default 12.5 MHz):
 
-1. Launch the **Booster App** (press **X** if you’re in another app).
-2. Open the web interface and go to the **Config** tab.
-3. Find **SD card bus speed (KHz)** and set your desired speed (e.g., `24000` for 24 MHz).
-4. Click **Save** to apply.
-5. Relaunch the **Drives Emulator** app.
+1. Launch **Booster** (press **X** if you’re in another app).
+2. Open the web UI and go to **Config**.
+3. Set **SD card bus speed (KHz)** (e.g., `24000`).
+4. Click **Save** and relaunch the File & Download Manager.
 
-> **Note:** Values below 1 MHz will default to 1 MHz; above 24 MHz will default to 24 MHz.
->
-> **Tip:** 24 MHz is generally safe, but lower the speed if you encounter issues (e.g., 12.5 MHz or 6 MHz). Most modern microSD cards handle these speeds well.
+> Values below 1 MHz are clamped to 1 MHz; values above 24 MHz are clamped to 24 MHz. 24 MHz works for most cards, but drop it to 12.5 MHz or 6 MHz if you see instability.
 
 ## 📜 License
 
-This project is licensed under the **GNU General Public License v3.0**.  
-See the [LICENSE](https://github.com/sidecartridge/md-drives-emulator/blob/main/LICENSE) file for full terms.
+The source code is released under the **GNU General Public License v3.0**. See the [LICENSE](https://github.com/sidecartridge/md-browser/blob/main/LICENSE) file for details.
 
 ## 🤝 Contributing
+
 Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
 [Previous: Multidevice Test](/sidecartridge-multidevice/microfirmwares/multidevice-test/){: .btn .mr-4 }
