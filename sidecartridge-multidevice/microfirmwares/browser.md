@@ -41,10 +41,6 @@ To install the File & Download Manager app on your SidecarTridge Multi-device:
 4. Click **Download** to install the app onto the microSD card.
 5. Select the newly installed app and click **Launch**.
 
-> ⚠️ The Booster loader is still considered **alpha** software. Use it at your own risk.
-
-After installing, the File & Download Manager runs automatically every time the Atari powers on.
-
 ## 🕹️ Usage
 
 On boot you’ll see a **QR code** screen. Scan it to open the web UI, or type the displayed hostname/IP address (for example, `http://sidecart.local`).
