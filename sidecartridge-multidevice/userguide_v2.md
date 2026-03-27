@@ -35,7 +35,11 @@ Thanks to the  Booster Manager Mode, users can now easily manage microfirmware a
 
 In **Manager mode**, the Booster app will automatically connect to your configured WiFi network and will automatically connect to the public repository of microfirmware apps, displaying them in the web interface. The web interface is accessible from any computer or mobile device connected to the same WiFi network as the Booster app.
 
+Starting with Booster v2.1.0, if Wi-Fi negotiations fail the Manager falls back to an offline-safe mode: the Atari ST terminal remains active so you can still boot the microfirmwares that are already downloaded. Press `ESC` on the terminal to enter the apps workflow, or hold any `SHIFT` key to keep booting from GEMDOS without touching the web UI.
+
 If your DHCP network supports a DNS with `.local` domains, you can access the web interface using `http://sidecart.local`. Otherwise, use the IP address assigned by your DHCP server and visible on your computer screen.
+
+The Atari ST Manager screen and the shared web status banner also show live Wi-Fi signal strength and the Pico W MAC address, and Booster replies to ICMP ping requests while connected so network troubleshooting is easier.
 
 > **Note**: The device needs a SDHC or SDXC microSD card formatted with **exFAT** or **FAT32** file system to work properly. The app will warn the user if the microSD card is not present or not formatted correctly.
 
@@ -47,7 +51,7 @@ The **Apps view** shows:
 - The list of installed apps on the device.
 - The list of apps that are not installed but are available on the microSD card.
 
-This view is the default view when you access the web interface.
+This view is the default view when you access the web interface. At the top of the Apps page you can use the **Platform** and **Features** filters to narrow the catalog dynamically without scrolling through every entry.
 
 ![Booster Manager Apps View 1](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APPS-1.png)
 
@@ -69,6 +73,8 @@ At the right hand side of each app, you can see the following buttons:
 ![Booster Manager Apps View 3](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APPS-3.png)
 
 When launching an app, the computer screen will show a message indicating that the app is being launched. The Booster app will make its best effort to also reboot the computer, but this may not always be possible. So assume that the computer is not rebooted and you need to do it manually.
+
+When the ST keyboard is handy you can also press `ESC` to open the terminal-driven apps workflow or hold `SHIFT` to continue booting from GEMDOS. That manual launcher works even if Wi-Fi is unavailable, so any microfirmware already downloaded remains usable in offline scenarios.
 
 The Booster microfirmware app is now installed in the flash memory of the device, and every time you power on the device, it will automatically launch the app. 
 
@@ -109,7 +115,7 @@ It's also possible to change the WiFi network. To do this, click on the new WiFi
 
 The Booster app will save the WiFi credentials to flash memory and reboot. It will then connect to your WiFi network and show a message on the computer screen.
 
-> **Note**: If the Booster app is not able to connect to the WiFi network, press SELECT button for ten seconds and power off and power on the device and the computer to start the Factory mode again.
+> **Note**: If the Booster app is not able to connect to the WiFi network, Starting with Booster v2.1.0 the Manager will stay in offline mode so you can still launch already-downloaded apps from the keyboard. Only press the SELECT button for ten seconds (to return to Factory mode) if you actually need to reconfigure Wi-Fi from scratch.
 
 ### Device view
 
