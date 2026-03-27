@@ -35,7 +35,7 @@ Thanks to the  Booster Manager Mode, users can now easily manage microfirmware a
 
 In **Manager mode**, the Booster app will automatically connect to your configured WiFi network and will automatically connect to the public repository of microfirmware apps, displaying them in the web interface. The web interface is accessible from any computer or mobile device connected to the same WiFi network as the Booster app.
 
-If Wi-Fi negotiations fail, Booster v2.1.0 falls back to an offline-safe Manager: the Atari ST terminal remains active so you can still boot the microfirmwares that are already downloaded. Press `ESC` on the terminal to enter the apps workflow, or hold any `SHIFT` key to keep booting from GEMDOS without touching the web UI.
+Starting with Booster v2.1.0, if Wi-Fi negotiations fail the Manager falls back to an offline-safe mode: the Atari ST terminal remains active so you can still boot the microfirmwares that are already downloaded. Press `ESC` on the terminal to enter the apps workflow, or hold any `SHIFT` key to keep booting from GEMDOS without touching the web UI.
 
 If your DHCP network supports a DNS with `.local` domains, you can access the web interface using `http://sidecart.local`. Otherwise, use the IP address assigned by your DHCP server and visible on your computer screen.
 
@@ -115,7 +115,7 @@ It's also possible to change the WiFi network. To do this, click on the new WiFi
 
 The Booster app will save the WiFi credentials to flash memory and reboot. It will then connect to your WiFi network and show a message on the computer screen.
 
-> **Note**: If the Booster app is not able to connect to the WiFi network, Booster v2.1.0 will stay in offline Manager mode so you can still launch already-downloaded apps from the keyboard. Only press the SELECT button for ten seconds (to return to Factory mode) if you actually need to reconfigure Wi-Fi from scratch.
+> **Note**: If the Booster app is not able to connect to the WiFi network, Starting with Booster v2.1.0 the Manager will stay in offline mode so you can still launch already-downloaded apps from the keyboard. Only press the SELECT button for ten seconds (to return to Factory mode) if you actually need to reconfigure Wi-Fi from scratch.
 
 ### Device view
 

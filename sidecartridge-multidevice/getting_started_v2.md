@@ -184,7 +184,7 @@ picotool load -xv dist/rp-booster-$VERSION.uf2
 
     Your WiFi setup is now complete. From now on, the Booster app will boot directly into **Manager mode**. 
 
-    Even if Wi-Fi never connects, Booster v2.1.0 no longer leaves you stranded: after the retry cycle it keeps the Atari ST terminal active so you can press `ESC` to open the apps workflow or hold any `SHIFT` key to keep booting from GEMDOS. From there you can launch the microfirmwares you already downloaded, entirely offline.
+    Starting with Booster v2.1.0, even if Wi-Fi never connects you are no longer stranded: after the retry cycle the Atari ST terminal stays active so you can press `ESC` to open the apps workflow or hold any `SHIFT` key to keep booting from GEMDOS. From there you can launch the microfirmwares you already downloaded, entirely offline.
 
     If you later notice unstable connectivity, newer firmware versions can also show the signal strength directly on the Atari ST screen, without the need to enter **Manager mode** in the Booster app. You can also open the **WiFi view** and enable **Show RSSI** to display the RSSI value in dBm for visible WiFi networks. As a general reference, use the first matching threshold in the table below.
 
