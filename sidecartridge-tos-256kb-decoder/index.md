@@ -9,14 +9,14 @@ has_toc: false
 ---
 
 
-![SidecarTridge TOS 256KB Decoder](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOXED-KIT-BOARD-V3.png)
+![SidecarTridge TOS 256KB Decoder for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-KIT-TOP-BOARD-REV4.png)
 
 # SidecarTridge TOS 256KB Decoder
 
-The SidecarTridge TOS 256KB Decoder is an add-on device board for the SidecarTridge TOS emulator that allows you to decode the 256KB ROMs used in the Atari STe and Mega STe computers in the Atari ST and Mega ST series. The SidecarTridge TOS 256KB Decoder is designed to work along with the SidecarTridge TOS emulator to provide a seamless experience.
+The SidecarTridge TOS 256KB Decoder is an add-on device board for the SidecarTridge TOS emulator that allows you to decode the 256KB ROMs used in the Atari STe and Mega STe computers in the Mega ST series. The SidecarTridge TOS 256KB Decoder is designed to work along with the SidecarTridge TOS emulator to provide a seamless experience on supported Mega ST systems.
 
 {: .warning }
-This device is not a plug and play solution. It requires soldering skills and knowledge of electronics to install it. If you are not comfortable with soldering, please seek professional help to avoid damaging your Atari ST motherboard. **Do not attempt to install this device if you are not experienced with soldering.**
+The current installation process documented in this section only applies to Atari Mega ST computers using the SidecarTridge TOS Emulator carrier board revision 4 and higher. If you have an older TOS Emulator carrier board revision, see the [discontinued hardware installation page](/sidecartridge-tos-256kb-decoder/hardware-installation-discontinued/) for reference only.
 
 ## Table of Contents
 
@@ -82,7 +82,7 @@ This device is not a plug and play solution. It requires soldering skills and kn
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
     <h3>⚙️ <a href="/sidecartridge-tos-256kb-decoder/hardware-installation/">Hardware Installation</a></h3>
-    <p>Learn how to install the device in your computers.</p>
+    <p>Learn how to install the current Mega ST version with TOS Emulator carrier board revision 4 and higher.</p>
   </div>
 
   <div class="toc-card">

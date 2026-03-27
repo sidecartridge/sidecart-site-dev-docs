@@ -10,7 +10,10 @@ parent: SidecarTridge TOS 256KB Decoder
 # Hardware Installation
 {: .no_toc }
 
-This chapter will guide you through the process of installing the SidecarTridge TOS 256KB Decoder in your Atari ST or Mega ST series computer, specifically how to solder the decoder to the Motorola 68000 CPU. Once the decoder is installed, you can continue with the installation of the SidecarTridge TOS Emulator as described in the [hardware installation guide](/sidecartridge-tos/hardware-installation/).
+This chapter will guide you through the installation of the current SidecarTridge TOS 256KB Decoder in your Atari Mega ST computer. This installation process only applies to Mega ST computers using the SidecarTridge TOS Emulator carrier board revision 4 and higher. Unlike the discontinued previous versions, this decoder plugs into the MEGABUS connector and does not require soldering on the Motorola 68000 CPU. Once the decoder is installed, you can continue with the installation of the SidecarTridge TOS Emulator as described in the [hardware installation guide](/sidecartridge-tos/hardware-installation/).
+
+{: .warning}
+This current installation guide only applies to Atari Mega ST computers with the SidecarTridge TOS Emulator carrier board revision 4 and higher. If you have an older TOS Emulator carrier board revision, visit the [discontinued hardware installation page](/sidecartridge-tos-256kb-decoder/hardware-installation-discontinued/) for reference only.
 
 <details open markdown="block">
   <summary>
@@ -21,156 +24,119 @@ This chapter will guide you through the process of installing the SidecarTridge 
 {:toc}
 </details>
 
-## Accessing the Motorola 68000 CPU
+## Accessing the MEGABUS Connector
 
 ### Overview
 
-In order to install the SidecarTridge TOS 256KB Decoder, you will need to access the Motorola 68000 CPU on the Atari ST or Mega ST motherboard. The decoder board must be soldered directly onto the CPU to function correctly. This process requires precision and care to avoid damaging the CPU or other components on the motherboard.
+To install the current SidecarTridge TOS 256KB Decoder, you need to open the Atari Mega ST and access the MEGABUS connector on the motherboard. This version is a solderless design, so the decoder board plugs into the bus connector instead of being attached to the Motorola 68000 CPU.
 
-{: .warning}
-Soldering the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU requires soldering skills and knowledge of electronics. If you are not experienced with soldering, it is recommended to seek professional assistance to avoid damaging your Atari ST or Mega ST motherboard.
+You will also need the compatible Mega ST carrier board for the SidecarTridge TOS Emulator, revision 4 or higher, because the decoder works together with that board through the supplied 6-pin flat cable.
 
 ### Tools Required
-- Soldering iron
-- Low temperature solder or solder paste
-- Flux
-- Isopropyl alcohol
-- Multimeter
-- Blue tack (optional)
-
+- Phillips-head screwdriver
+- Anti-static wrist strap (recommended)
+- Small container for screws
+- Insulation tape (optional)
 
 ### Safety Precautions
-1. **Power Off and Unplug:** Ensure the Atari ST is powered off and unplugged from any power source before beginning the disassembly.
-2. **Ground Yourself:** Wear an anti-static wrist strap to prevent static electricity from damaging internal components. Alternatively, touch a grounded metal object periodically to discharge static electricity.
-3. **Work on a Clean Surface:** Use a clean, static-free workspace to prevent any debris or static discharge from interfering with the components.
+1. **Power Off and Unplug:** Ensure the Atari Mega ST is powered off and unplugged from any power source before opening the case.
+2. **Ground Yourself:** Wear an anti-static wrist strap or touch a grounded metal object periodically to avoid static damage.
+3. **Work on a Clean Surface:** Use a clean, static-free workspace and keep screws and loose parts organized.
 
-## Locate the Motorola 68000 CPU pins
+## Locate the MEGABUS Connector
 
 ### Alignment and Orientation of the Decoder
 
-The SidecarTridge TOS 256KB Decoder board is designed to be soldered directly onto the Motorola 68000 CPU. The board has a specific alignment and orientation to ensure proper functionality. The decoder board should be aligned with the CPU pins and soldered in place according to the following guidelines:
+The current SidecarTridge TOS 256KB Decoder plugs into the Atari Mega ST MEGABUS connector. The decoder board must be inserted straight and evenly so it sits squarely in the connector without mechanical stress.
 
-1. **Orientation**: The decoder board should be oriented with the components facing up, the solder pins facing down sitting on the CPU pins, and the connector facing towards the opposite side of the CPU orientation notch.
+When positioning the board:
 
-![Motorola 68000 orientation](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-1.png)
+1. **Keep the components facing up:** The chips and silkscreen on the decoder board should face upward once installed.
+2. **Route the flat cable toward the carrier board:** The 6-pin flat cable should leave the decoder board toward the area where the TOS Emulator carrier board is installed.
+3. **Do not force the connector:** If the board does not seat easily, remove it and check the orientation again before applying pressure.
 
-2. **Alignment**: The decoder board must sit on top of the CPU pins with the same numbers displayed on the CPU and the decoder board. The pins should align correctly to ensure a proper connection. The motherboards have the pins numbered from 1 to 64, but if the numbers are blurred or missing, you can use the CPU orientation notch as a reference: the pin at the top left corner is pin 1, and the pin at the top right corner is pin 64.
+The following images show the current Mega ST decoder board on its own, making it easier to identify the connector side and the component-facing top side before installation.
 
-The left side of the decoder has the following signals printed, with the pin numbers in parentheses:
+![SidecarTridge TOS 256KB Decoder board top view for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-TOP.png)
 
-- AS (6) 
-- RW (9)
-- DTACK (10)
-- BGACK (12) (V2.0 only with Blitter Patch enabled)
-- CLK (15) (V2.0 only with Blitter Patch enabled)
-- RESET (18) (V2.0 only with Blitter Patch enabled)
+![SidecarTridge TOS 256KB Decoder board perspective view for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-PERSPCTIVE.png)
 
-and the right side has the following signals printed, with the pin numbers in parentheses:
+Before pressing the board into place, double-check that the connector is aligned correctly and that the cable will not be twisted or pinched once installed.
 
-- A16 (44)
-- A17 (45)
-- A20 (48)
-- +5V (49)
-- A21 (50)
-- A22 (51)
-- A23 (52)
-- GND (53)
+### Plug the Decoder into the MEGABUS Connector
 
-![256KB Decoder orientation top](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-2.png)
+1. **Open the Mega ST case:** Remove the top cover and metal shielding as needed to gain clear access to the motherboard.
+2. **Find the MEGABUS connector:** It is the long expansion connector on the Mega ST motherboard.
+3. **Align the decoder board:** The decoder board has a set of numbers printed on the silkscreen that should be visible and facing up when the board is installed. Plug the board into the MEGABUS connector pins 11 and 12 starting from the left side of the connector (when looking at the motherboard with the power connector on the right). The silkscreen also has small arrows pointing to the CPU.
 
-![256KB Decoder orientation right](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-3.png)
+```
+                     + PLUG IN THE DECODER BOARD HERE
+                     |
+                     |
+ 2   4   6   8   10  12  14  16  18  20  22  24  26  28  30
+[:   :   :   :   :   :   :   :   :   :   :   :   :   :   : :
+ 1   3   5   7   9   11  13  15  17  19  21  23  25  27  29
+                     |
+                     |
+                     + PLUG IN THE DECODER BOARD HERE                
+```
 
-![256KB Decoder orientation left](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-SOLDERING-4.png)
-
-Before starting with the soldering process, ensure that the decoder board is correctly aligned and oriented with the Motorola 68000 CPU.
-
-The low profile pins sit about 5 mm above the CPU, which gives the chip enough space to breathe and prevents overheating. If you are installing the device on a C070789 motherboard, the clearance between the decoder board and the metal shield can get a bit tight.
-
-As a general rule, there is no real need to keep the metal shielding on a modded Atari ST, but if you remove it, always put a strip of insulation tape on top of the decoder board to avoid accidental shorts.
-
-If you really want to keep the metal shield, you can bend the pins slightly outward so the decoder board sits a little lower. This reduces the height and gives you the clearance you need, but you lose some airflow around the CPU.
+4. **Press evenly:** Apply gentle, even pressure until the board is fully seated.
+5. **Check clearance:** Make sure the decoder board is stable and that nearby cables or shielding will not push against it.
 
 {: .note}
-A little bit of blue tack can be used to hold the decoder board in place while soldering. This will help to keep the board aligned with the CPU pins and prevent it from moving during the soldering process.
+The current decoder is a solderless Mega ST design. No soldering is required on the Motorola 68000 CPU.
 
-### Soldering the Decoder to the CPU with Low-Temperature Solder
+### A Note to Mega ST Owners
 
-Given the age and heat sensitivity of these computers, it’s recommended to use low-temperature solder when attaching the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU. This type of solder melts at a lower temperature than standard solder, minimizing the risk of damage to the CPU and other components on the motherboard.
+Most Mega ST motherboards have a Blitter patch soldered on top of the Motorola 68000 CPU. The current SidecarTridge TOS 256KB Decoder is designed to work with that Blitter patch left in place, so there is no need to remove or relocate it.
 
-1. **Apply Flux**: Begin by applying a small amount of flux to the CPU pins to help the solder flow smoothly and ensure a strong bond.
-2. **Align the Decoder**: Carefully position the SidecarTridge TOS 256KB Decoder board on top of the Motorola 68000 CPU, making sure the pins are properly aligned.
-3. **Solder the Pins**: With a soldering iron, solder each pin of the decoder board to the corresponding pin on the CPU. Take care to avoid creating solder bridges between adjacent pins.
-4. **Inspect the Solder Joints**: Once all pins are soldered, inspect each connection to ensure secure soldering with no solder bridges or cold joints.
-5. **Clean the Board**: Use isopropyl alcohol to clean the board and remove any flux residue.
+## Verify the Installation
 
-### Soldering the Decoder to the CPU with Solder Paste
+After plugging the SidecarTridge TOS 256KB Decoder into the MEGABUS connector, inspect the installation carefully before powering on the computer.
 
-Alternatively, solder paste can be used to attach the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU. Solder paste is a blend of flux and solder particles applied to the CPU pins and decoder board, then reflowed to create a strong bond.
+Check the following points:
 
-1. **Apply Solder Paste**: Using a fine-tipped applicator or syringe, apply a small amount of solder paste to the CPU pins.
-2. **Align the Decoder**: Position the SidecarTridge TOS 256KB Decoder board carefully on top of the Motorola 68000 CPU, ensuring proper pin alignment.
-3. **Reflow the Solder**: Use a hot air rework station or reflow oven to heat the solder paste, bonding the decoder board and CPU pins. If a reflow station isn’t available, you can use a soldering iron to heat the solder paste, taking care not to overheat the components.
-4. **Inspect the Solder Joints**: After reflowing, inspect each connection to confirm secure soldering with no solder bridges or cold joints.
-5. **Clean the Board**: Clean the board with isopropyl alcohol to remove any remaining flux residue.
+1. The decoder board is fully seated and level in the MEGABUS connector.
+2. The 6-pin flat cable is not twisted, pinched, or under tension.
+3. The carrier board for the SidecarTridge TOS Emulator is installed correctly in the ROM sockets.
+4. No part of the decoder, cable, or carrier board can touch the metal shielding.
 
 {: .warning}
-If you’re not confident in your soldering skills or don’t have the proper tools, it’s advisable to seek professional assistance for installing the SidecarTridge TOS 256KB Decoder. Improper soldering could damage the CPU or other motherboard components.
-
-
-### A note to Mega ST owners 
-
-#### 256KB Decoder V1.0
-
-Some Mega ST models already have a board soldered on top of the CPU. This board is called the 'Blitter Fix' or 'Blitter Patch' and must be removed and placed on top of the SidecarTridge TOS 256KB Decoder. It is a small PCB that corrects a design flaw in the Mega ST motherboard related to the Blitter chip. The soldering of both boards is a bit tricky, but it can be done with care and precision as shown in the following image:
-
-![256KB Decoder to Blitter Fix to Mega ST CPU](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-BLITTER.png)
-
-#### 256KB Decoder V2.0
-
-The SidecarTridge TOS 256KB Decoder V2.0 already has the Blitter patch integrated into the design. This means that you can use the SidecarTridge TOS 256KB Decoder V2.0 and removing the Blitter patch.
-
-To install the SidecarTridge TOS 256KB Decoder V2.0, follow the same steps as described above for the V1.0 version and also:
-
-1. Disconnect the cable from the motherboard to the Blitter patch and connect it to the SidecarTridge TOS 256KB Decoder V2.0 `WIRE` pad as shown in the following image below.
-2. Solder the Blitter Patch specific pins `BGACK`, `CLK`, and `RESET` to the Motorola 68000 CPU. These pins are easy to identify because they have white silkscreen on the board.
-
-![256KB Decoder V2.0 to Mega ST CPU](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-BLITTER-V2.png)
-
-
-### Verify the Installation
-
-After soldering the SidecarTridge TOS 256KB Decoder to the Motorola 68000 CPU, it’s essential to verify the installation to ensure all connections are secure. Before powering on your Atari ST or Mega ST, use a multimeter to check continuity between the decoder board pins and the CPU pins to confirm proper connections. Also, check continuity between adjacent pins to ensure there are no unintended solder bridges.
-
-If the original ROMs are still installed on the motherboard, you can power on the computer to verify that it boots correctly. A successful installation of the decoder board will not affect the computer’s operation until the SidecarTridge TOS Emulator is added.
-
-{: .warning}
-Do not proceed to the next step until you have confirmed that the SidecarTridge TOS 256KB Decoder does not interfere with the normal operation of the Atari ST or Mega ST with the original ROMs installed.
+Do not power on the Atari Mega ST until you have confirmed that the decoder board and cable are installed securely and have enough clearance from the shielding and surrounding components.
 
 ## Continue with the SidecarTridge TOS Emulator Installation
 
-Once the SidecarTridge TOS 256KB Decoder is installed on the Motorola 68000 CPU, you can proceed with the installation of the SidecarTridge TOS Emulator as described in the [hardware installation guide](/sidecartridge-tos/hardware-installation/). The decoder board will work in conjunction with the emulator to provide access to 256KB ROMs on your Atari ST or Mega ST computer.
+Once the SidecarTridge TOS 256KB Decoder is plugged into the MEGABUS connector, you can proceed with the installation of the SidecarTridge TOS Emulator as described in the [hardware installation guide](/sidecartridge-tos/hardware-installation/).
+
+For Atari Mega ST computers, use the compatible carrier board revision 4 or higher that fits the `FC-L` and `FC-H` ROM sockets. The decoder board works together with that carrier board to provide access to both 192KB and 256KB ROM configurations.
 
 ## Connect the Decoder to the Carrier Board
 
-Once the SidecarTridge TOS 256KB Decoder is soldered to the Motorola 68000 CPU and the TOS Emulator installed, connect the decoder board to the SidecarTridge TOS emulator carrier board using the 6-pin flat cable. The connector should be securely attached to both boards to ensure a proper connection.
+Once the decoder board is installed in the MEGABUS connector and the TOS Emulator carrier board is installed in the ROM sockets, connect both boards using the supplied 6-pin flat cable.
 
-This is how it should look like in an Atari ST:
-![256KB Decoder to TOS Emulator for Atari ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-STDUAL-MOTHERBOARD.png)
+Insert the cable fully into the connectors on both boards and route it so it is not twisted or trapped under the shielding. The cable should follow a relaxed path between the decoder and the carrier board, as shown below with the decoder installed in the MEGABUS connector.
 
-And this is how it should look like in a Mega ST:
-![256KB Decoder to TOS Emulator for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-MOTHERBOARD.png)
+![256KB Decoder installed in the Atari Mega ST MEGABUS connector](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-MEGAST-MOTHERBOARD-MEGABUS.png)
 
 ## Metal Shielding
 
-Most modded Atari ST computers have the metal shielding removed. The shield was designed for RF compliance in the 80s, not for modern upgrades. Once you start adding things like TOS decoders, ROM emulators, extra RAM, or accelerators, the space under the shield becomes too tight. Most users simply remove it to avoid mechanical stress on components and to improve airflow. The only thing you must do is add insulating tape or a protective layer anywhere a board could touch metal, just in case the top shield is still partially installed.
+The current Mega ST decoder is lower profile than the discontinued CPU-mounted versions, but you still need to check the available space carefully before reinstalling the metal shielding.
 
-If you removed the metal shielding from your Atari ST or Mega ST during the installation process, you can choose to reinstall it. However, ensure that there is sufficient clearance between the decoder board and the metal shield to prevent any shorts or interference. If necessary, use insulation tape on top of the decoder board to provide additional protection.
+If you choose to reinstall the shielding:
+
+1. Make sure the decoder board is not being pushed sideways.
+2. Ensure the 6-pin flat cable is not trapped between metal parts.
+3. Add insulation tape wherever a board or cable could touch the shield.
+
+If the shielding does not fit cleanly without pressing on the hardware, do not force it.
 
 ## Power On and Test
 
-After completing the installation of the SidecarTridge TOS 256KB Decoder and the TOS Emulator, power on the Atari ST or Mega ST computer to test the functionality of the decoder board. If the installation was successful, you should be able to access and run different TOS versions and custom ROMs on your Atari ST or Mega ST computer.
+After completing the installation of the SidecarTridge TOS 256KB Decoder and the TOS Emulator, power on the Atari Mega ST computer and verify that it boots normally.
+
+If the installation was successful, you should be able to use compatible 192KB and 256KB TOS images with the matching SidecarTridge TOS Emulator setup. If the computer does not boot correctly, power it off and recheck the MEGABUS connection, the carrier board alignment, and the 6-pin cable routing.
 
 [Previous: Before you buy](/sidecartridge-tos-256kb-decoder/before-buy/){: .btn .mr-4 }
 [Main](/sidecartridge-tos-256kb-decoder/){: .btn .mr-4 }
 [Next: Compatibility](/sidecartridge-tos-256kb-decoder/compatibility/){: .btn }
-

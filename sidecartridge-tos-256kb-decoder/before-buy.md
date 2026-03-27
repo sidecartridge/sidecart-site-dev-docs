@@ -8,50 +8,46 @@ parent: SidecarTridge TOS 256KB Decoder
 
 # Before You Buy
 
-The SidecarTridge TOS 256KB decoder is designed to work ONLY with specific Atari ST and MegaST models and motherboards. There are different versions of the device to accommodate various motherboard configurations. 
+The SidecarTridge TOS 256KB decoder is designed to work ONLY with specific Atari Mega ST motherboards and with the SidecarTridge TOS Emulator carrier board revision 4 and higher.
+
+{: .warning}
+The current installation process documented in this section only applies to Atari Mega ST computers with the SidecarTridge TOS Emulator carrier board revision 4 and higher. If you have an older TOS Emulator carrier board revision, see the [discontinued hardware installation page](/sidecartridge-tos-256kb-decoder/hardware-installation-discontinued/) for reference only.
 
 **Please follow these steps before purchasing the emulator**:
 
-### Check Your Atari ST Motherboard Model
+### Check Your Atari Mega ST Motherboard Model
 
-To learn more about your Atari ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos-256kb-decoder/compatibility/) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
+To learn more about your Atari Mega ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos-256kb-decoder/compatibility/) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
 
-For example:
+### ROM Configuration
 
-An Atari ST motherboard model number might look like this:
-![Atari ST Motherboard Model](/sidecartridge-tos-256kb-decoder/assets/images/sidecartridge-st2-motherboard.png)
-
-### Dual or Hexa ROM Configuration
-
-While the 256KB Decoder is designed for computers with two (DUAL) and six (HEXA) ROM sockets, the online store currently offers only the DUAL version for motherboards 070789-001, C103175-001, C103414-001 and the Mega ST C103544-001, C103277, C100167, C100501. The Six ROMS version is only available for the "short ST" motherboards C070243. If you have a special request, please contact us for more information.
+For Atari Mega ST systems, the online store currently offers the DUAL version for motherboards C103544-001, C103277, C100167, and C100501. If you have a special request, please contact us for more information.
 
 ### ROMs Plugged or Soldered
 
 If your ROMs are plugged, congratulations, you can proceed with the purchase. If they are soldered, you will need to desolder them and plug them into sockets. 
 
 {: .warning}
-If you are not comfortable with desoldering and soldering, please seek professional help to avoid damaging your Atari ST motherboard. We strongly recommend using an experienced technician to perform this task.
+If you are not comfortable with desoldering and soldering, please seek professional help to avoid damaging your Atari Mega ST motherboard. We strongly recommend using an experienced technician to perform this task.
 
-###  A note about the Blitter Patch in the Mega ST
+### A Note About the Blitter Patch in the Mega ST
 
-Most of the Mega ST motherboards have a Blitter patch soldered on top of the Motorola 68000 CPU. While the SidecarTridge TOS 256KB decoder V1.0 is compatible with the Blitter patch, the version 2.0 (Released 28th of February 2025) already has the Blitter patch integrated into the design. This means that you can use the SidecarTridge TOS 256KB decoder V2.0 and removing the Blitter patch.
+Most of the Mega ST motherboards have a Blitter patch soldered on top of the Motorola 68000 CPU. The new SidecarTridge TOS 256KB Decoder is designed to work with the Blitter patch in place, so you do not need to remove it. 
 
 ### Purchase the Right SidecarTridge TOS 256KB Decoder Kit
 
-Once you have verified the compatibility of your Atari ST motherboard, you can proceed to purchase the appropriate SidecarTridge TOS 256KB Decoder emulator kit. Ensure you select the correct kit based on your motherboard model number and the number of ROMs.
+Once you have verified the compatibility of your Atari Mega ST motherboard and that you are using the SidecarTridge TOS Emulator carrier board revision 4 or higher, you can proceed to purchase the appropriate SidecarTridge TOS 256KB Decoder emulator kit. Ensure you select the correct kit based on your motherboard model number.
 
 
-| Kit | Supported Motherboards           |
+| Kit | Supported Motherboards |
 |--------------------------------|----------------------------------|
-| [ST+ and STM Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50843744108877)           | 070243 |
-| [STF and STFM Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433379661)           | 070789-001, C103175-001, C103414-001 |
-| [Mega ST Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433412429)               | C103544-001, C103277, C100167, C100501 |
+| [Mega ST Kit](https://store.sidecartridge.com/products/256kb-decoder-tos-emulator-for-atari-st-megast?variant=50500433412429) | C103544-001, C103277, C100167, C100501 |
 
 ### A final note about The Art of Modding
 
-Modding a 35 to 40 year old computer is never completely risk free. Even if installing the device itself is straightforward, you have to accept that **the machine will not remain in its original factory state**. Working on old hardware often means removing the metal shielding, leaving the case open, adjusting wiring, or making other small changes that were never part of the original design. For the 256KB Decoder for C070789 motherboard I recommend to remove the metal shielding carefully and keep it safe for future use.
+Modding a 35 to 40 year old computer is never completely risk free. Even if installing the device itself is straightforward, you have to accept that **the machine will not remain in its original factory state**. Working on old hardware often means removing the metal shielding, leaving the case open, adjusting wiring, or making other small changes that were never part of the original design.
 
-These machines are fragile, and sometimes a simple slip can be fatal. If you decide to mod an Atari ST, do it with patience, the right tools, and the understanding that this is part of the process. That is the art of modding.
+These machines are fragile, and sometimes a simple slip can be fatal. If you decide to mod an Atari Mega ST, do it with patience, the right tools, and the understanding that this is part of the process. That is the art of modding.
 
 
 
