@@ -33,6 +33,14 @@ has_toc: false
 
 A Microfirmware app is a small, self-contained program that runs on a standalone RP2040 or RP235x chip, along with a companion firmware on your computer that talks to it. Together, they provide the features of the device.
 
+### Launching microfirmwares from the Atari ST terminal
+Booster v2.1.0 lets you launch any microfirmware that is already downloaded even when Wi-Fi is unavailable. When the Manager screen appears on the Atari ST:
+
+- Press `ESC` to enter the terminal-driven apps workflow. Use the keyboard to pick the microfirmware you want to boot.
+- Hold any `SHIFT` key if you simply want to keep booting from GEMDOS without touching the web UI.
+
+This offline-safe launcher is useful when the access point is down, the router blocks the device, or you just prefer not to open the web interface.
+
 ### Available Microfirmware Apps
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem;">
