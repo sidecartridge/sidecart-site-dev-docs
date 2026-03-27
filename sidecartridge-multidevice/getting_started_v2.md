@@ -52,7 +52,7 @@ Firmware v2 introduces a new architecture for the SidecarTridge Multi-device tha
   Each Microfirmware stores its own settings in flash memory, isolated from other apps. This allows you to easily switch between functions without losing or reconfiguring settings.
 
 * **🛰️ Offline-safe Manager + Atari terminal shortcuts**
-  Booster v2.1 keeps the Manager usable even if Wi-Fi never connects: press `ESC` on the Atari ST terminal to list the downloaded apps or hold `SHIFT` to keep booting from GEMDOS, and launch microfirmwares without the web UI.
+  Starting with Booster v2.1.0, the Manager stays usable even if Wi-Fi never connects: press `ESC` on the Atari ST terminal to list the downloaded apps or hold `SHIFT` to keep booting from GEMDOS, and launch microfirmwares without the web UI.
 
 * **🛠️ Optimized Development Workflow & Architecture**
   The v2 architecture separates the core firmware, global settings, and Microfirmwares — making the platform easier to extend and maintain. For developers, this enables a fast test cycle: build ST software on PC/Mac/Linux, test in an emulator, then copy to the device as a microfirmware. Expect faster innovation and more community-contributed Microfirmwares.
