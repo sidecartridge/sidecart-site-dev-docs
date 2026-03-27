@@ -41,6 +41,8 @@ Starting with Booster v2.1.0 you can launch any microfirmware that is already do
 
 This offline-safe launcher is useful when the access point is down, the router blocks the device, or you just prefer not to open the web interface.
 
+![Image showing the terminal-based microfirmware launcher on the Atari ST, with instructions to press ESC to enter the menu and hold SHIFT to boot from GEMDOS](/sidecartridge-multidevice/assets/images/BOOSTER-TERMINAL-SELECTOR.png)
+
 ### Available Microfirmware Apps
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin-top: 1rem;">

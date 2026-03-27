@@ -80,11 +80,11 @@ The Booster microfirmware app is now installed in the flash memory of the device
 
 To return to the Booster app, the user needs to use the command menu on the microfirmware app to do it, or press the SELECT button for more than 10 seconds and then power off and power on the device and the computer.
 
-### WiFi view
+### Network view
 
-The **WiFi view** shows the list of available WiFi networks and permits some basic network configuration options:
+The **Network view** shows the list of available WiFi networks and permits some basic network configuration options:
 
-![Booster Manager WiFi View](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-WIFI-1.png)
+![Booster Manager Network View](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-WIFI-1.png)
 
 - **Country**: The country code of the WiFi network. This is used to configure the WiFi module to use the correct channels and frequencies.
 - **Hostname**: The hostname of the device. This is used to identify the device on the network. By default is `sidecart`. 
