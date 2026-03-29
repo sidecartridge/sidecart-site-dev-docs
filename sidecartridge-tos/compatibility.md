@@ -88,8 +88,6 @@ If you can't find your motherboard model number in the list, or have any doubts 
 You can find below a list of TOS versions tested with the SidecarTridge TOS emulator. The list includes the TOS version, the size of the ROM, if it was tested, if it works, and any additional notes. You can download them from several sites like:
 
 - [AVTANDIL website](https://avtandil.narod.ru/tose.html)
-- [PPera Magic 6.20 page](https://atari.8bitchip.info/magic62.html)
-- [PPera Custom TOS page](https://atari.8bitchip.info/TOS/TOSdep.html)
 
 | TOS Version | Size (KB) | Tested | Works | Notes |
 |-------------|-----------|--------|-------|-------|
