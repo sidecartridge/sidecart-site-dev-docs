@@ -11,12 +11,12 @@ has_toc: false
 
 ![SidecarTridge Kickstart](/sidecartridge-kickstart/assets/images/sidecartridge-kickstart-kit.png)
 
-# SidecarTridge Kickstart
+# Kickstart Multi ROM (SidecarTridge Kickstart)
 {: .d-inline-block }
 
-The SidecarTridge Kickstart is a compact board that emulates Classic Amiga ROMs, enabling users to run any Kickstart version or custom ROM without physically swapping chips.
+Kickstart Multi ROM (the SidecarTridge Kickstart emulator) is a compact board that emulates Classic Amiga ROMs, enabling users to run any Kickstart version or custom ROM without physically swapping chips.
 
-This guide offers comprehensive information about the SidecarTridge Kickstart emulator for the Amiga A500 family of computers. Explore the relevant sections below to find specific details.
+This guide offers comprehensive information about Kickstart Multi ROM / the SidecarTridge Kickstart emulator for the Amiga A500 family of computers. Explore the relevant sections below to find specific details.
 
 
 <figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
