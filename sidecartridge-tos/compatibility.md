@@ -168,9 +168,11 @@ You can learn about the different TOS versions in these videos:
         allowfullscreen allowtransparency></iframe>
 </figure>
 
-And the follow-up video covering the 256 KB ROM family is here:
-
-- [Atari ST TOS History with SidecarTridge TOS Emulator (Part II)](https://www.youtube.com/watch?v=76bVhYGFCXU)
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-top: 1rem;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/76bVhYGFCXU?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
 
 [Previous: User Guide](/sidecartridge-tos/user-guide/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
