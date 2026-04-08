@@ -18,6 +18,11 @@ The SidecarTridge TOS emulator is a compact board that emulates Atari ST interna
 
 This guide offers comprehensive information about the SidecarTridge TOS emulator for the Atari ST family of computers. Explore the relevant sections below to find specific details.
 
+If you want a quick overview of Atari TOS ROM history before diving into the docs, these two videos are a good starting point:
+
+- [Atari ST TOS History with SidecarTridge TOS Emulator (Part I)](https://www.youtube.com/watch?v=OfeVdY9EVSc)
+- [Atari ST TOS History with SidecarTridge TOS Emulator (Part II)](https://www.youtube.com/watch?v=76bVhYGFCXU)
+
 There are two main versions of the SidecarTridge TOS emulator:
 
 - **SidecarTridge TOS v1 and v2**: Designed for the Atari ST, STE, Mega ST, and Mega STE, this version uses the Raspberry Pi RP2040 microcontroller and mounts directly onto the computer’s carrier board via a short pin header. It features a slimmer profile, and when powered via USB or the computer, there is no red LED indicator. In the image above, this board appears on the left.
