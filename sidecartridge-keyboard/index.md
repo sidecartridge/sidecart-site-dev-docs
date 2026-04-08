@@ -174,4 +174,10 @@ Typical use cases for the SidecarTridge Keyboard Emulator include:
     <p>Documentation, firmware, and hardware changes over time.</p>
   </div>
 
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>📐 <a href="/sidecartridge-keyboard/croissant-open-hardware/">Croissant Open Hardware</a></h3>
+    <p>Diagram, schematics, manufacturing files, and license for the Croissant hardware release.</p>
+  </div>
+
 </div>

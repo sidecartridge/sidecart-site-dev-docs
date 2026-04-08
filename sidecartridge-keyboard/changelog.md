@@ -25,4 +25,5 @@ Use this page to record firmware, hardware, and documentation changes for the Si
 - Documentation section created with the standard SidecarTridge chapter structure.
 
 [Previous: FAQ](/sidecartridge-keyboard/faq/){: .btn .mr-4 }
-[Main](/sidecartridge-keyboard/){: .btn }
+[Main](/sidecartridge-keyboard/){: .btn .mr-4 }
+[Next: Croissant Open Hardware](/sidecartridge-keyboard/croissant-open-hardware/){: .btn }
