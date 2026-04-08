@@ -20,8 +20,17 @@ This guide offers comprehensive information about the SidecarTridge TOS emulator
 
 If you want a quick overview of Atari TOS ROM history before diving into the docs, these two videos are a good starting point:
 
-- [Atari ST TOS History with SidecarTridge TOS Emulator (Part I)](https://www.youtube.com/watch?v=OfeVdY9EVSc)
-- [Atari ST TOS History with SidecarTridge TOS Emulator (Part II)](https://www.youtube.com/watch?v=76bVhYGFCXU)
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-bottom: 1rem;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/OfeVdY9EVSc?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
+
+<figure class="video_container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-bottom: 1rem;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        src="https://www.youtube-nocookie.com/embed/76bVhYGFCXU?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1;loading=lazy"
+        allowfullscreen allowtransparency></iframe>
+</figure>
 
 There are two main versions of the SidecarTridge TOS emulator:
 
