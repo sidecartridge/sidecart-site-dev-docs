@@ -31,3 +31,7 @@ parent: ACSI2STM Hard Disk for Atari ST
 ## Want to contribute?
 
 You can contribute to this list by submitting your own case design. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
+
+[Previous: FAQ](/acsi2stm-atari-st/faq/){: .btn .mr-4 }
+[Main](/acsi2stm-atari-st/){: .btn .mr-4 }
+[Next: Internal riser boards](/acsi2stm-atari-st/riser-boards/){: .btn }

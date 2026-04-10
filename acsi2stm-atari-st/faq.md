@@ -64,6 +64,6 @@ Both drink from the sources of the Hatari emulator. The GEMDRIVE in the ACSI2STM
 
 
 
-[Previous: Troubleshooting](/acsi2stm-atari-st/troubleshooting/){: .btn .mr-4 }
+[Previous: Internal riser boards](/acsi2stm-atari-st/riser-boards/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
 [Next: FAQ](/acsi2stm-atari-st/faq/){: .btn }

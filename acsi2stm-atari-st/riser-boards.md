@@ -71,7 +71,7 @@ Always power the Atari off completely and disconnect it from mains power before 
 
 ### Installing the riser board in an Atari Mega ST
 
-![ACSI2STM Compact on Mega ST riser board](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD.PNG)
+![ACSI2STM Compact on Mega ST riser board](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD.png)
 
 1. Open the Mega ST case and locate the area where the ACSI2STM Compact will sit without interfering with the floppy drive, shielding, or airflow.
 2. Verify that your **ACSI2STM Compact** has the rear **IDC 20-pin connector** available for the riser board.
@@ -79,7 +79,7 @@ Always power the Atari off completely and disconnect it from mains power before 
 4. Connect the Compact to the riser through the **IDC 20-pin connector**, making sure the board is fully seated and not under tension.
 5. Use the included **5V power pins** and **female-to-female Dupont cable** to supply 5V power from the Mega ST motherboard to the riser board. On the Mega ST motherboard, use pin 1 or pin 2 of connector **J18**, which both provide 5V. J18 is located between the power supply and the floppy drive, on the left side of the power supply connector. See the image below for reference.
 
-![ACSI2STM Compact on Mega ST riser board J18 jumper](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD-J18.png)
+![ACSI2STM Compact on Mega ST riser board J18 jumper](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD-J18.PNG)
 
 6. Connect the included **USB-A to USB-C cable** from the riser board’s power-only USB-A connector to the USB-C power input on the ACSI2STM Compact.
 7. Double-check that the Compact, riser, and cables do not foul the keyboard frame, top cover, or any nearby metal shielding.
@@ -107,3 +107,6 @@ Always power the Atari off completely and disconnect it from mains power before 
 - make sure the USB power cable does not get trapped by the lid or shielding
 - verify that SD card access remains practical after installation
 
+[Previous: Enclosures/Cases](/acsi2stm-atari-st/cases/){: .btn .mr-4 }
+[Main](/acsi2stm-atari-st/){: .btn .mr-4 }
+[Next: FAQ](/acsi2stm-atari-st/faq/){: .btn }
