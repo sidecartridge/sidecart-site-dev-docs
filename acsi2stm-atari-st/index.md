@@ -126,6 +126,12 @@ The **ACSI2STM Mini** offers the **same full feature set as its bigger brother, 
 
   <div class="toc-card">
     <span class="toc-chip chip-howto">How-to</span>
+    <h3>🧩 <a href="/acsi2stm-atari-st/riser-boards/">Internal riser boards</a></h3>
+    <p>Add-on for installing the ACSI2STM Compact internally in Mega ST and Mega STE computers.</p>
+  </div>
+
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
     <h3>🔧 <a href="/acsi2stm-atari-st/troubleshooting/">Troubleshooting</a></h3>
     <p>Common issues and how to solve them</p>
   </div>
