@@ -9,14 +9,10 @@ parent: ACSI2STM Hard Disk for Atari ST
 # Internal riser boards for Mega ST and Mega STE
 {: .no_toc }
 
-{: .warning }
-Think of this product as an **internal installation add-on for ACSI2STM Compact**, not as a standalone storage device. It belongs under the ACSI2STM Compact documentation because it extends that hardware rather than replacing it. These riser boards are designed for the **ACSI2STM Compact** and rely on the IDC 20-pin rear connector usually referred to as the "Satan Disk" connector. Compatibility with other ACSI2STM variants or third-party boards is not guaranteed.
-
-
 These internal riser boards are installation add-ons for the **ACSI2STM Compact** model, designed specifically for the Atari Mega ST and Mega STE. They let you mount the Compact board inside the computer, keeping the setup tidy and avoiding an external device hanging from the rear ACSI port.
 
-{: .important }
-These riser boards are **not compatible with the ACSI2STM Mini**.
+{: .warning }
+These riser boards are for the **ACSI2STM Compact only**. They require the rear **IDC 20-pin connector** (sometimes referred to as the "Satan Disk" connector), are **not compatible with the ACSI2STM Mini**, and compatibility with third-party ACSI2STM variants is not guaranteed.
 
 ## What this add-on does
 
@@ -39,7 +35,7 @@ This version is designed for the Atari Mega ST and includes the extra power wiri
 - Mega ST riser board
 - pre-soldered 24-pin female connector
 - pre-soldered IDC 20-pin female connector
-- pre-soldered USB-A power-only female connector
+- pre-soldered USB-A power connector
 - two pre-soldered male pins for 5V power connection
 - 20 cm female-to-female Dupont red connector
 - USB-A to USB-C cable
@@ -55,7 +51,7 @@ This version is designed for the Atari Mega STE and matches the internal connect
 - Mega STE riser board
 - pre-soldered 30-pin female connector
 - pre-soldered IDC 20-pin female connector
-- pre-soldered USB-A power-only female connector
+- pre-soldered USB-A power connector
 - USB-A to USB-C cable
 
 
@@ -94,7 +90,7 @@ Always power the Atari off completely and disconnect it from mains power before 
 
 ![ACSI2STM Compact on Mega ST riser board J18 jumper](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD-J18.PNG)
 
-7. Connect the included **USB-A to USB-C cable** from the riser board’s power-only USB-A connector to the USB-C power input on the ACSI2STM Compact.
+7. Connect the included **USB-A to USB-C cable** from the riser board’s USB-A power connector to the USB-C power input on the ACSI2STM Compact.
 8. Double-check that the Compact, riser, and cables do not foul the keyboard frame, top cover, or any nearby metal shielding.
 9. Reassemble the machine and perform a first boot test before fully closing everything permanently.
 
@@ -112,7 +108,7 @@ Always power the Atari off completely and disconnect it from mains power before 
 2. Verify that your **ACSI2STM Compact** exposes the rear **IDC 20-pin connector** required by the riser board.
 3. Fit the **Mega STE riser board** into place using the connector layout intended for the Mega STE chassis.
 4. Seat the Compact onto the riser through the **IDC 20-pin connector**, ensuring correct alignment and no lateral stress on the pins.
-5. Connect the included **USB-A to USB-C cable** from the riser board’s power-only USB-A connector to the Compact’s USB-C power input.
+5. Connect the included **USB-A to USB-C cable** from the riser board’s USB-A power connector to the Compact’s USB-C power input.
 6. Unlike the Mega ST version, the Mega STE kit does **not** use the extra Dupont power lead included with the Mega ST board.
 7. Check that the whole assembly clears the internal shielding and any nearby drive/cable routing.
 8. Reassemble the computer and test that the Compact powers correctly and is detected as expected.
@@ -129,8 +125,9 @@ If the installation does not work as expected, check the following first:
 - **The device is not detected:** make sure the Compact is fully seated on the IDC 20-pin connector and that the riser is aligned correctly.
 - **The Compact does not power on:** verify the USB-A to USB-C power link, and on Mega ST also re-check the 5V connection at J18.
 - **The lid does not close cleanly:** inspect cable routing again and make sure no lead is trapped under shielding or pressed sharply against the case.
+- **Do not connect or disconnect internal connections while the system is powered on.**
 
-Before closing the case completely, it is a good idea to perform a partial test boot and confirm that the board sits flat, powers correctly, and has no pinched cables.
+Before closing the case completely, it is a good idea to perform a partial test boot and confirm that the board sits flat, powers correctly, has no pinched cables, and that the Atari detects the storage device normally.
 
 [Previous: Enclosures/Cases](/acsi2stm-atari-st/cases/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
