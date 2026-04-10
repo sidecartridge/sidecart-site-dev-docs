@@ -10,12 +10,10 @@ parent: ACSI2STM Hard Disk for Atari ST
 {: .no_toc }
 
 {: .warning }
-Think of this product as an **internal installation add-on for ACSI2STM Compact**, not as a standalone storage device. It belongs under the ACSI2STM Compact documentation because it extends that hardware rather than replacing it.
+Think of this product as an **internal installation add-on for ACSI2STM Compact**, not as a standalone storage device. It belongs under the ACSI2STM Compact documentation because it extends that hardware rather than replacing it. These riser boards are designed for the **ACSI2STM Compact** and rely on the IDC 20-pin rear connector usually referred to as the "Satan Disk" connector. Compatibility with other ACSI2STM variants or third-party boards is not guaranteed.
+
 
 The ACSI2STM internal riser boards are an add-on for the **ACSI2STM Compact** model. They let you mount the Compact board inside an Atari Mega ST or Mega STE, so you can keep the machine tidy and avoid running the device externally from the rear ACSI port.
-
-{: .warning }
-These riser boards are designed for the **ACSI2STM Compact** and rely on the IDC 20-pin rear connector usually referred to as the "Satan Disk" connector. Compatibility with other ACSI2STM variants or third-party boards is not guaranteed.
 
 ## What this add-on does
 
@@ -73,7 +71,7 @@ Always power the Atari off completely and disconnect it from mains power before 
 
 ### Installing the riser board in an Atari Mega ST
 
-![ACSI2STM Compact on Mega ST riser board](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD.png)
+![ACSI2STM Compact on Mega ST riser board](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGAST-BOARD.PNG)
 
 1. Open the Mega ST case and locate the area where the ACSI2STM Compact will sit without interfering with the floppy drive, shielding, or airflow.
 2. Verify that your **ACSI2STM Compact** has the rear **IDC 20-pin connector** available for the riser board.
