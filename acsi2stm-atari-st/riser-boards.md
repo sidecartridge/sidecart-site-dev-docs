@@ -67,8 +67,48 @@ If you are using a Compact board from another manufacturer, please verify the co
 
 Think of this product as an **internal installation add-on for ACSI2STM Compact**, not as a standalone storage device. It belongs under the ACSI2STM Compact documentation because it extends that hardware rather than replacing it.
 
-## Next step
+## Installation guide
 
-Once this page is approved, the next logical addition would be a dedicated installation guide with internal photos for:
-- Mega ST
-- Mega STE
+The exact internal layout differs between the Mega ST and Mega STE, so treat the riser board as model-specific. The steps below are based on the available kit contents and the current product images.
+
+{: .warning }
+Always power the Atari off completely and disconnect it from mains power before opening the case.
+
+### Installing the riser board in an Atari Mega ST
+
+1. Open the Mega ST case and locate the area where the ACSI2STM Compact will sit without interfering with the floppy drive, shielding, or airflow.
+2. Verify that your **ACSI2STM Compact** has the rear **20-pin connector** available for the riser board.
+3. Fit the **Mega ST riser board** in its intended internal position.
+4. Connect the Compact to the riser through the **20-pin connector**, making sure the board is fully seated and not under tension.
+5. Use the included **5V power pins** and **female-to-female Dupont cable** to bring power from the Mega ST power source to the riser board as intended by the kit.
+6. Connect the included **USB-A to USB-C cable** from the riser board’s power-only USB-A connector to the USB-C power input on the ACSI2STM Compact.
+7. Double-check that the Compact, riser, and cables do not foul the keyboard frame, top cover, or any nearby metal shielding.
+8. Reassemble the machine and perform a first boot test before fully closing everything permanently.
+
+**Practical checks for Mega ST:**
+- the Compact should remain mechanically stable when the case is moved
+- the USB-C lead should not be sharply bent
+- the Dupont power lead should be routed away from sharp metal edges
+
+### Installing the riser board in an Atari Mega STE
+
+1. Open the Mega STE case and identify the internal mounting area for the ACSI2STM Compact.
+2. Verify that your **ACSI2STM Compact** exposes the rear **20-pin connector** required by the riser board.
+3. Fit the **Mega STE riser board** into place using the connector layout intended for the Mega STE chassis.
+4. Seat the Compact onto the riser through the **20-pin connector**, ensuring correct alignment and no lateral stress on the pins.
+5. Connect the included **USB-A to USB-C cable** from the riser board’s power-only USB-A connector to the Compact’s USB-C power input.
+6. Check that the whole assembly clears the internal shielding and any nearby drive/cable routing.
+7. Reassemble the computer and test that the Compact powers correctly and is detected as expected.
+
+**Practical checks for Mega STE:**
+- confirm that the riser sits flat and the Compact is not twisted on the connector
+- make sure the USB power cable does not get trapped by the lid or shielding
+- verify that SD card access remains practical after installation
+
+## What is still missing
+
+This first version should be enough to explain the role of the add-on and the basic installation flow, but it would still benefit from:
+- internal in-machine photos for both models
+- exact mounting position notes per chassis revision
+- cable-routing close-ups
+- troubleshooting notes for bad seating or missing power
