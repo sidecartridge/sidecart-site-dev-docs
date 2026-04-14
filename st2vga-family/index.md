@@ -3,7 +3,7 @@ layout: default
 title: ST2VGA family (Rev.3 & Enhanced)
 nav_order: 50
 nav_exclude: false
-has_children: false
+has_children: true
 ---
 
 # ST2VGA family (Rev.3 & Enhanced)
@@ -100,3 +100,7 @@ If you still struggle after following the quickstart guides, contact support wit
 - your Atari model + motherboard revision (if known)
 - your monitor model
 - a short video/photo of the problem
+
+## Related pages
+
+- [Enclosures/Cases](/st2vga-family/cases/)
