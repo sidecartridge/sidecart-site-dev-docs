@@ -25,21 +25,11 @@ If you don't want to take the risk of the Bad-DMA issue, the [SidecarTridge Mult
 
 The ACSI2STM device has two main modes of operation: the ACSI mode and the GEMDRIVE mode. Not all the TOS versions supports both modes. The ACSI mode is the legacy mode that uses the ACSI protocol to communicate with the Atari ST. The GEMDRIVE mode is the modern mode that traps the GEMDOS calls to access the SD card. 
 
-We have tested the ACSI2STM device with the following TOS versions with the following results:
+We have tested the ACSI2STM device with different TOS versions and modes, but instead of duplicating that matrix here, please refer to the official compatibility list:
 
-Here is the data split into a table with the requested columns:
+- [Official ACSI2STM compatibility list](https://github.com/retro16/acsi2stm/blob/stable/doc/compatibility.md)
 
-| **TOS Version** | **ACSI Supported**                  | **GEMDRIVE Supported**           |
-|------------------|------------------------------------|-----------------------------------|
-| TOS 1.00         | HDDriver                           | No             |
-| TOS 1.02         | HDDriver                           | No             |
-| TOS 1.04         | HDDriver + ICD driver              | Yes            |
-| TOS 1.62         | HDDriver + ICD driver              | Yes            |
-| TOS 1.62         | HDDriver + ICD driver              | Yes            |
-| TOS 2.06         | HDDriver + ICD driver              | Yes            |
-| EmuTOS 1.3.0     | Integrated ACSI driver             | Yes            |
-
-If you need support for large size partitions in TOS 1.00 or 1.02, the [SidecarTridge MultiDevice](https://sidecartridge.com/products/sidecartridge-multidevice-atari-st/) GEMDRIVE is a good alternative.
+If you need support for large size partitions in older TOS versions, the [SidecarTridge MultiDevice](https://sidecartridge.com/products/sidecartridge-multidevice-atari-st/) GEMDRIVE is a good alternative.
 
 ### Creating images for the ACSI mode
 
