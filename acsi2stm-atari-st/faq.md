@@ -22,7 +22,7 @@ parent: ACSI2STM Hard Disk for Atari ST
 ### What is the difference between GEMDRIVE and ACSI modes?
 
 - **GEMDRIVE Mode**: Allows easy file transfers between Atari and modern PCs using FAT16, FAT32, or ExFAT formatted SD cards. No additional drivers are needed.  
-- **ACSI Mode**: Emulates a traditional ACSI hard drive, supporting legacy Atari software with custom partitions. Requires Atari hard disk drivers like HDDRIVER or ICD Pro.  
+- **ACSI Mode**: Emulates a traditional ACSI hard drive, supporting legacy Atari software with custom partitions. Requires Atari hard disk drivers.  
 
 Choose **GEMDRIVE** for convenience and modern workflows, and **ACSI** for full compatibility with vintage software.
 
