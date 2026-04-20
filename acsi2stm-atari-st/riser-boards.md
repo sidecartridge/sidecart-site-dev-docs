@@ -99,6 +99,13 @@ Always power the Atari off completely and disconnect it from mains power before 
 - the USB-C lead should not be sharply bent
 - the Dupont power lead should be routed away from sharp metal edges
 
+### A note about the Mega ST metal shield
+
+In some Atari Mega ST units, it may be necessary to remove the internal metal shield to make enough room for the riser board and the ACSI2STM Compact assembly. Some Mega ST machines provide enough clearance, while others do not.
+
+This does not normally apply to the Mega STE version.
+
+In practice, that shielding no longer serves much purpose today. It was mainly intended to reduce radio-frequency interference concerns that mattered more when these machines were used near television receivers and similar equipment.
 
 ### Installing the riser board in an Atari Mega STE
 
