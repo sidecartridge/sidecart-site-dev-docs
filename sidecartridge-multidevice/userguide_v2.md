@@ -47,13 +47,13 @@ The Atari ST Manager screen and the shared web status banner also show live Wi-F
 
 The **Apps view** shows:
 
-- The list of instalable apps from the public repository.
+- The list of installable apps from the public repository.
 - The list of installed apps on the device.
 - The list of apps that are not installed but are available on the microSD card.
 
-This view is the default view when you access the web interface. At the top of the Apps page you can use the **Platform** and **Features** filters to narrow the catalog dynamically without scrolling through every entry.
+This view is the default view when you access the web interface. At the top of the Apps page, the **Catalog channel** selector lets you switch quickly between the **Stable** and **Beta** catalogs. Below it, the **Platform** and **Features** filters let you narrow the catalog dynamically without scrolling through every entry. While the catalog is being fetched, the page shows a loading indicator.
 
-![Booster Manager Apps View 1](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APPS-1.png)
+![Booster Manager Apps View 1](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APPS-CHANNELS.png)
 
 Each app shows the following information:
 - **Name**: The name of the app.
@@ -62,15 +62,17 @@ Each app shows the following information:
 - **Features**: A list of features supported by the app as a taxonomy.
 - **Computer**: The computers supported by the app as a taxonomy.
 
+When the catalog exposes more than one version of a microfirmware, the app card also shows a **Version** dropdown. The newest version is selected by default. If older versions are still published in the catalog, you can choose one of them to install or roll back to it. When the selected version is not the one currently installed, the card also indicates which version is already present on the device.
+
+![Booster Manager App Version Selector](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APP-VERSION-LATEST.png)
+
 At the right hand side of each app, you can see the following buttons:
-- **Download**: Download the app from the public repository to the micro SD card. But it does not launch it yet.
+- **Install / Update / Downgrade**: A single context-aware action button downloads the selected version from the public repository to the microSD card. The label changes depending on whether the selected version is new, newer than the one installed, or older than the one installed. Downgrading to an older version requires an explicit confirmation step.
 - **Delete**: Delete the app from the device microSD card. You can download the app again if you want to.
 
-![Booster Manager Apps View 2](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APPS-2.png)
+![Booster Manager App Downgrade](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APP-VERSION-DOWNGRADE.png)
 
-- **Launch**: Launch the app. This will install the app in the flash memory of the device and after reboot it will be launched automatically. If you want to launch an app that is already installed, you can use the **Launch** button at any time.
-
-![Booster Manager Apps View 3](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-APPS-3.png)
+- **Launch**: Launch the installed app. This will install the selected app in the flash memory of the device and after reboot it will be launched automatically. If you want to launch an app that is already installed, you can use the **Launch** button at any time.
 
 When launching an app, the computer screen will show a message indicating that the app is being launched. The Booster app will make its best effort to also reboot the computer, but this may not always be possible. So assume that the computer is not rebooted and you need to do it manually.
 
@@ -90,7 +92,7 @@ The **Network view** shows the list of available WiFi networks and permits some 
 - **Hostname**: The hostname of the device. This is used to identify the device on the network. By default is `sidecart`. 
 - **Wifi Power**: The power of the WiFi module. From 0 to 4. 
 - **Show RSSI**: Show the RSSI value in dBm for visible WiFi networks. This helps estimate signal strength and connection stability.
-- **DHCP Enabled**: Enable or disable the DHCP server. This is used to assign IP addresses to the devices connected to the Booster app.
+- **DHCP Enabled**: Enable or disable DHCP on the device. When disabled, the TCP/IP settings view lets you enter a static IPv4 address, netmask, gateway, and DNS servers.
 
 When **Show RSSI** is enabled, the device can show the RSSI value of nearby WiFi networks. As a general reference, use the first matching threshold in the table below.
 
@@ -121,28 +123,27 @@ The Booster app will save the WiFi credentials to flash memory and reboot. It wi
 
 The **Device view** shows the device information and some basic configuration options:
 
-![Booster Manager Device View](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-CONFIG-1.png)
+![Booster Manager Device View](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-CONFIG-CHANNELS.png)
 
 - **Apps folder**: The folder where the apps are stored. By default is `/apps`. This folder is created on the microSD card when the Booster app is launched for the first time if it does not exist.
-- **Apps catalog URL**: The URL of the apps catalog. By default is `http://atarist.sidecartridge.com/apps.json`. You can configure your own apps catalog URL if you want to use your own apps. The `apps.json` file must be hosted in a HTTP server
-- **Boot feature**: The UUID of the microfirmware app to load at boot time, or the Booster mode: `FABRIC` o `MANAGER`. If the app cannot find the UUID of the microfirmware in the flash memory, it will load the Booster app in **Manager mode**.
-- **Safe SELECT reboot**: Not used in this version.
-- **SD card baud rate (KB)**: The baud rate of the SD card. By default is `12500`. It can be safely increased to `24000`. Above this value, the SD card may not work properly or the value will be ignored.
+- **Apps catalog URL**: This field is now a channel selector. You can choose **Stable**, **Beta**, or **Development**, or switch to **Custom apps catalog URL** to type your own catalog URL. The default is the Stable channel. If you use a custom catalog, its `apps.json` file must be reachable over HTTP.
+- **Boot feature**: The UUID of the microfirmware app to load at boot time, or the Booster factory path. If the app cannot find the configured UUID in flash memory, it will load the Booster app in **Manager mode**.
+- **SD card baud rate (KB)**: The baud rate of the SD card. By default is `12000`. It can be safely increased to `24000`. Above this value, the SD card may not work properly or the value will be ignored.
 
 Don't forget to click the **Save** button to save the changes!
 
 It also provides two buttons to reboot the device:
 
 - **Reboot the device**: Reboot the device and load the microfirmware app in flash memory. This is the normal way to reboot the device.
-- **Reboot the device in default fabric settings**: Reboot the device and load the Booster app in **Factory mode**. This is useful to reset the device to factory settings or to change the WiFi network.
+- **Restore to the default fabric settings**: Reboot the device and load the Booster app in **Factory mode**. This is useful to reset the WiFi configuration or return the device to its default setup.
 
 ### Firmware update
 
-Starting in version **v2.0.6Beta** you don't need to download the newer firmware version manually. Instead, the Booster app will report available updates and guide you through the installation process.
+Starting in version **v2.0.6 Beta** you don't need to download the newer firmware version manually. Instead, the Booster app reports available updates and guides you through the installation process.
 
-![Booster Manager Firmware Update Banner](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-UPDATE-1.png)
+![Booster Manager Firmware Update Banner](/sidecartridge-multidevice/assets/images/BOOSTER-MANAGER-CONFIG-CHANNELS.png)
 
-When a new firmware version is available, the Booster app will show a message on top of the web interface, prompting you to update.
+When a new firmware version is available, the Booster app shows a message on top of the web interface, including the target version and a direct link to the firmware changelog so you can review the release notes before starting the upgrade.
 
 The update process is straightforward and can be done directly from the web interface. First, the user needs to confirm the update by clicking the **Continue upgrading** button. The Booster app will then download the new firmware version. It can take about two minutes to complete the update process. The screen on the Atari 16/32 computer will display information about the update progress.
 
