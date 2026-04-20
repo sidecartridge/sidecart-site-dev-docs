@@ -103,7 +103,7 @@ Always power the Atari off completely and disconnect it from mains power before 
 
 In some Atari Mega ST units, it may be necessary to remove the internal metal shield to make enough room for the riser board and the ACSI2STM Compact assembly. Some Mega ST machines provide enough clearance, while others do not.
 
-This does not normally apply to the Mega STE version.
+This does not apply to the Mega STE version.
 
 In practice, that shielding no longer serves much purpose today. It was mainly intended to reduce radio-frequency interference concerns that mattered more when these machines were used near television receivers and similar equipment.
 
