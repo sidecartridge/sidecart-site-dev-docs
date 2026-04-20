@@ -107,6 +107,8 @@ This does not apply to the Mega STE version.
 
 In practice, that shielding no longer serves much purpose today. It was mainly intended to reduce radio-frequency interference concerns that mattered more when these machines were used near television receivers and similar equipment.
 
+These machines are old, fragile, and not always mechanically identical inside. If you decide to modify a Mega ST, do it with patience, the right tools, and the understanding that small fitting adjustments are sometimes part of the process. That is part of the art of modding.
+
 ### Installing the riser board in an Atari Mega STE
 
 ![ACSI2STM Compact on Mega STE riser board](/acsi2stm-atari-st/assets/images/riser/ACSI2STM-RISER-MEGASTE-BOARD.png)
