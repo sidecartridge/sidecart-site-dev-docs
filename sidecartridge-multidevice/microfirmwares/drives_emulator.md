@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SidecarTridge Multi-device Drives Emulator V2.0
+title: SidecarTridge Multi-device Drives Emulator
 nav_order: 3
 nav_exclude: true
 parent: SidecarTridge Multi-device
@@ -50,11 +50,13 @@ If no key is pressed, the emulator will start emulating the floppy and hard disk
 
 This menu will pop up every time you power on your Atari computer, but not when you reset it. If you want to enter into this menu without powering off your Atari, you can press the **`SELECT`** button on your Multi-device and press the reset button on your Atari.
 
-On first use, the microfirmware will automatically create the default folders it needs on the microSD card if they do not already exist:
-- `/hd` for the GEMDrive hard disk emulation
-- `/floppies` for the floppy emulator
+During normal runtime, a short press on **`SELECT`** can also cycle floppy **A:** to the next configured image if you have configured multiple images for drive A.
 
-You can change both folders at boot time from the setup screen whenever needed.
+On first use, the microfirmware automatically creates the default folders it needs on the microSD card if they do not already exist:
+- `/hd` for GEMDrive hard disk emulation
+- `/floppies` for floppy image emulation
+
+You can change both folders later from the setup screen.
 
 ## ⚙️ Setup Screen
 
@@ -62,8 +64,7 @@ You can change both folders at boot time from the setup screen whenever needed.
 
 The setup screen displays the following information:
 - **Emulator Version**: The version of the Drives Emulator app.
-- **Network Status**: Indicates whether the app is connected to the network and the local IP address of the SidecarTridge Multi-device.
-- **USB Mass Storage Status**: Indicates whether the SidecarTridge Multi-device is connected to the computer via USB and the current status of the USB mass storage device connected. 
+- **Boot information line**: The bottom line shows the setup countdown, `Countdown stopped. Press [E] or [X] to continue.`, or `USB Mass Storage Connected` when the device is mounted over USB.
 
 ### GEMDrive Hard Disk Emulation
 
@@ -96,6 +97,37 @@ The concept for the GEMdrive hard disk emulation originated with the GEMDOS comp
 | **F[o]lder** | Select the folder for the GEMDrive. By default, the emulator uses `/hd` and creates it automatically on first use if needed. You can change it at boot time by navigating through the microSD card's directory structure. |
 | **[D]rive** | Choose the drive letter for the GEMDrive (e.g., `C:`). Change it if there is a conflict with other hard disk drivers. |
 
+### ACSI Hard Disk Emulation (Experimental)
+
+#### What is ACSI Emulation?
+
+In addition to GEMDrive, the Multi-device can emulate **ACSI** hard disks at the block-device level, driven by a raw disk image file on the microSD card. Unlike GEMDrive, which intercepts GEMDOS calls and presents a folder as a drive, the ACSI path emulates the disk at the BIOS level and hands TOS a real partition table plus BPBs.
+
+This feature is currently marked **EXPERIMENTAL** and is disabled by default.
+
+- **Advantages**:
+  - Works with software that talks to the hard disk at the BIOS level rather than through GEMDOS.
+  - Announces a real partition table with up to 14 FAT16 partitions (`C:`..`P:`).
+  - A single image file can be mounted instead of using one folder per partition on the microSD card.
+
+- **Disadvantages**:
+  - Maximum partition and image size is bounded by the FAT16 limits of the image format.
+  - Moving files in and out of the image requires either USB Mass Storage from the setup screen or a host-side image editor.
+  - This path is less battle-tested than GEMDrive and should still be considered experimental.
+
+This release has been tested from **TOS 1.04 through TOS 2.06**. It does **not** currently work under **EmuTOS**.
+
+The ACSI bus ID and the starting drive letter are configured independently. This lets the emulator coexist with a real ACSI device if you give the emulated unit a free ACSI ID and choose a drive-letter range that does not conflict with other hard disk drivers.
+
+#### ACSI Related Setup Screen Commands
+
+| Command | Description |
+|---------|-------------|
+| **A[C]SI Enabled** | Enable or disable ACSI block-device emulation. Toggling this setting may trigger a warm reset so the required RAM pool can be reserved or released. |
+| **[I]mage** | Select the hard disk image file on the microSD card to mount. |
+| **U[n]it (ACSI ID)** | Choose the ACSI bus ID reported to TOS (`0` to `7`). Default is `7`. |
+| **Dri[v]e** | Choose the starting drive letter for the first announced partition (`C:` to `P:`). Subsequent partitions take consecutive letters. |
+
 ### Floppy Drive Emulation
 
 The Floppies Emulation represents a significant enhancement to the Multi-device. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
@@ -106,18 +138,42 @@ The Floppies Emulation represents a significant enhancement to the Multi-device.
 |---------|-------------|
 | **[F]loppy** | Enable or disable Floppy emulation. |
 | **Fo[l]der** | Select the base folder for the Floppy images. By default, the emulator uses `/floppies` and creates it automatically on first use if needed. You can change it at boot time by navigating through the microSD card's directory structure. |
-| **[A] Drive** | Select the .ST (Read only) or .ST.RW  (Read/Write) image file to use as the floppy disk. It  allows to navigate through the microSD card's directory structure. |
-| **[B] Drive** | Select the .ST (Read only) or .ST.RW  (Read/Write) image file to use as the second floppy disk. It allows to navigate through the microSD card's directory structure. |
+| **[A] Drive** | Select the .ST (Read only) or .ST.RW (Read/Write) image file to use as the floppy disk. |
+| **[CTRL+A] Configure multiple images** | Configure up to 10 persistent images for floppy drive A. Slot 1 is the main **[A] Drive** image; slots 2..10 are optional extra images. |
+| **[B] Drive** | Select the .ST (Read only) or .ST.RW (Read/Write) image file to use as the second floppy disk. |
 | **[SHIFT+A] Drive** | Unmount the floppy disk image from the A: drive. |
 | **[SHIFT+B] Drive** | Unmount the floppy disk image from the B: drive. |
 | **Boo[t] enabled** | Enable or disable the boot sector emulation. When enabled, the emulator will attempt to boot from the floppy disk image. |
 | **XBIO[S] trap** | Enable or disable the XBIOS trap for floppy disk operations. When enabled, the emulator will intercept XBIOS calls related to floppy disk operations. |
-| **Format [I]mage** | Format a new floppy disk image. It can format image sizes of 360KB (DS), 720KB (DD), 1.44MB (HD), and 2.88MB (ED). The image will be created in the selected folder with a given name plus the extension `.ST.RW`. It will be created empty. |
-| **[C]onvert MSA to ST** | Convert a floppy disk image from MSA format to ST format. The converted image will be created in the selected folder with the same name plus the extension `.ST`. |
+
+Formatting floppy images and converting `.MSA` images to `.ST` are no longer done from the Drives Emulator setup menu. Use the [File & Download Manager](/sidecartridge-multidevice/microfirmwares/browser/) microfirmware for those maintenance tasks.
+
+#### Runtime floppy A image cycling
+
+Floppy drive **A:** can keep a persistent list of up to **10 images**:
+
+- **Slot 1** is always the normal **[A] Drive** image.
+- **Slots 2..10** are configured through **[CTRL+A] Configure multiple images** in the setup menu.
+- The slot list is stored in flash and survives power cycles.
+
+When the emulator is already running:
+
+- A short press on **`SELECT`** cycles floppy **A:** to the next configured slot.
+- Empty slots are skipped automatically.
+- After the last configured slot, cycling wraps back to slot 1.
+- The Pico W LED flashes the active slot number so you can see which image was selected.
+
+If only slot 1 is configured, a short **`SELECT`** press does nothing during runtime.
 
 ### Real Time Clock Emulation
 
-The Real Time Clock (RTC) emulation allows the Multi-device to emulate the RTC functionality of Atari ST computers, enabling accurate timekeeping and date management. Please refer to the [RTC Emulator documentation](/sidecartridge-multidevice/microfirmwares/rtc_emulator/) for more details on how to use this feature.
+The Real Time Clock (RTC) emulation allows the Multi-device to emulate RTC functionality for Atari ST computers, enabling accurate timekeeping and date management.
+
+When RTC is enabled, the emulator can also synchronize the internal RP2040 clock with an NTP server during boot. The WiFi STA stack is started only on demand for this RTC/NTP flow and is shut down again immediately afterward.
+
+If WiFi is not configured in STA mode, or if the NTP sync fails, the emulator still continues into normal emulation.
+
+Please refer to the [RTC Emulator documentation](/sidecartridge-multidevice/microfirmwares/rtc_emulator/) for more details on how to use this feature.
 
 ### Other Setup Screen Commands
 
@@ -141,16 +197,21 @@ As a rule of thumb, **`SPACE`** will select the current item. So, if you want to
 
 ### 💾 USB Mass Storage
 
-{: .warning}
-This feature has been temporaly disabled in the current version of the app. It's only possible to use the USB mass storage during the setup menu.
+USB mass storage is currently available only while you are in the **setup menu**.
 
-The Multi-device supports **USB mass storage access**, allowing you to read and write to the microSD card *while the emulator is running in the setup menu*. You can copy files to and from the card without pausing or interrupting the emulator.
+You can read and write the microSD card from your computer during setup without interrupting the setup screen.
 
-It's recommened to connect the Multi-device to your computer via USB before launching the emulator. 
+The USB device is exposed as a pure **MSC** device. The old composite CDC + MSC configuration is no longer used.
+
+When USB mass storage is mounted, the Pico W green LED stays on. During active USB read/write traffic, the LED turns off and then returns on again when the transfer finishes.
+
+It is recommended to connect the Multi-device to your computer via USB before launching the emulator.
 
 ### 🚀 Exiting to Desktop
 
-Pressing **`E`** on the setup screen will exit the emulator and return to the Atari desktop enabling the hard or floppy drives emulation. 
+Pressing **`E`** on the setup screen will exit the emulator and return to the Atari desktop enabling the hard or floppy drives emulation.
+
+If RTC is enabled, the emulator may briefly initialize WiFi at this point to obtain the NTP time before continuing.
 
 To return to the setup screen, press **`SELECT`** on your Multi-device and reboot. Or simply power off your Atari and power it on again.
 
@@ -187,11 +248,16 @@ Any value below 1Mhz will be discarded and the speed will be set to 1 MHz. Same 
 This project is based on an early version of the [SidecarTridge Multi-device Microfirmware App Template](https://github.com/sidecartridge/md-microfirmware-template).  
 To set up your development environment, please follow the instructions provided in the [official documentation](https://docs.sidecartridge.com/sidecartridge-multidevice/programming/).
 
-## Missing features in ALPHA version
+## What changed in v1.1.0
 
-- [ ] Support for Disk Swapping (changing floppy disk images on the fly).
-- [ ] Support for Downloading images from the internet repository.
-- [ ] Support for Read-Only GEMDRIVE (currently, it is read/write).
+Highlights of version **v1.1.0**:
+
+- experimental **ACSI block-level hard disk emulation** was added
+- floppy **A:** now supports **multiple persistent image slots** and runtime cycling with **`SELECT`**
+- RTC / NTP networking now starts **only on demand** instead of on every boot
+- USB Mass Storage was simplified to a pure **MSC** device
+- floppy image formatting and `.MSA` to `.ST` conversion were removed from this setup menu and are now expected to be handled through the File & Download Manager microfirmware
+- several stability, performance, FAT16, and write-path fixes were introduced in the emulator core
 
 
 ## 📄 License
