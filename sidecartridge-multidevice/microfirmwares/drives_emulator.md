@@ -243,11 +243,6 @@ Any value below 1Mhz will be discarded and the speed will be set to 1 MHz. Same 
 
 **It's relatively safe to set the speed to 24 MHz**, but if you experience issues with the emulator, try lowering the speed to 12.5 MHz or even 6 MHz. Any modern microSD card should be able to handle these speeds without issue.
 
-## 🛠️ Setting Up the Development Environment
-
-This project is based on an early version of the [SidecarTridge Multi-device Microfirmware App Template](https://github.com/sidecartridge/md-microfirmware-template).  
-To set up your development environment, please follow the instructions provided in the [official documentation](https://docs.sidecartridge.com/sidecartridge-multidevice/programming/).
-
 ## What changed in v1.1.0
 
 Highlights of version **v1.1.0**:
