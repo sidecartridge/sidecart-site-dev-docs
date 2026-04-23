@@ -131,6 +131,14 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
+defaults:
+  - scope:
+      path: "certifications/**/*"
+    values:
+      robots: "noindex, nofollow"
+      search_exclude: true
+      sitemap: false
+
 kramdown:
   syntax_highlighter_opts:
     block:

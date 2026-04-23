@@ -6,6 +6,9 @@ nav_exclude: false
 has_children: true
 toc: false
 has_toc: false
+robots: noindex, nofollow
+search_exclude: true
+sitemap: false
 ---
 
 # Certifications
