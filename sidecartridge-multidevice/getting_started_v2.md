@@ -111,13 +111,26 @@ Since revision 3.1 of the board, the Raspberry Pi Pico W can be directly soldere
 {: .important }
 Starting in version **v2.0.6Beta** you don't need to download the newer firmware version manually. Instead, the Booster app will report available updates and guide you through the installation process. The process described below applies to first time installation of the firmware or recovery process.
 
-### Option 1: Using the drag-and-drop method
+### Option 1: Using the browser-based installer (recommended)
+
+This is the easiest method and works on Windows, macOS and Linux without installing anything. It uses [WebUSB](https://github.com/sidecartridge/rp-webusb-picoflash), so you need a Chromium-based browser such as Google Chrome or Microsoft Edge. Firefox and Safari are not supported.
+
+1. Open the [SidecarTridge Firmware Installer](https://sidecartridge.com/assets/html/sidecartridge-firmware-installer.html) in Chrome or Edge.
+2. Unplug the Raspberry Pi Pico W, hold the **BOOTSEL** button, plug the micro USB cable back into your computer, and then release the **BOOTSEL** button. Your computer should recognize the device as the mass storage device `RPI-RP2` (RP2040) or `RP2350`.
+3. In the installer, select the device family and the firmware version, then click **Detect MCU** and grant USB access when the browser asks for it.
+4. Click **Flash Start**. You can leave the **Erase before write** and **Verify after write** options enabled for a clean install.
+5. Wait until the flashing finishes. You can then unplug the board, or flash another one.
+
+{: .note }
+If your browser shows "Web flashing is not supported in this browser", switch to Chrome or Edge. If the device is not detected, make sure it is in BOOTSEL mode (it should appear as the `RPI-RP2` or `RP2350` mass storage device) and that you are using a USB *data* cable, not a charging-only one.
+
+### Option 2: Using the drag-and-drop method
 1. Connect the Raspberry Pi Pico W micro USB connector to your computer while holding the **BOOTSEL** button.
 2. Your computer should recognize the device as the mass storage device `RPI-RP2`. Now you can release the **BOOTSEL** button.
 3. Drag and drop the [Full {{ site.FIRMWARE_VERSION }} Release](https://github.com/sidecartridge/rp2-booster-bootloader/releases/download/{{ site.FIRMWARE_VERSION }}/rp-booster-{{ site.FIRMWARE_VERSION }}-full.uf2) file to the `RPI-RP2` drive.
 4. Wait for the file to be copied. When the copy is complete you can disconnect the Raspberry Pi Pico W from your computer.
 
-### Option 2: Using picotool
+### Option 3: Using picotool
 
 With this method you must [first install the picotool](https://github.com/raspberrypi/picotool) helper tool, which is a command-line utility for managing Raspberry Pi devices based on the RP2040 microcontroller.
 
