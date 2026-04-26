@@ -17,6 +17,9 @@ This section provides developers with in-depth guidance on programming the Multi
 {: .warning}
 This guide applies to the new version 2.0 of the firmware in beta stage.
 
+{: .note}
+Starting with template `v1.1.0` the framework adopts the architecture used in `md-drives-emulator`: 192 KB of general-purpose RAM, a single 64 KB ROM4 bank served entirely by chained DMA, and a polled ROM3 DMA-ring command channel dispatched through `chandler`. The "Microfirmware design" sections below describe this layout. Apps written against earlier templates must migrate (see `CHANGELOG.md`).
+
 
 
 <details open markdown="block">
@@ -452,11 +455,11 @@ The critical path is in the `emul_start` function called from the `main.c` file.
 1. Check if the host device must be initialized to perform the emulation of the device, or start in setup/configuration mode.
 2. Initialiaze the normal operation of the app (go to step 4), unless the configuration option says to start the config app or a SELECT button is (or was) pressed to start the configuration section of the app.
 3. If we are here, it means the app is not in emulation mode, but in setup/configuration mode.
-4. During the setup/configuration mode, the driver code must interact with the user to configure the device. To simplify the process, the terminal emulator is used to interact with the user.
+4. During the setup/configuration mode, the driver code must interact with the user to configure the device. The cartridge ROM4 read engine, the ROM3 command DMA ring, and the command dispatcher are brought up here in this order: `init_romemul(false); commemul_init(); chandler_init(); chandler_addCB(...)`. Register one callback per subsystem that needs to react to commands (for the template, `term_command_cb`).
 5. Init the sd card
-6. Init the network, if needed
+6. Init the network, if needed. The polling callback should drain both `chandler_loop()` and `term_loop()` so commands sent during the multi-second WiFi connect window are not dropped.
 7. Now complete the terminal emulator initialization
-8. Main loop
+8. Main loop. Each iteration calls `chandler_loop()` (drains the ROM3 ring → dispatches commands to registered callbacks) followed by `term_loop()` (renders any published terminal command).
 9. If exited main loop, send START computer command
 10. Not only exit the main loop, but send RESET computer command
 
@@ -575,17 +578,58 @@ if (wifiMode == NULL) {
 
 In this example, we check if the WiFi mode is set to STA. If it is, we initialize the network and connect to the WiFi network. The code blocks until the connection is established or the maximum number of attempts is reached. If the connection is not established, we return an error code. The `network_setPollingCallback` allows to set a callback function that will be called during the polling period. This is useful to handle the network events and update the UI.
 
+{: .note}
+The polling callback should drain the ROM3 command ring **and** the terminal loop so that commands sent during the multi-second WiFi connect window are not dropped. The template ships an `emul_pollTick` helper that calls `chandler_loop(); term_loop();` and installs it via `network_setPollingCallback(emul_pollTick);` while the connect is in flight. Apps that pass `term_loop` directly will leak commands during connect.
+
 To keep the code simple, give up the app if the network connection is not established. If the connection is successful, continue with the critical path of the app.
 
 ##### reset.c
 
 This module is responsible for handling the reset of the microfirmware app. Resetting (and also erasing the app) can be sometimes tricky, so try this module first before implementing your own function.
 
-##### romemul.c romemul.pio
+##### romemul.c / romemul.pio (ROM4 read engine)
 
-This is the core of all the microfirmware apps. It implements the emulation of the ROM chip. It also implements the hook in the DMA to intercept the data that is being sent to the ROM chip. The `tprotocol.h` has the logic to hook into the DMA and intercept the data that is being sent to the ROM chip.
+This is the core of all the microfirmware apps. It implements the emulation of the cartridge ROM4 region as a pure read engine.
+
+Two PIO programs and a chained pair of DMA channels turn an Atari ST ROM4 access into a 16-bit reply with no CPU involvement at all:
+
+1. The PIO state machine waits on `ROM4_GPIO`, latches the 16-bit address from the bus into the RX FIFO.
+2. The first DMA channel reads that address out of the FIFO and writes it into the second channel's `al3_read_addr_trig` register.
+3. The second DMA channel does a 16-bit read at that address (which falls inside the 64 KB `ROM_IN_RAM` region) and pushes the result into the PIO TX FIFO.
+4. The state machine drives the data onto the bus.
+5. Both channels are chained back-to-back, so the loop runs forever without a CPU IRQ.
+
+Because the read path is entirely DMA-driven, the only thing the CPU has to do at startup is `init_romemul(bool copyFlashToRAM)` — pass `true` if you want the runtime to copy the ROM image from XIP flash into `ROM_IN_RAM` before enabling the engine, `false` if you populate the region yourself (e.g. from the SD card or by writing the image programmatically).
 
 If you change any of these files you can find very strange bugs in the app...
+
+##### commemul.c / commemul.pio (ROM3 command DMA ring)
+
+The cartridge ROM3 region is no longer a data bank. It is reserved for the command channel: the m68k side encodes commands by reading from addresses inside ROM3 (`$FB0000`+), and the RP2040 captures every ROM3 access into a ring buffer.
+
+`commemul_init()` brings up:
+- A dedicated PIO state machine on `ROM3_GPIO` that waits on the ROM3 chip-select and pushes the 16-bit address onto the RX FIFO.
+- A single DMA channel running in **ring mode** (`channel_config_set_ring`) that drains the FIFO into a 32 KB / 16 384-word ring buffer perpetually (`COMM_DMA_TRANSFER_COUNT = 0xFFFFFFFF`).
+
+There are no IRQs anywhere in this path. The application drains the ring by calling `commemul_poll(callback)`, which derives the producer index from `dma_hw->ch[ch].transfer_count` and invokes the callback for every new sample.
+
+##### chandler.c (command dispatcher)
+
+`chandler` is the polled command parser/dispatcher that sits on top of `commemul` and `tprotocol`:
+
+```c
+chandler_init();
+chandler_addCB(my_command_handler);   // can register multiple
+...
+while (running) {
+  chandler_loop();   // drains commemul ring → tprotocol_parse → callbacks
+  ...
+}
+```
+
+`chandler_loop()` calls `commemul_poll`, feeds each captured 16-bit sample into `tprotocol_parse`, and once a complete command has been validated (header + checksum) it walks the registered callback list. Each callback has the signature `void cb(TransmissionProtocol *protocol, uint16_t *payloadPtr)` — `payloadPtr` already points past the random-token prefix, so callbacks can read parameters directly with the `TPROTO_GET_*` macros.
+
+After dispatching, `chandler` writes the command's random-token reply into shared memory, so the m68k side can detect that the command was acknowledged.
 
 ##### sdcard.c
 
@@ -658,15 +702,15 @@ Example of the code that implemens the high level commands of the terminal. It a
 
 #### Memory mapping
 
-The memory mapping of the Multi-device board is defined in the file `memmap_romemul.id` and it performs significant changes to the standard memory mapping of a RP2040 application. The memory mapping of the Multi-device board is:
-- FLASH: Reduced from the 2MBytes found in the Raspberry Pi Pico W boards to 1916Kbytes.
-- RAM: Reduced from the 264KBytes found in the Raspberry Pi Pico W boards to 128Kbytes.
+The memory mapping of the Multi-device board is defined in the file `rp/src/memmap_rp.ld` and it performs significant changes to the standard memory mapping of a RP2040 application. The memory mapping of the Multi-device board is:
+- FLASH: Reduced from the 2MBytes found in the Raspberry Pi Pico W boards to 1024Kbytes for the active microfirmware app.
+- RAM: Reduced from the 264KBytes found in the Raspberry Pi Pico W boards to **192Kbytes** (origin `0x20000000`, length `192K`).
 - SCRATCH_X: No changes.
 - SCRATCH_Y: No changes.
 - CONFIG_FLASH: FLASH memory reserved for the configuration parameters of the Multi-device board. 4Kbytes.
-- ROM_IN_RAM: RAM memory reserved for the ROM emulation. 128Kbytes.
+- ROM_IN_RAM: RAM memory reserved for the cartridge ROM4 image. **64Kbytes** at `0x20030000`. This is exactly one cartridge ROM bank; the second 64 KB bank is no longer mirrored to RAM since ROM3 is now used as a command channel rather than a data bank.
 
-If a developer wants to develop software only using 32, 64 or 96Kbytes of shared RAM (or ROM_IN_RAM), then it would be possible to modify this file and give back that memory to the general RAM of the RP2040.
+The split between `RAM` (192K) and `ROM_IN_RAM` (64K) is fixed: the ROM4 read engine derives the address it serves from `__rom_in_ram_start__` (a symbol defined by the linker script), and changing the location or size of `ROM_IN_RAM` would require updating both the linker script and the C-side address shift in `init_romemul`.
 
 #### The remote computer codebase
 
@@ -790,128 +834,70 @@ The payload size of the command will be calculated during the handling command p
 
 ##### Command handling
 
-In the `term.c` file we have examples of how to implement the command handling in the microcontroller:
+Starting with template `v1.1.0` the command path is **polled, not interrupt-driven**. ROM3 cartridge accesses are captured by a dedicated PIO + DMA ring (see `commemul.c`); the application reads commands out of that ring by calling `chandler_loop()` from its main loop. `chandler` parses the protocol via `tprotocol_parse` and dispatches each validated command to a list of registered callbacks.
+
+To handle a command in your app you do two things:
+
+1. **Register a callback** during initialization, after `chandler_init()`:
 
 ```c
-static TransmissionProtocol lastProtocol;
-static bool lastProtocolValid = false;
-
-static uint32_t memorySharedAddress = 0;
-static uint32_t memoryRandomTokenAddress = 0;
-static uint32_t memoryRandomTokenSeedAddress = 0;
-
-static inline void __not_in_flash_func(handle_protocol_command)(
-    const TransmissionProtocol *protocol) {
-  // Copy the content of protocol to last_protocol
-  memcpy(&lastProtocol, protocol, sizeof(TransmissionProtocol));
-  lastProtocolValid = true;
-};
-
-static inline void __not_in_flash_func(handle_protocol_checksum_error)(
-    const TransmissionProtocol *protocol) {
-  DPRINTF("Checksum error detected (ID=%u, Size=%u)\n", protocol->command_id,
-          protocol->payload_size);
-}
-
-void __not_in_flash_func(term_dma_irq_handler_lookup)(void) {
-  bool rom3Gpio = (1UL << ROM3_GPIO) & sio_hw->gpio_in;
-  dma_hw->ints1 = 1U << 2;
-  if (!rom3Gpio) {
-    uint16_t addrLsb = dma_hw->ch[2].al3_read_addr_trig ^ ADDRESS_HIGH_BIT;
-    tprotocol_parse(addrLsb, handle_protocol_command,
-                    handle_protocol_checksum_error);
-  }
-}
+init_romemul(false);     // ROM4 chained-DMA read engine
+commemul_init();         // ROM3 DMA ring on GPIO 26
+chandler_init();         // command parser/dispatcher
+chandler_addCB(my_command_handler);
 ```
 
-The `term_dma_irq_handler_lookup` is the DMA interrupt handler that is invoked when a read from the ROM3 and ROM4 is detected. The `tprotocol_parse` function is the one that parses the command and calls the appropriate handler.
+You can register multiple callbacks; `chandler` walks the list in registration order for every parsed command. The terminal subsystem registers `term_command_cb` this way.
 
-`term_dma_irq_handler_lookup` is passed as a callback when initializing the PIO program in the `init_romemul` function in the `emul_start` function. 
-
-The `handle_protocol_command` is the function invoked when a command is received succesfully. The `handle_protocol_checksum_error` is the function invoked when a checksum error is detected.
-
-Theorically, `handle_protocol_command` is the place where we should implement the command handling. But in practice, we will implement the command handling in the main loop reading the information stored in the `lastProtocol` variable and guard by the `lastProtocolValid` flag. This is because we don't want to block the DMA interrupt handler, so we will return immediately from the interrupt handler and process the command in the main loop.
-
-In the `term_loop` function we will:
-1. Check if the `lastProtocolValid` flag is set. If it is, we will process the command.
-2. Read the payload size and the command id from the `lastProtocol` variable.
-3. Read the first 32 bits of the payload from the `lastProtocol` variable, it contains the random token value that uniquely identifies the command.
-4. Read the command id and verify if it is valid. If it is not valid, ignore.
-5. Read the the payload accordingly of the payload size for each command id.
-6. Execute the command
-7. If the command is valid or not, write the value of the random token to a shared memory address readable by both microcontroller and Atari ST. This is used to identify the command that was executed. The Atari ST will read this value and will use it to identify that the command that was executed.
-8. Clear the `lastProtocolValid` flag.
-9. Repeat
+2. **Implement the callback**. The signature is `void cb(TransmissionProtocol *protocol, uint16_t *payloadPtr)`. The `payloadPtr` argument has already been advanced past the 32-bit random token, so your handler can read parameters directly with the `TPROTO_GET_*` macros:
 
 ```c
-if (lastProtocolValid) {
-  uint32_t randomToken = TPROTO_GET_RANDOM_TOKEN(lastProtocol.payload);
-  uint16_t *payloadPtr = ((uint16_t *)(lastProtocol).payload);
-  uint16_t commandId = lastProtocol.command_id;
-  DPRINTF(
-      "Command ID: %d. Size: %d. Random token: 0x%08X, Checksum: 0x%04X\n",
-      lastProtocol.command_id, lastProtocol.payload_size, randomToken,
-      lastProtocol.final_checksum);
-
-  // Jump the random token
-  TPROTO_NEXT32_PAYLOAD_PTR(payloadPtr);
-
-  // Handle the command
-  switch (lastProtocol.command_id) {
+void __not_in_flash_func(my_command_handler)(TransmissionProtocol *protocol,
+                                              uint16_t *payloadPtr) {
+  switch (protocol->command_id) {
     case APP_TERMINAL_START: {
       display_termStart(DISPLAY_TILES_WIDTH, DISPLAY_TILES_HEIGHT);
       term_clearScreen();
       term_printString("Type 'help' for available commands.\n");
       termInputChar('\n');
       SEND_COMMAND_TO_DISPLAY(DISPLAY_COMMAND_TERM);
-      DPRINTF("Send command to display: DISPLAY_COMMAND_TERM\n");
-    } break;
+      break;
+    }
     case APP_TERMINAL_KEYSTROKE: {
-      uint16_t *payload = ((uint16_t *)(lastProtocol).payload);
-      // Jump the random token
-      TPROTO_NEXT32_PAYLOAD_PTR(payload);
-      // Extract the 32 bit payload
-      uint32_t payload32 = TPROTO_GET_PAYLOAD_PARAM32(payload);
-      // Extract the ascii code from the payload lower 8 bits
+      // payloadPtr already points past the random token.
+      uint32_t payload32 = TPROTO_GET_PAYLOAD_PARAM32(payloadPtr);
       char keystroke = (char)(payload32 & TERM_KEYBOARD_KEY_MASK);
-      // Get the shift key status from the higher byte of the payload
       uint8_t shiftKey =
           (payload32 & TERM_KEYBOARD_SHIFT_MASK) >> TERM_KEYBOARD_SHIFT_SHIFT;
-      // Get the keyboard scan code from the bits 16 to 23 of the payload
       uint8_t scanCode =
           (payload32 & TERM_KEYBOARD_SCAN_MASK) >> TERM_KEYBOARD_SCAN_SHIFT;
-      if (keystroke >= TERM_KEYBOARD_KEY_START &&
-          keystroke <= TERM_KEYBOARD_KEY_END) {
-        // Print the keystroke and the shift key status
-        DPRINTF("Keystroke: %c. Shift key: %d, Scan code: %d\n", keystroke,
-                shiftKey, scanCode);
-      } else {
-        // Print the keystroke and the shift key status
-        DPRINTF("Keystroke: %d. Shift key: %d, Scan code: %d\n", keystroke,
-                shiftKey, scanCode);
-      }
+      DPRINTF("Keystroke: 0x%02X scan: %d shift: %d\n", keystroke, scanCode,
+              shiftKey);
       termInputChar(keystroke);
       break;
     }
     default:
-      // Unknown command
-      DPRINTF("Unknown command\n");
+      // Other callbacks may handle this command.
       break;
   }
-  if (memoryRandomTokenAddress != 0) {
-    // Set the random token in the shared memory
-    TPROTO_SET_RANDOM_TOKEN(memoryRandomTokenAddress, randomToken);
-
-    // Init the random token seed in the shared memory for the next command
-    uint32_t newRandomSeedToken =
-        rand();  // Generate a new random 32-bit value
-    TPROTO_SET_RANDOM_TOKEN(memoryRandomTokenSeedAddress, newRandomSeedToken);
-  }
 }
-lastProtocolValid = false;
 ```
 
-To avoid memory issues and manage little and big endian properly, use the macros defined in `tprotocol.h` to read and write the payload. The macros starts with the prefix `TPROTO`.
+3. **Drain the ring from your main loop**. Every iteration calls `chandler_loop()`. Inside, it polls the ROM3 ring, parses any new samples, dispatches completed commands to your callback, then writes the random-token reply into shared memory so the m68k side knows the command was acknowledged:
+
+```c
+while (keepActive) {
+  chandler_loop();   // drains the ROM3 ring; calls registered callbacks
+  term_loop();       // renders any output, etc.
+  ...
+}
+```
+
+If your app does long-blocking work (e.g. `cyw43_arch_wait_for_work_until` during WiFi connect), make sure `chandler_loop` is also drained from the polling callback you install with `network_setPollingCallback`, otherwise commands will pile up in the ring during the blocking window. The template's `emul.c` provides `emul_pollTick` as a one-liner that calls both `chandler_loop()` and `term_loop()`.
+
+To avoid memory issues and manage little and big endian properly, use the macros defined in `tprotocol.h` to read and write the payload. The macros start with the prefix `TPROTO`.
+
+> **Note on `TransmissionProtocol.payload`.** As of `v1.1.0` the payload buffer is typed as `uint16_t[]` (was `unsigned char[]`). The `TPROTO_GET_*` / `TPROTO_NEXT*` macros work the same way; only the underlying storage type changed. If you have older code that did `((uint16_t *)protocol->payload)[i]`, the cast is now a no-op but still compiles.
 
 ##### Returning the command results
 
