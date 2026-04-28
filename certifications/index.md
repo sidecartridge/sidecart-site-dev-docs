@@ -2,7 +2,7 @@
 layout: home
 title: Certifications
 nav_order: 0
-nav_exclude: false
+nav_exclude: true
 has_children: true
 toc: false
 has_toc: false
