@@ -712,6 +712,55 @@ The memory mapping of the Multi-device board is defined in the file `rp/src/memm
 
 The split between `RAM` (192K) and `ROM_IN_RAM` (64K) is fixed: the ROM4 read engine derives the address it serves from `__rom_in_ram_start__` (a symbol defined by the linker script), and changing the location or size of `ROM_IN_RAM` would require updating both the linker script and the C-side address shift in `init_romemul`.
 
+##### Shared 64 KB region layout
+
+The 64 KB `ROM_IN_RAM` region is mirrored 1:1 into the Atari ST address space at `$FA0000`. Both sides agree on a single layout, defined symbolically in `rp/src/include/chandler.h` (RP) and `target/atarist/src/main.s` (m68k). Apps must never hard-code an offset into this region; always derive it from the constants below so the layout stays the single source of truth.
+
+| m68k addr | RP addr      | Size       | Region                                    |
+| --------- | ------------ | ---------- | ----------------------------------------- |
+| `$FA0000` | `0x20030000` | 8 KB max   | **CARTRIDGE** — m68k header + code        |
+| `$FA2000` | `0x20032000` | 4 B        | **CMD_MAGIC_SENTINEL** — m68k polls here for `CMD_NOP` / `CMD_RESET` / `CMD_BOOT_GEM` / `CMD_TERMINAL` |
+| `$FA2004` | `0x20032004` | 4 B        | **RANDOM_TOKEN** — chandler echoes the request token here so `send_sync` returns |
+| `$FA2008` | `0x20032008` | 4 B        | **RANDOM_TOKEN_SEED**                     |
+| `$FA200C` | `0x2003200C` | 4 B        | reserved for framework use (zeroed by `chandler_init`) |
+| `$FA2010` | `0x20032010` | 240 B      | **SHARED_VARIABLES** — 60 indexed 4-byte slots |
+| `$FA2100` | `0x20032100` | 512 B      | **TRANSTABLE** — high-res mask table written by `display_setupU8g2()` |
+| `$FA2300` | `0x20032300` | ~48 KB     | **APP_FREE** — free arena for app-specific buffers |
+| `$FAE0C0` | `0x2003E0C0` | 8000 B     | **FRAMEBUFFER** (320×200 monochrome)      |
+| `$FAFFFF` | `0x2003FFFF` | —          | end of region                             |
+
+Why the framebuffer sits at the top:
+- Apps get a single contiguous 48 KB arena (`APP_FREE`) instead of the previous fragmented "above the framebuffer / below the tokens" hole.
+- A framebuffer overrun walks off the end of the 64 KB region into unused RP RAM rather than corrupting the random-token slot or the shared-variables block.
+
+Cartridge code budget:
+- The cartridge image (header + m68k code) MUST fit in the first 8 KB of the region (`$FA0000`–`$FA1FFF`). Anything larger overlaps the shared block and breaks the protocol.
+- `target/atarist/build.sh` enforces this against `BOOT.BIN` after `vlink` and aborts with a clear error if the image exceeds 8192 bytes. Direct `vasm`/`vlink` invocations bypass the check, so prefer the build script.
+
+Constants — each row is the same value seen from both sides. RP-side
+names live in `rp/src/include/chandler.h`; m68k-side names live in
+`target/atarist/src/main.s`. Always reference the named symbol; never
+hard-code the literal address.
+
+| Purpose                                     | RP (chandler.h)                       | m68k (main.s)                | Value      |
+| ------------------------------------------- | ------------------------------------- | ---------------------------- | ---------- |
+| Cartridge code size budget                  | `CHANDLER_CARTRIDGE_CODE_SIZE`        | `CARTRIDGE_CODE_SIZE`        | 8 KB       |
+| Base of the shared block                    | (= `CHANDLER_CMD_SENTINEL_OFFSET`)    | `SHARED_BLOCK_ADDR`          | `$FA2000`  |
+| Command sentinel slot                       | `CHANDLER_CMD_SENTINEL_OFFSET`        | `CMD_MAGIC_SENTINEL_ADDR`    | `$FA2000`  |
+| Random-token reply slot                     | `CHANDLER_RANDOM_TOKEN_OFFSET`        | `RANDOM_TOKEN_ADDR`          | `$FA2004`  |
+| Random-token seed slot                      | `CHANDLER_RANDOM_TOKEN_SEED_OFFSET`   | `RANDOM_TOKEN_SEED_ADDR`     | `$FA2008`  |
+| Reserved (zeroed by `chandler_init`)        | `CHANDLER_RESERVED_OFFSET`            | `RESERVED_SLOT_ADDR`         | `$FA200C`  |
+| Shared variables base (60 × 4 B slots)      | `CHANDLER_SHARED_VARIABLES_OFFSET`    | `SHARED_VARIABLES`           | `$FA2010`  |
+| Shared-variables slot count                 | `CHANDLER_SHARED_VARIABLES_SLOTS`     | (implicit: 60)               | 60         |
+| App buffers base (TRANSTABLE + APP_FREE)    | `CHANDLER_APP_BUFFERS_OFFSET`         | `APP_BUFFERS_ADDR`           | `$FA2100`  |
+| High-res mask table base                    | `CHANDLER_HIGHRES_TRANSTABLE_OFFSET`  | `TRANSTABLE`                 | `$FA2100`  |
+| High-res mask table size                    | `CHANDLER_HIGHRES_TRANSTABLE_SIZE`    | `TRANSTABLE_SIZE`            | 512 B      |
+| Free arena for app-specific buffers         | `CHANDLER_APP_FREE_OFFSET`            | `APP_FREE_ADDR`              | `$FA2300`  |
+| Framebuffer base                            | `CHANDLER_FRAMEBUFFER_OFFSET`         | `FRAMEBUFFER_ADDR`           | `$FAE0C0`  |
+| Framebuffer size                            | `CHANDLER_FRAMEBUFFER_SIZE`           | `FRAMEBUFFER_SIZE`           | 8000 B     |
+
+Apps that use the high-res rendering path must skip past `CHANDLER_HIGHRES_TRANSTABLE_SIZE` (512 B) of `APP_BUFFERS` before laying down their own data — `display_setupU8g2()` writes the mask table at `APP_BUFFERS_OFFSET..APP_BUFFERS_OFFSET+0x200`. Apps that don't use the high-res path can reclaim those 512 bytes.
+
 #### The remote computer codebase
 
 Although the SidecarTridge Multidevice was developed with Atari ST in mind, it could be a chance to be ported to other target architectures. So the structure of the projects in the `target` folder is:
@@ -729,6 +778,8 @@ Inside the `atarist` folder we will find:
 If we open the `src` folder we will found the following folders and files:
 - `inc`: function and macros to ease the development.
 - `main.s`: Assembly code that implements a cartridge app that runs in ROM4 at boot time.
+- `userfw.s`: User firmware module — placeholder for app-specific m68k code (see "User firmware module" below).
+- `userfw.ld`: vlink linker script that places `main.s` and `userfw.s` at fixed offsets within the cartridge image.
 
 The app in `main.s` is a very simple app. In fact, is deliberately simple on purpose. The app do as follows:
 
@@ -736,11 +787,53 @@ The app in `main.s` is a very simple app. In fact, is deliberately simple on pur
 2. Depending on the resolution, copies the frame buffer in the ROM cartridge memory and display it in LOW or HIGH resolution.
 3. Checks for the keystrokes and send the commands
 4. If some of the commands wants to continue to GEM or RESET, do it.
+5. On `CMD_START` (sentinel value `4`), branches to `rom_function`, which `jmp`s to the user firmware module at `USERFW = $FA0800`.
 
 It's very important to note that this app does not use a single byte of RAM memory at all (except the screen or system variables, obviously) so all developers must take these three ways:
 1. Develop the app without using the RAM memory. Challenging, but possible sending the data to store as a command and letting the microcontroller shared memory space to handle the trick. 
 2. Develop the app using some not occupied RAM memory setting manually the BSS and Heap.
 3. Develop your app, place it in the ROM address range and finally copy it to RAM and initialize the memory settings before executing. This is how games and apps in ROM use to work.
+
+#### User firmware module (`userfw.s`)
+
+The cartridge image is split into two `.text` sections by `target/atarist/src/userfw.ld`:
+
+| Offset      | m68k addr       | Size    | Section                       |
+| ----------- | --------------- | ------- | ----------------------------- |
+| `0x000000`  | `$FA0000`       | 2 KB    | `main.s` — boot + dispatch    |
+| `0x000800`  | `$FA0800`       | 6 KB    | `userfw.s` — user firmware    |
+
+`main.s` exposes the user firmware entry as `USERFW equ (ROM4_ADDR + $800)`. Once the RP signals readiness via `CMD_START` on the cartridge sentinel, `main.s`'s `check_commands` macro `beq`s to `rom_function`, which simply does `jmp USERFW`. There is no implicit return path — `userfw.s` owns execution from that point.
+
+How to launch the user firmware:
+- From the RP/terminal side: pick `[F]irmware` in the menu (key `f`). The `cmdFirmware` handler in `rp/src/emul.c` writes `DISPLAY_COMMAND_START` (= `4` = `CMD_START`) to the cartridge sentinel via `SEND_COMMAND_TO_DISPLAY`. The m68k's vsync-polled `check_commands` then dispatches to `USERFW`.
+- The whole hand-off is one-way; if your firmware needs to return control, it must do so explicitly (`jmp boot_gem` to continue the normal boot flow, loop forever, etc.).
+
+What the default `userfw.s` ships with:
+
+```asm
+userfw:
+    lea     hello_msg(pc), a0       ; address of message
+    move.l  a0, -(sp)               ; push string pointer
+    move.w  #GEMDOS_Cconws, -(sp)   ; push function code (= 9)
+    trap    #1                      ; call GEMDOS
+    addq.l  #6, sp                  ; clean up arguments
+    rts
+
+hello_msg:
+    dc.b    27,"E"                   ; VT52 clear screen + home cursor
+    dc.b    "Example firmware load..."
+    dc.b    0
+    even
+```
+
+Replace the body with your own m68k code; the shared-region symbols defined in `main.s` (`RANDOM_TOKEN_ADDR`, `SHARED_VARIABLES`, `APP_FREE_ADDR`, …) are reachable from `userfw.s` as well. Keep the total cartridge image (`main.s` + `userfw.s` after vlink padding) within `CARTRIDGE_CODE_SIZE = 8 KB`; `target/atarist/build.sh` enforces this against `BOOT.BIN` after `vlink`.
+
+Adding more modules (mirroring md-drives-emulator's `gemdrive.ld` pattern):
+1. Pick an offset within the cartridge budget and add a new `.text_<name> 0x????? : { <name>.o(.text) }` section to `userfw.ld`.
+2. Mirror the offset on the m68k side with an `equ (ROM4_ADDR + $????)` symbol in `main.s`.
+3. Add the `.o` target to `target/atarist/Makefile` and link it in.
+4. Either chain modules from `rom_function` (e.g. `jsr GEMDRIVE / jsr FLOPPYEMUL / jmp USERFW`), or add a new sentinel command and dispatch from `check_commands`.
 
 #### The Transmision Protocol (TPROTOCOL)
 
