@@ -128,6 +128,11 @@ The ACSI bus ID and the starting drive letter are configured independently. This
 | **U[n]it (ACSI ID)** | Choose the ACSI bus ID reported to TOS (`0` to `7`). Default is `7`. |
 | **Dri[v]e** | Choose the starting drive letter for the first announced partition (`C:` to `P:`). Subsequent partitions take consecutive letters. |
 
+#### Suggested disk images for ACSI emulation
+
+- [Image disk with almost 200 games](http://atarist.sidecartridge.com/1GB-GAMES.img.zip)
+- [Best Atari ST hard disk compilation ](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988)EVER (games, demos, tools, music, etc.) [on retrowiki.es](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988) (requires registration on retrowiki.es)
+
 ### Floppy Drive Emulation
 
 The Floppies Emulation represents a significant enhancement to the Multi-device. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
