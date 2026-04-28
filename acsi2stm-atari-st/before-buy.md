@@ -40,6 +40,10 @@ Here goes some links with pre-created images for the ACSI mode:
 - [Image with ACSI2STM utilities](http://atarist.sidecartridge.com/acsi2stm-5.00-hd0.img)
 - [Image disk with almost 200 games](http://atarist.sidecartridge.com/1GB-GAMES.img.zip)
 - [16MB Image with ICD Pro driver](http://joo.kie.sk/?page_id=306) (After installing the image, continue with the partition as explained in this [guide](http://joo.kie.sk/?page_id=306))
+- [Best Atari ST hard disk compilation ](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988)EVER (games, demos, tools, music, etc.) [on retrowiki.es](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988) (requires registration on retrowiki.es)
+
+{: .note}
+Did you know the [SidecarTridge MultiDevice Drives Emulator](https://docs.sidecartridge.com/sidecartridge-multidevice/microfirmwares/drives_emulator/#acsi-hard-disk-emulation-experimental) can also mount these ACSI hard disk images directly from the microSD card (experimental)?
 
 {: .note}
 If the download links do not start automatically, please right-click on the link and select "Copy link address" , open a new browser tab, paste the link in the address bar, and press Enter.
