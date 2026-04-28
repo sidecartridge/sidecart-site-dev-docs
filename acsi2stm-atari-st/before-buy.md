@@ -19,7 +19,7 @@ There is a new version of the firmware that can be used to avoid the Bad-DMA iss
 {: .warning}
 The firmware I install in the ACSI2STM devices is the latest stable version but it does not include the Bad-DMA fix. If you want to install the Bad-DMA fix firmware, you must install the PIO firmware version at your own risk.
 
-If you don't want to take the risk of the Bad-DMA issue, the [SidecarTridge MultiDevice](https://sidecartridge.com/products/sidecartridge-multidevice-atari-st/) GEMDRIVE is a good alternative. It cannot be affected by the Bad-DMA issue and it is compatible with all Atari ST models.
+If you don't want to take the risk of the Bad-DMA issue, the [SidecarTridge MultiDevice](/sidecartridge-multidevice/) GEMDRIVE is a good alternative. It cannot be affected by the Bad-DMA issue and it is compatible with all Atari ST models.
 
 ### TOS versions supported
 
@@ -29,7 +29,7 @@ We have tested the ACSI2STM device with different TOS versions and modes, but in
 
 - [Official ACSI2STM compatibility list](https://github.com/retro16/acsi2stm/blob/stable/doc/compatibility.md)
 
-If you need support for large size partitions in older TOS versions, the [SidecarTridge MultiDevice](https://sidecartridge.com/products/sidecartridge-multidevice-atari-st/) GEMDRIVE is a good alternative.
+If you need support for large size partitions in older TOS versions, the [SidecarTridge MultiDevice](/sidecartridge-multidevice/) GEMDRIVE is a good alternative.
 
 ### Creating images for the ACSI mode
 
@@ -43,7 +43,7 @@ Here goes some links with pre-created images for the ACSI mode:
 - [Best Atari ST hard disk compilation ](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988)EVER (games, demos, tools, music, etc.) [on retrowiki.es](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988) (requires registration on retrowiki.es)
 
 {: .note}
-Did you know the [SidecarTridge MultiDevice Drives Emulator](https://docs.sidecartridge.com/sidecartridge-multidevice/microfirmwares/drives_emulator/#acsi-hard-disk-emulation-experimental) can also mount these ACSI hard disk images directly from the microSD card (experimental)?
+Did you know the [SidecarTridge MultiDevice Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/#acsi-hard-disk-emulation-experimental) can also mount these ACSI hard disk images directly from the microSD card (experimental)?
 
 {: .note}
 If the download links do not start automatically, please right-click on the link and select "Copy link address" , open a new browser tab, paste the link in the address bar, and press Enter.

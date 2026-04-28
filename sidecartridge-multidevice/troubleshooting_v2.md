@@ -33,7 +33,7 @@ If your computer randomly crashes with different error messages when the Multi-d
 
 - The Multi-device board is properly connected to the Pico W headers.
 - The Multi-device board is properly connected to the computer cartridge connector. Please verify that the board is properly inserted and aligned with the cartridge connector.
-- The Multi-device board is properly powered. Please verify that the power supply of your computer is working properly. A faulty power supply can cause random crashes and errors.
+- The Multi-device board is properly powered. Please verify that the [power supply](/sidecartridge-psu/) of your computer is working properly. A faulty power supply can cause random crashes and errors.
 - The Multi-device board is cartridge connector is clean. Please clean the cartridge connector with isopropyl alcohol.
 - The computer cartridge interface is dirty or rusty.
 
