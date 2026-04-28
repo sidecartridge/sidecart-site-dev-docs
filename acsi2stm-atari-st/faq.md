@@ -44,7 +44,7 @@ To use GEMDRIVE units under EmuTOS and TOS 2.0x you must ensure that the **GEMDR
 
 ### Why do I need a USB-C cable?
 
-The ACSI2STM requires a USB-C cable to power the device because it cannot draw enough power from the Atari's ACSI port. The USB-C cable should be connected to a USB power source, such as a computer, USB charger, SidecarTridge Multi-device, or a USB power bank.
+The ACSI2STM requires a USB-C cable to power the device because it cannot draw enough power from the Atari's ACSI port. The USB-C cable should be connected to a USB power source, such as a computer, USB charger, [SidecarTridge Multi-device](/sidecartridge-multidevice/), or a USB power bank.
 
 ### Can I use the ACSI2STM with SidecarTridge Multi-device?
 

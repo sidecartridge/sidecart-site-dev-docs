@@ -117,7 +117,7 @@ The SidecarTridge TOS emulator is an invaluable tool for anyone seeking to maxim
 
 ## Project Background
 
-The development of the SidecarTridge TOS emulator originated from a need identified during the creation of the SidecarTridge multi-device cartridge. One of the significant challenges encountered was testing firmware across different TOS versions. Existing software solutions often proved unreliable, leading to a cumbersome and inefficient testing process.
+The development of the SidecarTridge TOS emulator originated from a need identified during the creation of the [SidecarTridge multi-device cartridge](/sidecartridge-multidevice/). One of the significant challenges encountered was testing firmware across different TOS versions. Existing software solutions often proved unreliable, leading to a cumbersome and inefficient testing process.
 
 Frustrated by the limitations of software-based testing, I decided to develop a hardware solution that could emulate the ROMs at the signal level. This led to the creation of the [SidecarTridge ROM emulator board](/sidecartridge-rom/), a device designed to replicate the functionality of the venerable 27CXXXX ROMs (and their equivalents) used in the Atari ST.
 
