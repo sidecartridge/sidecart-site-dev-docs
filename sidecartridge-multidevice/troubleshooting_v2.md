@@ -70,6 +70,64 @@ If the booster app tries to reconnect to the WiFi network continuously, please c
 
 Some networks do not support mDNS, which is used by the Multi-device to resolve the sidecart.local address. If you cannot connect to the sidecart.local web server, please try connecting to the Multi-device using its IP address. You can find the IP address of the Multi-device in the Booster app screen in your Atari ST.
 
+## Microfirmware download issues
+
+### Error 11 (Booster v2.2.0+) / error 14 (older firmware) when downloading a microfirmware
+
+The Booster app shows "Downloading...", appears to finish, but then raises **error 11** (on Booster v2.2.0 and later) or **error 14** (on Booster firmware older than v2.2.0), and the microfirmware never becomes available in the Apps tab. The Multi-device is online, yet the local `/apps` cache on the microSD card is incomplete or corrupted.
+
+Both numbers refer to the **same condition** in the firmware: the `DOWNLOAD_MD5MISMATCH_ERROR` value of the internal `download_err_t` enum was renumbered when other error codes were added in v2.2.0, so the user-visible number changed from 14 to 11. The download itself succeeded, but the file written to the microSD did not match the expected MD5 checksum published by the catalog.
+
+#### What this error actually means
+
+- The CDN request succeeded, but the Multi-device could **not update the on-disk metadata** for the newly downloaded microfirmware, **or** the on-disk copy did not match the expected MD5 checksum.
+- Depending on where the operation failed, the UF2 file, the JSON descriptor, or both may be missing or truncated.
+- The most common root cause is a **weak or unstable Wi-Fi signal** at the Multi-device location: even short drops mid-download corrupt the UF2 enough to fail the MD5 check.
+
+#### Always confirm Wi-Fi signal quality first
+
+Before touching the microSD card or reflashing the firmware, check the **RSSI (signal strength in dBm)** of the SIDECART connection to your home Wi-Fi. The only authoritative source for this value is the **Multi-device itself**, because only its on-board Pico W radio knows the real signal it is receiving:
+
+- On the Atari ST, run Booster and open the **Wi-Fi / connection status screen**. The RSSI value (in dBm) is displayed there.
+- Do **not** rely on phone or laptop signal readings as a substitute: they measure the radio inside that device, not the one inside the Multi-device, so they can be misleading.
+
+Rule of thumb (2.4 GHz, typical for the Pico W):
+
+| RSSI | Quality | What to expect |
+|------|---------|----------------|
+| -30 to -55 dBm | Excellent | Wi-Fi is not the problem. |
+| -56 to -67 dBm | Good | Downloads should still succeed reliably. |
+| -68 to -75 dBm | Marginal | Intermittent MD5 mismatch (error 11 / error 14) failures expected. |
+| -76 dBm or worse | Poor | This alone explains the failures; treat it as the root cause and improve Wi-Fi reception before anything else. |
+
+If RSSI is marginal or worse, move the Atari ST closer to the access point, remove obstacles between them, or add a 2.4 GHz repeater/access point near the workstation. 5 GHz networks are not supported by the Pico W radio.
+
+#### Inspect the microSD card
+
+1. Power off the ST and remove the Multi-device microSD card.
+2. Mount it on a PC/Mac/Linux host.
+3. Open the `/apps/` folder. For every downloaded app you should see **two files sharing the same UUIDv4** (example: `123e4567-e89b-12d3-a456-426614174000.json` + `.uf2`).
+   - `.json` (metadata) should be **< 1 KB**.
+   - `.uf2` (microfirmware) should be **approximately 1 MB**.
+
+#### Interpret the findings
+
+| Observation | Likely cause | Next action |
+|-------------|--------------|-------------|
+| Missing **either** the `.json` or `.uf2` for the UUID | Network interrupted mid-write (even though the download appeared to finish) | Improve Wi-Fi reception (see above) and retry the download. |
+| Both files exist but the `.uf2` is **much smaller** than 1 MB | Partial write (power loss / SD fault) | Delete the UUID pair, retry; if it persists, reformat the microSD card with the [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) and reflash the firmware. |
+| Both files exist with correct sizes, yet Booster still reports the same error | The flash storage on the Pico W could not accept the new firmware | Reflash the base firmware (see [Restoring factory settings](#restoring-factory-settings) and the [Firmware Installation](/sidecartridge-multidevice/getting_started_v2/#firmware-installation) section). |
+
+#### Quick recovery steps
+
+1. **Delete the incomplete UUID pair** (both `.json` and `.uf2`) from the `/apps/` folder on the microSD card.
+2. **Reboot** the Atari ST, open Booster, and download the microfirmware again.
+3. If the same UUID fails twice, work through the root causes in this order:
+   1. Wi-Fi signal quality (RSSI check above).
+   2. Reformat the microSD card with the [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) and try a fresh download.
+   3. Reflash the base firmware as described in [Restoring factory settings](#restoring-factory-settings).
+4. After a successful retry, the new app shows in Booster without error 11 / 14, and `/apps/` contains matching UUID pairs with the expected sizes.
+
 ## Restoring factory settings
 
 If you need to restore the factory settings of the Multi-device, you can do it by following these steps:
