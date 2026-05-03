@@ -72,11 +72,13 @@ Some networks do not support mDNS, which is used by the Multi-device to resolve 
 
 ## Microfirmware download issues
 
-### HTTP error 14 (or MD5 checksum error) when downloading a microfirmware
+### Error 11 (Booster v2.2.0+) / error 14 (older firmware) when downloading a microfirmware
 
-The Booster app shows "Downloading...", appears to finish, but then raises **HTTP error 14** (or, on some firmware revisions, an **MD5 checksum error**), and the microfirmware never becomes available in the Apps tab. The Multi-device is online, yet the local `/apps` cache on the microSD card is incomplete or corrupted.
+The Booster app shows "Downloading...", appears to finish, but then raises **error 11** (on Booster v2.2.0 and later) or **error 14** (on Booster firmware older than v2.2.0), and the microfirmware never becomes available in the Apps tab. The Multi-device is online, yet the local `/apps` cache on the microSD card is incomplete or corrupted.
 
-#### What these errors actually mean
+Both numbers refer to the **same condition** in the firmware: the `DOWNLOAD_MD5MISMATCH_ERROR` value of the internal `download_err_t` enum was renumbered when other error codes were added in v2.2.0, so the user-visible number changed from 14 to 11. The download itself succeeded, but the file written to the microSD did not match the expected MD5 checksum published by the catalog.
+
+#### What this error actually means
 
 - The CDN request succeeded, but the Multi-device could **not update the on-disk metadata** for the newly downloaded microfirmware, **or** the on-disk copy did not match the expected MD5 checksum.
 - Depending on where the operation failed, the UF2 file, the JSON descriptor, or both may be missing or truncated.
@@ -95,7 +97,7 @@ Rule of thumb (2.4 GHz, typical for the Pico W):
 |------|---------|----------------|
 | -30 to -55 dBm | Excellent | Wi-Fi is not the problem. |
 | -56 to -67 dBm | Good | Downloads should still succeed reliably. |
-| -68 to -75 dBm | Marginal | Intermittent MD5 / error 14 failures expected. |
+| -68 to -75 dBm | Marginal | Intermittent MD5 mismatch (error 11 / error 14) failures expected. |
 | -76 dBm or worse | Poor | This alone explains the failures; treat it as the root cause and improve Wi-Fi reception before anything else. |
 
 If RSSI is marginal or worse, move the Atari ST closer to the access point, remove obstacles between them, or add a 2.4 GHz repeater/access point near the workstation. 5 GHz networks are not supported by the Pico W radio.
@@ -114,7 +116,7 @@ If RSSI is marginal or worse, move the Atari ST closer to the access point, remo
 |-------------|--------------|-------------|
 | Missing **either** the `.json` or `.uf2` for the UUID | Network interrupted mid-write (even though the download appeared to finish) | Improve Wi-Fi reception (see above) and retry the download. |
 | Both files exist but the `.uf2` is **much smaller** than 1 MB | Partial write (power loss / SD fault) | Delete the UUID pair, retry; if it persists, reformat the microSD card with the [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) and reflash the firmware. |
-| Both files exist with correct sizes, yet Booster still reports error 14 | The flash storage on the Pico W could not accept the new firmware | Reflash the base firmware (see [Restoring factory settings](#restoring-factory-settings) and the [Firmware Installation](/sidecartridge-multidevice/getting_started_v2/#firmware-installation) section). |
+| Both files exist with correct sizes, yet Booster still reports the same error | The flash storage on the Pico W could not accept the new firmware | Reflash the base firmware (see [Restoring factory settings](#restoring-factory-settings) and the [Firmware Installation](/sidecartridge-multidevice/getting_started_v2/#firmware-installation) section). |
 
 #### Quick recovery steps
 
@@ -124,7 +126,7 @@ If RSSI is marginal or worse, move the Atari ST closer to the access point, remo
    1. Wi-Fi signal quality (RSSI check above).
    2. Reformat the microSD card with the [SD Card Formatter](https://www.sdcard.org/downloads/formatter/) and try a fresh download.
    3. Reflash the base firmware as described in [Restoring factory settings](#restoring-factory-settings).
-4. After a successful retry, the new app shows in Booster without HTTP error 14, and `/apps/` contains matching UUID pairs with the expected sizes.
+4. After a successful retry, the new app shows in Booster without error 11 / 14, and `/apps/` contains matching UUID pairs with the expected sizes.
 
 ## Restoring factory settings
 
