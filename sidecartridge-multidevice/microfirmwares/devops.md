@@ -26,6 +26,9 @@ This microfirmware turns the cartridge slot of an Atari ST / STE / Mega ST(E) in
 
 If you only need the basic GEMDRIVE experience (folder-as-drive, floppies, ACSI), the sister microfirmware [Drives Emulator](/sidecartridge-multidevice/microfirmwares/drives_emulator/) is what you want. **DevOps** is the developer-focused variant of that surface, with the runner, debug and HTTP management features stitched on top.
 
+{: .important }
+For the full reference, more end-to-end examples and the complete API documentation, head to the project's [README on GitHub](https://github.com/sidecartridge/md-devops/blob/main/README.md). The page below is a curated overview; the README is the source of truth and is kept in sync with each release.
+
 <details open markdown="block">
   <summary>
     Table of contents
