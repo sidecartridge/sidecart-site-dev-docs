@@ -154,4 +154,4 @@ Made with ❤️ by [SidecarTridge](https://sidecartridge.com)
 
 [Previous: GPU Demo](/sidecartridge-multidevice/microfirmwares/gpu-demo/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
-[Next: Architecture and Design](/sidecartridge-multidevice/architecture_and_design/){: .btn }
+[Next: DevOps](/sidecartridge-multidevice/microfirmwares/devops/){: .btn }

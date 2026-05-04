@@ -92,6 +92,11 @@ This offline-safe launcher is useful when the access point is down, the router b
 <p>Emulates an Oric computer on Atari ST-class machines via the Multi-device.</p>
 </div>
 
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>🛠️ <a href="/sidecartridge-multidevice/microfirmwares/devops/">DevOps</a></h3>
+<p>Remote m68k development surface: GEMDRIVE, Runner mode, HTTP API and live debug traces.</p>
+</div>
+
 </div>
 
 ### How it works:
