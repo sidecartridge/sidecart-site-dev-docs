@@ -70,13 +70,26 @@ Power-on after install lands on the **Setup menu** for around 20 seconds. You ha
 | Key | Action |
 | --- | --- |
 | `[U]` | **Runner mode** (recommended). GEMDRIVE comes up, plus the Runner control surface for `runner run` / `load` / `exec` and friends. |
-| `[E]` or `[F]` | Same as `[U]` for GEMDRIVE-only purposes (the ST drops straight into the emulated drive) but does **not** activate the Runner. Use this if you only want file emulation and don't need the workstation to drive the ST. |
+| `[G]` | **GEMDRIVE only**. The ST drops straight into the emulated drive but the Runner is not activated. Use this if you only want file emulation and don't need the workstation to drive the ST. |
 | `[X]` | Return to the Booster menu (e.g. to install another app). |
 | any key | Halt the auto-launch countdown so the menu stays up indefinitely while you read it. |
 
 If you do nothing within ~20 s, the firmware auto-fires `[U]` Runner, the more useful default for unattended boots.
 
-The menu paints into the cartridge framebuffer at `$FAE0C0` so the ST itself shows it. From top to bottom you get a title bar, the **GEMDRIVE** section (folder, drive letter, relocation address, memtop), the **Adv [V]ector** section (which interrupt vector the Advanced Runner installs its hook into), the **API Endpoint** section (mDNS hostname and the IP DHCP leased), and the **USB CDC (Debug serial)** section (`connected` / `disconnected`, live-refreshed as you plug or unplug a USB cable).
+The menu paints into the cartridge framebuffer at `$FAE0C0` so the ST itself shows it. From top to bottom you get a title bar, the **GEMDRIVE** section (folder, drive letter, relocation address, memtop, plus the read-only `_phystop` at `$42E` and `_v_bas_ad` screen base at `$44E`), the **Adv [V]ector** section (which interrupt vector the Advanced Runner installs its hook into), the **API Endpoint** section (mDNS hostname and the IP DHCP leased), and the **USB CDC (Debug serial)** section (`connected` / `disconnected`, live-refreshed as you plug or unplug a USB cable).
+
+A `(!)` marker on the Phystop line means TOS' phystop disagrees with the silicon's MMU bank-config nibble at `$FFFF8001`, a sign that a reset-resistant program lowered phystop and survived a warm reset. Only a full power-cycle restores it.
+
+### SELECT button: Pico-side reset and factory reset
+
+The cartridge's physical **SELECT** button is wired so a press on the Pico itself can recover the device without needing the ST's keyboard:
+
+| Press | Action |
+| --- | --- |
+| Short tap (< 10 s) | **Soft reset** of the Pico. The cartridge boots back into the setup menu. The ST's TOS state is unaffected, but on the next ST cold reset the firmware re-handshakes from scratch. |
+| Long press (≥ 10 s, hold steady) | **Factory reset.** The Pico erases its flash-stored aconfig (drive letter, reloc address, hook vector, etc.) and reboots. Use this if a setting got the device into a state where the menu won't come up; power-cycle the ST afterwards so it sees the cleared cartridge. |
+
+The button is the canonical recovery path for any banner the firmware shows on the ST screen (e.g. the `Reloc/stack overlap` warning thrown when a misconfigured relocation address would land on or near the live supervisor stack).
 
 ### Picking a hook vector
 
