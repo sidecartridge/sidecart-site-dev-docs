@@ -50,7 +50,9 @@ If the download links do not start automatically, please right-click on the link
 
 Probably the fastest way to burn the images into the SD card is using the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 
-If you want to create your own TOS & DOS compatible images, you should use to [_Atari Hard Disk and File Systems Reference Guide_](http://atarist.sidecartridge.com/atari-st-hd-file-systems-ref-guide.pdf) by Jean Louis-Guerin (DrCoolZic).
+If you want to create your own TOS & DOS compatible images, the easiest path is [`atari-hd`](https://github.com/sidecartridge/atari-hd), a multiplatform CLI/TUI (macOS, Linux, Windows) that produces a ready-to-use `.img` in one command. It walks you through size, partition layout (AHDI, PPDRIVER or HDDRIVER) and bootable mode in plain language, and the byte-level output is validated against real ICDFMT- and PPTOSDOS-formatted reference disks, so you skip the multi-evening rabbit hole of legacy tools.
+
+For the deeper background on TOS-side BPBs, sector sizes and how the partition tables differ between drivers, see the [_Atari Hard Disk and File Systems Reference Guide_](http://atarist.sidecartridge.com/atari-st-hd-file-systems-ref-guide.pdf) by Jean Louis-Guerin (DrCoolZic).
 
 ICD Pro is a free driver that can be used with ACSI devices. You can download from here: [ICD Pro](http://joo.kie.sk/?page_id=306). Then you can follow the instructions in this [guide](http://joo.kie.sk/?page_id=306).
 
