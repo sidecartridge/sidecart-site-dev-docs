@@ -116,6 +116,9 @@ The formatting and partitioning tool works much like modern equivalents: format 
 {: .warning}
 Formatting the a modern SD card with a tool designed 30 years ago can be a daunting task. It is recommended to use a preconfigured image to avoid frustation and time consuming tasks.
 
+{: .note}
+If you do want to build your own image without the rabbit hole of legacy tools, [`atari-hd`](https://github.com/sidecartridge/atari-hd) is a multiplatform CLI/TUI (macOS, Linux, Windows) that produces a ready-to-use `.img` in one command. It walks you through size, partition layout (AHDI, PPDRIVER or HDDRIVER) and bootable mode in plain language, and the byte-level output is validated against real ICDFMT- and PPTOSDOS-formatted reference disks.
+
 #### TOS Issues
 
 Atari TOS has a variety of quirks and bugs. While some of these issues can be mitigated with software patches, no configuration has proven to be fully stable when scaling beyond basic use. Key limitations include:
