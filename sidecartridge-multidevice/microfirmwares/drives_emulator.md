@@ -133,6 +133,10 @@ The ACSI bus ID and the starting drive letter are configured independently. This
 - [Image disk with almost 200 games](http://atarist.sidecartridge.com/1GB-GAMES.img.zip)
 - [Best Atari ST hard disk compilation ](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988)EVER (games, demos, tools, music, etc.) [on retrowiki.es](https://www.retrowiki.es/viewtopic.php?p=200152988#p200152988) (requires registration on retrowiki.es)
 
+#### Build your own image with `atari-hd`
+
+If you'd rather build your own bootable hard disk image instead of downloading a pre-made one, the [`atari-hd`](https://github.com/sidecartridge/atari-hd) CLI/TUI does it in a single command on macOS, Linux and Windows. Pick a size, partition layout (AHDI, PPDRIVER or HDDRIVER) and bootable mode in plain language, and you get a working `.img` ready to drop on the microSD card. The byte-level output is validated against real ICDFMT- and PPTOSDOS-formatted reference disks, so the result matches what a real Atari-era setup tool would have written, only without the multi-evening rabbit hole.
+
 ### Floppy Drive Emulation
 
 The Floppies Emulation represents a significant enhancement to the Multi-device. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
