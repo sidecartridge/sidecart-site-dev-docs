@@ -80,6 +80,18 @@ Check these items:
 
 Some USB cables can assert signals that interfere with the emulator. Fully unplug the USB cable from the SidecarTridge Kickstart board and try again.
 
+### The Amiga hangs or shows a black screen with a 256KB Kickstart (1.x / early 2.x)
+
+The emulator presents a 512KB ROM image to the Amiga and does not auto-mirror 256KB images at boot. Original Amiga motherboards mirror 256KB Kickstarts into the 512KB socket natively, but the SidecarTridge Kickstart emulator does not, so a 256KB file on `ROMEMUL` produces an invalid second half and the Amiga either hangs with no output or shows random garbage.
+
+To fix it:
+
+1. Check the size of the file on `ROMEMUL`. It must be exactly **524288 bytes (512KB)**.
+2. If it is 256KB (262144 bytes), the file needs to be mirrored to 512KB.
+   - For Amiga Forever encrypted sources, run the file through the [web converter](/sidecartridge-kickstart/kickstart-conversion/). It auto-mirrors small ROMs.
+   - For plain 256KB dumps, duplicate the file manually with the snippets in [Already-decoded Kickstart ROMs](/sidecartridge-kickstart/kickstart-conversion/#already-decoded-kickstart-roms).
+3. Replace the 256KB file on `ROMEMUL` with the new 512KB one, update `DEFAULT.TXT` (or use SWITCHER) to point at the 512KB filename, and eject the volume so the device reindexes.
+
 ## SWITCHER issues
 
 ### The SWITCHER program returns an error when reading available images

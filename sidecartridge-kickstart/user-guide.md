@@ -103,6 +103,9 @@ It is possible to upload, delete and rename a new ROM image from any Amiga compu
 
 ### Uploading a new ROM from the Amiga computer
 
+{: .note}
+Before uploading via SWITCHER, make sure the ROM image is exactly 512KB (524288 bytes). The emulator does not auto-mirror 256KB Kickstart images, so 256KB originals must be doubled to 512KB on your host computer first. See [ROM image size requirements](/sidecartridge-kickstart/compatibility/#rom-image-size-requirements) and [Kickstart conversion](/sidecartridge-kickstart/kickstart-conversion/) for the exact procedure.
+
 To upload a new Kickstart or custom ROM image from the Amiga computer, press the [`U`]pload key in the SWITCHER program. The program will show you a file system browser to select the ROM image to upload from your computer. Navigate to the desired ROM image and press the `RETURN` key to start the upload process.
 
 {: .warning}

@@ -92,6 +92,17 @@ Select the kit that matches your motherboard revision.
 | [A2000 carrier rev4.3 and later](https://store.sidecartridge.com) | A2000 rev4.3 and later |
 
 
+## Notes on Kickstart ROM sources
+
+The emulator targets the 512KB Kickstart ROM socket and expects the active image to be exactly 524288 bytes (512KB). Most Kickstart 2.04 and later images, as well as DiagROM and EmuTOS, are already 512KB and can be copied directly to `ROMEMUL`.
+
+If you plan to use a Kickstart 1.x image (1.1, 1.2, 1.3), be aware that those originals are 256KB. Real Amiga motherboards mirror them into the 512KB socket natively, but the SidecarTridge Kickstart emulator does not. Before copying a 256KB Kickstart to the device you must mirror it to 512KB:
+
+- From an Amiga Forever encrypted source, the [web converter](/sidecartridge-kickstart/kickstart-conversion/) does the mirror automatically.
+- From a plain 256KB dump, you mirror the file yourself with one of the snippets in [Already-decoded Kickstart ROMs](/sidecartridge-kickstart/kickstart-conversion/#already-decoded-kickstart-roms).
+
+This is a one-time, one-command step per ROM. It is mentioned here because it is the most common surprise for users coming from the Kickstart 1.x era.
+
 ## Notes on motherboard identification
 
 The revision tables above were created using multiple hardware references, including:

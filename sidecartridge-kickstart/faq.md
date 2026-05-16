@@ -26,7 +26,7 @@ Potentially, if a carrier board exists for that ROM socket and the board uses a 
 
 ### Which Kickstart sizes are supported?
 
-Classic 256KB Kickstart 1.x/early 2.x images and 512KB Kickstart 2.04/2.05/3.x images are supported. Custom ROMs like DiagROM/EmuTOS that use the same pinout and size also work.
+Classic 256KB Kickstart 1.x/early 2.x images and 512KB Kickstart 2.04/2.05/3.x images are supported, plus custom ROMs like DiagROM and EmuTOS that use the same pinout and 512KB layout. The emulator always presents a 512KB ROM to the Amiga, so 256KB Kickstarts must be mirrored to 512KB before being copied to `ROMEMUL`. See the [Compatibility](/sidecartridge-kickstart/compatibility/#rom-image-size-requirements) and [Kickstart conversion](/sidecartridge-kickstart/kickstart-conversion/) pages for details.
 
 ### Why is the SidecarTridge Kickstart limited to 16MB of flash storage?
 
@@ -80,6 +80,18 @@ Standard updates do not overwrite your stored images. As a best practice, keep a
 ### How do I switch between Kickstart versions?
 
 Use the SWITCHER application from the `ROMEMUL` volume on your Amiga, or edit `DEFAULT.TXT`/`RESCUE.TXT` over USB and eject to reindex. See the [User Guide](/sidecartridge-kickstart/user-guide/) for details.
+
+### My Kickstart 1.3 file is 256KB. Can I just copy it to `ROMEMUL`?
+
+No. The emulator presents a 512KB ROM to the Amiga, and a plain 256KB file will not boot. Original Amiga motherboards mirror 256KB Kickstarts into the 512KB socket natively, but the emulator does not, so the file has to be doubled before use. If your source is an Amiga Forever encrypted image, the [web converter](/sidecartridge-kickstart/kickstart-conversion/) does the mirror automatically. If your file is already a plain 256KB ROM, duplicate it manually as described in [Already-decoded Kickstart ROMs](/sidecartridge-kickstart/kickstart-conversion/#already-decoded-kickstart-roms), then copy the resulting 512KB file to `ROMEMUL`.
+
+### The web converter says "not an AMIROMTYPE1 encoded image". What does that mean?
+
+That error is shown when the file you uploaded does not start with the `AMIROMTYPE1` header used by Amiga Forever encrypted ROMs. The converter is only for those encrypted images. If your file is already a plain ROM (for example a personal chip dump or a download from a non-Amiga-Forever source), do not use the converter; follow the [Already-decoded Kickstart ROMs](/sidecartridge-kickstart/kickstart-conversion/#already-decoded-kickstart-roms) instructions instead.
+
+### Why does my 256KB Kickstart boot to a black screen or a hang?
+
+Because the file on `ROMEMUL` is still 256KB. The emulator expects exactly 524288 bytes (512KB), so the Amiga reads garbage in the second half of the ROM space and fails to come up. Mirror the file to 512KB (either via the [web converter](/sidecartridge-kickstart/kickstart-conversion/) for encrypted sources or with `cat`/PowerShell for plain dumps) and copy the 512KB result to `ROMEMUL`.
 
 [Previous: Troubleshooting](/sidecartridge-kickstart/troubleshooting/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }
