@@ -111,7 +111,7 @@ First production release of the SWITCHER.TOS app.
 ## Hardware Changelog (ROM Emulator)
 
 ### 3.0.0 (2025-06-01) - v3 release
-This hardware release is the first stable release of the SidecarTridge Kickstart v3 board with the RP2350 microcontroller. It includes several new features and improvements over the previous versions:
+This hardware release is the first stable release of the SidecarTridge ROM Emulator v3 board with the RP2350 microcontroller. It includes several new features and improvements over the previous versions:
 - The board is now based on the RP2350 microcontroller, which provides more features and better performance.
 - The board now supports 512KB ROMs.
 - The board includes three LED indicators: a red LED that lights up when the board is powered on, a green LED that lights up when the firmware is running, and an orange LED that lights up when the internal USB drive is mounted or transferring data.

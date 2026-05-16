@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Compatbility
+title: Compatibility
 nav_order: 7
 nav_exclude: false
 parent: SidecarTridge TOS
@@ -23,13 +23,15 @@ You should read this section to ensure that your Atari ST model is compatible wi
 
 ## Supported Atari ST Motherboards and Carrier Boards
 
+The tables below tell you whether your motherboard is supported by the SidecarTridge TOS emulator and how many ROM chips it has. To know which specific SidecarTridge TOS emulator kit you need to order for that motherboard, see the kit table in [Before You Buy](/sidecartridge-tos/before-buy/#purchase-the-right-sidecartridge-tos-emulator-kit).
+
 {: .info}
 Carrier boards for non supported motherboards are in active development. Please check the SidecarTridge website for updates.
 {: .warning}
 
 ### Atari ST series
 
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
+| Motherboard Model Number | Number of ROMs | Status          |
 |--------------------------|----------------|-----------------|
 | C070115 Rev. 2           |                | Not supported   |
 | C070243 Rev. C           |    2 and 6     | Supported       |
@@ -57,7 +59,7 @@ Carrier boards for non supported motherboards are in active development. Please 
 
 ### Atari Mega ST series
 
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
+| Motherboard Model Number | Number of ROMs | Status          |
 |--------------------------|----------------|-----------------|
 | C100167-001 Rev. 4.0     |       2        | Supported       |
 | C100167-001 Rev. B       |       2        | Supported       |
@@ -68,14 +70,14 @@ Carrier boards for non supported motherboards are in active development. Please 
 
 ### Atari STE series
 
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
+| Motherboard Model Number | Number of ROMs | Status          |
 |--------------------------|----------------|-----------------|
 | CA4003290                |       2        | Supported       |
 
 
 ### Atari Mega STE series
 
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
+| Motherboard Model Number | Number of ROMs | Status          |
 |--------------------------|----------------|-----------------|
 | CA400677 Rev. F          |       2        | Supported       |
 
@@ -174,6 +176,6 @@ You can learn about the different TOS versions in these videos:
         allowfullscreen allowtransparency></iframe>
 </figure>
 
-[Previous: User Guide](/sidecartridge-tos/user-guide/){: .btn .mr-4 }
+[Previous: Advanced Settings](/sidecartridge-tos/advanced-settings/){: .btn .mr-4 }
 [Main](/sidecartridge-tos/){: .btn .mr-4 }
 [Next: Troubleshooting](/sidecartridge-tos/troubleshooting/){: .btn }

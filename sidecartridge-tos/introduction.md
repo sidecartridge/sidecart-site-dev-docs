@@ -154,7 +154,7 @@ The emulator leverages the PIO capabilities of the Raspberry RP2040 and RP235x m
 
 The Flash memory is a non-volatile memory that stores up to 16MB of data. This memory is used to store the TOS image files, the metadata of the ROM image files and the firmware of the device.
 
-Users can connect the emulator to a computer via USB to manage ROM files. The emulator appears as a FAT16 mass storage device, allowing users to easily copy TOS image files and custom ROMs. This USB interface simplifies the process of updating and switching ROMs without physically interacting with the Atari ST’s internals. The file system has been enhanced to provide information about the status of the emulator and the installed ROMs, as well as the ability to modify the default and rescue ROMs.
+Users can connect the emulator to a computer via USB to manage ROM files. The emulator appears as a FAT12 mass storage device, allowing users to easily copy TOS image files and custom ROMs. This USB interface simplifies the process of updating and switching ROMs without physically interacting with the Atari ST’s internals. The file system has been enhanced to provide information about the status of the emulator and the installed ROMs, as well as the ability to modify the default and rescue ROMs.
 
 ### Hot Swapping the ROMs from the Atari ST
 
