@@ -117,13 +117,11 @@ The SidecarTridge Kickstart emulator is an invaluable tool for anyone seeking to
 
 ## Project Background
 
-The development of the SidecarTridge Kickstart emulator comes from the TOS Emulator for Atari ST computers, and originated from a need identified during the creation of the [SidecarTridge multi-device cartridge](/sidecartridge-multidevice/) for Atari ST. One of the significant challenges encountered was testing firmware across different ROM versions. Existing software solutions often proved unreliable, leading to a cumbersome and inefficient testing process.
+The SidecarTridge Kickstart emulator brings to the Classic Amiga the same kind of ROM-swap-free workflow that the SidecarTridge family had already enabled on other 68000-based retro platforms. Managing multiple Kickstart versions and custom ROMs on real Amiga hardware traditionally meant physically swapping ROM chips on the motherboard, which is slow, error-prone and risky for vintage components. The Kickstart emulator removes that friction completely.
 
-Frustrated by the limitations of software-based testing, I decided to develop a hardware solution that could emulate the ROMs at the signal level. This led to the creation of the [SidecarTridge ROM emulator board](/sidecartridge-rom/), a device designed to replicate the functionality of the venerable 27CXXXX ROMs (and their equivalents) used in the Atari ST.
+The underlying technology comes from the [SidecarTridge ROM emulator board](/sidecartridge-rom/), which was originally developed alongside the [SidecarTridge TOS emulator](/sidecartridge-tos/) and the [SidecarTridge multi-device cartridge](/sidecartridge-multidevice/) for the Atari ST. Both projects needed a way to emulate vintage ROM chips at the signal level so different ROM versions could be tested and used without rewiring or rebuilding the host machine. The same board was then paired with Amiga-specific carrier boards to produce the SidecarTridge Kickstart emulator.
 
-By leveraging the bit-banged emulation capabilities, it provides a reliable and effective means of testing and running different ROM versions. This innovation not only addressed the initial testing challenges but also opened up new possibilities for managing and utilizing various TOS (for Atari ST) and Kickstart (for Amiga) versions and custom ROMs with ease.
-
-Hence, the SidecarTridge Kickstart emulator combines the core functionality of the ROM emulator board with carrier boards designed to fit seamlessly into the Amiga series. This integration combines modern technology with the classic Amiga hardware, providing users with a versatile and efficient tool for enhancing their retro computing experience.
+By leveraging bit-banged emulation, the device provides a reliable and effective means of running and switching between different Kickstart ROM versions on Amiga 500 and Amiga 2000 motherboards, as well as custom ROMs such as DiagROM and EmuTOS. This integration combines modern technology with classic Amiga hardware, providing users with a versatile and efficient tool for enhancing their retro computing experience.
 
 ## Key Hardware Components
 
@@ -146,7 +144,7 @@ The SidecarTridge Kickstart emulator operates through a combination of advanced 
 
 Bit-banging refers to the technique of manually driving the signals that would typically be handled by dedicated hardware. In this context, the emulator generates the necessary address and data signals to fully emulate the ROM chips. This involves coordinating the timing of these signals to match the original ROM's behavior precisely.
 
-The emulator leverages the PIO capabilities of the Raspberry RP2040 and RP235x microcontroller. This technology allows precise control over the timing and sequencing of signals, enabling the emulator to mimic the behavior of the original 27CXXXX integrated circuits (and their equivalents) used in Atari ST computers. The PIO provides the necessary flexibility and accuracy to emulate the ROMs effectively, even at higher frequencies than original hardware.
+The emulator leverages the PIO capabilities of the Raspberry RP2040 and RP235x microcontroller. This technology allows precise control over the timing and sequencing of signals, enabling the emulator to mimic the behavior of the original Kickstart ROM chips fitted to the Amiga 500 and Amiga 2000 motherboards. The PIO provides the necessary flexibility and accuracy to emulate the ROMs effectively, even at higher frequencies than original hardware.
 
 
 ### Flash Memory Storage
