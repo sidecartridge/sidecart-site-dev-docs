@@ -11,7 +11,7 @@ redirect_from:
 
 # Configuration Parameters for Firmware v2
 
-{: warning}
+{: .warning }
 Please modify the parameters with caution, as they can affect the behavior of the SidecarTridge Multi-device board. Read the [User Guide](/sidecartridge-multidevice/userguide_v2/) section for more information.
 
 The number of parameters have been reduced in this version. The parameters that were removed are now set automatically based on the detected hardware and configuration.

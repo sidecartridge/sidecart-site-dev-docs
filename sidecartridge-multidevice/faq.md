@@ -10,6 +10,10 @@ redirect_from:
 ---
 
 # Frequently Asked Questions
+
+{: .warning }
+This page documents the SidecarTridge Multi-device with **firmware v1.0**, which is deprecated. Some answers below no longer apply to the current device. If you are running current firmware, follow the [latest FAQ](/sidecartridge-multidevice/faq_v2/) instead.
+
 This section compiles a list of frequently asked questions (FAQs) about the SidecarTridge Multi-device board, aimed at addressing common inquiries, clarifications, and concerns. Developers are encouraged to consult this section for quick references and insights.
 
 ## General Questions

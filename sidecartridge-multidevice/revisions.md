@@ -10,7 +10,6 @@ redirect_from:
 
 # Board revisions
 {: .no_toc }
-{: .no_toc }
 
 <details open markdown="block">
   <summary>

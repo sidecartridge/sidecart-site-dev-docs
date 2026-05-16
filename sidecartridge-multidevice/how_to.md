@@ -12,7 +12,10 @@ redirect_from:
 # How to
 {: .no_toc }
 
-This section showcases a variety of different configurations and parametric setups for the SidecarTridge Multi-device board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the Multi-device board. If you are new to the Multi-device project, please refer to the [Getting Started](/sidecartridge-multidevice/getting_started/) section first.
+{: .warning }
+This page documents the SidecarTridge Multi-device with **firmware v1.0**, which is deprecated. Several recipes below (microSD format, ROM/floppy folder layout, configuration tool) do not match the current device behaviour. If you are running current firmware, follow the [latest How to guide](/sidecartridge-multidevice/how_to_v2/) instead.
+
+This section showcases a variety of different configurations and parametric setups for the SidecarTridge Multi-device board. You don't need to be a developer to follow these guides, but you will need to be familiar with the basics of the Atari ST and the Multi-device board. If you are new to the Multi-device project, please refer to the [Getting Started (v2)](/sidecartridge-multidevice/getting_started_v2/) section first.
 
 <details open markdown="block">
   <summary>

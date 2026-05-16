@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Unoficial Firmwares
+title: Unofficial Firmwares
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
   - /unoficial_firmwares/
 ---
 
-# Unoficial Firmwares
+# Unofficial Firmwares
 {: .no_toc }
 
 <details open markdown="block">
@@ -20,7 +20,7 @@ redirect_from:
 {:toc}
 </details>
 
-## List of Unoficial firmwares available
+## List of Unofficial firmwares available
 
 
 |  |  |
