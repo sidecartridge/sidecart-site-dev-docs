@@ -81,15 +81,14 @@ Incorrect desoldering can permanently damage the motherboard.
 
 ## Step 4 — Choose the correct emulator kit
 
-Select the kit that matches your motherboard revision.
+Select the kit that matches your motherboard revision. The A500 family is covered by two kits, and the A2000 family by another two.
 
 | SidecarTridge Kickstart Emulator Kit | Supported boards |
 |--------------------------------------|-----------------|
-| [A500 rev3](https://store.sidecartridge.com) | A500 rev3 |
-| [A500 rev5](https://store.sidecartridge.com) | A500 rev5 |
-| [A500 rev6a](https://store.sidecartridge.com) | A500 rev6a |
+| [A500 carrier rev5 and earlier](https://store.sidecartridge.com) | A500 rev3, A500 rev5 |
+| [A500 carrier rev6 and later](https://store.sidecartridge.com)   | A500 rev6a |
 | [A2000 carrier rev4.2 and earlier](https://store.sidecartridge.com) | A2000 rev4.2 and earlier |
-| [A2000 carrier rev4.3 and later](https://store.sidecartridge.com) | A2000 rev4.3 and later |
+| [A2000 carrier rev4.3 and later](https://store.sidecartridge.com)   | A2000 rev4.3 and later |
 
 
 ## Notes on Kickstart ROM sources

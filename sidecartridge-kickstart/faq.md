@@ -65,7 +65,7 @@ No. You need a socketed ROM position. If your ROM is soldered, have a technician
 
 ### Which carrier board should I order?
 
-Match the carrier to your motherboard revision. The A500 family uses three dedicated kits (A500 rev3, A500 rev5, A500 rev6a), and the Amiga 2000 uses one of two dedicated carriers depending on the motherboard revision (A2000 carrier rev4.2 and earlier, or A2000 carrier rev4.3 and later). See [Before You Buy](/sidecartridge-kickstart/before-buy/) and [Compatibility](/sidecartridge-kickstart/compatibility/) for the full list.
+Match the carrier to your motherboard revision. The A500 family is covered by two kits: `A500 carrier rev5 and earlier` (for A500 rev3 and rev5 motherboards) and `A500 carrier rev6 and later` (for A500 rev6a motherboards). The Amiga 2000 has two dedicated carriers depending on the motherboard revision: `A2000 carrier rev4.2 and earlier` and `A2000 carrier rev4.3 and later`. See [Before You Buy](/sidecartridge-kickstart/before-buy/) and [Compatibility](/sidecartridge-kickstart/compatibility/) for the full list.
 
 ## Software Questions
 
