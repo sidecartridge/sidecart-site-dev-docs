@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Public Floppy DB
+nav_order: 15
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:

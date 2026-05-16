@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Public ROM DB
+nav_order: 16
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
