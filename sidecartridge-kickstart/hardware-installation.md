@@ -113,26 +113,32 @@ The SidecarTridge carrier board has to be plugged into the ROM socket as describ
 
 ![Amiga 500 ROM socket alignment](/sidecartridge-kickstart/assets/images/amiga-500-kickstart-alignment.jpg)
 
-#### Insert the Emulator
+#### Amiga 2000
+
+The SidecarTridge carrier board for the Amiga 2000 plugs into the Kickstart ROM socket on the motherboard. Before inserting the board, make sure the OOPS Bug jumper is set correctly for your motherboard revision (see [Setting the OOPS Bug jumper](#setting-the-oops-bug-jumper-only-for-the-amiga-2000) above).
+
+The carrier board is keyed so the silkscreened pin-1 marker on the carrier lines up with pin 1 of the Kickstart ROM socket on the motherboard. Take a moment to identify pin 1 on the socket (the side of the socket with the notch, typically labelled on the silkscreen) before pressing the board in. The carrier should sit centred over the socket with no pins overhanging the socket edges. If the board does not align cleanly, stop and re-check the orientation rather than forcing it.
+
+### Insert the Emulator
 Gently press the SidecarTridge Kickstart Emulator into the ROM socket. Apply even pressure on both sides to avoid bending any pins. Make sure it is fully seated and secure in the socket. Try to insert all the pins at once, and don't force it if it doesn't fit.
 
-By following these steps, you will have successfully connected and secured the SidecarTridge Kickstart Emulator to your Amiga 500, ensuring a stable and functional installation.
+By following these steps, you will have successfully connected and secured the SidecarTridge Kickstart Emulator to your Amiga, ensuring a stable and functional installation.
 
 ![Amiga 500 ROM socket placement](/sidecartridge-kickstart/assets/images/amiga-500-kickstart-placement.jpg)
 
-As a final step, connect the rescue mode cable to the SidecarTridge Kickstart Emulator. This cable is essential for accessing the rescue mode if needed in the future. The cable is long enough to show outside the Amiga case through the expansion port area.
+As a final step, connect the rescue mode cable to the SidecarTridge Kickstart Emulator. This cable is essential for accessing the rescue mode if needed in the future. Route the cable so it can exit the Amiga case through an available opening (the expansion port area on the Amiga 500, or a free slot opening on the Amiga 2000) so the rescue button remains accessible from outside.
 
-## Closing the Amiga 500 Case
+## Closing the Amiga Case
 
 ### Test the unit before closing the case
-Before reassembling the Amiga 500, it is recommended to test the unit to ensure the SidecarTridge Kickstart Emulator is functioning correctly. Power on the Amiga 500 and verify that the SidecarTridge Kickstart Emulator is recognized and operational.
+Before reassembling the Amiga, it is recommended to test the unit to ensure the SidecarTridge Kickstart Emulator is functioning correctly. Power on the Amiga and verify that the SidecarTridge Kickstart Emulator is recognized and operational.
 
-If the SidecarTridge Kickstart Emulator is not recognized or functioning correctly, power off the Amiga 500 and recheck the installation steps to identify and resolve any issues. If the problem persists, refer to the [Troubleshooting](/sidecartridge-kickstart/troubleshooting/) section for further assistance.
+If the SidecarTridge Kickstart Emulator is not recognized or functioning correctly, power off the Amiga and recheck the installation steps to identify and resolve any issues. If the problem persists, refer to the [Troubleshooting](/sidecartridge-kickstart/troubleshooting/) section for further assistance.
 
-### Reassemble the Amiga 500
-Once the SidecarTridge Kickstart Emulator is confirmed to be working correctly, reassemble the Amiga 500 by reversing the steps taken to open the case.
+### Reassemble the Amiga
+Once the SidecarTridge Kickstart Emulator is confirmed to be working correctly, reassemble the Amiga by reversing the steps taken to open the case.
 
-Before closing the case, ensure there is no contacts of any of the elements of the SidecarTridge Kickstart Emulator with the metal shielding or any other component that could cause a short circuit.
+Before closing the case, ensure that no element of the SidecarTridge Kickstart Emulator is in contact with the metal shielding or any other component that could cause a short circuit.
 
 [Previous: Getting Started](/sidecartridge-kickstart/getting-started/){: .btn .mr-4 }
 [Main](/sidecartridge-kickstart/){: .btn .mr-4 }
