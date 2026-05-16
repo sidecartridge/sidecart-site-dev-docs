@@ -71,7 +71,7 @@ The SidecarTridge Kickstart emulator does not come with Kickstart image files du
 
 When you receive your SidecarTridge Kickstart emulator kit, carefully unbox and inspect the components to ensure everything is included and in good condition. All kits should contain the following items:
 
-1. **SidecarTridge ROM Emulator Board soldered onto the Carrier Board**: This is the main component that will replace the ROM chips on your Atari ST motherboard.
+1. **SidecarTridge ROM Emulator Board soldered onto the Carrier Board**: This is the main component that will replace the Kickstart ROM chip on your Amiga motherboard.
 2. **RESCUE cable and push button**: This cable allows you to connect an external push button to the SidecarTridge Kickstart emulator for entering rescue mode.
 
 The board and the sticker on the box contain a QR code that links to the SidecarTridge Kickstart documentation website, providing access to the quickstart, user guide, compatibility information, and other resources.
@@ -87,7 +87,7 @@ As a rule of thumb, **ALWAYS** eject the `ROMEMUL` volume after making any chang
 
 ### Connecting the Device to a Computer
 
-The SidecarTridge Kickstart emulator has two modes: mass storage mode for transferring Kickstart image files and ROM emulation mode for booting the Atari ST with the selected Kickstart image. This section focuses on mass storage mode.
+The SidecarTridge Kickstart emulator has two modes: mass storage mode for transferring Kickstart image files and ROM emulation mode for booting the Amiga with the selected Kickstart image. This section focuses on mass storage mode.
 
 To enter mass storage mode, plug the SidecarTridge Kickstart emulator into the USB-C cable and connect it to your computer. It can be connected to both the Amiga and your computer simultaneously but will enter mass storage mode when powered on from the USB-C cable.
 
@@ -149,7 +149,7 @@ With the ROM image files organized and renamed, you can proceed to copy them to 
 
 #### Copying the ROM Images on macOS
 
-You can simply drag and drop the ROM image files from the `ROM Images` folder to the `ROMEMUL` volume. The files will be copied to the emulator's storage space and will be accessible for booting the Atari ST with the selected ROM image.
+You can simply drag and drop the ROM image files from the `ROM Images` folder to the `ROMEMUL` volume. The files will be copied to the emulator's storage space and will be accessible for booting the Amiga with the selected ROM image.
 
 When dragging and dropping files from a Mac to the SidecarTridge Kickstart emulator, macOS creates temporary hidden files that are not supported by the SidecarTridge Kickstart emulator. To avoid this, it is recommended to open a Terminal window to copy the files to the SidecarTridge Kickstart emulator.
 
