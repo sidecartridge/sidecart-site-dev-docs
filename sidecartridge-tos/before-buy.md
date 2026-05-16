@@ -7,34 +7,50 @@ parent: SidecarTridge TOS
 ---
 
 # Before You Buy
+{: .no_toc }
 
-The SidecarTridge TOS emulator is designed to work with specific Atari ST models and motherboards. There are different versions of the device to accommodate various motherboard configurations. **Please follow these steps before purchasing the emulator**:
+Use this checklist to confirm that your Atari ST motherboard is compatible with the SidecarTridge TOS Emulator and that you select the correct kit before purchasing.
 
-### Check Your Atari ST Motherboard Model
+The emulator is designed to work with specific Atari ST, Mega ST, STE and Mega STE motherboards. Different carrier boards are required depending on the motherboard model and the number of ROM chips installed.
 
-To learn more about your Atari ST motherboard model, open the case and look for the model number printed on the board, usually located in the middle bottom of the motherboard. Refer to the [Compatibility](/sidecartridge-tos/compatibility/) section for a list of supported motherboards. If your motherboard model is not listed, please contact us for further assistance. If your motherboard model number is listed, proceed to the next step.
-For example:
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
-An Atari ST motherboard model number might look like this:
+## Step 1 - Check your Atari ST motherboard model
+
+Open the case and locate the motherboard model number printed on the board, usually in the middle bottom area.
+
+Check the model number against the list in the [Compatibility](/sidecartridge-tos/compatibility/) section. If your motherboard is not listed, contact support before purchasing.
+
+For reference, an Atari ST motherboard model number might look like this:
+
 ![Atari ST Motherboard Model](/sidecartridge-tos/assets/images/sidecartridge-st2-motherboard.png)
 
 An Atari STE motherboard model number might look like this:
+
 ![Atari STE Motherboard Model](/sidecartridge-tos/assets/images/sidecartridge-ste-motherboard.png)
 
-### Determine the Number of ROMs
+## Step 2 - Determine the number of ROMs
 
-At this moment, the SidecarTridge TOS emulator supports Atari ST motherboards with two and six ROM chips. Please double check the number of ROMs on your motherboard before proceeding
+The SidecarTridge TOS Emulator supports Atari ST motherboards with **two** or **six** ROM chips. Count the physical ROM chips on your motherboard before proceeding; the correct kit depends on this number.
 
-### ROMs Plugged or Soldered
+## Step 3 - Check if the ROMs are socketed
 
-If your ROMs are plugged, congratulations, you can proceed with the purchase. If they are soldered, you will need to desolder them and plug them into sockets. 
+The TOS ROMs must be installed in sockets. If your ROMs are soldered, they need to be removed and sockets fitted in their place before you can use the emulator.
 
 {: .warning}
-If you are not comfortable with desoldering and soldering, please seek professional help to avoid damaging your Atari ST motherboard. We strongly recommend using an experienced technician to perform this task.
+If you are not experienced with desoldering, ask a qualified technician to perform the work. Incorrect desoldering can permanently damage the Atari ST motherboard.
 
-### Purchase the Right SidecarTridge TOS Emulator Kit
+## Step 4 - Purchase the right SidecarTridge TOS Emulator kit
+{: #purchase-the-right-kit }
 
-Once you have verified the compatibility of your Atari ST motherboard, you can proceed to purchase the appropriate SidecarTridge TOS emulator kit. Ensure you select the correct kit based on your motherboard model number and the number of ROMs.
+Once you have confirmed your motherboard model and the number of ROM chips, select the kit that matches both. Use the table below.
 
 
 | SidecarTridge TOS Emulator Kit | Supported Motherboards           | Number of ROMs |
