@@ -11,6 +11,9 @@ redirect_from:
 
 # Compatibility Issues
 
+{: .warning }
+This page documents the SidecarTridge Multi-device with **firmware v1.0**, which is deprecated. The compatibility statements below (notably the claim that Atari TT and Falcon are not supported) do not match the current device behaviour. If you are running current firmware, follow the [latest Compatibility page](/sidecartridge-multidevice/compatibility_v2/) instead.
+
 ## Warning to all users
 SidecarTridge Multi-device has undergone extensive testing on various Atari ST, STE, MegaST, and MegaSTE computers featuring diverse TOS versions. However, it's important to note that this version does not support Atari TT, Falcon computers, and their clones. While heavily modified and customized computers are likely compatible, it’s up to you to decide to use the Multi-device.
 

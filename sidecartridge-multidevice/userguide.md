@@ -12,6 +12,9 @@ redirect_from:
 # User Guide
 {: .no_toc }
 
+{: .warning }
+This page documents the SidecarTridge Multi-device with **firmware v1.0**, which is deprecated. Several statements below (microSD format, advanced settings, Booster app workflow, etc.) do not match the current device behaviour. If you are running current firmware, follow the [latest User Guide](/sidecartridge-multidevice/userguide_v2/) instead.
+
 <details open markdown="block">
   <summary>
     Table of contents

@@ -11,6 +11,9 @@ redirect_from:
 # Troubleshooting
 {: .no_toc }
 
+{: .warning }
+This page documents the SidecarTridge Multi-device with **firmware v1.0**, which is deprecated. Some symptoms and fixes below no longer apply to the current device. If you are running current firmware, follow the [latest Troubleshooting guide](/sidecartridge-multidevice/troubleshooting_v2/) instead.
+
 This section is dedicated to assisting developers in resolving issues encountered while working with the SidecarTridge Multi-device board. It includes common troubleshooting steps, frequently asked questions, and resources for additional support, enabling developers to find solutions and get back to development swiftly.
 
 <details open markdown="block">

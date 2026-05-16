@@ -1,8 +1,8 @@
 ---
 layout: default
-title: User Guide Firmware V2.0 
+title: User Guide Firmware V2.0
 nav_order: 3
-nav_exclude: true
+nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /userguide_v2/

@@ -12,6 +12,9 @@ redirect_from:
 # Getting Started
 {: .no_toc }
 
+{: .warning }
+This page documents the SidecarTridge Multi-device with **firmware v1.0**, which is deprecated. Some statements below (microSD format, supported Atari models, etc.) do not match the current device behaviour. If you are running current firmware, follow the [latest Getting Started guide](/sidecartridge-multidevice/getting_started_v2/) instead.
+
 This section provides guidance on the initial steps to start working with the SidecarTridge Multi-device board. If you are a developer or maker it includes prerequisites, board assembly instructions, setup and configuration. Developers and Makers can also ensure a smooth start to their journey with the Multi-device board by following the procedures outlined in this and coming sections.
 
 <details open markdown="block">

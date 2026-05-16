@@ -153,7 +153,7 @@ You can learn about the new features and improvements in the latest firmware rel
 
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
-    <h3>🤝 <a href="/sidecartridge-multidevice/compatibility_issues/">Compatibility</a></h3>
+    <h3>🤝 <a href="/sidecartridge-multidevice/compatibility_v2/">Compatibility</a></h3>
     <p>Please read this section if you have issues with your SidecarTridge Multi-device.</p>
   </div>
 
@@ -195,7 +195,7 @@ You can learn about the new features and improvements in the latest firmware rel
 
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
-    <h3>🗄️ <a href="/sidecartridge-multidevice/unofficial_firmwares/">Unoficial Firmwares</a></h3>
+    <h3>🗄️ <a href="/sidecartridge-multidevice/unofficial_firmwares/">Unofficial Firmwares</a></h3>
     <p>Smart people out there building incredible stuff with the device</p>
   </div>
 
