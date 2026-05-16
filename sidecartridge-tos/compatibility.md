@@ -82,6 +82,9 @@ Carrier boards for non supported motherboards are in active development. Please 
 | CA400677 Rev. F          |       2        | Supported       |
 
 
+{: .info}
+Motherboards listed as `Not supported` either use a ROM socket layout for which no carrier board has been developed yet, or have hardware characteristics that the SidecarTridge TOS Emulator cannot currently emulate. If you own one of these motherboards and want to know the current status, please contact us.
+
 {: .warning}
 If you can't find your motherboard model number in the list, or have any doubts about compatibility, please contact us for further assistance.
 
