@@ -107,7 +107,7 @@ You can find below a list of TOS versions tested with the SidecarTridge TOS emul
 | TOS 1.02 UK | 192       | Yes    | Yes   |       |
 | TOS 1.02 US | 192       | Yes    | Yes   |       |
 | TOS 1.02 DE Fast load edited icons | 192       | Yes    | Yes   | Customized TOS |
-| TOS 1.04 DE | 192       | Yes    | Yes   | Raindow TOS |
+| TOS 1.04 DE | 192       | Yes    | Yes   | Rainbow TOS |
 | TOS 1.04 FR | 192       | Yes    | Yes   |       |
 | TOS 1.04 NL | 192       | Yes    | Yes   |       |
 | TOS 1.04 SE | 192       | Yes    | Yes   |       |

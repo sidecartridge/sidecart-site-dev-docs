@@ -107,7 +107,7 @@ The SidecarTridge TOS emulator is designed to meet the needs of a diverse range 
 
 1. **Atari ST Enthusiasts**: Individuals passionate about the Atari ST series who want to enhance their systems with modern capabilities, easily switch between different TOS versions, and experiment with custom ROMs.
 
-2. **Developers**: Software developers looking to test their applications across various TOS versions and custom firmware without relaying on software emulators.
+2. **Developers**: Software developers looking to test their applications across various TOS versions and custom firmware without relying on software emulators.
 
 3. **Retro Computing Hobbyists**: Hobbyists dedicated to preserving and exploring retro computing systems. The emulator offers a convenient and non-invasive way to run and experiment with different operating systems on their Atari ST machines.
 
@@ -129,7 +129,7 @@ Hence, the SidecarTridge TOS emulator combines the core functionality of the ROM
 
 The SidecarTridge TOS emulator comprises several key components, each playing a vital role in its functionality and ease of use. Below is a list and description of the main components:
 
-1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge TOS emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Atari ST bus through  TTL (5 volts)to CMOS (3.3 Volts) bus level shifters.
+1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge TOS emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Atari ST bus through TTL (5 V) to CMOS (3.3 V) bus level shifters.
 
 2. **SidecarTridge Atari ST Model Carrier Board**: The carrier boards are designed to fit seamlessly into various models of the Atari ST series, including the ST, STE, Mega ST, and Mega STE. The carrier connects the ROM emulator board to the Atari ST bus, allowing the emulator to communicate with the motherboard and provide the necessary signals transparently. Carrier boards are available for motherboards with **2 ROM sockets** as well as **6 ROM sockets**; see the kit table in [Before You Buy](/sidecartridge-tos/before-buy/#purchase-the-right-kit) for the specific kit that matches your motherboard.
 
@@ -164,7 +164,7 @@ SWITCHER.TOS is a user-friendly software provided for managing the ROMs. Users c
 
 ### Developing and Testing Custom ROMs
 
-The SidecarTridge TOS emulator is an encarnation of one of the possibilities of the SidecarTridge ROM emulator board. This board is designed to be versatile and flexible, allowing users of other retro platforms to develop solutions that require ROM emulation. 
+The SidecarTridge TOS emulator is an incarnation of one of the possibilities of the SidecarTridge ROM emulator board. This board is designed to be versatile and flexible, allowing users of other retro platforms to develop solutions that require ROM emulation. 
 
 A simple API will be provided to allow developers to create their own software to upload ROMs from the Atari ST computers themselves.
 
