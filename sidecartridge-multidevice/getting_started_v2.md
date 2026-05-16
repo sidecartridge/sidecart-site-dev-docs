@@ -280,7 +280,7 @@ To begin with the Multi-device board, **developers are required to have a minimu
 
 - **Integration with GDB**: Skills in using GDB for debugging software, setting breakpoints, inspecting variables, and analyzing program flow, especially in conjunction with Visual Studio Code, are essential for troubleshooting and ensuring software stability.
 
-And if you want to contribute to the harware, skills in reading schematics, understanding electronic components, and practical skills like soldering will facilitate working with the hardware aspects of Multi-device.
+And if you want to contribute to the hardware, skills in reading schematics, understanding electronic components, and practical skills like soldering will facilitate working with the hardware aspects of Multi-device.
     
 {: .note }
 Even if you’re not an expert in all these areas, your contribution is still valuable. Engage, learn, and grow with the Multi-device community!
