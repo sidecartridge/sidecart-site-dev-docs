@@ -351,7 +351,7 @@ This section explains how to select the floppy image to emulate from the databas
 ### Set the URL of the database and images files
 
 {: .warning }
-For avanced users only.
+For advanced users only.
 
 The Multi-device can be configured to use a web server to host both the database and images files. It's not necessary to have both in the same server. 
 
