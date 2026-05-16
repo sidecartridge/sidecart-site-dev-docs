@@ -128,7 +128,7 @@ Visit the official [downloads](https://sidecartridge.com/downloads/) page to get
   </div>
 
   <div class="toc-card">
-    <span class="toc-chip chip-guide">Reference</span>
+    <span class="toc-chip chip-ref">Reference</span>
     <h3>😊 <a href="/sidecartridge-tos/advanced-settings/">Advanced Settings</a></h3>
     <p>Explore advanced configuration options for power users.</p>
   </div>
