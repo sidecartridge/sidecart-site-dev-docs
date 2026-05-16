@@ -67,7 +67,7 @@ In summary, the SidecarTridge Kickstart emulator is designed to make Kickstart m
 
 1. **Bit-Banged Emulation**: Leveraging the powerful Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x, the SidecarTridge ROM emulator board emulates the internal ROMs of the Amiga 512KB ROM series through bit-banged emulation, eliminating the need for custom firmware or complex hardware.
 
-2. **Multi-Kickstart Version Support**: With 16MB of flash memory allows users to store and access up to 32 different Kickstart versions without requiring physical ROM swaps.
+2. **Multi-Kickstart Version Support**: With 16MB of flash memory, users can store dozens of 256KB and 512KB Kickstart images and custom ROMs and switch between them without requiring physical ROM swaps.
 
 3. **Custom ROM Support**: The emulator can run any ROM image file, including custom ROMs and open-source replacements like [EmuTOS](https://emutos.sourceforge.io/) or diagnose ROMs like [DiagROM](https://diagrom.com/). This enables users to experiment with various firmware options and enhance the functionality of the Amiga.
 
@@ -131,7 +131,7 @@ The SidecarTridge Kickstart emulator comprises several key components, each play
 
 1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge Kickstart emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Amiga bus through TTL (5 volts)to CMOS (3.3 Volts) bus level shifters.
 
-2. **SidecarTridge Amiga Model Carrier Board**: The carrier boards are designed to fit seamlessly into A500 and A200 Amiga computers. It connects the ROM emulator board to the Amiga bus, allowing the emulator to communicate with the motherboard and provide the necessary signals transparently. The current versions of the carrier boards are designed to fit the Amiga A500 and A2000.
+2. **SidecarTridge Amiga Model Carrier Board**: The carrier boards are designed to fit seamlessly into A500 and A2000 Amiga computers. It connects the ROM emulator board to the Amiga bus, allowing the emulator to communicate with the motherboard and provide the necessary signals transparently. The current versions of the carrier boards are designed to fit the Amiga A500 and A2000.
 
 3. **USB Cable (Optional)**: A standard USB-C cable is needed to connect the SidecarTridge ROM emulator board to a computer. This connection is used for transferring ROM image files and custom ROMs to the emulator, making it appear as a mass storage device for easy file management. The USB cable also provides power to the emulator during the firmware update process and file transfer. 
 
@@ -153,7 +153,7 @@ The emulator leverages the PIO capabilities of the Raspberry RP2040 and RP235x m
 
 The Flash memory is a non-volatile memory that stores up to 16MB of data. This memory is used to store the ROM image files, the metadata of the ROM image files and the firmware of the device.
 
-Users can connect the emulator to a computer via USB to manage ROM files. The emulator appears as a FAT16 mass storage device, allowing users to easily copy ROM image files. This USB interface simplifies the process of updating and switching ROMs without physically interacting with the Amiga’s internals. The file system has been enhanced to provide information about the status of the emulator and the installed ROMs, as well as the ability to modify the default and rescue ROMs.
+Users can connect the emulator to a computer via USB to manage ROM files. The emulator appears as a FAT12 mass storage device, allowing users to easily copy ROM image files. This USB interface simplifies the process of updating and switching ROMs without physically interacting with the Amiga’s internals. The file system has been enhanced to provide information about the status of the emulator and the installed ROMs, as well as the ability to modify the default and rescue ROMs.
 
 ### Hot Swapping the ROMs from the Amiga
 
