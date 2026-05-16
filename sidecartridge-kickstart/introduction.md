@@ -107,7 +107,7 @@ The SidecarTridge Kickstart emulator is designed to meet the needs of a diverse 
 
 1. **Amiga Enthusiasts**: Individuals passionate about the Amiga series who want to enhance their systems with modern capabilities, easily switch between different Kickstart versions, and experiment with custom ROMs.
 
-2. **Developers**: Software developers looking to test their applications across various Kickstart versions and custom firmware without relaying on software emulators.
+2. **Developers**: Software developers looking to test their applications across various Kickstart versions and custom firmware without relying on software emulators.
 
 3. **Retro Computing Hobbyists**: Hobbyists dedicated to preserving and exploring retro computing systems. The emulator offers a convenient and non-invasive way to run and experiment with different operating systems on their Amiga machines.
 
@@ -127,7 +127,7 @@ By leveraging bit-banged emulation, the device provides a reliable and effective
 
 The SidecarTridge Kickstart emulator comprises several key components, each playing a vital role in its functionality and ease of use. Below is a list and description of the main components:
 
-1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge Kickstart emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Amiga bus through TTL (5 volts)to CMOS (3.3 Volts) bus level shifters.
+1. **[SidecarTridge ROM Emulator Board](/sidecartridge-rom/)**: This is the core of the SidecarTridge Kickstart emulator. It leverages the Programmable Input Output (PIO) features of the Raspberry RP2040 and RP235x to emulate a ROM chip at the signal level. This board houses the necessary circuitry and flash memory to store multiple custom ROMs, provides the interface for USB connectivity, and communicates with the Amiga bus through TTL (5 V) to CMOS (3.3 V) bus level shifters.
 
 2. **SidecarTridge Amiga Model Carrier Board**: The carrier boards are designed to fit seamlessly into A500 and A2000 Amiga computers. It connects the ROM emulator board to the Amiga bus, allowing the emulator to communicate with the motherboard and provide the necessary signals transparently. The current versions of the carrier boards are designed to fit the Amiga A500 and A2000.
 
@@ -161,7 +161,7 @@ SWITCHER is a user-friendly software provided for managing the ROMs. Users can s
 
 ### Developing and Testing Custom ROMs
 
-The SidecarTridge Kickstart emulator is an encarnation of one of the possibilities of the SidecarTridge ROM emulator board. This board is designed to be versatile and flexible, allowing users of other retro platforms to develop solutions that require ROM emulation.
+The SidecarTridge Kickstart emulator is an incarnation of one of the possibilities of the SidecarTridge ROM emulator board. This board is designed to be versatile and flexible, allowing users of other retro platforms to develop solutions that require ROM emulation.
 
 A simple API will be provided to allow developers to create their own software to upload ROMs from the Amiga computers themselves.
 

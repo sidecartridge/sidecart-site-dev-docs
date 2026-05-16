@@ -110,7 +110,7 @@ Open the `ROMEMUL` volume on your computer to access firmware files, Kickstart i
 There are also metadata system files and directories starting with a dot (.) used by the host computer and not the SidecarTridge Kickstart emulator. Just ignore them.
 
 {: .note }
-There may be an offset of 4KBytes between the actual size of the image and the displayed file size due to the 4KBytes cluster size used by the SidecarTridge Kickstart emulator's FAT12 file system.
+Due to the 4 KB FAT12 cluster size used by the SidecarTridge Kickstart emulator, the displayed file size may be rounded up by up to 4 KB compared to the actual image size.
 
 ![SidecarTridge Volume](/sidecartridge-kickstart/assets/images/sidecartridge-volume.png)
 
