@@ -120,6 +120,15 @@ The SidecarTridge Kickstart emulator uses a FAT12 file system with a 4KBytes clu
 
 To copy ROM image files to the SidecarTridge Kickstart emulator, drag and drop them into the `ROMEMUL` volume. The emulator will automatically store the ROM images in the file system.
 
+### ROM image size requirements
+
+The emulator presents a single 512KB ROM image to the Amiga. Every file copied to `ROMEMUL` and selected as the active or rescue image must therefore be **exactly 524288 bytes (512KB)**.
+
+- Kickstart 2.04 and later, DiagROM, EmuTOS and most modern custom ROMs are already 512KB. Copy them directly.
+- Kickstart 1.1, 1.2, 1.3 and other early 256KB Kickstarts must be mirrored to 512KB before being copied to `ROMEMUL`. Real Amiga motherboards mirror those 256KB into the 512KB ROM socket natively, but the SidecarTridge Kickstart emulator does not, so the user has to do it once on the file. This is by design.
+
+If your source is an Amiga Forever encrypted image (`AMIROMTYPE1`), the [web converter](/sidecartridge-kickstart/kickstart-conversion/) takes care of the mirror automatically when needed. If your source is already a plain 256KB ROM dump, follow the manual mirroring instructions in [Already-decoded Kickstart ROMs](/sidecartridge-kickstart/kickstart-conversion/#already-decoded-kickstart-roms) before continuing with this section.
+
 ### Copying ROM Image Files
 
 Before copying ROM image files to the SidecarTridge Kickstart emulator, it is strongly recommended to first copy all files to a folder on your computer. This way, you can easily restore them if needed.

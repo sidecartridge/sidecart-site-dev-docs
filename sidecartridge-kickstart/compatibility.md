@@ -53,15 +53,30 @@ If your motherboard revision is not listed, or if you are unsure whether the ROM
 
 ## Kickstart and custom ROM compatibility
 
-The SidecarTridge Kickstart emulator targets the classic Amiga 512KB Kickstart ROM series and also runs custom ROMs such as DiagROM or EmuTOS. If you use Cloanto/Amiga Forever images, convert them with the [Kickstart ROM conversion guide](/sidecartridge-kickstart/kickstart-conversion/).
+The SidecarTridge Kickstart emulator targets the classic Amiga 512KB Kickstart ROM socket and also runs custom ROMs such as DiagROM or EmuTOS. If you use Cloanto/Amiga Forever images, convert them with the [Kickstart ROM conversion guide](/sidecartridge-kickstart/kickstart-conversion/).
 
-| ROM image | Size (KB) | Tested | Works | Notes |
-|-----------|-----------|--------|-------|-------|
+### ROM image size requirements
+
+The emulator presents a single 512KB ROM image to the Amiga. Every file copied to `ROMEMUL` and selected via `DEFAULT.TXT`/`RESCUE.TXT` (or SWITCHER) must therefore be **exactly 524288 bytes (512KB)**.
+
+Original Kickstart 1.x and early 2.x images are 256KB on real hardware because the original Amiga motherboards mirror those 256KB into the 512KB address space natively. The SidecarTridge Kickstart emulator does not perform that mirror in firmware, so 256KB Kickstart images must be doubled (mirrored to 512KB) in software before they can be used. This is by design and will not change in future firmware releases.
+
+There are two ways to obtain a 512KB image from a 256KB Kickstart source:
+
+- **Encrypted Amiga Forever image (AMIROMTYPE1)**: use the [web converter](/sidecartridge-kickstart/kickstart-conversion/). When the decoded payload is 256KB or smaller, the converter automatically pads it to 256KB and duplicates the block, returning a ready-to-use 512KB file.
+- **Already-decoded plain 256KB ROM dump**: the converter does not accept this kind of file. Duplicate the ROM manually before copying it to `ROMEMUL`. See [Already-decoded Kickstart ROMs](/sidecartridge-kickstart/kickstart-conversion/#already-decoded-kickstart-roms) for the exact `cat` and PowerShell snippets.
+
+Files that are not exactly 512KB on `ROMEMUL` will either be ignored by the device or boot to a hang/black screen on the Amiga, depending on the actual size. If you see that behaviour, check the byte count of the file first.
+
+### Tested ROM images
+
+| ROM image | Native size (KB) | Tested | Works | Notes |
+|-----------|------------------|--------|-------|-------|
 | Kickstart 0.7 | 256 | Yes | No | Fails to boot properly on the emulator |
 | Kickstart 1.0 | 256 | Yes | No | Fails to boot properly on the emulator |
-| Kickstart 1.1 | 256 | Yes | Yes | OK |
-| Kickstart 1.2 (33.180) | 256 | Yes | Yes | OK |
-| Kickstart 1.3 (34.5) | 256 | Yes | Yes | OK |
+| Kickstart 1.1 | 256 | Yes | Yes | Must be mirrored to 512KB before use |
+| Kickstart 1.2 (33.180) | 256 | Yes | Yes | Must be mirrored to 512KB before use |
+| Kickstart 1.3 (34.5) | 256 | Yes | Yes | Must be mirrored to 512KB before use |
 | Kickstart 2.04 (37.175) | 512 | Yes | Yes | OK |
 | Kickstart 2.05 | 512 | Yes | Yes | OK |
 | Kickstart 3.0 | 512 | Yes | Yes | OK |
