@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Enclosures/Cases
+nav_order: 13
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:

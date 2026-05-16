@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Board revisions
+nav_order: 14
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:

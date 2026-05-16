@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Unofficial Firmwares
+nav_order: 17
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
