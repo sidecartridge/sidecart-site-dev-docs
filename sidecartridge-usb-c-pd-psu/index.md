@@ -14,7 +14,7 @@ has_toc: false
 
 ## The USB-C PD Multi-Rail Power Supply Unit board
 
-This USB-C Power Delivery multi-rail converter board is designed to generate clean, regulated +5 V, +12 V, and −12 V inside the machine. The output rails can deliver up to 3 A on +5 V, 3 A on +12 V, and 0.3 A on −12 V. It is intended for use in retro computing applications, such as powering vintage computers like the Atari ST/STE/MegaST or Amiga 500 or other electronics projects that require multiple voltage rails.
+This USB-C Power Delivery multi-rail converter board is designed to generate clean, regulated +5 V, +12 V, and −12 V inside the machine. The output rails can deliver up to 3 A on +5 V, 3 A on +12 V, and 0.3 A on −12 V. It is intended for use in retro computing applications, such as powering vintage computers like the Atari ST/STE/MegaST and Amiga 500, or other electronics projects that require multiple voltage rails.
 
 The board is powered by a USB-C PD charger that must provide either 15 V or 20 V input voltage. It includes overcurrent and thermal protection features to ensure safe operation. The board is compact and easy to integrate into existing systems, making it a convenient solution for powering retro computing devices.
 
@@ -31,7 +31,7 @@ The board is powered by a USB-C PD charger that must provide either 15 V or 20 V
 
 ## List of charger models tested
 
-> **Warning:** Power adapters must be PD 3.0 compliant. Some chargers with PD 3.1 may not work properly—specifically those advertising Extended Power Range (EPR)—even if they claim backwards compatibility with PD 3.0.
+> **Warning:** Power adapters must be PD 3.0 compliant. Some chargers with PD 3.1 may not work properly, specifically those advertising Extended Power Range (EPR), even if they claim backwards compatibility with PD 3.0.
 
 | Brand         | Model                          | Output Power | Notes|
 |---------------|--------------------------------|--------------|--------------------------------------------|
@@ -55,7 +55,7 @@ A hardware slider on the top-left corner of the board lets you decide which Powe
 Keep in mind:
 
 - The connected PD charger **must** support the profile you select. If it lacks the requested 15 V or 20 V mode, negotiation fails.
-- When negotiation succeeds, the red status LED in the top-right corner turns on. If the LED stays off, the charger is not delivering the selected profile—switch to the other position or use a compatible adapter.
+- When negotiation succeeds, the red status LED in the top-right corner turns on. If the LED stays off, the charger is not delivering the selected profile, so switch to the other position or use a compatible adapter.
 
 Selecting the higher 20 V profile is preferred whenever your charger supports it (extra headroom for expansion boards), but either profile is valid as long as the adapter can supply sufficient current.
 
@@ -73,13 +73,13 @@ Selecting the higher 20 V profile is preferred whenever your charger supports 
 
 ![External USB-C PD PSU with printed enclosure](/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-external-kit.jpg)
 
-This fully assembled external PSU directly replaces the original 7-pin Atari ST power brick used by the earliest “short” 520ST units. The SidecarTridge USB-C PD multi-rail board is pre-mounted inside a resin enclosure, the harness is professionally crimped with the correct JST-VH and 7-pin DIN connectors, and strain relief is already in place. Plug in a compliant USB-C PD charger, connect the DIN plug to the ST, and power up—no need to open the computer or touch mains voltages.
+This fully assembled external PSU directly replaces the original 7-pin Atari ST power brick used by the earliest “short” 520ST units. The SidecarTridge USB-C PD multi-rail board is pre-mounted inside a resin enclosure, the harness is professionally crimped with the correct JST-VH and 7-pin DIN connectors, and strain relief is already in place. Plug in a compliant USB-C PD charger, connect the DIN plug to the ST, and power up. There is no need to open the computer or touch mains voltages.
 
 Key points:
 
 - Single USB-C PD input with independently regulated +5 V/+12 V/−12 V rails sized for the short-model Atari ST mainboard plus SidecarTridge add-ons
 - Harness length matched to the short-model ST rear inlet; keeps wiring tidy even on bare chassis
-- Includes printed enclosure, internal wiring loom, fasteners, and pre-installed rubber feet—ready out of the box
+- Includes printed enclosure, internal wiring loom, fasteners, and pre-installed rubber feet, ready out of the box
 - Integrated +5 V USB-A auxiliary output for devices such as ACSI2STM, SatanDisk, or Gotek
 - Ideal for labs/repairs when you need a safe, swappable supply without reassembling the computer
 
