@@ -123,7 +123,7 @@ has_toc: false
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-PERSPCTIVE.png" alt="SidecarTridge 256KB Decoder for Mega ST thumbnail">
+      <img class="proj-thumb" src="/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-PERSPECTIVE.png" alt="SidecarTridge 256KB Decoder for Mega ST thumbnail">
       <div>
         <h2><a href="/sidecartridge-tos-256kb-decoder/">SidecarTridge TOS 256KB Decoder for Atari Mega ST</a></h2>
         <p>A decoder board that enables 256KB ROM decoding on supported Atari Mega ST systems with the SidecarTridge TOS emulator.</p>
