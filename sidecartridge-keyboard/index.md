@@ -30,7 +30,7 @@ The project currently exists in two hardware variants that share the same firmwa
   Internal adapter for Atari ST and Atari STe computers with the internal 7-pin keyboard connector.  
   Works as a middle-man between the motherboard and the original keyboard path, allowing Bluetooth, and mixed input configurations while preserving compatibility with original devices.
 
-![SidecarTridge Croissant internal keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-TOP.png)
+![SidecarTridge Croissant internal keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-TOP.png)
 
 - **SidecarTridge Soufflè**  
   External keyboard replacement for Atari Mega ST and Mega STe systems.  

@@ -54,7 +54,7 @@ It works as a middle-man between the motherboard and the keyboard and allows dif
 
 The operating mode can be changed at boot time without opening the computer enclosure.
 
-![SidecarTridge Croissant installed on an Atari ST motherboard](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-MOTHERBOARD-CONNECTED.png)
+![SidecarTridge Croissant installed on an Atari ST motherboard](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-MOTHERBOARD-CONNECTED.png)
 
 
 ### SidecarTridge Soufflè
