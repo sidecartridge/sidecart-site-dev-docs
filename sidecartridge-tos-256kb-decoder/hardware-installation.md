@@ -59,7 +59,7 @@ The following images show the current Mega ST decoder board on its own, making i
 
 ![SidecarTridge TOS 256KB Decoder board top view for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-TOP.png)
 
-![SidecarTridge TOS 256KB Decoder board perspective view for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-PERSPCTIVE.png)
+![SidecarTridge TOS 256KB Decoder board perspective view for Mega ST](/sidecartridge-tos-256kb-decoder/assets/images/256KB-DECODER-BOARD-MEGABUS-PERSPECTIVE.png)
 
 Before pressing the board into place, double-check that the connector is aligned correctly and that the cable will not be twisted or pinched once installed.
 

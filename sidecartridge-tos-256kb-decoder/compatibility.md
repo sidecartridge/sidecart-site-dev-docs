@@ -29,7 +29,7 @@ Carrier boards for unsupported motherboards are in active development. Please ch
 {: .warning}
 Older SidecarTridge TOS Emulator carrier board revisions are not covered by the current installation process. See the [discontinued hardware installation page](/sidecartridge-tos-256kb-decoder/hardware-installation-discontinued/) for reference only.
 
-| Motherboard Model Number | Number of ROMs | Carrier Board   |
+| Motherboard Model Number | Number of ROMs | Status          |
 |--------------------------|----------------|-----------------|
 | C100167-001 Rev. 4.0     |       2        | Supported       |
 | C100167-001 Rev. B       |       2        | Supported       |
