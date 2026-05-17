@@ -38,7 +38,7 @@ Only the leftmost slot labeled SD0 (C: / L:) is available for ACSI mode.
 
 These TOS versions can execute the embedded GEMDRIVE driver. These driver can change the order of the GEMDRIVE and ACSI units. As a rule of thumb, ACSI should be used in the slot labeled SD0 (C: / L:), and SD1 and SD2 can be used by GEMDRIVE.
 
-### Why can't see GEMDRIVE units in EmuTOS and TOS 2.0x?
+### Why can't I see GEMDRIVE units in EmuTOS and TOS 2.0x?
 
 To use GEMDRIVE units under EmuTOS and TOS 2.0x you must ensure that the **GEMDRIVE.PRG** driver is executed at boot time. This driver is included firmware package of the project in the **tools** folder of the [release package](https://github.com/retro16/acsi2stm/releases/tag/5.00).
 
@@ -64,6 +64,6 @@ Both drink from the sources of the Hatari emulator. The GEMDRIVE in the ACSI2STM
 
 
 
-[Previous: Internal riser boards](/acsi2stm-atari-st/riser-boards/){: .btn .mr-4 }
+[Previous: Troubleshooting](/acsi2stm-atari-st/troubleshooting/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn .mr-4 }
-[Next: FAQ](/acsi2stm-atari-st/faq/){: .btn }
+[Next: Enclosures/Cases](/acsi2stm-atari-st/cases/){: .btn }

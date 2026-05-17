@@ -37,7 +37,7 @@ The ACSI2STM project was initiated to provide a modern storage solution for Atar
 The project is released under the [GNU General Public License v3.0](https://github.com/retro16/acsi2stm/blob/stable/LICENSE), ensuring that the source code and schematics are freely available for anyone to use, modify, and distribute.
 
 The ACSI2STM device manufactured by SidecarTridge is a derivative of the original project with the following modifications:
-- The size of the PCB has been reduced some milimiters to avoid cabling issues in the Atari Mega ST model.
+- The size of the PCB has been reduced by a few millimetres to avoid cabling issues in the Atari Mega ST model.
 - The 32Mhz crystal has been added to the PCB to improve the stability of the device (I don't know the reason why it was not included in the original project).
 - The jumpers settings have been left in the PCB to allow the user to change the configuration without the need of soldering.
 
