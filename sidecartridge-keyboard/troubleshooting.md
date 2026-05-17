@@ -30,7 +30,7 @@ When something does not work as expected, this page should help verify:
 - host compatibility limits
 - recovery or reset procedures
 
-## Croissant & Souffle
+## Croissant & Soufflè
 
 General troubleshooting topics shared by both hardware variants belong in this section.
 
@@ -44,7 +44,7 @@ The RESET button was removed from the latest PCB revisions of both devices becau
 
 The Croissant version of the SidecarTridge Keyboard Emulator is designed for computers with the 7-pin keyboard connector. The well-known "short ST" motherboards C070115 and C070243 use an 18-pin keyboard connector instead and are easy to recognize because they use an external power supply. Supporting those machines would require a different adapter, which makes the design significantly more complex and expensive to develop and manufacture. It is probably possible to support them, but there are no plans to do so in the near future.
 
-## Souffle
+## Soufflè
 
 ### The power LED is unstable in Configuration mode and the orange and green LEDs are dim
 

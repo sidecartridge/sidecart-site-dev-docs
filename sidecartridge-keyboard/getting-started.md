@@ -35,7 +35,7 @@ If you purchased the **Croissant internal model**, inspect the board and verify 
 * the board has no visible damage
 * no loose parts are present
 
-![SidecarTridge Croissant board](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSSANT-PERSPECTIVE.png)
+![SidecarTridge Croissant board](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-PERSPECTIVE.png)
 
 Do this before opening the computer.
 
