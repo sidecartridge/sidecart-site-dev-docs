@@ -31,7 +31,7 @@ parent: ST2VGA family (Rev.3 & Enhanced)
 ## Notes
 
 - Verify your PCB revision and connector positions before printing.
-- These models are intended for the **ST2VGA family** used with Atari ST, STe, Mega ST, and Mega STe machines.
+- These models are intended for the **ST2VGA family** used with Atari ST, STE, Mega ST, and Mega STE machines.
 - Both Printables listings are published by **SidecarTridge** under **CC BY-NC-SA**.
 
 ## Want to contribute?
