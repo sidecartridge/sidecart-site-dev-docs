@@ -51,7 +51,7 @@ The ACSI2STM version of SidecarTridge does have placeholders for the IDC20 conne
 If you want to use the legacy ACSI mode with, for example with some already built images, you can follow these steps:
 
 1. Check that you are running a compatible TOS version with the drivers installed in your disk image. Usually everything above TOS 1.04 is safe.
-2. Insert the microSD with the image burned in the leftmost slot labeled as SDO0 (C: / L:)
+2. Insert the microSD with the image burned in the leftmost slot labeled as SD0 (C: / L:)
 
 ### For GEMDRIVE images only
 
@@ -64,7 +64,7 @@ If you want to use the new GEMDRIVE mode:
 
 If you want to have legacy ACSI mode and the new GEMDRIVE mode available simultaneously, you can configure your system accordingly by following the instructions for both modes:
 
-1. Reserve the leftmost slot labeled as SDO0 (C: / L:) for the legacy ACSI mode image.
+1. Reserve the leftmost slot labeled as SD0 (C: / L:) for the legacy ACSI mode image.
 2. Use the remaining slots for GEMDRIVE mode images.
 3. Follow the compatibility instructions for each mode as described above. Don't forget the GEMDRIVE driver when needed.
 
@@ -114,7 +114,7 @@ All these drivers operate on the same basic principle:
 The formatting and partitioning tool works much like modern equivalents: format the drive, define partitions, apply the settings, and reboot to finalize. 
 
 {: .warning}
-Formatting the a modern SD card with a tool designed 30 years ago can be a daunting task. It is recommended to use a preconfigured image to avoid frustation and time consuming tasks.
+Formatting a modern SD card with a tool designed 30 years ago can be a daunting task. It is recommended to use a preconfigured image to avoid frustration and time consuming tasks.
 
 {: .note}
 If you do want to build your own image without the rabbit hole of legacy tools, [`atari-hd`](https://github.com/sidecartridge/atari-hd) is a multiplatform CLI/TUI (macOS, Linux, Windows) that produces a ready-to-use `.img` in one command. It walks you through size, partition layout (AHDI, PPDRIVER or HDDRIVER) and bootable mode in plain language, and the byte-level output is validated against real ICDFMT- and PPTOSDOS-formatted reference disks.

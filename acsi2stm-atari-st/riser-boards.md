@@ -139,5 +139,4 @@ If the installation does not work as expected, check the following first:
 Before closing the case completely, it is a good idea to perform a partial test boot and confirm that the board sits flat, powers correctly, has no pinched cables, and that the Atari detects the storage device normally.
 
 [Previous: Enclosures/Cases](/acsi2stm-atari-st/cases/){: .btn .mr-4 }
-[Main](/acsi2stm-atari-st/){: .btn .mr-4 }
-[Next: FAQ](/acsi2stm-atari-st/faq/){: .btn }
+[Main](/acsi2stm-atari-st/){: .btn }
