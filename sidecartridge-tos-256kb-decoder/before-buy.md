@@ -36,7 +36,7 @@ Most of the Mega ST motherboards have a Blitter patch soldered on top of the Mot
 
 ### Purchase the Right SidecarTridge TOS 256KB Decoder Kit
 
-Once you have verified the compatibility of your Atari Mega ST motherboard and that you are using the SidecarTridge TOS Emulator carrier board revision 4 or higher, you can proceed to purchase the appropriate SidecarTridge TOS 256KB Decoder emulator kit. Ensure you select the correct kit based on your motherboard model number.
+Once you have verified the compatibility of your Atari Mega ST motherboard and that you are using the SidecarTridge TOS Emulator carrier board revision 4 or higher, you can proceed to purchase the appropriate SidecarTridge TOS 256KB Decoder kit. Ensure you select the correct kit based on your motherboard model number.
 
 
 | Kit | Supported Motherboards |

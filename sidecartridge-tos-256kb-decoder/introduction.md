@@ -48,7 +48,7 @@ The 256KB TOS versions 1.06, 1.62, and 2.05 are not compatible with Atari ST and
 
 ## Intended Audience
 
-The SidecarTridge TOS emulator and the 256KB Decoder are designed for ANY Mega ST enthusiasts, hobbyists, and developers who wish to explore and experiment with different TOS versions and custom ROMs. It's suitable any user, even without a basic understanding of electronics and soldering skills, as the add-on board is plugged into the MEGABUS connector of the Atari Mega ST computer.
+The SidecarTridge TOS emulator and the 256KB Decoder are designed for any Mega ST enthusiasts, hobbyists, and developers who wish to explore and experiment with different TOS versions and custom ROMs. It is suitable for any user, even without a basic understanding of electronics and soldering skills, since the add-on board plugs into the MEGABUS connector of the Atari Mega ST computer.
 
 ## Project Background
 
