@@ -14,8 +14,8 @@ redirect_from:
 
 This section provides developers with in-depth guidance on programming the Multi-device board. It mainly covers the development of new applications or "microfirmware apps" for the RP2040 microcontroller. The guide is structured to help you understand the architecture of the Multi-device board, the microfirmware apps, and how to set up your development environment.
 
-{: .warning}
-This guide applies to the new version 2.0 of the firmware in beta stage.
+{: .note}
+This guide applies to version 2.0 of the firmware.
 
 {: .note}
 Starting with template `v1.1.0` the framework adopts the architecture used in `md-drives-emulator`: 192 KB of general-purpose RAM, a single 64 KB ROM4 bank served entirely by chained DMA, and a polled ROM3 DMA-ring command channel dispatched through `chandler`. The "Microfirmware design" sections below describe this layout. Apps written against earlier templates must migrate (see `CHANGELOG.md`).
