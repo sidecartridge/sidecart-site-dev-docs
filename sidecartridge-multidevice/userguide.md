@@ -32,6 +32,9 @@ This page documents the SidecarTridge Multi-device with **firmware v1.0**, which
 
 ROM Emulation is a pivotal feature of the Multi-device, enabling the Atari ST to treat ROM files from a microSD card or an external web server as native ROM chips. This guide covers how use and set up the ROM Emulation.
 
+{: .note }
+If you want to turn your own Atari ST program into a cartridge ROM image, use the [SidecarTridge USM web app](https://usm.sidecartridge.com): drop a `.PRG` or `.TOS` file in your browser and download a ready-to-use 128 KB `.ROM` that this firmware can boot like a real cartridge.
+
 ### Select the ROM to emulate
 
 The Multi-device can be configured to emulate a ROM file from a microSD card or an external web server. This section explains how to select the ROM to emulate in both cases. 
