@@ -25,7 +25,7 @@ This is a microfirmware application for the **SidecarTridge Multi-device**, desi
 A list of available ROM files can be found in the [ROMs repository](https://sidecartridge.com/roms/). In a standard ROM emulation setup, ROMs can be downloaded directly using the **[D]ownload** option in the setup screen. When using headless autorun mode, ROM files must typically be copied manually to the microSD card from your computer.
 
 {: .note }
-**Want to turn your own Atari ST program into a cartridge ROM?** Use the [SidecarTridge USM web app](https://usm.sidecartridge.com) to pack any `.PRG` or `.TOS` file into a 128 KB `.ROM` image in your browser. Drop the resulting `.ROM` onto the microSD card in the `/roms` folder and the ROM Emulator microfirmware will run it as if it came from a physical cart. USM-web is a browser port of [ggnkua's USM tool](https://github.com/sidecartridge/USM); the source for the web version is at [`sidecartridge/USM-web`](https://github.com/sidecartridge/USM-web).
+**Want to turn your own Atari ST program into a cartridge ROM?** Use the [SidecarTridge USM web app](https://usm.sidecartridge.com) to pack any `.PRG` or `.TOS` file into a 128 KB `.ROM` image in your browser, then drop it onto the microSD card in the `/roms` folder and the ROM Emulator microfirmware will run it like a physical cart.
 
 <details open markdown="block">
   <summary>
