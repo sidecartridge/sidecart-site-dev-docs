@@ -32,6 +32,9 @@ All ROMs are available for download clicking on the links. The files are not hos
 
 ## How to contribute
 
+{: .note }
+If you have an Atari ST program (`.PRG` / `.TOS`) and you want to publish it as a cartridge ROM, you can build the `.ROM` (or `.STC` for STEem) in your browser with the [SidecarTridge USM web app](https://usm.sidecartridge.com) and then submit the resulting file through the contribution flow below.
+
 If you have a ROM image that is not listed here, you can contribute to the database by submitting a pull request with the following information:
 
 - Name of the ROM
