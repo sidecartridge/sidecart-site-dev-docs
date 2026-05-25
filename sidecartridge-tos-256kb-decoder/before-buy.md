@@ -49,6 +49,8 @@ Modding a 35 to 40 year old computer is never completely risk free. Even if inst
 
 These machines are fragile, and sometimes a simple slip can be fatal. If you decide to mod an Atari Mega ST, do it with patience, the right tools, and the understanding that this is part of the process. That is the art of modding.
 
+The same principle applies in reverse: we only design, test and support the SidecarTridge TOS 256KB Decoder on Mega ST motherboards in their original stock configuration, with the standard Atari Blitter patch as the single supported exception. Any other prior modification (memory expansions, CPU accelerators, custom logic replacements, bodge wires, aftermarket ROM adapters) is out of scope and not covered by warranty. If your Mega ST has already been modified, please contact us before ordering so we can tell you whether the configuration is known to work.
+
 
 
 [Previous: Introduction](/sidecartridge-tos-256kb-decoder/introduction/){: .btn .mr-4 }
