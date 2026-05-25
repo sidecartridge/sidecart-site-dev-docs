@@ -26,6 +26,12 @@ Incompatibility usually arises from the lack of a carrier board that supports th
 
 Potentially yes, but it is best to inquire first. For unique or unknown motherboards, contact us to discuss compatibility and the possibility of developing a carrier board for it.
 
+### Can I use the SidecarTridge TOS Emulator with modified computers or CPU accelerators?
+
+The TOS Emulator is designed, tested and supported on Atari ST, STE, MegaST and MegaSTE computers in their original stock configuration. Modified machines, including memory expansions, CPU accelerators, custom logic replacements, bodge wires and aftermarket ROM adapters, are out of scope and not covered by warranty. The only exception is the standard Atari Blitter patch on the Mega ST, which remains supported.
+
+If your machine is modified, please contact us before ordering. Some users report that certain CPU accelerator setups work in combination with the TOS Emulator, but such configurations are unsupported and used entirely at your own risk.
+
 ### Why is the SidecarTridge TOS emulator limited to 256KB ROMs maximum?
 
 This is a limitation of the RP2040 microcontroller used in the v1 and v2 versions of the SidecarTridge ROM emulator. The RP2040 has a maximum address space of 256KB, which means it can only address up to 256KB of ROM memory.
