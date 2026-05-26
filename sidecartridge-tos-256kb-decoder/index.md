@@ -91,4 +91,10 @@ The current installation process documented in this section only applies to Atar
     <p>Please read this section to know about open issues and compatibility.</p>
   </div>
 
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>🛠️ <a href="/sidecartridge-tos-256kb-decoder/upgrade-carrier-board/">Upgrading an older Mega ST carrier board</a></h3>
+    <p>Add the missing components to a pre-4.0.0 Mega ST carrier board so it can drive the external 256KB Decoder.</p>
+  </div>
+
 </div>
