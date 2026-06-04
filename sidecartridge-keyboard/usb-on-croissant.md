@@ -61,10 +61,6 @@ The workaround leverages that shared base. By flashing the **Soufflè firmware**
 - **Mechanical fragility.** The Pico's micro-USB connector was not designed to carry a hanging hub long-term. Avoid pulling on the hub once it is in place.
 - **Device compatibility is not exhaustive.** The same caveats that apply to Soufflè around USB device behaviour and power draw apply here.
 
-## Reverting to Bluetooth
-
-If you decide to go back to the supported Bluetooth path, re-flash the **Croissant** firmware over the Soufflè firmware using the same [firmware update flow](firmware-update.md). The Croissant hardware itself is not modified by the workaround, so the rollback is just a firmware re-flash.
-
 ## What we will not help with
 
 This configuration is on the user. We will not provide support for:
