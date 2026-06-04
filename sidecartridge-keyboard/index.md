@@ -190,4 +190,10 @@ Typical use cases for the SidecarTridge Keyboard Emulator include:
     <p>Diagram, schematics, manufacturing files, and license for the Croissant hardware release.</p>
   </div>
 
+  <div class="toc-card">
+    <span class="toc-chip chip-howto">How-to</span>
+    <h3>🧪 <a href="/sidecartridge-keyboard/usb-on-croissant/">USB devices on Croissant (experimental)</a></h3>
+    <p>Unsupported workaround for adding USB input to a Croissant install on an Atari ST or STE with the 7-pin connector. Requires the case open or modified.</p>
+  </div>
+
 </div>
