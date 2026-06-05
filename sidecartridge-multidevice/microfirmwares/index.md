@@ -97,6 +97,11 @@ This offline-safe launcher is useful when the access point is down, the router b
 <p>Remote m68k development surface: GEMDRIVE, Runner mode, HTTP API and live debug traces.</p>
 </div>
 
+<div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+<h3>📜 <a href="/sidecartridge-multidevice/microfirmwares/md-js/">MD/JS JavaScript Worker</a></h3>
+<p>A persistent JerryScript runtime on the RP2040. Upload JS from your ST, call functions with JSON, use <code>fetch()</code>. By Neil Rackett.</p>
+</div>
+
 </div>
 
 ### How it works:
