@@ -1,0 +1,96 @@
+// SidecarTridge color scheme for just-the-docs.
+// Brand alignment with sidecartridge.com:
+// - palette: deep indigo + warm cream + peach surface accent
+// - typography: DM Sans for body and headings, Fira Mono for code
+//
+// File path is required by just-the-docs: _sass/color_schemes/<name>.scss
+// Activated via `color_scheme: sidecartridge` in _config.yml.
+
+// --- Self-hosted fonts ------------------------------------------------------
+// Same files used by sidecartridge.com so the brand reads consistently
+// across marketing and docs surfaces.
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/dm-sans/dm-sans-v14-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/dm-sans/dm-sans-v14-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/dm-sans/dm-sans-v14-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/fira-mono/fira-mono-v14-latin-regular.woff2") format("woff2");
+}
+
+// --- Brand tokens -----------------------------------------------------------
+
+$brand-indigo: #0d042b;
+$brand-indigo-2: #3b364c;
+$brand-cream: #fdfcf9;
+$brand-cream-2: #f7f6ed;
+$brand-peach: #faebd7;
+
+// --- Just-the-docs variable overrides ---------------------------------------
+// Names match the just-the-docs 0.8.x public SCSS API. Anything not
+// overridden inherits the upstream defaults.
+
+// Typography
+$body-font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif;
+$mono-font-family: "Fira Mono", "Courier New", "SF Mono", Menlo, Consolas,
+  monospace;
+$body-heading-font-family: $body-font-family;
+
+// Surfaces
+$body-background-color: $brand-cream;
+$sidebar-color: $brand-cream-2;
+$body-text-color: $brand-indigo;
+$body-heading-color: $brand-indigo;
+
+// Links and buttons
+$link-color: $brand-indigo;
+$btn-primary-color: $brand-indigo;
+$base-button-color: $brand-indigo;
+
+// Nav (left sidebar tree)
+$nav-child-link-color: $brand-indigo-2;
+
+// Code
+$code-background-color: $brand-cream-2;
+$feedback-color: $brand-peach;
+
+// Search
+$search-background-color: $brand-cream;
+$search-result-preview-color: $brand-indigo-2;
+
+// --- Minor adjustments that benefit from being scoped here ------------------
+// These are not just-the-docs variables, just direct selectors that fit the
+// brand scheme without bloating the file.
+
+// Distinguish active sidebar item with a clean left-edge marker (peach trace)
+// instead of relying on a soft background tint. Small tweak, big legibility
+// win for the navigation tree.
+.side-bar nav .nav-list-link[aria-current="page"] {
+  border-left: 3px solid $brand-peach;
+  padding-left: calc(0.75rem - 3px);
+}
