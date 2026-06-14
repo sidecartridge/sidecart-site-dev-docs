@@ -68,9 +68,13 @@ $body-text-color: $brand-indigo;
 $body-heading-color: $brand-indigo;
 
 // Links and buttons
+// Note: $btn-primary-color and $base-button-color are the button BACKGROUND
+// (not the text), so they must contrast with the body text color (indigo).
+// We use cream-2 so the button reads as a light pill with indigo text and
+// the same surface family as the rest of the scheme.
 $link-color: $brand-indigo;
-$btn-primary-color: $brand-indigo;
-$base-button-color: $brand-indigo;
+$btn-primary-color: $brand-cream-2;
+$base-button-color: $brand-cream-2;
 
 // Nav (left sidebar tree)
 $nav-child-link-color: $brand-indigo-2;
@@ -93,4 +97,25 @@ $search-result-preview-color: $brand-indigo-2;
 .side-bar nav .nav-list-link[aria-current="page"] {
   border-left: 3px solid $brand-peach;
   padding-left: calc(0.75rem - 3px);
+}
+
+// Belt-and-suspenders contrast for in-page navigation buttons. just-the-docs
+// uses a few classes for the previous/next page links and the on-page
+// utility buttons; force indigo text on the cream surface across all of
+// them and add a thin indigo border so the pill always reads as a button.
+.btn,
+.btn-primary,
+.btn-outline,
+.site-button,
+.search-button,
+.aux-nav-list-link,
+.navigation-list-link,
+.toc-link {
+  color: $brand-indigo;
+}
+
+.btn,
+.btn-primary,
+.btn-outline {
+  border: 1px solid $brand-indigo;
 }
