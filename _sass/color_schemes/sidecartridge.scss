@@ -412,3 +412,61 @@ $rouge-peach-dim: rgba($brand-peach, 0.7);
 }
 
 } // end .main-content (code blocks)
+
+// --- Sidebar wordmark logo --------------------------------------------------
+// The theme renders `<div class="site-logo">` when `logo:` is set in
+// _config.yml and pulls the URL via a Sass variable interpolated at build
+// time. The default sizing assumes a small square favicon-ish logo; the
+// SidecarTridge wordmark is 1920x416 (~4.6:1), so it needs a wider canvas.
+
+.site-title {
+  padding: $sp-3 0;
+}
+
+.site-logo {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// --- Search box -------------------------------------------------------------
+// Fira Mono placeholder, thin indigo hairline, peach focus accent. The
+// theme uses bare `.search-input` selectors with low specificity, so a
+// straight class selector wins here without any wrapper boost.
+
+.search-input {
+  font-family: $body-font-family;
+  color: $brand-indigo;
+  background-color: $brand-cream;
+  border: 1px solid rgba($brand-indigo, 0.2);
+  border-radius: 4px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &::placeholder {
+    font-family: $mono-font-family;
+    font-size: 0.85em;
+    letter-spacing: 0.04em;
+    color: rgba($brand-indigo, 0.5);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: $brand-peach;
+    box-shadow: 0 0 0 2px rgba($brand-peach, 0.6);
+  }
+}
+
+.search-icon {
+  fill: rgba($brand-indigo, 0.55);
+}
+
+// Lift the dropdown of search results so it visually anchors to the input.
+.search-results {
+  border: 1px solid rgba($brand-indigo, 0.15);
+  border-top: 0;
+  background-color: $brand-cream;
+}
