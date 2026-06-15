@@ -470,3 +470,98 @@ $rouge-peach-dim: rgba($brand-peach, 0.7);
   border-top: 0;
   background-color: $brand-cream;
 }
+
+// --- Footer chrome ----------------------------------------------------------
+// Re-style the just-the-docs footer block: Back to top, footer_content,
+// Edit this page on GitHub, and the branded nav_footer_custom line. All in
+// small-caps Fira Mono on indigo so the footer reads as a quiet signature
+// instead of as another paragraph.
+
+.main-content footer {
+  font-family: $mono-font-family;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: rgba($brand-indigo, 0.7);
+
+  p { margin: 0 0 $sp-2; }
+
+  a {
+    color: $brand-indigo;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      color: $brand-warning;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid rgba($brand-indigo, 0.12);
+    margin: $sp-5 0 $sp-3;
+  }
+}
+
+// The hyperlink utility-row classes JTD ships uppercase nicely.
+#back-to-top,
+#edit-this-page {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  text-decoration: none;
+
+  &::after { content: " \2197"; opacity: 0.6; }
+}
+
+#back-to-top::after { content: " \2191"; }
+
+// The sidebar's bottom block (desktop) and the mobile-only nav_footer_custom
+// block in the page footer both pull from _includes/nav_footer_custom.html.
+.site-footer,
+.main-content footer .d-md-none {
+  font-family: $mono-font-family;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: rgba($brand-indigo, 0.65);
+
+  a {
+    color: $brand-indigo;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &:hover { color: $brand-warning; }
+  }
+}
+
+// --- Home support card and email CTA pill ----------------------------------
+// The .support-note block lives on the home page; convert the mail link into
+// a peach pill with indigo text so the CTA reads as a CTA instead of a flat
+// underlined link.
+
+.support-note {
+  margin: $sp-5 0 $sp-4;
+  padding: $sp-4 $sp-5;
+  background-color: $brand-cream-2;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: $brand-indigo;
+
+  a[href^="mailto:"] {
+    display: inline-block;
+    margin: 0 0.15em;
+    padding: 0.2em 0.85em;
+    background-color: $brand-peach;
+    color: $brand-indigo;
+    border-radius: 999px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+      background-color: #f1dcb7; // brand-peach darkened ~6% (precomputed to avoid darken() deprecation)
+      transform: translateY(-1px);
+    }
+  }
+}
