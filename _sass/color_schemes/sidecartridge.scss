@@ -119,3 +119,262 @@ $search-result-preview-color: $brand-indigo-2;
 .btn-outline {
   border: 1px solid $brand-indigo;
 }
+
+// --- Callouts ---------------------------------------------------------------
+// The five callouts declared in _config.yml (highlight / important / new /
+// note / warning) get a unified card treatment: a thin left border that
+// reads as a PCB trace, a Fira Mono title pill at the top, and a brand
+// surface that varies with severity (cream-2 for low-stakes notes, peach
+// for highlights, indigo for the two strongest ones).
+//
+// We element-scope each callout (p.<name>, ul.<name>, etc.) because Rouge
+// also emits a div.highlight wrapper for fenced code blocks; a bare
+// .highlight selector would repaint code blocks by mistake.
+
+$callout-elements: "p, ul, ol, blockquote, dl";
+
+#{$callout-elements} {
+  &.highlight,
+  &.note,
+  &.new,
+  &.important,
+  &.warning {
+    position: relative;
+    margin: $sp-4 0;
+    padding: $sp-3 $sp-4;
+    border-left: 3px solid $brand-indigo-2;
+    border-radius: 4px;
+    background-color: $brand-cream-2;
+    color: $brand-indigo;
+    font-weight: 400;
+  }
+}
+
+// Title pill (the theme injects the title via ::before from the
+// callouts config). Keep the pseudo's `content` from the theme; we only
+// restyle it as a small Fira Mono uppercase tag.
+:is(p, ul, ol, blockquote, dl):is(.highlight, .note, .new, .important, .warning)::before {
+  display: inline-block;
+  margin-right: $sp-2;
+  padding: 0.1em 0.55em;
+  border-radius: 2px;
+  background-color: $brand-indigo;
+  color: $brand-cream;
+  font-family: $mono-font-family;
+  font-size: 0.7em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: 0.12em;
+}
+
+// Highlight — peach surface, the "look at this" callout.
+:is(p, ul, ol, blockquote, dl).highlight {
+  background-color: $brand-peach;
+  border-left-color: $brand-indigo;
+}
+
+// New — cream surface with a peach trace; celebratory but quiet.
+:is(p, ul, ol, blockquote, dl).new {
+  background-color: $brand-cream;
+  border-left-color: $brand-peach;
+}
+:is(p, ul, ol, blockquote, dl).new::before {
+  background-color: $brand-peach;
+  color: $brand-indigo;
+}
+
+// Important — inverted: indigo surface, cream body, peach trace.
+:is(p, ul, ol, blockquote, dl).important {
+  background-color: $brand-indigo-2;
+  color: $brand-cream;
+  border-left-color: $brand-peach;
+}
+:is(p, ul, ol, blockquote, dl).important::before {
+  background-color: $brand-peach;
+  color: $brand-indigo;
+}
+
+// Warning — same inversion as important but on full indigo with a thicker
+// peach trace so it reads as one notch louder.
+:is(p, ul, ol, blockquote, dl).warning {
+  background-color: $brand-indigo;
+  color: $brand-cream;
+  border-left-width: 4px;
+  border-left-color: $brand-peach;
+}
+:is(p, ul, ol, blockquote, dl).warning::before {
+  background-color: $brand-peach;
+  color: $brand-indigo;
+}
+
+// Inside the inverted callouts, keep emphasis and inline code legible
+// against the indigo surface.
+:is(p, ul, ol, blockquote, dl):is(.important, .warning) {
+  strong { color: $brand-cream; }
+  a { color: $brand-peach; text-decoration: underline; }
+  code {
+    color: $brand-cream;
+    background-color: rgba($brand-cream, 0.08);
+    border-color: rgba($brand-cream, 0.2);
+  }
+}
+
+// --- Code blocks ------------------------------------------------------------
+// "PCB module" treatment: deep indigo surface, cream Fira Mono text, a thin
+// peach hairline border, and a language label pill in the top-right corner
+// that mirrors a silkscreen component label.
+
+div.highlighter-rouge,
+figure.highlight {
+  position: relative;
+  background-color: $brand-indigo;
+  border: 1px solid rgba($brand-peach, 0.35);
+  border-radius: 6px;
+  overflow: hidden;
+
+  pre,
+  code {
+    background-color: transparent;
+    color: $brand-cream;
+    font-family: $mono-font-family;
+  }
+
+  // Copy-to-clipboard button (just-the-docs ships one) needs to stay
+  // visible against the indigo surface.
+  > button {
+    color: $brand-peach;
+    svg { fill: $brand-peach; }
+  }
+}
+
+// Rouge wraps the code with another div.highlight; clear its background
+// so our outer indigo surface shows through cleanly.
+div.highlighter-rouge .highlight,
+figure.highlight .highlight {
+  background-color: transparent;
+}
+
+// Language pill — top-right of fenced code blocks. Generated from the
+// kramdown class `.language-<name>` via ::before.
+div[class*="language-"].highlighter-rouge::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.18em 0.7em;
+  border-bottom-left-radius: 6px;
+  background-color: $brand-peach;
+  color: $brand-indigo;
+  font-family: $mono-font-family;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 1;
+}
+
+// Label text per language. Anything not listed falls through with no pill,
+// which is the same as the upstream behaviour.
+$lang-labels: (
+  bash: "Bash",
+  shell: "Shell",
+  sh: "Shell",
+  console: "Console",
+  json: "JSON",
+  c: "C",
+  cpp: "C++",
+  python: "Python",
+  py: "Python",
+  yaml: "YAML",
+  yml: "YAML",
+  ruby: "Ruby",
+  rb: "Ruby",
+  html: "HTML",
+  xml: "XML",
+  css: "CSS",
+  scss: "SCSS",
+  javascript: "JS",
+  js: "JS",
+  typescript: "TS",
+  ts: "TS",
+  markdown: "MD",
+  md: "MD",
+  toml: "TOML",
+  ini: "INI",
+  asm: "ASM",
+  s: "ASM",
+  http: "HTTP",
+  diff: "Diff",
+  text: "Text",
+  plaintext: "Text",
+  dockerfile: "Docker",
+  make: "Make",
+  makefile: "Make",
+  cmake: "CMake",
+  go: "Go",
+  rust: "Rust",
+  sql: "SQL"
+);
+
+@each $lang, $label in $lang-labels {
+  div.language-#{$lang}.highlighter-rouge::before {
+    content: "#{$label}";
+  }
+}
+
+// Inline code (single backticks): light surface with a thin indigo border,
+// kept distinct from block code on purpose — blocks are "modules", inline
+// is a "component label".
+:not(pre, figure) > code {
+  color: $brand-indigo;
+  background-color: $brand-cream-2;
+  border-color: rgba($brand-indigo, 0.15);
+}
+
+// Rouge syntax highlighting — restrained two-tone PCB silkscreen palette
+// (cream as the primary "ink", peach as the secondary for literals,
+// strings, numbers). Deliberately small palette so colour doesn't fight
+// the brand on the indigo surface.
+
+$rouge-cream: $brand-cream;
+$rouge-cream-dim: rgba($brand-cream, 0.65);
+$rouge-peach: $brand-peach;
+$rouge-peach-dim: rgba($brand-peach, 0.7);
+
+.highlight {
+  // Comments
+  .c, .c1, .cm, .cs, .cp, .cpf {
+    color: $rouge-peach-dim;
+    font-style: italic;
+  }
+  // Keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt {
+    color: $rouge-cream;
+    font-weight: 500;
+  }
+  // Strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss {
+    color: $rouge-peach;
+  }
+  // Numbers and literals
+  .m, .mi, .mf, .mh, .mo, .il, .mb, .l, .ld {
+    color: $rouge-peach;
+  }
+  // Names: identifiers, functions, classes, vars
+  .n, .na, .nb, .nc, .nf, .nl, .nn, .nx, .nt, .ne, .nv,
+  .vc, .vg, .vi, .py, .nd, .no, .ni {
+    color: $rouge-cream;
+  }
+  // Operators and punctuation
+  .o, .ow, .p {
+    color: $rouge-cream-dim;
+  }
+  // Generic tokens
+  .ge { font-style: italic; }
+  .gs { font-weight: 700; }
+  .gh, .gp, .gu { color: $rouge-peach; font-weight: 500; }
+  .gd { color: #ff8a8a; background-color: rgba(#ff6b6b, 0.08); }
+  .gi { color: $rouge-peach; background-color: rgba($brand-peach, 0.1); }
+  .err { color: $rouge-peach; text-decoration: underline wavy rgba($brand-peach, 0.7); }
+}
