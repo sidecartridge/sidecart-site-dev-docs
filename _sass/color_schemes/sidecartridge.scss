@@ -130,10 +130,20 @@ $search-result-preview-color: $brand-indigo-2;
 // We element-scope each callout (p.<name>, ul.<name>, etc.) because Rouge
 // also emits a div.highlight wrapper for fenced code blocks; a bare
 // .highlight selector would repaint code blocks by mistake.
+//
+// All callout rules are nested inside .main-content so they outrank the
+// just-the-docs auto-generated callout rules (`p.important, blockquote.important
+// { background: rgba($blue-100, ...); }`) that the theme injects from the
+// callouts config in _config.yml. Those rules use bare `p.important` selectors
+// (specificity 0,1,1) and appear later in the cascade, so without a parent
+// prefix they win and our bg/border get overridden while our text color
+// survives — leaving cream text on the theme's light-blue surface
+// (unreadable). .main-content bumps every nested rule to (0,2,1) so we
+// reliably win the cascade.
 
-$callout-elements: "p, ul, ol, blockquote, dl";
+.main-content {
 
-#{$callout-elements} {
+#{"p, ul, ol, blockquote, dl"} {
   &.highlight,
   &.note,
   &.new,
@@ -220,10 +230,19 @@ $callout-elements: "p, ul, ol, blockquote, dl";
   }
 }
 
+} // end .main-content
+
 // --- Code blocks ------------------------------------------------------------
 // "PCB module" treatment: deep indigo surface, cream Fira Mono text, a thin
 // peach hairline border, and a language label pill in the top-right corner
 // that mirrors a silkscreen component label.
+//
+// Wrapped in .main-content for the same cascade reason as the callouts
+// above: just-the-docs ships a bare `div.highlighter-rouge { background-color
+// ... }` rule later in the cascade that would otherwise repaint the indigo
+// surface back to the body code-background. .main-content makes us win.
+
+.main-content {
 
 div.highlighter-rouge,
 figure.highlight {
@@ -378,3 +397,5 @@ $rouge-peach-dim: rgba($brand-peach, 0.7);
   .gi { color: $rouge-peach; background-color: rgba($brand-peach, 0.1); }
   .err { color: $rouge-peach; text-decoration: underline wavy rgba($brand-peach, 0.7); }
 }
+
+} // end .main-content (code blocks)
