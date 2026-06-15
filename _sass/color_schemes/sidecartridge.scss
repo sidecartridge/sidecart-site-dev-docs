@@ -50,6 +50,13 @@ $brand-cream: #fdfcf9;
 $brand-cream-2: #f7f6ed;
 $brand-peach: #faebd7;
 
+// Brick-red accent used only on .warning callouts. Kept outside the five-token
+// brand core on purpose: the universal red = danger convention beats palette
+// purity for safety-critical signage. Chosen as a warm, desaturated brick so
+// it sits next to peach without screaming like #ff0000.
+$brand-warning: #c44848;
+$brand-warning-dark: #9a3838;
+
 // --- Just-the-docs variable overrides ---------------------------------------
 // Names match the just-the-docs 0.8.x public SCSS API. Anything not
 // overridden inherits the upstream defaults.
@@ -205,30 +212,36 @@ $search-result-preview-color: $brand-indigo-2;
   color: $brand-indigo;
 }
 
-// Warning — same inversion as important but on full indigo with a thicker
-// peach trace so it reads as one notch louder.
+// Warning — brick red surface, the only callout that breaks out of the brand
+// palette. The universal red = danger convention outranks palette purity for
+// safety-critical signage. Pill is inverted (cream bg, red text) so "WARNING"
+// pops above the red surface.
 :is(p, ul, ol, blockquote, dl).warning {
-  background-color: $brand-indigo;
+  background-color: $brand-warning;
   color: $brand-cream;
   border-left-width: 4px;
-  border-left-color: $brand-peach;
+  border-left-color: $brand-warning-dark;
 }
 :is(p, ul, ol, blockquote, dl).warning::before {
-  background-color: $brand-peach;
-  color: $brand-indigo;
+  background-color: $brand-cream;
+  color: $brand-warning;
 }
 
 // Inside the inverted callouts, keep emphasis and inline code legible
-// against the indigo surface.
+// against the dark / red surfaces.
 :is(p, ul, ol, blockquote, dl):is(.important, .warning) {
   strong { color: $brand-cream; }
-  a { color: $brand-peach; text-decoration: underline; }
+  a { text-decoration: underline; }
   code {
     color: $brand-cream;
     background-color: rgba($brand-cream, 0.08);
     border-color: rgba($brand-cream, 0.2);
   }
 }
+// Link colour differs per surface: peach reads well on indigo (.important);
+// on the warning brick red, peach loses contrast, so links go full cream.
+:is(p, ul, ol, blockquote, dl).important a { color: $brand-peach; }
+:is(p, ul, ol, blockquote, dl).warning a { color: $brand-cream; }
 
 } // end .main-content
 
