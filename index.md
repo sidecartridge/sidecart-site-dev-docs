@@ -68,15 +68,6 @@ has_toc: false
     font-size: .95rem;
     color: #333;
   }
-  .support-note {
-    margin-top: 2rem;
-    padding: 1rem;
-    background: #f1f3f5;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1rem;
-    color: #222;
-  }
 </style>
 
 <div class="proj-list">
