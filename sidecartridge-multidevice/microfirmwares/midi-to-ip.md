@@ -5,12 +5,16 @@ nav_order: 7
 nav_exclude: true
 parent: SidecarTridge Multi-device
 redirect_from:
-  - /microfirmwares/md-midi2ip
-  - /microfirmwares/md-midi2ip/
+  - /microfirmwares/midi-to-ip
+  - /microfirmwares/midi-to-ip/
   - /microfirmwares/midi2ip
   - /microfirmwares/midi2ip/
+  - /microfirmwares/md-midi2ip
+  - /microfirmwares/md-midi2ip/
   - /sidecartridge-multidevice/microfirmwares/midi2ip
   - /sidecartridge-multidevice/microfirmwares/midi2ip/
+  - /sidecartridge-multidevice/microfirmwares/md-midi2ip
+  - /sidecartridge-multidevice/microfirmwares/md-midi2ip/
 ---
 
 # MIDI-to-IP

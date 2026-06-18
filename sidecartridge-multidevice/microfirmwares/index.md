@@ -103,7 +103,7 @@ This offline-safe launcher is useful when the access point is down, the router b
 </div>
 
 <div style="background:#f8f9fa; border-radius:12px; padding:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-<h3>🎼 <a href="/sidecartridge-multidevice/microfirmwares/md-midi2ip/">MIDI-to-IP</a></h3>
+<h3>🎼 <a href="/sidecartridge-multidevice/microfirmwares/midi-to-ip/">MIDI-to-IP</a></h3>
 <p>Carries the ST's MIDI traffic over Wi-Fi / TCP through a small orchestrator, so up to 16 STs (real or Hatari) play MIDI Maze over IP without cables.</p>
 </div>
 

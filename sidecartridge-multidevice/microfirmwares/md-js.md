@@ -187,4 +187,4 @@ MD/JS is **made with care by [Neil Rackett](https://github.com/neilrackett)**, d
 
 [Previous: DevOps](/sidecartridge-multidevice/microfirmwares/devops/){: .btn .mr-4 }
 [Main](/sidecartridge-multidevice/){: .btn .mr-4 }
-[Next: MIDI-to-IP](/sidecartridge-multidevice/microfirmwares/md-midi2ip/){: .btn }
+[Next: MIDI-to-IP](/sidecartridge-multidevice/microfirmwares/midi-to-ip/){: .btn }
