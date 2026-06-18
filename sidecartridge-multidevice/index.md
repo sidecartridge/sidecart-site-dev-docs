@@ -30,9 +30,10 @@ You can learn about the new features and improvements in the latest firmware rel
 </figure>
 
 
-<!-- Apps Catalog hero — scoped CSS lives inside this block to avoid leakage -->
+<!-- Apps Catalog hero — scoped CSS lives inside this block to avoid leakage. -->
+<!-- Every rule is .main-content-prefixed so it outranks the theme's typography. -->
 <style>
-  .apps-hero {
+  .main-content .apps-hero {
     position: relative;
     background: #0d042b;
     color: #fdfcf9;
@@ -42,27 +43,27 @@ You can learn about the new features and improvements in the latest firmware rel
     overflow: hidden;
     font-family: inherit;
   }
-  .apps-hero::before {
+  .main-content .apps-hero::before {
     content: ""; position: absolute; inset: 0;
     background:
       radial-gradient(900px 320px at 110% -50%, rgba(250,235,215,0.16), transparent 60%),
       radial-gradient(700px 280px at -10% 130%, rgba(250,235,215,0.10), transparent 70%);
     pointer-events: none;
   }
-  .apps-hero .apps-hero-head {
+  .main-content .apps-hero-head {
     display: flex; justify-content: space-between; align-items: flex-start;
     gap: 24px; flex-wrap: wrap; margin-bottom: 20px; position: relative;
   }
-  .apps-hero h2 {
+  .main-content .apps-hero h2 {
     font-size: 1.85rem; margin: 0; letter-spacing: -0.01em;
     font-weight: 500; color: #fdfcf9;
     border-bottom: 0; padding: 0;
   }
-  .apps-hero .apps-hero-sub {
+  .main-content .apps-hero .apps-hero-sub {
     color: rgba(253,252,249,0.74); font-size: 0.97rem;
     margin: 6px 0 0; max-width: 60ch; line-height: 1.5;
   }
-  .apps-hero .apps-hero-chip {
+  .main-content .apps-hero .apps-hero-chip {
     display: inline-flex; align-items: center;
     font-family: "Fira Mono", "Courier New", monospace;
     font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
@@ -70,40 +71,61 @@ You can learn about the new features and improvements in the latest firmware rel
     border-radius: 999px; padding: 0.4em 0.95em;
     margin-top: 6px; white-space: nowrap;
   }
-  .apps-hero-grid {
+  .main-content .apps-hero-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
     position: relative;
   }
-  @media (max-width: 720px) {
-    .apps-hero-grid { grid-template-columns: 1fr; }
-    .apps-hero { padding: 22px 22px 20px; }
-    .apps-hero h2 { font-size: 1.55rem; }
+  @media (max-width: 900px) {
+    .main-content .apps-hero-grid { grid-template-columns: 1fr; }
+    .main-content .apps-hero { padding: 22px 22px 20px; }
+    .main-content .apps-hero h2 { font-size: 1.55rem; }
   }
-  .apps-hero-card {
+  /* Use a div for the card so kramdown does not pull the inner h3 / p out of
+     the link (which is what happens when the card is an <a> wrapping block
+     content). A stretched ::after on the title link makes the whole card
+     clickable. */
+  .main-content .apps-hero-card {
+    position: relative;
     background: rgba(253,252,249,0.05);
     border: 1px solid rgba(250,235,215,0.18);
     border-radius: 12px;
     padding: 16px 18px 14px;
-    color: #fdfcf9; text-decoration: none;
+    color: #fdfcf9;
     display: flex; flex-direction: column; gap: 6px;
     transition: transform .12s ease, border-color .12s ease, background .12s ease;
   }
-  .apps-hero-card:hover {
+  .main-content .apps-hero-card:hover {
     background: rgba(253,252,249,0.10);
     border-color: rgba(250,235,215,0.40);
     transform: translateY(-2px);
-    text-decoration: none;
   }
-  .apps-hero-card .ico { font-size: 1.4rem; line-height: 1; }
-  .apps-hero-card h3 {
+  .main-content .apps-hero-card .ico { font-size: 1.4rem; line-height: 1; }
+  .main-content .apps-hero-card h3 {
     font-size: 1.05rem; margin: 0; font-weight: 500;
     color: #fdfcf9; border-bottom: 0; padding: 0;
   }
-  .apps-hero-card p {
+  .main-content .apps-hero-card h3 a,
+  .main-content .apps-hero-card a.apps-hero-card-link {
+    color: #fdfcf9;
+    text-decoration: none;
+    background-image: none;
+  }
+  .main-content .apps-hero-card h3 a:hover,
+  .main-content .apps-hero-card a.apps-hero-card-link:hover {
+    color: #faebd7;
+    text-decoration: none;
+  }
+  .main-content .apps-hero-card a.apps-hero-card-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .main-content .apps-hero-card p {
     margin: 0; font-size: 0.85rem; line-height: 1.45;
     color: rgba(253,252,249,0.78);
   }
-  .apps-hero-card .ribbon {
+  .main-content .apps-hero-card .ribbon {
     display: inline-block; align-self: flex-start;
     font-family: "Fira Mono", "Courier New", monospace;
     font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
@@ -111,46 +133,49 @@ You can learn about the new features and improvements in the latest firmware rel
     border-radius: 4px; padding: 0.18em 0.55em;
     margin-bottom: 2px;
   }
-  .apps-hero-cta {
+  .main-content .apps-hero-cta {
     display: inline-flex; align-items: center; gap: 0.5em;
     margin-top: 22px; padding: 0.65em 1.2em;
     background: #faebd7; color: #0d042b;
     border-radius: 999px; text-decoration: none;
     font-weight: 500; font-size: 0.95rem; position: relative;
+    background-image: none;
     transition: background .12s ease, transform .12s ease;
   }
-  .apps-hero-cta:hover {
+  .main-content .apps-hero-cta:hover {
     background: #f1dcb7; transform: translateY(-1px); text-decoration: none;
   }
-  .apps-hero-cta .arrow { font-family: "Fira Mono", "Courier New", monospace; }
+  .main-content .apps-hero-cta .arrow {
+    font-family: "Fira Mono", "Courier New", monospace;
+  }
 </style>
 
-<section class="apps-hero">
+<section class="apps-hero" markdown="0">
   <div class="apps-hero-head">
     <div>
       <h2>Apps Catalog</h2>
       <p class="apps-hero-sub">Microfirmwares are small, self-contained programs that run on the Multi-device. Install them from the Booster app catalog with one click, or build your own from the template repo.</p>
     </div>
-    <span class="apps-hero-chip">12 apps · v2 firmware</span>
+    <span class="apps-hero-chip">12 apps &middot; v2 firmware</span>
   </div>
 
   <div class="apps-hero-grid">
-    <a class="apps-hero-card" href="/sidecartridge-multidevice/microfirmwares/midi-to-ip/">
+    <div class="apps-hero-card">
       <span class="ribbon">New</span>
       <span class="ico">🎼</span>
-      <h3>MIDI-to-IP</h3>
+      <h3><a class="apps-hero-card-link" href="/sidecartridge-multidevice/microfirmwares/midi-to-ip/">MIDI-to-IP</a></h3>
       <p>Run MIDI Maze and other MIDI apps over Wi-Fi. Up to 16 real STs and Hatari peers share one ring on a Python orchestrator.</p>
-    </a>
-    <a class="apps-hero-card" href="/sidecartridge-multidevice/microfirmwares/drives_emulator/">
+    </div>
+    <div class="apps-hero-card">
       <span class="ico">💾</span>
-      <h3>Drives Emulator</h3>
+      <h3><a class="apps-hero-card-link" href="/sidecartridge-multidevice/microfirmwares/drives_emulator/">Drives Emulator</a></h3>
       <p>Hard-disk and floppy drives backed by microSD images. Ships the RTC emulator too.</p>
-    </a>
-    <a class="apps-hero-card" href="/sidecartridge-multidevice/microfirmwares/rom_emulator/">
+    </div>
+    <div class="apps-hero-card">
       <span class="ico">📀</span>
-      <h3>ROM Emulator</h3>
+      <h3><a class="apps-hero-card-link" href="/sidecartridge-multidevice/microfirmwares/rom_emulator/">ROM Emulator</a></h3>
       <p>Emulate ROM files from the microSD or a remote server. The bread-and-butter cartridge ROM workflow on every ST.</p>
-    </a>
+    </div>
   </div>
 
   <a class="apps-hero-cta" href="/sidecartridge-multidevice/microfirmwares/">Browse all 12 apps <span class="arrow">↗</span></a>
