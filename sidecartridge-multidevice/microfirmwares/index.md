@@ -1,17 +1,21 @@
 ---
 layout: default
-title: Microfirmwares for the Firmware V2.0 
-nav_order: 3
+title: Apps Catalog
+nav_order: 1
 nav_exclude: false
 parent: SidecarTridge Multi-device
 redirect_from:
   - /microfirmwares
   - /microfirmwares/
+  - /apps
+  - /apps/
+  - /sidecartridge-multidevice/apps
+  - /sidecartridge-multidevice/apps/
 toc: false
 has_toc: false
 ---
 
-# Microfirmwares for the Firmware V2.0 
+# Apps Catalog
 {: .no_toc }
 {: .d-inline-block }
 
