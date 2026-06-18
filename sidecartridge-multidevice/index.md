@@ -30,6 +30,133 @@ You can learn about the new features and improvements in the latest firmware rel
 </figure>
 
 
+<!-- Apps Catalog hero — scoped CSS lives inside this block to avoid leakage -->
+<style>
+  .apps-hero {
+    position: relative;
+    background: #0d042b;
+    color: #fdfcf9;
+    border-radius: 16px;
+    padding: 28px 32px 24px;
+    margin: 1.6rem 0 2rem;
+    overflow: hidden;
+    font-family: inherit;
+  }
+  .apps-hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(900px 320px at 110% -50%, rgba(250,235,215,0.16), transparent 60%),
+      radial-gradient(700px 280px at -10% 130%, rgba(250,235,215,0.10), transparent 70%);
+    pointer-events: none;
+  }
+  .apps-hero .apps-hero-head {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 24px; flex-wrap: wrap; margin-bottom: 20px; position: relative;
+  }
+  .apps-hero h2 {
+    font-size: 1.85rem; margin: 0; letter-spacing: -0.01em;
+    font-weight: 500; color: #fdfcf9;
+    border-bottom: 0; padding: 0;
+  }
+  .apps-hero .apps-hero-sub {
+    color: rgba(253,252,249,0.74); font-size: 0.97rem;
+    margin: 6px 0 0; max-width: 60ch; line-height: 1.5;
+  }
+  .apps-hero .apps-hero-chip {
+    display: inline-flex; align-items: center;
+    font-family: "Fira Mono", "Courier New", monospace;
+    font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+    background: #faebd7; color: #0d042b;
+    border-radius: 999px; padding: 0.4em 0.95em;
+    margin-top: 6px; white-space: nowrap;
+  }
+  .apps-hero-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    position: relative;
+  }
+  @media (max-width: 720px) {
+    .apps-hero-grid { grid-template-columns: 1fr; }
+    .apps-hero { padding: 22px 22px 20px; }
+    .apps-hero h2 { font-size: 1.55rem; }
+  }
+  .apps-hero-card {
+    background: rgba(253,252,249,0.05);
+    border: 1px solid rgba(250,235,215,0.18);
+    border-radius: 12px;
+    padding: 16px 18px 14px;
+    color: #fdfcf9; text-decoration: none;
+    display: flex; flex-direction: column; gap: 6px;
+    transition: transform .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .apps-hero-card:hover {
+    background: rgba(253,252,249,0.10);
+    border-color: rgba(250,235,215,0.40);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .apps-hero-card .ico { font-size: 1.4rem; line-height: 1; }
+  .apps-hero-card h3 {
+    font-size: 1.05rem; margin: 0; font-weight: 500;
+    color: #fdfcf9; border-bottom: 0; padding: 0;
+  }
+  .apps-hero-card p {
+    margin: 0; font-size: 0.85rem; line-height: 1.45;
+    color: rgba(253,252,249,0.78);
+  }
+  .apps-hero-card .ribbon {
+    display: inline-block; align-self: flex-start;
+    font-family: "Fira Mono", "Courier New", monospace;
+    font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: #0d042b; background: #faebd7;
+    border-radius: 4px; padding: 0.18em 0.55em;
+    margin-bottom: 2px;
+  }
+  .apps-hero-cta {
+    display: inline-flex; align-items: center; gap: 0.5em;
+    margin-top: 22px; padding: 0.65em 1.2em;
+    background: #faebd7; color: #0d042b;
+    border-radius: 999px; text-decoration: none;
+    font-weight: 500; font-size: 0.95rem; position: relative;
+    transition: background .12s ease, transform .12s ease;
+  }
+  .apps-hero-cta:hover {
+    background: #f1dcb7; transform: translateY(-1px); text-decoration: none;
+  }
+  .apps-hero-cta .arrow { font-family: "Fira Mono", "Courier New", monospace; }
+</style>
+
+<section class="apps-hero">
+  <div class="apps-hero-head">
+    <div>
+      <h2>Apps Catalog</h2>
+      <p class="apps-hero-sub">Microfirmwares are small, self-contained programs that run on the Multi-device. Install them from the Booster app catalog with one click, or build your own from the template repo.</p>
+    </div>
+    <span class="apps-hero-chip">12 apps · v2 firmware</span>
+  </div>
+
+  <div class="apps-hero-grid">
+    <a class="apps-hero-card" href="/sidecartridge-multidevice/microfirmwares/midi-to-ip/">
+      <span class="ribbon">New</span>
+      <span class="ico">🎼</span>
+      <h3>MIDI-to-IP</h3>
+      <p>Run MIDI Maze and other MIDI apps over Wi-Fi. Up to 16 real STs and Hatari peers share one ring on a Python orchestrator.</p>
+    </a>
+    <a class="apps-hero-card" href="/sidecartridge-multidevice/microfirmwares/drives_emulator/">
+      <span class="ico">💾</span>
+      <h3>Drives Emulator</h3>
+      <p>Hard-disk and floppy drives backed by microSD images. Ships the RTC emulator too.</p>
+    </a>
+    <a class="apps-hero-card" href="/sidecartridge-multidevice/microfirmwares/rom_emulator/">
+      <span class="ico">📀</span>
+      <h3>ROM Emulator</h3>
+      <p>Emulate ROM files from the microSD or a remote server. The bread-and-butter cartridge ROM workflow on every ST.</p>
+    </a>
+  </div>
+
+  <a class="apps-hero-cta" href="/sidecartridge-multidevice/microfirmwares/">Browse all 12 apps <span class="arrow">↗</span></a>
+</section>
+
+
 ## 🚀 Latest STABLE Firmware: {{ site.FIRMWARE_VERSION }}
 * **💾 [Download STABLE Release {{ site.FIRMWARE_VERSION }}](https://sidecartridge.com/downloads)**
 * **📝 [Changelog for STABLE Release {{ site.FIRMWARE_VERSION }}](https://github.com/sidecartridge/rp2-booster-bootloader/releases/tag/{{ site.FIRMWARE_VERSION }})**
