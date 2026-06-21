@@ -32,7 +32,7 @@ The Croissant version of the SidecarTridge Keyboard Emulator is built for the 7-
 
 ### What is the difference between Croissant and Soufflè?
 
-Croissant is the internal variant: it installs inside the Atari ST keyboard area, between the motherboard and the original keyboard, so the original case stays closed. Soufflè is the external dongle variant, designed for Atari Mega ST and Mega STe systems, and plugs into the coiled keyboard cable. Both variants share the same firmware base. See the [Introduction](/sidecartridge-keyboard/introduction/) for the full feature breakdown.
+Croissant is the internal variant: it installs inside the Atari ST keyboard area, between the motherboard and the original keyboard, so the original case stays closed. Soufflè is the external dongle variant, designed for Atari Mega ST and Mega STE systems, and plugs into the coiled keyboard cable. Both variants share the same firmware base. See the [Introduction](/sidecartridge-keyboard/introduction/) for the full feature breakdown.
 
 [Previous: Troubleshooting](/sidecartridge-keyboard/troubleshooting/){: .btn .mr-4 }
 [Main](/sidecartridge-keyboard/){: .btn .mr-4 }

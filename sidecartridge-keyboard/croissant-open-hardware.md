@@ -11,7 +11,7 @@ parent: SidecarTridge Keyboard
 
 This page collects the released hardware design files for **SidecarTridge Croissant**, including the diagram, schematics, PCB manufacturing data, assembly files, and licensing information.
 
-The material published here applies to the **Croissant** internal Atari ST / Atari STe keyboard emulator board.
+The material published here applies to the **Croissant** internal Atari ST / Atari STE keyboard emulator board.
 
 <details open markdown="block">
   <summary>

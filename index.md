@@ -84,20 +84,20 @@ has_toc: false
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge PSU thumbnail">
+      <img class="proj-thumb" src="/sidecartridge-psu/assets/images/psu_kit_top-thumbnail.png" alt="SidecarTridge Mean Well PSU Kit thumbnail">
       <div>
-        <h2><a href="/sidecartridge-psu/">SidecarTridge PSU for Atari ST/MegaST/STE</a></h2>
-        <p>A modern, solderless replacement power supply unit designed for Atari ST, STE and MegaST computers.</p>
+        <h2><a href="/sidecartridge-psu/">SidecarTridge Mean Well PSU Kit</a></h2>
+        <p>A modern, solderless replacement power supply kit based on the Mean Well RPD-60, for Atari ST, STE and Mega ST computers.</p>
       </div>
     </div>
   </div>
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.png" alt="SidecarTridge USB-C PD Multi-Rail Power Supply Unit thumbnail">
+      <img class="proj-thumb" src="/sidecartridge-usb-c-pd-psu/assets/images/USB-C-PD-BOARD.png" alt="SidecarTridge Internal USB-C PD PSU thumbnail">
       <div>
-        <h2><a href="/sidecartridge-usb-c-pd-psu/">SidecarTridge USB-C PD Multi-Rail Power Supply</a></h2>
-        <p>A modern USB-C PD Multi-Rail PSU drop-in replacement for Atari ST/STE/MegaST and Amiga computers</p>
+        <h2><a href="/sidecartridge-usb-c-pd-psu/">SidecarTridge Internal USB-C PD PSU for Atari ST/STE/Mega ST</a></h2>
+        <p>A modern USB-C PD multi-rail PSU drop-in replacement for Atari ST, STE, Mega ST and Amiga computers.</p>
       </div>
     </div>
   </div>
@@ -124,10 +124,10 @@ has_toc: false
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png" alt="ACSI2STM HD thumbnail">
+      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png" alt="ACSI2STM Compact thumbnail">
       <div>
-        <h2><a href="/acsi2stm-atari-st/">ACSI2STM Hard Disk for ST/MegaST/STE/MegaSTE</a></h2>
-        <p>A modern hard disk device for Atari ST/MegaST/STE/MegaSTE.</p>
+        <h2><a href="/acsi2stm-atari-st/">ACSI2STM Compact</a></h2>
+        <p>Modern ACSI hard disk emulator for Atari ST, STE, Mega ST and Mega STE, based on the upstream open-source ACSI2STM project.</p>
       </div>
     </div>
   </div>
@@ -166,8 +166,8 @@ has_toc: false
     <div class="proj-inner">
       <img class="proj-thumb" src="/st2vga-family/assets/images/ST2VGA-REV3-FRONT.png" alt="ST2VGA family thumbnail">
       <div>
-        <h2><a href="/st2vga-family/">ST2VGA family (Rev.3 & Enhanced)</a></h2>
-        <p>Clean VGA output for Atari ST/STE/Mega ST/Mega STE: passive Rev.3 and the active Enhanced model for difficult video stages.</p>
+        <h2><a href="/st2vga-family/">ST2VGA family (Adapter & Enhanced Adapter)</a></h2>
+        <p>Clean VGA output for Atari ST, STE, Mega ST and Mega STE: passive ST2VGA Adapter and the active ST2VGA Enhanced Adapter for difficult video stages.</p>
       </div>
     </div>
   </div>

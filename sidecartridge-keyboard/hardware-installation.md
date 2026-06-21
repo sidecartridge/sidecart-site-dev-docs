@@ -10,7 +10,7 @@ parent: SidecarTridge Keyboard
 
 {: .no_toc }
 
-This chapter explains how to open an Atari ST / STe computer and install the **SidecarTridge Croissant Keyboard Emulator**.
+This chapter explains how to open an Atari ST / STE computer and install the **SidecarTridge Croissant Keyboard Emulator**.
 
 All ST-family machines use a plastic outer case and internal metal shielding.
 Both must be removed to access the keyboard connector on the motherboard.

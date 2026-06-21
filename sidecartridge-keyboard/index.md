@@ -18,7 +18,7 @@ has_toc: false
 
 The **SidecarTridge Keyboard Emulator** is a hardware device that emulates the original Atari ST IKBD keyboard controller, allowing modern keyboards, mice, and game controllers to be used on Atari ST-family computers while preserving full compatibility with software that expects the original IKBD behavior.
 
-Unlike simple keyboard adapters that only translate keystrokes, the SidecarTridge Keyboard Emulator reproduces the behavior of the HD6301-based IKBD microcontroller used in the Atari ST, STe, Mega ST, Mega STe, and TT.  
+Unlike simple keyboard adapters that only translate keystrokes, the SidecarTridge Keyboard Emulator reproduces the behavior of the HD6301-based IKBD microcontroller used in the Atari ST, STE, Mega ST, Mega STE, and TT.  
 Because the host computer communicates with a real controller implementation, the system behaves as if an original Atari keyboard were connected.
 
 The project currently exists in two hardware variants that share the same firmware base.
@@ -37,13 +37,13 @@ The project currently exists in two hardware variants that share the same firmwa
 ## Hardware variants
 
 - **SidecarTridge Croissant**  
-  Internal adapter for Atari ST and Atari STe computers with the internal 7-pin keyboard connector.  
+  Internal adapter for Atari ST and Atari STE computers with the internal 7-pin keyboard connector.  
   Works as a middle-man between the motherboard and the original keyboard path, allowing Bluetooth, and mixed input configurations while preserving compatibility with original devices.
 
 ![SidecarTridge Croissant internal keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-CROISSANT-TOP.png)
 
 - **SidecarTridge Soufflè**  
-  External keyboard replacement for Atari Mega ST and Mega STe systems.  
+  External keyboard replacement for Atari Mega ST and Mega STE systems.  
   Connects in place of the original keyboard and adds Bluetooth and USB input support while maintaining normal IKBD behavior.
 
 ![SidecarTridge Soufflè external keyboard emulator](/sidecartridge-keyboard/assets/images/KEYBOARD-EMULATOR-SOUFFLE-PERSPECTIVE.png)
@@ -73,7 +73,7 @@ Typical use cases for the SidecarTridge Keyboard Emulator include:
 - replacing missing or faulty original keyboards
 - preserving compatibility with software that depends on normal IKBD behavior
 - combining modern input devices with original Atari joysticks and mouse
-- modernizing Atari ST, STe, Mega ST, Mega STe, and TT setups
+- modernizing Atari ST, STE, Mega ST, Mega STE, and TT setups
 
 
 ## Table of Contents
