@@ -1,12 +1,12 @@
 ---
 layout: default
-title: ST2VGA family (Rev.3 & Enhanced)
+title: ST2VGA family (Adapter & Enhanced Adapter)
 nav_order: 50
 nav_exclude: false
 has_children: true
 ---
 
-# ST2VGA family (Rev.3 & Enhanced)
+# ST2VGA family (Adapter & Enhanced Adapter)
 
 The **ST2VGA** adapters let an Atari ST/STE/Mega ST/Mega STE drive a compatible **multisync VGA display** while preserving the original Atari video timings (this is **not** a scan doubler or scaler).
 

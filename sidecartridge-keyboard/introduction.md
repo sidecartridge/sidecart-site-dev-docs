@@ -11,7 +11,7 @@ parent: SidecarTridge Keyboard
 
 The **SidecarTridge Keyboard Emulator** is a hardware device that emulates the original Atari ST IKBD keyboard controller, allowing modern input devices to be used with Atari ST-family computers while maintaining full compatibility with software that expects standard IKBD behavior.
 
-Unlike simple keyboard adapters that translate key presses, the SidecarTridge Keyboard Emulator reproduces the behavior of the HD6301-based IKBD microcontroller used in the Atari ST, STe, Mega ST, Mega STe, and TT.  
+Unlike simple keyboard adapters that translate key presses, the SidecarTridge Keyboard Emulator reproduces the behavior of the HD6301-based IKBD microcontroller used in the Atari ST, STE, Mega ST, Mega STE, and TT.  
 Because the host computer communicates with a real controller implementation, the system behaves as if an original Atari keyboard were connected.
 
 This section introduces the project and explains how the emulator fits into Atari keyboard and input device setups.
@@ -33,9 +33,9 @@ This section introduces the project and explains how the emulator fits into Atar
 The SidecarTridge Keyboard Emulator is designed for Atari computers that use the IKBD keyboard controller architecture, including:
 
 - Atari ST  
-- Atari STe  
+- Atari STE  
 - Atari Mega ST  
-- Atari Mega STe  
+- Atari Mega STE  
 - compatible systems using the same IKBD protocol
 
 By emulating the original keyboard microcontroller instead of only translating keystrokes, the device allows modern input methods while preserving compatibility with software that expects the original IKBD behavior.
@@ -45,7 +45,7 @@ The SidecarTridge Keyboard Emulator currently exists in two hardware variants.
 
 ### SidecarTridge Croissant
 
-SidecarTridge Croissant is an internal adapter for Atari ST and Atari STe computers that use the 7-pin internal keyboard connector.
+SidecarTridge Croissant is an internal adapter for Atari ST and Atari STE computers that use the 7-pin internal keyboard connector.
 
 It works as a middle-man between the motherboard and the keyboard and allows different operating modes, including:
 
@@ -59,7 +59,7 @@ The operating mode can be changed at boot time without opening the computer encl
 
 ### SidecarTridge Soufflè
 
-SidecarTridge Soufflè is an external keyboard replacement for Atari Mega ST and Mega STe systems.
+SidecarTridge Soufflè is an external keyboard replacement for Atari Mega ST and Mega STE systems.
 
 It connects to the computer in place of the original keyboard and provides:
 
@@ -110,14 +110,14 @@ Common reasons to use the SidecarTridge Keyboard Emulator include:
 
 ### Croissant features
 
-- internal middle-man design for Atari ST / STe
+- internal middle-man design for Atari ST / STE
 - pass-through mode for original keyboard and mouse
 - Bluetooth and pass-through mode selectable at boot
 
 
 ### Soufflè features
 
-- external keyboard replacement for Mega ST / Mega STe
+- external keyboard replacement for Mega ST / Mega STE
 - built-in USB hub for keyboards, mice, and gamepads
 - support for original joysticks and mouse together with USB keyboard
 - designed for systems without a working original keyboard

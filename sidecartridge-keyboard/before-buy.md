@@ -26,13 +26,13 @@ Use this chapter as a step-by-step checklist to decide which SidecarTridge Keybo
 Choose the hardware variant that matches your Atari computer.
 
 - **Croissant (internal)**  
-  For Atari ST and Atari STe computers with an internal power supply and the internal 7-pin keyboard connector.
+  For Atari ST and Atari STE computers with an internal power supply and the internal 7-pin keyboard connector.
 
 {: .warning}
 Croissant does not work on Atari ST motherboards C070115 and C070243. These "short ST" machines use an 18-pin keyboard connector instead, and they are easy to recognize because they have an external power supply.
 
 - **Soufflè (external dongle)**  
-  For Atari Mega ST and Atari Mega STe computers with the RJ12 keyboard connector on the left side of the computer.
+  For Atari Mega ST and Atari Mega STE computers with the RJ12 keyboard connector on the left side of the computer.
 
 
 ## Step 2: Understand the installation impact
@@ -47,7 +47,7 @@ Before buying, make sure you are comfortable with how each variant is installed.
   Plug the device RJ11 cable into the computer RJ12 connector and the hardware installation is complete.
 
   As a practical recommendation, avoid very power-hungry USB keyboards or accessories.  
-  All USB devices connected to Soufflè are powered from the Atari Mega ST / Mega STe 5V rail, so a stable power supply is important.
+  All USB devices connected to Soufflè are powered from the Atari Mega ST / Mega STE 5V rail, so a stable power supply is important.
 
 
 ## Step 3: Check the supported devices first

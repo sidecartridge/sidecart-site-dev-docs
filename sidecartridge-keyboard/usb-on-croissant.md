@@ -27,7 +27,7 @@ This is an experimental setup. It is not validated in production, no specific US
 
 Owners of an Atari **ST** or **STE** with the **7-pin internal keyboard connector** (the Croissant target) who want USB input on their machine and are happy with the trade-offs listed under [Limitations](#limitations) below.
 
-If your machine is a **Mega ST** or **Mega STe**, you do not need this workaround. The dedicated product for those is **Soufflè**, which ships with a built-in USB hub. See the [Introduction](introduction.md) for the variant breakdown.
+If your machine is a **Mega ST** or **Mega STE**, you do not need this workaround. The dedicated product for those is **Soufflè**, which ships with a built-in USB hub. See the [Introduction](introduction.md) for the variant breakdown.
 
 ## How it works
 
