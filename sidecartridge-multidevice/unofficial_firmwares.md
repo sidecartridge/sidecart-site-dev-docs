@@ -10,6 +10,7 @@ redirect_from:
 ---
 
 # Unofficial Firmwares
+
 {: .no_toc }
 
 <details open markdown="block">
@@ -23,12 +24,14 @@ redirect_from:
 
 ## List of Unofficial firmwares available
 
-
-|  |  |
-|-------|---------|
-| [Debug Cart](https://github.com/czietz/atari-debug-cart) | Repurpose the device for debug output from Atari software. |
-
-
+| Name                                                                      | Description                                                                                                                                                                   | Author                                                  |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [Debug Cart](https://github.com/czietz/atari-debug-cart)                  | Repurpose the device for debug output from Atari software.                                                                                                                    | [Christian Zietz](https://www.chzsoft.de/site/welcome/) |
+| [Hello, SidecarT!](https://github.com/neilrackett/md-helloworld/releases) | Every new coding adventure begins with... "Hello, World!"                                                                                                                     | [Neil Rackett](https://neilrackett.com/atarist)         |
+| [MD/MJPEG](https://github.com/neilrackett/md-mjpeg/releases)              | Why watch videos at 4K resolution in 16.7 million colours when you can watch them at 0.3K in 16? Stream MJPEG video with sound from your SidecarT's SD card to your Atari ST. | [Neil Rackett](https://neilrackett.com/atarist)         |
+| [MD/Pico3D](https://github.com/neilrackett/md-pico3d/releases)            | Pico3D is an experimental open world 3D game demo for Atari ST with SidecarTridge Multi-device.                                                                               | [Neil Rackett](https://neilrackett.com/atarist)         |
+| [MD/Sidepad](https://github.com/neilrackett/md-sidepad/releases)          | MD/Sidepad enables you to connect any Bluetooth gamepad to your Atari ST and use it as a joystick and mouse.                                                                  | [Neil Rackett](https://neilrackett.com/atarist)         |
+| [MD/Snap](https://github.com/neilrackett/md-snap/releases)                | Capture Atari ST screenshots to your SidecarT's SD card by pressing the SELECT button.                                                                                        | [Neil Rackett](https://neilrackett.com/atarist)         |
 
 ## Want to contribute?
 
