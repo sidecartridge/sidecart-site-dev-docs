@@ -32,6 +32,7 @@ redirect_from:
 | [MD/Pico3D](https://github.com/neilrackett/md-pico3d/releases)            | Pico3D is an experimental open world 3D game demo for Atari ST with SidecarTridge Multi-device.                                                                               | [Neil Rackett](https://neilrackett.com/atarist)         |
 | [MD/Sidepad](https://github.com/neilrackett/md-sidepad/releases)          | MD/Sidepad enables you to connect any Bluetooth gamepad to your Atari ST and use it as a joystick and mouse.                                                                  | [Neil Rackett](https://neilrackett.com/atarist)         |
 | [MD/Snap](https://github.com/neilrackett/md-snap/releases)                | Capture Atari ST screenshots to your SidecarT's SD card by pressing the SELECT button.                                                                                        | [Neil Rackett](https://neilrackett.com/atarist)         |
+| [MD/Speccy](https://github.com/neilrackett/md-speccy/releases)            | ZX Spectrum 48K emulator for. Any game in `.z80` format can be played using your Atari ST keyboard or a joystick.                                                             | [Neil Rackett](https://neilrackett.com/atarist)         |
 
 ## Want to contribute?
 
