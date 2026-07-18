@@ -336,7 +336,7 @@ You can learn about the new features and improvements in the latest firmware rel
   <div class="toc-card">
     <span class="toc-chip chip-ref">Reference</span>
     <h3>🗄️ <a href="/sidecartridge-multidevice/publicfloppydb/">Public Floppy DB</a></h3>
-    <p>Browse the floppy catalog at <a href="https://ataristpublicfloppydb.sidecartridge.com">ataristpublicfloppydb.sidecartridge.com</a> and contribute your own images.</p>
+    <p>Browse the floppy catalog on the <a href="https://ataristpublicfloppydb.sidecartridge.com">Atari ST Public Floppy Database</a> and contribute your own images.</p>
   </div>
 
   <div class="toc-card">
