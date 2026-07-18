@@ -58,7 +58,7 @@ Click **Floppy DB** in the navigation bar to open the public floppy database. Th
 * **What’s New** – latest uploads curated by the community.
 * **Main Catalog** – the long-term archive, organized by crew label or collection.
 
-> You can browse the same catalog from any web browser at [ataristpublicfloppydb.sidecartridge.com](https://ataristpublicfloppydb.sidecartridge.com), handy for scouting titles from your phone or desktop before you sit down at the Atari.
+> You can browse the same catalog from any web browser on the [Atari ST Public Floppy Database](https://ataristpublicfloppydb.sidecartridge.com), handy for scouting titles from your phone or desktop before you sit down at the Atari.
 
 ![Floppy Images Database Search Page](/sidecartridge-multidevice/assets/images/BROWSER-FLOPPYDB-MAIN.png)
 
