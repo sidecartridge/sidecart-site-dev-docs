@@ -35,7 +35,9 @@ This repository is a way to share with the community the floppy images that are 
 
 ## List of floppies available
 
-You can find the full list in the folder here: https://ataristdb.sidecartridge.com/db/*.csv
+The easiest way to explore the database is the browsable web catalog at [ataristpublicfloppydb.sidecartridge.com](https://ataristpublicfloppydb.sidecartridge.com). Use **What's New** for the latest community uploads or search the full archive by name and label. It runs in any browser, so you don't need an Atari or the device to look around.
+
+If you prefer the raw data, you can find the full list in the folder here: https://ataristdb.sidecartridge.com/db/*.csv
 
 Where the asterisk is the first letter of the name of the floppy. The database is sharded by the first letter of the name of the floppy to allow the database to be easily parsed by the SidecarTridge Multi-device Floppy Database.
 
