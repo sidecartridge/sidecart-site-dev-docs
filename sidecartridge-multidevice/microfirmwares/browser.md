@@ -53,10 +53,11 @@ On boot you’ll see a **QR code** screen. Scan it to open the web UI, or type t
 
 ### 💾 Floppy Images Database
 
-Click **Floppy DB** in the navigation bar to open the public floppy database. The page is divided into two discovery modes:
+Click **Floppy DB** in the navigation bar to open the public floppy database. There are several ways to discover titles:
 
 * **What’s New** – latest uploads curated by the community.
 * **Main Catalog** – the long-term archive, organized by crew label or collection.
+* **Browse A–Z** – page through the catalog by first letter or number, with a dedicated **New** group for recent arrivals.
 
 > You can browse the same catalog from any web browser on the [Atari ST Public Floppy Database](https://ataristpublicfloppydb.sidecartridge.com), handy for scouting titles from your phone or desktop before you sit down at the Atari.
 
@@ -65,6 +66,7 @@ Click **Floppy DB** in the navigation bar to open the public floppy database. Th
 Use the controls at the top to zero in on what you need:
 
 * **Search box** – smart suggestions as you type (e.g., `xe` → `Xenon`).
+* **Browse A–Z** – pick a first letter or number (or the **New** group) to page through the catalog without typing.
 * **Label chips** – filter by cracking team, app genre, collection tags, etc.
 * **What’s New vs Main Catalog** – flip between recent additions and the deep archive.
 
@@ -88,7 +90,8 @@ The File Manager is now a full microSD and floppy image workbench. You can:
 * Rename, delete, copy, and move files or folders with progress reporting.
 * Upload multiple files at once or pull files directly from an internet URL.
 * Create folders, blank Atari ST disk images, and `.st`/`.st.rw` containers.
-* Convert `.MSA` ↔ `.ST` floppy images.
+* Convert `.MSA` ↔ `.ST` floppy images, and `.STX` (Pasti) images to `.ST` (experimental).
+* Extract `.zip` archives straight into the current folder.
 * Mount `.ST` and `.st.rw` images and work inside them (copy, rename, delete, import/export files).
 
 #### Table View
@@ -123,7 +126,8 @@ Each row exposes context-aware actions. Depending on the file you can:
 
 * Toggle **hidden** or **read-only** attributes
 * **Rename**, **delete**, **download**, **copy**, or **move** items
-* **Convert** between `.MSA` and `.ST`
+* **Convert** between `.MSA` and `.ST`, or a `.STX` (Pasti) image to `.ST`
+* **Extract** the contents of a `.zip` archive
 * **Browse Image** for `.ST` / `.st.rw` contents
 
 ![File Details Actions](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-FILEACTIONS.png)
@@ -138,6 +142,18 @@ Need a fresh floppy? Click **Blank ST Image**, pick the size, file name, optiona
 
 Use the **convert** icon to flip an `.MSA` into `.ST` (or vice versa) without leaving the browser. Handy when a release comes in the “wrong” format for your workflow.
 
+#### Converting STX (Pasti) Images
+
+The File Manager can also convert `.STX` (Pasti) disk images to `.ST` (**experimental**). Before the conversion starts, a colour-coded preflight tells you what to expect, so you decide with the outcome already known:
+
+* **LOSSLESS** – a perfect copy.
+* **ACCEPTABLE** – all data is kept; only copy-protection metadata is lost.
+* **CAREFUL** – some sectors cannot be recovered.
+
+#### Extracting ZIP Archives
+
+Got a release packed in a `.zip`? Select it and choose **Extract**. Its contents are unpacked into the current folder with a live progress display, so you can drop in a downloaded bundle and get straight to the disk images inside.
+
 #### Browsing Inside ST Images
 
 Open any `.ST`/`.st.rw` file with **Browse Image**. The file mounts like a folder so you can inspect or manage its contents. Writable `.st.rw` images support rename, delete, import, and export operations with automatic 8.3 name handling when needed.
@@ -147,9 +163,10 @@ Open any `.ST`/`.st.rw` file with **Browse Image**. The file mounts like a folde
 #### Uploading Files
 
 * **Upload files** – pick one or multiple files from your computer.
-* **Upload from URL** – fetch a remote file directly into the current folder.
+* **Upload from URL** – fetch a remote file directly into the current folder. Both `http://` and `https://` URLs work, redirects (301/302/303/307/308) are followed automatically, and you can include an explicit port (for example `http://host:8080/file`). Downloaded files are named the way a web browser would name them, and a failed or redirected download never leaves an error page or stub behind.
+* **Paste a link** – copy any `http`/`https` URL and paste it anywhere in the File Manager to open **Upload from URL** already filled in. Just click **Start Download**.
 
-Progress bars track each transfer and completed files appear immediately.
+Progress bars track each transfer, and the file list refreshes on its own when a download finishes—new files appear without reloading the page.
 
 ![File Upload Dialog](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-UPLOADFILES.png)
 ![File Upload Done](/sidecartridge-multidevice/assets/images/BROWSER-FILEMANAGER-UPLOADEDFILES.png)
