@@ -47,15 +47,47 @@ All the floppies added through the pull requests will be added to the database a
 
 ## How to contribute
 
-If you have a Floppy Image that is not listed here, you can contribute to the database by submitting a pull request with the following information:
+There are two ways to add a floppy to the database. **Sending it by email is the recommended method** for everyone: it is quick, needs no GitHub account, and every submission is reviewed by a human before it is published. Submitting a Pull Request is an advanced alternative for users who are comfortable with GitHub.
 
-- Name of the Floppy
-- Description
-- Type: can only be `CRACKTROS`, `DEMOS`, `HOMEBREW`,  `INTROS`.
+### Option 1 (recommended): Submit by email
 
-**You must include the Floppy Image file in the pull request in .ST format.** The file must be in a single file. If the floppy has more than one disk, you must create a separate pull request for each disk.
+1. Create a new email and **attach your floppy image in `.ST` format** (a single disk image only).
 
-## How to create a Pull Request (PR) from the GitHub website
+2. Send it to the address shown in the image below. The address is shown as an image on purpose to reduce spam, so please type it manually into your email client:
+
+    ![SidecarTridge Public Floppy DB submission address](/sidecartridge-multidevice/assets/images/PUBLIC-FLOPPY-DB-SUBMISSION-EMAIL.png)
+
+3. In the **body** of the email, include these three lines:
+
+    ```
+    Name: <short, descriptive, unique title of the disk>
+    Category: <one of the six categories below>
+    Description: <optional one-line description>
+    ```
+
+    **Category must be exactly one of these six (uppercase):**
+
+    - `DEMOS`
+    - `GRAPHICS`
+    - `MUSIC`
+    - `GAMES`
+    - `INTROS`
+    - `HOMEBREW_GAMES`
+
+**Rules:**
+
+- **One floppy per email.** For multi-disk sets, send one email per disk.
+- Attach the raw `.ST` image only (no `.zip`, `.msa`, or executables).
+- `Name` should be unique and clearly describe the disk.
+- `Description` is optional.
+
+Every submission is **reviewed manually** before it is added, so it will not appear in the database instantly. Once your floppy has been reviewed and added, you will receive a reply by email, and the new content will be available in the [Atari ST Public Floppy Database](https://ataristpublicfloppydb.sidecartridge.com) web catalog and directly from the **File Manager** of your SidecarTridge Multidevice.
+
+### Option 2 (advanced): Submit a Pull Request
+
+If you are a GitHub user, you can also contribute directly by opening a Pull Request against [sidecartridge/atarist-public-floppy-db](https://github.com/sidecartridge/atarist-public-floppy-db). Include the Floppy Image file in `.ST` format (one file per PR; multi-disk sets need one PR per disk) and the same fields described above.
+
+#### From the GitHub website
 
 First, you need to have a GitHub account. If you don't have one, you can create one for free at the [GitHub website](https://github.com).
 
@@ -77,7 +109,7 @@ First, you need to have a GitHub account. If you don't have one, you can create 
     - Filename: Enter the exact filename of the Floppy image file you uploaded. Please match the case and extension of the file. Only .ST files are allowed.
     - Name: Enter the name of the Flopy Image in human readable format. It must be short and descriptive.
     - Description: Enter a brief description of the Floppy Image.
-    - Type: Enter the type of the Floppy Image. Recommended values are `DEMOS`, `GRAPHICS`, `MUSIC`,  `GAMES`, `INTROS` and `HOMEBREW_GAMES`. But another descriptive type can be used. Uppercase, please.
+    - Category: Enter the category of the Floppy Image. It must be exactly one of `DEMOS`, `GRAPHICS`, `MUSIC`, `GAMES`, `INTROS` or `HOMEBREW_GAMES`. Uppercase, please.
 
 9. Click on the "Create pull request" button.
 
@@ -87,7 +119,7 @@ First, you need to have a GitHub account. If you don't have one, you can create 
 
 12. Once your pull request is accepted and merged, you can delete the branch you created for the pull request.
 
-## How to create a Pull Request (PR) from the command line
+#### From the command line
 
 If you are familiar with Git and the command line, you can also create a pull request from your local machine. No need to explain how to do it here, as you probably already know how to do it. Just make sure to follow the same steps as above and include the Floppy image file in the pull request.
 
