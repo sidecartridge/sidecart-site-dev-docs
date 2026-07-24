@@ -148,6 +148,12 @@ The **ACSI2STM Mini** offers the **same full feature set as its bigger brother, 
     <p>List of enclosures and cases available for the ACSI2STM</p>
   </div>
 
+  <div class="toc-card">
+    <span class="toc-chip chip-ref">Reference</span>
+    <h3>🏭 <a href="/acsi2stm-atari-st/manufacturing-files/">Manufacturing files and open hardware</a></h3>
+    <p>Gerbers, BOM and pick and place files for the Compact, Mini and DB19-to-IDC20 adapter boards.</p>
+  </div>
+
 </div>
 
 
