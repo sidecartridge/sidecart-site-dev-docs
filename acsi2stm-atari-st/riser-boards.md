@@ -129,6 +129,8 @@ These machines are old, fragile, and not always mechanically identical inside. I
 
 ## DB19-to-IDC20 adapter (external connection)
 
+![DB19-to-IDC20 adapter and ribbon cable kit](/acsi2stm-atari-st/assets/images/adapter/DB19-IDC20-ADAPTER-KIT.png)
+
 If you prefer not to open the machine or mount the Compact internally, the **DB19-to-IDC20 adapter** lets you connect the ACSI2STM Compact (or any ACSI device with an IDC 20-pin header) to the classic **DB-19** hard disk port on the outside of the computer.
 
 The DB-19 connector on the Atari ST family ACSI port has not been manufactured for years, while modern ACSI devices moved to the more available 2x10 **IDC-20** header. This passive adapter bridges both worlds, so you keep using the original rear ACSI port without hunting for the discontinued DB-19 connector.
