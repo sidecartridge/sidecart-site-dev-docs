@@ -141,6 +141,15 @@ If you'd rather build your own bootable hard disk image instead of downloading a
 
 The Floppies Emulation represents a significant enhancement to the Multi-device. With this, the Atari ST can interface with floppy images on a microSD card as though they were actual floppy disks. Here's how to get started with Floppies Emulation.
 
+#### Physical internal floppy drive mapping
+
+Emulated floppy drives take the low drive slots first, so your machine's real internal floppy is not disabled, it is remapped:
+
+- If you emulate **A:** only, the physical internal drive moves to **B:** and stays usable.
+- If you emulate both **A:** and **B:**, both floppy slots are held by emulated images and the physical internal drive is no longer addressable.
+
+The Atari always exposes at most two floppy slots. Emulated images fill them starting from **A:**, and the physical drive takes whichever slot is left.
+
 #### Floppy Drive Related Setup Screen Commands
 
 | Command | Description |
