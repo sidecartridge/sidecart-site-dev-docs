@@ -124,10 +124,10 @@ has_toc: false
 
   <div class="proj-card">
     <div class="proj-inner">
-      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png" alt="ACSI2STM Compact thumbnail">
+      <img class="proj-thumb" src="/acsi2stm-atari-st/assets/images/ACSI2STM2-TOP-CONNECTOR.png" alt="ACSI2STM thumbnail">
       <div>
-        <h2><a href="/acsi2stm-atari-st/">ACSI2STM Compact</a></h2>
-        <p>Modern ACSI hard disk emulator for Atari ST, STE, Mega ST and Mega STE, based on the upstream open-source ACSI2STM project.</p>
+        <h2><a href="/acsi2stm-atari-st/">ACSI2STM Hard Disk</a></h2>
+        <p>Modern ACSI hard disk emulator for Atari ST, STE, Mega ST and Mega STE, based on the upstream open-source ACSI2STM project. Available as the Compact and Mini boards, plus internal riser boards and a DB19-to-IDC20 adapter.</p>
       </div>
     </div>
   </div>
