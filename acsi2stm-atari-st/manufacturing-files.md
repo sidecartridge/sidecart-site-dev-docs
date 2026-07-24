@@ -43,7 +43,20 @@ The per-device packages are listed below. This section grows as files are publis
 
 ### ACSI2STM Compact
 
-Manufacturing files coming soon.
+The full manufacturing package for the ACSI2STM Compact lives in the [`pcb/Compact` folder of the acsi2stm repository](https://github.com/sidecartridge/acsi2stm/tree/sidecartridge-castillian-realdb19/pcb/Compact), on the `sidecartridge-castillian-realdb19` branch.
+
+Direct downloads:
+
+- [Gerber files (ZIP)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-castillian-realdb19/pcb/Compact/Gerber%20-%20ACSI2STM%20Compact.zip)
+- [Bill of Materials (CSV)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-castillian-realdb19/pcb/Compact/BOM%20-%20ACSI2STM%20Compact.csv)
+- [Pick and place / CPL (CSV)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-castillian-realdb19/pcb/Compact/PickAndPlace%20-%20ACSI2STM%20Compact.csv)
+
+Fabrication notes for the PCB manufacturer:
+
+- Layers: 4
+- PCB thickness: 1.6 mm
+- Surface finish: lead-free HASL
+- Specify layer sequence: yes
 
 ### ACSI2STM Mini
 
