@@ -30,6 +30,10 @@ parent: ACSI2STM Hard Disk for Atari ST
 
 | ![ACSI2STM Mini Enclosure by SidecarTridge](https://media.printables.com/media/prints/9fb9486d-8654-4977-91c6-06ad7ef6c9ce/images/11721696_33e96356-04f3-41fd-af13-8681d1d9a5a1_c4786deb-33c2-4d6e-84eb-a508abb0f2e6/thumbs/inside/1920x1440/png/acsi2stm-mini-enclosure-perspective.webp) | **ACSI2STM Mini Enclosure by SidecarTridge**: This enclosure is specifically designed for the ACSI2STM Mini SidecarTridge version. It is tailored to fit the compact dimensions of the Mini model. [View on Printables](https://www.printables.com/model/1554968-acsi2stm-mini-enclosure) |
 
+### DB19-to-IDC20 Adapter
+
+| ![DB19-to-IDC20 Atari ST Adapter Enclosure by SidecarTridge](https://media.printables.com/media/prints/3c549d0b-d49d-4301-bee9-e1570af9dfdf/images/13418713_c08c3139-d94f-43e2-9e28-9d86b113707f_2d3590b4-83b4-45f6-877d-1661d96fc767/thumbs/cover/1200x630/png/enclosure_db192idc20.png) | **DB19-to-IDC20 Atari ST Adapter Enclosure by SidecarTridge**: This enclosure is designed for the DB19-to-IDC20 adapter that connects modern IDC-20 ACSI devices to the classic Atari DB-19 hard disk port. It is offered as a free community-printable case for anyone who wants to print it, but it is **not sold by SidecarTridge**. [View on Printables](https://www.printables.com/model/1790007-db19-to-idc20-atari-st-adapter-enclosure) |
+
 ## Want to contribute?
 
 You can contribute to this list by submitting your own case design. Please scroll to the bottom of the page and click on the "Edit this page on GitHub" link. You can then submit a pull request with your changes.
