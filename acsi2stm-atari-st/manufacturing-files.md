@@ -21,8 +21,8 @@ The SidecarTridge ACSI2STM boards are derivatives of the open-source [ACSI2STM p
 
 In the spirit of the original project, the hardware design and manufacturing files for these variants are published openly. You do not have to buy an assembled device: if you prefer to build your own, you can download the full manufacturing package from the SidecarTridge GitHub organization and have the boards produced at any PCB manufacturer.
 
-{: .note }
-Buying an assembled unit from the store is still the easiest route, and it directly supports continued development. The files below are provided for those who want to study, modify or self-manufacture the boards.
+{: .warning }
+Building your own units from these files is done entirely at your own risk. This is open hardware, so by downloading and using these files you accept full responsibility for fabrication, assembly and the outcome, and you take on everything that using open hardware implies. The files are provided as is, with no warranty of any kind.
 
 ## What the package contains
 
@@ -75,6 +75,20 @@ Fabrication notes for the PCB manufacturer:
 - PCB thickness: 1.2 mm
 - Surface finish: lead-free HASL
 - Specify layer sequence: yes
+
+### DB19-to-IDC20 adapter
+
+The [DB19-to-IDC20 adapter](/acsi2stm-atari-st/riser-boards/#db19-to-idc20-adapter-external-connection) is a passive board that exposes the ACSI2STM Compact IDC-20 header on an external DB-19 connector. Because it carries no active components, its package is a single Gerber file with no BOM or pick and place.
+
+Direct download:
+
+- [Gerber files (ZIP)](/acsi2stm-atari-st/assets/schematics/Gerber_DB19-IDC20-ADAPTER_2026-07-03.zip)
+
+Fabrication notes for the PCB manufacturer:
+
+- Layers: 2
+- PCB thickness: 1.6 mm
+- Surface finish: lead-free HASL
 
 [Previous: Internal riser boards](/acsi2stm-atari-st/riser-boards/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn }
