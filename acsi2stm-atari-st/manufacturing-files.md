@@ -76,5 +76,19 @@ Fabrication notes for the PCB manufacturer:
 - Surface finish: lead-free HASL
 - Specify layer sequence: yes
 
+### DB19-to-IDC20 adapter
+
+The [DB19-to-IDC20 adapter](/acsi2stm-atari-st/riser-boards/#db19-to-idc20-adapter-external-connection) is a passive board that exposes the ACSI2STM Compact IDC-20 header on an external DB-19 connector. Because it carries no active components, its package is a single Gerber file with no BOM or pick and place.
+
+Direct download:
+
+- [Gerber files (ZIP)](/acsi2stm-atari-st/assets/schematics/Gerber_DB19-IDC20-ADAPTER_2026-07-03.zip)
+
+Fabrication notes for the PCB manufacturer:
+
+- Layers: 2
+- PCB thickness: 1.6 mm
+- Surface finish: lead-free HASL
+
 [Previous: Internal riser boards](/acsi2stm-atari-st/riser-boards/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn }
