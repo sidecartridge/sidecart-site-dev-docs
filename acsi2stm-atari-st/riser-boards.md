@@ -127,6 +127,27 @@ These machines are old, fragile, and not always mechanically identical inside. I
 - make sure the USB power cable does not get trapped by the lid or shielding
 - verify that SD card access remains practical after installation
 
+## DB19-to-IDC20 adapter (external connection)
+
+![DB19-to-IDC20 adapter and ribbon cable kit](/acsi2stm-atari-st/assets/images/adapter/DB19-IDC20-ADAPTER-KIT.png)
+
+If you prefer not to open the machine or mount the Compact internally, the **DB19-to-IDC20 adapter** lets you connect the ACSI2STM Compact (or any ACSI device with an IDC 20-pin header) to the classic **DB-19** hard disk port on the outside of the computer.
+
+The DB-19 connector on the Atari ST family ACSI port has not been manufactured for years, while modern ACSI devices moved to the more available 2x10 **IDC-20** header. This passive adapter bridges both worlds, so you keep using the original rear ACSI port without hunting for the discontinued DB-19 connector.
+
+**Kit contents:**
+- 1x DB19-to-IDC20 adapter board (DB-19 male plug on one side, IDC-20 header on the other)
+- 1x flat ribbon cable, 2x10 pins, 30 cm long (IDC-20 to IDC-20)
+
+**How it connects:**
+1. Plug the adapter's **DB-19 male connector** into the ACSI hard disk port of your Atari ST, STE, Mega ST or Mega STE.
+2. Run the 30 cm ribbon cable from the adapter's **IDC-20 header** to the IDC-20 header on your ACSI2STM Compact or Satan Disk.
+
+{: .warning }
+This is a passive adapter with no active electronics in the signal path. It works with ACSI2STM and Satan Disk units that expose the 2x10 IDC-20 connector. Compatibility with hardware from other manufacturers cannot be guaranteed.
+
+You can find it here: [DB19-to-IDC20 Adapter + Ribbon Cable](https://sidecartridge.com/products/db19-idc20-adapter-atari-st/){: .btn }
+
 ## Troubleshooting after installation
 
 If the installation does not work as expected, check the following first:
