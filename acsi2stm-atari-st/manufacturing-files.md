@@ -21,8 +21,8 @@ The SidecarTridge ACSI2STM boards are derivatives of the open-source [ACSI2STM p
 
 In the spirit of the original project, the hardware design and manufacturing files for these variants are published openly. You do not have to buy an assembled device: if you prefer to build your own, you can download the full manufacturing package from the SidecarTridge GitHub organization and have the boards produced at any PCB manufacturer.
 
-{: .note }
-Buying an assembled unit from the store is still the easiest route, and it directly supports continued development. The files below are provided for those who want to study, modify or self-manufacture the boards.
+{: .warning }
+Building your own units from these files is done entirely at your own risk. This is open hardware, so by downloading and using these files you accept full responsibility for fabrication, assembly and the outcome, and you take on everything that using open hardware implies. The files are provided as is, with no warranty of any kind.
 
 ## What the package contains
 
