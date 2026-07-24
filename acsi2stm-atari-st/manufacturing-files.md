@@ -60,7 +60,21 @@ Fabrication notes for the PCB manufacturer:
 
 ### ACSI2STM Mini
 
-Manufacturing files coming soon.
+The full manufacturing package for the ACSI2STM Mini lives in the [`pcb/Mini` folder of the acsi2stm repository](https://github.com/sidecartridge/acsi2stm/tree/sidecartridge-mini-realdb19/pcb/Mini), on the `sidecartridge-mini-realdb19` branch.
+
+Direct downloads:
+
+- [Gerber files (ZIP)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-mini-realdb19/pcb/Mini/Gerber_ACSI2STM-MINI_PCB-ACSI2STM-MINI_2026-07-24.zip)
+- [Bill of Materials (CSV)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-mini-realdb19/pcb/Mini/BOM_ACSI2STM-MINI_2026-07-24.csv)
+- [Pick and place / CPL (CSV)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-mini-realdb19/pcb/Mini/PickAndPlace_PCB-ACSI2STM-MINI_2026-07-24.csv)
+- [Schematic (PDF)](https://github.com/sidecartridge/acsi2stm/blob/sidecartridge-mini-realdb19/pcb/Mini/Schematic_ACSI2STM-MINI_2026-07-24.pdf)
+
+Fabrication notes for the PCB manufacturer:
+
+- Layers: 4
+- PCB thickness: 1.2 mm
+- Surface finish: lead-free HASL
+- Specify layer sequence: yes
 
 [Previous: Internal riser boards](/acsi2stm-atari-st/riser-boards/){: .btn .mr-4 }
 [Main](/acsi2stm-atari-st/){: .btn }
