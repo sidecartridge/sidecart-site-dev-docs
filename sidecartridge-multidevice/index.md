@@ -71,69 +71,20 @@ You can learn about the new features and improvements in the latest firmware rel
     border-radius: 999px; padding: 0.4em 0.95em;
     margin-top: 6px; white-space: nowrap;
   }
-  .main-content .apps-hero-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
-    position: relative;
-  }
+  /* The catalog carousel is served by the store and renders in its own shadow root, so only
+     its container is styled here. position: relative keeps it above the ::before glow. */
+  .main-content .apps-hero-carousel { position: relative; }
+  /* Links on the indigo hero: peach, cream on hover, matching the inverted callouts. The
+     explicit colour is needed because content links default to indigo. */
+  .main-content .apps-hero .apps-hero-sub a { color: #faebd7; }
+  .main-content .apps-hero .apps-hero-sub a:hover { color: #fdfcf9; }
   @media (max-width: 900px) {
-    .main-content .apps-hero-grid { grid-template-columns: 1fr; }
     .main-content .apps-hero { padding: 22px 22px 20px; }
     .main-content .apps-hero h2 { font-size: 1.55rem; }
   }
-  /* Use a div for the card so kramdown does not pull the inner h3 / p out of
-     the link (which is what happens when the card is an <a> wrapping block
-     content). A stretched ::after on the title link makes the whole card
-     clickable. */
-  .main-content .apps-hero-card {
-    position: relative;
-    background: rgba(253,252,249,0.05);
-    border: 1px solid rgba(250,235,215,0.18);
-    border-radius: 12px;
-    padding: 16px 18px 14px;
-    color: #fdfcf9;
-    display: flex; flex-direction: column; gap: 6px;
-    transition: transform .12s ease, border-color .12s ease, background .12s ease;
-  }
-  .main-content .apps-hero-card:hover {
-    background: rgba(253,252,249,0.10);
-    border-color: rgba(250,235,215,0.40);
-    transform: translateY(-2px);
-  }
-  .main-content .apps-hero-card .ico { font-size: 1.4rem; line-height: 1; }
-  .main-content .apps-hero-card h3 {
-    font-size: 1.05rem; margin: 0; font-weight: 500;
-    color: #fdfcf9; border-bottom: 0; padding: 0;
-  }
-  .main-content .apps-hero-card h3 a,
-  .main-content .apps-hero-card a.apps-hero-card-link {
-    color: #fdfcf9;
-    text-decoration: none;
-    background-image: none;
-  }
-  .main-content .apps-hero-card h3 a:hover,
-  .main-content .apps-hero-card a.apps-hero-card-link:hover {
-    color: #faebd7;
-    text-decoration: none;
-  }
-  .main-content .apps-hero-card a.apps-hero-card-link::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
-  .main-content .apps-hero-card p {
-    margin: 0; font-size: 0.85rem; line-height: 1.45;
-    color: rgba(253,252,249,0.78);
-  }
-  .main-content .apps-hero-card .ribbon {
-    display: inline-block; align-self: flex-start;
-    font-family: "Fira Mono", "Courier New", monospace;
-    font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
-    color: #0d042b; background: #faebd7;
-    border-radius: 4px; padding: 0.18em 0.55em;
-    margin-bottom: 2px;
-  }
-  .main-content .apps-hero-cta {
+  /* a.apps-hero-cta out-ranks the theme's content-link rule, which would underline the pill
+     and turn it brick red on hover. */
+  .main-content .apps-hero a.apps-hero-cta {
     display: inline-flex; align-items: center; gap: 0.5em;
     margin-top: 22px; padding: 0.65em 1.2em;
     background: #faebd7; color: #0d042b;
@@ -142,8 +93,8 @@ You can learn about the new features and improvements in the latest firmware rel
     background-image: none;
     transition: background .12s ease, transform .12s ease;
   }
-  .main-content .apps-hero-cta:hover {
-    background: #f1dcb7; transform: translateY(-1px); text-decoration: none;
+  .main-content .apps-hero a.apps-hero-cta:hover {
+    background: #f1dcb7; color: #0d042b; transform: translateY(-1px); text-decoration: none;
   }
   .main-content .apps-hero-cta .arrow {
     font-family: "Fira Mono", "Courier New", monospace;
@@ -159,24 +110,10 @@ You can learn about the new features and improvements in the latest firmware rel
     <span class="apps-hero-chip">v2 firmware</span>
   </div>
 
-  <div class="apps-hero-grid">
-    <div class="apps-hero-card">
-      <span class="ribbon">New</span>
-      <span class="ico">🎼</span>
-      <h3><a class="apps-hero-card-link" href="/sidecartridge-multidevice/microfirmwares/midi-to-ip/">MIDI-to-IP</a></h3>
-      <p>Run MIDI Maze and other MIDI apps over Wi-Fi. Up to 16 real STs and Hatari peers share one ring on a Python orchestrator.</p>
-    </div>
-    <div class="apps-hero-card">
-      <span class="ico">💾</span>
-      <h3><a class="apps-hero-card-link" href="/sidecartridge-multidevice/microfirmwares/drives_emulator/">Drives Emulator</a></h3>
-      <p>Hard-disk and floppy drives backed by microSD images. Ships the RTC emulator too.</p>
-    </div>
-    <div class="apps-hero-card">
-      <span class="ico">📀</span>
-      <h3><a class="apps-hero-card-link" href="/sidecartridge-multidevice/microfirmwares/rom_emulator/">ROM Emulator</a></h3>
-      <p>Emulate ROM files from the microSD or a remote server. The bread-and-butter cartridge ROM workflow on every ST.</p>
-    </div>
-  </div>
+  <!-- Every app in the store, fetched live from md-store.sidecartridge.com. The button below is
+       the fallback when the carousel cannot load, so the container is left empty. -->
+  <div class="apps-hero-carousel" data-md-store-carousel data-platform="atari-st" data-theme="dark"></div>
+  <script src="https://md-store.sidecartridge.com/widget/carousel.js" defer></script>
 
   <a class="apps-hero-cta" href="https://md-store.sidecartridge.com/" target="_blank" rel="noopener">Browse all apps in the Store <span class="arrow">↗</span></a>
 </section>
