@@ -51,6 +51,11 @@ This offline-safe launcher is useful when the access point is down, the router b
 
 The full, always up to date catalog of Microfirmware apps lives in the online Apps Store. It reads the same public repository the Booster app uses, so the list you see there matches exactly what you can install on your device, including alpha and beta builds.
 
+<div data-md-store-carousel data-platform="atari-st">
+  <a href="https://md-store.sidecartridge.com/#atari-st">Browse all apps in the Store</a>
+</div>
+<script src="https://md-store.sidecartridge.com/widget/carousel.js" defer></script>
+
 <a href="https://md-store.sidecartridge.com/" class="btn btn-purple fs-5" target="_blank" rel="noopener" style="margin: 1rem 0; display: inline-block;">Browse the Apps Store</a>
 
 Every app in the Store links back to its documentation page here in the docs. You can also open any app page directly from the navigation sidebar on the left.
