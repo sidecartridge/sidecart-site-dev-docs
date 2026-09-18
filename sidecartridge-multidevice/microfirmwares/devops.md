@@ -49,6 +49,7 @@ For the full reference, more end-to-end examples and the complete API documentat
 - **Remote HTTP file management**: `curl` plus the `sidecart` Python CLI for `ls / get / put / rm / mv / mkdir / rmdir / mvdir / volume`.
 - **Fast debug traces**: single-cartridge-cycle byte emit from the m68k (`*(volatile char *)(0xFBFF00 + c)`), captured RP-side and streamed to either an HTTP `tail -f` endpoint or USB CDC. No framing, no overhead, byte-exact.
 - **Live setup menu**: graphical status icons (Wi-Fi / SD / USB CDC / Adv Vector), animated countdown bar, USB CDC attach state refreshed live as you plug or unplug.
+- **Self-recovering** (v1.1.0): the Pico reboots itself after a crash or hang and says why on the menu, Wi-Fi rejoins on its own after the router or the link drops, a microSD card can be pulled and reinserted without a reset, and an interrupted transfer no longer blocks the next one.
 
 {: .warning }
 The HTTP API has **no authentication**. Treat the network the device is reachable on as trusted, and do not expose `sidecart.local` past your LAN router.
@@ -78,7 +79,7 @@ Power-on after install lands on the **Setup menu** for around 20 seconds. You ha
 
 If you do nothing within ~20 s, the firmware auto-fires `[U]` Runner, the more useful default for unattended boots.
 
-The menu paints into the cartridge framebuffer at `$FAE0C0` so the ST itself shows it. From top to bottom you get a title bar, the **GEMDRIVE** section (folder, drive letter, relocation address, memtop, plus the read-only `_phystop` at `$42E` and `_v_bas_ad` screen base at `$44E`), the **Adv [V]ector** section (which interrupt vector the Advanced Runner installs its hook into), the **API Endpoint** section (mDNS hostname and the IP DHCP leased), and the **USB CDC (Debug serial)** section (`connected` / `disconnected`, live-refreshed as you plug or unplug a USB cable).
+The menu paints into the cartridge framebuffer at `$FAE0C0` so the ST itself shows it. From top to bottom you get a title bar, the **GEMDRIVE** section (folder, drive letter, relocation address, memtop, plus the read-only `_phystop` at `$42E` and `_v_bas_ad` screen base at `$44E`), the **Adv [V]ector** section (which interrupt vector the Advanced Runner installs its hook into), the **API Endpoint** section (mDNS hostname and the IP DHCP leased; an invalid fixed IP in the configuration no longer crashes the boot, it falls back to DHCP and the menu tells you why), and the **USB CDC (Debug serial)** section (`connected` / `disconnected`, live-refreshed as you plug or unplug a USB cable).
 
 A `(!)` marker on the Phystop line means TOS' phystop disagrees with the silicon's MMU bank-config nibble at `$FFFF8001`, a sign that a reset-resistant program lowered phystop and survived a warm reset. Only a full power-cycle restores it.
 
@@ -93,6 +94,30 @@ The cartridge's physical **SELECT** button is wired so a press on the Pico itsel
 
 The button is the canonical recovery path for any banner the firmware shows on the ST screen (e.g. the `Reloc/stack overlap` warning thrown when a misconfigured relocation address would land on or near the live supervisor stack).
 
+### When there is no SD card
+
+GEMDRIVE emulates a drive from a folder on the microSD card, so without a working card there is nothing to emulate. The setup menu says so on the GEMDRIVE line (`SD: NO CARD` instead of `SD: mounted`), `[G]` and `[U]` refuse to start with *"Insert a working microSD card: GEMDRIVE needs one."* on the status line, and the auto-launch countdown is held, so a device powered on without a card waits in the menu instead of booting into a broken drive. Every API endpoint that needs the card answers `503 no_sd_card` while it is missing.
+
+Insert a working card and the block clears by itself within a couple of seconds, no reset needed. A card pulled while the device is running is noticed within about two seconds and remounted when it comes back.
+
+### When the network goes away
+
+The device rejoins by itself. A lost link is noticed either from the network stack or from a gateway probe sent every minute, and the join is retried with a backoff from 5 seconds up to a minute, so the API and `sidecart.local` come back without anyone touching the hardware. The radio runs at full power with power saving off; earlier versions always ran in power save regardless of the setting, which roughly quadrupled round-trip latency.
+
+### When the Pico crashes or hangs
+
+The Pico reboots itself instead of freezing. A crash (a `panic` or a HardFault) reboots it within about 100 ms; a hang reboots it after 8 s, when the watchdog fires. Either way the Pico comes back in the setup menu and row 2 of the menu says why:
+
+```
+Recovered: panic @10012ABC
+Recovered: fault @10003F10 x2
+Recovered: hang in http_request
+```
+
+The address is the program counter at the crash; `x2` counts crash reboots in a row. The same record is available from `sidecart health`. What the ST sees: for about a second the cartridge window stops answering while the Pico re-initialises the bus. The ST program keeps running, but GEMDRIVE's open files and the Runner's state are gone, so it usually needs an ST reset.
+
+**Crash-loop guard.** After 3 crash reboots within 60 s the boot countdown stays stopped, so the device waits in the menu instead of autobooting into whatever keeps crashing. A SELECT short press or a power cycle clears the guard.
+
 ### Picking a hook vector
 
 `[V]` toggles the Advanced Runner ISR between two vectors:
@@ -106,7 +131,7 @@ Once the device joins Wi-Fi it serves an HTTP/1.1 REST API on port 80 at `http:/
 
 | Family | HTTP endpoints | CLI prefix |
 | --- | --- | --- |
-| Health | `GET /api/v1/ping` | `sidecart ping` |
+| Health | `GET /api/v1/ping`, plus device diagnostics (see the API docs) | `sidecart ping`, `sidecart health` |
 | GEMDRIVE | `GET / PUT / DELETE / POST /api/v1/gemdrive/{volume,files,folders}/…` | `sidecart gemdrive …` |
 | Runner | `GET / POST /api/v1/runner/…` | `sidecart runner …` |
 | Debug | `GET /api/v1/debug`, `GET /api/v1/debug/log` | `sidecart debug …` |
@@ -133,6 +158,8 @@ sidecart ping
 
 The CLI talks to `sidecart.local` by default. Override per-invocation with `--host`, or for the whole shell session with `SIDECART_HOST`. Precedence: `--host` > `$SIDECART_HOST` > `sidecart.local`.
 
+`sidecart ping` is the first thing to run: it confirms the workstation can reach the device and reports the firmware version and uptime. `sidecart health` reads the device's own diagnostics (free heap and its low point, stack high-water, why the Pico last rebooted, crash count, watchdog state, dropped debug bytes), which also works on a release build with no console. If the cartridge reboots while a command is in flight, the CLI prints one line and stops instead of a Python traceback.
+
 ## 💾 GEMDRIVE: manage files and folders remotely
 
 The Atari ST sees a microSD subdirectory as a TOS drive (default `C:`, configurable from the setup menu). The `gemdrive` subcommand on the workstation gives you full read / write access to that same directory tree without ejecting the SD card.
@@ -149,7 +176,7 @@ $ sidecart gemdrive rmdir /GAMES/EMPTY        # delete an empty folder
 $ sidecart gemdrive mvdir /TMP/STAGE /GAMES/  # rename / move a folder
 ```
 
-All paths are jailed under the `GEMDRIVE_FOLDER` parameter (default `/devops`). FAT 8.3 names are enforced (stem ≤ 8 chars, extension ≤ 3 chars, ASCII, no `*?/\:<>"|+,;=[]`). Per-request upload cap is 4 MB; `Content-Length` is required and chunked uploads are rejected.
+All paths are jailed under the `GEMDRIVE_FOLDER` parameter (default `/devops`). FAT 8.3 names are enforced (stem ≤ 8 chars, extension ≤ 3 chars, ASCII, no `*?/\:<>"|+,;=[]`). Per-request upload cap is 4 MB; `Content-Length` is required and chunked uploads are rejected. Since v1.1.0 a full 4 MB file goes up and comes back down identical, a slow connection is no longer cut off part way through, and a transfer that dies (laptop asleep, Ctrl-C) cleans up after itself instead of leaving a half-written file and answering `busy` to every later request.
 
 A typical edit-build-test loop on the workstation:
 
@@ -197,10 +224,14 @@ The m68k emits debug bytes through indexed memory reads at `0xFBFF00`–`0xFBFFF
 The ring buffer tracks dropped bytes when consumers drain too slowly. Two consumers can read the same stream at the same time:
 
 ```sh
-$ sidecart debug log         # HTTP long-poll, tail -f style
+$ sidecart debug tail        # HTTP long-poll, tail -f style
+$ sidecart debug status      # ring fill, dropped bytes, USB CDC state
 ```
 
 Or open the USB CDC serial port that the Pico W exposes when you plug it into your workstation. No drivers needed on macOS; Linux usually picks it up as `/dev/ttyACM0`; Windows installs a CDC driver automatically.
+
+{: .warning }
+**Known limitation (v1.1.0):** a program that traces heavily while running under the Runner can crash the Atari. Reading more than a few thousand bytes through the cartridge debug window during `runner exec` bombs the machine, more often the bigger the burst. The cause is not found yet, so keep tracing to short bursts for now.
 
 ## 🛠️ Setting up the development environment
 
