@@ -117,13 +117,13 @@ Croissant
 
 [http://croissant.local](http://croissant.local)
 or
-[http://192.168.1.4](http://192.168.1.4)
+[http://192.168.4.1](http://192.168.4.1)
 
 Soufflè
 
 [http://souffle.local](http://souffle.local)
 or 
-[http://192.168.1.4](http://192.168.1.4)
+[http://192.168.4.1](http://192.168.4.1)
 
 After the page loads, you should see the home screen for your device model.
 
