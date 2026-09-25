@@ -122,6 +122,9 @@ The carrier board is keyed so the silkscreened pin-1 marker on the carrier lines
 ### Insert the Emulator
 Gently press the SidecarTridge Kickstart Emulator into the ROM socket. Apply even pressure on both sides to avoid bending any pins. Make sure it is fully seated and secure in the socket. Try to insert all the pins at once, and don't force it if it doesn't fit.
 
+{: .note}
+**The connector pins have some tolerance on purpose.** They can flex slightly so they adapt to the position of the socket. A mismatch of about 0.5 mm, and occasionally up to 1 mm, is normal on a machine this old: the socket and the board that holds it have aged and moved. Removing the original Kickstart ROM adds to it. If pulling the old ROM took more force than you expected, that is often not because the IC was seated tightly, but because time has also affected the socket and the surrounding area of the motherboard. Line the pins up with the socket holes before pressing down, and if one of them sits slightly off, bend it gently by hand until it lines up. Never unsolder, resolder or pull out a pin to make it fit.
+
 By following these steps, you will have successfully connected and secured the SidecarTridge Kickstart Emulator to your Amiga, ensuring a stable and functional installation.
 
 ![Amiga 500 ROM socket placement](/sidecartridge-kickstart/assets/images/amiga-500-kickstart-placement.jpg)

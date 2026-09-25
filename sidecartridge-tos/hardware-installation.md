@@ -214,6 +214,9 @@ The SidecarTridge carrier board has to be plugged into the ROM sockets marked as
 #### Insert the Emulator
 Gently press the SidecarTridge TOS Emulator into the ROM sockets. Apply even pressure on both sides to avoid bending any pins. Make sure it is fully seated and secure in the sockets. Try to insert all the pins at once, and don't force it if it doesn't fit.
 
+{: .note}
+**The connector pins have some tolerance on purpose.** They can flex slightly so they adapt to the position of the sockets. A mismatch of about 0.5 mm, and occasionally up to 1 mm, is normal on a 40-year-old machine: the sockets and the board that holds them have aged and moved. Removing the original ROM ICs adds to it. If pulling the old ROMs took more force than you expected, that is often not because the IC was seated tightly, but because time has also affected the socket and the surrounding area of the motherboard. Line the pins up with the socket holes before pressing down, and if one of them sits slightly off, bend it gently by hand until it lines up. Never unsolder, resolder or pull out a pin to make it fit.
+
 #### Check Alignment
 The Atari STE and MegaSTE have two 32-pin ROM sockets, but the SidecarTridge TOS Emulator only uses the first 28 pins. Make sure the SidecarTridge TOS Emulator is aligned correctly in the socket.
 
